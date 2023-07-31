@@ -12214,13 +12214,16 @@ static void Cmd_setmultihitcounter(void)
             // 15% for 5 hits
             gMultiHitCounter = Random() % 100;
             if (gMultiHitCounter < 35)
-                gMultiHitCounter = 2;
+                // gMultiHitCounter = 2;
+                gMultiHitCounter = 3;
             else if (gMultiHitCounter < 35 + 35)
                 gMultiHitCounter = 3;
             else if (gMultiHitCounter < 35 + 35 + 15)
-                gMultiHitCounter = 4;
+                // gMultiHitCounter = 4;
+                gMultiHitCounter = 3;
             else
-                gMultiHitCounter = 5;
+                // gMultiHitCounter = 5;
+                gMultiHitCounter = 3;
         #else
             // 2 and 3 hits: 37.5%
             // 4 and 5 hits: 12.5%
