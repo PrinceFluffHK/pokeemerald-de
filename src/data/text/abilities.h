@@ -289,6 +289,8 @@ static const u8 sToxicDebrisDescription[] = _("Throws poison spikes if hit.");
 static const u8 sArmorTailDescription[] = _("Protects from priority.");
 static const u8 sEarthEaterDescription[] = _("Eats ground to heal HP.");
 static const u8 sMyceliumMightDescription[] = _("Status moves never fail.");
+// static const u8 sDragonflyDescription[] = _("Flies and boosts Bug moves.");
+// static const u8 sTrickChimeDescription[] = _("Inverts speed for 5 turns.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -592,6 +594,8 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_ARMOR_TAIL] = _("Armor Tail"),
     [ABILITY_EARTH_EATER] = _("Earth Eater"),
     [ABILITY_MYCELIUM_MIGHT] = _("Mycelium Might"),
+    // [ABILITY_DRAGONFLY] = _("Dragonfly"),
+    // [ABILITY_TRICK_CHIME] = _("Trick Chime"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -894,7 +898,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_TOXIC_DEBRIS] = _("Toxic Debris"),
     [ABILITY_ARMOR_TAIL] = _("Armor Tail"),
     [ABILITY_EARTH_EATER] = _("Earth Eater"),
-    [ABILITY_MYCELIUM_MIGHT] = _("MceliumMight"),
+    [ABILITY_MYCELIUM_MIGHT] = _("MceliumMight"),    
 };
 #endif
 
