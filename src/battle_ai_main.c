@@ -3396,7 +3396,7 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         if (!ShouldLowerSpDef(battlerAtk, battlerDef, AI_DATA->abilities[battlerDef]))
             score -= 2;
         if ((AI_DATA->hpPercents[battlerAtk] < 70 && !AI_RandLessThan(50))
-          || (gBattleMons[battlerDef].statStages[STAT_SPDEF] <= 3 && !AI_RandLessThan(50)))
+            || (gBattleMons[battlerDef].statStages[STAT_SPDEF] <= 3 && !AI_RandLessThan(50)))
             score -= 2;
         if (AI_DATA->hpPercents[battlerDef] <= 70)
             score -= 2;
