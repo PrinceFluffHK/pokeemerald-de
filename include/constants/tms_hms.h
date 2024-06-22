@@ -24,18 +24,18 @@
     F(SAFEGUARD) \
     F(HELPING_HAND) \
     F(SOLAR_BEAM) \
-    F(IRON_TAIL) \
+    F(WEATHER_BALL) \
     F(THUNDERBOLT) \
     F(THUNDER) \
     F(EARTHQUAKE) \
-    F(RETURN) \
+    F(LEECH_LIFE) \
     F(DIG) \
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(DOUBLE_TEAM) \
+    F(EARTH_POWER) \
     F(REFLECT) \
-    F(SHOCK_WAVE) \
+    F(SLUDGE_WAVE) \
     F(FLAMETHROWER) \
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
@@ -44,21 +44,64 @@
     F(AERIAL_ACE) \
     F(TORMENT) \
     F(FACADE) \
-    F(SECRET_POWER) \
+    F(FLAME_CHARGE) \
     F(REST) \
-    F(ATTRACT) \
+    F(TRAILBLAZE) \
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
     F(OVERHEAT) \
-    F(STEEL_WING) \
-    F(SNATCH) \
-    F(SNATCH) \
-    F(SNATCH) \
-    F(SNATCH) \
-    F(SNATCH) \
-    F(SNATCH) \
+    F(LOW_SWEEP) \
+    F(FOCUS_BLAST) \
+    F(ENERGY_BALL) \
+    F(FALSE_SWIPE) \
+    F(AIR_SLASH) \
+    F(FLING) \
+    F(CHARGE_BEAM) \
+    F(SKY_DROP) \
+    F(INCINERATE) \
+    F(QUASH) \
+    F(WILL_O_WISP) \
+    F(ACROBATICS) \
+    F(EMBARGO) \
+    F(SELF_DESTRUCT) \
+    F(SHADOW_CLAW) \
+    F(PAYBACK) \
+    F(RETALIATE) \
+    F(GIGA_IMPACT) \
+    F(BREAKING_SWIPE) \
+    F(FOUL_PLAY) \
+    F(STONE_EDGE) \
+    F(VOLT_SWITCH) \
+    F(THUNDER_WAVE) \
+    F(GYRO_BALL) \
+    F(SWORDS_DANCE) \
+    F(STRUGGLE_BUG) \
+    F(HEX) \
+    F(BULLDOZE) \
+    F(ICY_WIND) \
+    F(ROCK_SLIDE) \
+    F(X_SCISSOR) \
+    F(DRAGON_TAIL) \
+    F(SEED_BOMB) \
+    F(POISON_JAB) \
+    F(SOLAR_BLADE) \
+    F(GRASS_KNOT) \
+    F(SWAGGER) \
+    F(SLEEP_TALK) \
+    F(U_TURN) \
+    F(SUBSTITUTE) \
+    F(FLASH_CANNON) \
+    F(BODY_PRESS) \
+    F(WILD_CHARGE) \
+    F(IRON_HEAD) \
+    F(SNARL) \
+    F(ICE_SPINNER) \
+    F(DARK_PULSE) \
+    F(FLIP_TURN) \
+    F(DAZZLING_GLEAM) \
+    F(CHARM) 
 
 #define FOREACH_HM(F) \
     F(CUT) \

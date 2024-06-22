@@ -9225,7 +9225,7 @@ const struct Item gItemsInfo[] =
 
 // TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
-    [ITEM_TM_FOCUS_PUNCH] =
+    [ITEM_TM_WORK_UP] =
     {
         .name = _("TM01"),
         .price = 3000,
@@ -9255,7 +9255,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DRAGON_CLAW,
     },
 
-    [ITEM_TM_WATER_PULSE] =
+    [ITEM_TM_PSYSHOCK] =
     {
         .name = _("TM03"),
         .price = 3000,
@@ -9315,7 +9315,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_TOXIC,
     },
 
-    [ITEM_TM_HAIL] =
+    [ITEM_TM_SNOWSCAPE] =
     {
         .name = _("TM07"),
         .price = 3000,
@@ -9345,7 +9345,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_BULK_UP,
     },
 
-    [ITEM_TM_BULLET_SEED] =
+    [ITEM_TM_VENOSHOCK] =
     {
         .name = _("TM09"),
         .price = 3000,
@@ -9535,7 +9535,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SAFEGUARD,
     },
 
-    [ITEM_TM_FRUSTRATION] =
+    [ITEM_TM_HELPING_HAND] =
     {
         .name = _("TM21"),
         .price = 1000,
@@ -9565,7 +9565,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_SOLAR_BEAM,
     },
 
-    [ITEM_TM_IRON_TAIL] =
+    [ITEM_TM_WEATHER_BALL] =
     {
         .name = _("TM23"),
         .price = 3000,
@@ -9577,7 +9577,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_IRON_TAIL,
+        .secondaryId = MOVE_WEATHER_BALL,
     },
 
     [ITEM_TM_THUNDERBOLT] =
@@ -9625,7 +9625,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_EARTHQUAKE,
     },
 
-    [ITEM_TM_RETURN] =
+    [ITEM_TM_LEECH_LIFE] =
     {
         .name = _("TM27"),
         .price = 1000,
@@ -9637,7 +9637,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_RETURN,
+        .secondaryId = MOVE_LEECH_LIFE,
     },
 
     [ITEM_TM_DIG] =
@@ -9700,7 +9700,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_BRICK_BREAK,
     },
 
-    [ITEM_TM_DOUBLE_TEAM] =
+    [ITEM_TM_EARTH_POWER] =
     {
         .name = _("TM32"),
         .price = 2000,
@@ -9712,7 +9712,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_DOUBLE_TEAM,
+        .secondaryId = MOVE_EARTH_POWER,
     },
 
     [ITEM_TM_REFLECT] =
@@ -9730,7 +9730,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_REFLECT,
     },
 
-    [ITEM_TM_SHOCK_WAVE] =
+    [ITEM_TM_SLUDGE_WAVE] =
     {
         .name = _("TM34"),
         .price = 3000,
@@ -9742,7 +9742,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SHOCK_WAVE,
+        .secondaryId = MOVE_SLUDGE_WAVE,
     },
 
     [ITEM_TM_FLAMETHROWER] =
@@ -9865,7 +9865,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_FACADE,
     },
 
-    [ITEM_TM_SECRET_POWER] =
+    [ITEM_TM_FLAME_CHARGE] =
     {
         .name = _("TM43"),
         .price = 3000,
@@ -9877,7 +9877,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SECRET_POWER,
+        .secondaryId = MOVE_FLAME_CHARGE,
     },
 
     [ITEM_TM_REST] =
@@ -9895,7 +9895,7 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_REST,
     },
 
-    [ITEM_TM_ATTRACT] =
+    [ITEM_TM_TRAILBLAZE] =
     {
         .name = _("TM45"),
         .price = 3000,
@@ -9907,7 +9907,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ATTRACT,
+        .secondaryId = MOVE_TRAILBLAZE,
     },
 
     [ITEM_TM_THIEF] =
@@ -9967,7 +9967,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SNATCH,
+        .secondaryId = MOVE_PLAY_ROUGH,
     },
 
     [ITEM_TM_OVERHEAT] =
@@ -9994,7 +9994,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
+        .secondaryId = MOVE_LOW_SWEEP, // Todo
     },
 
     [ITEM_TM52] =
