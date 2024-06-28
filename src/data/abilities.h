@@ -2602,4 +2602,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+    
+    [ABILITY_PSYCH_OUT] =
+    {
+        .name = _("Psych Out"),
+        .description = COMPOUND_STRING("Lowers the foe's SpA."),
+        .aiRating = 7,
+    },
 };

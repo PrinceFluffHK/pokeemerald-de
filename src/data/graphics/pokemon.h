@@ -182,13 +182,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_ButterfreeF[] = INCBIN_U32("graphics/pokemon/butterfree/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_ButterfreeF[] = INCBIN_U32("graphics/pokemon/butterfree/backf.4bpp.lz");
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_ButterfreeGigantamax[] = INCBIN_U32("graphics/pokemon/butterfree/gigantamax/front.4bpp.lz");
     const u32 gMonBackPic_ButterfreeGigantamax[] = INCBIN_U32("graphics/pokemon/butterfree/gigantamax/back.4bpp.lz");
     const u32 gMonPalette_ButterfreeGigantamax[] = INCBIN_U32("graphics/pokemon/butterfree/gigantamax/normal.gbapal.lz");
     const u32 gMonShinyPalette_ButterfreeGigantamax[] = INCBIN_U32("graphics/pokemon/butterfree/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_ButterfreeGigantamax[] = INCBIN_U8("graphics/pokemon/butterfree/gigantamax/icon.4bpp");
-#endif //P_GIGANTAMAX_FORMS
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CATERPIE
 
 #if P_FAMILY_WEEDLE
@@ -1100,13 +1100,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Machamp[] = INCBIN_U8("graphics/pokemon/machamp/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/front.4bpp.lz");
     const u32 gMonBackPic_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/back.4bpp.lz");
     const u32 gMonPalette_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/normal.gbapal.lz");
     const u32 gMonShinyPalette_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_MachampGigantamax[] = INCBIN_U8("graphics/pokemon/machamp/gigantamax/icon.4bpp");
-#endif //P_GIGANTAMAX_FORMS
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MACHOP
 
 #if P_FAMILY_BELLSPROUT
@@ -1581,13 +1581,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Kingler[] = INCBIN_U8("graphics/pokemon/kingler/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/front.4bpp.lz");
     const u32 gMonBackPic_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/back.4bpp.lz");
     const u32 gMonPalette_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/normal.gbapal.lz");
     const u32 gMonShinyPalette_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_KinglerGigantamax[] = INCBIN_U8("graphics/pokemon/kingler/gigantamax/icon.4bpp");
-#endif //P_GIGANTAMAX_FORMS
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_KRABBY
 
 #if P_FAMILY_VOLTORB
@@ -2231,13 +2231,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Lapras[] = INCBIN_U8("graphics/pokemon/lapras/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/front.4bpp.lz");
     const u32 gMonBackPic_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/back.4bpp.lz");
     const u32 gMonPalette_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/normal.gbapal.lz");
     const u32 gMonShinyPalette_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_LaprasGigantamax[] = INCBIN_U8("graphics/pokemon/lapras/gigantamax/icon.4bpp");
-#endif //P_GIGANTAMAX_FORMS
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_LAPRAS
 
 #if P_FAMILY_DITTO
@@ -2469,13 +2469,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Snorlax[] = INCBIN_U8("graphics/pokemon/snorlax/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-#if P_GIGANTAMAX_FORMS
+#if P_MEGA_EVOLUTIONS
     const u32 gMonFrontPic_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/front.4bpp.lz");
     const u32 gMonBackPic_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/back.4bpp.lz");
     const u32 gMonPalette_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/normal.gbapal.lz");
     const u32 gMonShinyPalette_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_SnorlaxGigantamax[] = INCBIN_U8("graphics/pokemon/snorlax/gigantamax/icon.4bpp");
-#endif //P_GIGANTAMAX_FORMS
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SNORLAX
 
 #if P_FAMILY_ARTICUNO
