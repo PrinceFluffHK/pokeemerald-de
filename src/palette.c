@@ -18,6 +18,31 @@ enum
     TIME_OF_DAY_FADE,
 };
 
+struct PaletteStructTemplate
+{
+    u16 id;
+    u16 *src;
+    bool16 pst_field_8_0:1;
+    u16 unused:9;
+    u16 size:5;
+    u8 time1;
+    u8 srcCount:5;
+    u8 state:3;
+    u8 time2;
+};
+
+struct PaletteStruct
+{
+    const struct PaletteStructTemplate *template;
+    bool32 active:1;
+    bool32 flag:1;
+    u32 baseDestOffset:9;
+    u32 destOffset:10;
+    u32 srcIndex:7;
+    u8 countdown1;
+    u8 countdown2;
+};
+
 static u32 UpdateNormalPaletteFade(void);
 static void BeginFastPaletteFadeInternal(u32);
 static u32 UpdateFastPaletteFade(void);
@@ -27,12 +52,26 @@ static void UpdateBlendRegisters(void);
 static bool32 IsSoftwarePaletteFadeFinishing(void);
 static void Task_BlendPalettesGradually(u8 taskId);
 
+static void PaletteStruct_Copy(struct PaletteStruct *, u32 *);
+static void PaletteStruct_Blend(struct PaletteStruct *, u32 *);
+static void PaletteStruct_TryEnd(struct PaletteStruct *);
+static void PaletteStruct_Reset(u8);
+static u8 PaletteStruct_GetPalNum(u16);
+
 // palette buffers require alignment with agbcc because
 // unaligned word reads are issued in BlendPalette otherwise
 ALIGNED(4) EWRAM_DATA u16 gPlttBufferUnfaded[PLTT_BUFFER_SIZE] = {0};
 ALIGNED(4) EWRAM_DATA u16 gPlttBufferFaded[PLTT_BUFFER_SIZE] = {0};
 EWRAM_DATA struct PaletteFadeControl gPaletteFade = {0};
 static EWRAM_DATA u32 sPlttBufferTransferPending = 0;
+EWRAM_DATA u8 ALIGNED(2) gPaletteDecompressionBuffer[PLTT_SIZE] = {0};
+
+static EWRAM_DATA u32 sPlttPreviousUpdateResult = 0; // Fast Battle Speed
+
+static const struct PaletteStructTemplate sDummyPaletteStructTemplate = {
+    .id = 0xFFFF,
+    .state = 1
+};
 
 static const u8 sRoundedDownGrayscaleMap[] = {
      0,  0,  0,  0,  0,
@@ -81,7 +120,8 @@ void TransferPlttBuffer(void)
 
 u32 UpdatePaletteFade(void)
 {
-    u32 result;
+    u8 result;
+    u8 dummy = 0;
 
     if (sPlttBufferTransferPending)
         return PALETTE_FADE_STATUS_LOADING;
@@ -95,9 +135,14 @@ u32 UpdatePaletteFade(void)
     else
         result = UpdateHardwarePaletteFade();
 
-    sPlttBufferTransferPending = gPaletteFade.multipurpose1;
+    sPlttBufferTransferPending = gPaletteFade.multipurpose1 | dummy;
 
     return result;
+}
+
+u32 PrevPaletteFadeResult(void)
+{
+    return sPlttPreviousUpdateResult;
 }
 
 void ResetPaletteFade(void)

@@ -2077,7 +2077,7 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     }
     else
     {
-        BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
+        // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
         CreateSpeedTiersWindow(battler);
     }
 }
