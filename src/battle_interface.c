@@ -2998,6 +2998,20 @@ void TryToAddMoveInfoWindow(void)
     }
 }
 
+void TryToAddMovePreviewWindows(void)
+{
+
+    LoadSpritePalette(&sSpritePalette_AbilityPopUp);
+    if (GetSpriteTileStartByTag(MOVE_INFO_WINDOW_TAG) == 0xFFFF)
+        LoadSpriteSheet(&sSpriteSheet_MoveInfoWindow);
+
+    if (gBattleStruct->moveInfoSpriteId == MAX_SPRITES)
+    {
+        gBattleStruct->moveInfoSpriteId = CreateSprite(&sSpriteTemplate_MoveInfoWindow, LAST_BALL_WIN_X_0, LAST_USED_WIN_Y + 32, 6);
+        gSprites[gBattleStruct->moveInfoSpriteId].sHide = FALSE;
+    }
+}
+
 void TryToHideMoveInfoWindow(void)
 {
     gSprites[gBattleStruct->moveInfoSpriteId].sHide = TRUE;
