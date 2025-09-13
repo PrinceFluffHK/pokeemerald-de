@@ -905,8 +905,18 @@ static u32 ChooseMoveOrAction_Doubles(u32 battler)
     }
 
     gBattlerTarget = mostViableTargetsArray[Random() % mostViableTargetsNo];
-    gAiBattleData->chosenTarget[battler] = gBattlerTarget;
-    return actionOrMoveIndex[gBattlerTarget];
+    
+    if ( gBattleMons[battler].volatiles.multipleTurns == TRUE 
+        && !(gDisableStructs[battler].isFirstTurn))
+    {
+        gAiBattleData->chosenTarget[battler] = gAiBattleData->previousTarget[battler];
+    } 
+    else
+    {
+        gAiBattleData->chosenTarget[battler] = gBattlerTarget;
+        gAiBattleData->previousTarget[battler] = gAiBattleData->chosenTarget[battler];
+    }
+        return actionOrMoveIndex[gBattlerTarget];
 }
 
 static inline bool32 ShouldConsiderMoveForBattler(u32 battlerAi, u32 battlerDef, u32 move)

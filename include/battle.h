@@ -805,6 +805,7 @@ struct AiBattleData
     u8 actionFlee:1;
     u8 choiceWatch:1;
     u8 padding:6;
+    u8 previousTarget[MAX_BATTLERS_COUNT];
 };
 
 // The palaceFlags member of struct BattleStruct contains 1 flag per move to indicate which moves the AI should consider,
