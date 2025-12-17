@@ -4101,6 +4101,7 @@ BattleScript_EffectWish::
 BattleScript_EffectIngrain::
 	attackcanceler
 	trysetvolatile BS_ATTACKER, VOLATILE_ROOT, BattleScript_ButItFailed
+	tryhealhalfhealth BS_ATTACKER, BattleScript_AlreadyAtFullHp
 	attackanimation
 	waitanimation
 	printstring STRINGID_PKMNPLANTEDROOTS
