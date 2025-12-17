@@ -2883,7 +2883,7 @@ static const struct OamData sOamData_MovePreviewWindow =
 static const struct SpriteTemplate sSpriteTemplate_MovePreviewWindow =
 {
     .tileTag = MOVE_PREVIEW_WINDOW_TAG,
-    .paletteTag = ABILITY_POP_UP_TAG,
+    .paletteTag = TAG_ABILITY_POP_UP,
     .oam = &sOamData_MovePreviewWindow,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
@@ -3106,7 +3106,7 @@ static void DestroyMoveInfoWinGfx(struct Sprite *sprite)
 static void DestroyMovePreviewWinGfx(struct Sprite *sprite)
 {
     FreeSpriteTilesByTag(MOVE_PREVIEW_WINDOW_TAG);
-    FreeSpritePaletteByTag(ABILITY_POP_UP_TAG);
+    FreeSpritePaletteByTag(TAG_ABILITY_POP_UP);
     DestroySprite(sprite);
     gBattleStruct->movePreviewSpriteId = MAX_SPRITES;
 }
