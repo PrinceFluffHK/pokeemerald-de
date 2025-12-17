@@ -405,7 +405,7 @@ static void HandleInputChooseAction(u32 battler)
         TryHideLastUsedBall();
         BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_THROW_BALL, 0);
         BtlController_Complete(battler);
-        PlayerBufferExecCompleted(battler);
+        // PlayerBufferExecCompleted(battler);
     }
     else if (JOY_NEW(L_BUTTON))
     {
