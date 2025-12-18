@@ -204,9 +204,11 @@ static u8 CalcBarFilledPixels(s32, s32, s32, s32 *, u8 *, u8);
 static void SpriteCb_AbilityPopUp(struct Sprite *);
 static void Task_FreeAbilityPopUpGfx(u8);
 
+static void CreateMovePreviewWindow(const struct SpriteSheet *sheet);
 static void SpriteCB_LastUsedBall(struct Sprite *);
 static void SpriteCB_LastUsedBallWin(struct Sprite *);
 static void SpriteCB_MoveInfoWin(struct Sprite *sprite);
+static void SpriteCB_MovePreviewWin(struct Sprite *sprite);
 
 static const struct OamData sOamData_64x32 =
 {
@@ -729,6 +731,7 @@ u8 CreateBattlerHealthboxSprites(u8 battler)
     gBattleStruct->ballSpriteIds[0] = MAX_SPRITES;
     gBattleStruct->ballSpriteIds[1] = MAX_SPRITES;
     gBattleStruct->moveInfoSpriteId = MAX_SPRITES;
+    gBattleStruct->movePreviewSpriteId = MAX_SPRITES;
 
     return healthboxLeftSpriteId;
 }
@@ -2830,6 +2833,7 @@ static const struct SpriteTemplate sSpriteTemplate_LastUsedBallWindow =
 };
 
 #define MOVE_INFO_WINDOW_TAG 0xE722
+#define MOVE_PREVIEW_WINDOW_TAG 0xE722
 
 static const struct OamData sOamData_MoveInfoWindow =
 {
@@ -2859,6 +2863,35 @@ static const struct SpriteTemplate sSpriteTemplate_MoveInfoWindow =
     .callback = SpriteCB_MoveInfoWin
 };
 
+static const struct OamData sOamData_MovePreviewWindow =
+{
+    .y = 0,
+    .affineMode = 0,
+    .objMode = 0,
+    .mosaic = 0,
+    .bpp = 0,
+    .shape = SPRITE_SHAPE(32x32),
+    .x = 0,
+    .matrixNum = 0,
+    .size = SPRITE_SIZE(32x32),
+    .tileNum = 0,
+    .priority = 1,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_MovePreviewWindow =
+{
+    .tileTag = MOVE_PREVIEW_WINDOW_TAG,
+    .paletteTag = TAG_ABILITY_POP_UP,
+    .oam = &sOamData_MovePreviewWindow,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_MovePreviewWin
+};
+
+
 #if B_LAST_USED_BALL_BUTTON == R_BUTTON && B_LAST_USED_BALL_CYCLE == TRUE
     static const u8 ALIGNED(4) sLastUsedBallWindowGfx[] = INCBIN_U8("graphics/battle_interface/last_used_ball_r_cycle.4bpp");
 #elif B_LAST_USED_BALL_CYCLE == TRUE
@@ -2879,9 +2912,28 @@ static const u8 sMoveInfoWindowGfx[] = INCBIN_U8("graphics/battle_interface/move
 static const u8 sMoveInfoWindowGfx[] = INCBIN_U8("graphics/battle_interface/move_info_window_l.4bpp");
 #endif
 
+static const u8 sMovePreviewWindowGfx[] = INCBIN_U8("graphics/battle_interface/move_preview_window.4bpp");
+static const u8 sMovePreviewWindowLGfx[] = INCBIN_U8("graphics/battle_interface/move_preview_window_r.4bpp");
+static const u8 sMovePreviewWindowRGfx[] = INCBIN_U8("graphics/battle_interface/move_preview_window_l.4bpp");
+
 static const struct SpriteSheet sSpriteSheet_MoveInfoWindow =
 {
     sMoveInfoWindowGfx, sizeof(sMoveInfoWindowGfx), MOVE_INFO_WINDOW_TAG
+};
+
+static const struct SpriteSheet sSpriteSheet_MovePreviewWindow =
+{
+    sMovePreviewWindowGfx, sizeof(sMovePreviewWindowGfx), MOVE_PREVIEW_WINDOW_TAG
+};
+
+static const struct SpriteSheet sSpriteSheet_MovePreviewWindowR =
+{
+    sMovePreviewWindowRGfx, sizeof(sMovePreviewWindowRGfx), MOVE_PREVIEW_WINDOW_TAG
+};
+
+static const struct SpriteSheet sSpriteSheet_MovePreviewWindowL =
+{
+    sMovePreviewWindowLGfx, sizeof(sMovePreviewWindowLGfx), MOVE_PREVIEW_WINDOW_TAG
 };
 
 #define LAST_USED_BALL_X_F    14
@@ -2998,9 +3050,48 @@ void TryToAddMoveInfoWindow(void)
     }
 }
 
+void TryToAddMovePreviewWindow(void)
+{
+    LoadSpritePalette(&sSpritePalette_AbilityPopUp);
+    if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)) && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+        CreateMovePreviewWindow(&sSpriteSheet_MovePreviewWindow);
+    else if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)) && !IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
+        CreateMovePreviewWindow(&sSpriteSheet_MovePreviewWindowL);
+    else
+        CreateMovePreviewWindow(&sSpriteSheet_MovePreviewWindowR);
+
+    /*if (GetSpriteTileStartByTag(MOVE_PREVIEW_WINDOW_TAG) == 0xFFFF)
+        LoadSpriteSheet(&sSpriteSheet_MovePreviewWindow);
+
+    if (gBattleStruct->movePreviewSpriteId == MAX_SPRITES)
+    {
+        gBattleStruct->movePreviewSpriteId = CreateSprite(&sSpriteTemplate_MovePreviewWindow, LAST_BALL_WIN_X_0, LAST_USED_WIN_Y + 32, 6);
+        gSprites[gBattleStruct->movePreviewSpriteId].sHide = FALSE;
+        gSprites[gBattleStruct->moveInfoSpriteId].sHide = TRUE;
+    }*/
+}
+
+void CreateMovePreviewWindow(const struct SpriteSheet *sheet)
+{
+    if (GetSpriteTileStartByTag(MOVE_PREVIEW_WINDOW_TAG) == 0xFFFF)
+        LoadSpriteSheet(sheet);
+
+    if (gBattleStruct->movePreviewSpriteId == MAX_SPRITES)
+    {
+        gBattleStruct->movePreviewSpriteId = CreateSprite(&sSpriteTemplate_MovePreviewWindow, LAST_BALL_WIN_X_0, LAST_USED_WIN_Y + 32, 6);
+        gSprites[gBattleStruct->movePreviewSpriteId].sHide = FALSE;
+        gSprites[gBattleStruct->moveInfoSpriteId].sHide = TRUE;
+    }
+}
+
 void TryToHideMoveInfoWindow(void)
 {
     gSprites[gBattleStruct->moveInfoSpriteId].sHide = TRUE;
+}
+
+void TryToHideMovePreviewWindow(void)
+{
+    gSprites[gBattleStruct->movePreviewSpriteId].sHide = TRUE;
 }
 
 static void DestroyMoveInfoWinGfx(struct Sprite *sprite)
@@ -3010,6 +3101,14 @@ static void DestroyMoveInfoWinGfx(struct Sprite *sprite)
         FreeSpritePaletteByTag(TAG_ABILITY_POP_UP);
     DestroySprite(sprite);
     gBattleStruct->moveInfoSpriteId = MAX_SPRITES;
+}
+
+static void DestroyMovePreviewWinGfx(struct Sprite *sprite)
+{
+    FreeSpriteTilesByTag(MOVE_PREVIEW_WINDOW_TAG);
+    FreeSpritePaletteByTag(TAG_ABILITY_POP_UP);
+    DestroySprite(sprite);
+    gBattleStruct->movePreviewSpriteId = MAX_SPRITES;
 }
 
 static void SpriteCB_LastUsedBallWin(struct Sprite *sprite)
@@ -3058,6 +3157,23 @@ static void SpriteCB_MoveInfoWin(struct Sprite *sprite)
 
         if (sprite->x == LAST_BALL_WIN_X_0)
             DestroyMoveInfoWinGfx(sprite);
+    }
+    else
+    {
+        if (sprite->x != LAST_BALL_WIN_X_F)
+            sprite->x++;
+    }
+}
+
+static void SpriteCB_MovePreviewWin(struct Sprite *sprite)
+{
+    if (sprite->sHide)
+    {
+        if (sprite->x != LAST_BALL_WIN_X_0)
+            sprite->x--;
+
+        if (sprite->x == LAST_BALL_WIN_X_0)
+            DestroyMovePreviewWinGfx(sprite);
     }
     else
     {
