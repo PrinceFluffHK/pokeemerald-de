@@ -5269,29 +5269,30 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Anorith  
+Ability: Battle Armor  
+Level: 12  
+Tera Type: Rock  
+- Water Gun  
+- Harden  
+- Smack Down  
 
-Geodude
-Level: 12
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+Lileep  
+Ability: Suction Cups  
+Level: 12  
+Tera Type: Rock  
+- Absorb  
+- Wrap  
+- Ingrain  
 
-Nosepass @ Oran Berry
-Level: 15
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Block
-- Harden
-- Tackle
-- Rock Tomb
+Nosepass  
+Ability: Sturdy  
+Level: 14  
+Tera Type: Rock  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Throw  
+- Tackle  
+- Thunder Wave  
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
@@ -5302,29 +5303,38 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Machop
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
-- Low Kick
-- Seismic Toss
-- Bulk Up
+Meditite  
+Ability: Pure Power  
+Level: 14  
+Tera Type: Fighting  
+- Confusion  
+- Feint  
+- Detect  
+- Meditate  
 
-Meditite
-Level: 16
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+Machop  
+Ability: Guts  
+Level: 14  
+Tera Type: Fighting  
+- Karate Chop  
+- Focus Energy  
+- Payback  
 
-Makuhita @ Sitrus Berry
-Level: 19
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+Makuhita  
+Ability: Guts  
+Level: 15  
+Tera Type: Fighting  
+- Fake Out  
+- Force Palm  
+- Bulk Up  
+
+Combusken  
+Ability: Blaze  
+Level: 16  
+Tera Type: Fire  
+- Double Kick  
+- Ember  
+- Quick Attack  
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -5335,37 +5345,48 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Voltorb
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+Plusle  
+Ability: Plus  
+Level: 20  
+Tera Type: Electric  
+- Electro Ball  
+- Quick Attack  
+- Trailblaze  
+- Swift  
 
-Electrike
-Level: 20
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+Minun  
+Ability: Minus  
+Level: 20  
+Tera Type: Electric  
+- Helping Hand  
+- Play Nice  
+- Spark  
 
-Magneton
-Level: 22
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
-- Thunder Wave
-- Sonic Boom
+Volbeat  
+Ability: Prankster  
+Level: 22  
+Tera Type: Bug  
+- Shock Wave  
+- Pounce  
+- Thunder Wave  
+- Tail Glow  
 
-Manectric @ Sitrus Berry
-Level: 24
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+Magneton  
+Ability: Sturdy  
+Level: 22  
+Tera Type: Electric  
+- Charge Beam  
+- Magnet Bomb  
+- Charge  
+
+Manectric  
+Ability: Static  
+Level: 24  
+Tera Type: Electric  
+- Thunder Fang  
+- Fire Fang  
+- Bite  
+- Howl  
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -5376,37 +5397,43 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Numel
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
+Vulpix  
+Ability: Drought  
+Level: 28  
+Tera Type: Fire  
+IVs: 0 Atk  
+- Flamethrower  
+- Disable  
+- Extrasensory  
 
-Slugma
-Level: 24
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
+Magcargo  
+Ability: Flame Body  
+Level: 28  
+Tera Type: Fire  
+- Rock Tomb  
+- Yawn  
+- Fire Spin  
+- Scorching Sands  
 
-Camerupt
-Level: 26
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Tackle
-- Sunny Day
-- Attract
+Koffing  
+Ability: Levitate  
+Level: 28  
+Tera Type: Poison  
+- Clear Smog  
+- Will-O-Wisp  
+- Self-Destruct  
+- Acid Spray  
 
-Torkoal @ White Herb
-Level: 29
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Sunny Day
-- Body Slam
-- Attract
+Camerupt  
+Ability: Magma Armor  
+Level: 29  
+Tera Type: Fire  
+
+Torkoal  
+Ability: White Smoke  
+Level: 31  
+Tera Type: Fire  
+IVs: 0 Atk  
 
 === TRAINER_NORMAN_1 ===
 Name: NORMAN
@@ -5417,37 +5444,59 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Spinda
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
-- Facade
-- Encore
+Vigoroth  
+Ability: Vital Spirit  
+Level: 30  
+Tera Type: Normal  
+- Focus Energy  
+- Counter  
+- Slash  
+- Brick Break  
 
-Vigoroth
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Facade
-- Encore
-- Feint Attack
+Loudred  
+Ability: Soundproof  
+Level: 30  
+Tera Type: Normal  
+- Echoed Voice  
+- Howl  
+- Bite  
+- Extrasensory  
 
-Linoone
-Level: 29
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
-- Facade
-- Headbutt
+Spinda  
+Ability: Contrary  
+Level: 31  
+Tera Type: Normal  
+- Psybeam  
+- Body Slam  
+- Sucker Punch  
+- Encore  
 
-Slaking @ Sitrus Berry
-Level: 31
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Counter
-- Yawn
-- Facade
-- Feint Attack
+Delcatty  
+Ability: Wonder Skin  
+Level: 31  
+Tera Type: Normal  
+- Fake Out  
+- Helping Hand  
+- Play Rough  
+- Facade  
+
+Linoone  
+Ability: Quick Feet  
+Level: 31  
+Tera Type: Normal  
+- Strength  
+- Rock Smash  
+- Surf  
+- Dig  
+
+Slaking  
+Ability: Truant  
+Level: 32  
+Tera Type: Normal  
+- Facade  
+- Feint Attack  
+- Slack Off  
+- Yawn  
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
@@ -5458,45 +5507,60 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Swablu
-Level: 29
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Perish Song
-- Mirror Move
-- Safeguard
-- Aerial Ace
+Pelipper  
+Ability: Gale Wings  
+Level: 33  
+Tera Type: Water  
+IVs: 0 Atk  
+- Tailwind  
+- Protect  
+- Scald  
+- Air Slash  
 
-Tropius
-Level: 29
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Synthesis
+Skarmory  
+Ability: Sturdy  
+Level: 33  
+Tera Type: Steel  
+- Spikes  
+- Drill Peck  
+- Steel Wing  
+- Drill Run  
 
-Pelipper
-Level: 30
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-- Water Gun
-- Supersonic
-- Protect
-- Aerial Ace
+Vibrava  
+Ability: Levitate  
+Level: 34  
+Tera Type: Ground  
+- Bug Buzz  
+- Heat Wave  
+- Dual Wingbeat  
+- U-turn  
 
-Skarmory
-Level: 31
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Sand Attack
-- Fury Attack
-- Steel Wing
-- Aerial Ace
+Swellow @ Flame Orb  
+Ability: Guts  
+Level: 33  
+Tera Type: Normal  
+- Brave Bird  
+- Quick Attack  
+- Protect  
+- Roost  
 
-Altaria @ Oran Berry
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+Tropius  
+Ability: Chlorophyll  
+Level: 35  
+Tera Type: Grass  
+- Dual Wingbeat  
+- Razor Leaf  
+- Outrage  
+- Dragon Hammer  
+
+Altaria  
+Ability: Cloud Nine  
+Level: 36  
+Tera Type: Dragon  
+- Alluring Voice  
+- Dragon Dance  
+- Earthquake  
+- Aerial Ace  
 
 === TRAINER_TATE_AND_LIZA_1 ===
 Name: TATE&LIZA
@@ -5507,37 +5571,62 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Claydol
-Level: 41
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Ancient Power
-- Psychic
-- Light Screen
+Xatu (F)  
+Ability: Magic Bounce  
+Level: 41  
+Tera Type: Psychic  
+IVs: 0 Atk  
+- Lucky Chant  
+- Calm Mind  
+- Stored Power  
+- Ominous Wind  
 
-Xatu
-Level: 41
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Psychic
-- Sunny Day
-- Confuse Ray
-- Calm Mind
+Claydol  
+Ability: Levitate  
+Level: 41  
+Tera Type: Ground  
+- Extrasensory  
+- Earthquake  
+- Shadow Ball  
+- Rapid Spin  
 
-Lunatone @ Sitrus Berry
-Level: 42
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Psychic
-- Hypnosis
-- Calm Mind
+Girafarig (M)  
+Ability: Inner Focus  
+Level: 41  
+Tera Type: Normal  
+IVs: 0 Atk  
+- Hyper Voice  
+- Helping Hand  
+- Reflect  
+- Psychic  
 
-Solrock @ Sitrus Berry
-Level: 42
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
+Medicham (F)  
+Ability: Pure Power  
+Level: 41  
+Tera Type: Fighting  
+- Zen Headbutt  
+- Meditate  
+- High Jump Kick  
+- Bullet Punch  
+
+Solrock  
+Ability: Levitate  
+Level: 43  
+Tera Type: Rock  
+- Rock Slide  
+- Flare Blitz  
+- Rock Polish  
+- Psyshock  
+
+Lunatone  
+Ability: Levitate  
+Level: 43  
+Tera Type: Rock  
+IVs: 0 Atk  
+- Psychic  
+- Moonlight  
+- Light Screen  
+- Moonblast  
 
 === TRAINER_JUAN_1 ===
 Name: JUAN
