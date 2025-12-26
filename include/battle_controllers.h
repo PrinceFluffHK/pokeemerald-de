@@ -391,6 +391,8 @@ void HandleInputShowTargets(u32 battler);
 void HandleMoveSwitching(u32 battler);
 void HandleChooseMoveAfterDma3(u32 battler);
 
+void CreateMovePreviewText(u32 BattlerPosition);
+
 // recorded player controller
 void SetControllerToRecordedPlayer(u32 battler);
 void RecordedPlayerBufferExecCompleted(u32 battler);
