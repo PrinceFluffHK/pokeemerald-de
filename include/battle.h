@@ -787,12 +787,11 @@ struct BattleStruct
     u8 tryDestinyBond:1;
     u8 tryGrudge:1;
     u16 flingItem;
+    // u8 movePreviewSpriteId; //preview info L gfx, R gfx
     u8 incrementEchoedVoice:1;
     u8 echoedVoiceCounter:3;
-    u8 padding3:4;
-    // u16 opponentMonCanTera:6;
-    // u16 opponentMonCanDynamax:6;
-    // u16 padding:2;
+    u8 movePreviewDisplayed:2;
+    u8 padding3:2;
 };
 
 struct AiBattleData
@@ -805,6 +804,7 @@ struct AiBattleData
     u8 actionFlee:1;
     u8 choiceWatch:1;
     u8 padding:6;
+    u8 previousTarget[MAX_BATTLERS_COUNT];
 };
 
 // The palaceFlags member of struct BattleStruct contains 1 flag per move to indicate which moves the AI should consider,
