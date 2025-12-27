@@ -431,7 +431,7 @@ static void HandleInputChooseAction(u32 battler)
             case 1:
                 if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
                 {
-                    CreateMovePreviewText(B_POSITION_OPPONENT_RIGHT);
+                    CreateMovePreviewText(B_POSITION_OPPONENT_LEFT);
                     gBattleStruct->movePreviewDisplayed=2;
                 }
                 else

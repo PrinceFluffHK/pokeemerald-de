@@ -787,7 +787,7 @@ struct BattleStruct
     u8 tryDestinyBond:1;
     u8 tryGrudge:1;
     u16 flingItem;
-    u8 movePreviewSpriteId; //preview info L gfx, R gfx
+    // u8 movePreviewSpriteId; //preview info L gfx, R gfx
     u8 incrementEchoedVoice:1;
     u8 echoedVoiceCounter:3;
     u8 movePreviewDisplayed:2;
