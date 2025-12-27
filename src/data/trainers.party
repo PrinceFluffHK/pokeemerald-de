@@ -260,10 +260,16 @@ AI: Smart Trainer
 Poochyena
 Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tackle
+- Sand Attack
+- Roar
 
 Carvanha
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Focus Energy
+- Scary Face
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -2321,15 +2327,15 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Igglybuff @ Nugget
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Pichu @ Nugget
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Budew @ Nugget
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_DAPHNE ===
@@ -5437,10 +5443,10 @@ Ability: White Smoke
 Level: 31  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 
-=== TRAINER_NORMAN_1 15
-Name: 15
-Class: 15
-Pic: 15 Norman
+=== TRAINER_NORMAN_1 ===
+Name: Norman
+Class: Leader
+Pic: Leader Norman
 Gender: Male
 Music: Male
 Double Battle: Yes
@@ -5449,6 +5455,7 @@ AI: Smart Trainer
 Vigoroth  
 Ability: Vital Spirit  
 Level: 30  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Focus Energy  
 - Counter  
 - Slash  
@@ -5457,6 +5464,7 @@ Level: 30
 Loudred  
 Ability: Soundproof  
 Level: 30  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Echoed Voice  
 - Howl  
 - Bite  
@@ -5465,6 +5473,7 @@ Level: 30
 Spinda  
 Ability: Contrary  
 Level: 31  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Psybeam  
 - Body Slam  
 - Sucker Punch  
@@ -5473,6 +5482,7 @@ Level: 31
 Delcatty  
 Ability: Wonder Skin  
 Level: 31  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fake Out  
 - Helping Hand  
 - Play Rough  
@@ -5481,6 +5491,7 @@ Level: 31
 Linoone  
 Ability: Quick Feet  
 Level: 31  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Strength  
 - Rock Smash  
 - Surf  
@@ -5489,6 +5500,7 @@ Level: 31
 Slaking  
 Ability: Truant  
 Level: 32  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Facade  
 - Feint Attack  
 - Slack Off  
@@ -5506,11 +5518,11 @@ AI: Smart Trainer
 Pelipper  
 Ability: Gale Wings  
 Level: 33  
-IVs: 15 Atk  
-15 Tailwind  
-15 Protect  
-15 Scald  
-15 Air 15
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Tailwind  
+- Protect  
+- Scald  
+- Air Slash
 
 Skarmory  
 Ability: Sturdy  
@@ -5564,11 +5576,11 @@ AI: Smart Trainer
 Xatu (F)  
 Ability: Magic Bounce  
 Level: 41  
-IVs: 15 Atk  
-15 Lucky 15
-- Calm 15  
-- 15 Power  
-15 Ominous Wind  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Lucky Chant
+- Calm Mind  
+- Stored Power  
+- Ominous Wind  
 
 Claydol  
 Ability: Levitate  
@@ -5581,11 +5593,10 @@ Level: 41
 Girafarig (M)  
 Ability: Inner Focus  
 Level: 41  
-IVs: 15 Atk  
-15 Hyper 15
-- Helping 15  
-- 15  
-- 15  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe   
+- Hyper Voice
+- Helping Hand
+- Bounce
 
 Medicham (F)  
 Ability: Pure Power  
@@ -5606,11 +5617,10 @@ Level: 43
 Lunatone  
 Ability: Levitate  
 Level: 43  
-IVs: 15 Atk  
-15 Psychic  
-15 Moonlight  
-15 Light 15
-- 15
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psychic  
+- Moonlight  
+- Light Screen
 
 === TRAINER_JUAN_1 ===
 Name: JUAN
@@ -6879,9 +6889,9 @@ Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WALLACE ===
-Name: WALLACE
+Name: STEVEN
 Class: Champion
-Pic: Champion Wallace
+Pic: Steven
 Gender: Male
 Music: Male
 Double Battle: Yes
