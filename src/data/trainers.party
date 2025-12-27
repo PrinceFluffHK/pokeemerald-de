@@ -258,14 +258,14 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poochyena
-Level: 6
+Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Tackle
 - Sand Attack
 - Roar
 
 Carvanha
-Level: 7
+Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Bite
 - Focus Energy
@@ -2784,15 +2784,15 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Treecko @ Nugget
-Level: 5
+Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Torchic @ Nugget
-Level: 5
+Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Mudkip @ Nugget
-Level: 5
+Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MOLLIE ===
@@ -6977,20 +6977,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magikarp
-Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Magikarp
 Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flail
+- Splash
 
 Magikarp
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flail
+- Splash
 
 Magikarp
 Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flail
+- Splash
+
+Magikarp
+Level: 9
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Flail
+- Splash
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -9733,11 +9741,11 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seedot
-Level: 6
+Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Lotad
-Level: 6
+Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MIU_AND_YUKI ===
@@ -12119,11 +12127,11 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Swablu
-Level: 7
+Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Shroomish
-Level: 7
+Level: 8
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_JANICE ===
@@ -12331,19 +12339,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Wurmple
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wurmple
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wurmple
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wurmple
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_JOSE ===
@@ -14082,7 +14090,7 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Magikarp
+Feebas
 Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
