@@ -194,9 +194,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Repeatedly slaps the foe\n"
             "2 to 5 times."),
         .effect = EFFECT_MULTI_HIT,
-        .power = 30, //15,
-        .type = TYPE_FAIRY, //TYPE_NORMAL,
-        .accuracy = 100, //85,
+        .power = 30 //15,
+        .type = TYPE_FAIRY //TYPE_NORMAL,
+        .accuracy = 100 //85,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
