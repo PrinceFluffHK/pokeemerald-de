@@ -204,7 +204,7 @@ static u8 CalcBarFilledPixels(s32, s32, s32, s32 *, u8 *, u8);
 static void SpriteCb_AbilityPopUp(struct Sprite *);
 static void Task_FreeAbilityPopUpGfx(u8);
 
-static void CreateMovePreviewWindow(const struct SpriteSheet *sheet);
+// static void CreateMovePreviewWindow(const struct SpriteSheet *sheet);
 static void SpriteCB_LastUsedBall(struct Sprite *);
 static void SpriteCB_LastUsedBallWin(struct Sprite *);
 static void SpriteCB_MoveInfoWin(struct Sprite *sprite);
