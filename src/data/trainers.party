@@ -260,10 +260,16 @@ AI: Smart Trainer
 Poochyena
 Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Tackle
+- Sand Attack
+- Roar
 
 Carvanha
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Focus Energy
+- Scary Face
 
 === TRAINER_MARCEL ===
 Name: MARCEL
@@ -6883,9 +6889,9 @@ Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_WALLACE ===
-Name: WALLACE
+Name: STEVEN
 Class: Champion
-Pic: Champion Wallace
+Pic: Steven
 Gender: Male
 Music: Male
 Double Battle: Yes
