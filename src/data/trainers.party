@@ -6627,12 +6627,12 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
-Level: 10
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
 Aron
 Level: 9
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Geodude
+Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_JOEY ===
