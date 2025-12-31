@@ -7308,10 +7308,10 @@ static void Cmd_switchindataupdate(void)
     #if TESTING
     if (gTestRunnerEnabled)
     {
-        u32 side = GetBattlerSide(battler);
+        u32 array = (!IsPartnerMonFromSameTrainer(battler)) ? battler : GetBattlerSide(battler);
         u32 partyIndex = gBattlerPartyIndexes[battler];
-        if (TestRunner_Battle_GetForcedAbility(side, partyIndex))
-            gBattleMons[battler].ability = TestRunner_Battle_GetForcedAbility(side, partyIndex);
+        if (TestRunner_Battle_GetForcedAbility(array, partyIndex))
+            gBattleMons[battler].ability = TestRunner_Battle_GetForcedAbility(array, partyIndex);
     }
     #endif
 
@@ -11846,9 +11846,9 @@ static void Cmd_healpartystatus(void)
                 #if TESTING
                 if (gTestRunnerEnabled)
                 {
-                    u32 side = GetBattlerSide(gBattlerAttacker);
-                    if (TestRunner_Battle_GetForcedAbility(side, i))
-                        ability = TestRunner_Battle_GetForcedAbility(side, i);
+                    u32 array = (!IsPartnerMonFromSameTrainer(gBattlerAttacker)) ? gBattlerAttacker : GetBattlerSide(gBattlerAttacker);
+                    if (TestRunner_Battle_GetForcedAbility(array, i))
+                        ability = TestRunner_Battle_GetForcedAbility(array, i);
                 }
                 #endif
             }
@@ -13957,8 +13957,9 @@ static void Cmd_givecaughtmon(void)
         if (B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9)
         {
             u16 lostItem = gBattleStruct->itemLost[B_SIDE_OPPONENT][gBattlerPartyIndexes[GetCatchingBattler()]].originalItem;
-            if (lostItem != ITEM_NONE && GetItemPocket(lostItem) != POCKET_BERRIES)
-                SetMonData(caughtMon, MON_DATA_HELD_ITEM, &lostItem);  // Restore non-berry items
+            // if (lostItem != ITEM_NONE && GetItemPocket(lostItem) != POCKET_BERRIES)
+            if (lostItem != ITEM_NONE)
+                SetMonData(caughtMon, MON_DATA_HELD_ITEM, &lostItem);  // Restore consumed items
         }
 
         if (GiveMonToPlayer(caughtMon) != MON_GIVEN_TO_PARTY
