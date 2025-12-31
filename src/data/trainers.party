@@ -5211,15 +5211,6 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Pink
 
-Froslass  
-Ability: Snow Warning  
-Level: 53  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Shadow Ball  
-- Draining Kiss  
-- Disable  
-- Ice Beam  
-
 Glalie  
 Ability: Inner Focus  
 Level: 53  
@@ -5228,14 +5219,23 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Ice Spinner  
 - Super Fang  
 
+Froslass  
+Ability: Snow Warning  
+Level: 53  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Ball  
+- Draining Kiss  
+- Icy Wind  
+- Disable  
+
 Donphan  
 Ability: Sturdy  
 Level: 53  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Ice Shard  
 - High Horsepower  
-- Knock Off  
 - Body Press  
+- Rapid Spin  
 
 Jynx  
 Ability: Oblivious  
@@ -5246,13 +5246,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Lovely Kiss  
 - Psychic  
 
-Lapras  
-Ability: Water Absorb  
+Ninetales-Alola
+Ability: Snow Warning
 Level: 54  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Freeze-Dry  
-- Alluring Voice  
-- Chilling Water  
+- Blizzard  
+- Moonblast  
+- Aurora Veil  
 - Life Dew  
 
 Walrein @ Leftovers  
@@ -5311,7 +5311,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Ice Beam  
 
 Sceptile  
-Ability: Unburden  
+Ability: Technician  
 Level: 55  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Dual Chop  
