@@ -5083,45 +5083,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Purple
 
-Mightyena
-Level: 46
+Mightyena  
+Ability: Intimidate  
+Level: 49  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
+- Snarl  
+- Crunch  
+- Play Rough  
+- Taunt  
 
-Shiftry
-Level: 48
+Crobat  
+Ability: Inner Focus  
+Level: 49  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
+- Cross Poison  
+- Dual Wingbeat  
+- Heat Wave  
+- U-turn  
 
-Cacturne
-Level: 46
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
+Cacturne  
+Ability: Rough Skin  
+Level: 50  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spiky Shield  
+- Leech Seed  
+- Dark Pulse  
+- Giga Drain  
 
-Crawdaunt
-Level: 48
+Crawdaunt  
+Ability: Adaptability  
+Level: 50  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
+- Swords Dance  
+- Aqua Jet  
+- Crabhammer  
+- Knock Off  
 
-Absol @ Sitrus Berry
-Level: 49
+Shiftry  
+Ability: Wind Rider  
+Level: 50  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
+- Leaf Blade  
+- Throat Chop  
+- Fake Out  
+- Extrasensory  
+
+Absol  
+Ability: Super Luck  
+Level: 51  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Night Slash  
+- Doom Desire  
+- Swords Dance  
+- Extreme Speed  
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
@@ -5133,45 +5147,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Green
 
-Dusclops
-Level: 48
+Dusclops @ Eviolite  
+Ability: Frisk  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
+Level: 51  
+- Protect  
+- Trick Room  
+- Night Shade  
+- Ally Switch  
 
-Banette
-Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
-
-Sableye
-Level: 50
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
-
-Banette
-Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
-
-Dusclops @ Sitrus Berry
+Sableye  
+Ability: Prankster  
 Level: 51
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
-- Earthquake
+- Fake Out  
+- Will-O-Wisp  
+- Foul Play  
+- Poltergeist  
+
+Bellossom  
+Ability: Flower Veil  
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast  
+- Quiver Dance  
+- Energy Ball  
+- Strength Sap  
+
+Shedinja  
+Ability: Wonder Guard  
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Phantom Force  
+- X-Scissor  
+- Ally Switch  
+- Swords Dance  
+
+Banette  
+Ability: Cursed Body  
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Shadow Claw  
+- Body Slam  
+- Knock Off  
+- Shadow Sneak  
+
+Dusknoir @ Life Orb  
+Ability: Levitate  
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Shadow Punch  
+- Ice Punch  
+- Fire Punch  
+- Thunder Punch  
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -5183,45 +5211,58 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Pink
 
-Sealeo
-Level: 50
+Glalie  
+Ability: Inner Focus  
+Level: 53  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
+- Crunch  
+- Ice Spinner  
+- Super Fang  
 
-Glalie
-Level: 50
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
+Froslass  
+Ability: Snow Warning  
+Level: 53  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Ball  
+- Draining Kiss  
+- Icy Wind  
+- Disable  
 
-Sealeo
-Level: 52
+Donphan  
+Ability: Sturdy  
+Level: 53  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Attract
-- Double Edge
-- Hail
-- Blizzard
+- Ice Shard  
+- High Horsepower  
+- Body Press  
+- Rapid Spin  
 
-Glalie
-Level: 52
+Jynx  
+Ability: Oblivious  
+Level: 53  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
+- Fake Out  
+- Ice Beam  
+- Lovely Kiss  
+- Psychic  
 
-Walrein @ Sitrus Berry
-Level: 53
+Ninetales-Alola
+Ability: Snow Warning
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Blizzard  
+- Moonblast  
+- Aurora Veil  
+- Life Dew  
+
+Walrein @ Leftovers  
+Ability: Ice Body  
+Level: 55  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
+- Glaciate  
+- Dive  
+- Body Slam  
+- Snowscape  
 
 === TRAINER_DRAKE ===
 Name: DRAKE
@@ -5233,45 +5274,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Blue
 
-Shelgon
-Level: 52
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+Gyarados  
+Ability: Intimidate  
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall  
+- Dragon Dance  
+- Crunch  
+- Earthquake  
 
-Altaria
-Level: 54
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+Flygon  
+Ability: Levitate  
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- U-turn  
+- Rock Slide  
+- Dragon Claw  
+- Earth Power  
 
-Kingdra
-Level: 53
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
+Altaria  
+Ability: Cloud Nine  
+Level: 55  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast  
+- Dragon Pulse  
+- Heal Bell  
+- Feather Dance  
 
-Flygon
-Level: 53
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
+Kingdra  
+Ability: Swift Swim  
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flip Turn  
+- Scald  
+- Outrage  
+- Ice Beam  
 
-Salamence @ Sitrus Berry
-Level: 55
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flamethrower
-- Dragon Claw
-- Rock Slide
-- Crunch
+Sceptile  
+Ability: Technician  
+Level: 55  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dual Chop  
+- Detect  
+- Leaf Blade  
+- Iron Tail  
+
+Salamence  
+Ability: Intimidate  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dragon Claw  
+- Dual Wingbeat  
+- Flamethrower  
+- Dragon Dance  
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -5411,9 +5466,11 @@ AI: Smart Trainer
 
 Vulpix  
 Ability: Drought  
-Level: 28  
+Level: 28    
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-
+- Flamethrower  
+- Disable  
+- Extrasensory  
 
 Magcargo  
 Ability: Flame Body  
@@ -5592,11 +5649,11 @@ Level: 41
 
 Girafarig (M)  
 Ability: Inner Focus  
-Level: 41  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe   
-- Hyper Voice
-- Helping Hand
-- Bounce
+Level: 41    
+- Hyper Voice  
+- Helping Hand  
+- Reflect  
+- Psychic  
 
 Medicham (F)  
 Ability: Pure Power  
@@ -6627,12 +6684,12 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
-Level: 10
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
 Aron
 Level: 9
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Geodude
+Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_JOEY ===
@@ -6898,53 +6955,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Yellow
 
-Wailord
-Level: 57
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
+Skarmory  
+Ability: Weak Armor  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spikes  
+- Iron Head  
+- Drill Peck  
+- Toxic  
 
-Tentacruel
-Level: 55
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
-- Ice Beam
+Claydol  
+Ability: Levitate  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sandstorm  
+- Extrasensory  
+- Ancient Power  
+- Earth Power  
 
-Ludicolo
-Level: 56
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
+Cradily  
+Ability: Storm Drain  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe    
+- Stealth Rock  
+- Giga Drain  
+- Sandstorm  
+- Acid  
 
-Whiscash
-Level: 56
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+Armaldo  
+Ability: Swift Swim  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- X-Scissor  
+- Rock Slide  
+- Knock Off  
+- Rapid Spin  
 
-Gyarados
-Level: 56
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
+Aggron  
+Ability: Sturdy  
+Level: 57  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heavy Slam  
+- Head Smash  
+- Body Press  
+- Dragon Tail  
 
-Milotic @ Sitrus Berry
-Level: 58
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
+Metagross  
+Ability: Full Metal Body  
+Level: 60  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Meteor Mash  
+- Zen Headbutt  
+- Stomping Tantrum  
+- Shadow Ball  
 
 === TRAINER_ANDREW ===
 Name: ANDREW
