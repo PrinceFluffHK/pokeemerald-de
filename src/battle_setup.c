@@ -1307,6 +1307,7 @@ static void HandleBattleVariantEndParty(void)
 static void CB2_EndTrainerBattle(void)
 {
     HandleBattleVariantEndParty();
+    HealPlayerParty();
 
     gIsDebugBattle = FALSE;
     if (FollowerNPCIsBattlePartner())
