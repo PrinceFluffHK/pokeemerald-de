@@ -4355,16 +4355,16 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                 effect++;
             }
             break;
-        case ABILITY_PSYCH_OUT:
-            if (!gSpecialStatuses[battler].switchInAbilityDone)
-            {
-                gBattlerAttacker = battler;
-                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                SET_STATCHANGER(STAT_SPATK, 1, TRUE);
-                BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivates);
-                effect++;
-            }
-            break;
+        // case ABILITY_PSYCH_OUT:
+        //     if (!gSpecialStatuses[battler].switchInAbilityDone)
+        //     {
+        //         gBattlerAttacker = battler;
+        //         gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+        //         SET_STATCHANGER(STAT_SPATK, 1, TRUE);
+        //         BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivates);
+        //         effect++;
+        //     }
+        //     break;
         case ABILITY_SUPERSWEET_SYRUP:
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && !GetBattlerPartyState(battler)->supersweetSyrup
@@ -8706,11 +8706,11 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         if (ctx->updateFlags)
             RecordAbilityBattle(ctx->battlerAtk, ctx->abilityAtk);
     }
-    else if ((moveType == TYPE_POISON) && defType == TYPE_STEEL && GetBattlerAbility(battlerAtk) == ABILITY_CORROSION && mod == UQ_4_12(0.0))
+    else if ((ctx->moveType == TYPE_POISON) && defType == TYPE_STEEL && GetBattlerAbility(ctx->battlerAtk) == ABILITY_CORROSION && mod == UQ_4_12(0.0))
     {
         mod = UQ_4_12(1.0);
-        if (recordAbilities)
-            RecordAbilityBattle(battlerAtk, ABILITY_CORROSION);
+        if (ctx->updateFlags)
+            RecordAbilityBattle(ctx->battlerAtk, ABILITY_CORROSION);
     }
 
     if (ctx->moveType == TYPE_PSYCHIC && defType == TYPE_DARK && gBattleMons[ctx->battlerDef].volatiles.miracleEye && mod == UQ_4_12(0.0))
