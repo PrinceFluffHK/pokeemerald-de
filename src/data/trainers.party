@@ -52,7 +52,6 @@ Optional fields for Pokemon:
     - Dynamax Level (Number between 0 and 10, default 10, also sets "shouldDynamax" to True)
     - Gigantamax (Yes/No, sets to Gigantamax factor)
                  (doesn't do anything to Pokemon without a Gigantamax form, also sets "shouldDynamax" to True)
-    - Tera Type (Set to a Type, either Fire or TYPE_FIRE, also sets "shouldTerastal" to True)
 Moves are defined with a - (dash) followed by a single space, then the move name.
 Either "- Tackle" or "- MOVE_TACKLE" works. One move per line.
 Moves have to be the last lines of a Pokemon.
@@ -5070,45 +5069,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Purple
 
-Mightyena
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
-- Crunch
+Mightyena  
+Ability: Intimidate  
+Level: 49  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Snarl  
+- Crunch  
+- Play Rough  
+- Taunt  
 
-Shiftry
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
+Crobat  
+Ability: Inner Focus  
+Level: 49  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Cross Poison  
+- Dual Wingbeat  
+- Heat Wave  
+- U-turn  
 
-Cacturne
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
+Cacturne  
+Ability: Rough Skin  
+Level: 50  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spiky Shield  
+- Leech Seed  
+- Dark Pulse  
+- Giga Drain  
 
-Crawdaunt
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
+Crawdaunt  
+Ability: Adaptability  
+Level: 50  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Swords Dance  
+- Aqua Jet  
+- Crabhammer  
+- Knock Off  
 
-Absol @ Sitrus Berry
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
+Shiftry  
+Ability: Wind Rider  
+Level: 50  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Leaf Blade  
+- Throat Chop  
+- Fake Out  
+- Extrasensory  
+
+Absol  
+Ability: Super Luck  
+Level: 51  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Night Slash  
+- Doom Desire  
+- Swords Dance  
+- Extreme Speed  
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
@@ -5120,45 +5133,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Green
 
-Dusclops
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
-- Protect
+Dusclops @ Eviolite  
+Ability: Frisk  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Level: 51  
+- Protect  
+- Trick Room  
+- Night Shade  
+- Ally Switch  
 
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
-- Will O Wisp
-- Feint Attack
-
-Sableye
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
-
-Dusclops @ Sitrus Berry
+Sableye  
+Ability: Prankster  
 Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
-- Earthquake
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fake Out  
+- Will-O-Wisp  
+- Foul Play  
+- Poltergeist  
+
+Bellossom  
+Ability: Flower Veil  
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast  
+- Quiver Dance  
+- Energy Ball  
+- Strength Sap  
+
+Shedinja  
+Ability: Wonder Guard  
+Level: 51
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Phantom Force  
+- X-Scissor  
+- Ally Switch  
+- Swords Dance  
+
+Banette  
+Ability: Cursed Body  
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Shadow Claw  
+- Body Slam  
+- Knock Off  
+- Shadow Sneak  
+
+Dusknoir @ Life Orb  
+Ability: Levitate  
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Shadow Punch  
+- Ice Punch  
+- Fire Punch  
+- Thunder Punch  
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -5170,45 +5197,58 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Pink
 
-Sealeo
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
+Froslass  
+Ability: Snow Warning  
+Level: 53  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Ball  
+- Draining Kiss  
+- Disable  
+- Ice Beam  
 
-Glalie
-Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
-- Ice Beam
+Glalie  
+Ability: Inner Focus  
+Level: 53  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Crunch  
+- Ice Spinner  
+- Super Fang  
 
-Sealeo
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
-- Blizzard
+Donphan  
+Ability: Sturdy  
+Level: 53  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Ice Shard  
+- High Horsepower  
+- Knock Off  
+- Body Press  
 
-Glalie
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
+Jynx  
+Ability: Oblivious  
+Level: 53  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Fake Out  
+- Ice Beam  
+- Lovely Kiss  
+- Psychic  
 
-Walrein @ Sitrus Berry
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
+Lapras  
+Ability: Water Absorb  
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Freeze-Dry  
+- Alluring Voice  
+- Chilling Water  
+- Life Dew  
+
+Walrein @ Leftovers  
+Ability: Ice Body  
+Level: 55  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Glaciate  
+- Dive  
+- Body Slam  
+- Snowscape  
 
 === TRAINER_DRAKE ===
 Name: DRAKE
@@ -5220,45 +5260,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Blue
 
-Shelgon
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+Gyarados  
+Ability: Intimidate  
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall  
+- Dragon Dance  
+- Crunch  
+- Earthquake  
 
-Altaria
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+Flygon  
+Ability: Levitate  
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- U-turn  
+- Rock Slide  
+- Dragon Claw  
+- Earth Power  
 
-Kingdra
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
+Altaria  
+Ability: Cloud Nine  
+Level: 55  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast  
+- Dragon Pulse  
+- Heal Bell  
+- Feather Dance  
 
-Flygon
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Crunch
-- Dragon Breath
-- Earthquake
+Kingdra  
+Ability: Swift Swim  
+Level: 54  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flip Turn  
+- Scald  
+- Outrage  
+- Ice Beam  
 
-Salamence @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Dragon Claw
-- Rock Slide
-- Crunch
+Sceptile  
+Ability: Unburden  
+Level: 55  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dual Chop  
+- Detect  
+- Leaf Blade  
+- Iron Tail  
+
+Salamence  
+Ability: Intimidate  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dragon Claw  
+- Dual Wingbeat  
+- Flamethrower  
+- Dragon Dance  
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -5272,7 +5326,6 @@ AI: Smart Trainer
 Anorith  
 Ability: Battle Armor  
 Level: 12  
-Tera Type: Rock  
 - Water Gun  
 - Harden  
 - Smack Down  
@@ -5280,7 +5333,6 @@ Tera Type: Rock
 Lileep  
 Ability: Suction Cups  
 Level: 12  
-Tera Type: Rock  
 - Absorb  
 - Wrap  
 - Ingrain  
@@ -5288,7 +5340,6 @@ Tera Type: Rock
 Nosepass  
 Ability: Sturdy  
 Level: 14  
-Tera Type: Rock  
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Rock Throw  
 - Tackle  
@@ -5306,7 +5357,6 @@ AI: Smart Trainer
 Meditite  
 Ability: Pure Power  
 Level: 14  
-Tera Type: Fighting  
 - Confusion  
 - Feint  
 - Detect  
@@ -5315,7 +5365,6 @@ Tera Type: Fighting
 Machop  
 Ability: Guts  
 Level: 14  
-Tera Type: Fighting  
 - Karate Chop  
 - Focus Energy  
 - Payback  
@@ -5323,7 +5372,6 @@ Tera Type: Fighting
 Makuhita  
 Ability: Guts  
 Level: 15  
-Tera Type: Fighting  
 - Fake Out  
 - Force Palm  
 - Bulk Up  
@@ -5331,7 +5379,6 @@ Tera Type: Fighting
 Combusken  
 Ability: Blaze  
 Level: 16  
-Tera Type: Fire  
 - Double Kick  
 - Ember  
 - Quick Attack  
@@ -5348,7 +5395,6 @@ AI: Smart Trainer
 Plusle  
 Ability: Plus  
 Level: 20  
-Tera Type: Electric  
 - Electro Ball  
 - Quick Attack  
 - Trailblaze  
@@ -5357,7 +5403,6 @@ Tera Type: Electric
 Minun  
 Ability: Minus  
 Level: 20  
-Tera Type: Electric  
 - Helping Hand  
 - Play Nice  
 - Spark  
@@ -5365,7 +5410,6 @@ Tera Type: Electric
 Volbeat  
 Ability: Prankster  
 Level: 22  
-Tera Type: Bug  
 - Shock Wave  
 - Pounce  
 - Thunder Wave  
@@ -5374,7 +5418,6 @@ Tera Type: Bug
 Magneton  
 Ability: Sturdy  
 Level: 22  
-Tera Type: Electric  
 - Charge Beam  
 - Magnet Bomb  
 - Charge  
@@ -5382,7 +5425,6 @@ Tera Type: Electric
 Manectric  
 Ability: Static  
 Level: 24  
-Tera Type: Electric  
 - Thunder Fang  
 - Fire Fang  
 - Bite  
@@ -5399,9 +5441,7 @@ AI: Smart Trainer
 
 Vulpix  
 Ability: Drought  
-Level: 28  
-Tera Type: Fire  
-IVs: 0 Atk  
+Level: 28    
 - Flamethrower  
 - Disable  
 - Extrasensory  
@@ -5409,7 +5449,6 @@ IVs: 0 Atk
 Magcargo  
 Ability: Flame Body  
 Level: 28  
-Tera Type: Fire  
 - Rock Tomb  
 - Yawn  
 - Fire Spin  
@@ -5418,7 +5457,6 @@ Tera Type: Fire
 Koffing  
 Ability: Levitate  
 Level: 28  
-Tera Type: Poison  
 - Clear Smog  
 - Will-O-Wisp  
 - Self-Destruct  
@@ -5427,13 +5465,10 @@ Tera Type: Poison
 Camerupt  
 Ability: Magma Armor  
 Level: 29  
-Tera Type: Fire  
 
 Torkoal  
 Ability: White Smoke  
-Level: 31  
-Tera Type: Fire  
-IVs: 0 Atk  
+Level: 31    
 
 === TRAINER_NORMAN_1 ===
 Name: NORMAN
@@ -5447,7 +5482,6 @@ AI: Smart Trainer
 Vigoroth  
 Ability: Vital Spirit  
 Level: 30  
-Tera Type: Normal  
 - Focus Energy  
 - Counter  
 - Slash  
@@ -5456,7 +5490,6 @@ Tera Type: Normal
 Loudred  
 Ability: Soundproof  
 Level: 30  
-Tera Type: Normal  
 - Echoed Voice  
 - Howl  
 - Bite  
@@ -5465,7 +5498,6 @@ Tera Type: Normal
 Spinda  
 Ability: Contrary  
 Level: 31  
-Tera Type: Normal  
 - Psybeam  
 - Body Slam  
 - Sucker Punch  
@@ -5474,7 +5506,6 @@ Tera Type: Normal
 Delcatty  
 Ability: Wonder Skin  
 Level: 31  
-Tera Type: Normal  
 - Fake Out  
 - Helping Hand  
 - Play Rough  
@@ -5483,7 +5514,6 @@ Tera Type: Normal
 Linoone  
 Ability: Quick Feet  
 Level: 31  
-Tera Type: Normal  
 - Strength  
 - Rock Smash  
 - Surf  
@@ -5492,7 +5522,6 @@ Tera Type: Normal
 Slaking  
 Ability: Truant  
 Level: 32  
-Tera Type: Normal  
 - Facade  
 - Feint Attack  
 - Slack Off  
@@ -5509,9 +5538,7 @@ AI: Smart Trainer
 
 Pelipper  
 Ability: Gale Wings  
-Level: 33  
-Tera Type: Water  
-IVs: 0 Atk  
+Level: 33    
 - Tailwind  
 - Protect  
 - Scald  
@@ -5520,7 +5547,6 @@ IVs: 0 Atk
 Skarmory  
 Ability: Sturdy  
 Level: 33  
-Tera Type: Steel  
 - Spikes  
 - Drill Peck  
 - Steel Wing  
@@ -5529,7 +5555,6 @@ Tera Type: Steel
 Vibrava  
 Ability: Levitate  
 Level: 34  
-Tera Type: Ground  
 - Bug Buzz  
 - Heat Wave  
 - Dual Wingbeat  
@@ -5538,7 +5563,6 @@ Tera Type: Ground
 Swellow @ Flame Orb  
 Ability: Guts  
 Level: 33  
-Tera Type: Normal  
 - Brave Bird  
 - Quick Attack  
 - Protect  
@@ -5547,7 +5571,6 @@ Tera Type: Normal
 Tropius  
 Ability: Chlorophyll  
 Level: 35  
-Tera Type: Grass  
 - Dual Wingbeat  
 - Razor Leaf  
 - Outrage  
@@ -5556,7 +5579,6 @@ Tera Type: Grass
 Altaria  
 Ability: Cloud Nine  
 Level: 36  
-Tera Type: Dragon  
 - Alluring Voice  
 - Dragon Dance  
 - Earthquake  
@@ -5573,9 +5595,7 @@ AI: Smart Trainer
 
 Xatu (F)  
 Ability: Magic Bounce  
-Level: 41  
-Tera Type: Psychic  
-IVs: 0 Atk  
+Level: 41    
 - Lucky Chant  
 - Calm Mind  
 - Stored Power  
@@ -5584,7 +5604,6 @@ IVs: 0 Atk
 Claydol  
 Ability: Levitate  
 Level: 41  
-Tera Type: Ground  
 - Extrasensory  
 - Earthquake  
 - Shadow Ball  
@@ -5592,9 +5611,7 @@ Tera Type: Ground
 
 Girafarig (M)  
 Ability: Inner Focus  
-Level: 41  
-Tera Type: Normal  
-IVs: 0 Atk  
+Level: 41    
 - Hyper Voice  
 - Helping Hand  
 - Reflect  
@@ -5603,7 +5620,6 @@ IVs: 0 Atk
 Medicham (F)  
 Ability: Pure Power  
 Level: 41  
-Tera Type: Fighting  
 - Zen Headbutt  
 - Meditate  
 - High Jump Kick  
@@ -5612,7 +5628,6 @@ Tera Type: Fighting
 Solrock  
 Ability: Levitate  
 Level: 43  
-Tera Type: Rock  
 - Rock Slide  
 - Flare Blitz  
 - Rock Polish  
@@ -5620,9 +5635,7 @@ Tera Type: Rock
 
 Lunatone  
 Ability: Levitate  
-Level: 43  
-Tera Type: Rock  
-IVs: 0 Atk  
+Level: 43    
 - Psychic  
 - Moonlight  
 - Light Screen  
@@ -6910,53 +6923,59 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Yellow
 
-Wailord
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
+Skarmory  
+Ability: Weak Armor  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spikes  
+- Iron Head  
+- Drill Peck  
+- Toxic  
 
-Tentacruel
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
-- Ice Beam
+Claydol  
+Ability: Levitate  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sandstorm  
+- Extrasensory  
+- Ancient Power  
+- Earth Power  
 
-Ludicolo
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Surf
-- Leech Seed
-- Double Team
+Cradily  
+Ability: Storm Drain  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe    
+- Stealth Rock  
+- Giga Drain  
+- Sandstorm  
+- Acid  
 
-Whiscash
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+Armaldo  
+Ability: Swift Swim  
+Level: 56  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- X-Scissor  
+- Rock Slide  
+- Knock Off  
+- Rapid Spin  
 
-Gyarados
-Level: 56
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Dragon Dance
-- Earthquake
-- Hyper Beam
-- Surf
+Aggron  
+Ability: Sturdy  
+Level: 57  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heavy Slam  
+- Head Smash  
+- Body Press  
+- Dragon Tail  
 
-Milotic @ Sitrus Berry
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
+Metagross  
+Ability: Full Metal Body  
+Level: 60  
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Meteor Mash  
+- Zen Headbutt  
+- Stomping Tantrum  
+- Shadow Ball  
 
 === TRAINER_ANDREW ===
 Name: ANDREW
