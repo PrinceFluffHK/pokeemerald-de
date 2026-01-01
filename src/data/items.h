@@ -2010,6 +2010,7 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_RareCandy,
         .iconPalette = gItemIconPalette_RareCandy,
         .notConsumed = TRUE,
+        .importance = 1,
     },
 
     [ITEM_EXP_CANDY_XS] =
