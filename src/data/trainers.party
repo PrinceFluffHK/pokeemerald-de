@@ -368,10 +368,18 @@ AI: Smart Trainer
 Poochyena
 Level: 11
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Leer
+- Sand Attack
+- Tackle
 
 Carvanha
 Level: 11
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Bite
+- Aqua Jet
+- Focus Energy
+- Scary Face
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: GRUNT
@@ -3538,13 +3546,22 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Machop
+Makuhita
+Ability: Thick Fat
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Arm Thrust
+- Tackle
+- Bulk Up
 
 Machop
+Ability: Guts
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Karate Chop
+- Counter
+- Focus Energy
 
 === TRAINER_HITOSHI ===
 Name: HITOSHI
@@ -5370,38 +5387,41 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Meditite  
-Ability: Pure Power  
-Level: 14  
+Meditite
+Ability: Pure Power
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Confusion  
-- Feint  
-- Detect  
-- Meditate  
+- Confusion
+- Feint
+- Meditate
+- Detect
 
-Machop  
-Ability: Guts  
-Level: 14  
+Machop
+Ability: Guts
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Karate Chop  
-- Focus Energy  
-- Payback  
+- Karate Chop
+- Payback
+- Counter
+- Focus Energy
 
-Makuhita  
-Ability: Guts  
-Level: 15  
+Makuhita
+Ability: Thick Fat
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out  
-- Force Palm  
-- Bulk Up  
+- Fake Out
+- Force Palm
+- Smack Down
+- Bulk Up
 
-Combusken  
-Ability: Blaze  
-Level: 16  
+Combusken
+Ability: Blaze
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Double Kick  
-- Ember  
-- Quick Attack  
+- Double Kick
+- Ember
+- Peck
+- Bulk Up
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -8733,13 +8753,23 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Meditite
+Heracross
+Ability: Moxie
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Horn Attack
+- Aerial Ace
+- Leer
+- Counter
 
 Meditite
+Ability: Pure Power
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Low Kick
+- Meditate
+- Endure
 
 === TRAINER_LAURA ===
 Name: LAURA
@@ -8751,12 +8781,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
+Ability: Pure Power
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Low Kick
+- Meditate
+- Endure
 
 Meditite
+Ability: Pure Power
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Low Kick
+- Meditate
+- Endure
 
 === TRAINER_CYNDY_1 ===
 Name: CYNDY
@@ -11625,12 +11665,30 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
+Ability: Guts
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Karate Chop
+- Counter
+- Focus Energy
 
-Machop
+Wingull
+Ability: Keen Eye
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Wing Attack
+- Water Gun
+- Growl
+
+Aron
+Ability: Sturdy
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Rock Tomb
+- Harden
+- Roar
 
 === TRAINER_LILITH ===
 Name: LILITH
@@ -11642,12 +11700,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
+Ability: Pure Power
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Low Kick
+- Meditate
+- Endure
 
-Meditite
+Makuhita
+Ability: Thick Fat
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Arm Thrust
+- Tackle
+- Bulk Up
 
 === TRAINER_CRISTIAN ===
 Name: CRISTIAN
@@ -11659,12 +11727,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Makuhita
+Ability: Thick Fat
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Arm Thrust
+- Tackle
+- Bulk Up
 
 Makuhita
+Ability: Thick Fat
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Arm Thrust
+- Tackle
+- Bulk Up
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
@@ -11969,13 +12047,31 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Lotad
+Skitty
+Ability: Wonder Skin
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Tackle
+- Sing
+- Disarming Voice
 
-Torchic
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Slugma
+Ability: Magma Armor
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ember
+- Smog
+- Rock Throw
+
+Treecko
+Ability: Overgrow
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Mega Drain
+- Leer
+- Detect
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRENDAN
@@ -11986,13 +12082,32 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Wingull
+Skitty
+Ability: Wonder Skin
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Tackle
+- Sing
+- Disarming Voice
 
-Treecko
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Shroomish
+Ability: Quick Feet
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Leech Seed
+- Stun Spore
+
+Mudkip
+Ability: Torrent
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Gun
+- Rock Smash
+- Tackle
+- Protect
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -12096,13 +12211,32 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Slugma
+Skitty
+Ability: Wonder Skin
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Tackle
+- Sing
+- Disarming Voice
 
-Mudkip
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Wailmer
+Ability: Water Veil
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Gun
+- Astonish
+- Mist
+- Growl
+
+Torchic
+Ability: Blaze
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Flame Charge
+- Sand Attack
+- Detect
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: MAY
@@ -12113,13 +12247,31 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Wingull
+Skitty
+Ability: Wonder Skin
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Tackle
+- Sing
+- Disarming Voice
+
+Slugma
+Ability: Magma Armor
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ember
+- Smog
+- Rock Throw
 
 Treecko
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Overgrow
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Mega Drain
+- Leer
+- Detect
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -15439,13 +15591,31 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Lotad
+Skitty
+Ability: Wonder Skin
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Tackle
+- Sing
+- Disarming Voice
 
-Torchic
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Slugma
+Ability: Magma Armor
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ember
+- Smog
+- Rock Throw
+
+Treecko
+Ability: Overgrow
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Mega Drain
+- Leer
+- Detect
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -15456,13 +15626,32 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Torkoal
+Skitty
+Ability: Wonder Skin
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Tackle
+- Sing
+- Disarming Voice
 
-Mudkip
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Wailmer
+Ability: Water Veil
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Gun
+- Astonish
+- Mist
+- Growl
+
+Torchic
+Ability: Blaze
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Flame Charge
+- Sand Attack
+- Detect
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE
