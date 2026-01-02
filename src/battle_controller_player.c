@@ -2137,30 +2137,39 @@ static void PlayerHandleChooseAction(u32 battler)
 
 static void CreateSpeedTiersWindow(void)
 {
-        StringCopy(gStringVar1, COMPOUND_STRING("Speeds: "));
+        // StringCopy(gStringVar1, COMPOUND_STRING("Speeds: "));
+        StringCopy(gStringVar1, COMPOUND_STRING(" {UP_ARROW}:       "));
         if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
         {
+            // if (9 >= gStringVar2)
+            // {
+            //     StringAppend(gStringVar1, COMPOUND_STRING("0"));
+            //     /* code */
+            // }
             ConvertUIntToDecimalStringN(gStringVar2, GetBattlerTotalSpeedStat(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT), GetBattlerAbility(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)), GetBattlerHoldEffect(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT))), STR_CONV_MODE_LEFT_ALIGN, 3);
+            
             StringAppend(gStringVar1, gStringVar2);
-            StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}"));
+            // StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}"));
         }
         if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
         {
             ConvertUIntToDecimalStringN(gStringVar2, GetBattlerTotalSpeedStat(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), GetBattlerAbility(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)), GetBattlerHoldEffect(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))), STR_CONV_MODE_LEFT_ALIGN, 3);
-            StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW} "));
+            StringAppend(gStringVar1, COMPOUND_STRING("     "));
+            // StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW} "));
             StringAppend(gStringVar1, gStringVar2);
         }
-        StringAppend(gStringVar1, COMPOUND_STRING("\n        "));
+        StringAppend(gStringVar1, COMPOUND_STRING("\n {DOWN_ARROW}:       "));
         if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)))
         {
             ConvertUIntToDecimalStringN(gStringVar2, GetBattlerTotalSpeedStat(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT), GetBattlerAbility(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)), GetBattlerHoldEffect(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))), STR_CONV_MODE_LEFT_ALIGN, 3);
             StringAppend(gStringVar1, gStringVar2);
-            StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}"));
+            // StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}"));
         }
         if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT)))
         {
             ConvertUIntToDecimalStringN(gStringVar2, GetBattlerTotalSpeedStat(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT), GetBattlerAbility(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT)), GetBattlerHoldEffect(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))), STR_CONV_MODE_LEFT_ALIGN, 3);
-            StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW} "));
+            StringAppend(gStringVar1, COMPOUND_STRING("     "));
+            // StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW} "));
             StringAppend(gStringVar1, gStringVar2);
         }
         BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
