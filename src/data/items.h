@@ -1579,7 +1579,8 @@ const struct Item gItemsInfo[] =
     [ITEM_ABILITY_CAPSULE] =
     {
         .name = ITEM_NAME("Ability Capsule"),
-        .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 10000 : 100000),
+        // .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 10000 : 100000),
+        .price = 200,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
             "Switches a Poké-\n"
@@ -1975,7 +1976,8 @@ const struct Item gItemsInfo[] =
     [ITEM_SERIOUS_MINT] =
     {
         .name = ITEM_NAME("Serious Mint"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 20,
+        // .price = (I_PRICE >= GEN_9) ? 20000 : 20,
+        .price = 20,
         .description = COMPOUND_STRING(
             "Can be smelled. It\n"
             "makes each stat\n"
