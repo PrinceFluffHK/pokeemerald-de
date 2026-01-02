@@ -13400,13 +13400,21 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Ralts
+Ralts (M)
+Ability: Telepathy
 Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Disarming Voice
+- Confusion
+- Growl
 
-Ralts
+Ralts (F)
+Ability: Telepathy
 Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Disarming Voice
+- Confusion
+- Growl
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
