@@ -1169,12 +1169,14 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Azurill
-Level: 12
+Marill
+Ability: Thick Fat
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Azurill
-Level: 12
+Starmie
+Ability: Huge Power
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_AUSTINA ===
@@ -1289,20 +1291,14 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Zigzagoon
+Ability: Pickup
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
 
-Zigzagoon
+Mudkip
+Ability: Torrent
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
 
 === TRAINER_SIMON ===
 Name: SIMON
@@ -5758,6 +5754,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ralts
+Ability: Telepathy
 Level: 11
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -7113,16 +7110,14 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Magikarp
-Level: 10
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
 Tentacool
-Level: 7
+Ability: Clear Body
+Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Magikarp
-Level: 10
+Wailmer
+Ability: Water Veil
+Level: 11
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_NED ===
@@ -7135,11 +7130,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 11
+Ability: Clear Body
+Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Tentacool
-Level: 11
+Ability: Clear Body
+Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_DALE ===
@@ -9982,12 +9979,14 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Wingull
-Level: 12
+Machop
+Ability: Guts
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Machop
-Level: 12
+Wingull
+Ability: Keen Eye
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_EDMOND ===
@@ -10000,10 +9999,12 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Wingull
+Ability: Keen Eye
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wingull
+Ability: Keen Eye
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -12360,6 +12361,7 @@ AI: Smart Trainer
 
 Marill
 Level: 11
+Ability: Thick Fat
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_VIVI ===
@@ -14271,13 +14273,15 @@ Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
 
-Zigzagoon @ Nugget
-Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Poochyena @ Nugget
+Ability: Run Away
+Level: 9
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 
-Poochyena
+Zigzagoon @ Nugget
+Ability: Pickup
 Level: 8
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 
 === TRAINER_SARAH ===
 Name: SARAH
@@ -14289,11 +14293,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lotad @ Nugget
-Level: 8
+Ability: Swift Swim
+Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Skitty @ Nugget
-Level: 8
+Ability: Wonder Skin
+Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_DARIAN ===
@@ -14323,10 +14329,12 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Marill
+Ability: Thick Fat
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Marill
+Taillow
+Ability: Guts
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -14339,12 +14347,14 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Tentacool
-Level: 12
+Sandshrew
+Ability: Sand Rush
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Tentacool
-Level: 12
+Sandshrew
+Ability: Sand Rush
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_KALEB ===
