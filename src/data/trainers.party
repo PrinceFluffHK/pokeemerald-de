@@ -12085,7 +12085,6 @@ Skitty
 Ability: Wonder Skin
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out
 - Tackle
 - Sing
 - Disarming Voice
@@ -12120,28 +12119,27 @@ Skitty
 Ability: Wonder Skin
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out
 - Tackle
 - Sing
 - Disarming Voice
 
-Shroomish
-Ability: Quick Feet
+Slugma
+Ability: Magma Armor
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Mega Drain
-- Headbutt
-- Leech Seed
-- Stun Spore
+- Ember
+- Smog
+- Rock Throw
 
-Mudkip
-Ability: Torrent
+Treecko
+Ability: Overgrow
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Gun
-- Rock Smash
-- Tackle
-- Protect
+- Quick Attack
+- Mega Drain
+- Leer
+- Detect
+
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -12249,7 +12247,6 @@ Skitty
 Ability: Wonder Skin
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out
 - Tackle
 - Sing
 - Disarming Voice
@@ -12285,7 +12282,6 @@ Skitty
 Ability: Wonder Skin
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out
 - Tackle
 - Sing
 - Disarming Voice
@@ -15664,42 +15660,6 @@ Skitty
 Ability: Wonder Skin
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out
-- Tackle
-- Sing
-- Disarming Voice
-
-Slugma
-Ability: Magma Armor
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Ember
-- Smog
-- Rock Throw
-
-Treecko
-Ability: Overgrow
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Quick Attack
-- Mega Drain
-- Leer
-- Detect
-
-=== TRAINER_MAY_RUSTBORO_TORCHIC ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: Yes
-AI: Smart Trainer
-
-Skitty
-Ability: Wonder Skin
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out
 - Tackle
 - Sing
 - Disarming Voice
@@ -15721,6 +15681,41 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Flame Charge
 - Sand Attack
 - Detect
+
+=== TRAINER_MAY_RUSTBORO_TORCHIC ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer
+
+Skitty
+Ability: Wonder Skin
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Tackle
+- Sing
+- Disarming Voice
+
+Shroomish
+Ability: Quick Feet
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Leech Seed
+- Stun Spore
+
+Mudkip
+Ability: Torrent
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Gun
+- Rock Smash
+- Tackle
+- Protect
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE
