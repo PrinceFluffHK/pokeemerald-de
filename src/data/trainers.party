@@ -726,10 +726,12 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shroomish
-Level: 14
+Ability: Quick Feet
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Roselia
+Ability: Natural Cure
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -4564,13 +4566,15 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Abra
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magic Guard
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Hidden Power
 
 Abra
-Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magic Guard
+Level: 16
+IVs: 15 HP / 14 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Hidden Power
 
 === TRAINER_PRESTON ===
@@ -6145,11 +6149,13 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Skitty @ Oran Berry
+Skitty
+Ability: Wonder Skin
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Skitty @ Oran Berry
+Electrike
+Ability: Static
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -6969,10 +6975,12 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Aron
+Ability: Sturdy
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Electrike
+Ability: Static
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -7049,16 +7057,19 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Magikarp
-Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Tentacool
-Level: 10
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Magikarp
+Goldeen
+Ability: Swift Swim
 Level: 15
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Horsea
+Ability: Swift Swim
+Level: 15
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Luvdisc
+Ability: Triage
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_IVAN ===
@@ -7163,19 +7174,23 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 11
+Ability: Liquid Ooze
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wailmer
-Level: 14
+Ability: Water Veil
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Tentacool
-Level: 11
+Ability: Liquid Ooze
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wailmer
-Level: 14
+Ability: Water Veil
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_NOLAN ===
@@ -9820,11 +9835,13 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Plusle
+Pikachu
+Ability: Static
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Minun
+Jigglypuff
+Ability: Friend Guard
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -10412,11 +10429,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lombre
-Level: 14
+Ability: Swift Swim
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Nuzleaf
-Level: 14
+Ability: Pickpocket
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HECTOR ===
@@ -14408,11 +14427,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Electrike
-Level: 14
+Ability: Static
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Voltorb
-Level: 14
+Ability: Soundproof
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ALYSSA ===
@@ -14425,11 +14446,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 15
+Ability: Analytic
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Magnemite
-Level: 15
+Doduo
+Ability: Run Away
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MARCOS ===
@@ -14442,11 +14465,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 15
+Ability: Soundproof
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Voltorb
-Level: 15
+Ability: Soundproof
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_RHETT ===
@@ -14459,11 +14484,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Makuhita
-Level: 15
+Ability: Thick Fat
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Makuhita
-Level: 15
+Machop
+Ability: Guts
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_TYRON ===
