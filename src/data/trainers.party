@@ -446,10 +446,12 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Carvanha
+Ability: Speed Boost
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Carvanha
+Zubat
+Ability: Inner Focus
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -462,12 +464,14 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 14
+Corphish
+Ability: Adaptability
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Carvanha
-Level: 14
+Ability: Speed Boost
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
@@ -6339,12 +6343,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Plusle @ Oran Berry
+Ability: Plus
 Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Thunder Shock
+- Spark
+- Swift
 
 Minun @ Oran Berry
+Ability: Minus
 Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Nuzzle
+- Play Nice
+- Helping Hand
+- Encore
 
 === TRAINER_ISABEL_2 ===
 Name: ISABEL
@@ -14367,12 +14381,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Minun @ Oran Berry
+Ability: Minus
 Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Nuzzle
+- Play Nice
+- Helping Hand
+- Encore
 
 Plusle @ Oran Berry
+Ability: Plus
 Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Thunder Shock
+- Spark
+- Swift
 
 === TRAINER_JOSEPH ===
 Name: JOSEPH
