@@ -1180,7 +1180,7 @@ Ability: Thick Fat
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Starmie
+Staryu
 Ability: Huge Power
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
@@ -11698,14 +11698,6 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Machop
-Ability: Guts
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Karate Chop
-- Counter
-- Focus Energy
-
 Wingull
 Ability: Keen Eye
 Level: 13
@@ -11715,14 +11707,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Water Gun
 - Growl
 
-Aron
-Ability: Sturdy
+Machop
+Ability: Guts
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Metal Claw
-- Rock Tomb
-- Harden
-- Roar
+- Karate Chop
+- Counter
+- Focus Energy
 
 === TRAINER_LILITH ===
 Name: LILITH
