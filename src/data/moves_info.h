@@ -2635,7 +2635,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Meditates in a peaceful\n"
             "fashion to raise Attack."),
-        .effect = EFFECT_ATTACK_UP && EFFECT_SPECIAL_DEFENSE_UP,
+        .effect = EFFECT_MEDITATE,
         .power = 0,
         .type = TYPE_PSYCHIC,
         .accuracy = 0,
