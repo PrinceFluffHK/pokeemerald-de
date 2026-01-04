@@ -385,12 +385,14 @@ void MoveSelectionCreateCursorAt(u8 cursorPos, u8 arg1);
 void MoveSelectionDestroyCursorAt(u8 cursorPosition);
 void PlayerHandleChooseMove(u32 battler);
 void HandleInputChooseMove(u32 battler);
-void CreateMovePreviewText(u8 BattlerPosition);
+// void CreateMovePreviewText(u8 BattlerPosition);
 void HandleInputChooseTarget(u32 battler);
 void HandleInputShowEntireFieldTargets(u32 battler);
 void HandleInputShowTargets(u32 battler);
 void HandleMoveSwitching(u32 battler);
 void HandleChooseMoveAfterDma3(u32 battler);
+
+void CreateMovePreviewText(u32 BattlerPosition);
 
 // recorded player controller
 void SetControllerToRecordedPlayer(u32 battler);
