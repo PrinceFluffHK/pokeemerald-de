@@ -13,6 +13,9 @@ VerdanturfTown_Mart_EventScript_Clerk::
 
 	.align 2
 VerdanturfTown_Mart_Pokemart:
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_NEST_BALL
 	.2byte ITEM_SUPER_POTION
@@ -24,9 +27,7 @@ VerdanturfTown_Mart_Pokemart:
 	.2byte ITEM_REPEL
 	.2byte ITEM_X_SP_ATK
 	.2byte ITEM_FLUFFY_TAIL
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 VerdanturfTown_Mart_EventScript_Boy::
 	msgbox VerdanturfTown_Mart_Text_XSpecialIsCrucial, MSGBOX_NPC

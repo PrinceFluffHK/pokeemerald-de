@@ -13,6 +13,8 @@ FortreeCity_Mart_EventScript_Clerk::
 
 	.align 2
 FortreeCity_Mart_Pokemart:
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
@@ -24,9 +26,7 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_REVIVE
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_WOOD_MAIL
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 FortreeCity_Mart_EventScript_Woman::
 	msgbox FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC

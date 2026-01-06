@@ -1,13 +1,33 @@
 #ifndef GUARD_CONSTANTS_GLOBAL_H
 #define GUARD_CONSTANTS_GLOBAL_H
 
-#include "config/general.h"
+// You can use the ENABLED_ON_RELEASE and DISABLED_ON_RELEASE macros to
+// control whether a feature is enabled or disabled when making a release build.
+//
+// For example, the overworld debug menu is enabled by default, but when using
+// `make release`, it will be automatically disabled.
+//
+// #define DEBUG_OVERWORLD_MENU DISABLED_ON_RELEASE
+#ifdef RELEASE
+#define ENABLED_ON_RELEASE TRUE
+#define DISABLED_ON_RELEASE FALSE
+#else
+#define ENABLED_ON_RELEASE FALSE
+#define DISABLED_ON_RELEASE TRUE
+#endif
+
+#include "config/ai.h"
 #include "config/battle.h"
+#include "config/caps.h"
+#include "config/contest.h"
 #include "config/debug.h"
+#include "config/dexnav.h"
+#include "config/follower_npc.h"
+#include "config/general.h"
 #include "config/item.h"
-#include "config/level_caps.h"
-#include "config/pokemon.h"
 #include "config/overworld.h"
+#include "config/pokemon.h"
+#include "config/summary_screen.h"
 
 // Invalid Versions show as "----------" in Gen 4 and Gen 5's summary screen.
 // In Gens 6 and 7, invalid versions instead show "a distant land" in the summary screen.
@@ -59,11 +79,6 @@
 #define SECRET_BASES_COUNT 20
 #define POKE_NEWS_COUNT 16
 #define PC_ITEMS_COUNT 50
-#define BAG_ITEMS_COUNT 30
-#define BAG_KEYITEMS_COUNT 30
-#define BAG_POKEBALLS_COUNT 16
-#define BAG_TMHM_COUNT 64
-#define BAG_BERRIES_COUNT 46
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
@@ -76,6 +91,13 @@
 #define SAVED_TRENDS_COUNT 5
 #define PYRAMID_BAG_ITEMS_COUNT 10
 #define ROAMER_COUNT 1 // Number of maximum concurrent active roamers
+
+// Bag constants
+#define BAG_ITEMS_COUNT 30
+#define BAG_KEYITEMS_COUNT 30
+#define BAG_POKEBALLS_COUNT 16
+#define BAG_TMHM_COUNT 64
+#define BAG_BERRIES_COUNT 46
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.
@@ -95,15 +117,17 @@
 #define ALL_MOVES_MASK ((1 << MAX_MON_MOVES) - 1)
 
 #define CONTESTANT_COUNT 4
-#define CONTEST_CATEGORY_COOL     0
-#define CONTEST_CATEGORY_BEAUTY   1
-#define CONTEST_CATEGORY_CUTE     2
-#define CONTEST_CATEGORY_SMART    3
-#define CONTEST_CATEGORY_TOUGH    4
-#define CONTEST_CATEGORIES_COUNT  5
+#define CONTEST_CATEGORY_COOL      0
+#define CONTEST_CATEGORY_BEAUTIFUL 1
+#define CONTEST_CATEGORY_BEAUTY    CONTEST_CATEGORY_BEAUTIFUL
+#define CONTEST_CATEGORY_CUTE      2
+#define CONTEST_CATEGORY_CLEVER    3
+#define CONTEST_CATEGORY_SMART     CONTEST_CATEGORY_CLEVER
+#define CONTEST_CATEGORY_TOUGH     4
+#define CONTEST_CATEGORIES_COUNT   5
 
 // string lengths
-#define ITEM_NAME_LENGTH ((I_EXPANDED_ITEM_NAMES == TRUE) ? 20 : 14)
+#define ITEM_NAME_LENGTH 20
 #define ITEM_NAME_PLURAL_LENGTH ITEM_NAME_LENGTH + 2 // 2 is used for the instance where a word's suffix becomes y->ies
 #define POKEMON_NAME_LENGTH 12
 #define VANILLA_POKEMON_NAME_LENGTH 10
@@ -111,16 +135,17 @@
 #define PLAYER_NAME_LENGTH 7
 #define MAIL_WORDS_COUNT 9
 #define EASY_CHAT_BATTLE_WORDS_COUNT 6
-#define MOVE_NAME_LENGTH ((B_EXPANDED_MOVE_NAMES == TRUE) ? 16 : 12)
+#define MOVE_NAME_LENGTH 16
 #define NUM_QUESTIONNAIRE_WORDS 4
 #define QUIZ_QUESTION_LEN 9
 #define WONDER_CARD_TEXT_LENGTH 40
 #define WONDER_NEWS_TEXT_LENGTH 40
 #define WONDER_CARD_BODY_TEXT_LINES 4
 #define WONDER_NEWS_BODY_TEXT_LINES 10
-#define TYPE_NAME_LENGTH ((B_EXPANDED_TYPE_NAMES == TRUE) ? 8 : 6)
-#define ABILITY_NAME_LENGTH ((B_EXPANDED_ABILITY_NAMES == TRUE) ? 16 : 12)
+#define TYPE_NAME_LENGTH 8
+#define ABILITY_NAME_LENGTH 16
 #define TRAINER_NAME_LENGTH 10
+#define CODE_NAME_LENGTH 11
 
 #define MAX_STAMP_CARD_STAMPS 7
 
@@ -128,7 +153,7 @@
 #define FEMALE 1
 #define GENDER_COUNT 2
 
-#define BARD_SONG_LENGTH       6
+#define NUM_BARD_SONG_WORDS    6
 #define NUM_STORYTELLER_TALES  4
 #define NUM_TRADER_ITEMS       4
 #define GIDDY_MAX_TALES       10
@@ -141,6 +166,7 @@
 #define OPTIONS_TEXT_SPEED_SLOW 0
 #define OPTIONS_TEXT_SPEED_MID 1
 #define OPTIONS_TEXT_SPEED_FAST 2
+#define OPTIONS_TEXT_SPEED_INSTANT 3
 
 #define OPTIONS_SOUND_MONO 0
 #define OPTIONS_SOUND_STEREO 1

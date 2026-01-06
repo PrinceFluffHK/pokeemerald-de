@@ -13,11 +13,15 @@ FallarborTown_Mart_EventScript_Clerk::
 
 	.align 2
 FallarborTown_Mart_Pokemart:
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
+@	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_X_SP_ATK
 	.2byte ITEM_X_SPEED
@@ -25,9 +29,7 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 FallarborTown_Mart_EventScript_Woman::
 	msgbox FallarborTown_Mart_Text_DecidingSkittyEvolve, MSGBOX_NPC

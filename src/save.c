@@ -7,8 +7,8 @@
 #include "decompress.h"
 #include "load_save.h"
 #include "overworld.h"
+#include "hall_of_fame.h"
 #include "pokemon_storage_system.h"
-#include "main.h"
 #include "trainer_hill.h"
 #include "link.h"
 #include "constants/game_stat.h"
@@ -82,19 +82,19 @@ STATIC_ASSERT(sizeof(struct SaveBlock2) <= SECTOR_DATA_SIZE, SaveBlock2FreeSpace
 STATIC_ASSERT(sizeof(struct SaveBlock1) <= SECTOR_DATA_SIZE * (SECTOR_ID_SAVEBLOCK1_END - SECTOR_ID_SAVEBLOCK1_START + 1), SaveBlock1FreeSpace);
 STATIC_ASSERT(sizeof(struct PokemonStorage) <= SECTOR_DATA_SIZE * (SECTOR_ID_PKMN_STORAGE_END - SECTOR_ID_PKMN_STORAGE_START + 1), PokemonStorageFreeSpace);
 
-u16 gLastWrittenSector;
-u32 gLastSaveCounter;
-u16 gLastKnownGoodSector;
-u32 gDamagedSaveSectors;
-u32 gSaveCounter;
-struct SaveSector *gReadWriteSector; // Pointer to a buffer for reading/writing a sector
-u16 gIncrementalSectorId;
-u16 gSaveUnusedVar;
-u16 gSaveFileStatus;
-void (*gGameContinueCallback)(void);
-struct SaveSectorLocation gRamSaveSectorLocations[NUM_SECTORS_PER_SLOT];
-u16 gSaveUnusedVar2;
-u16 gSaveAttemptStatus;
+COMMON_DATA u16 gLastWrittenSector = 0;
+COMMON_DATA u32 gLastSaveCounter = 0;
+COMMON_DATA u16 gLastKnownGoodSector = 0;
+COMMON_DATA u32 gDamagedSaveSectors = 0;
+COMMON_DATA u32 gSaveCounter = 0;
+COMMON_DATA struct SaveSector *gReadWriteSector = NULL; // Pointer to a buffer for reading/writing a sector
+COMMON_DATA u16 gIncrementalSectorId = 0;
+COMMON_DATA u16 gSaveUnusedVar = 0;
+COMMON_DATA u16 gSaveFileStatus = 0;
+COMMON_DATA MainCallback gGameContinueCallback = NULL;
+COMMON_DATA struct SaveSectorLocation gRamSaveSectorLocations[NUM_SECTORS_PER_SLOT] = {0};
+COMMON_DATA u16 gSaveUnusedVar2 = 0;
+COMMON_DATA u16 gSaveAttemptStatus = 0;
 
 EWRAM_DATA struct SaveSector gSaveDataBuffer = {0}; // Buffer used for reading/writing sectors
 
@@ -716,7 +716,6 @@ u8 HandleSavingData(u8 saveType)
 {
     u8 i;
     u32 *backupVar = gTrainerHillVBlankCounter;
-    u8 *tempAddr;
 
     gTrainerHillVBlankCounter = NULL;
     UpdateSaveAddresses();
@@ -737,9 +736,12 @@ u8 HandleSavingData(u8 saveType)
         WriteSaveSectorOrSlot(FULL_SAVE_SLOT, gRamSaveSectorLocations);
 
         // Save the Hall of Fame
-        tempAddr = gDecompressionBuffer;
-        HandleWriteSectorNBytes(SECTOR_ID_HOF_1, tempAddr, SECTOR_DATA_SIZE);
-        HandleWriteSectorNBytes(SECTOR_ID_HOF_2, tempAddr + SECTOR_DATA_SIZE, SECTOR_DATA_SIZE);
+        if (gHoFSaveBuffer != NULL)
+        {
+            u8 *tempAddr = (void *) gHoFSaveBuffer;
+            HandleWriteSectorNBytes(SECTOR_ID_HOF_1, tempAddr, SECTOR_DATA_SIZE);
+            HandleWriteSectorNBytes(SECTOR_ID_HOF_2, tempAddr + SECTOR_DATA_SIZE, SECTOR_DATA_SIZE);
+        }
         break;
     case SAVE_NORMAL:
     default:
@@ -833,7 +835,7 @@ bool8 LinkFullSave_SetLastSectorSignature(void)
     return FALSE;
 }
 
-u8 WriteSaveBlock2(void)
+bool8 WriteSaveBlock2(void)
 {
     if (gFlashMemoryPresent != TRUE)
         return TRUE;
@@ -853,7 +855,7 @@ u8 WriteSaveBlock2(void)
 // It returns TRUE when finished.
 bool8 WriteSaveBlock1Sector(void)
 {
-    u8 finished = FALSE;
+    bool32 finished = FALSE;
     u16 sectorId = ++gIncrementalSectorId; // Because WriteSaveBlock2 will have been called prior, this will be SECTOR_ID_SAVEBLOCK1_START
     if (sectorId <= SECTOR_ID_SAVEBLOCK1_END)
     {
@@ -894,12 +896,20 @@ u8 LoadGameSave(u8 saveType)
         status = TryLoadSaveSlot(FULL_SAVE_SLOT, gRamSaveSectorLocations);
         CopyPartyAndObjectsFromSave();
         gSaveFileStatus = status;
-        gGameContinueCallback = 0;
+        gGameContinueCallback = NULL;
         break;
     case SAVE_HALL_OF_FAME:
-        status = TryLoadSaveSector(SECTOR_ID_HOF_1, gDecompressionBuffer, SECTOR_DATA_SIZE);
-        if (status == SAVE_STATUS_OK)
-            status = TryLoadSaveSector(SECTOR_ID_HOF_2, &gDecompressionBuffer[SECTOR_DATA_SIZE], SECTOR_DATA_SIZE);
+        if (gHoFSaveBuffer != NULL)
+        {
+            u8 *hofData = (u8 *) gHoFSaveBuffer;
+            status = TryLoadSaveSector(SECTOR_ID_HOF_1, hofData, SECTOR_DATA_SIZE);
+            if (status == SAVE_STATUS_OK)
+                status = TryLoadSaveSector(SECTOR_ID_HOF_2, &hofData[SECTOR_DATA_SIZE], SECTOR_DATA_SIZE);
+        }
+        else
+        {
+            status = SAVE_STATUS_ERROR;
+        }
         break;
     }
 
@@ -909,7 +919,7 @@ u8 LoadGameSave(u8 saveType)
 u16 GetSaveBlocksPointersBaseOffset(void)
 {
     u16 i, slotOffset;
-    struct SaveSector* sector;
+    struct SaveSector *sector;
 
     sector = gReadWriteSector = &gSaveDataBuffer;
     if (gFlashMemoryPresent != TRUE)

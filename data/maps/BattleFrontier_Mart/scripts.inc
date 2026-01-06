@@ -1,5 +1,3 @@
-.set LOCALID_OLD_WOMAN, 2
-
 BattleFrontier_Mart_MapScripts::
 	.byte 0
 
@@ -15,6 +13,10 @@ BattleFrontier_Mart_EventScript_Clerk::
 
 	.align 2
 BattleFrontier_Mart_Pokemart:
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_MAX_POTION
@@ -28,9 +30,7 @@ BattleFrontier_Mart_Pokemart:
 	.2byte ITEM_ZINC
 	.2byte ITEM_CARBOS
 	.2byte ITEM_HP_UP
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 BattleFrontier_Mart_EventScript_OldMan::
 	msgbox BattleFrontier_Mart_Text_ChaperonGrandson, MSGBOX_NPC
@@ -38,7 +38,7 @@ BattleFrontier_Mart_EventScript_OldMan::
 
 BattleFrontier_Mart_EventScript_OldWoman::
 	lock
-	applymovement LOCALID_OLD_WOMAN, Common_Movement_FaceDown
+	applymovement LOCALID_FRONTIER_MART_OLD_WOMAN, Common_Movement_FaceDown
 	waitmovement 0
 	msgbox BattleFrontier_Mart_Text_ProteinMakeNiceGift, MSGBOX_DEFAULT
 	release

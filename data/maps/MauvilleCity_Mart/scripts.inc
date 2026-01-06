@@ -13,6 +13,8 @@ MauvilleCity_Mart_EventScript_Clerk::
 
 	.align 2
 MauvilleCity_Mart_Pokemart:
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_SUPER_POTION
@@ -25,9 +27,7 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_GUARD_SPEC
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 MauvilleCity_Mart_EventScript_ExpertM::
 	msgbox MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC

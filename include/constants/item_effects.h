@@ -63,8 +63,8 @@
 #define ITEM6_HEAL_PP_FULL   0x7F
 
 // Amount of EV modified by ITEM4_EV_HP, ITEM4_EV_ATK, ITEM5_EV_DEF, ITEM5_EV_SPEED, ITEM5_EV_SPDEF and ITEM5_EV_SPATK
-#define ITEM6_ADD_EV       10
-#define ITEM6_SUBTRACT_EV -10
+#define ITEM6_ADD_EV       64
+#define ITEM6_SUBTRACT_EV -64
 #define ITEM6_ADD_ONE_EV    1
 #define ITEM6_RESET_EV      0
 
@@ -92,5 +92,12 @@
 #define ITEM_EFFECT_PP_MAX 20
 #define ITEM_EFFECT_HEAL_PP 21
 #define ITEM_EFFECT_NONE 22
+
+#define ITEM_FRIENDSHIP_MAPSEC_BONUS  1   // The amount of bonus friendship gained when an item is used on a Pokémon whose met location matches the current map section.
+#define ITEM_FRIENDSHIP_LUXURY_BONUS  1   // The amount of bonus friendship gained when a Pokémon is in the Luxury Ball.
+
+// Since X item stat increases are now handled by battle scripts, the friendship increase effect is now handled by the battle controller in HandleAction_UseItem.
+#define X_ITEM_FRIENDSHIP_INCREASE    1   // The amount of friendship gained by using an X item on a Pokémon in battle.
+#define X_ITEM_MAX_FRIENDSHIP         200 // Friendship threshold at which Pokémon stop receiving a friendship increase from using X items on them in battle.
 
 #endif // GUARD_CONSTANTS_ITEM_EFFECTS_H

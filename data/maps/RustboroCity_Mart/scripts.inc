@@ -18,19 +18,18 @@ RustboroCity_Mart_EventScript_PokemartBasic::
 
 	.align 2
 RustboroCity_Mart_Pokemart_Basic:
+	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_POTION
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
+@	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_REPEL
 	.2byte ITEM_X_SPEED
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 RustboroCity_Mart_EventScript_PokemartExpanded::
 	pokemart RustboroCity_Mart_Pokemart_Expanded
@@ -40,6 +39,7 @@ RustboroCity_Mart_EventScript_PokemartExpanded::
 
 	.align 2
 RustboroCity_Mart_Pokemart_Expanded:
+	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_TIMER_BALL
 	.2byte ITEM_REPEAT_BALL
@@ -47,14 +47,12 @@ RustboroCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
+@	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_REPEL
 	.2byte ITEM_X_SPEED
 	.2byte ITEM_X_ATTACK
 	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 RustboroCity_Mart_EventScript_PokefanF::
 	msgbox RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish, MSGBOX_NPC

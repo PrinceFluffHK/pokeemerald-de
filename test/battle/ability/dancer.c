@@ -4,7 +4,7 @@
 SINGLE_BATTLE_TEST("Dancer can copy a dance move immediately after it was used and allow the user of Dancer to still use its move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_QUIVER_DANCE].danceMove == TRUE);
+        ASSUME(IsDanceMove(MOVE_QUIVER_DANCE));
         PLAYER(SPECIES_WOBBUFFET)
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); }
     } WHEN {
@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Dancer can copy a dance move immediately after it was used a
 SINGLE_BATTLE_TEST("Dancer can copy Teeter Dance")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TEETER_DANCE].danceMove == TRUE);
+        ASSUME(IsDanceMove(MOVE_TEETER_DANCE));
         PLAYER(SPECIES_WOBBUFFET)
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Item(ITEM_LUM_BERRY); }
     } WHEN {
@@ -37,9 +37,9 @@ SINGLE_BATTLE_TEST("Dancer can copy Teeter Dance")
 DOUBLE_BATTLE_TEST("Dancer can copy Teeter Dance and confuse both opposing targets")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TEETER_DANCE].danceMove == TRUE);
+        ASSUME(IsDanceMove(MOVE_TEETER_DANCE));
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
-        PLAYER(SPECIES_WOBBUFFET)
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT) { Item(ITEM_LUM_BERRY); }
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Item(ITEM_LUM_BERRY); }
         OPPONENT(SPECIES_SLOWPOKE) { Ability(ABILITY_OWN_TEMPO); }
@@ -57,11 +57,11 @@ DOUBLE_BATTLE_TEST("Dancer can copy Teeter Dance and confuse both opposing targe
 DOUBLE_BATTLE_TEST("Dancer triggers from slowest to fastest")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_DANCER); Speed(10); }
+        ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
+        PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(10); }
         PLAYER(SPECIES_WYNAUT) { Speed(50); }
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(20); }
-        OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_DANCER); Speed(3); }
+        OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(3); }
     } WHEN {
         TURN { MOVE(playerRight, MOVE_DRAGON_DANCE); }
     } SCENE {
@@ -79,18 +79,21 @@ DOUBLE_BATTLE_TEST("Dancer triggers from slowest to fastest")
     }
 }
 
+TO_DO_BATTLE_TEST("Dancer triggers from slowest to fastest during Trick Room")
+TO_DO_BATTLE_TEST("Dancer triggering ignores Lagging Tail")
+
 SINGLE_BATTLE_TEST("Dancer doesn't trigger if the original user flinches")
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
+        ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
         PLAYER(SPECIES_WOBBUFFET)
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_FAKE_OUT); MOVE(player, MOVE_DRAGON_DANCE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponent);
-        MESSAGE("Wobbuffet flinched!");
+        MESSAGE("Wobbuffet flinched and couldn't move!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_DANCER);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, opponent);
@@ -102,8 +105,8 @@ DOUBLE_BATTLE_TEST("Dancer still triggers if another dancer flinches")
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_DANCER); Speed(10); }
+        ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
+        PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(10); }
         PLAYER(SPECIES_WYNAUT) { Speed(5); }
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(20); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
@@ -114,14 +117,14 @@ DOUBLE_BATTLE_TEST("Dancer still triggers if another dancer flinches")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, playerRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         ABILITY_POPUP(playerLeft, ABILITY_DANCER);
-        MESSAGE("Wobbuffet flinched!");
+        MESSAGE("Oricorio flinched and couldn't move!");
         NONE_OF {
-            MESSAGE("Wobbuffet used Dragon Dance!");
+            MESSAGE("Oricorio used Dragon Dance!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, playerLeft);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         }
         ABILITY_POPUP(opponentLeft, ABILITY_DANCER);
-        MESSAGE("Foe Oricorio used Dragon Dance!");
+        MESSAGE("The opposing Oricorio used Dragon Dance!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
     }
@@ -130,8 +133,8 @@ DOUBLE_BATTLE_TEST("Dancer still triggers if another dancer flinches")
 SINGLE_BATTLE_TEST("Dancer-called attacks have their type updated")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_REVELATION_DANCE].danceMove == TRUE);
-        ASSUME(gMovesInfo[MOVE_REVELATION_DANCE].effect == EFFECT_REVELATION_DANCE);
+        ASSUME(IsDanceMove(MOVE_REVELATION_DANCE));
+        ASSUME(GetMoveEffect(MOVE_REVELATION_DANCE) == EFFECT_REVELATION_DANCE);
         PLAYER(SPECIES_TANGROWTH);
         OPPONENT(SPECIES_ORICORIO_BAILE);
     } WHEN {
@@ -146,11 +149,32 @@ SINGLE_BATTLE_TEST("Dancer-called attacks have their type updated")
     }
 }
 
+SINGLE_BATTLE_TEST("Dancer-called attacks do not trigger Life Orb if target is immune")
+{
+    GIVEN {
+        ASSUME(IsDanceMove(MOVE_REVELATION_DANCE));
+        ASSUME(GetMoveEffect(MOVE_REVELATION_DANCE) == EFFECT_REVELATION_DANCE);
+        ASSUME(GetMoveEffect(MOVE_ROOST) == EFFECT_ROOST);
+        ASSUME(GetItemHoldEffect(ITEM_LIFE_ORB) == HOLD_EFFECT_LIFE_ORB);
+        ASSUME(GetSpeciesType(SPECIES_ORICORIO_POM_POM, 0) == TYPE_ELECTRIC || GetSpeciesType(SPECIES_ORICORIO_POM_POM, 1) == TYPE_ELECTRIC);
+        PLAYER(SPECIES_RAICHU) { Ability(ABILITY_LIGHTNING_ROD); }
+        OPPONENT(SPECIES_ORICORIO_POM_POM) { Ability(ABILITY_DANCER); Item(ITEM_LIFE_ORB); }
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_ROOST); MOVE(player, MOVE_REVELATION_DANCE); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, player);
+        ABILITY_POPUP(opponent, ABILITY_DANCER);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, opponent);
+        ABILITY_POPUP(player, ABILITY_LIGHTNING_ROD);
+        NOT HP_BAR(opponent);
+    }
+}
+
 DOUBLE_BATTLE_TEST("Dancer doesn't trigger on a snatched move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
-        ASSUME(gMovesInfo[MOVE_SNATCH].effect == EFFECT_SNATCH);
+        ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
+        ASSUME(GetMoveEffect(MOVE_SNATCH) == EFFECT_SNATCH);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ORICORIO);
@@ -170,12 +194,15 @@ DOUBLE_BATTLE_TEST("Dancer doesn't trigger on a snatched move")
     }
 }
 
+TO_DO_BATTLE_TEST("Dancer-called moves can be snatched")
+TO_DO_BATTLE_TEST("Dancer-called moves can be reflected by Magic Bounce/Coat")
+
 DOUBLE_BATTLE_TEST("Dancer triggers on Instructed dance moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
-        ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].instructBanned == FALSE);
-        ASSUME(gMovesInfo[MOVE_INSTRUCT].effect == EFFECT_INSTRUCT);
+        ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
+        ASSUME(!IsMoveInstructBanned(MOVE_DRAGON_DANCE));
+        ASSUME(GetMoveEffect(MOVE_INSTRUCT) == EFFECT_INSTRUCT);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ORICORIO);
@@ -200,17 +227,17 @@ DOUBLE_BATTLE_TEST("Dancer triggers on Instructed dance moves")
 DOUBLE_BATTLE_TEST("Dancer-called move doesn't update move to be Instructed")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
-        ASSUME(gMovesInfo[MOVE_TACKLE].instructBanned == FALSE);
-        ASSUME(gMovesInfo[MOVE_INSTRUCT].effect == EFFECT_INSTRUCT);
+        ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
+        ASSUME(!IsMoveInstructBanned(MOVE_SCRATCH));
+        ASSUME(GetMoveEffect(MOVE_INSTRUCT) == EFFECT_INSTRUCT);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ORICORIO);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(opponentRight, MOVE_INSTRUCT, target: opponentLeft); }
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target: playerLeft); MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(opponentRight, MOVE_INSTRUCT, target: opponentLeft); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, playerRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         ABILITY_POPUP(opponentLeft, ABILITY_DANCER);
@@ -221,15 +248,18 @@ DOUBLE_BATTLE_TEST("Dancer-called move doesn't update move to be Instructed")
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_DANCE, opponentLeft);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
         }
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
     }
 }
+
+TO_DO_BATTLE_TEST("Dancer-called moves doesn't update move to be called by Mimick")
+TO_DO_BATTLE_TEST("Dancer-called moves doesn't update move to be called by Mirror Move")
 
 DOUBLE_BATTLE_TEST("Dancer doesn't call a move that didn't execute due to Powder")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FIERY_DANCE].danceMove == TRUE);
-        ASSUME(gMovesInfo[MOVE_FIERY_DANCE].type == TYPE_FIRE);
+        ASSUME(IsDanceMove(MOVE_FIERY_DANCE));
+        ASSUME(GetMoveType(MOVE_FIERY_DANCE) == TYPE_FIRE);
         PLAYER(SPECIES_VOLCARONA);
         PLAYER(SPECIES_ORICORIO);
         OPPONENT(SPECIES_WYNAUT);
@@ -246,3 +276,103 @@ DOUBLE_BATTLE_TEST("Dancer doesn't call a move that didn't execute due to Powder
         }
     }
 }
+
+DOUBLE_BATTLE_TEST("Dancer still activates after Red Card")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) ;
+        PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); }
+        PLAYER(SPECIES_CHANSEY);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_BULBASAUR);
+        OPPONENT(SPECIES_SHUCKLE);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_FIERY_DANCE, target: opponentLeft); }
+    } SCENE {
+        MESSAGE("Wobbuffet used Fiery Dance!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerLeft);
+        HP_BAR(opponentLeft);
+        // Red card trigger
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
+        MESSAGE("The opposing Wobbuffet held up its Red Card against Wobbuffet!");
+        MESSAGE("Chansey was dragged out!");
+        // Dancer
+        ABILITY_POPUP(playerRight, ABILITY_DANCER);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerRight);
+        HP_BAR(opponentLeft);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Dancer still activate after Red Card even if blocked by Suction Cups")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SUCTION_CUPS); }
+        PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); }
+        PLAYER(SPECIES_CHANSEY);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_BULBASAUR);
+        OPPONENT(SPECIES_SHUCKLE);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_FIERY_DANCE, target: opponentLeft); }
+    } SCENE {
+        MESSAGE("Wobbuffet used Fiery Dance!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerLeft);
+        HP_BAR(opponentLeft);
+        // red card trigger
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
+        MESSAGE("The opposing Wobbuffet held up its Red Card against Wobbuffet!");
+        MESSAGE("Wobbuffet anchors itself with Suction Cups!");
+        NOT MESSAGE("Chansey was dragged out!");
+        // Dancer
+        ABILITY_POPUP(playerRight, ABILITY_DANCER);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerRight);
+        HP_BAR(opponentLeft);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Dancer correctly restores move targets")
+{
+    GIVEN {
+        ASSUME(IsDanceMove(MOVE_REVELATION_DANCE));
+        PLAYER(SPECIES_ORICORIO) { Speed(10); }
+        PLAYER(SPECIES_ORICORIO) { Speed(3); }
+        OPPONENT(SPECIES_ORICORIO) { Speed(1); }
+        OPPONENT(SPECIES_ORICORIO) { Speed(5); }
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_REVELATION_DANCE, target: opponentLeft);
+               MOVE(opponentRight, MOVE_SCRATCH, target: playerRight);
+               MOVE(playerRight, MOVE_SCRATCH, target: opponentRight);
+               MOVE(opponentLeft, MOVE_SCRATCH, target: playerRight); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, playerLeft);
+        HP_BAR(opponentLeft);
+        ABILITY_POPUP(opponentLeft, ABILITY_DANCER);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, opponentLeft);
+        HP_BAR(playerLeft);
+        ABILITY_POPUP(playerRight, ABILITY_DANCER);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, playerRight);
+        HP_BAR(opponentLeft);
+        ABILITY_POPUP(opponentRight, ABILITY_DANCER);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, opponentRight);
+        HP_BAR(playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentRight);
+        HP_BAR(playerRight);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
+        HP_BAR(opponentRight);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
+        HP_BAR(playerRight);
+    }
+}
+
+TO_DO_BATTLE_TEST("Dancer-called damaging moves are considered for Counter/Mirror Coat/Metal Burst")
+
+TO_DO_BATTLE_TEST("Dancer copies a status Z-Move's base move without gaining an additional Z-Power effect")
+TO_DO_BATTLE_TEST("Dancer user may hit itself in confusion instead of copying a move if it's confused")
+TO_DO_BATTLE_TEST("Dancer tries to copy a move but fails if it's being forced into a different move - Rampage move") // Test with Petal Dance, Thrash
+TO_DO_BATTLE_TEST("Dancer tries to copy a move but fails if it's being forced into a different move - Rollout")
+TO_DO_BATTLE_TEST("Dancer tries to copy a move but fails if it's being forced into a different move - Choice items")
+TO_DO_BATTLE_TEST("Dancer tries to copy a move but fails if it's being forced into a different move - Encore")
+TO_DO_BATTLE_TEST("Dancer tries to copy a status move but fails if it's under Taunt's effect")
+TO_DO_BATTLE_TEST("Dancer can still copy status moves if the user is holding an Assault Vest")
+TO_DO_BATTLE_TEST("Dancer copies Lunar Dance after the original user faints, but before the replacement is sent out")
+TO_DO_BATTLE_TEST("Dancer doesn't activate Feather Dance if it was reflected by Magic Bounce/Coat")
