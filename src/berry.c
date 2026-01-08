@@ -2166,7 +2166,8 @@ void ObjectEventInteractionGetBerryCountString(void)
 {
     u8 treeId = GetObjectEventBerryTreeId(gSelectedObjectEvent);
     u8 berry = GetBerryTypeByBerryTreeId(treeId);
-    u8 count = GetBerryCountByBerryTreeId(treeId);
+    u8 count = 1;
+    // u8 count = GetBerryCountByBerryTreeId(treeId);
 
     // The strings for growing Berries all refer to a singular berry plant.
     // This ensures that text about planting a Berry and the growing Berry reads correctly.
