@@ -4104,6 +4104,7 @@ static bool32 IsDomeComboMove(u32 move)
     case EFFECT_SPECIAL_ATTACK_UP_3:
     case EFFECT_CALM_MIND:
     case EFFECT_DRAGON_DANCE:
+    case EFFECT_MEDITATE:
     case EFFECT_BELLY_DRUM:
     case EFFECT_CHARGE:
     case EFFECT_BULK_UP:

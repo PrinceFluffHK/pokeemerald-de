@@ -2786,7 +2786,7 @@ bool32 IsAttackBoostMoveEffect(enum BattleMoveEffects effect)
     case EFFECT_ATTACK_UP_2:
     case EFFECT_ATTACK_ACCURACY_UP:
     case EFFECT_ATTACK_SPATK_UP:
-    case EFFECT_DRAGON_DANCE:
+    case EFFECT_MEDITATE:
     case EFFECT_COIL:
     case EFFECT_BELLY_DRUM:
     case EFFECT_BULK_UP:
@@ -2825,6 +2825,7 @@ bool32 IsStatRaisingEffect(enum BattleMoveEffects effect)
     case EFFECT_CALM_MIND:
     case EFFECT_COSMIC_POWER:
     case EFFECT_DRAGON_DANCE:
+    case EFFECT_MEDITATE:
     case EFFECT_ACUPRESSURE:
     case EFFECT_SHELL_SMASH:
     case EFFECT_SHIFT_GEAR:

@@ -1976,8 +1976,8 @@ const struct Item gItemsInfo[] =
     [ITEM_SERIOUS_MINT] =
     {
         .name = ITEM_NAME("Serious Mint"),
-        // .price = (I_PRICE >= GEN_9) ? 20000 : 20,
         .price = 20,
+        // .price = (I_PRICE >= GEN_9) ? 20000 : 20,
         .description = COMPOUND_STRING(
             "Can be smelled. It\n"
             "makes each stat\n"
