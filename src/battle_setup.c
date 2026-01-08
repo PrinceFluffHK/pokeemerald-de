@@ -582,7 +582,8 @@ static void CB2_EndWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
-    HealPlayerParty();
+    // HealPlayerParty();
+    RechargePlayerParty();
 
     if (IsNPCFollowerWildBattle())
     {
@@ -609,7 +610,8 @@ static void CB2_EndScriptedWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
-    HealPlayerParty();
+    // HealPlayerParty();
+    RechargePlayerParty();
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE)
     {
@@ -1307,7 +1309,8 @@ static void HandleBattleVariantEndParty(void)
 static void CB2_EndTrainerBattle(void)
 {
     HandleBattleVariantEndParty();
-    HealPlayerParty();
+    // HealPlayerParty();
+    RechargePlayerParty();
 
     gIsDebugBattle = FALSE;
     if (FollowerNPCIsBattlePartner())
@@ -1349,7 +1352,8 @@ static void CB2_EndTrainerBattle(void)
 
 static void CB2_EndRematchBattle(void)
 {
-    HealPlayerParty();
+    // HealPlayerParty();
+    RechargePlayerParty();
     if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SECRET_BASE)
     {
         DowngradeBadPoison();
