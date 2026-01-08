@@ -2393,17 +2393,29 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Igglybuff @ Nugget
+Igglybuff
+Ability: Friend Guard
 Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Pound
+- Defense Curl
+- Sing
 
-Pichu @ Nugget
+Pichu
+Ability: Static
 Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunder Shock
+- Play Nice
+- Tail Whip
 
-Budew @ Nugget
+Budew
+Ability: Leaf Guard
 Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Absorb
+- Growth
+- Sunny Day
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -6788,13 +6800,22 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Wingull
+Zigzagoon
+Ability: Pickup
 Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Tackle
+- Mud-Slap
+- Growl
 
 Seedot
+Ability: Early Bird
 Level: 7
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Absorb
+- Harden
+- Bide
+- Tackle
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -7231,13 +7252,6 @@ AI: Smart Trainer
 
 Magikarp
 Ability: Swift Swim
-Level: 6
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Flail
-- Splash
-
-Magikarp
-Ability: Swift Swim
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Flail
@@ -7253,6 +7267,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Magikarp
 Ability: Swift Swim
 Level: 9
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flail
+- Splash
+
+Magikarp
+Ability: Swift Swim
+Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Flail
 - Splash
@@ -10068,7 +10089,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seedot
-Ability: Pickpocket
+Ability: Early Bird
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Absorb
@@ -12833,7 +12854,7 @@ AI: Smart Trainer
 
 Wurmple
 Ability: Run Away
-Level: 3
+Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
 - String Shot
@@ -12856,28 +12877,28 @@ AI: Smart Trainer
 
 Wurmple
 Ability: Run Away
-Level: 3
+Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
 - String Shot
 
 Wurmple
 Ability: Run Away
-Level: 3
+Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
 - String Shot
 
 Wurmple
 Ability: Run Away
-Level: 3
+Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
 - String Shot
 
 Wurmple
 Ability: Run Away
-Level: 3
+Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
 - String Shot
@@ -14693,12 +14714,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Feebas
+Ability: Swift Swim
 Level: 9
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Tackle
+- Splash
 
 Magikarp
+Ability: Swift Swim
 Level: 9
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flail
+- Splash
 
 === TRAINER_HAILEY ===
 Name: HAILEY
