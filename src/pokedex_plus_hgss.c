@@ -5147,6 +5147,17 @@ static bool8 CalculateMoves(void)
     if (gSpeciesInfo[species].isMegaEvolution || gSpeciesInfo[species].isGigantamax)
         species = GetFormSpeciesId(species, 0);
 
+    // Level up moves
+    numLevelUpMoves = GetLevelUpMovesBySpecies(species, statsMovesLevelUp);
+    for (i = 0; i < numLevelUpMoves; i++)
+    {
+        sStatsMoves[movesTotal] = statsMovesLevelUp[i];
+        movesTotal++;
+    }
+
+    // TM and Tutor moves
+    movesTotal = AddTMTutorMoves(species, movesTotal, &numTMHMMoves, &numTutorMoves);
+
     // Egg moves
     if (HGSS_SHOW_EGG_MOVES_FOR_EVOS)
     {
@@ -5168,21 +5179,10 @@ static bool8 CalculateMoves(void)
         movesTotal++;
     }
 
-    // Level up moves
-    numLevelUpMoves = GetLevelUpMovesBySpecies(species, statsMovesLevelUp);
-    for (i = 0; i < numLevelUpMoves; i++)
-    {
-        sStatsMoves[movesTotal] = statsMovesLevelUp[i];
-        movesTotal++;
-    }
-
-    // TM and Tutor moves
-    movesTotal = AddTMTutorMoves(species, movesTotal, &numTMHMMoves, &numTutorMoves);
-
-    sPokedexView->numEggMoves = numEggMoves;
     sPokedexView->numLevelUpMoves = numLevelUpMoves;
     sPokedexView->numTMHMMoves = numTMHMMoves;
     sPokedexView->numTutorMoves = numTutorMoves;
+    sPokedexView->numEggMoves = numEggMoves;
     sPokedexView->movesTotal = movesTotal;
 
     return TRUE;
