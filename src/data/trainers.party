@@ -14655,7 +14655,7 @@ Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Covet
 - Mud-Slap
-- Growl"  
+- Growl  
 
 === TRAINER_SARAH ===
 Name: SARAH
@@ -15108,7 +15108,7 @@ Ability: Pickup
 Level: 17
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Headbutt
-- Pin Missiile
+- Pin Missile
 - Mud-Slap
 - Growl
 
