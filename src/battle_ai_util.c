@@ -901,6 +901,10 @@ struct SimulatedDamage AI_CalcDamage(u32 move, u32 battlerAtk, u32 battlerDef, u
     struct AiLogicData *aiData = gAiLogicData;
     gAiLogicData->aiCalcInProgress = TRUE;
 
+    if (moveEffect == EFFECT_HIT_ENEMY_HEAL_ALLY
+     && battlerDef == BATTLE_PARTNER(battlerAtk))
+        return simDamage;
+
     if (moveEffect == EFFECT_NATURE_POWER)
         move = GetNaturePowerMove(battlerAtk);
 
@@ -2782,7 +2786,7 @@ bool32 IsAttackBoostMoveEffect(enum BattleMoveEffects effect)
     case EFFECT_ATTACK_UP_2:
     case EFFECT_ATTACK_ACCURACY_UP:
     case EFFECT_ATTACK_SPATK_UP:
-    case EFFECT_DRAGON_DANCE:
+    case EFFECT_MEDITATE:
     case EFFECT_COIL:
     case EFFECT_BELLY_DRUM:
     case EFFECT_BULK_UP:
@@ -2821,6 +2825,7 @@ bool32 IsStatRaisingEffect(enum BattleMoveEffects effect)
     case EFFECT_CALM_MIND:
     case EFFECT_COSMIC_POWER:
     case EFFECT_DRAGON_DANCE:
+    case EFFECT_MEDITATE:
     case EFFECT_ACUPRESSURE:
     case EFFECT_SHELL_SMASH:
     case EFFECT_SHIFT_GEAR:

@@ -2563,31 +2563,31 @@ bool8 TryFindHiddenPokemon(void)
                 environment = ENCOUNTER_TYPE_LAND;
             }
             break;
-        case 1: // water
-            if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
-            {
-                if (Random() % 100 < HIDDEN_MON_PROBABILTY)
-                {
-                    index = ChooseHiddenMonIndex();
-                    if (index == 0xFF)
-                        return FALSE;//no hidden info
-                    species = hiddenMonsInfo->wildPokemon[index].species;
-                    isHiddenMon = TRUE;
-                    environment = ENCOUNTER_TYPE_HIDDEN;
-                }
-                else
-                {
-                    species = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo->wildPokemon[ChooseWildMonIndex_Water()].species;
-                    environment = ENCOUNTER_TYPE_WATER;
+        // case 1: // water
+        //     if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+        //     {
+        //         if (Random() % 100 < HIDDEN_MON_PROBABILTY)
+        //         {
+        //             index = ChooseHiddenMonIndex();
+        //             if (index == 0xFF)
+        //                 return FALSE;//no hidden info
+        //             species = hiddenMonsInfo->wildPokemon[index].species;
+        //             isHiddenMon = TRUE;
+        //             environment = ENCOUNTER_TYPE_HIDDEN;
+        //         }
+        //         else
+        //         {
+        //             species = gWildMonHeaders[headerId].encounterTypes[timeOfDay].waterMonsInfo->wildPokemon[ChooseWildMonIndex_Water()].species;
+        //             environment = ENCOUNTER_TYPE_WATER;
 
-                }
-            }
-            else
-            {
-                // not surfing -> cant find hidden water mons
-                return FALSE;
-            }
-            break;
+        //         }
+        //     }
+        //     else
+        //     {
+        //         // not surfing -> cant find hidden water mons
+        //         return FALSE;
+        //     }
+        //     break;
         default:
             return FALSE;
         }

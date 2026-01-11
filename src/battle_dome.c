@@ -2404,7 +2404,7 @@ static int GetTypeEffectivenessPoints(int move, int targetSpecies, int mode)
     defAbility = GetSpeciesAbility(targetSpecies, 0);
     moveType = GetMoveType(move);
 
-    if (defAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
+    if (defAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND) //|| ABILITY_DRAGONFLY
     {
         // They likely meant to return here, as 8 is the number of points normally used in this mode for moves with no effect.
         // Because there's no return the value instead gets interpreted by the switch, and the number of points becomes 0.
@@ -4104,6 +4104,7 @@ static bool32 IsDomeComboMove(u32 move)
     case EFFECT_SPECIAL_ATTACK_UP_3:
     case EFFECT_CALM_MIND:
     case EFFECT_DRAGON_DANCE:
+    case EFFECT_MEDITATE:
     case EFFECT_BELLY_DRUM:
     case EFFECT_CHARGE:
     case EFFECT_BULK_UP:

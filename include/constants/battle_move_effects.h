@@ -176,6 +176,7 @@ enum __attribute__((packed)) BattleMoveEffects
     EFFECT_WATER_SPORT,
     EFFECT_CALM_MIND,
     EFFECT_DRAGON_DANCE,
+    EFFECT_MEDITATE,
     EFFECT_CAMOUFLAGE,
     EFFECT_PLEDGE,
     EFFECT_FLING,

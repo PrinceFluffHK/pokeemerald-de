@@ -2220,13 +2220,14 @@ void ObjectEventInteractionPickBerryTree(void)
 
     if (!OW_BERRY_MUTATIONS || mutation == 0)
     {
-        gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id));
+        gSpecialVar_0x8004 = AddBagItem(BerryTypeToItemId(berry), 1);
         return;
     }
     gSpecialVar_0x8004 = (CheckBagHasSpace(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id)) && CheckBagHasSpace(BerryTypeToItemId(mutation), 1)) + 2;
     if (gSpecialVar_0x8004 == 3)
     {
-        AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id));
+        AddBagItem(BerryTypeToItemId(berry), 1);
+        // AddBagItem(BerryTypeToItemId(berry), GetBerryCountByBerryTreeId(id));
         AddBagItem(BerryTypeToItemId(mutation), 1);
     }
 }
