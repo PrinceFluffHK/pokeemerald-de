@@ -11201,7 +11201,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPDEF_PLUS_1,
+            .moveEffect = MOVE_EFFECT_SP_DEF_PLUS_1,
             .self = TRUE,
             .chance = 30,
         }),
