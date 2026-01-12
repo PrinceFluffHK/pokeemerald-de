@@ -288,7 +288,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_NET_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_MUSCLE_BAND",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
     },
@@ -314,7 +314,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_X_ACCURACY",
+      "trainer_sight_or_berry_tree_id": "ITEM_CARBOS",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_X_ACCURACY"
     },
@@ -340,7 +340,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_104_POTION"
     },
@@ -508,7 +508,7 @@
       "x": 3,
       "y": 9,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_BOLD_MINT",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
     },
     {
@@ -516,7 +516,7 @@
       "x": 14,
       "y": 55,
       "elevation": 3,
-      "item": "ITEM_POTION",
+      "item": "ITEM_CARBOS",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POTION"
     },
     {
@@ -524,7 +524,7 @@
       "x": 16,
       "y": 72,
       "elevation": 3,
-      "item": "ITEM_ANTIDOTE",
+      "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
     },
     {

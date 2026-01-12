@@ -442,7 +442,7 @@
       "x": 66,
       "y": 3,
       "elevation": 3,
-      "item": "ITEM_ETHER",
+      "item": "ITEM_SACRED_ASH",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_ETHER"
     },
     {
@@ -450,7 +450,7 @@
       "x": 22,
       "y": 5,
       "elevation": 3,
-      "item": "ITEM_TM_PROTECT",
+      "item": "ITEM_TM_SWORDS_DANCE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM"
     },
     {

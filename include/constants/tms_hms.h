@@ -2,15 +2,15 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(WORK_UP) \
-    F(DRAGON_CLAW) \
-    F(PSYSHOCK) \
+    F(U_TURN) \
+    F(DRACO_METEOR) \
+    F(SCALD) \
     F(CALM_MIND) \
     F(ROAR) \
     F(TOXIC) \
     F(SNOWSCAPE) \
     F(BULK_UP) \
-    F(VENOSHOCK) \
+    F(BULLET_SEED) \
     F(HIDDEN_POWER) \
     F(SUNNY_DAY) \
     F(TAUNT) \
@@ -22,86 +22,86 @@
     F(RAIN_DANCE) \
     F(GIGA_DRAIN) \
     F(SAFEGUARD) \
-    F(HELPING_HAND) \
+    F(STOMPING_TANTRUM) \
     F(SOLAR_BEAM) \
-    F(WEATHER_BALL) \
+    F(IRON_TAIL) \
     F(THUNDERBOLT) \
     F(THUNDER) \
     F(EARTHQUAKE) \
-    F(LEECH_LIFE) \
+    F(ALLURING_VOICE) \
     F(DIG) \
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(EARTH_POWER) \
+    F(STRUGGLE_BUG) \
     F(REFLECT) \
-    F(SLUDGE_WAVE) \
+    F(VOLT_SWITCH) \
     F(FLAMETHROWER) \
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
     F(FIRE_BLAST) \
     F(ROCK_TOMB) \
-    F(AERIAL_ACE) \
+    F(TAILWIND) \
     F(TORMENT) \
     F(FACADE) \
-    F(FLAME_CHARGE) \
+    F(SECRET_POWER) \
     F(REST) \
-    F(TRAILBLAZE) \
+    F(DRAGON_TAIL) \
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
     F(OVERHEAT) \
-    F(LOW_SWEEP) \
-    F(FOCUS_BLAST) \
-    F(ENERGY_BALL) \
-    F(FALSE_SWIPE) \
-    F(AIR_SLASH) \
-    F(FLING) \
-    F(CHARGE_BEAM) \
-    F(SKY_DROP) \
-    F(INCINERATE) \
-    F(QUASH) \
-    F(WILL_O_WISP) \
-    F(ACROBATICS) \
-    F(EMBARGO) \
-    F(SELF_DESTRUCT) \
-    F(SHADOW_CLAW) \
-    F(PAYBACK) \
-    F(RETALIATE) \
-    F(GIGA_IMPACT) \
-    F(BREAKING_SWIPE) \
-    F(FOUL_PLAY) \
-    F(STONE_EDGE) \
-    F(VOLT_SWITCH) \
-    F(THUNDER_WAVE) \
-    F(GYRO_BALL) \
-    F(SWORDS_DANCE) \
-    F(STRUGGLE_BUG) \
-    F(HEX) \
-    F(BULLDOZE) \
     F(ICY_WIND) \
-    F(ROCK_SLIDE) \
-    F(X_SCISSOR) \
-    F(DRAGON_TAIL) \
-    F(SEED_BOMB) \
-    F(POISON_JAB) \
-    F(SOLAR_BLADE) \
-    F(GRASS_KNOT) \
-    F(SWAGGER) \
-    F(SLEEP_TALK) \
-    F(U_TURN) \
-    F(SUBSTITUTE) \
-    F(FLASH_CANNON) \
-    F(BODY_PRESS) \
-    F(WILD_CHARGE) \
-    F(IRON_HEAD) \
-    F(SNARL) \
-    F(ICE_SPINNER) \
-    F(DARK_PULSE) \
+    F(PSYCHIC_NOISE) \
+    F(CHARGE_BEAM) \
+    F(BREAKING_SWIPE) \
+    F(METEOR_BEAM) \
+    F(SCORCHING_SANDS) \
+    F(ELECTROWEB) \
+    F(SUPERCELL_SLAM) \
+    F(TEMPER_FLARE) \
+    F(SCALE_SHOT) \
     F(FLIP_TURN) \
-    F(DAZZLING_GLEAM) \
-    F(CHARM) 
+    F(POLTERGEIST) \
+    F(HIGH_HORSEPOWER) \
+    F(CLOSE_COMBAT) \
+    F(FLARE_BLITZ) \
+    F(TRICK_ROOM) \
+    F(POLLEN_PUFF) \
+    F(WEATHER_BALL) \
+    F(FOCUS_BLAST) \
+    F(BODY_PRESS) \
+    F(HEAT_WAVE) \
+    F(WILL_O_WISP) \
+    F(DRAGON_DANCE) \
+    F(LEECH_LIFE) \
+    F(TOXIC_SPIKES) \
+    F(SPIKES) \
+    F(STEALTH_ROCK) \
+    F(SWORDS_DANCE) \
+    F(ROCK_SLIDE) \
+    F(LIQUIDATION) \
+    F(EXPANDING_FORCE) \
+    F(TRAILBLAZE) \
+    F(PSYCHIC_FANGS) \
+    F(DRAIN_PUNCH) \
+    F(FIRE_PUNCH) \
+    F(ICE_PUNCH) \
+    F(THUNDER_PUNCH) \
+    F(KNOCK_OFF) \
+    F(CHILLING_WATER) \
+    F(IMPRISON) \
+    F(IRON_HEAD) \
+    F(AURA_SPHERE) \
+    F(HEAVY_SLAM) \
+    F(EARTH_POWER) \
+    F(NASTY_PLOT) \
+    F(STONE_EDGE) \
+    F(COACHING) \
+    F(DARK_PULSE) \
+    F(ICE_SPINNER) \
+    F(DAZZLING_GLEAM) 
 
 #define FOREACH_HM(F) \
     F(CUT) \
