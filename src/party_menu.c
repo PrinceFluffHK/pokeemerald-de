@@ -6101,11 +6101,11 @@ static void UseSacredAsh(u8 taskId)
     }
 
     hp = GetMonData(mon, MON_DATA_HP);
-    if (ExecuteTableBasedItemEffect(mon, gSpecialVar_ItemId, gPartyMenu.slotId, 0))
-    {
-        gTasks[taskId].func = Task_SacredAshLoop;
-        return;
-    }
+    // if (ExecuteTableBasedItemEffect(mon, gSpecialVar_ItemId, gPartyMenu.slotId, 0))
+    // {
+    //     gTasks[taskId].func = Task_SacredAshLoop;
+    //     return;
+    // }
 
     PlaySE(SE_USE_ITEM);
     SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
