@@ -53,7 +53,7 @@ EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	return
 
 EventScript_PkmnCenterNurse_RestoreSacredAsh::
-	giveitem ITEM_SACRED_ASH
+	additem ITEM_SACRED_ASH
 	return
 
 EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
