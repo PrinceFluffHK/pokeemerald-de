@@ -5656,14 +5656,14 @@ static void Task_PartyMenuReplaceMove(u8 taskId)
 
 static void StopLearningMovePrompt(u8 taskId)
 {
-    if (P_ASK_MOVE_CONFIRMATION == FALSE)
-    {
-        struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
-        GetMonNickname(mon, gStringVar1);
-    }
+    // if (P_ASK_MOVE_CONFIRMATION == FALSE)
+    // {
+    //     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    //     GetMonNickname(mon, gStringVar1);
+    // }
 
-    StringCopy(gStringVar2, GetMoveName(gPartyMenu.data1));
-    StringExpandPlaceholders(gStringVar4, (P_ASK_MOVE_CONFIRMATION) ? gText_StopLearningMove2 : gText_MoveNotLearned);
+    // StringCopy(gStringVar2, GetMoveName(gPartyMenu.data1));
+    // StringExpandPlaceholders(gStringVar4, (P_ASK_MOVE_CONFIRMATION) ? gText_StopLearningMove2 : gText_MoveNotLearned);
     DisplayPartyMenuMessage(gStringVar4, TRUE);
     ScheduleBgCopyTilemapToVram(2);
     gTasks[taskId].func = (P_ASK_MOVE_CONFIRMATION) ? Task_StopLearningMoveYesNo : Task_HandleStopLearningMove;
@@ -5696,9 +5696,9 @@ static void Task_HandleStopLearningMoveYesNoInput(u8 taskId)
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0:
-        GetMonNickname(mon, gStringVar1);
-        StringCopy(gStringVar2, GetMoveName(gPartyMenu.data1));
-        StringExpandPlaceholders(gStringVar4, gText_MoveNotLearned);
+        // GetMonNickname(mon, gStringVar1);
+        // StringCopy(gStringVar2, GetMoveName(gPartyMenu.data1));
+        // StringExpandPlaceholders(gStringVar4, gText_MoveNotLearned);
         DisplayPartyMenuMessage(gStringVar4, TRUE);
         if (gPartyMenu.learnMoveState == 1)
         {
