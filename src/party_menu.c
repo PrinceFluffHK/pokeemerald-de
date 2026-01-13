@@ -79,6 +79,7 @@
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "script_pokemon_util.h"
 
 enum {
     MENU_SUMMARY,
@@ -6094,6 +6095,7 @@ static void UseSacredAsh(u8 taskId)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 hp;
+    u16 maxhp;
 
     if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE)
     {
@@ -6102,11 +6104,13 @@ static void UseSacredAsh(u8 taskId)
     }
 
     hp = GetMonData(mon, MON_DATA_HP);
+    maxhp = GetMonData(mon, MON_DATA_MAX_HP);
     // if (ExecuteTableBasedItemEffect(mon, gSpecialVar_ItemId, gPartyMenu.slotId, 0))
-    // {
-    //     gTasks[taskId].func = Task_SacredAshLoop;
-    //     return;
-    // }
+    if (maxhp == hp) 
+    {
+        gTasks[taskId].func = Task_SacredAshLoop;
+        return;
+    }
 
     PlaySE(SE_USE_ITEM);
     SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
