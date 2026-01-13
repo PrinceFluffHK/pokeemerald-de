@@ -4045,20 +4045,31 @@ static const struct LevelUpMove sDittoLevelUpLearnset[] = {
 
 #if P_FAMILY_EEVEE
 static const struct LevelUpMove sEeveeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_COVET),
+    // LEVEL_UP_MOVE( 1, MOVE_COVET),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE( 5, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
+    //Roxanne
     LEVEL_UP_MOVE(15, MOVE_BABY_DOLL_EYES),
+    //Brawly
     LEVEL_UP_MOVE(20, MOVE_SWIFT),
+    //Wattson
+    //Evo Umbreon
     LEVEL_UP_MOVE(25, MOVE_BITE),
     LEVEL_UP_MOVE(30, MOVE_COPYCAT),
+    //Flannery
+    //Evo Flareon
+    //Norman
+    //Evo Jolteon
+    //Evo Vaporeon
     LEVEL_UP_MOVE(35, MOVE_BATON_PASS),
+    //Evo Leafeon
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(45, MOVE_CHARM),
+    //Evo Espeon
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
     LEVEL_UP_END
