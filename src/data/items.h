@@ -1162,11 +1162,11 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("Sacred Ash"),
         .pluralName = ITEM_PLURAL_NAME("Sacred Ashes"),
-        .price = (I_PRICE >= GEN_7) ? 50000 : 200,
+        .price = 10,
         .description = COMPOUND_STRING(
-            "Fully revives and\n"
-            "restores all\n"
-            "fainted Pokémon."),
+            "Fully restores all\n"
+            "damaged Pokémon.\n"
+            "Regenerates."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
