@@ -3982,10 +3982,10 @@ static const struct LevelUpMove sTaurosPaldeaAquaLevelUpLearnset[] = {
 #if P_FAMILY_MAGIKARP
 static const struct LevelUpMove sMagikarpLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
+    LEVEL_UP_MOVE(10, MOVE_FLAIL),
     LEVEL_UP_MOVE(15, MOVE_TACKLE),
     //Brawly
     //Wattson
-    LEVEL_UP_MOVE(25, MOVE_FLAIL),
     LEVEL_UP_END
 };
 
@@ -4001,16 +4001,17 @@ static const struct LevelUpMove sGyaradosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_BRINE),
     LEVEL_UP_MOVE(16, MOVE_SCARY_FACE),
     //Evo
-    LEVEL_UP_MOVE(21, MOVE_WATERFALL),
-    LEVEL_UP_MOVE(24, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(21, MOVE_DRAGON_TAIL),
+    LEVEL_UP_MOVE(24, MOVE_RAIN_DANCE),
     //Wattson
-    LEVEL_UP_MOVE(28, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(28, MOVE_CRUNCH),
     LEVEL_UP_MOVE(32, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(36, MOVE_DRAGON_DANCE),
     LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(44, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(44, MOVE_BOUNCE),
     LEVEL_UP_MOVE(48, MOVE_THRASH),
-    LEVEL_UP_MOVE(52, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(52, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(56, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAGIKARP
@@ -5376,6 +5377,7 @@ static const struct LevelUpMove sMarillLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sAzumarillLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_BOUNCY_BUBBLE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
