@@ -38,14 +38,14 @@ EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	applymovement VAR_0x800B, Movement_PkmnCenterNurse_Turn
 	waitmovement 0
 	dofieldeffect FLDEFF_POKECENTER_HEAL
-	checkitem ITEM_SACRED_ASH
-	call_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_RestoreSacredAsh
 .if OW_UNION_DISABLE_CHECK == FALSE && OW_FLAG_MOVE_UNION_ROOM_CHECK != 0
 	setflag OW_FLAG_MOVE_UNION_ROOM_CHECK
 	call CableClub_OnResume
 	clearflag OW_FLAG_MOVE_UNION_ROOM_CHECK
 .endif
 	waitfieldeffect FLDEFF_POKECENTER_HEAL
+	checkitem ITEM_SACRED_ASH
+	call_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_RestoreSacredAsh
 	applymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	special HealPlayerParty
