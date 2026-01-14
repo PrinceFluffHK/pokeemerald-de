@@ -89,11 +89,17 @@ Route103_EventScript_StartBrendanBattleMudkip::
 	end
 
 Route103_EventScript_AfterMayBattle::
+	msgbox Route103_Text_MayChooseAnother, MSGBOX_DEFAULT
+	callnative StartNewPokeballCaseUI
+	waitstate
 	msgbox Route103_Text_MayTimeToHeadBack, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
 
 Route103_EventScript_AfterBrendanBattle::
+	msgbox Route103_Text_BrendanChooseAnother, MSGBOX_DEFAULT
+	callnative StartNewPokeballCaseUI
+	waitstate
 	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
@@ -303,13 +309,19 @@ Route103_Text_MayDefeated:
 	.string "Wow! That's great!\n"
 	.string "{PLAYER}{KUN}, you're pretty good!$"
 
-Route103_Text_MayTimeToHeadBack:
+Route103_Text_MayChooseAnother:
 	.string "MAY: I think I know why my dad has\n"
 	.string "an eye out for you now.\p"
 	.string "I mean, you just got that POKéMON,\n"
 	.string "but it already likes you.\p"
 	.string "You might be able to befriend any\n"
 	.string "kind of POKéMON easily.\p"
+	.string "Here, why don't you take another\n"
+	.string "one from Dad's collection!$"
+
+Route103_Text_MayTimeToHeadBack:
+	.string "Trainers around here always have a\n"
+	.string "second POKéMON!\p"
 	.string "Well, it's time to head back to\n"
 	.string "the LAB.$"
 
@@ -328,7 +340,7 @@ Route103_Text_BrendanLetsBattle:
 Route103_Text_BrendanDefeated:
 	.string "Huh, {PLAYER}, you're not too shabby.$"
 
-Route103_Text_BrendanTimeToHeadBack:
+Route103_Text_BrendanChooseAnother:
 	.string "BRENDAN: I think I get it.\n"
 	.string "I think I know why my dad has his eye\l"
 	.string "out for you now.\p"
@@ -336,6 +348,12 @@ Route103_Text_BrendanTimeToHeadBack:
 	.string "even though you just got it.\p"
 	.string "{PLAYER}, I get the feeling that you\n"
 	.string "could befriend any POKéMON with ease.\p"
+	.string "Here, why don't you take another one\n"
+	.string "from Dad's collection?$"
+
+Route103_Text_BrendanTimeToHeadBack:
+	.string "Trainers around here always have a\n"
+	.string "second POKéMON.\p"
 	.string "We should head back to the LAB.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
