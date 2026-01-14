@@ -133,17 +133,30 @@ struct MonChoiceData{ // This is the format used to define a mon, everything lef
 static const struct MonChoiceData sStarterChoices[9] = 
 {
     // [BALL_TOP_FIRST]        = {SPECIES_MUDKIP, 5, ITEM_POTION, BALL_NET, NATURE_JOLLY, 1, MON_MALE, {255, 255, 0, 0, 0, 0}, {31, 31, 31, 31, 31, 31}, {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE}, 0, 0, 0},
-    [BALL_TOP_FIRST]        = {SPECIES_CLEFFA, 2},
-    [BALL_TOP_SECOND]       = {SPECIES_SMOOCHUM, 2},
-    [BALL_TOP_THIRD]        = {SPECIES_MAGBY, 2},
-    [BALL_TOP_FOURTH]       = {SPECIES_ELEKID, 2},
+    // [BALL_TOP_FIRST]        = {SPECIES_CLEFFA, 2},
+    // [BALL_TOP_SECOND]       = {SPECIES_SMOOCHUM, 2},
+    // [BALL_TOP_THIRD]        = {SPECIES_MAGBY, 2},
+    // [BALL_TOP_FOURTH]       = {SPECIES_ELEKID, 2},
     
-    [BALL_MIDDLE_FIRST]     = {SPECIES_BONSLY, 2},
-    [BALL_MIDDLE_SECOND]    = {SPECIES_MIME_JR, 2},
-    [BALL_MIDDLE_THIRD]     = {SPECIES_RIOLU, 2},
+    // [BALL_MIDDLE_FIRST]     = {SPECIES_BONSLY, 2},
+    // [BALL_MIDDLE_SECOND]    = {SPECIES_MIME_JR, 2},
+    // [BALL_MIDDLE_THIRD]     = {SPECIES_RIOLU, 2},
 
-    [BALL_BOTTOM_FIRST]     = {SPECIES_TYROGUE, 2},
-    [BALL_BOTTOM_SECOND]    = {SPECIES_TOXEL, 2},
+    // [BALL_BOTTOM_FIRST]     = {SPECIES_TYROGUE, 2},
+    // [BALL_BOTTOM_SECOND]    = {SPECIES_TOXEL, 2},
+    [BALL_TOP_FIRST]        = {SPECIES_DRATINI, 2},
+    [BALL_TOP_SECOND]       = {SPECIES_LARVITAR, 2},
+    [BALL_TOP_THIRD]        = {SPECIES_LARVESTA, 2},
+    [BALL_TOP_FOURTH]       = {SPECIES_DEINO, 2},
+    
+    [BALL_MIDDLE_FIRST]     = {SPECIES_GOOMY, 2},
+    [BALL_MIDDLE_SECOND]    = {SPECIES_JANGMO_O, 2},
+    [BALL_MIDDLE_THIRD]     = {SPECIES_MELMETAL, 2},
+
+    [BALL_BOTTOM_FIRST]     = {SPECIES_DREEPY, 2},
+    [BALL_BOTTOM_SECOND]    = {SPECIES_FRIGIBAX, 2},
+    // [BALL_BOTTOM_FIRST]     = {SPECIES_BAGON, 2},
+    // [BALL_BOTTOM_SECOND]    = {SPECIES_BELDUM, 2},
 };
 
 //==========EWRAM==========//
