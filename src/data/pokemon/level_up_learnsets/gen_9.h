@@ -22207,7 +22207,8 @@ static const struct LevelUpMove sFrigibaxLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sArctibaxLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_DRAGON_TAIL),
+    LEVEL_UP_MOVE( 0, MOVE_SNOWSCAPE),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_TAIL),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_POWDER_SNOW),
@@ -22230,7 +22231,7 @@ static const struct LevelUpMove sBaxcaliburLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SNOWSCAPE),
     LEVEL_UP_MOVE( 1, MOVE_BREAKING_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_DRAGON_TAIL),
-    // LEVEL_UP_MOVE( 1, MOVE_ICE_SHARD),
+    LEVEL_UP_MOVE( 1, MOVE_ICY_WIND),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_POWDER_SNOW),
