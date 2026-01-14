@@ -6096,6 +6096,7 @@ static void UseSacredAsh(u8 taskId)
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 hp;
     u16 maxhp;
+    u16 status;
 
     if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE)
     {
@@ -6105,21 +6106,25 @@ static void UseSacredAsh(u8 taskId)
 
     hp = GetMonData(mon, MON_DATA_HP);
     maxhp = GetMonData(mon, MON_DATA_MAX_HP);
+    status = GetMonData(mon, MON_DATA_STATUS);
+
     // if (ExecuteTableBasedItemEffect(mon, gSpecialVar_ItemId, gPartyMenu.slotId, 0))
-    if (maxhp == hp) 
+    if (maxhp == hp && status == STATUS1_NONE) 
     {
         gTasks[taskId].func = Task_SacredAshLoop;
         return;
     }
 
     PlaySE(SE_USE_ITEM);
-    SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
-    if (gSprites[sPartyMenuBoxes[gPartyMenu.slotId].statusSpriteId].invisible)
-    DisplayPartyPokemonLevelCheck(mon, &sPartyMenuBoxes[gPartyMenu.slotId], 1);
-    AnimatePartySlot(sPartyMenuInternal->tLastSlotUsed, 0);
-    AnimatePartySlot(gPartyMenu.slotId, 1);
-    PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_SacredAshDisplayHPRestored);
+    // SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
+    // if (gSprites[sPartyMenuBoxes[gPartyMenu.slotId].statusSpriteId].invisible)
+    // DisplayPartyPokemonLevelCheck(mon, &sPartyMenuBoxes[gPartyMenu.slotId], 1);
+    // AnimatePartySlot(sPartyMenuInternal->tLastSlotUsed, 0);
+    // AnimatePartySlot(gPartyMenu.slotId, 1);
+    // PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_SacredAshDisplayHPRestored);
     ResetHPTaskData(taskId, 0, hp);
+    ResetHPTaskData(taskId, 0, maxhp);
+    ResetHPTaskData(taskId, 0, status);
     HealPlayerParty();
     sPartyMenuInternal->tUsedOnSlot = TRUE;
     sPartyMenuInternal->tHadEffect = TRUE;
