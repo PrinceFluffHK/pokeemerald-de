@@ -14858,7 +14858,7 @@ static const struct LevelUpMove sDurantLevelUpLearnset[] = {
 static const struct LevelUpMove sDeinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE( 4, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE( 4, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 8, MOVE_BITE),
     LEVEL_UP_MOVE(12, MOVE_ROAR),
     LEVEL_UP_MOVE(16, MOVE_ASSURANCE),
@@ -14880,7 +14880,7 @@ static const struct LevelUpMove sZweilousLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE( 1, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
     LEVEL_UP_MOVE(12, MOVE_ROAR),
     LEVEL_UP_MOVE(16, MOVE_ASSURANCE),
@@ -14901,7 +14901,7 @@ static const struct LevelUpMove sZweilousLevelUpLearnset[] = {
 static const struct LevelUpMove sHydreigonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
-    LEVEL_UP_MOVE( 1, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 1, MOVE_TRI_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
@@ -14927,14 +14927,19 @@ static const struct LevelUpMove sHydreigonLevelUpLearnset[] = {
 static const struct LevelUpMove sLarvestaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
-    LEVEL_UP_MOVE( 6, MOVE_FLAME_CHARGE),
-    LEVEL_UP_MOVE(12, MOVE_STRUGGLE_BUG),
+    LEVEL_UP_MOVE( 6, MOVE_ABSORB),
+    LEVEL_UP_MOVE(12, MOVE_FIRE_SPIN),
+    //Roxanne
+    //Brawly
     LEVEL_UP_MOVE(18, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(24, MOVE_STRUGGLE_BUG),
+    //Wattson
     LEVEL_UP_MOVE(30, MOVE_SCREECH),
     LEVEL_UP_MOVE(36, MOVE_LEECH_LIFE),
     LEVEL_UP_MOVE(42, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(48, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(54, MOVE_AMNESIA),
+    //Evolution at 59
     LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(66, MOVE_FLARE_BLITZ),
     LEVEL_UP_END
@@ -14960,6 +14965,7 @@ static const struct LevelUpMove sVolcaronaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(48, MOVE_HEAT_WAVE),
     LEVEL_UP_MOVE(54, MOVE_AMNESIA),
+    //Evolution at 59
     LEVEL_UP_MOVE(62, MOVE_HURRICANE),
     LEVEL_UP_MOVE(70, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(78, MOVE_RAGE_POWDER),
