@@ -315,9 +315,9 @@ Route103_Text_MayChooseAnother:
 	.string "I mean, you just got that POKéMON,\n"
 	.string "but it already likes you.\p"
 	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
-	.string "Here, why don't you take another\n"
-	.string "one from Dad's collection!$"
+	.string "kind of POKéMON easily.$"
+@	.string "Here, why don't you take another\n"
+@	.string "one from Dad's collection!$"
 
 Route103_Text_MayTimeToHeadBack:
 	.string "Trainers around here always have a\n"
@@ -347,9 +347,9 @@ Route103_Text_BrendanChooseAnother:
 	.string "Look, your POKéMON already likes you,\n"
 	.string "even though you just got it.\p"
 	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "Here, why don't you take another one\n"
-	.string "from Dad's collection?$"
+	.string "could befriend any POKéMON with ease.$"
+@	.string "Here, why don't you take another one\n"
+@	.string "from Dad's collection?$"
 
 Route103_Text_BrendanTimeToHeadBack:
 	.string "Trainers around here always have a\n"

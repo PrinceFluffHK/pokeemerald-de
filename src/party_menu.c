@@ -6086,7 +6086,7 @@ void ItemUseCB_DynamaxCandy(u8 taskId, TaskFunc task)
 void ItemUseCB_SacredAsh(u8 taskId, TaskFunc task)
 {
     sPartyMenuInternal->tUsedOnSlot = FALSE;
-    sPartyMenuInternal->tHadEffect = FALSE;
+    sPartyMenuInternal->tHadEffect = TRUE;
     sPartyMenuInternal->tLastSlotUsed = gPartyMenu.slotId;
     UseSacredAsh(taskId);
 }
@@ -6115,17 +6115,17 @@ static void UseSacredAsh(u8 taskId)
         return;
     }
 
-    PlaySE(SE_USE_ITEM);
-    // SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
-    // if (gSprites[sPartyMenuBoxes[gPartyMenu.slotId].statusSpriteId].invisible)
-    // DisplayPartyPokemonLevelCheck(mon, &sPartyMenuBoxes[gPartyMenu.slotId], 1);
-    // AnimatePartySlot(sPartyMenuInternal->tLastSlotUsed, 0);
-    // AnimatePartySlot(gPartyMenu.slotId, 1);
+    SetPartyMonAilmentGfx(mon, &sPartyMenuBoxes[gPartyMenu.slotId]);
+    if (gSprites[sPartyMenuBoxes[gPartyMenu.slotId].statusSpriteId].invisible)
+    DisplayPartyPokemonLevelCheck(mon, &sPartyMenuBoxes[gPartyMenu.slotId], 1);
+    AnimatePartySlot(sPartyMenuInternal->tLastSlotUsed, 0);
+    AnimatePartySlot(gPartyMenu.slotId, 1);
     // PartyMenuModifyHP(taskId, gPartyMenu.slotId, 1, GetMonData(mon, MON_DATA_HP) - hp, Task_SacredAshDisplayHPRestored);
     ResetHPTaskData(taskId, 0, hp);
     ResetHPTaskData(taskId, 0, maxhp);
     ResetHPTaskData(taskId, 0, status);
     HealPlayerParty();
+    PlaySE(SE_USE_ITEM);
     sPartyMenuInternal->tUsedOnSlot = TRUE;
     sPartyMenuInternal->tHadEffect = TRUE;
 }
