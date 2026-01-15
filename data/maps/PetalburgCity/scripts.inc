@@ -552,8 +552,8 @@ PetalburgCity_EventScript_Scott::
 	waitmovement 0
 	delay 30
 	msgbox PetalburgCity_Text_ImLookingForTalentedTrainers, MSGBOX_DEFAULT
-	giveitem ITEM_SACRED_ASH
 	closemessage
+@	giveitem ITEM_SACRED_ASH
 	call_if_eq VAR_0x8008, 0, PetalburgCity_EventScript_ScottExit0
 	call_if_eq VAR_0x8008, 1, PetalburgCity_EventScript_ScottExit1
 	call_if_eq VAR_0x8008, 2, PetalburgCity_EventScript_ScottExit2
@@ -760,7 +760,4 @@ PetalburgCity_Text_WellMaybeNot:
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.\p"
-	.string "Here, take this, just in case.\p"
-	.string "They say that if you heal at a\n"
-	.string "POKéMON CENTER, they regenerate.$"
+	.string "I'm sorry to have taken your time.$"
