@@ -13543,12 +13543,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Peck
 - Supersonic
 
-Ralts
-Ability: Telepathy
-Level: 14
+Numel
+Ability: Oblivious
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Draining Kiss
-- Confusion
+- Mud Slap
+- Take Down
 - Growl
 
 === TRAINER_GERALD ===
