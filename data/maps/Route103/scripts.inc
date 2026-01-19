@@ -90,8 +90,8 @@ Route103_EventScript_StartBrendanBattleMudkip::
 
 Route103_EventScript_AfterMayBattle::
 	msgbox Route103_Text_MayChooseAnother, MSGBOX_DEFAULT
-	callnative StartNewPokeballCaseUI
-	waitstate
+@	callnative StartNewPokeballCaseUI
+@	waitstate
 	msgbox Route103_Text_MayTimeToHeadBack, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
