@@ -416,9 +416,9 @@ Route104_Text_CindyPostRematch:
 	.string "I hope we meet again.$"
 
 Route104_Text_DarianIntro:
-	.string "I fished up a tough-looking POKéMON!\p"
-	.string "It has this magical quality to it!\n"
-	.string "It surely looks tough, yes it does!$"
+	.string "I fished up some adorable POKéMON!\p"
+	.string "One of them has this magical quality!i\n"
+	.string "It surely looks cute, yes it does!$"
 
 Route104_Text_DarianDefeat:
 	.string "What the…$"
