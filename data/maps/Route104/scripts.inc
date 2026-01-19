@@ -1025,11 +1025,12 @@ Route104_Text_ImNotATrainer:
 	.string "of their sight.$"
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis:
-	.string "I like filling my mouth with seeds,\n"
-	.string "then spitting them out fast!\p"
-	.string "You can have this, so you try it out!\p"
-	.string "Use it on a POKéMON, and it will learn\n"
-	.string "a move for firing seeds rapidly.$"
+	.string "I like to go hiking in the woods\n"
+	.string "with my family!\p"
+	.string "Here, you can have this.\p"
+	.string "It's pretty fragile, but I met a\n"
+	.string "guy in Ever Grande City who sold\n"
+	.string "all kinds of them for cheap!."
 
 Route104_Text_TMsAreOneTimeUse:
 	.string "A word of advice!\p"
