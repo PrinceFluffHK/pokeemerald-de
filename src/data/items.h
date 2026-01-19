@@ -1167,7 +1167,7 @@ const struct Item gItemsInfo[] =
             "Fully restores all\n"
             "damaged Pokémon.\n"
             "Regenerates."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_SacredAsh,
@@ -1175,6 +1175,7 @@ const struct Item gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_DittoPowder,
         .iconPalette = gItemIconPalette_SacredAsh,
+        .importance = 1,
     },
 
     [ITEM_SWEET_HEART] =
