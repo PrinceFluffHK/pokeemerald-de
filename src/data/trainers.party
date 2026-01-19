@@ -5445,16 +5445,16 @@ Ability: Battle Armor
 Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Smack Down
+- Cut
 - Water Gun
-- Harden
 
 Lileep
-Ability: Tangling Hair
+Ability: Suction Cups
 Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Absorb
-- Acid
 - Ingrain
+- Rock Tomb
 
 Nosepass
 Ability: Sturdy
