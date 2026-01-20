@@ -5190,10 +5190,10 @@ static bool8 CalculateMoves(void)
 
 static void PrintStatsScreen_Moves_Top(u8 taskId)
 {
-    u8 numEggMoves      = sPokedexView->numEggMoves;
     u8 numLevelUpMoves  = sPokedexView->numLevelUpMoves;
     u8 numTMHMMoves     = sPokedexView->numTMHMMoves;
     u8 numTutorMoves    = sPokedexView->numTutorMoves;
+    u8 numEggMoves      = sPokedexView->numEggMoves;
     u16 movesTotal      = sPokedexView->movesTotal;
     u16 selected        = sPokedexView->moveSelected;
     u8 level;
