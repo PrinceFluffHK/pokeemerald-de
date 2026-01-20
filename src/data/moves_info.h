@@ -522,7 +522,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Cut"),
         .description = COMPOUND_STRING(
             "Slices at the foe and\n"
-            "lowers its Defense."),
+            "sometimes lowers Defense."),
         .effect = EFFECT_HIT,
         .power = 50,
         .type = TYPE_STEEL, //TYPE_NORMAL,
@@ -535,7 +535,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 100,
+            .chance = 30,
         }),
         .slicingMove = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
@@ -6517,7 +6517,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A claw attack that may\n"
             "raise the user's Attack."),
         .effect = EFFECT_HIT,
-        .power = 50,
+        .power = 60,
         .type = TYPE_STEEL,
         .accuracy = 100, //95,
         // .pp = 35,
