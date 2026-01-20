@@ -54,7 +54,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 73,
+      "x": 70,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -165,7 +165,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_GUARD_SPEC",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_STRUGGLE_BUG",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_103_GUARD_SPEC"
     },
@@ -230,7 +230,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_103_PP_UP"
     },
