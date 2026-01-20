@@ -555,6 +555,7 @@ PetalburgCity_EventScript_Scott::
 	closemessage
 @	giveitem ITEM_SACRED_ASH
 	giveitem ITEM_EXP_SHARE
+	closemessage
 	call_if_eq VAR_0x8008, 0, PetalburgCity_EventScript_ScottExit0
 	call_if_eq VAR_0x8008, 1, PetalburgCity_EventScript_ScottExit1
 	call_if_eq VAR_0x8008, 2, PetalburgCity_EventScript_ScottExit2
