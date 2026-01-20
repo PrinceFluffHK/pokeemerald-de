@@ -450,20 +450,20 @@ AI: Smart Trainer
 
 Carvanha
 Ability: Rough Skin
-Level: 13
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Aqua Jet
 - Bite
 - Leer
 - Scary Face
 
-Corphish
-Ability: Adaptability
-Level: 13
+Zubat
+Ability: Inner Focus
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Bubble Beam
-- Vice Grip
-- Leer
+- Poison Fang
+- Bite
+- Supersonic
 
 === TRAINER_GRUNT_MUSEUM_2 ===
 Name: GRUNT
@@ -474,13 +474,13 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Ability: Inner Focus
+Corphish
+Ability: Adaptability
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Poison Fang
-- Bite
-- Supersonic
+- Bubble Beam
+- Vice Grip
+- Leer
 
 Carvanha
 Ability: Rough Skin
@@ -743,8 +743,8 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shroomish
-Ability: Quick Feet
-Level: 15
+Ability: Poison Heal
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Headbutt
@@ -752,7 +752,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Roselia
 Ability: Natural Cure
-Level: 14
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Absorb
 - Poison Sting
