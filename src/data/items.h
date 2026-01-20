@@ -13577,7 +13577,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_GOOD_ROD] =
     {
-        .name = ITEM_NAME("Fishing Rod"),
+        .name = ITEM_NAME("Good Rod"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A decent fishing\n"
