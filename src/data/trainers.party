@@ -5440,7 +5440,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Anorith
+Anorith (F)
 Ability: Battle Armor
 Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -5448,7 +5448,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Cut
 - Water Gun
 
-Lileep
+Lileep (F)
 Ability: Suction Cups
 Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -5456,7 +5456,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Ingrain
 - Rock Tomb
 
-Nosepass
+Nosepass (F)
 Ability: Sturdy
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -5842,7 +5842,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Ralts
+Ralts (M)
 Ability: Telepathy
 Level: 11
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6787,7 +6787,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Zigzagoon
 Ability: Pickup
-Level: 3
+Level: 2
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
 
@@ -6800,7 +6800,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Zigzagoon
+"Zigzagoon
 Ability: Pickup
 Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6815,7 +6815,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Absorb
 - Harden
 - Bide
-- Tackle
+- Tackle"
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -6826,7 +6826,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
+Geodude (M)
 Ability: Rock Head
 Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6834,7 +6834,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Tackle
 - Defense Curl
 
-Geodude
+Geodude (M)
 Ability: Rock Head
 Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6851,7 +6851,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
+Geodude (M)
 Ability: Rock Head
 Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6859,7 +6859,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Tackle
 - Defense Curl
 
-Aron
+Aron (M)
 Ability: Sturdy
 Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -7103,7 +7103,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
+"Poochyena
 Ability: Run Away
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -7115,7 +7115,7 @@ Ability: Guts
 Level: 3
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Peck
-- Growl
+- Focus Energy"
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -10088,13 +10088,14 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Seedot
+"Seedot
 Ability: Early Bird
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Absorb
-- Harden
+- Tackle
 - Bide
+- Harden
 
 Lotad
 Ability: Swift Swim
@@ -10102,7 +10103,7 @@ Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Absorb
-- Astonish
+- Astonish"
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -12023,7 +12024,7 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
+Geodude (M)
 Ability: Rock Head
 Level: 11
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12031,7 +12032,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Tackle
 - Defense Curl
 
-Rhyhorn
+Rhyhorn (M)
 Ability: Lightning Rod
 Level: 10
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12670,7 +12671,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Zigzagoon
+"Zigzagoon
 Ability: Pickup
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12683,7 +12684,7 @@ Ability: Quick Feet
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
-- Absorb
+- Absorb"
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -12694,7 +12695,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Swablu
+"Swablu
 Ability: Natural Cure
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12708,7 +12709,7 @@ Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Absorb
 - Tackle
-- Leech Seed
+- Leech Seed"
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -12914,7 +12915,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Wurmple
+"Wurmple
 Ability: Run Away
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12926,7 +12927,7 @@ Ability: Run Away
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
-- String Shot
+- String Shot"
 
 === TRAINER_LYLE ===
 Name: LYLE
@@ -13056,9 +13057,9 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Surskit
+"Surskit
 Ability: Swift Swim
-Level: 6
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Quick Attack
@@ -13073,11 +13074,11 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Nincada
 Ability: Compound Eyes
-Level: 6
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sand Attack
 - Scratch
-- Harden
+- Harden"
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -14775,7 +14776,7 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Feebas
+"Feebas
 Ability: Swift Swim
 Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -14787,7 +14788,7 @@ Ability: Swift Swim
 Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Flail
-- Splash
+- Splash"
 
 === TRAINER_HAILEY ===
 Name: HAILEY
