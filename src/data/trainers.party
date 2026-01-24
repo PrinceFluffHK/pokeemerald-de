@@ -461,8 +461,8 @@ Zubat
 Ability: Inner Focus
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Poison Fang
 - Bite
+- Astonish
 - Supersonic
 
 === TRAINER_GRUNT_MUSEUM_2 ===
@@ -480,7 +480,7 @@ Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
 - Vice Grip
-- Leer
+- Swords Dance
 
 Carvanha
 Ability: Rough Skin
@@ -744,7 +744,7 @@ AI: Smart Trainer
 
 Shroomish
 Ability: Poison Heal
-Level: 16
+Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Headbutt
@@ -767,17 +767,17 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Roselia
-Ability: Natural Cure
-Level: 17
+Oddish
+Ability: Chlorophyll
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Absorb
-- Poison Sting
-- Growth
+- Magical Leaf
+- Acid
+- Stun Spore
 
 Shroomish
 Ability: Poison Heal
-Level: 17
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Headbutt
@@ -786,7 +786,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Roselia
 Ability: Natural Cure
-Level: 17
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Absorb
 - Poison Sting
@@ -3847,18 +3847,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Electrike
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Static
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
-- Thunder Wave
-- Spark
-- Leer
+- Thunder Fang
+- Bite
+- Howl
 
 Voltorb
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Soundproof
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spark
+- Rollout
 - Charge
-- Shock Wave
 - Screech
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
@@ -3905,12 +3908,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Soundproof
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spark
+- Rollout
+- Charge
+- Screech
 
 Magnemite
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magnet Pull
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shock Wave
+- Magnet Bomb
+- Thunder Wave
+- Metal Sound
 
 === TRAINER_FERNANDO_1 ===
 Name: FERNANDO
@@ -3939,12 +3952,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Ability: Analytic
+Ability: Magnet Pull
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunder Shock
 - Magnet Bomb
 - Thunder Wave
+- Metal Sound
 
 Whismur
 Ability: Soundproof
@@ -4535,12 +4549,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Dustox
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Shield Dust
+Level: 17
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Poison Powder
+- Moonlight
+- Protect
 
 Beautifly
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swarm
+Level: 17
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bug Bite
+- Gust
+- Mega Drain
+- Morning Sun
 
 === TRAINER_JEFFREY_2 ===
 Name: JEFFREY
@@ -4842,15 +4866,21 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Abra
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Hidden Power
+Kadabra
+Ability: Magic Guard
+Level: 17
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Disable
+- Ally Switch
 
-Abra
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Hidden Power
+Spoink
+Ability: Magic Bounce
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Zen Headbutt
+- Bounce
+- Splash
 
 === TRAINER_HANNAH ===
 Name: HANNAH
@@ -5479,7 +5509,7 @@ Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Confusion
 - Feint
-- Work Up
+- Meditate
 - Detect
 
 Machop
@@ -5499,7 +5529,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Double Kick
 - Peck
 
-Makuhita @ Sitrus Berry
+Makuhita @ Oran Berry
 Ability: Thick Fat
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -5517,48 +5547,50 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Plusle  
-Ability: Plus  
-Level: 20  
+Electrike
+Ability: Minus
+Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Electro Ball  
-- Quick Attack  
-- Trailblaze  
-- Swift  
+- Quick Attack
+- Thunder Fang
+- Bite
+- Howl
 
-Minun  
-Ability: Minus  
-Level: 20  
+Minun
+Ability: Minus
+Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Helping Hand  
-- Play Nice  
-- Spark  
+- Nuzzle
+- Swift
+- Helping Hand
+- Encore
 
-Volbeat  
-Ability: Prankster  
-Level: 22  
+Voltorb
+Ability: Soundproof
+Level: 20
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Shock Wave  
-- Pounce  
-- Thunder Wave  
-- Tail Glow  
+- Shock Wave
+- Rollout
+- Self Destruct
+- Charge
 
-Magneton  
-Ability: Sturdy  
-Level: 22  
+Magneton @ Air Balloon
+Ability: Magnet Pull
+Level: 22
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Charge Beam  
-- Magnet Bomb  
-- Charge  
+- Charge Beam
+- Magnet Bomb
+- Tri Attack
+- Magnet Rise
 
-Manectric  
-Ability: Static  
-Level: 24  
+Manectric @ Sitrus Berry
+Ability: Static
+Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Thunder Fang  
-- Fire Fang  
-- Bite  
-- Howl  
+- Quick Attack
+- Shock Wave
+- Fire Fang
+- Howl
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -6105,19 +6137,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Zigzagoon
+Ability: Pickup
 Level: 15
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Growl
-- Tail Whip
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Headbutt
-- Odor Sleuth
+- Pin Missile
+- Mud-Slap
+- Growl
 
 Makuhita
+Ability: Thick Fat
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Tackle
-- Focus Energy
-- Arm Thrust
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Force Palm
+- Bulk Up
+- Whirlwind
 
 === TRAINER_ANNA_AND_MEG_2 ===
 Name: ANNA & MEG
@@ -6225,12 +6260,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Taillow @ Oran Berry
+Ability: Guts
 Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Wing Attack
+- Focus Energy
 
 Zigzagoon @ Oran Berry
+Ability: Pickup
 Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Headbutt
+- Pin Missile
+- Mud-Slap
+- Growl
 
 === TRAINER_MIGUEL_1 ===
 Name: MIGUEL
@@ -6255,7 +6299,7 @@ Ability: Static
 Level: 15
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
-- Tackle
+- Quick Attack
 - Howl
 
 === TRAINER_COLTON ===
@@ -6392,9 +6436,9 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Roselia 
+Roselia
 Ability: Natural Cure
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Poison Sting
@@ -6402,7 +6446,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Skitty @ Oran Berry
 Ability: Wonder Skin
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fake Out
 - Covet
@@ -6670,7 +6714,7 @@ AI: Smart Trainer
 
 Meditite
 Ability: Pure Power
-Level: 20
+Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Force Palm
 - Confusion
@@ -6679,7 +6723,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Mawile
 Ability: Intimidate
-Level: 18
+Level: 17
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fairy Wind
 - Bite
@@ -6800,7 +6844,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-"Zigzagoon
+Zigzagoon
 Ability: Pickup
 Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6815,7 +6859,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Absorb
 - Harden
 - Bide
-- Tackle"
+- Tackle
 
 === TRAINER_JOSH ===
 Name: JOSH
@@ -6901,21 +6945,29 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Zigzagoon
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Headbutt
-- Sand Attack
-- Growl
-- Thunderbolt
+Sandshrew
+Ability: Sand Rush
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bulldoze
+- Fury Swipes
+- Fury Cutter
 
 Gulpin
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Earth Eater
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Acid Spray
+- Poison Gas
 - Amnesia
-- Sludge
-- Yawn
-- Pound
+
+Electrike
+Ability: Static
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Thunder Fang
+- Bite
 
 === TRAINER_QUINCY ===
 Name: QUINCY
@@ -7103,7 +7155,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-"Poochyena
+Poochyena
 Ability: Run Away
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -7115,7 +7167,7 @@ Ability: Guts
 Level: 3
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Peck
-- Focus Energy"
+- Focus Energy
 
 === TRAINER_TIMMY ===
 Name: TIMMY
@@ -7218,28 +7270,28 @@ AI: Smart Trainer
 
 Goldeen
 Ability: Swift Swim
-Level: 15
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Pulse
 - Peck
 - Supersonic
 
-Horsea
+Goldeen
 Ability: Swift Swim
-Level: 15
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Gun
-- Twister
-- Smokescreen
+- Water Pulse
+- Peck
+- Supersonic
 
 Luvdisc
-Ability: Triage
+Ability: Swift Swim
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Tackle
 - Charm
-- Life Dew
+- Wish
 
 === TRAINER_IVAN ===
 Name: IVAN
@@ -7317,7 +7369,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Tentacool
 Ability: Liquid Ooze
-Level: 12
+Level: 11
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Acid
@@ -7346,14 +7398,12 @@ Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Acid
-- Wrap
 
 Tentacool
 Ability: Liquid Ooze
 Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
-- Acid
 - Wrap
 
 === TRAINER_DALE ===
@@ -7612,16 +7662,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 6
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Soundproof
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spark
+- Rollout
+- Charge
 
 Voltorb
-Level: 6
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Soundproof
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spark
+- Rollout
+- Charge
 
 Magnemite
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magnet Pull
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunder Shock
+- Gyro Ball
+- Thunder Wave
 
 === TRAINER_ANTHONY ===
 Name: ANTHONY
@@ -7632,13 +7694,22 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Magnemite
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Phanpy
+Ability: Pickup
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Attack
+- Rollout
+- Defense Curl
+- Charm
 
 Magnemite
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magnet Pull
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunder Shock
+- Gyro Ball
+- Thunder Wave
 
 === TRAINER_BENJAMIN_1 ===
 Name: BENJAMIN
@@ -7650,8 +7721,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magnet Pull
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunder Shock
+- Gyro Ball
+- Thunder Wave
+
+Spheal
+Ability: Thick Fat
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ice Ball
+- Water Gun
+- Defense Curl
+- Rest
 
 === TRAINER_BENJAMIN_2 ===
 Name: BENJAMIN
@@ -7730,13 +7814,22 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Magnemite
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Voltorb
+Ability: Soundproof
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spark
+- Rollout
+- Charge
 
-Magnemite
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Phanpy
+Ability: Pickup
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Attack
+- Rollout
+- Defense Curl
+- Charm
 
 === TRAINER_JASMINE ===
 Name: JASMINE
@@ -7747,17 +7840,31 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Magnemite
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Phanpy
+Ability: Pickup
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Attack
+- Rollout
+- Defense Curl
+- Charm
 
-Magnemite
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Spheal
+Ability: Thick Fat
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ice Ball
+- Water Gun
+- Defense Curl
+- Rest
 
 Voltorb
-Level: 6
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Soundproof
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Spark
+- Rollout
+- Charge
 
 === TRAINER_ABIGAIL_2 ===
 Name: ABIGAIL
@@ -7839,12 +7946,18 @@ AI: Smart Trainer
 Doduo
 Ability: Run Away
 Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Attack
+- Pluck
+- Double Kick
 
 Electrike
 Ability: Static
 Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Spark
+- Howl
 
 === TRAINER_DYLAN_2 ===
 Name: DYLAN
@@ -7924,12 +8037,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Doduo
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Run Away
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Attack
+- Pluck
+- Double Kick
 
 Doduo
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Run Away
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Attack
+- Pluck
+- Double Kick
 
 === TRAINER_MARIA_2 ===
 Name: MARIA
@@ -9006,7 +9127,7 @@ Ability: Pure Power
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Confusion
-- Work Up
+- Meditate
 - Detect
 
 === TRAINER_LAURA ===
@@ -9023,7 +9144,7 @@ Ability: Pure Power
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Confusion
-- Work Up
+- Meditate
 - Detect
 
 Meditite
@@ -9031,7 +9152,7 @@ Ability: Pure Power
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Confusion
-- Work Up
+- Meditate
 - Detect
 
 === TRAINER_CYNDY_1 ===
@@ -10088,7 +10209,7 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-"Seedot
+Seedot
 Ability: Early Bird
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -10103,7 +10224,7 @@ Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Absorb
-- Astonish"
+- Astonish
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -11287,29 +11408,57 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
+Makuhita
+Ability: Thick Fat
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Force Palm
+- Bulk Up
+- Whirlwind
+
 Whismur
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Soundproof
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Echoed Voice
+- Pound
+- Disarming Voice
+- Howl
 
 Zigzagoon
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pickup
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Headbutt
+- Mud-Slap
+- Growl
 
 Aron
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sturdy
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Smack Down
+- Headbutt
+- Protect
 
 Poochyena
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Run Away
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bite
+- Tackle
+- Howl
+- Roar
 
 Taillow
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Makuhita
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Peck
+- Focus Energy
 
 === TRAINER_DAVIS ===
 Name: DAVIS
@@ -11495,28 +11644,54 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Wingull
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Keen Eye
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Wing Attack
+- Water Gun
+- Growl
 
 Shroomish
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Quick Feet
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Leech Seed
 
 Marill
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Thick Fat
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Tackle
+- Tail Whip
 
 Roselia
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Natural Cure
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Absorb
+- Poison Sting
+- Growth
 
 Skitty
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Wonder Skin
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Tackle
+- Disarming Voice
+- Tail Whip
 
 Goldeen
-Level: 11
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Peck
+- Supersonic
 
 === TRAINER_HALLE ===
 Name: HALLE
@@ -12080,7 +12255,7 @@ Ability: Pure Power
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Confusion
-- Work Up
+- Meditate
 - Detect
 
 Makuhita
@@ -12671,7 +12846,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-"Zigzagoon
+Zigzagoon
 Ability: Pickup
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12684,7 +12859,7 @@ Ability: Quick Feet
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
-- Absorb"
+- Absorb
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
@@ -12695,7 +12870,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-"Swablu
+Swablu
 Ability: Natural Cure
 Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12709,7 +12884,7 @@ Level: 7
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Absorb
 - Tackle
-- Leech Seed"
+- Leech Seed
 
 === TRAINER_JANICE ===
 Name: JANICE
@@ -12739,7 +12914,7 @@ AI: Smart Trainer
 
 Marill
 Ability: Thick Fat
-Level: 17
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
 - Slam
@@ -12747,7 +12922,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Shroomish
 Ability: Quick Feet
-Level: 17
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Headbutt
@@ -12755,7 +12930,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Numel
 Ability: Oblivious
-Level: 17
+Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Spin
 - Mud Slap
@@ -12915,7 +13090,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-"Wurmple
+Wurmple
 Ability: Run Away
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12927,7 +13102,7 @@ Ability: Run Away
 Level: 4
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
-- String Shot"
+- String Shot
 
 === TRAINER_LYLE ===
 Name: LYLE
@@ -13057,7 +13232,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-"Surskit
+Surskit
 Ability: Swift Swim
 Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -13078,7 +13253,7 @@ Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sand Attack
 - Scratch
-- Harden"
+- Harden
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -13606,12 +13781,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Peck
 - Supersonic
 
-Numel
-Ability: Oblivious
-Level: 13
+Ralts
+Ability: Telepathy
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Mud Slap
-- Take Down
+- Draining Kiss
+- Confusion
 - Growl
 
 === TRAINER_GERALD ===
@@ -13649,19 +13824,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Bide
-- Detect
+Ability: Pure Power
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
 - Confusion
-- Thunder Punch
+- Meditate
+- Detect
 
 Meditite
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Thunder Punch
-- Detect
+Ability: Pure Power
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
 - Confusion
+- Feint
 - Meditate
 
 === TRAINER_DANIELLE ===
@@ -13811,7 +13988,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Ralts
+Ralts (F)
 Ability: Telepathy
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -13819,11 +13996,10 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Confusion
 - Growl
 
-Ralts
+Ralts (M)
 Ability: Telepathy
-Level: 16
+Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Disarming Voice
 - Confusion
 - Growl
 
@@ -14776,7 +14952,7 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-"Feebas
+Feebas
 Ability: Swift Swim
 Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -14788,7 +14964,7 @@ Ability: Swift Swim
 Level: 9
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Flail
-- Splash"
+- Splash
 
 === TRAINER_HAILEY ===
 Name: HAILEY
@@ -14813,7 +14989,7 @@ Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
 - Peck
-- Growl
+- Focus Energy
 
 === TRAINER_CHANDLER ===
 Name: CHANDLER
@@ -14980,7 +15156,7 @@ AI: Smart Trainer
 
 Sandshrew
 Ability: Sand Rush
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fury Swipes
 - Rollout
@@ -14989,7 +15165,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Sandshrew
 Ability: Sand Rush
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fury Swipes
 - Rollout
@@ -15005,9 +15181,17 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
+Oddish
+Ability: Chlorophyll
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Acid
+- Stun Spore
+
 Roselia
 Ability: Natural Cure
-Level: 20
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Poison Sting
@@ -15024,7 +15208,7 @@ AI: Smart Trainer
 
 Shroomish
 Ability: Poison Heal
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Headbutt
@@ -15032,7 +15216,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Gulpin
 Ability: Earth Eater
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Acid Spray
 - Poison Gas
@@ -15049,19 +15233,19 @@ AI: Smart Trainer
 
 Numel
 Ability: Oblivious
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Spin
-- Mud Slap
+- Mud-Slap
 - Take Down
 - Growl
 
 Numel
 Ability: Oblivious
-Level: 19
+Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Spin
-- Mud Slap
+- Bulldoze
 - Take Down
 - Growl
 
@@ -15215,8 +15399,8 @@ Electrike
 Ability: Static
 Level: 17
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
 - Spark
-- Tackle
 - Howl
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
@@ -15927,12 +16111,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Doduo
+Ability: Run Away
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Attack
+- Pluck
+- Double Kick
 
-Doduo
+Poochyena
+Ability: Run Away
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bite
+- Tackle
+- Howl
+- Roar
 
 === TRAINER_BRANDI ===
 Name: BRANDI
@@ -15944,12 +16137,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ralts
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Telepathy
+Level: 18
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Draining Kiss
+- Growl
+- Teleport
 
-Ralts
+Kadabra
+Ability: Magic Guard
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Disable
+- Ally Switch
 
 === TRAINER_AISHA ===
 Name: AISHA
@@ -15961,12 +16163,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
+Ability: Pure Power
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Confusion
+- Meditate
+- Detect
 
-Meditite
+Makuhita
+Ability: Thick Fat
 Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Force Palm
+- Bulk Up
+- Whirlwind
 
 === TRAINER_MAKAYLA ===
 Name: MAKAYLA
@@ -17871,18 +18083,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Illumise
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Prankster
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Shock Wave
-- Quick Attack
-- Charm
+- Thunder Wave
+- Moonlight
 
 Volbeat
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Prankster
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Pounce
 - Shock Wave
-- Quick Attack
-- Confuse Ray
+- Tail Glow
 
 === TRAINER_DARIUS ===
 Name: DARIUS
