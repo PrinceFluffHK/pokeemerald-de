@@ -5470,23 +5470,25 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Anorith (F)
-Ability: Battle Armor
+Geodude
+Ability: Rock Head
 Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Smack Down
-- Cut
-- Water Gun
+- Rock Throw
+- Mud-Slap
+- Tackle
+- Defense Curl
 
-Lileep (F)
-Ability: Suction Cups
+Aron
+Ability: Sturdy
 Level: 12
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Absorb
-- Ingrain
-- Rock Tomb
+- Metal Claw
+- Stealth Rock
+- Harden
+- Roar
 
-Nosepass (F)
+Nosepass
 Ability: Sturdy
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
