@@ -12599,6 +12599,33 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
+Wailmer
+Ability: Water Veil
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Gun
+- Astonish
+- Mist
+- Growl
+
+Torchic
+Ability: Blaze
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Flame Charge
+- Sand Attack
+- Detect
+
+=== TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
+Name: BRENDAN
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+
 Slugma
 Ability: Flame Body
 Level: 13
@@ -12615,32 +12642,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mega Drain
 - Leer
 - Detect
-
-=== TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
-Name: BRENDAN
-Class: Rival
-Pic: Brendan
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-
-Shroomish
-Ability: Poison Heal
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Mega Drain
-- Headbutt
-- Leech Seed
-
-Mudkip
-Ability: Torrent
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Gun
-- Mud-Slap
-- Tackle
-- Protect
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -12744,42 +12745,6 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Wailmer
-Ability: Water Veil
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Gun
-- Astonish
-- Mist
-- Growl
-
-Torchic
-Ability: Blaze
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Quick Attack
-- Flame Charge
-- Sand Attack
-- Detect
-
-Torchic
-Ability: Blaze
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Quick Attack
-- Flame Charge
-- Sand Attack
-- Detect
-
-=== TRAINER_MAY_RUSTBORO_MUDKIP ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: Yes
-AI: Smart Trainer
-
 Shroomish
 Ability: Poison Heal
 Level: 13
@@ -12796,6 +12761,32 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mud-Slap
 - Tackle
 - Protect
+
+=== TRAINER_MAY_RUSTBORO_MUDKIP ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer
+
+Slugma
+Ability: Flame Body
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ember
+- Smog
+- Rock Throw
+
+Treecko
+Ability: Overgrow
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Mega Drain
+- Leer
+- Detect
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -16399,32 +16390,6 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Slugma
-Ability: Flame Body
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Ember
-- Smog
-- Rock Throw
-
-Treecko
-Ability: Overgrow
-Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Quick Attack
-- Mega Drain
-- Leer
-- Detect
-
-=== TRAINER_MAY_RUSTBORO_TORCHIC ===
-Name: MAY
-Class: Rival
-Pic: May
-Gender: Female
-Music: Female
-Double Battle: Yes
-AI: Smart Trainer
-
 Wailmer
 Ability: Water Veil
 Level: 13
@@ -16442,6 +16407,32 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Flame Charge
 - Sand Attack
 - Detect
+
+=== TRAINER_MAY_RUSTBORO_TORCHIC ===
+Name: MAY
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer
+
+Shroomish
+Ability: Poison Heal
+Level: 13
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Leech Seed
+
+Mudkip
+Ability: Torrent
+Level: 14
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Gun
+- Mud-Slap
+- Tackle
+- Protect
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE
