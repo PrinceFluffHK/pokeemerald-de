@@ -3856,7 +3856,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Howl
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -3908,7 +3908,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -5568,7 +5568,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Encore
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 20
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Shock Wave
@@ -7664,7 +7664,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -7672,7 +7672,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Charge
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -7817,7 +7817,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -7861,7 +7861,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rest
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -15054,7 +15054,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Howl
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -15096,7 +15096,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
@@ -15104,7 +15104,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Charge
 
 Voltorb
-Ability: Soundproof
+Ability: Aftermath
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
