@@ -1910,12 +1910,13 @@ static const struct LevelUpMove sTentacruelLevelUpLearnset[] = {
 #if P_FAMILY_GEODUDE
 static const struct LevelUpMove sGeodudeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 6, MOVE_ROCK_POLISH),
     //Catch
     LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(12, MOVE_BULLDOZE),
-    LEVEL_UP_MOVE(16, MOVE_SMACK_DOWN),
+    LEVEL_UP_MOVE(16, MOVE_WIDE_GUARD),
     //Brawly
     LEVEL_UP_MOVE(18, MOVE_ROCK_BLAST),
     LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
@@ -1934,11 +1935,12 @@ static const struct LevelUpMove sGravelerLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_POLISH),
     LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(12, MOVE_BULLDOZE),
-    LEVEL_UP_MOVE(16, MOVE_SMACK_DOWN),
+    LEVEL_UP_MOVE(16, MOVE_WIDE_GUARD),
     LEVEL_UP_MOVE(18, MOVE_ROCK_BLAST),
     LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
     LEVEL_UP_MOVE(30, MOVE_STEALTH_ROCK),
@@ -1955,10 +1957,11 @@ static const struct LevelUpMove sGolemLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_POLISH),
     LEVEL_UP_MOVE(12, MOVE_BULLDOZE),
-    LEVEL_UP_MOVE(16, MOVE_SMACK_DOWN),
+    LEVEL_UP_MOVE(16, MOVE_WIDE_GUARD),
     LEVEL_UP_MOVE(18, MOVE_ROCK_BLAST),
     LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
     LEVEL_UP_MOVE(30, MOVE_STEALTH_ROCK),
@@ -1973,6 +1976,7 @@ static const struct LevelUpMove sGolemLevelUpLearnset[] = {
 #if P_ALOLAN_FORMS
 static const struct LevelUpMove sGeodudeAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 4, MOVE_CHARGE),
     LEVEL_UP_MOVE( 6, MOVE_ROCK_POLISH),
@@ -1993,6 +1997,7 @@ static const struct LevelUpMove sGeodudeAlolaLevelUpLearnset[] = {
 
 static const struct LevelUpMove sGravelerAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_CHARGE),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_POLISH),
@@ -2013,6 +2018,7 @@ static const struct LevelUpMove sGravelerAlolaLevelUpLearnset[] = {
 
 static const struct LevelUpMove sGolemAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_CHARGE),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_POLISH),
