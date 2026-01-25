@@ -13000,7 +13000,10 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("TM89"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Sprays ice-cold\n"
+            "water that\n"
+            "lowers Attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
