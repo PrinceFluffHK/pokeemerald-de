@@ -5556,7 +5556,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Quick Attack
 - Thunder Fang
 - Bite
-- Howl
 
 Minun
 Ability: Minus
@@ -5570,11 +5569,10 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Voltorb
 Ability: Aftermath
 Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+IVs: 15 HP / 14 Atk / 15 Def / 14 SpA / 15 SpD / 15 Spe  
 - Shock Wave
-- Rollout
+- Hidden Power
 - Self Destruct
-- Charge
 
 Magneton
 Ability: Magnet Pull
@@ -5591,7 +5589,7 @@ Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
 - Shock Wave
-- Fire Fang
+- Ice Fang
 - Howl
 
 === TRAINER_FLANNERY_1 ===
