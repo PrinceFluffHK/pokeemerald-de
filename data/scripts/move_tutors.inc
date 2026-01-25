@@ -33,10 +33,10 @@ MauvilleCity_EventScript_RolloutTutor::
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined
 	msgbox MoveTutor_Text_RolloutWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, MOVE_ROLLOUT
+	setvar VAR_0x8005, MOVE_HELPING_HAND
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RolloutDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT
+@	setflag FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT
 	goto MoveTutor_EventScript_RolloutTaught
 	end
 
