@@ -247,7 +247,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_DIRE_HIT",
+      "trainer_sight_or_berry_tree_id": "ITEM_FULL_HEAL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_110_DIRE_HIT"
     },
@@ -458,7 +458,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_WISE_GLASSES",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_110_ELIXIR"
     },
@@ -712,7 +712,7 @@
       "x": 33,
       "y": 45,
       "elevation": 3,
-      "item": "ITEM_GREAT_BALL",
+      "item": "ITEM_CALCIUM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_GREAT_BALL"
     },
     {
@@ -720,7 +720,7 @@
       "x": 4,
       "y": 35,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_QUICK_BALL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_POKE_BALL"
     },
     {
@@ -728,7 +728,7 @@
       "x": 37,
       "y": 67,
       "elevation": 3,
-      "item": "ITEM_FULL_HEAL",
+      "item": "ITEM_IRON",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_FULL_HEAL"
     },
     {
@@ -738,6 +738,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route110_EventScript_CyclingRoadSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 35,
+      "y": 39,
+      "elevation": 0,
+      "item": "ITEM_POISON_BARB",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_REVIVE"
     }
   ]
 }
