@@ -417,7 +417,7 @@ Route104_Text_CindyPostRematch:
 
 Route104_Text_DarianIntro:
 	.string "I fished up some adorable POKéMON!\p"
-	.string "One of them has this magical quality!i\n"
+	.string "This brown one has a cute quality!\n"
 	.string "It surely looks cute, yes it does!$"
 
 Route104_Text_DarianDefeat:
