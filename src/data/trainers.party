@@ -3861,7 +3861,7 @@ Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 - Screech
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
@@ -3913,16 +3913,15 @@ Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 - Screech
 
 Magnemite
 Ability: Magnet Pull
 Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Shock Wave
-- Magnet Bomb
-- Thunder Wave
+- Charge Beam
+- Gyro Ball
 - Metal Sound
 
 === TRAINER_FERNANDO_1 ===
@@ -3955,9 +3954,8 @@ Magnemite
 Ability: Magnet Pull
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Thunder Shock
-- Magnet Bomb
-- Thunder Wave
+- Charge Beam
+- Gyro Ball
 - Metal Sound
 
 Whismur
@@ -5549,30 +5547,30 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Electrike
-Ability: Minus
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Quick Attack
-- Thunder Fang
-- Bite
-
 Minun
 Ability: Minus
 Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Nuzzle
-- Swift
 - Helping Hand
 - Encore
+
+Plusle
+Ability: Plus
+Level: 19
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shock Wave
+- Grass Knot
+- Swift
 
 Voltorb
 Ability: Aftermath
 Level: 20
-IVs: 15 HP / 14 Atk / 15 Def / 14 SpA / 15 SpD / 15 Spe  
-- Shock Wave
-- Hidden Power
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Electro Ball
 - Self Destruct
+- Thunder Wave
+- Screech
 
 Magneton
 Ability: Magnet Pull
@@ -5590,7 +5588,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Quick Attack
 - Shock Wave
 - Ice Fang
-- Howl
+- Fire Fang
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -7667,7 +7665,7 @@ Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 
 Voltorb
 Ability: Aftermath
@@ -7675,15 +7673,14 @@ Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 
 Magnemite
 Ability: Magnet Pull
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Thunder Shock
+- Charge Beam
 - Gyro Ball
-- Thunder Wave
 
 === TRAINER_ANTHONY ===
 Name: ANTHONY
@@ -7707,9 +7704,8 @@ Magnemite
 Ability: Magnet Pull
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Thunder Shock
+- Charge Beam
 - Gyro Ball
-- Thunder Wave
 
 === TRAINER_BENJAMIN_1 ===
 Name: BENJAMIN
@@ -7724,9 +7720,8 @@ Magnemite
 Ability: Magnet Pull
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Thunder Shock
+- Charge Beam
 - Gyro Ball
-- Thunder Wave
 
 Spheal
 Ability: Thick Fat
@@ -7820,7 +7815,7 @@ Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 
 Phanpy
 Ability: Pickup
@@ -7864,7 +7859,7 @@ Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 
 === TRAINER_ABIGAIL_2 ===
 Name: ABIGAIL
@@ -15057,7 +15052,7 @@ Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 
 === TRAINER_ALYSSA ===
 Name: ALYSSA
@@ -15099,7 +15094,7 @@ Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 
 Voltorb
 Ability: Aftermath
@@ -15107,7 +15102,7 @@ Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Spark
 - Rollout
-- Charge
+- Thunder Wave
 
 === TRAINER_RHETT ===
 Name: RHETT
