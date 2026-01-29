@@ -744,7 +744,7 @@
       "x": 35,
       "y": 39,
       "elevation": 0,
-      "item": "ITEM_POISON_BARB",
+      "item": "ITEM_COVERT_CLOAK",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_REVIVE"
     }
   ]
