@@ -1167,7 +1167,7 @@ const struct Item gItemsInfo[] =
             "Fully restores all\n"
             "damaged Pokémon.\n"
             "Regenerates."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_SacredAsh,
@@ -2023,7 +2023,7 @@ const struct Item gItemsInfo[] =
             "Raises the level of\n"
             "a Pokémon by one.\n"
             "Never consumed."),
-            .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,

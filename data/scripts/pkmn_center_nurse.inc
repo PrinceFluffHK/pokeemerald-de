@@ -44,17 +44,18 @@ EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	clearflag OW_FLAG_MOVE_UNION_ROOM_CHECK
 .endif
 	waitfieldeffect FLDEFF_POKECENTER_HEAL
-	checkitem ITEM_SACRED_ASH
-	call_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_RestoreSacredAsh
+@	checkitem ITEM_SACRED_ASH
+@	call_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_RestoreSacredAsh
 	applymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	special HealPlayerParty
 	callnative UpdateFollowingPokemon
 	return
 
-EventScript_PkmnCenterNurse_RestoreSacredAsh::
-	additem ITEM_SACRED_ASH
-	return
+@EventScript_PkmnCenterNurse_RestoreSacredAsh::
+@	giveitem ITEM_SACRED_ASH
+@	closemessage
+@	return
 
 EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
 	specialvar VAR_RESULT, PlayerNotAtTrainerHillEntrance
