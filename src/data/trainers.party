@@ -259,7 +259,7 @@ AI: Smart Trainer
 
 Poochyena
 Ability: Run Away
-Level: 7
+Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
 - Howl
@@ -268,7 +268,7 @@ Carvanha
 Ability: Rough Skin
 Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Bite
+- Rage
 - Focus Energy
 - Scary Face
 
@@ -1102,12 +1102,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magnet Pull
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Charge Beam
+- Mirror Shot
 
-Whismur
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Loudred
+Ability: Soundproof
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Stomp
+- Bite
+- Roar
 
 === TRAINER_GABBY_AND_TY_2 ===
 Name: GABBY & TY
@@ -4289,12 +4296,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Nuzleaf
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pickpocket
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Razor Leaf
+- Harden
 
-Nuzleaf
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Loudred
+Ability: Soundproof
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bite
+- Echoed Voice
+- Howl
 
 === TRAINER_SHANE ===
 Name: SHANE
@@ -4374,12 +4389,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandshrew
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sand Rush
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Swipes
+- Rollout
+- Fury Attack
+- Defense Curl
 
-Sandshrew
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Geodude
+Ability: Rock Head
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
 === TRAINER_ETHAN_2 ===
 Name: ETHAN
@@ -6959,7 +6983,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Poison Gas
 - Amnesia
 
-Electrike
+Electrike @ Air Balloon
 Ability: Static
 Level: 19
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -9972,12 +9996,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Taillow
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Wing Attack
+- Focus Energy
+- Roost
 
 Lombre
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 === TRAINER_NANCY ===
 Name: NANCY
@@ -10061,12 +10095,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shroomish
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Poison Heal
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Leech Seed
 
 Marill
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Huge Power
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Slam
+- Tail Whip
 
 === TRAINER_DIANA_2 ===
 Name: DIANA
@@ -10994,7 +11036,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Incinerate
+- Fire Spin
 - Rock Throw
 - Clear Smog
 
@@ -11137,7 +11179,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Incinerate
+- Fire Spin
 - Rock Throw
 - Clear Smog
 
@@ -11208,7 +11250,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Incinerate
+- Fire Spin
 - Rock Throw
 - Clear Smog
 
@@ -11351,7 +11393,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Incinerate
+- Fire Spin
 - Rock Throw
 - Clear Smog
 
@@ -12899,29 +12941,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Marill
-Ability: Thick Fat
+Ability: Huge Power
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
 - Slam
 - Tail Whip
 
-Shroomish
-Ability: Quick Feet
+Numel
+Ability: Oblivious
+Level: 16
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Mud Slap
+- Take Down
+- Growl
+
+Shroomish @ Toxic Orb
+Ability: Poison Heal
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
-
-Numel
-Ability: Oblivious
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fire Spin
-- Mud Slap
-- Take Down
-- Growl
 
 === TRAINER_HALEY_2 ===
 Name: HALEY
@@ -13115,16 +13157,18 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wurmple
 Ability: Run Away
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
+- Poison Sting
 - String Shot
 
 Wurmple
 Ability: Run Away
-Level: 4
+Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
+- Poison Sting
 - String Shot
 
 === TRAINER_JOSE ===
@@ -13218,28 +13262,29 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
+Nincada
+Ability: Compound Eyes
+Level: 5
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand-Attack
+- Scratch
+- Harden
+
+Nincada
+Ability: Compound Eyes
+Level: 5
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand-Attack
+- Scratch
+- Harden
+
 Surskit
 Ability: Swift Swim
-Level: 5
+Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Quick Attack
 - Haze
-
-Nincada
-Ability: Compound Eyes
-Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Scratch
-- Harden
-
-Nincada
-Ability: Compound Eyes
-Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Sand Attack
-- Scratch
-- Harden
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -13331,12 +13376,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Mud Slap
+- Take Down
 
 Machop
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Karate Chop
+- Payback
+- Counter
+- Focus Energy
 
 === TRAINER_TRENT_1 ===
 Name: TRENT
@@ -13348,16 +13402,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rock Head
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
 Geodude
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rock Head
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
 Geodude
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rock Head
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
 === TRAINER_LENNY ===
 Name: LENNY
@@ -15221,7 +15287,7 @@ Numel
 Ability: Oblivious
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fire Spin
+- Incinerate
 - Mud-Slap
 - Take Down
 - Growl
@@ -15230,7 +15296,7 @@ Numel
 Ability: Oblivious
 Level: 18
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fire Spin
+- Incinerate
 - Bulldoze
 - Take Down
 - Growl
@@ -15929,12 +15995,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Mud Slap
+- Take Down
 
 Slugma
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Drought
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Throw
+- Clear Smog
 
 === TRAINER_SHAYLA ===
 Name: SHAYLA
@@ -15945,13 +16019,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Shroomish
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Oddish
+Ability: Chlorophyll
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Acid
+- Stun Spore
 
 Roselia
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Natural Cure
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Poison Sting
+- Toxic Spikes
 
 === TRAINER_KYRA ===
 Name: KYRA
