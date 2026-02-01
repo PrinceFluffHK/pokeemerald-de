@@ -431,7 +431,7 @@ static void DisplayMonNeedsToReplaceMove(u8);
 static void DisplayMonLearnedMove(u8, u16);
 static void UseSacredAsh(u8);
 static void Task_SacredAshLoop(u8);
-static void Task_SacredAshDisplayHPRestored(u8);
+// static void Task_SacredAshDisplayHPRestored(u8);
 static void GiveItemOrMailToSelectedMon(u8);
 static void DisplayItemMustBeRemovedFirstMessage(u8);
 static void Task_SwitchItemsFromBagYesNo(u8);
@@ -6162,14 +6162,14 @@ static void Task_SacredAshLoop(u8 taskId)
     }
 }
 
-static void Task_SacredAshDisplayHPRestored(u8 taskId)
-{
-    GetMonNickname(&gPlayerParty[gPartyMenu.slotId], gStringVar1);
-    StringExpandPlaceholders(gStringVar4, gText_PkmnHPRestoredByVar2);
-    DisplayPartyMenuMessage(gStringVar4, FALSE);
-    ScheduleBgCopyTilemapToVram(2);
-    gTasks[taskId].func = Task_SacredAshLoop;
-}
+// static void Task_SacredAshDisplayHPRestored(u8 taskId)
+// {
+//     GetMonNickname(&gPlayerParty[gPartyMenu.slotId], gStringVar1);
+//     StringExpandPlaceholders(gStringVar4, gText_PkmnHPRestoredByVar2);
+//     DisplayPartyMenuMessage(gStringVar4, FALSE);
+//     ScheduleBgCopyTilemapToVram(2);
+//     gTasks[taskId].func = Task_SacredAshLoop;
+// }
 
 #undef tUsedOnSlot
 #undef tHadEffect

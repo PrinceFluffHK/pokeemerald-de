@@ -500,7 +500,7 @@
       "x": 7,
       "y": 6,
       "elevation": 3,
-      "item": "ITEM_SUPER_POTION",
+      "item": "ITEM_BOLD_MINT",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
     },
     {
@@ -508,7 +508,7 @@
       "x": 3,
       "y": 9,
       "elevation": 3,
-      "item": "ITEM_BOLD_MINT",
+      "item": "ITEM_SUPER_POTION",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
     },
     {

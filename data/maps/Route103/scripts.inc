@@ -98,8 +98,8 @@ Route103_EventScript_AfterMayBattle::
 
 Route103_EventScript_AfterBrendanBattle::
 	msgbox Route103_Text_BrendanChooseAnother, MSGBOX_DEFAULT
-	callnative StartNewPokeballCaseUI
-	waitstate
+@	callnative StartNewPokeballCaseUI
+@	waitstate
 	msgbox Route103_Text_BrendanTimeToHeadBack, MSGBOX_DEFAULT
 	goto Route103_EventScript_RivalExit
 	end
