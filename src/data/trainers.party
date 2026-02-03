@@ -1691,16 +1691,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Electrike
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Static
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Thunder Fang
+- Bite
 
 Wailmer
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Water Veil
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Whirlpool
+- Heavy Slam
+- Astonish
 
 Makuhita
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Thick Fat
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Force Palm
+- Bulk Up
+- Whirlwind
 
 === TRAINER_EDGAR ===
 Name: EDGAR
@@ -2029,16 +2042,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Wingull
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Keen Eye
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Wing Attack
+- Water Pulse
+- Growl
 
 Numel
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Bulldoze
+- Take Down
 
 Roselia
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Natural Cure
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Venoshock
+- Toxic Spikes
 
 === TRAINER_JENNIFER ===
 Name: JENNIFER
@@ -3820,12 +3846,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Karate Chop
+- Payback
+- Counter
+- Focus Energy
 
-Machop
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Combusken
+Ability: Blaze
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Double Kick
+- Flame Charge
+- Aerial Ace
 
 === TRAINER_ATSUSHI ===
 Name: ATSUSHI
@@ -7051,12 +7087,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Trapinch
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Hyper Cutter
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Tomb
+- Dig
+- Bite
 
-Trapinch
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Grovyle
+Ability: Overgrow
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Fury Cutter
+- Leer
+- Detect
 
 === TRAINER_DILLON ===
 Name: DILLON
@@ -7068,12 +7113,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Aron
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sturdy
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Smack Down
+- Headbutt
+- Protect
 
-Aron
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Nosepass
+Ability: Sturdy
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Slide
+- Spark
+- Harden
 
 === TRAINER_CALVIN_2 ===
 Name: CALVIN
@@ -8938,29 +8992,27 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 
-Koffing
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Poison Gas
-- Tackle
+"Koffing
+Ability: Levitate
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Smog
-- Self Destruct
+- Tackle
+- Poison Gas
 
 Koffing
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Poison Gas
-- Tackle
+Ability: Levitate
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Smog
-- Self Destruct
+- Tackle
+- Haze
 
 Koffing
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Poison Gas
-- Tackle
-- Sludge
-- Self Destruct
+Ability: Levitate
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Self-Destruct
 
 === TRAINER_LUNG ===
 Name: LUNG
@@ -8970,13 +9022,21 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 
-Koffing
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+"Koffing
+Ability: Levitate
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Smog
+- Tackle
+- Poison Gas
 
 Ninjask
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Speed Boost
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Swipes
+- Sand Attack
+- Screech
 
 === TRAINER_LAO_2 ===
 Name: LAO
@@ -9303,20 +9363,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Ember
-- Tackle
-- Magnitude
+Ability: Oblivious
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Bulldoze
+- Take Down
 - Sunny Day
 
-Numel
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Ember
+Castform
+Ability: Forecast
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Tackle
-- Magnitude
-- Sunny Day
+- Water Gun
+- Ember
+- Powder Snow
 
 === TRAINER_CLARISSA ===
 Name: CLARISSA
@@ -14593,12 +14655,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spinda
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Own Tempo
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Tackle
+- Psybeam
+- Teeter Dance
 
 Spinda
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Own Tempo
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Tackle
+- Psybeam
+- Hypnosis
 
 === TRAINER_KIM_AND_IRIS ===
 Name: KIM & IRIS
@@ -15311,12 +15381,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Marill
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Huge Power
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Slam
+- Tail Whip
 
 Lombre
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 === TRAINER_COBY ===
 Name: COBY
@@ -15328,12 +15407,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Skarmory
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sturdy
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Fury Attack
+- Leer
 
 Swellow
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Peck
+- Focus Energy
 
 === TRAINER_LAWRENCE ===
 Name: LAWRENCE
@@ -15345,12 +15432,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Baltoy
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Levitate
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Ancient Power
+- Cosmic Power
 
 Sandshrew
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sand Rush
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dig
+- Fury Swipes
+- Fury Cutter
+- Defense Curl
 
 === TRAINER_WYATT ===
 Name: WYATT
@@ -15362,12 +15458,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Aron
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sturdy
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Smack Down
+- Headbutt
+- Protect
 
 Aron
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sturdy
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Smack Down
+- Headbutt
+- Protect
 
 === TRAINER_ANGELINA ===
 Name: ANGELINA
