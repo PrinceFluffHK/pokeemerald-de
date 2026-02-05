@@ -973,7 +973,7 @@
             "mons": [
               {
                 "min_level": 17,
-                "max_level": 17,
+                "max_level": 19,
                 "species": "SPECIES_SANDSHREW"
               },
               {
