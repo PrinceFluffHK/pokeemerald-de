@@ -743,9 +743,13 @@ bool32 TryRunFromBattle(u32 battler)
         }
         else if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed)
         {
+            effect = 0;
+        }
+        else if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed * 2) 
+        {
             speedVar = (gBattleMons[battler].speed * 128) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries * 30);
             if (speedVar > (Random() & 0xFF))
-                effect++;
+            effect++;
         }
         else // same speed or faster
         {
