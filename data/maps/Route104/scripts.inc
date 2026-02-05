@@ -1030,7 +1030,7 @@ Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 	.string "Here, you can have this.\p"
 	.string "It's pretty fragile, but I met a\n"
 	.string "guy in Ever Grande City who sold\n"
-	.string "all kinds of them for cheap!."
+	.string "all kinds of them for cheap!.$"
 
 Route104_Text_TMsAreOneTimeUse:
 	.string "A word of advice!\p"
