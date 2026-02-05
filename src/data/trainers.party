@@ -2432,7 +2432,6 @@ Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Pound
 - Defense Curl
-- Sing
 
 Pichu
 Ability: Static
@@ -2441,14 +2440,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Thunder Shock
 - Play Nice
 - Tail Whip
-
-Budew
-Ability: Leaf Guard
-Level: 5
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Absorb
-- Growth
-- Sunny Day
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -8992,7 +8983,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 
-"Koffing
+Koffing
 Ability: Levitate
 Level: 20
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -9022,7 +9013,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 
-"Koffing
+Koffing
 Ability: Levitate
 Level: 21
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -13326,7 +13317,7 @@ AI: Smart Trainer
 
 Nincada
 Ability: Compound Eyes
-Level: 5
+Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sand-Attack
 - Scratch
@@ -13334,19 +13325,11 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Nincada
 Ability: Compound Eyes
-Level: 5
+Level: 6
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sand-Attack
 - Scratch
 - Harden
-
-Surskit
-Ability: Swift Swim
-Level: 6
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Gun
-- Quick Attack
-- Haze
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
