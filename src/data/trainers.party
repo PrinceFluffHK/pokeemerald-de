@@ -6549,7 +6549,7 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Plusle @ Oran Berry
+Plusle
 Ability: Plus
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6558,7 +6558,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Spark
 - Swift
 
-Minun @ Oran Berry
+Minun
 Ability: Minus
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -15130,7 +15130,7 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Minun @ Oran Berry
+Minun 
 Ability: Minus
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -15139,7 +15139,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Helping Hand
 - Encore
 
-Plusle @ Oran Berry
+Plusle 
 Ability: Plus
 Level: 14
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
