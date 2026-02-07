@@ -52,7 +52,7 @@ Route125_EventScript_RegisterErnest::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route125_Text_ErnestRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ERNEST_1
+@	register_matchcall TRAINER_ERNEST_1
 	release
 	end
 

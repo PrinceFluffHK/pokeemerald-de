@@ -18,7 +18,7 @@ Route107_EventScript_TonyRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route107_Text_TonyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_TONY_1
+@	register_matchcall TRAINER_TONY_1
 	release
 	end
 
