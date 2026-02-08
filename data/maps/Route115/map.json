@@ -190,7 +190,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_GREAT_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_BULLET_SEED",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_115_GREAT_BALL"
     },
@@ -268,7 +268,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_AIR_BALLOON",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_115_PP_UP"
     },
@@ -409,7 +409,7 @@
       "x": 15,
       "y": 49,
       "elevation": 3,
-      "item": "ITEM_HEART_SCALE",
+      "item": "ITEM_ZINC",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_115_HEART_SCALE"
     }
   ]
