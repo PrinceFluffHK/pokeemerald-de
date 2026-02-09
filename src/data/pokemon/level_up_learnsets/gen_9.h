@@ -1925,8 +1925,8 @@ static const struct LevelUpMove sGeodudeLevelUpLearnset[] = {
     //Brawly
     LEVEL_UP_MOVE(18, MOVE_ROCK_BLAST),
     LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
-    //Evo
     //Wattson
+    //Evo Lv25
     LEVEL_UP_MOVE(28, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(30, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(34, MOVE_EARTHQUAKE),
@@ -1948,7 +1948,10 @@ static const struct LevelUpMove sGravelerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_WIDE_GUARD),
     LEVEL_UP_MOVE(18, MOVE_ROCK_BLAST),
     LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
+    //Evo Lv25
+    //Flannery
     LEVEL_UP_MOVE(30, MOVE_STEALTH_ROCK),
+    //Norman
     LEVEL_UP_MOVE(34, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
@@ -9157,8 +9160,11 @@ static const struct LevelUpMove sZangooseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(19, MOVE_SLASH),
     LEVEL_UP_MOVE(22, MOVE_POWER_TRIP),
+    //Catch
     LEVEL_UP_MOVE(26, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE(29, MOVE_FALSE_SWIPE),
+    //Flannery
+    //Norman
     LEVEL_UP_MOVE(33, MOVE_SWITCHEROO),
     LEVEL_UP_MOVE(36, MOVE_DETECT),
     LEVEL_UP_MOVE(40, MOVE_X_SCISSOR),
@@ -9178,12 +9184,14 @@ static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_POISON_TAIL),
     LEVEL_UP_MOVE(11, MOVE_FEINT),
     LEVEL_UP_MOVE(14, MOVE_SCREECH),
-    //Roxanne
     LEVEL_UP_MOVE(19, MOVE_GLARE),
     LEVEL_UP_MOVE(21, MOVE_POISON_FANG),
     LEVEL_UP_MOVE(24, MOVE_VENOSHOCK),
+    //Catch
     LEVEL_UP_MOVE(29, MOVE_GASTRO_ACID),
+    //Flannery
     LEVEL_UP_MOVE(31, MOVE_POISON_JAB),
+    //Norman
     LEVEL_UP_MOVE(34, MOVE_HAZE),
     LEVEL_UP_MOVE(39, MOVE_CRUNCH),
     LEVEL_UP_MOVE(41, MOVE_BELCH),
@@ -9205,8 +9213,11 @@ static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_ROCK_POLISH),
     LEVEL_UP_MOVE(15, MOVE_ROCK_SLIDE),
     LEVEL_UP_MOVE(20, MOVE_PSYSHOCK),
+    //Catch
     LEVEL_UP_MOVE(25, MOVE_COSMIC_POWER),
+    //Flannery
     LEVEL_UP_MOVE(30, MOVE_PSYCHIC),
+    //Norman
     LEVEL_UP_MOVE(35, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(40, MOVE_FUTURE_SIGHT),
     LEVEL_UP_MOVE(45, MOVE_MAGIC_ROOM),
