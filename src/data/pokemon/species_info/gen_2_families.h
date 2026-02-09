@@ -2424,7 +2424,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMarillLevelUpLearnset,
         .teachableLearnset = sMarillTeachableLearnset,
         .eggMoveLearnset = sMarillEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_AZUMARILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_AZUMARILL}),
     },
 
     [SPECIES_AZUMARILL] =
