@@ -3021,13 +3021,21 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Aron
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Anorith
+Ability: Battle Armor
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Cutter
+- Rock Tomb
+- Metal Claw
 
-Aron
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Lileep
+Ability: Storm Drain
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ancient Power
+- Acid
+- Brine
 
 === TRAINER_THALIA_1 ===
 Name: THALIA
@@ -3723,12 +3731,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Karate Chop
+- Payback
+- Counter
+- Focus Energy
 
-Machop
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Heracross
+Ability: Moxie
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Arm Thrust
+- Horn Attack
+- Counter
+- Leer
 
 === TRAINER_NOB_2 ===
 Name: NOB
@@ -4180,12 +4198,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Slugma
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Flame Body
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Throw
+- Clear Smog
 
 Wingull
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Keen Eye
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Wing Attack
+- Water Pulse
+- Growl
+
+Numel
+Ability: Oblivious
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Mud Slap
+- Take Down
 
 === TRAINER_BERNIE_2 ===
 Name: BERNIE
@@ -4348,12 +4383,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandshrew
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sand Rush
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dig
+- Fury Swipes
+- Fury Cutter
+- Defense Curl
 
 Nuzleaf
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pickpocket
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Razor Leaf
+- Knock Off
+- Harden
 
 === TRAINER_JUSTIN ===
 Name: JUSTIN
@@ -7407,16 +7452,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magikarp
-Level: 16
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flail
+- Splash
 
 Goldeen
-Level: 17
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Peck
+- Horn Attack
+- Supersonic
 
 Barboach
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Mud Slap
+- Spark
+- Amnesia
 
 === TRAINER_ELLIOT_1 ===
 Name: ELLIOT
@@ -7524,12 +7582,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Barboach
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Mud Slap
+- Spark
+- Amnesia
 
-Barboach
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Marshtomp
+Ability: Torrent
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Mud Shot
+- Rock Tomb
+- Protect
 
 === TRAINER_BARNY ===
 Name: BARNY
@@ -9235,12 +9303,30 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pure Power
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Confusion
+- Feint
+- Meditate
 
 Makuhita
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Thick Fat
+Level: 21
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Force Palm
+- Bulk Up
+- Whirlwind
+
+Breloom
+Ability: Technician
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Poison Powder
 
 === TRAINER_CORA ===
 Name: CORA
@@ -10076,12 +10162,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Marill
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Huge Power
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Bounce
+- Slam
+- Tail Whip
 
 Lombre
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 === TRAINER_MARTHA ===
 Name: MARTHA
@@ -10916,12 +11012,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Zangoose
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Toxic Boost
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Swipes
+- Metal Claw
+- Hone Claws
 
 Seviper
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Shed Skin
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Bite
+- Wrap
+- Screech
 
 === TRAINER_TABITHA_MOSSDEEP ===
 Name: TABITHA
@@ -13480,12 +13585,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rock Head
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
 Machop
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Karate Chop
+- Payback
+- Counter
+- Focus Energy
 
 === TRAINER_LUCAS_1 ===
 Name: LUCAS
@@ -13497,12 +13611,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rock Head
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
 Numel
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Mud Slap
+- Take Down
 
 === TRAINER_ALAN ===
 Name: ALAN
@@ -14688,20 +14810,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Roselia
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Growth
-- Stun Spore
-- Mega Drain
-- Leech Seed
+Ability: Natural Cure
+Level: 20
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Venoshock
+- Toxic Spikes
 
 Graveler
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Defense Curl
+Ability: Rock Head
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Rollout
-- Mud Sport
-- Rock Throw
+- Tackle
+- Wide Guard
 
 === TRAINER_MEL_AND_PAUL ===
 Name: MEL & PAUL
@@ -15468,12 +15590,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lombre
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 Marill
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Thick Fat
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Bounce
+- Slam
+- Tail Whip
 
 === TRAINER_KAI ===
 Name: KAI
@@ -15485,12 +15617,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Barboach
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Mud Slap
+- Spark
+- Amnesia
 
-Barboach
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tentacool
+Ability: Clear Body
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Acid
+- Wrap
+- Screech
 
 === TRAINER_CHARLOTTE ===
 Name: CHARLOTTE
@@ -15502,12 +15644,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Nuzleaf
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pickpocket
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Razor Leaf
+- Knock Off
+- Harden
 
-Nuzleaf
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Skitty
+Ability: Wonder Skin
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Covet
+- Disarming Voice
+- Tail Whip
 
 === TRAINER_DEANDRE ===
 Name: DEANDRE
@@ -16202,12 +16354,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pure Power
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Confusion
+- Feint
+- Meditate
 
 Spoink
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magic Bounce
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Zen Headbutt
+- Bounce
+- Splash
 
 === TRAINER_DEVAN ===
 Name: DEVAN
