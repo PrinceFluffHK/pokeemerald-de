@@ -78,6 +78,7 @@ Pic: Hiker
 Gender: Male
 Music: Male
 Double Battle: Yes
+AI: Smart Trainer
 
 === TRAINER_SAWYER_1 ===
 Name: SAWYER
@@ -9014,6 +9015,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
+AI: Smart Trainer
 
 Claydol
 Level: 43
@@ -9034,6 +9036,7 @@ Pic: Tuber F
 Gender: Female
 Music: Girl
 Double Battle: Yes
+AI: Smart Trainer
 
 Marill
 Level: 26
@@ -9050,8 +9053,9 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer
 
-"Koffing
+Koffing
 Ability: Levitate
 Level: 20
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -9080,8 +9084,9 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer
 
-"Koffing
+Koffing
 Ability: Levitate
 Level: 21
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -9104,6 +9109,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer
 
 Koffing
 Level: 24
@@ -9141,6 +9147,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer
 
 Koffing
 Level: 27
@@ -9178,6 +9185,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer
 
 Koffing
 Level: 30
@@ -9213,6 +9221,7 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
+AI: Smart Trainer
 
 Koffing
 Level: 33
@@ -19364,6 +19373,7 @@ Pic: Psychic F
 Gender: Female
 Music: Intense
 Double Battle: Yes
+AI: Smart Trainer
 
 Chimecho
 Level: 41
@@ -19380,6 +19390,7 @@ Pic: Psychic M
 Gender: Male
 Music: Intense
 Double Battle: Yes
+AI: Smart Trainer
 
 Banette
 Level: 41
@@ -19396,6 +19407,7 @@ Pic: Gentleman
 Gender: Male
 Music: Rich
 Double Battle: Yes
+AI: Smart Trainer
 
 Wobbuffet
 Level: 41
@@ -19408,6 +19420,7 @@ Pic: Red
 Gender: Male
 Music: Male
 Double Battle: Yes
+AI: Smart Trainer
 
 Charmander
 Level: 5
@@ -19420,6 +19433,7 @@ Pic: Leaf
 Gender: Female
 Music: Male
 Double Battle: Yes
+AI: Smart Trainer
 
 Bulbasaur
 Level: 5
@@ -19432,6 +19446,7 @@ Pic: RS Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
+AI: Smart Trainer
 
 Groudon
 Level: 5
@@ -19444,6 +19459,7 @@ Pic: RS May
 Gender: Female
 Music: Male
 Double Battle: Yes
+AI: Smart Trainer
 
 Kyogre
 Level: 5
