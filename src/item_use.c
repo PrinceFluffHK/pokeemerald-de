@@ -222,11 +222,11 @@ static void Task_CloseCantUseKeyItemMessage(u8 taskId)
 u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId)
 {
     if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_TMHM)
-        return ITEM_IS_TM_HM;
+        return 1;
     else if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_EvolutionStone)
-        return ITEM_IS_EVOLUTION_STONE;
+        return 2;
     else
-        return ITEM_IS_OTHER;
+        return 0;
 }
 
 // Mail in the bag menu can't have a message but it can be checked (view the mail background, no message)
