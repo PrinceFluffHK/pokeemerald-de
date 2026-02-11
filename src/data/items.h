@@ -12662,9 +12662,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("TM59"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "A desperation attack.\n"
-            "Power doubles if the\n"
-            "user's last move failed."),
+            "A raw attack.\n"
+            "Power x2 if user's\n"
+            "last move failed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12676,8 +12676,8 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("TM60"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Shoots scales 2 to\n"
-            "5 times. Ups Speed\n"
+            "Shoots 2 to\n"
+            "5 times. Ups Spe\n"
             "lowers Defense."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -12876,7 +12876,10 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("TM78"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "A sharp dance\n"
+            "that sharply\n"
+            "raises Attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
