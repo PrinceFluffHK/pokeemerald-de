@@ -13052,7 +13052,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Baltoy
 Ability: Levitate
@@ -13063,6 +13063,14 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Imprison
 - Protect
 
+Magneton
+Ability: Analytic
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shock Wave
+- Mirror Shot
+- Metal Sound
+
 Nosepass
 Ability: Sturdy
 Level: 24
@@ -13071,14 +13079,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Spark
 - Thunder Wave
 - Harden
-
-Magneton
-Ability: Analytic
-Level: 24
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Shock Wave
-- Mirror Shot
-- Metal Sound
 
 Koffing @ Air Balloon
 Ability: Neutralizing Gas
