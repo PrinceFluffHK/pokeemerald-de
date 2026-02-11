@@ -3082,12 +3082,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Bulldoze
+- Mud Slap
+- Take Down
 
-Numel
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bite
+- Tackle
+- Scary Face
 
 === TRAINER_STEVE_2 ===
 Name: STEVE
@@ -5669,7 +5678,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Thunder Wave
 - Screech
 
-Magneton
+Magneton @ Metal Coat
 Ability: Magnet Pull
 Level: 22
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12580,13 +12589,21 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Bite
+- Supersonic
 
-Zubat
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Torkoal
+Ability: White Smoke
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Wheel
+- Smog
+- Withdraw
 
 === TRAINER_CLARENCE ===
 Name: CLARENCE
@@ -12905,21 +12922,38 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Numel
-Level: 18
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Poochyena
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Numel
+Slugma
+Ability: Drought
 Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Ancient Power
+- Clear Smog
 
-Zubat
+Nuzleaf
+Ability: Chlorophyll
 Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Knock Off
+- Razor Leaf
+
+Solrock
+Ability: Levitate
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Confusion
+- Rock Throw
+- Solar Beam
+- Rock Polish
+
+Tropius
+Ability: Protosynthesis
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Gust
+- Stomp
 
 === TRAINER_JONATHAN ===
 Name: JONATHAN
@@ -13020,17 +13054,47 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
+Baltoy
+Ability: Levitate
 Level: 24
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Rock Tomb
+- Imprison
+- Protect
 
-Zubat
+Nosepass
+Ability: Sturdy
 Level: 24
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Slide
+- Spark
+- Thunder Wave
+- Harden
+
+Magneton
+Ability: Analytic
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shock Wave
+- Mirror Shot
+- Metal Sound
+
+Koffing @ Air Balloon
+Ability: Neutralizing Gas
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge
+- Assurance
+- Toxic
 
 Camerupt
-Level: 25
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Solid Rock
+Level: 26
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Stomping Tantrum
+- Rock Slide
 
 === TRAINER_TIANA ===
 Name: TIANA
