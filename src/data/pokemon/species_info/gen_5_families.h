@@ -8788,6 +8788,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sAmoongussLevelUpLearnset,
         .teachableLearnset = sAmoongussTeachableLearnset,
+        .formChangeTable = sAmoongussFormChangeTable,
     },
 #endif //P_FAMILY_FOONGUS
 
@@ -12304,6 +12305,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sHydreigonLevelUpLearnset,
         .teachableLearnset = sHydreigonTeachableLearnset,
+        .formChangeTable = sHydreigonFormChangeTable,
     },
 #endif //P_FAMILY_DEINO
 
@@ -12454,6 +12456,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sVolcaronaLevelUpLearnset,
         .teachableLearnset = sVolcaronaTeachableLearnset,
+        .formChangeTable = sVolcaronaFormChangeTable,
     },
 #endif //P_FAMILY_LARVESTA
 

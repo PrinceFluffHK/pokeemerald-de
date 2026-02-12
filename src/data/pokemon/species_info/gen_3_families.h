@@ -4244,6 +4244,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sHariyamaLevelUpLearnset,
         .teachableLearnset = sHariyamaTeachableLearnset,
+        .formChangeTable = sHariyamaFormChangeTable,
     },
 #endif //P_FAMILY_MAKUHITA
 

@@ -3943,6 +3943,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMisdreavusLevelUpLearnset,
         .teachableLearnset = sMisdreavusTeachableLearnset,
         .eggMoveLearnset = sMisdreavusEggMoveLearnset,
+        .formChangeTable = sMisdreavusFormChangeTable,
     #if P_GEN_4_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_MISMAGIUS}),
     #endif
@@ -7006,6 +7007,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sDelibirdLevelUpLearnset,
         .teachableLearnset = sDelibirdTeachableLearnset,
         .eggMoveLearnset = sDelibirdEggMoveLearnset,
+        .formChangeTable = sDelibirdFormChangeTable,
     },
 #endif //P_FAMILY_DELIBIRD
 
@@ -7662,6 +7664,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sDonphanLevelUpLearnset,
         .teachableLearnset = sDonphanTeachableLearnset,
+        .formChangeTable = sDonphanFormChangeTable,
     },
 #endif //P_FAMILY_PHANPY
 
