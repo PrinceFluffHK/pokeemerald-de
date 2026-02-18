@@ -3,7 +3,7 @@
 
 #define FOREACH_TM(F) \
     F(U_TURN) \
-    F(DRACO_METEOR) \
+    F(DRAGON_TAIL) \
     F(SCALD) \
     F(CALM_MIND) \
     F(ROAR) \
@@ -41,12 +41,12 @@
     F(SANDSTORM) \
     F(FIRE_BLAST) \
     F(ROCK_TOMB) \
-    F(TAILWIND) \
+    F(AERIAL_ACE) \
     F(TORMENT) \
     F(FACADE) \
     F(SECRET_POWER) \
     F(REST) \
-    F(DRAGON_TAIL) \
+    F(DRACO_METEOR) \
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
@@ -74,7 +74,7 @@
     F(BODY_PRESS) \
     F(HEAT_WAVE) \
     F(WILL_O_WISP) \
-    F(DRAGON_DANCE) \
+    F(THUNDER_WAVE) \
     F(LEECH_LIFE) \
     F(TOXIC_SPIKES) \
     F(SPIKES) \
@@ -98,7 +98,7 @@
     F(EARTH_POWER) \
     F(NASTY_PLOT) \
     F(STONE_EDGE) \
-    F(COACHING) \
+    F(GIGA_IMPACT) \
     F(DARK_PULSE) \
     F(ICE_SPINNER) \
     F(DAZZLING_GLEAM) 
