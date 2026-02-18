@@ -12391,7 +12391,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_TAILWIND] =
+    [ITEM_TM_AERIAL_ACE] =
     {
         .name = ITEM_NAME("TM40"),
         .price = 3000,
@@ -13093,7 +13093,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_COACHING] =
+    [ITEM_TM_GIGA_IMPACT] =
     {
         .name = ITEM_NAME("TM97"),
         .price = 3000,
