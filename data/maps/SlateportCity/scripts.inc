@@ -125,13 +125,15 @@ SlateportCity_EventScript_EnergyGuru::
 
 	.align 2
 SlateportCity_Pokemart_EnergyGuru:
-	.2byte ITEM_TM_PROTECT
-@	.2byte ITEM_PROTEIN
-@	.2byte ITEM_IRON
-@	.2byte ITEM_CARBOS
-@	.2byte ITEM_ZINC
-@	.2byte ITEM_CALCIUM
-@	.2byte ITEM_HP_UP
+	.2byte ITEM_SEA_INCENSE
+	.2byte ITEM_LAX_INCENSE
+	.2byte ITEM_ODD_INCENSE
+	.2byte ITEM_ROCK_INCENSE
+	.2byte ITEM_FULL_INCENSE
+	.2byte ITEM_WAVE_INCENSE
+	.2byte ITEM_ROSE_INCENSE
+	.2byte ITEM_LUCK_INCENSE
+	.2byte ITEM_PURE_INCENSE
 	pokemartlistend
 
 SlateportCity_EventScript_EffortRibbonWoman::
@@ -921,8 +923,8 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 	end
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed:
-	.string "EN GARDE! Call me LE RAMPART!\n"
-	.string "I'll sell you what you need! ALLEZ!$"
+	.string "I'm the INCENSE GURU! I'll go for it\n"
+	.string "and sell you what you need!$"
 
 SlateportCity_Text_OhYourPokemon:
 	.string "Oh?\n"
