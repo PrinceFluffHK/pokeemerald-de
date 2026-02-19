@@ -2,9 +2,9 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(U_TURN) \
-    F(DRAGON_TAIL) \
-    F(SCALD) \
+    F(Explosion) \
+    F(DRAGON_CLAW) \
+    F(FIRE_PUNCH) \
     F(CALM_MIND) \
     F(ROAR) \
     F(TOXIC) \
@@ -22,20 +22,20 @@
     F(RAIN_DANCE) \
     F(GIGA_DRAIN) \
     F(SAFEGUARD) \
-    F(STOMPING_TANTRUM) \
+    F(SWORDS_DANCE) \
     F(SOLAR_BEAM) \
     F(IRON_TAIL) \
     F(THUNDERBOLT) \
     F(THUNDER) \
     F(EARTHQUAKE) \
-    F(ALLURING_VOICE) \
+    F(SUPERPOWER) \
     F(DIG) \
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(STRUGGLE_BUG) \
+    F(ICE_PUNCH) \
     F(REFLECT) \
-    F(VOLT_SWITCH) \
+    F(THUNDER_PUNCH) \
     F(FLAMETHROWER) \
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
@@ -46,61 +46,61 @@
     F(FACADE) \
     F(SECRET_POWER) \
     F(REST) \
-    F(DRACO_METEOR) \
+    F(HELPING_HAND) \
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
-    F(SNATCH) \
+    F(FALSE_SWIPE) \
     F(OVERHEAT) \
     F(ICY_WIND) \
-    F(PSYCHIC_NOISE) \
+    F(PSYCHIC_TERRAIN) \
     F(CHARGE_BEAM) \
     F(BREAKING_SWIPE) \
     F(METEOR_BEAM) \
     F(SCORCHING_SANDS) \
     F(ELECTROWEB) \
     F(SUPERCELL_SLAM) \
-    F(TEMPER_FLARE) \
+    F(BUG_BUZZ) \
     F(SCALE_SHOT) \
     F(FLIP_TURN) \
     F(POLTERGEIST) \
-    F(HIGH_HORSEPOWER) \
-    F(CLOSE_COMBAT) \
-    F(FLARE_BLITZ) \
+    F(MYSTICAL_FIRE) \
+    F(GRASSY_TERRAIN) \
+    F(ICE_SPINNER) \
+    F(ALLURING_VOICE) \
     F(TRICK_ROOM) \
-    F(POLLEN_PUFF) \
-    F(WEATHER_BALL) \
+    F(SCALD) \
     F(FOCUS_BLAST) \
     F(BODY_PRESS) \
-    F(HEAT_WAVE) \
+    F(FLASH_CANNON) \
     F(WILL_O_WISP) \
     F(THUNDER_WAVE) \
-    F(LEECH_LIFE) \
+    F(MISTY_TERRAIN) \
     F(TOXIC_SPIKES) \
     F(SPIKES) \
     F(STEALTH_ROCK) \
     F(SWORDS_DANCE) \
     F(ROCK_SLIDE) \
     F(LIQUIDATION) \
-    F(EXPANDING_FORCE) \
+    F(GRASS_KNOT) \
     F(TRAILBLAZE) \
     F(PSYCHIC_FANGS) \
     F(DRAIN_PUNCH) \
-    F(FIRE_PUNCH) \
-    F(ICE_PUNCH) \
-    F(THUNDER_PUNCH) \
+    F(U_TURN) \
+    F(STRUGGLE_BUG) \
+    F(VOLT_SWITCH) \
     F(KNOCK_OFF) \
     F(CHILLING_WATER) \
     F(IMPRISON) \
     F(IRON_HEAD) \
-    F(AURA_SPHERE) \
+    F(ELECTRIC_TERRAIN) \
     F(HEAVY_SLAM) \
     F(EARTH_POWER) \
     F(NASTY_PLOT) \
     F(STONE_EDGE) \
     F(GIGA_IMPACT) \
     F(DARK_PULSE) \
-    F(ICE_SPINNER) \
+    F(DRACO_METEOR) \
     F(DAZZLING_GLEAM) 
 
 #define FOREACH_HM(F) \
