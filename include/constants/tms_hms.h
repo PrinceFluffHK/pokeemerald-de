@@ -84,7 +84,7 @@
     F(LIQUIDATION) \
     F(GRASS_KNOT) \
     F(TRAILBLAZE) \
-    F(PSYCHIC_FANGS) \
+    F(PSYCHIC_NOISE) \
     F(DRAIN_PUNCH) \
     F(U_TURN) \
     F(STRUGGLE_BUG) \
