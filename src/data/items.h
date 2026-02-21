@@ -12523,7 +12523,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "An attack that\n"
             "leaves the foe\n"
-            "barely standing.");
+            "barely standing."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -13147,7 +13147,6 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("TM100"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
         .description = COMPOUND_STRING(
             "Damages both foes\n"
             "by emitting a\n"
