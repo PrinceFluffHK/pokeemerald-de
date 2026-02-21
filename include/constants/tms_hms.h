@@ -2,7 +2,7 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(Explosion) \
+    F(EXPLOSION) \
     F(DRAGON_CLAW) \
     F(FIRE_PUNCH) \
     F(CALM_MIND) \
@@ -79,7 +79,7 @@
     F(TOXIC_SPIKES) \
     F(SPIKES) \
     F(STEALTH_ROCK) \
-    F(SWORDS_DANCE) \
+    F(STOMPING_TANTRUM) \
     F(ROCK_SLIDE) \
     F(LIQUIDATION) \
     F(GRASS_KNOT) \
