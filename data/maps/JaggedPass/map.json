@@ -232,7 +232,7 @@
       "x": 8,
       "y": 10,
       "elevation": 3,
-      "item": "ITEM_CALCIUM",
+      "item": "ITEM_HASTY_MINT",
       "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_FULL_HEAL"
     },
     {
@@ -240,7 +240,7 @@
       "x": 7,
       "y": 29,
       "elevation": 3,
-      "item": "ITEM_HASTY_MINT",
+      "item": "ITEM_CALCIUM",
       "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_GREAT_BALL"
     }
   ]
