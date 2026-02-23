@@ -57,7 +57,7 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_MAX_REVIVE
 	pokemartlistend
 
-EverGrandeCity_PokemonLeague_1F_Pokemart_2::
+EverGrandeCity_PokemonLeague_1F_EventScript_Clerk_2::
 	lock
 	faceplayer
 	message gText_HowMayIServeYou

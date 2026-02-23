@@ -36,7 +36,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM_IRON_HEAD",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_BREAKING_SWIPE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY"
     },
@@ -176,7 +176,7 @@
       "x": 28,
       "y": 6,
       "elevation": 3,
-      "item": "ITEM_HARD_STONE",
+      "item": "ITEM_NORMAL_GEM",
       "flag": "FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_1"
     },
     {

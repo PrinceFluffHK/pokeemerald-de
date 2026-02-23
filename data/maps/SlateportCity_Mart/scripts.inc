@@ -40,6 +40,7 @@ SlateportCity_Mart_EventScript_Clerk_2::
 SlateportCity_Mart_Pokemart_Secondary:
 	.2byte ITEM_TM_SAFEGUARD
 	.2byte ITEM_TM_THUNDER_WAVE
+	.2byte ITEM_TM_HELPING_HAND
 	.2byte ITEM_TM_KNOCK_OFF
 	pokemartlistend
 
