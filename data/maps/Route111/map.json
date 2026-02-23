@@ -322,7 +322,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
+      "trainer_sight_or_berry_tree_id": "ITEM_SMOOTH_ROCK",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_111_STARDUST"
     },
@@ -982,8 +982,8 @@
     },
     {
       "type": "secret_base",
-      "x": 24,
-      "y": 36,
+      "x": 23,
+      "y": 33,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_YELLOW_CAVE2_1"
     },
@@ -1070,10 +1070,10 @@
     },
     {
       "type": "hidden_item",
-      "x": 35,
-      "y": 66,
+      "x": 31,
+      "y": 37,
       "elevation": 0,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_DAWN_STONE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_RARE_CANDY"
     },
     {
