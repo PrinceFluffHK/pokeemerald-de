@@ -96,7 +96,7 @@
     F(ELECTRIC_TERRAIN) \
     F(HEAVY_SLAM) \
     F(EARTH_POWER) \
-    F(NASTY_PLOT) \
+    F(SNARL) \
     F(STONE_EDGE) \
     F(GIGA_IMPACT) \
     F(DARK_PULSE) \
