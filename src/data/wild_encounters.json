@@ -2450,62 +2450,62 @@
             "mons": [
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
-                "species": "SPECIES_MACHOP"
-              },
-              {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_SPOINK"
-              },
-              {
-                "min_level": 20,
-                "max_level": 20,
+                "max_level": 23,
                 "species": "SPECIES_MACHOP"
               },
               {
                 "min_level": 21,
+                "max_level": 23,
+                "species": "SPECIES_NUMEL"
+              },
+              {
+                "min_level": 21,
+                "max_level": 23,
+                "species": "SPECIES_SPOINK"
+              },
+              {
+                "min_level": 21,
+                "max_level": 23,
+                "species": "SPECIES_MACHOP"
+              },
+              {
+                "min_level": 21,
                 "max_level": 21,
+                "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_SPOINK"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_SPOINK"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_SPOINK"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_SPOINK"
               },
               {
-                "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_SPOINK"
-              },
-              {
-                "min_level": 22,
-                "max_level": 22,
+                "min_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_SPOINK"
               }
             ]
