@@ -13085,7 +13085,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_NASTY_PLOT] =
+    [ITEM_TM_SNARL] =
     {
         .name = ITEM_NAME("TM95"),
         .price = 3000,
