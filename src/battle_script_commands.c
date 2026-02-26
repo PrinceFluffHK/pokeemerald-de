@@ -11107,8 +11107,8 @@ static void Cmd_tryinfatuating(void)
     }
     else
     {
-        if (gBattleMons[gBattlerTarget].volatiles.infatuation
-            || !AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
+        if (gBattleMons[gBattlerTarget].volatiles.infatuation)
+            // || !AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
         {
             gBattlescriptCurrInstr = cmd->failInstr;
         }
@@ -14366,10 +14366,10 @@ static void Cmd_jumpifcaptivateaffected(void)
         gLastUsedAbility = ABILITY_OBLIVIOUS;
         RecordAbilityBattle(gBattlerTarget, ABILITY_OBLIVIOUS);
     }
-    else if (AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
-    {
-        gBattlescriptCurrInstr = cmd->jumpInstr;
-    }
+    // else if (AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
+    // {
+    //     gBattlescriptCurrInstr = cmd->jumpInstr;
+    // }
     else
     {
         gBattlescriptCurrInstr = cmd->nextInstr;
@@ -16232,8 +16232,8 @@ void BS_TrySetInfatuation(void)
 
     if (!gBattleMons[gBattlerTarget].volatiles.infatuation
         && gBattleMons[gBattlerTarget].ability != ABILITY_OBLIVIOUS
-        && !IsAbilityOnSide(gBattlerTarget, ABILITY_AROMA_VEIL)
-        && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
+        && !IsAbilityOnSide(gBattlerTarget, ABILITY_AROMA_VEIL))
+        // && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget))
     {
         gBattleMons[gBattlerTarget].volatiles.infatuation = INFATUATED_WITH(gBattlerAttacker);
         gBattleCommunication[MULTIUSE_STATE] = 2;

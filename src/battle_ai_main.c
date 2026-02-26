@@ -1656,10 +1656,10 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             else if (!CanLowerStat(battlerAtk, battlerDef, aiData, STAT_ATK))
                 ADJUST_SCORE(-8);
             break;
-        case EFFECT_CAPTIVATE:
-            if (!AreBattlersOfOppositeGender(battlerAtk, battlerDef))
-                ADJUST_SCORE(-10);
-            break;
+        // case EFFECT_CAPTIVATE:
+            // if (!AreBattlersOfOppositeGender(battlerAtk, battlerDef))
+            //     ADJUST_SCORE(-10);
+            // break;
     // other
         case EFFECT_HAZE:
             if (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
