@@ -56,6 +56,7 @@ RustboroCity_Mart_Pokemart_Secondary:
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_REPEL
 	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_ABILITY_CAPSULE
 	pokemartlistend
 
 RustboroCity_Mart_EventScript_PokefanF::

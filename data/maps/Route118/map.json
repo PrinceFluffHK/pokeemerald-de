@@ -421,7 +421,7 @@
       "x": 12,
       "y": 14,
       "elevation": 3,
-      "item": "ITEM_HARD_STONE",
+      "item": "ITEM_ABILITY_PATCH",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE"
     }
   ]
