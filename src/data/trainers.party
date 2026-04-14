@@ -90,12 +90,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rock Head
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
-Geodude
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Nosepass
+Ability: Sturdy
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Slide
+- Spark
+- Harden
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
 Name: GRUNT
@@ -2629,12 +2637,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Marill
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Huge Power
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Bounce
+- Slam
+- Tail Whip
 
-Marill
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Jigglypuff
+Ability: Cute Charm
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Round
+- Disarming Voice
+- Defense Curl
 
 === TRAINER_SHEILA ===
 Name: SHEILA
@@ -2645,13 +2662,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Shroomish
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Spoink
+Ability: Magic Bounce
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Zen Headbutt
+- Bounce
+- Splash
 
-Shroomish
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Breloom
+Ability: Technician
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Poison Powder
 
 === TRAINER_SHIRLEY ===
 Name: SHIRLEY
@@ -2663,12 +2688,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Bulldoze
+- Mud Slap
+- Take Down
 
-Numel
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Beautifly
+Ability: Swarm
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bug Bite
+- Gust
+- Mega Drain
+- Morning Sun
 
 === TRAINER_JESSICA_1 ===
 Name: JESSICA
@@ -4122,13 +4157,23 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Numel
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Kecleon
+Ability: Color Change
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Swipes
+- Flamethrower
+- Psybeam
+- Thief
 
-Numel
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Torkoal
+Ability: White Smoke
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Wheel
+- Body Press
+- Smog
+- Sunny Day
 
 === TRAINER_JEFF ===
 Name: JEFF
@@ -4140,12 +4185,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Slugma
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Flame Body
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Ancient Power
+- Clear Smog
 
 Slugma
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Flame Body
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Ancient Power
+- Clear Smog
 
 === TRAINER_AXLE ===
 Name: AXLE
@@ -4156,13 +4209,22 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Numel
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Vulpix
+Ability: Flash Fire
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Flame Burst
+- Disable
+- Sunny Day
 
 Numel
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Mud Slap
+- Take Down
 
 === TRAINER_JACE ===
 Name: JACE
@@ -4174,12 +4236,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Slugma
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Flame Body
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Ancient Power
+- Clear Smog
 
-Slugma
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Vulpix
+Ability: Flash Fire
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Flame Burst
+- Disable
+- Sunny Day
 
 === TRAINER_KEEGAN ===
 Name: KEEGAN
@@ -4191,12 +4262,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Slugma
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Flame Body
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Ancient Power
+- Clear Smog
 
-Slugma
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Koffing
+Ability: Levitate
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Clear Smog
+- Assurance
+- Will-O-Wisp
+
+Vulpix
+Ability: Flash Fire
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Flame Burst
+- Disable
+- Sunny Day
 
 === TRAINER_BERNIE_1 ===
 Name: BERNIE
@@ -4436,13 +4524,20 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Zigzagoon
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Linoone
+Ability: Quick Feet
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Swipes
+- Mud-Slap
 
-Taillow
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Swellow
+Ability: Guts
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Peck
+- Focus Energy
 
 === TRAINER_AUTUMN ===
 Name: AUTUMN
@@ -4453,13 +4548,23 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Shroomish
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Lombre
+Ability: Own Tempo
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
-Shroomish
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Dustox
+Ability: Shield Dust
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bug Bite
+- Psybeam
+- Venoshock
+- Moonlight
 
 === TRAINER_TRAVIS ===
 Name: TRAVIS
@@ -6843,12 +6948,30 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pure Power
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Confusion
+- Feint
+- Meditate
 
 Makuhita
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Thick Fat
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Force Palm
+- Bulk Up
+- Whirlwind
+
+Bagon
+Ability: Rock Head
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Headbutt
+- Bite
+- Ember
 
 === TRAINER_SHELBY_2 ===
 Name: SHELBY
@@ -10224,16 +10347,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shroomish
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Poison Heal
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mega Drain
+- Headbutt
+- Leech Seed
 
-Oddish
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Gloom
+Ability: Chlorophyll
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Acid
+- Stun Spore
 
 Swablu
-Level: 19
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Natural Cure
+Level: 22
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fury Attack
+- Dragon Breath
+- Sing
 
 === TRAINER_CEDRIC ===
 Name: CEDRIC
@@ -10801,12 +10936,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Oblivious
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Mud Slap
+- Take Down
 
-Numel
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Machop
+Ability: Guts
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Karate Chop
+- Knock Off
+- Counter
+- Focus Energy
 
 === TRAINER_ANNIKA ===
 Name: ANNIKA
@@ -12328,12 +12472,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Magnet Pull
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Charge Beam
+- Gyro Ball
 
-Magnemite
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Phanpy
+Ability: Pickup
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Attack
+- Rollout
+- Defense Curl
+- Charm
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
 Name: GRUNT
@@ -13754,12 +13906,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rock Head
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Tackle
+- Defense Curl
 
 Baltoy
-Level: 20
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Levitate
+Level: 23
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Rock Tomb
+- Mud Slap
 
 === TRAINER_LUCAS_2 ===
 Name: LUCAS
@@ -14143,20 +14303,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Bide
-- Detect
-- Confusion
+Ability: Pure Power
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Punch
+- Confusion
+- Detect
 
-Meditite
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Bide
-- Detect
-- Confusion
+Combusken
+Ability: Blaze
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Quick Attack
+- Double Kick
 - Fire Punch
+- Detect
 
 === TRAINER_HIDEO ===
 Name: HIDEO
@@ -15672,7 +15833,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Fury Swipes
 
 Marill
-Ability: Thick Fat
+Ability: Huge Power
 Level: 22
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
