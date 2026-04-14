@@ -8437,8 +8437,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         // .description = COMPOUND_STRING(
         //     "Attacks with thorny arms.\n"
         //     "May cause flinching."),
-        .effect = EFFECT_FIRST_TURN_ONLY, //EFFECT_HIT,
-        .power = 40, //60,
+        .effect = EFFECT_CEASELESS_EDGE, //EFFECT_FIRST_TURN_ONLY, //EFFECT_HIT,
+        .power = 60,
         .type = TYPE_GRASS,
         .accuracy = 100,
         // .pp = 15,
@@ -8449,8 +8449,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .minimizeDoubleDamage = B_UPDATED_MOVE_FLAGS < GEN_4,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 100, //30,
+            .sheerForceOverride = TRUE,
+            // .moveEffect = MOVE_EFFECT_FLINCH,
+            // .chance = 100, //30,
         }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_SMART,
