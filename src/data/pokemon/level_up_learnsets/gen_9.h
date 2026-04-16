@@ -598,6 +598,7 @@ static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_BULLDOZE),
     //Catch
     LEVEL_UP_MOVE(21, MOVE_SWIFT),
+    //Evo Lv22
     LEVEL_UP_MOVE(24, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(27, MOVE_AGILITY),
     LEVEL_UP_MOVE(30, MOVE_SLASH),
@@ -620,6 +621,7 @@ static const struct LevelUpMove sSandslashLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_RAPID_SPIN),
     LEVEL_UP_MOVE(18, MOVE_BULLDOZE),
     LEVEL_UP_MOVE(21, MOVE_SWIFT),
+    //Evo Lv22
     LEVEL_UP_MOVE(26, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(31, MOVE_SAND_TOMB),
     LEVEL_UP_MOVE(36, MOVE_SLASH),
@@ -2330,6 +2332,7 @@ static const struct LevelUpMove sMagnetonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_MAGNET_RISE),
     //Evo Lv30
     //Norman
+    //Evo post-Norman
     //Winona
     LEVEL_UP_MOVE(34, MOVE_DISCHARGE),
     LEVEL_UP_MOVE(40, MOVE_FLASH_CANNON),
@@ -2356,6 +2359,8 @@ static const struct LevelUpMove sMagnezoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_SHOCK_WAVE),
     LEVEL_UP_MOVE(24, MOVE_MIRROR_SHOT),
     LEVEL_UP_MOVE(28, MOVE_MAGNET_RISE),
+    //Norman
+    //Winona
     LEVEL_UP_MOVE(34, MOVE_DISCHARGE),
     LEVEL_UP_MOVE(40, MOVE_FLASH_CANNON),
     LEVEL_UP_MOVE(46, MOVE_SCREECH),
@@ -9113,19 +9118,20 @@ static const struct LevelUpMove sFlygonLevelUpLearnset[] = {
 
 #if P_FAMILY_CACNEA
 static const struct LevelUpMove sCacneaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SPIKES),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 4, MOVE_ABSORB),
     LEVEL_UP_MOVE( 7, MOVE_GROWTH),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(13, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_BULLET_SEED),
+    LEVEL_UP_MOVE(16, MOVE_NEEDLE_ARM),
     LEVEL_UP_MOVE(19, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE(22, MOVE_INGRAIN),
     //Catch
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
-    LEVEL_UP_MOVE(30, MOVE_SPIKES),
-    //Norman
+    LEVEL_UP_MOVE(30, MOVE_BULLET_SEED),
+    //Evo Lv32
     LEVEL_UP_MOVE(34, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(38, MOVE_PIN_MISSILE),
     LEVEL_UP_MOVE(42, MOVE_ENERGY_BALL),
@@ -9137,6 +9143,7 @@ static const struct LevelUpMove sCacneaLevelUpLearnset[] = {
 
 static const struct LevelUpMove sCacturneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SPIKY_SHIELD),
+    LEVEL_UP_MOVE( 1, MOVE_SPIKES),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
@@ -9144,11 +9151,13 @@ static const struct LevelUpMove sCacturneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(13, MOVE_SAND_ATTACK),
-    LEVEL_UP_MOVE(16, MOVE_BULLET_SEED),
+    LEVEL_UP_MOVE(16, MOVE_NEEDLE_ARM),
     LEVEL_UP_MOVE(19, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE(22, MOVE_INGRAIN),
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
-    LEVEL_UP_MOVE(30, MOVE_SPIKES),
+    LEVEL_UP_MOVE(30, MOVE_BULLET_SEED),
+    //Evo Lv32
+    //Norman
     LEVEL_UP_MOVE(35, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(38, MOVE_PIN_MISSILE),
     LEVEL_UP_MOVE(44, MOVE_ENERGY_BALL),
@@ -10031,7 +10040,7 @@ static const struct LevelUpMove sBagonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 5, MOVE_BITE),
-    LEVEL_UP_MOVE(10, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE(10, MOVE_DRAGON_RAGE),
     LEVEL_UP_MOVE(15, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     //Catch
@@ -10052,7 +10061,7 @@ static const struct LevelUpMove sShelgonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_RAGE),
     LEVEL_UP_MOVE(15, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(25, MOVE_CRUNCH),
@@ -10072,7 +10081,7 @@ static const struct LevelUpMove sShelgonLevelUpLearnset[] = {
 static const struct LevelUpMove sSalamenceLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_FLY),
     LEVEL_UP_MOVE( 1, MOVE_ROOST),
-    LEVEL_UP_MOVE( 1, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_RAGE),
     LEVEL_UP_MOVE( 1, MOVE_DRAGON_TAIL),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_DUAL_WINGBEAT),
