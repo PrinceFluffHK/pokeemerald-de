@@ -4157,23 +4157,22 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Kecleon
-Ability: Color Change
+"Numel
+Ability: Oblivious
 Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fury Swipes
-- Flamethrower
-- Psybeam
-- Thief
+- Incinerate
+- Bulldoze
+- Mud Slap
+- Take Down
 
-Torkoal
-Ability: White Smoke
+Koffing
+Ability: Levitate
 Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Flame Wheel
-- Body Press
-- Smog
-- Sunny Day
+- Clear Smog
+- Assurance
+- Will-O-Wisp"
 
 === TRAINER_JEFF ===
 Name: JEFF
@@ -13096,7 +13095,7 @@ Level: 22
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Confusion
 - Rock Throw
-- Solar Beam
+- Fire Spin
 - Rock Polish
 
 Tropius
@@ -14250,21 +14249,23 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Kecleon
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flamethrower
+"Kecleon
+Ability: Color Change
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fury Swipes
-- Feint Attack
-- Bind
+- Flamethrower
+- Psybeam
+- Thief
 
-Kecleon
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flamethrower
-- Fury Swipes
-- Feint Attack
-- Bind
+Torkoal
+Ability: White Smoke
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Wheel
+- Body Press
+- Smog
+- Sunny Day"
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
@@ -16503,7 +16504,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Take Down
 
 Slugma
-Ability: Drought
+Ability: Flame Body
 Level: 21
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Spin
