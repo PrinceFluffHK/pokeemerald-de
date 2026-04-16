@@ -927,21 +927,21 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Sandslash
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Dig
-- Slash
-- Sand Attack
-- Poison Sting
+Sandshrew
+Ability: Sand Rush
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bulldoze
+- Fury Swipes
+- Rollout
 
-Sandslash
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Dig
-- Slash
-- Sand Attack
+Cacnea
+Ability: Rough Skin
+Level: 26
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Needle Arm
 - Poison Sting
+- Leech Seed
 
 === TRAINER_CHIP ===
 Name: CHIP
@@ -4397,21 +4397,13 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Sandshrew
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
-
-Sandshrew
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Dig
-- Sand Attack
-- Poison Sting
-- Slash
+Sandslash
+Ability: Sand Rush
+Level: 26
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bulldoze
+- Fury Swipes
+- Rollout
 
 === TRAINER_BEAU ===
 Name: BEAU
@@ -4423,28 +4415,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Baltoy
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rapid Spin
-- Mud Slap
+Ability: Levitate
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Psybeam
-- Rock Tomb
+- Ancient Power
+- Cosmic Power
 
 Sandshrew
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Poison Sting
-- Sand Attack
-- Scratch
-- Dig
+Ability: Sand Rush
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bulldoze
+- Fury Swipes
+- Rollout
 
-Baltoy
-Level: 21
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rapid Spin
-- Mud Slap
-- Psybeam
-- Rock Tomb
+Cacnea
+Ability: Rough Skin
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Needle Arm
+- Poison Sting
+- Leech Seed
 
 === TRAINER_LARRY ===
 Name: LARRY
@@ -10225,21 +10217,29 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Sandshrew
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Dig
-- Sand Attack
+Cacnea
+Ability: Rough Skin
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Needle Arm
 - Poison Sting
-- Slash
+- Leech Seed
 
 Baltoy
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rapid Spin
-- Mud Slap
+Ability: Levitate
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Psybeam
-- Rock Tomb
+- Ancient Power
+- Cosmic Power
+
+Trapinch
+Ability: Hyper Cutter
+Level: 24
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Tomb
+- Dig
+- Bite
 
 === TRAINER_BECKY ===
 Name: BECKY
@@ -10250,21 +10250,21 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Sandshrew
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Sand Attack
-- Poison Sting
-- Slash
+Trapinch
+Ability: Hyper Cutter
+Level: 26
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Tomb
 - Dig
+- Bite
 
-Marill
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rollout
+Azumarill
+Ability: Huge Power
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
+- Bounce
 - Tail Whip
-- Defense Curl
 
 === TRAINER_CAROL ===
 Name: CAROL
@@ -16418,13 +16418,22 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Marill
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Trapinch
+Ability: Hyper Cutter
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sand Tomb
+- Dig
+- Bite
 
 Lombre
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Own Tempo
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 === TRAINER_BRYAN ===
 Name: BRYAN
@@ -16436,12 +16445,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandshrew
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Sand Rush
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dig
+- Fury Swipes
+- Rollout
 
-Sandslash
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sandshrew
+Ability: Sand Rush
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dig
+- Fury Swipes
+- Rollout
 
 === TRAINER_BRANDEN ===
 Name: BRANDEN
@@ -16452,13 +16469,21 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Taillow
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Cacnea
+Ability: Rough Skin
+Level: 26
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Needle Arm
+- Poison Sting
+- Leech Seed
 
-Nuzleaf
-Level: 22
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Skarmory
+Ability: Sturdy
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Slash
+- Leer
 
 === TRAINER_BRYANT ===
 Name: BRYANT
