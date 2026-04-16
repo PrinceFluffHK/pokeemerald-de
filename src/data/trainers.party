@@ -4157,7 +4157,7 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-"Numel
+Numel
 Ability: Oblivious
 Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -4172,7 +4172,7 @@ Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Clear Smog
 - Assurance
-- Will-O-Wisp"
+- Will-O-Wisp
 
 === TRAINER_JEFF ===
 Name: JEFF
@@ -5801,41 +5801,49 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Vulpix  
-Ability: Drought  
-Level: 28    
+Ninetales
+Ability: Flash Fire
+Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Flamethrower  
-- Disable  
-- Extrasensory  
+- Flame Burst
+- Extrasensory
+- Disable
+- Sunny Day
 
-Magcargo  
-Ability: Flame Body  
-Level: 28  
+Slugma
+Ability: Flame Body
+Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Rock Tomb  
-- Yawn  
-- Fire Spin  
-- Scorching Sands  
+- Fire Spin
+- Rock Slide
+- Light Screen
+- Yawn
 
-Koffing  
-Ability: Levitate  
-Level: 28  
+Koffing
+Ability: Levitate
+Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Clear Smog  
-- Will-O-Wisp  
-- Self-Destruct  
-- Acid Spray  
+- Clear Smog
+- Assurance
+- Will-O-Wisp
+- Self-Destruct
 
-Camerupt  
-Ability: Magma Armor  
-Level: 29  
+Camerupt @ Sitrus Berry
+Ability: Solid Rock
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Eruption
+- Scorching Sands
+- Body Slam
 
-Torkoal  
-Ability: White Smoke  
-Level: 31  
+Torkoal @ White Herb
+Ability: White Smoke
+Level: 29
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Overheat
+- Body Press
+- Solar Beam
+- Sunny Day
 
 === TRAINER_NORMAN_1 ===
 Name: Norman
@@ -14249,7 +14257,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-"Kecleon
+Kecleon
 Ability: Color Change
 Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -14265,7 +14273,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Flame Wheel
 - Body Press
 - Smog
-- Sunny Day"
+- Sunny Day
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
