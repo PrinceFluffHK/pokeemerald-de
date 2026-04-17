@@ -1522,19 +1522,27 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Swellow
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Quick Attack
-- Agility
-- Wing Attack
+Voltorb
+Ability: Soundproof
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Explosion
+
+Ninjask
+Ability: Speed Boost
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- U-Turn
+- Aerial Ace
+- Protect
 
 Swellow
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
-- Agility
 - Wing Attack
+- Agility
 
 === TRAINER_PARKER ===
 Name: PARKER
@@ -1545,19 +1553,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Spinda
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
+Girafarig
+Ability: Inner Focus
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Stomp
+- Psybeam
+- Trick Room
 
-Spinda
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
+Togetic
+Ability: Hustle
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Alluring Voice
+- Life Dew
+- Follow Me
+
+Graveler
+Ability: Rock Head
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Stomping Tantrum
+- Wide Guard
 
 === TRAINER_GEORGE ===
 Name: GEORGE
@@ -1568,19 +1586,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Slakoth @ Sitrus Berry
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Vigoroth @ Figy Berry
+Ability: Vital Spirit
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Facade
+- Throat Chop
 - Slack Off
-- Counter
-- Shadow Ball
 
-Slakoth @ Sitrus Berry
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Slack Off
-- Counter
-- Shadow Ball
+Corsola @ Enigma Berry
+Ability: Regenerator
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Aqua Ring
+- Recover
+
+Kirlia @ Sitrus Berry
+Ability: Synchronize
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Draining Kiss
+- Life Dew
 
 === TRAINER_BERKE ===
 Name: BERKE
@@ -1591,17 +1619,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Vigoroth
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Focus Energy
-- Slash
+Castform
+Ability: Forecast
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flamethrower
+- Thunderbolt
+- Ice Beam
 
-Vigoroth
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Focus Energy
-- Slash
+Shuppet @ Choice Scarf
+Ability: Insomnia
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Headbutt
+- Trick
+
+Kecleon
+Ability: Protean
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Sneak
+- Psybeam
+- Drain Punch
+- Protect
 
 === TRAINER_BRAXTON ===
 Name: BRAXTON
@@ -1936,16 +1976,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Delcatty
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Feint Attack
-- Shock Wave
+Ability: Normalize
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Facade
+- Thunder Wave
 
-Delcatty
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Feint Attack
-- Shock Wave
+Spinda
+Ability: Contrary
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Body Slam
+- Teeter Dance
+
+Raichu
+Ability: Static
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Electro Ball
+- Nuzzle
+- Endeavor
 
 === TRAINER_ALEXIA ===
 Name: ALEXIA
@@ -1956,18 +2009,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Wigglytuff
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Donphan
+Ability: Sturdy
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Horn Attack
+- Rollout
+- Scary Face
 - Defense Curl
-- Double Edge
-- Shadow Ball
 
-Wigglytuff
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Defense Curl
-- Double Edge
+Roselia
+Ability: Natural Cure
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Venoshock
+- Toxic Spikes
+
+Jigglypuff @ Eviolite
+Ability: Friend Guard
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Hyper Voice
+- Psychic
 - Shadow Ball
 
 === TRAINER_JODY ===
@@ -1979,17 +2043,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Zangoose
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Swords Dance
+Zangoose @ Toxic Orb
+Ability: Toxic Boost
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Slash
+- Poison Jab
+- Swords Dance
 
-Zangoose
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Swords Dance
-- Slash
+Trapinch
+Ability: Hyper Cutter
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dig
+- Superpower
+- Crunch
+
+Breloom
+Ability: Technician
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mach Punch
+- Bullet Seed
+- Rock Tomb
 
 === TRAINER_WENDY ===
 Name: WENDY
@@ -5854,59 +5930,45 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Vigoroth  
-Ability: Vital Spirit  
-Level: 30  
+Loudred
+Ability: Soundproof
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Focus Energy  
-- Counter  
-- Slash  
-- Brick Break  
+- Stomp
+- Bite
+- Howl
 
-Loudred  
-Ability: Soundproof  
-Level: 30  
+Vigoroth
+Ability: Vital Spirit
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Echoed Voice  
-- Howl  
-- Bite  
-- Extrasensory  
+- Slash
+- Encore
+- Focus Energy
 
-Spinda  
-Ability: Contrary  
-Level: 31  
+Spinda @ Choice Scarf
+Ability: Contrary
+Level: 28
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Psybeam  
-- Body Slam  
-- Sucker Punch  
-- Encore  
+- Body Slam
+- Psybeam
+- Trick
 
-Delcatty  
-Ability: Wonder Skin  
-Level: 31  
+Linoone
+Ability: Pickup
+Level: 29
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out  
-- Helping Hand  
-- Play Rough  
-- Facade  
+- Headbutt
+- Shadow Claw
+- Belly Drum
 
-Linoone  
-Ability: Quick Feet  
-Level: 31  
+Slaking @ Sitrus Berry
+Ability: Truant
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Strength  
-- Rock Smash  
-- Surf  
-- Dig  
-
-Slaking  
-Ability: Truant  
-Level: 32  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Facade  
-- Feint Attack  
-- Slack Off  
-- Yawn  
+- Facade
+- Faint Attack
+- Brick Break
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
