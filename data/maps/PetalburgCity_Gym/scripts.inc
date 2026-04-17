@@ -1336,7 +1336,7 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "The door at the left leads to\n"
 	.string "the SPEED ROOM.\p"
 	.string "The door at the right leads to\n"
-	.string "the ACCURACY ROOM.\p"
+	.string "the FLINCH ROOM.\p"
 	.string "The room's name will be on\n"
 	.string "the door, so choose carefully.\p"
 	.string "Once you've chosen the door…\n"
@@ -1515,15 +1515,15 @@ PetalburgCity_Gym_Text_DoorAppearsLocked2:
 	.string "right now…$"
 
 PetalburgCity_Gym_Text_EnterAccuracyRoom:
-	.string "“ACCURACY ROOM,” the sign says.\p"
+	.string "“FLINCH ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:
-	.string "“CONFUSION ROOM,” the sign says.\p"
+	.string "“TRICKY ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterDefenseRoom:
-	.string "“DEFENSE ROOM,” the sign says.\p"
+	.string "“BULK ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterRecoveryRoom:
@@ -1535,7 +1535,7 @@ PetalburgCity_Gym_Text_EnterStrengthRoom:
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterOHKORoom:
-	.string "“ONE-HIT KO ROOM,” the sign says.\p"
+	.string "“ABNORMAL ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
