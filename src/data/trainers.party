@@ -936,7 +936,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rollout
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
@@ -4430,7 +4430,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rollout
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
@@ -10225,7 +10225,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
@@ -16479,7 +16479,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
