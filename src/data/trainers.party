@@ -5489,7 +5489,7 @@ Pic: Elite Four Sidney
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Mightyena  
@@ -5554,7 +5554,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Green
+Mugshot: Green / Ace Pokemon
 
 Dusclops @ Eviolite  
 Ability: Frisk  
@@ -5618,7 +5618,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Pink
+Mugshot: Pink / Ace Pokemon
 
 Glalie  
 Ability: Inner Focus  
@@ -5681,7 +5681,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Blue
+Mugshot: Blue / Ace Pokemon
 
 Gyarados  
 Ability: Intimidate  
@@ -5744,7 +5744,7 @@ Pic: Leader Roxanne
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Geodude
 Ability: Rock Head
@@ -5779,7 +5779,7 @@ Pic: Leader Brawly
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Meditite
 Ability: Pure Power
@@ -5875,7 +5875,7 @@ Pic: Leader Flannery
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Ninetales
 Ability: Flash Fire
@@ -5928,7 +5928,7 @@ Pic: Leader Norman
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Loudred
 Ability: Soundproof
@@ -5977,8 +5977,7 @@ Pic: Leader Winona
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
-
+AI: Smart Trainer / Ace Pokemon
 Pelipper  
 Ability: Gale Wings  
 Level: 33  
@@ -6035,7 +6034,7 @@ Pic: Leader Tate And Liza
 Gender: Male
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Xatu (F)  
 Ability: Magic Bounce  
@@ -6093,7 +6092,7 @@ Pic: Leader Juan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Luvdisc
 Level: 41
@@ -7509,7 +7508,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Yellow
+Mugshot: Yellow / Ace Pokemon
 
 Skarmory  
 Ability: Weak Armor  
@@ -17480,7 +17479,7 @@ Pic: Leader Wattson
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Mareep
 Level: 36
@@ -17676,7 +17675,7 @@ Pic: Leader Flannery
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer 
 
 Magcargo @ White Herb
 Level: 38
