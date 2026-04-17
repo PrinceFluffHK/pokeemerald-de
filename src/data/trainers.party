@@ -5553,8 +5553,8 @@ Pic: Elite Four Phoebe
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer
-Mugshot: Green / Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Green
 
 Dusclops @ Eviolite  
 Ability: Frisk  
@@ -5617,8 +5617,8 @@ Pic: Elite Four Glacia
 Gender: Female
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer
-Mugshot: Pink / Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Pink
 
 Glalie  
 Ability: Inner Focus  
@@ -5680,8 +5680,8 @@ Pic: Elite Four Drake
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer
-Mugshot: Blue / Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Blue
 
 Gyarados  
 Ability: Intimidate  
@@ -7508,8 +7508,8 @@ Pic: Steven
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
-Mugshot: Yellow / Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
+Mugshot: Yellow
 
 Skarmory  
 Ability: Weak Armor  
