@@ -936,7 +936,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rollout
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
@@ -1522,19 +1522,27 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Swellow
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Quick Attack
-- Agility
-- Wing Attack
+Voltorb
+Ability: Soundproof
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Explosion
+
+Ninjask
+Ability: Speed Boost
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- U-Turn
+- Aerial Ace
+- Protect
 
 Swellow
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Guts
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
-- Agility
 - Wing Attack
+- Agility
 
 === TRAINER_PARKER ===
 Name: PARKER
@@ -1545,19 +1553,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Spinda
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
+Girafarig
+Ability: Inner Focus
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Stomp
+- Psybeam
+- Trick Room
 
-Spinda
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Teeter Dance
-- Dizzy Punch
-- Focus Punch
+Togetic
+Ability: Hustle
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Alluring Voice
+- Life Dew
+- Follow Me
+
+Graveler
+Ability: Rock Head
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Stomping Tantrum
+- Wide Guard
 
 === TRAINER_GEORGE ===
 Name: GEORGE
@@ -1568,19 +1586,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Slakoth @ Sitrus Berry
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Vigoroth @ Figy Berry
+Ability: Vital Spirit
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Facade
+- Throat Chop
 - Slack Off
-- Counter
-- Shadow Ball
 
-Slakoth @ Sitrus Berry
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Slack Off
-- Counter
-- Shadow Ball
+Corsola @ Enigma Berry
+Ability: Regenerator
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Aqua Ring
+- Recover
+
+Kirlia @ Sitrus Berry
+Ability: Synchronize
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Draining Kiss
+- Life Dew
 
 === TRAINER_BERKE ===
 Name: BERKE
@@ -1591,17 +1619,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Vigoroth
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Focus Energy
-- Slash
+Castform
+Ability: Forecast
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flamethrower
+- Thunderbolt
+- Ice Beam
 
-Vigoroth
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Focus Energy
-- Slash
+Shuppet @ Choice Scarf
+Ability: Insomnia
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Headbutt
+- Trick
+
+Kecleon
+Ability: Protean
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Sneak
+- Psybeam
+- Drain Punch
+- Protect
 
 === TRAINER_BRAXTON ===
 Name: BRAXTON
@@ -1936,16 +1976,29 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Delcatty
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Feint Attack
-- Shock Wave
+Ability: Normalize
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Facade
+- Thunder Wave
 
-Delcatty
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Feint Attack
-- Shock Wave
+Spinda
+Ability: Contrary
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Body Slam
+- Teeter Dance
+
+Raichu
+Ability: Static
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Electro Ball
+- Nuzzle
+- Endeavor
 
 === TRAINER_ALEXIA ===
 Name: ALEXIA
@@ -1956,18 +2009,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Wigglytuff
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Donphan
+Ability: Sturdy
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Horn Attack
+- Rollout
+- Scary Face
 - Defense Curl
-- Double Edge
-- Shadow Ball
 
-Wigglytuff
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Defense Curl
-- Double Edge
+Roselia
+Ability: Natural Cure
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Venoshock
+- Toxic Spikes
+
+Jigglypuff @ Eviolite
+Ability: Friend Guard
+Level: 28
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Hyper Voice
+- Psychic
 - Shadow Ball
 
 === TRAINER_JODY ===
@@ -1979,17 +2043,29 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Zangoose
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Swords Dance
+Zangoose @ Toxic Orb
+Ability: Toxic Boost
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Slash
+- Poison Jab
+- Swords Dance
 
-Zangoose
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Swords Dance
-- Slash
+Trapinch
+Ability: Hyper Cutter
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dig
+- Superpower
+- Crunch
+
+Breloom
+Ability: Technician
+Level: 29
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Mach Punch
+- Bullet Seed
+- Rock Tomb
 
 === TRAINER_WENDY ===
 Name: WENDY
@@ -4157,23 +4233,22 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Kecleon
-Ability: Color Change
+Numel
+Ability: Oblivious
 Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fury Swipes
-- Flamethrower
-- Psybeam
-- Thief
+- Incinerate
+- Bulldoze
+- Mud Slap
+- Take Down
 
-Torkoal
-Ability: White Smoke
+Koffing
+Ability: Levitate
 Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Flame Wheel
-- Body Press
-- Smog
-- Sunny Day
+- Clear Smog
+- Assurance
+- Will-O-Wisp
 
 === TRAINER_JEFF ===
 Name: JEFF
@@ -4431,7 +4506,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rollout
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
@@ -5414,7 +5489,7 @@ Pic: Elite Four Sidney
 Gender: Male
 Music: Elite Four
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
 Mightyena  
@@ -5479,7 +5554,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Green
+Mugshot: Green / Ace Pokemon
 
 Dusclops @ Eviolite  
 Ability: Frisk  
@@ -5543,7 +5618,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Pink
+Mugshot: Pink / Ace Pokemon
 
 Glalie  
 Ability: Inner Focus  
@@ -5606,7 +5681,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Blue
+Mugshot: Blue / Ace Pokemon
 
 Gyarados  
 Ability: Intimidate  
@@ -5669,7 +5744,7 @@ Pic: Leader Roxanne
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Geodude
 Ability: Rock Head
@@ -5704,7 +5779,7 @@ Pic: Leader Brawly
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Meditite
 Ability: Pure Power
@@ -5800,43 +5875,51 @@ Pic: Leader Flannery
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Vulpix  
-Ability: Drought  
-Level: 28    
+Ninetales
+Ability: Flash Fire
+Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Flamethrower  
-- Disable  
-- Extrasensory  
+- Flame Burst
+- Extrasensory
+- Disable
+- Sunny Day
 
-Magcargo  
-Ability: Flame Body  
-Level: 28  
+Slugma
+Ability: Flame Body
+Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Rock Tomb  
-- Yawn  
-- Fire Spin  
-- Scorching Sands  
+- Fire Spin
+- Rock Slide
+- Light Screen
+- Yawn
 
-Koffing  
-Ability: Levitate  
-Level: 28  
+Koffing
+Ability: Levitate
+Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Clear Smog  
-- Will-O-Wisp  
-- Self-Destruct  
-- Acid Spray  
+- Clear Smog
+- Assurance
+- Will-O-Wisp
+- Self-Destruct
 
-Camerupt  
-Ability: Magma Armor  
-Level: 29  
+Camerupt @ Sitrus Berry
+Ability: Solid Rock
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Eruption
+- Scorching Sands
+- Body Slam
 
-Torkoal  
-Ability: White Smoke  
-Level: 31  
+Torkoal @ White Herb
+Ability: White Smoke
+Level: 29
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Overheat
+- Body Press
+- Solar Beam
+- Sunny Day
 
 === TRAINER_NORMAN_1 ===
 Name: Norman
@@ -5845,61 +5928,47 @@ Pic: Leader Norman
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Vigoroth  
-Ability: Vital Spirit  
-Level: 30  
+Loudred
+Ability: Soundproof
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Focus Energy  
-- Counter  
-- Slash  
-- Brick Break  
+- Stomp
+- Bite
+- Howl
 
-Loudred  
-Ability: Soundproof  
-Level: 30  
+Vigoroth
+Ability: Vital Spirit
+Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Echoed Voice  
-- Howl  
-- Bite  
-- Extrasensory  
+- Slash
+- Encore
+- Focus Energy
 
-Spinda  
-Ability: Contrary  
-Level: 31  
+Spinda @ Choice Scarf
+Ability: Contrary
+Level: 28
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Psybeam  
-- Body Slam  
-- Sucker Punch  
-- Encore  
+- Body Slam
+- Psybeam
+- Trick
 
-Delcatty  
-Ability: Wonder Skin  
-Level: 31  
+Linoone
+Ability: Pickup
+Level: 29
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fake Out  
-- Helping Hand  
-- Play Rough  
-- Facade  
+- Headbutt
+- Shadow Claw
+- Belly Drum
 
-Linoone  
-Ability: Quick Feet  
-Level: 31  
+Slaking @ Sitrus Berry
+Ability: Truant
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Strength  
-- Rock Smash  
-- Surf  
-- Dig  
-
-Slaking  
-Ability: Truant  
-Level: 32  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Facade  
-- Feint Attack  
-- Slack Off  
-- Yawn  
+- Facade
+- Faint Attack
+- Brick Break
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
@@ -5908,7 +5977,7 @@ Pic: Leader Winona
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Pelipper  
 Ability: Gale Wings  
@@ -5966,7 +6035,7 @@ Pic: Leader Tate And Liza
 Gender: Male
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Xatu (F)  
 Ability: Magic Bounce  
@@ -6024,7 +6093,7 @@ Pic: Leader Juan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Luvdisc
 Level: 41
@@ -7440,7 +7509,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
-Mugshot: Yellow
+Mugshot: Yellow / Ace Pokemon
 
 Skarmory  
 Ability: Weak Armor  
@@ -10218,7 +10287,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
@@ -13096,7 +13165,7 @@ Level: 22
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Confusion
 - Rock Throw
-- Solar Beam
+- Fire Spin
 - Rock Polish
 
 Tropius
@@ -14251,20 +14320,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Kecleon
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flamethrower
+Ability: Color Change
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fury Swipes
-- Feint Attack
-- Bind
+- Flamethrower
+- Psybeam
+- Thief
 
-Kecleon
-Level: 23
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flamethrower
-- Fury Swipes
-- Feint Attack
-- Bind
+Torkoal
+Ability: White Smoke
+Level: 25
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Wheel
+- Body Press
+- Smog
+- Sunny Day
 
 === TRAINER_VIVIAN ===
 Name: VIVIAN
@@ -16470,7 +16541,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Cacnea
-Ability: Rough Skin
+Ability: Hardy Thorns
 Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
@@ -16503,7 +16574,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Take Down
 
 Slugma
-Ability: Drought
+Ability: Flame Body
 Level: 21
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Spin
@@ -17409,7 +17480,7 @@ Pic: Leader Wattson
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Mareep
 Level: 36
@@ -17605,7 +17676,7 @@ Pic: Leader Flannery
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer 
 
 Magcargo @ White Herb
 Level: 38

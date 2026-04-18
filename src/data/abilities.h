@@ -2412,6 +2412,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_HARDY_THORNS] =
+    {
+        .name = _("Hardy Thorns"),
+        .description = COMPOUND_STRING("Sand immune with barbs."),
+        .aiRating = 6,
+    },
     
     // [ABILITY_PSYCH_OUT] =
     // {
