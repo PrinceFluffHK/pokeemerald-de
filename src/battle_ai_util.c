@@ -1,6424 +1,7397 @@
 #include "global.h"
-#include "battle_z_move.h"
 #include "malloc.h"
-#include "battle.h"
 #include "battle_anim.h"
-#include "battle_ai_field_statuses.h"
-#include "battle_ai_util.h"
-#include "battle_ai_main.h"
-#include "battle_controllers.h"
-#include "battle_factory.h"
-#include "battle_setup.h"
-#include "event_data.h"
-#include "data.h"
-#include "item.h"
-#include "move.h"
-#include "pokemon.h"
+#include "battle_anim_internal.h"
+#include "battle_interface.h"
+#include "decompress.h"
+#include "gpu_regs.h"
+#include "graphics.h"
+#include "main.h"
+#include "math_util.h"
+#include "palette.h"
 #include "random.h"
-#include "recorded_battle.h"
+#include "reshow_battle_screen.h"
+#include "scanline_effect.h"
+#include "sound.h"
+#include "trig.h"
 #include "util.h"
 #include "constants/abilities.h"
-#include "constants/battle_ai.h"
 #include "constants/battle_move_effects.h"
+#include "constants/rgb.h"
+#include "constants/songs.h"
 #include "constants/moves.h"
-#include "constants/items.h"
 
-static u32 GetAIEffectGroup(enum BattleMoveEffects effect);
-static u32 GetAIEffectGroupFromMove(enum BattlerId battler, enum Move move);
+static void AnimMovePowderParticle_Step(struct Sprite *);
+static void AnimSolarBeamSmallOrb(struct Sprite *);
+static void AnimSolarBeamSmallOrb_Step(struct Sprite *);
+static void AnimAbsorptionOrb_Step(struct Sprite *);
+static void AnimHyperBeamOrb_Step(struct Sprite *);
+static void AnimSporeParticle_Step(struct Sprite *);
+static void AnimPetalDanceBigFlower_Step(struct Sprite *);
+static void AnimPetalDanceSmallFlower_Step(struct Sprite *);
+static void AnimRazorLeafParticle(struct Sprite *);
+static void AnimRazorLeafParticle_Step1(struct Sprite *);
+static void AnimRazorLeafParticle_Step2(struct Sprite *);
+static void AnimTeraStarstormBeam(struct Sprite *sprite);
+static void AnimTeraStarstormBeam_Step(struct Sprite *);
+static void AnimTeraStarstormStars_Step(struct Sprite *);
+static void AnimLeechSeed(struct Sprite *);
+static void AnimLeechSeed_Step(struct Sprite *);
+static void AnimLeechSeedSprouts(struct Sprite *);
+static void AnimTranslateLinearSingleSineWave_Step(struct Sprite *);
+static void AnimConstrictBinding(struct Sprite *);
+static void AnimConstrictBinding_Step1(struct Sprite *);
+static void AnimConstrictBinding_Step2(struct Sprite *);
+static void AnimIngrainRoot(struct Sprite *);
+static void AnimFrenzyPlantRoot(struct Sprite *);
+static void AnimRootFlickerOut(struct Sprite *);
+static void AnimIngrainOrb(struct Sprite *);
+static void AnimPresent(struct Sprite *);
+static void AnimKnockOffItem(struct Sprite *);
+static void AnimPresentHealParticle(struct Sprite *);
+static void AnimItemSteal(struct Sprite *);
+static void AnimItemSteal_Step1(struct Sprite *);
+static void AnimItemSteal_Step2(struct Sprite *);
+static void AnimItemSteal_Step3(struct Sprite *);
+static void AnimTrickBag(struct Sprite *);
+static void AnimTrickBag_Step1(struct Sprite *);
+static void AnimTrickBag_Step2(struct Sprite *);
+static void AnimTrickBag_Step3(struct Sprite *);
+static void AnimFlyingParticle(struct Sprite *);
+static void AnimFlyingParticle_Step(struct Sprite *);
+static void AnimSlidingHit(struct Sprite *);
+static void AnimWhipHit(struct Sprite *);
+static void AnimFlickeringPunch(struct Sprite *);
+static void AnimAirCutterSlice(struct Sprite *);
+static void AnimSlice_Step(struct Sprite *);
+static void AnimCirclingMusicNote(struct Sprite *);
+static void AnimCirclingMusicNote_Step(struct Sprite *);
+static void AnimProtect(struct Sprite *);
+static void AnimProtect_Step(struct Sprite *);
+static void AnimMilkBottle(struct Sprite *);
+static void AnimMilkBottle_Step1(struct Sprite *);
+static void AnimMilkBottle_Step2(struct Sprite *, int, int);
+static void AnimSparklingStars(struct Sprite *);
+static void AnimBubbleBurst(struct Sprite *);
+static void AnimBubbleBurst_Step(struct Sprite *);
+static void AnimSleepLetterZ(struct Sprite *);
+static void AnimSleepLetterZ_Step(struct Sprite *);
+static void AnimLockOnTarget(struct Sprite *);
+static void AnimLockOnTarget_Step1(struct Sprite *);
+static void AnimLockOnTarget_Step2(struct Sprite *);
+static void AnimLockOnTarget_Step3(struct Sprite *);
+static void AnimLockOnTarget_Step4(struct Sprite *);
+static void AnimLockOnTarget_Step5(struct Sprite *);
+static void AnimLockOnTarget_Step6(struct Sprite *);
+static void AnimLockOnMoveTarget(struct Sprite *);
+static void AnimBowMon(struct Sprite *);
+static void AnimBowMon_Step1(struct Sprite *);
+static void AnimBowMon_Step1_Callback(struct Sprite *);
+static void AnimBowMon_Step2(struct Sprite *);
+static void AnimBowMon_Step3(struct Sprite *);
+static void AnimBowMon_Step4(struct Sprite *);
+static void AnimBowMon_Step3_Callback(struct Sprite *);
+static void AnimTipMon(struct Sprite *);
+static void AnimTipMon_Step(struct Sprite *);
+static void AnimSlashSlice(struct Sprite *);
+static void AnimFalseSwipeSlice(struct Sprite *);
+static void AnimFalseSwipeSlice_Step1(struct Sprite *);
+static void AnimFalseSwipeSlice_Step2(struct Sprite *);
+static void AnimFalseSwipePositionedSlice(struct Sprite *);
+static void AnimEndureEnergy_Step(struct Sprite *);
+static void AnimSharpenSphere(struct Sprite *);
+static void AnimSharpenSphere_Step(struct Sprite *);
+static void AnimConversion2(struct Sprite *);
+static void AnimConversion2_Step(struct Sprite *);
+static void AnimMoon(struct Sprite *);
+static void AnimMoon_Step(struct Sprite *);
+static void AnimMoonlightSparkle(struct Sprite *);
+static void AnimMoonlightSparkle_Step(struct Sprite *);
+static void AnimHornHit(struct Sprite *);
+static void AnimHornHit_Step(struct Sprite *);
+static void AnimSuperFang(struct Sprite *);
+static void AnimWavyMusicNotes(struct Sprite *);
+static void AnimWavyMusicNotes_Step(struct Sprite *);
+static void AnimWavyMusicNotes_CalcVelocity(s16, s16, s16 *, s16 *, s8);
+static void AnimFlyingMusicNotes(struct Sprite *);
+static void AnimFlyingMusicNotes_Step(struct Sprite *);
+static void AnimBellyDrumHand(struct Sprite *);
+static void AnimSlowFlyingMusicNotes(struct Sprite *);
+static void AnimSlowFlyingMusicNotes_Step(struct Sprite *);
+static void AnimThoughtBubble_Step(struct Sprite *);
+static void AnimMetronomeFinger_Step(struct Sprite *);
+static void AnimFollowMeFinger_Step1(struct Sprite *);
+static void AnimFollowMeFinger_Step2(struct Sprite *);
+static void AnimTauntFinger(struct Sprite *);
+static void AnimTauntFinger_Step1(struct Sprite *);
+static void AnimTauntFinger_Step2(struct Sprite *);
+static void AnimMoveTwisterParticle_Step(struct Sprite *);
+static void AnimTask_MoonlightEndFade_Step(u8 taskId);
+static void AnimTask_LeafBlade_Step(u8);
+static void AnimTask_DuplicateAndShrinkToPos_Step1(u8);
+static void AnimTask_DuplicateAndShrinkToPos_Step2(u8);
+static s16 LeafBladeGetPosFactor(struct Sprite *);
+static void AnimTask_LeafBlade_Step2(struct Task *, u8);
+static void AnimTask_LeafBlade_Step2_Callback(struct Sprite *);
+static void AnimTask_SkullBashPositionSet(u8);
+static void AnimTask_SkullBashPositionReset(u8);
+static void AnimMoveFeintSwipe(struct Sprite *);
+static void AnimMoveFeintZoom(struct Sprite *);
+static void AnimMoveTrumpCard(struct Sprite *);
+static void AnimMoveTrumpCardParticle(struct Sprite *);
+static void AnimMoveAccupressure(struct Sprite *);
+static void AnimMoveWringOut(struct Sprite *);
+static void AnimMoveWorrySeed(struct Sprite *);
+static void AnimMoveSmallCloud(struct Sprite *);
+static void AnimGrassKnotStep(struct Sprite *);
+static void AnimGrassKnot(struct Sprite *);
+static void AnimWoodHammerSmall(struct Sprite *);
+static void AnimWoodHammerBig(struct Sprite *);
+static void AnimWoodHammerHammer(struct Sprite *);
+static void AnimWoodHammerHammer_WaitForPunch(struct Sprite *);
+static void AnimWoodHammerHammer_WaitForDestruction(struct Sprite *);
+static void AnimTask_DoubleTeam_Step(u8);
+static void AnimDoubleTeam(struct Sprite *);
+static void AnimNightSlash(struct Sprite *);
+static void AnimRockPolishStreak(struct Sprite *);
+static void AnimRockPolishSparkle(struct Sprite *);
+static void AnimNightSlash(struct Sprite *);
+static void AnimPluck(struct Sprite *);
+static void AnimAcrobaticsSlashes(struct Sprite *);
 
-// Functions
-enum Ability AI_GetMoldBreakerSanitizedAbility(enum BattlerId battlerAtk, enum Ability abilityAtk, enum Ability abilityDef, enum HoldEffect holdEffectDef, enum Move move)
+const union AnimCmd gPowderParticlesAnimCmds[] =
 {
-    if (MoveIgnoresTargetAbility(move))
-        return ABILITY_NONE;
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(2, 5),
+    ANIMCMD_FRAME(4, 5),
+    ANIMCMD_FRAME(6, 5),
+    ANIMCMD_FRAME(8, 5),
+    ANIMCMD_FRAME(10, 5),
+    ANIMCMD_FRAME(12, 5),
+    ANIMCMD_FRAME(14, 5),
+    ANIMCMD_JUMP(0),
+};
 
-    if (holdEffectDef != HOLD_EFFECT_ABILITY_SHIELD && IsMoldBreakerTypeAbility(battlerAtk, abilityAtk))
-        return ABILITY_NONE;
+const union AnimCmd *const gPowderParticlesAnimTable[] =
+{
+    gPowderParticlesAnimCmds,
+};
 
-    return abilityDef;
+static const union AffineAnimCmd sFeintAffineSwipe[] = { AFFINEANIMCMD_END };
+static const union AffineAnimCmd sFeintAffineZoom[] =
+{
+    AFFINEANIMCMD_FRAME(0x200, 0x200, 0, 0),
+    AFFINEANIMCMD_FRAME(-30, -30, 0, 10),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sTrumpCardAffine0[] =
+{
+    AFFINEANIMCMD_FRAME(0xC0, 0xC0, 30, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sTrumpCardAffine1[] =
+{
+    AFFINEANIMCMD_FRAME(0xA0, 0xA0, 40, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sTrumpCardAffine2[] =
+{
+    AFFINEANIMCMD_FRAME(0xD0, 0xD0, -20, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sTrumpCardAffine3[] =
+{
+    AFFINEANIMCMD_FRAME(0xE0, 0xE0, 40, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sTrumpCardAffine4[] =
+{
+    AFFINEANIMCMD_FRAME(0xF0, 0xF0, 60, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd * const sTrumpCardAffineAnims[] =
+{
+    sTrumpCardAffine0,
+    sTrumpCardAffine1,
+    sTrumpCardAffine2,
+    sTrumpCardAffine3,
+    sTrumpCardAffine4
+};
+
+static const union AffineAnimCmd * const sFeintAffineAnims[] =
+{
+    sFeintAffineZoom,
+};
+
+static const union AnimCmd sTrumpCardFrame0[] =
+{
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sTrumpCardFrame1[] =
+{
+    ANIMCMD_FRAME(4, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sTrumpCardFrame2[] =
+{
+    ANIMCMD_FRAME(8, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sTrumpCardParticleFrame0[] =
+{
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sTrumpCardParticleFrame1[] =
+{
+    ANIMCMD_FRAME(1, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd sTrumpCardParticleFrame2[] =
+{
+    ANIMCMD_FRAME(2, 0),
+    ANIMCMD_END
+};
+
+static const union AnimCmd * const sTrumpCardAnims[] =
+{
+    sTrumpCardFrame0,
+    sTrumpCardFrame1,
+    sTrumpCardFrame2
+};
+
+static const union AnimCmd * const sTrumpCardParticleAnims[] =
+{
+    sTrumpCardParticleFrame0,
+    sTrumpCardParticleFrame1,
+    sTrumpCardParticleFrame2,
+};
+
+static const union AffineAnimCmd sAccupressureTurn[] =
+{
+    AFFINEANIMCMD_FRAME(0, 0, 1, 20),
+    AFFINEANIMCMD_FRAME(0, 0, -1, 40),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAccupressureStill[] =
+{
+    AFFINEANIMCMD_FRAME(256, 256, 0, 0),
+    AFFINEANIMCMD_END
+};
+
+static const union AffineAnimCmd * const sAccupressureAffineAnims[] =
+{
+    sAccupressureStill,
+    sAccupressureTurn
+};
+
+static const union AffineAnimCmd sSmallCloundsInit[] =
+{
+    AFFINEANIMCMD_FRAME(0x100,0x100, 0, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sSmallCloudsVariant0[] =
+{
+    AFFINEANIMCMD_FRAME(0x100,0x100, 0, 0),
+    AFFINEANIMCMD_FRAME(-10, -10, 0, 15),
+    AFFINEANIMCMD_END
+};
+
+static const union AffineAnimCmd sSmallCloudsVariant1[] =
+{
+    AFFINEANIMCMD_FRAME(0x180,0x180, 0, 0),
+    AFFINEANIMCMD_FRAME(-18, -18, 0, 21),
+    AFFINEANIMCMD_END
+};
+
+
+static const union AffineAnimCmd sSmallCloudsVariant2[] =
+{
+    AFFINEANIMCMD_FRAME(0xC0, 0xC0, 0, 0),
+    AFFINEANIMCMD_FRAME(-6, -6, 0, 15),
+    AFFINEANIMCMD_END
+};
+
+static const union AffineAnimCmd * const sSmallCloudSpriteAffineAnimTable[] =
+{
+    sSmallCloundsInit,
+    sSmallCloudsVariant0,
+    sSmallCloudsVariant1,
+    sSmallCloudsVariant2,
+};
+
+const struct SpriteTemplate gWorrySeedSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WORRY_SEED,
+    .paletteTag = ANIM_TAG_WORRY_SEED,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .callback = AnimMoveWorrySeed
+};
+
+const struct SpriteTemplate gSmallCloudTemplate =
+{
+    .tileTag = ANIM_TAG_SMALL_CLOUD,
+    .paletteTag = ANIM_TAG_SMALL_CLOUD,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .affineAnims = sSmallCloudSpriteAffineAnimTable,
+    .callback = AnimMoveSmallCloud
+};
+
+const struct SpriteTemplate gAcupressureSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ACUPRESSURE,
+    .paletteTag = ANIM_TAG_ACUPRESSURE,
+    .oam = &gOamData_AffineDouble_ObjNormal_32x32,
+    .affineAnims = sAccupressureAffineAnims,
+    .callback = AnimMoveAccupressure,
+};
+
+const struct SpriteTemplate gWringOutHandSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WRING_OUT,
+    .paletteTag = ANIM_TAG_WRING_OUT,
+    .oam = &gOamData_AffineDouble_ObjNormal_32x32,
+    .callback = AnimMoveWringOut,
+};
+
+const struct SpriteTemplate gTrumpCardParticleSpriteTempalte =
+{
+    .tileTag = ANIM_TAG_TRUMP_CARD_PARTICLES,
+    .paletteTag = ANIM_TAG_TRUMP_CARD_PARTICLES,
+    .oam = &gOamData_AffineDouble_ObjNormal_8x8,
+    .anims = sTrumpCardParticleAnims,
+    .affineAnims = sTrumpCardAffineAnims,
+    .callback = AnimMoveTrumpCardParticle
+};
+
+const struct SpriteTemplate gTrumpCardSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_TRUMP_CARD,
+    .paletteTag = ANIM_TAG_TRUMP_CARD,
+    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
+    .anims = sTrumpCardAnims,
+    .callback = AnimMoveTrumpCard
+};
+
+const struct SpriteTemplate gFeintSwipeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FEINT,
+    .paletteTag = ANIM_TAG_FEINT,
+    .oam = &gOamData_AffineNormal_ObjNormal_64x64,
+    .callback = AnimMoveFeintSwipe,
+};
+
+const struct SpriteTemplate gFeintZoomSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FEINT,
+    .paletteTag = ANIM_TAG_FEINT,
+    .oam = &gOamData_AffineNormal_ObjNormal_64x64,
+    .affineAnims = sFeintAffineAnims,
+    .callback = AnimMoveFeintZoom,
+};
+
+const struct SpriteTemplate gSleepPowderParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SLEEP_POWDER,
+    .paletteTag = ANIM_TAG_SLEEP_POWDER,
+    .oam = &gOamData_AffineOff_ObjNormal_8x16,
+    .anims = gPowderParticlesAnimTable,
+    .callback = AnimMovePowderParticle,
+};
+
+const struct SpriteTemplate gStunSporeParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_STUN_SPORE,
+    .paletteTag = ANIM_TAG_STUN_SPORE,
+    .oam = &gOamData_AffineOff_ObjNormal_8x16,
+    .anims = gPowderParticlesAnimTable,
+    .callback = AnimMovePowderParticle,
+};
+
+const struct SpriteTemplate gPoisonPowderParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_POISON_POWDER,
+    .paletteTag = ANIM_TAG_POISON_POWDER,
+    .oam = &gOamData_AffineOff_ObjNormal_8x16,
+    .anims = gPowderParticlesAnimTable,
+    .callback = AnimMovePowderParticle,
+};
+
+const union AnimCmd gSolarBeamBigOrbAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSolarBeamBigOrbAnimCmds2[] =
+{
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSolarBeamBigOrbAnimCmds3[] =
+{
+    ANIMCMD_FRAME(2, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSolarBeamBigOrbAnimCmds4[] =
+{
+    ANIMCMD_FRAME(3, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSolarBeamBigOrbAnimCmds5[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSolarBeamBigOrbAnimCmds6[] =
+{
+    ANIMCMD_FRAME(5, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSolarBeamBigOrbAnimCmds7[] =
+{
+    ANIMCMD_FRAME(6, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSolarBeamSmallOrbAnimCms[] =
+{
+    ANIMCMD_FRAME(7, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gPowerAbsorptionOrbAnimCmds[] =
+{
+    ANIMCMD_FRAME(8, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gSolarBeamBigOrbAnimTable[] =
+{
+    gSolarBeamBigOrbAnimCmds1,
+    gSolarBeamBigOrbAnimCmds2,
+    gSolarBeamBigOrbAnimCmds3,
+    gSolarBeamBigOrbAnimCmds4,
+    gSolarBeamBigOrbAnimCmds5,
+    gSolarBeamBigOrbAnimCmds6,
+    gSolarBeamBigOrbAnimCmds7,
+};
+
+const union AnimCmd *const gSolarBeamSmallOrbAnimTable[] =
+{
+    gSolarBeamSmallOrbAnimCms,
+};
+
+const union AnimCmd *const gPowerAbsorptionOrbAnimTable[] =
+{
+    gPowerAbsorptionOrbAnimCmds,
+};
+
+const union AffineAnimCmd gPowerAbsorptionOrbAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(-5, -5, 0, 1),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gPowerAbsorptionOrbAffineAnimTable[] = {
+    gPowerAbsorptionOrbAffineAnimCmds,
+};
+
+const struct SpriteTemplate gPowerAbsorptionOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .affineAnims = gPowerAbsorptionOrbAffineAnimTable,
+    .callback = AnimPowerAbsorptionOrb,
+};
+
+const struct SpriteTemplate gSolarBeamBigOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gSolarBeamBigOrbAnimTable,
+    .callback = AnimSolarBeamBigOrb,
+};
+
+const struct SpriteTemplate gSolarBeamSmallOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gSolarBeamSmallOrbAnimTable,
+    .callback = AnimSolarBeamSmallOrb,
+};
+
+const union AffineAnimCmd gStockpileAbsorptionOrbAffineCmds[] = {
+    AFFINEANIMCMD_FRAME(320, 320, 0, 0),
+    AFFINEANIMCMD_FRAME(-14, -14, 0, 1),
+    AFFINEANIMCMD_JUMP(1),
+};
+
+const union AffineAnimCmd *const gStockpileAbsorptionOrbAffineAnimTable[] = {
+    gStockpileAbsorptionOrbAffineCmds,
+};
+
+const struct SpriteTemplate gStockpileAbsorptionOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GRAY_ORB,
+    .paletteTag = ANIM_TAG_GRAY_ORB,
+    .oam = &gOamData_AffineDouble_ObjNormal_8x8,
+    .affineAnims = gStockpileAbsorptionOrbAffineAnimTable,
+    .callback = AnimPowerAbsorptionOrb,
+};
+
+const union AffineAnimCmd gAbsorptionOrbAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(-5, -5, 0, 1),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gAbsorptionOrbAffineAnimTable[] = {
+    gAbsorptionOrbAffineAnimCmds,
+};
+
+const struct SpriteTemplate gAbsorptionOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .affineAnims = gAbsorptionOrbAffineAnimTable,
+    .callback = AnimAbsorptionOrb,
+};
+
+const struct SpriteTemplate gHyperBeamOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gSolarBeamBigOrbAnimTable,
+    .callback = AnimHyperBeamOrb,
+};
+
+const union AnimCmd gLeechSeedAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gLeechSeedAnimCmds2[] =
+{
+    ANIMCMD_FRAME(4, 7),
+    ANIMCMD_FRAME(8, 7),
+    ANIMCMD_JUMP(0),
+};
+
+const union AnimCmd *const gLeechSeedAnimTable[] =
+{
+    gLeechSeedAnimCmds1,
+    gLeechSeedAnimCmds2,
+};
+
+const struct SpriteTemplate gLeechSeedSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SEED,
+    .paletteTag = ANIM_TAG_SEED,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gLeechSeedAnimTable,
+    .callback = AnimLeechSeed,
+};
+
+const struct SpriteTemplate gPluckParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SEED_BROWN,
+    .paletteTag = ANIM_TAG_SEED_BROWN,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .callback = AnimPluck,
+};
+
+const union AnimCmd gSporeParticleAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSporeParticleAnimCmds2[] =
+{
+    ANIMCMD_FRAME(4, 7),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gSporeParticleAnimTable[] =
+{
+    gSporeParticleAnimCmds1,
+    gSporeParticleAnimCmds2,
+};
+
+const struct SpriteTemplate gSporeParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPORE,
+    .paletteTag = ANIM_TAG_SPORE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gSporeParticleAnimTable,
+    .callback = AnimSporeParticle,
+};
+
+const union AnimCmd gPetalDanceBigFlowerAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gPetalDanceSmallFlowerAnimCmds[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gPetalDanceBigFlowerAnimTable[] =
+{
+    gPetalDanceBigFlowerAnimCmds,
+};
+
+const union AnimCmd *const gPetalDanceSmallFlowerAnimTable[] =
+{
+    gPetalDanceSmallFlowerAnimCmds,
+};
+
+const struct SpriteTemplate gPetalDanceBigFlowerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER,
+    .paletteTag = ANIM_TAG_FLOWER,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gPetalDanceBigFlowerAnimTable,
+    .callback = AnimPetalDanceBigFlower,
+};
+
+const struct SpriteTemplate gPetalDanceSmallFlowerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER,
+    .paletteTag = ANIM_TAG_FLOWER,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gPetalDanceSmallFlowerAnimTable,
+    .callback = AnimPetalDanceSmallFlower,
+};
+
+const union AnimCmd gRazorLeafParticleAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(4, 5),
+    ANIMCMD_FRAME(8, 5),
+    ANIMCMD_FRAME(12, 5),
+    ANIMCMD_FRAME(16, 5),
+    ANIMCMD_FRAME(20, 5),
+    ANIMCMD_FRAME(16, 5),
+    ANIMCMD_FRAME(12, 5),
+    ANIMCMD_FRAME(8, 5),
+    ANIMCMD_FRAME(4, 5),
+    ANIMCMD_JUMP(0),
+};
+
+const union AnimCmd gRazorLeafParticleAnimCmds2[] =
+{
+    ANIMCMD_FRAME(24, 5),
+    ANIMCMD_FRAME(28, 5),
+    ANIMCMD_FRAME(32, 5),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gRazorLeafParticleAnimTable[] =
+{
+    gRazorLeafParticleAnimCmds1,
+    gRazorLeafParticleAnimCmds2,
+};
+
+void AnimFlyUpTarget(struct Sprite *sprite);
+
+const struct SpriteTemplate gRazorLeafParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LEAF,
+    .paletteTag = ANIM_TAG_LEAF,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gRazorLeafParticleAnimTable,
+    .callback = AnimRazorLeafParticle,
+};
+
+const struct SpriteTemplate gGrassPledgeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LEAF,
+    .paletteTag = ANIM_TAG_LEAF,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gRazorLeafParticleAnimTable,
+    .callback = AnimFlyUpTarget,
+};
+
+const struct SpriteTemplate gTwisterLeafSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LEAF,
+    .paletteTag = ANIM_TAG_LEAF,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gRazorLeafParticleAnimTable,
+    .callback = AnimMoveTwisterParticle,
+};
+
+const struct SpriteTemplate gAttackOrderParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ATTACK_ORDER,
+    .paletteTag = ANIM_TAG_ATTACK_ORDER,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gRazorLeafParticleAnimTable,
+    .callback = AnimMoveTwisterParticle,
+};
+
+const union AnimCmd gRazorLeafCutterAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(0, 3, .hFlip = TRUE),
+    ANIMCMD_FRAME(0, 3, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_FRAME(0, 3, .vFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
+const union AnimCmd *const gRazorLeafCutterAnimTable[] =
+{
+    gRazorLeafCutterAnimCmds,
+};
+
+const struct SpriteTemplate gRazorLeafCutterSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RAZOR_LEAF,
+    .paletteTag = ANIM_TAG_RAZOR_LEAF,
+    .oam = &gOamData_AffineOff_ObjNormal_32x16,
+    .anims = gRazorLeafCutterAnimTable,
+    .callback = AnimTranslateLinearSingleSineWave,
+};
+
+const union AffineAnimCmd gSwiftStarAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(0, 0, 0, 1),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gSwiftStarAffineAnimTable[] = {
+    gSwiftStarAffineAnimCmds,
+};
+
+const struct SpriteTemplate gSwiftStarSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_YELLOW_STAR,
+    .paletteTag = ANIM_TAG_YELLOW_STAR,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .affineAnims = gSwiftStarAffineAnimTable,
+    .callback = AnimTranslateLinearSingleSineWave,
+};
+
+static const union AnimCmd sAnim_ConstrictBinding[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_FRAME(64, 4),
+    ANIMCMD_FRAME(96, 4),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_ConstrictBinding_Flipped[] =
+{
+    ANIMCMD_FRAME(0,  4, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(64, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(96, 4, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_ConstrictBinding[] =
+{
+    sAnim_ConstrictBinding,
+    sAnim_ConstrictBinding_Flipped,
+};
+
+static const union AffineAnimCmd sAffineAnim_ConstrictBinding[] = {
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0, 0),
+    AFFINEANIMCMD_FRAME(-11, 0, 0, 6),
+    AFFINEANIMCMD_FRAME(11, 0, 0, 6),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_ConstrictBinding_Flipped[] = {
+    AFFINEANIMCMD_FRAME(-0x100, 0x100, 0, 0),
+    AFFINEANIMCMD_FRAME(11, 0, 0, 6),
+    AFFINEANIMCMD_FRAME(-11, 0, 0, 6),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd *const sAffineAnims_ConstrictBinding[] = {
+    sAffineAnim_ConstrictBinding,
+    sAffineAnim_ConstrictBinding_Flipped,
+};
+
+const struct SpriteTemplate gConstrictBindingSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_TENDRILS,
+    .paletteTag = ANIM_TAG_TENDRILS,
+    .oam = &gOamData_AffineNormal_ObjNormal_64x32,
+    .anims = sAnims_ConstrictBinding,
+    .affineAnims = sAffineAnims_ConstrictBinding,
+    .callback = AnimConstrictBinding,
+};
+
+const union AffineAnimCmd gMimicOrbAffineAnimCmds1[] = {
+    AFFINEANIMCMD_FRAME(0, 0, 0, 0),
+    AFFINEANIMCMD_FRAME(48, 48, 0, 14),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gMimicOrbAffineAnimCmds2[] = {
+    AFFINEANIMCMD_FRAME(-16, -16, 0, 1),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gMimicOrbAffineAnimTable[] = {
+    gMimicOrbAffineAnimCmds1,
+    gMimicOrbAffineAnimCmds2,
+};
+
+const struct SpriteTemplate gMimicOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .affineAnims = gMimicOrbAffineAnimTable,
+    .callback = AnimMimicOrb,
+};
+
+const union AnimCmd gIngrainRootAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(16, 7),
+    ANIMCMD_FRAME(32, 7),
+    ANIMCMD_FRAME(48, 7),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gIngrainRootAnimCmds2[] =
+{
+    ANIMCMD_FRAME(0, 7, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 7, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 7, .hFlip = TRUE),
+    ANIMCMD_FRAME(48, 7, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gIngrainRootAnimCmds3[] =
+{
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(16, 7),
+    ANIMCMD_FRAME(32, 7),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gIngrainRootAnimCmds4[] =
+{
+    ANIMCMD_FRAME(0, 7, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 7, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 7, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gIngrainRootAnimTable[] =
+{
+    gIngrainRootAnimCmds1,
+    gIngrainRootAnimCmds2,
+    gIngrainRootAnimCmds3,
+    gIngrainRootAnimCmds4,
+};
+
+const struct SpriteTemplate gIngrainRootSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ROOTS,
+    .paletteTag = ANIM_TAG_ROOTS,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gIngrainRootAnimTable,
+    .callback = AnimIngrainRoot,
+};
+
+const struct SpriteTemplate gFrenzyPlantRootSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ROOTS,
+    .paletteTag = ANIM_TAG_ROOTS,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gIngrainRootAnimTable,
+    .callback = AnimFrenzyPlantRoot,
+};
+
+const union AnimCmd gIngrainOrbAnimCmds[] =
+{
+    ANIMCMD_FRAME(3, 3),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_JUMP(0),
+};
+
+const union AnimCmd *const gIngrainOrbAnimTable[] =
+{
+    gIngrainOrbAnimCmds,
+};
+
+const struct SpriteTemplate gIngrainOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gIngrainOrbAnimTable,
+    .callback = AnimIngrainOrb,
+};
+
+const union AnimCmd gFallingBagAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gFallingBagAnimTable[] =
+{
+    gFallingBagAnimCmds,
+};
+
+const union AffineAnimCmd gFallingBagAffineAnimCmds1[] = {
+    AFFINEANIMCMD_FRAME(0, 0, -4, 10),
+    AFFINEANIMCMD_FRAME(0, 0, 4, 20),
+    AFFINEANIMCMD_FRAME(0, 0, -4, 10),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gFallingBagAffineAnimCmds2[] = {
+    AFFINEANIMCMD_FRAME(0, 0, -1, 2),
+    AFFINEANIMCMD_FRAME(0, 0, 1, 4),
+    AFFINEANIMCMD_FRAME(0, 0, -1, 4),
+    AFFINEANIMCMD_FRAME(0, 0, 1, 4),
+    AFFINEANIMCMD_FRAME(0, 0, -1, 4),
+    AFFINEANIMCMD_FRAME(0, 0, 1, 2),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gFallingBagAffineAnimTable[] = {
+    gFallingBagAffineAnimCmds1,
+    gFallingBagAffineAnimCmds2,
+};
+
+const struct SpriteTemplate gPresentSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ITEM_BAG,
+    .paletteTag = ANIM_TAG_ITEM_BAG,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gFallingBagAnimTable,
+    .affineAnims = gFallingBagAffineAnimTable,
+    .callback = AnimPresent,
+};
+
+const struct SpriteTemplate gKnockOffItemSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ITEM_BAG,
+    .paletteTag = ANIM_TAG_ITEM_BAG,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gFallingBagAnimTable,
+    .affineAnims = gFallingBagAffineAnimTable,
+    .callback = AnimKnockOffItem,
+};
+
+const union AnimCmd gPresentHealParticleAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(4, 4),
+    ANIMCMD_FRAME(8, 4),
+    ANIMCMD_FRAME(12, 4),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gPresentHealParticleAnimTable[] =
+{
+    gPresentHealParticleAnimCmds,
+};
+
+const struct SpriteTemplate gPresentHealParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GREEN_SPARKLE,
+    .paletteTag = ANIM_TAG_GREEN_SPARKLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gPresentHealParticleAnimTable,
+    .callback = AnimPresentHealParticle,
+};
+
+const struct SpriteTemplate gItemStealSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ITEM_BAG,
+    .paletteTag = ANIM_TAG_ITEM_BAG,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gFallingBagAnimTable,
+    .affineAnims = gFallingBagAffineAnimTable,
+    .callback = AnimItemSteal,
+};
+
+const union AffineAnimCmd gTrickBagAffineAnimCmds1[] = {
+    AFFINEANIMCMD_FRAME(0, 0, 0, 3),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gTrickBagAffineAnimCmds2[] = {
+    AFFINEANIMCMD_FRAME(0, -10, 0, 3),
+    AFFINEANIMCMD_FRAME(0, -6, 0, 3),
+    AFFINEANIMCMD_FRAME(0, -2, 0, 3),
+    AFFINEANIMCMD_FRAME(0, 0, 0, 3),
+    AFFINEANIMCMD_FRAME(0, 2, 0, 3),
+    AFFINEANIMCMD_FRAME(0, 6, 0, 3),
+    AFFINEANIMCMD_FRAME(0, 10, 0, 3),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gTrickBagAffineAnimTable[] = {
+    gTrickBagAffineAnimCmds1,
+    gTrickBagAffineAnimCmds2,
+    gFallingBagAffineAnimCmds1,
+    gFallingBagAffineAnimCmds2,
+};
+
+const struct SpriteTemplate gTrickBagSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ITEM_BAG,
+    .paletteTag = ANIM_TAG_ITEM_BAG,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gFallingBagAnimTable,
+    .affineAnims = gTrickBagAffineAnimTable,
+    .callback = AnimTrickBag,
+};
+
+const s8 gTrickBagCoordinates[][3] =
+{
+    {5, 24,   1},
+    {0,  4,   0},
+    {8, 16,  -1},
+    {0,  2,   0},
+    {8, 16,   1},
+    {0,  2,   0},
+    {8, 16,   1},
+    {0,  2,   0},
+    {8, 16,   1},
+    {0, 16,   0},
+    {0,  0, 127},
+};
+
+const union AnimCmd gLeafBladeAnimCmds1[] =
+{
+    ANIMCMD_FRAME(28, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gLeafBladeAnimCmds2[] =
+{
+    ANIMCMD_FRAME(32, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gLeafBladeAnimCmds3[] =
+{
+    ANIMCMD_FRAME(20, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gLeafBladeAnimCmds4[] =
+{
+    ANIMCMD_FRAME(28, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gLeafBladeAnimCmds5[] =
+{
+    ANIMCMD_FRAME(16, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gLeafBladeAnimCmds6[] =
+{
+    ANIMCMD_FRAME(16, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gLeafBladeAnimCmds7[] =
+{
+    ANIMCMD_FRAME(28, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gLeafBladeAnimTable[] =
+{
+    gLeafBladeAnimCmds1,
+    gLeafBladeAnimCmds2,
+    gLeafBladeAnimCmds3,
+    gLeafBladeAnimCmds4,
+    gLeafBladeAnimCmds5,
+    gLeafBladeAnimCmds6,
+    gLeafBladeAnimCmds7,
+};
+
+const struct SpriteTemplate gLeafBladeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LEAF,
+    .paletteTag = ANIM_TAG_LEAF,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gLeafBladeAnimTable,
+};
+
+const union AffineAnimCmd gAromatherapyBigFlowerAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(256, 256, 0, 0),
+    AFFINEANIMCMD_FRAME(0, 0, 4, 1),
+    AFFINEANIMCMD_JUMP(1),
+};
+
+const union AffineAnimCmd *const gAromatherapyBigFlowerAffineAnimTable[] = {
+    gAromatherapyBigFlowerAffineAnimCmds,
+};
+
+const struct SpriteTemplate gAromatherapySmallFlowerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER,
+    .paletteTag = ANIM_TAG_FLOWER,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gPetalDanceSmallFlowerAnimTable,
+    .callback = AnimFlyingParticle,
+};
+
+const struct SpriteTemplate gAromatherapyBigFlowerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER,
+    .paletteTag = ANIM_TAG_FLOWER,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .anims = gPetalDanceBigFlowerAnimTable,
+    .affineAnims = gAromatherapyBigFlowerAffineAnimTable,
+    .callback = AnimFlyingParticle,
+};
+
+const union AffineAnimCmd gSilverWindBigSparkAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(256, 256, 0, 0),
+    AFFINEANIMCMD_FRAME(0, 0, -10, 1),
+    AFFINEANIMCMD_JUMP(1),
+};
+
+const union AffineAnimCmd gSilverWindMediumSparkAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(192, 192, 0, 0),
+    AFFINEANIMCMD_FRAME(0, 0, -12, 1),
+    AFFINEANIMCMD_JUMP(1),
+};
+
+const union AffineAnimCmd gSilverWindSmallSparkAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(143, 143, 0, 0),
+    AFFINEANIMCMD_FRAME(0, 0, -15, 1),
+    AFFINEANIMCMD_JUMP(1),
+};
+
+const union AffineAnimCmd *const gSilverWindBigSparkAffineAnimTable[] = {
+    gSilverWindBigSparkAffineAnimCmds,
+};
+
+const union AffineAnimCmd *const gSilverWindMediumSparkAffineAnimTable[] = {
+    gSilverWindMediumSparkAffineAnimCmds,
+};
+
+const union AffineAnimCmd *const gSilverWindSmallSparkAffineAnimTable[] = {
+    gSilverWindSmallSparkAffineAnimCmds,
+};
+
+const struct SpriteTemplate gSilverWindBigSparkSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARKLE_6,
+    .paletteTag = ANIM_TAG_SPARKLE_6,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .affineAnims = gSilverWindBigSparkAffineAnimTable,
+    .callback = AnimFlyingParticle,
+};
+
+const struct SpriteTemplate gSilverWindMediumSparkSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARKLE_6,
+    .paletteTag = ANIM_TAG_SPARKLE_6,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .affineAnims = gSilverWindMediumSparkAffineAnimTable,
+    .callback = AnimFlyingParticle,
+};
+
+const struct SpriteTemplate gSilverWindSmallSparkSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARKLE_6,
+    .paletteTag = ANIM_TAG_SPARKLE_6,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .affineAnims = gSilverWindSmallSparkAffineAnimTable,
+    .callback = AnimFlyingParticle,
+};
+
+const u16 gMagicalLeafBlendColors[] =
+{
+    RGB_RED,
+    RGB(31, 19, 0),
+    RGB_YELLOW,
+    RGB_GREEN,
+    RGB(5, 14, 31),
+    RGB(22, 10, 31),
+    RGB(22, 21, 31),
+};
+
+const struct SpriteTemplate gNeedleArmSpikeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GREEN_SPIKE,
+    .paletteTag = ANIM_TAG_GREEN_SPIKE,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .callback = AnimNeedleArmSpike,
+};
+
+static const union AnimCmd sAnim_Whip[] =
+{
+    ANIMCMD_FRAME(64, 3),
+    ANIMCMD_FRAME(80, 3),
+    ANIMCMD_FRAME(96, 3),
+    ANIMCMD_FRAME(112, 6),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Whip_Flipped[] =
+{
+    ANIMCMD_FRAME(64, 3, .hFlip = TRUE),
+    ANIMCMD_FRAME(80, 3, .hFlip = TRUE),
+    ANIMCMD_FRAME(96, 3, .hFlip = TRUE),
+    ANIMCMD_FRAME(112, 6, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_Whip[] =
+{
+    sAnim_Whip,
+    sAnim_Whip_Flipped,
+};
+
+const struct SpriteTemplate gSlamHitSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SLAM_HIT,
+    .paletteTag = ANIM_TAG_SLAM_HIT,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_Whip,
+    .callback = AnimWhipHit,
+};
+
+const struct SpriteTemplate gVineWhipSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WHIP_HIT,
+    .paletteTag = ANIM_TAG_WHIP_HIT,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_Whip,
+    .callback = AnimWhipHit,
+};
+
+static const union AnimCmd sAnim_SlidingHit[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_FRAME(48, 4),
+    ANIMCMD_FRAME(64, 5),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_SlidingHit[] =
+{
+    sAnim_SlidingHit,
+};
+
+// Unused
+static const struct SpriteTemplate sSlidingHit1SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_HIT,
+    .paletteTag = ANIM_TAG_HIT,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_SlidingHit,
+    .callback = AnimSlidingHit,
+};
+
+// Unused
+static const struct SpriteTemplate sSlidingHit2SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_HIT_2,
+    .paletteTag = ANIM_TAG_HIT_2,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_SlidingHit,
+    .callback = AnimSlidingHit,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_Normal[] = {
+    AFFINEANIMCMD_FRAME(256, 256, 0, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_TurnedTopLeft[] = {
+    AFFINEANIMCMD_FRAME(256, 256, 32, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_TurnedLeft[] = {
+    AFFINEANIMCMD_FRAME(256, 256, 64, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_TurnedBottomLeft[] = {
+    AFFINEANIMCMD_FRAME(256, 256, 96, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_UpsideDown[] = {
+    AFFINEANIMCMD_FRAME(256, 256, -128, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_TurnedBottomRight[] = {
+    AFFINEANIMCMD_FRAME(256, 256, -96, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_TurnedRight[] = {
+    AFFINEANIMCMD_FRAME(256, 256, -64, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sAffineAnim_FlickeringPunch_TurnedTopRight[] = {
+    AFFINEANIMCMD_FRAME(256, 256, -32, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd *const sAffineAnims_FlickeringPunch[] = {
+    sAffineAnim_FlickeringPunch_Normal,
+    sAffineAnim_FlickeringPunch_TurnedTopLeft,
+    sAffineAnim_FlickeringPunch_TurnedLeft,
+    sAffineAnim_FlickeringPunch_TurnedBottomLeft,
+    sAffineAnim_FlickeringPunch_UpsideDown,
+    sAffineAnim_FlickeringPunch_TurnedBottomRight,
+    sAffineAnim_FlickeringPunch_TurnedRight,
+    sAffineAnim_FlickeringPunch_TurnedTopRight,
+};
+
+// Unused
+static const struct SpriteTemplate sFlickeringPunchSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_HANDS_AND_FEET,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .affineAnims = sAffineAnims_FlickeringPunch,
+    .callback = AnimFlickeringPunch,
+};
+
+const union AnimCmd gCuttingSliceAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(16, 5),
+    ANIMCMD_FRAME(32, 5),
+    ANIMCMD_FRAME(48, 5),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gCuttingSliceAnimTable[] =
+{
+    gCuttingSliceAnimCmds,
+};
+
+const struct SpriteTemplate gCuttingSliceSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CUT,
+    .paletteTag = ANIM_TAG_CUT,
+    .oam = &gOamData_AffineOff_ObjBlend_32x32,
+    .anims = gCuttingSliceAnimTable,
+    .callback = AnimCuttingSlice,
+};
+
+const struct SpriteTemplate gAirCutterSliceSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CUT,
+    .paletteTag = ANIM_TAG_CUT,
+    .oam = &gOamData_AffineOff_ObjBlend_32x32,
+    .anims = gCuttingSliceAnimTable,
+    .callback = AnimAirCutterSlice,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_Eighth[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_BeamedEighth[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_SlantedBeamedEighth[] =
+{
+    ANIMCMD_FRAME(8, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_Quarter[] =
+{
+    ANIMCMD_FRAME(12, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_QuarterRest[] =
+{
+    ANIMCMD_FRAME(16, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_EighthRest[] =
+{
+    ANIMCMD_FRAME(20, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_Eighth_Flipped[] =
+{
+    ANIMCMD_FRAME(0, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_BeamedEighth_Flipped[] =
+{
+    ANIMCMD_FRAME(4, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_SlantedBeamedEighth_Flipped[] =
+{
+    ANIMCMD_FRAME(8, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_CirclingMusicNote_Quarter_Flipped[] =
+{
+    ANIMCMD_FRAME(12, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_CirclingMusicNote[] =
+{
+    sAnim_CirclingMusicNote_Eighth,
+    sAnim_CirclingMusicNote_BeamedEighth,
+    sAnim_CirclingMusicNote_SlantedBeamedEighth,
+    sAnim_CirclingMusicNote_Quarter,
+    sAnim_CirclingMusicNote_QuarterRest,
+    sAnim_CirclingMusicNote_EighthRest,
+    sAnim_CirclingMusicNote_Eighth_Flipped,
+    sAnim_CirclingMusicNote_BeamedEighth_Flipped,
+    sAnim_CirclingMusicNote_SlantedBeamedEighth_Flipped,
+    sAnim_CirclingMusicNote_Quarter_Flipped,
+};
+
+// Unused
+static const struct SpriteTemplate sCirclingMusicNoteSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_CirclingMusicNote,
+    .callback = AnimCirclingMusicNote,
+};
+
+const struct SpriteTemplate gProtectSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_PROTECT,
+    .paletteTag = ANIM_TAG_PROTECT,
+    .oam = &gOamData_AffineOff_ObjBlend_64x64,
+    .callback = AnimProtect,
+};
+
+const union AffineAnimCmd gMilkBottleAffineAnimCmds1[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gMilkBottleAffineAnimCmds2[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 2, 12),
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 6),
+    AFFINEANIMCMD_FRAME(0x0, 0x0, -2, 24),
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 6),
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 2, 12),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gMilkBottleAffineAnimTable[] =
+{
+    gMilkBottleAffineAnimCmds1,
+    gMilkBottleAffineAnimCmds2,
+};
+
+const struct SpriteTemplate gMilkBottleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MILK_BOTTLE,
+    .paletteTag = ANIM_TAG_MILK_BOTTLE,
+    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .affineAnims = gMilkBottleAffineAnimTable,
+    .callback = AnimMilkBottle,
+};
+
+const union AnimCmd gGrantingStarsAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(16, 7),
+    ANIMCMD_FRAME(32, 7),
+    ANIMCMD_FRAME(48, 7),
+    ANIMCMD_FRAME(64, 7),
+    ANIMCMD_FRAME(80, 7),
+    ANIMCMD_FRAME(96, 7),
+    ANIMCMD_FRAME(112, 7),
+    ANIMCMD_JUMP(0),
+};
+
+const union AnimCmd *const gGrantingStarsAnimTable[] =
+{
+    gGrantingStarsAnimCmds,
+};
+
+const struct SpriteTemplate gGrantingStarsSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARKLE_2,
+    .paletteTag = ANIM_TAG_SPARKLE_2,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gGrantingStarsAnimTable,
+    .callback = AnimGrantingStars,
+};
+
+const struct SpriteTemplate gSparklingStarsSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARKLE_2,
+    .paletteTag = ANIM_TAG_SPARKLE_2,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gGrantingStarsAnimTable,
+    .callback = AnimSparklingStars,
+};
+
+static const union AnimCmd sAnim_BubbleBurst[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(4, 10),
+    ANIMCMD_FRAME(8, 10),
+    ANIMCMD_FRAME(12, 10),
+    ANIMCMD_FRAME(16, 26),
+    ANIMCMD_FRAME(16, 5),
+    ANIMCMD_FRAME(20, 5),
+    ANIMCMD_FRAME(24, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_BubbleBurst_Flipped[] =
+{
+    ANIMCMD_FRAME(0, 10, .hFlip = TRUE),
+    ANIMCMD_FRAME(4, 10, .hFlip = TRUE),
+    ANIMCMD_FRAME(8, 10, .hFlip = TRUE),
+    ANIMCMD_FRAME(12, 10, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 26, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(20, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(24, 15, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_BubbleBurst[] =
+{
+    sAnim_BubbleBurst,
+    sAnim_BubbleBurst_Flipped,
+};
+
+// Unused
+static const struct SpriteTemplate sBubbleBurstSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BUBBLE_BURST,
+    .paletteTag = ANIM_TAG_BUBBLE_BURST,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_BubbleBurst,
+    .callback = AnimBubbleBurst,
+};
+
+const union AnimCmd gSleepLetterZAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 40),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gSleepLetterZAnimTable[] =
+{
+    gSleepLetterZAnimCmds,
+};
+
+const union AffineAnimCmd gSleepLetterZAffineAnimCmds1[] =
+{
+    AFFINEANIMCMD_FRAME(0x14, 0x14, -30, 0),
+    AFFINEANIMCMD_FRAME(0x8, 0x8, 1, 24),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gSleepLetterZAffineAnimCmds1_2[] =
+{
+    AFFINEANIMCMD_LOOP(0),
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 1, 24),
+    AFFINEANIMCMD_LOOP(10),
+};
+
+const union AffineAnimCmd gSleepLetterZAffineAnimCmds2[] =
+{
+    AFFINEANIMCMD_FRAME(0x14, 0x14, 30, 0),
+    AFFINEANIMCMD_FRAME(0x8, 0x8, -1, 24),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gSleepLetterZAffineAnimCmds2_2[] =
+{
+    AFFINEANIMCMD_LOOP(0),
+    AFFINEANIMCMD_FRAME(0x0, 0x0, -1, 24),
+    AFFINEANIMCMD_LOOP(10),
+};
+
+const union AffineAnimCmd *const gSleepLetterZAffineAnimTable[] =
+{
+    gSleepLetterZAffineAnimCmds1,
+    gSleepLetterZAffineAnimCmds2,
+};
+
+const struct SpriteTemplate gSleepLetterZSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LETTER_Z,
+    .paletteTag = ANIM_TAG_LETTER_Z,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gSleepLetterZAnimTable,
+    .affineAnims = gSleepLetterZAffineAnimTable,
+    .callback = AnimSleepLetterZ,
+};
+
+const struct SpriteTemplate gLockOnTargetSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LOCK_ON,
+    .paletteTag = ANIM_TAG_LOCK_ON,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .callback = AnimLockOnTarget,
+};
+
+const struct SpriteTemplate gLockOnMoveTargetSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LOCK_ON,
+    .paletteTag = ANIM_TAG_LOCK_ON,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .callback = AnimLockOnMoveTarget,
+};
+
+const s8 gInclineMonCoordTable[][2] =
+{
+    { 64,  64},
+    {  0, -64},
+    {-64,  64},
+    { 32, -32},
+};
+
+const struct SpriteTemplate gBowMonSpriteTemplate =
+{
+    .tileTag = 0,
+    .paletteTag = 0,
+    .oam = &gDummyOamData,
+    .callback = AnimBowMon,
+};
+
+// Unused
+// Same as BowMon above but without backing up
+static const struct SpriteTemplate sTipMonSpriteTemplate =
+{
+    .tileTag = 0,
+    .paletteTag = 0,
+    .oam = &gDummyOamData,
+    .callback = AnimTipMon,
+};
+
+const union AnimCmd gSlashSliceAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_FRAME(48, 4),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gSlashSliceAnimCmds2[] =
+{
+    ANIMCMD_FRAME(48, 4),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gSlashSliceAnimTable[] =
+{
+    gSlashSliceAnimCmds1,
+    gSlashSliceAnimCmds2,
+};
+
+const struct SpriteTemplate gSlashSliceSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SLASH,
+    .paletteTag = ANIM_TAG_SLASH,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gSlashSliceAnimTable,
+    .callback = AnimSlashSlice,
+};
+
+const struct SpriteTemplate gFalseSwipeSliceSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SLASH_2,
+    .paletteTag = ANIM_TAG_SLASH_2,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gSlashSliceAnimTable,
+    .callback = AnimFalseSwipeSlice,
+};
+
+const struct SpriteTemplate gFalseSwipePositionedSliceSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SLASH_2,
+    .paletteTag = ANIM_TAG_SLASH_2,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gSlashSliceAnimTable,
+    .callback = AnimFalseSwipePositionedSlice,
+};
+
+const union AnimCmd gEndureEnergyAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(8, 12),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(24, 4),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gEndureEnergyAnimTable[] =
+{
+    gEndureEnergyAnimCmds,
+};
+
+const struct SpriteTemplate gEndureEnergySpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FOCUS_ENERGY,
+    .paletteTag = ANIM_TAG_FOCUS_ENERGY,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = gEndureEnergyAnimTable,
+    .callback = AnimEndureEnergy,
+};
+
+const struct SpriteTemplate gBlueEndureEnergySpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FOCUS_ENERGY,
+    .paletteTag = ANIM_TAG_SWEAT_BEAD,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = gEndureEnergyAnimTable,
+    .callback = AnimEndureEnergy,
+};
+
+const struct SpriteTemplate gGreenEndureEnergySpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FOCUS_ENERGY,
+    .paletteTag = ANIM_TAG_WHIP_HIT,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = gEndureEnergyAnimTable,
+    .callback = AnimEndureEnergy,
+};
+
+const struct SpriteTemplate gYellowEndureEnergySpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FOCUS_ENERGY,
+    .paletteTag = ANIM_TAG_PAW_PRINT,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = gEndureEnergyAnimTable,
+    .callback = AnimEndureEnergy,
+};
+
+const union AnimCmd gSharpenSphereAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 18),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(16, 18),
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(16, 6),
+    ANIMCMD_FRAME(32, 18),
+    ANIMCMD_FRAME(16, 6),
+    ANIMCMD_FRAME(32, 6),
+    ANIMCMD_FRAME(48, 18),
+    ANIMCMD_FRAME(32, 6),
+    ANIMCMD_FRAME(48, 6),
+    ANIMCMD_FRAME(64, 18),
+    ANIMCMD_FRAME(48, 6),
+    ANIMCMD_FRAME(64, 54),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gSharpenSphereAnimTable[] =
+{
+    gSharpenSphereAnimCmds,
+};
+
+const struct SpriteTemplate gSharpenSphereSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPHERE_TO_CUBE,
+    .paletteTag = ANIM_TAG_SPHERE_TO_CUBE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gSharpenSphereAnimTable,
+    .callback = AnimSharpenSphere,
+};
+
+const struct SpriteTemplate gOctazookaBallSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BLACK_BALL,
+    .paletteTag = ANIM_TAG_BLACK_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .callback = TranslateAnimSpriteToTargetMonLocation,
+};
+
+const union AnimCmd gOctazookaAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 3),
+    ANIMCMD_FRAME(16, 3),
+    ANIMCMD_FRAME(32, 3),
+    ANIMCMD_FRAME(48, 3),
+    ANIMCMD_FRAME(64, 3),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gOctazookaAnimTable[] =
+{
+    gOctazookaAnimCmds,
+};
+
+const struct SpriteTemplate gOctazookaSmokeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GRAY_SMOKE,
+    .paletteTag = ANIM_TAG_GRAY_SMOKE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gOctazookaAnimTable,
+    .callback = AnimSpriteOnMonPos,
+};
+
+const union AnimCmd gConversionAnimCmds[] =
+{
+    ANIMCMD_FRAME(3, 5),
+    ANIMCMD_FRAME(2, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gConversionAnimTable[] =
+{
+    gConversionAnimCmds,
+};
+
+const union AffineAnimCmd gConversionAffineAnimCmds[] =
+{
+    AFFINEANIMCMD_FRAME(0x200, 0x200, 0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gConversionAffineAnimTable[] =
+{
+    gConversionAffineAnimCmds,
+};
+
+const struct SpriteTemplate gConversionSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CONVERSION,
+    .paletteTag = ANIM_TAG_CONVERSION,
+    .oam = &gOamData_AffineDouble_ObjBlend_8x8,
+    .anims = gConversionAnimTable,
+    .affineAnims = gConversionAffineAnimTable,
+    .callback = AnimConversion,
+};
+
+const union AnimCmd gConversion2AnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 5),
+    ANIMCMD_FRAME(2, 5),
+    ANIMCMD_FRAME(3, 5),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gConversion2AnimTable[] =
+{
+    gConversion2AnimCmds,
+};
+
+const struct SpriteTemplate gConversion2SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CONVERSION,
+    .paletteTag = ANIM_TAG_CONVERSION,
+    .oam = &gOamData_AffineDouble_ObjBlend_8x8,
+    .anims = gConversion2AnimTable,
+    .affineAnims = gConversionAffineAnimTable,
+    .callback = AnimConversion2,
+};
+
+const struct SpriteTemplate gMoonSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MOON,
+    .paletteTag = ANIM_TAG_MOON,
+    .oam = &gOamData_AffineOff_ObjBlend_64x64,
+    .callback = AnimMoon,
+};
+
+const union AnimCmd gMoonlightSparkleAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(4, 8),
+    ANIMCMD_FRAME(8, 8),
+    ANIMCMD_FRAME(12, 8),
+    ANIMCMD_JUMP(0),
+};
+
+const union AnimCmd *const gMoonlightSparkleAnimTable[] =
+{
+    gMoonlightSparkleAnimCmds,
+};
+
+const struct SpriteTemplate gMoonlightSparkleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GREEN_SPARKLE,
+    .paletteTag = ANIM_TAG_GREEN_SPARKLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gMoonlightSparkleAnimTable,
+    .callback = AnimMoonlightSparkle,
+};
+
+const union AnimCmd gHealingBlueStarAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(16, 2),
+    ANIMCMD_FRAME(32, 2),
+    ANIMCMD_FRAME(48, 3),
+    ANIMCMD_FRAME(64, 5),
+    ANIMCMD_FRAME(80, 3),
+    ANIMCMD_FRAME(96, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gHealingBlueStarAnimTable[] =
+{
+    gHealingBlueStarAnimCmds,
+};
+
+const struct SpriteTemplate gHealingBlueStarSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BLUE_STAR,
+    .paletteTag = ANIM_TAG_BLUE_STAR,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gHealingBlueStarAnimTable,
+    .callback = AnimSpriteOnMonPos,
+};
+
+const struct SpriteTemplate gHornHitSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_HORN_HIT,
+    .paletteTag = ANIM_TAG_HORN_HIT,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .callback = AnimHornHit,
+};
+
+const union AnimCmd gSuperFangAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(16, 2),
+    ANIMCMD_FRAME(32, 2),
+    ANIMCMD_FRAME(48, 2),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gSuperFangAnimTable[] =
+{
+    gSuperFangAnimCmds,
+};
+
+const struct SpriteTemplate gSuperFangSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FANG_ATTACK,
+    .paletteTag = ANIM_TAG_FANG_ATTACK,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gSuperFangAnimTable,
+    .callback = AnimSuperFang,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds2[] =
+{
+    ANIMCMD_FRAME(4, 10),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds3[] =
+{
+    ANIMCMD_FRAME(8, 41),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds4[] =
+{
+    ANIMCMD_FRAME(12, 10),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds5[] =
+{
+    ANIMCMD_FRAME(16, 10),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds6[] =
+{
+    ANIMCMD_FRAME(20, 10),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds7[] =
+{
+    ANIMCMD_FRAME(0, 10, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWavyMusicNotesAnimCmds8[] =
+{
+    ANIMCMD_FRAME(4, 10, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gMusicNotesAnimTable[] =
+{
+    gWavyMusicNotesAnimCmds1,
+    gWavyMusicNotesAnimCmds2,
+    gWavyMusicNotesAnimCmds3,
+    gWavyMusicNotesAnimCmds4,
+    gWavyMusicNotesAnimCmds5,
+    gWavyMusicNotesAnimCmds6,
+    gWavyMusicNotesAnimCmds7,
+    gWavyMusicNotesAnimCmds8,
+};
+
+const union AffineAnimCmd gWavyMusicNotesAffineAnimCmds[] =
+{
+    AFFINEANIMCMD_FRAME(0xC, 0xC, 0, 16),
+    AFFINEANIMCMD_FRAME(0xFFF4, 0xFFF4, 0, 16),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gMusicNotesAffineAnimTable[] =
+{
+    gWavyMusicNotesAffineAnimCmds,
+};
+
+const struct SpriteTemplate gWavyMusicNotesSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
+    .anims = gMusicNotesAnimTable,
+    .affineAnims = gMusicNotesAffineAnimTable,
+    .callback = AnimWavyMusicNotes,
+};
+
+const u16 gParticlesColorBlendTable[][6] =
+{
+    {ANIM_TAG_MUSIC_NOTES,     RGB_WHITE, RGB(31, 26, 28), RGB(31, 22, 26), RGB(31, 17, 24), RGB(31, 13, 22)},
+    {ANIM_TAG_BENT_SPOON,      RGB_WHITE, RGB(25, 31, 26), RGB(20, 31, 21), RGB(15, 31, 16), RGB(10, 31, 12)},
+    {ANIM_TAG_SPHERE_TO_CUBE,  RGB_WHITE, RGB(31, 31, 24), RGB(31, 31, 17), RGB(31, 31, 10), RGB(31, 31, 3)},
+    {ANIM_TAG_LARGE_FRESH_EGG, RGB_WHITE, RGB(26, 28, 31), RGB(21, 26, 31), RGB(16, 24, 31), RGB(12, 22, 31)},
+};
+
+const struct SpriteTemplate gFastFlyingMusicNotesSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
+    .anims = gMusicNotesAnimTable,
+    .affineAnims = gMusicNotesAffineAnimTable,
+    .callback = AnimFlyingMusicNotes,
+};
+
+const struct SpriteTemplate gBellyDrumHandSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_PURPLE_HAND_OUTLINE,
+    .paletteTag = ANIM_TAG_PURPLE_HAND_OUTLINE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .callback = AnimBellyDrumHand,
+};
+
+const union AffineAnimCmd gSlowFlyingMusicNotesAffineAnimCmds[] =
+{
+    AFFINEANIMCMD_FRAME(0xA0, 0xA0, 0, 0),
+    AFFINEANIMCMD_FRAME(0x4, 0x4, 0, 1),
+    AFFINEANIMCMD_JUMP(1),
+};
+
+const union AffineAnimCmd *const gSlowFlyingMusicNotesAffineAnimTable[] =
+{
+    gSlowFlyingMusicNotesAffineAnimCmds,
+};
+
+const struct SpriteTemplate gSlowFlyingMusicNotesSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
+    .anims = gMusicNotesAnimTable,
+    .affineAnims = gSlowFlyingMusicNotesAffineAnimTable,
+    .callback = AnimSlowFlyingMusicNotes,
+};
+
+const union AnimCmd gMetronomeThroughtBubbleAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(48, 2, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gMetronomeThroughtBubbleAnimCmds3[] =
+{
+    ANIMCMD_FRAME(48, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(0, 2, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gMetronomeThroughtBubbleAnimCmds2[] =
+{
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_FRAME(16, 2),
+    ANIMCMD_FRAME(32, 2),
+    ANIMCMD_FRAME(48, 2),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gMetronomeThroughtBubbleAnimCmds4[] =
+{
+    ANIMCMD_FRAME(48, 2),
+    ANIMCMD_FRAME(32, 2),
+    ANIMCMD_FRAME(16, 2),
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gMetronomeThroughtBubbleAnimTable[] =
+{
+    gMetronomeThroughtBubbleAnimCmds1,
+    gMetronomeThroughtBubbleAnimCmds2,
+    gMetronomeThroughtBubbleAnimCmds3,
+    gMetronomeThroughtBubbleAnimCmds4,
+};
+
+const struct SpriteTemplate gThoughtBubbleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_THOUGHT_BUBBLE,
+    .paletteTag = ANIM_TAG_THOUGHT_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gMetronomeThroughtBubbleAnimTable,
+    .callback = AnimThoughtBubble,
+};
+
+const union AffineAnimCmd gMetronomeFingerAffineAnimCmds1[] =
+{
+    AFFINEANIMCMD_FRAME(0x10, 0x10, 0, 0),
+    AFFINEANIMCMD_FRAME(0x1E, 0x1E, 0, 8),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gMetronomeFingerAffineAnimCmds2[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 4, 11),
+    AFFINEANIMCMD_FRAME(0x0, 0x0, -4, 11),
+    AFFINEANIMCMD_LOOP(2),
+    AFFINEANIMCMD_FRAME(0xFFE2, 0xFFE2, 0, 8),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gMetronomeFingerAffineAnimCmds2_2[] =
+{
+    AFFINEANIMCMD_FRAME(16, 16, 0, 0),
+    AFFINEANIMCMD_FRAME(30, 30, 0, 8),
+    AFFINEANIMCMD_FRAME(0, 0, 0, 16),
+    AFFINEANIMCMD_LOOP(0),
+    AFFINEANIMCMD_FRAME(0, 0, 4, 11),
+    AFFINEANIMCMD_FRAME(0, 0, -4, 11),
+    AFFINEANIMCMD_LOOP(2),
+    AFFINEANIMCMD_FRAME(-30, -30, 0, 8),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gMetronomeFingerAffineAnimTable[] =
+{
+    gMetronomeFingerAffineAnimCmds1,
+    gMetronomeFingerAffineAnimCmds2,
+};
+
+const struct SpriteTemplate gMetronomeFingerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FINGER,
+    .paletteTag = ANIM_TAG_FINGER,
+    .oam = &gOamData_AffineDouble_ObjNormal_32x32,
+    .affineAnims = gMetronomeFingerAffineAnimTable,
+    .callback = AnimMetronomeFinger,
+};
+
+const struct SpriteTemplate gFollowMeFingerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FINGER,
+    .paletteTag = ANIM_TAG_FINGER,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .affineAnims = gMetronomeFingerAffineAnimTable,
+    .callback = AnimFollowMeFinger,
+};
+
+const union AffineAnimCmd gTeaAffineAnimCmds1[] =
+{
+        AFFINEANIMCMD_FRAME(0x10, 0x10, 0, 0),
+        AFFINEANIMCMD_FRAME(0x1E, 0x1E, 0, 8),
+        AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gTeaAffineAnimCmds2[] =
+{
+        AFFINEANIMCMD_FRAME(0x0, 0x0, -3, 11),
+        AFFINEANIMCMD_FRAME(0x0, 0x0, 3, 11),
+        AFFINEANIMCMD_LOOP(2),
+        AFFINEANIMCMD_FRAME(0xFFE2, 0xFFE2, 0, 8),
+        AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gTeaAffineAnimTable[] =
+{
+        gTeaAffineAnimCmds1,
+        gTeaAffineAnimCmds2,
+};
+
+const struct SpriteTemplate gTeapotSpriteTemplate =
+{
+        .tileTag = ANIM_TAG_TEAPOT,
+        .paletteTag = ANIM_TAG_TEAPOT,
+        .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+        .affineAnims = gTeaAffineAnimTable,
+        .callback = AnimMetronomeFinger,
+};
+
+const union AnimCmd gTauntFingerAnimCmds1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gTauntFingerAnimCmds2[] =
+{
+    ANIMCMD_FRAME(0, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gTauntFingerAnimCmds3[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gTauntFingerAnimCmds4[] =
+{
+    ANIMCMD_FRAME(0, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(0, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 4, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gTauntFingerAnimTable[] =
+{
+    gTauntFingerAnimCmds1,
+    gTauntFingerAnimCmds2,
+    gTauntFingerAnimCmds3,
+    gTauntFingerAnimCmds4,
+};
+
+const struct SpriteTemplate gTauntFingerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FINGER_2,
+    .paletteTag = ANIM_TAG_FINGER_2,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gTauntFingerAnimTable,
+    .callback = AnimTauntFinger,
+};
+
+const struct SpriteTemplate gPowerOrbs_Float =
+{
+    .tileTag = ANIM_TAG_RED_ORB,
+    .paletteTag = ANIM_TAG_RED_ORB,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gSporeParticleAnimTable,
+    .callback = AnimSporeParticle,
+};
+
+const union AnimCmd gRockPolishStreak_AnimCmd[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(4, 2),
+    ANIMCMD_FRAME(8, 3),
+    ANIMCMD_FRAME(12, 15),
+    ANIMCMD_FRAME(8, 3),
+    ANIMCMD_FRAME(4, 2),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gRockPolishStreak_AnimCmds[] =
+{
+    gRockPolishStreak_AnimCmd,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd0[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd1[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x10, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd2[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x20, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd3[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x30, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd4[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x40, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd5[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x50, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd6[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x60, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd7[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x70, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd8[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x80, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd9[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x90, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdA[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xA0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdB[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xB0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdC[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xC0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdD[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xD0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdE[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xE0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdF[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xF0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gRockPolishStreak_AffineAnimCmds[] =
+{
+    gRockPolishStreak_AffineAnimCmd0,
+    gRockPolishStreak_AffineAnimCmd1,
+    gRockPolishStreak_AffineAnimCmd2,
+    gRockPolishStreak_AffineAnimCmd3,
+    gRockPolishStreak_AffineAnimCmd4,
+    gRockPolishStreak_AffineAnimCmd5,
+    gRockPolishStreak_AffineAnimCmd6,
+    gRockPolishStreak_AffineAnimCmd7,
+    gRockPolishStreak_AffineAnimCmd8,
+    gRockPolishStreak_AffineAnimCmd9,
+    gRockPolishStreak_AffineAnimCmdA,
+    gRockPolishStreak_AffineAnimCmdB,
+    gRockPolishStreak_AffineAnimCmdC,
+    gRockPolishStreak_AffineAnimCmdD,
+    gRockPolishStreak_AffineAnimCmdE,
+    gRockPolishStreak_AffineAnimCmdF,
+};
+
+const struct SpriteTemplate gRockPolishStreakSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WHITE_STREAK,
+    .paletteTag = ANIM_TAG_WHITE_STREAK,
+    .oam = &gOamData_AffineDouble_ObjBlend_32x8,
+    .anims = gRockPolishStreak_AnimCmds,
+    .affineAnims = gRockPolishStreak_AffineAnimCmds,
+    .callback = AnimRockPolishStreak,
+};
+
+const union AnimCmd gRockPolishSparkle_AnimCmd1[] =
+{
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(4, 7),
+    ANIMCMD_FRAME(8, 7),
+    ANIMCMD_FRAME(12, 7),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gRockPolishSparkle_AnimCmds[] =
+{
+    gRockPolishSparkle_AnimCmd1,
+};
+
+const struct SpriteTemplate gRockPolishSparkleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPARKLE_3,
+    .paletteTag = ANIM_TAG_SPARKLE_3,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gRockPolishSparkle_AnimCmds,
+    .callback = AnimRockPolishSparkle,
+};
+
+const struct SpriteTemplate gPoisonJabProjectileSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_PURPLE_JAB,
+    .paletteTag = ANIM_TAG_PURPLE_JAB,
+    .oam = &gOamData_AffineDouble_ObjBlend_32x16,
+    .callback = AnimPoisonJabProjectile,
+};
+
+const union AnimCmd gNightSlashLeftAnimCmd0[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_FRAME(48, 4),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gNightSlashLeftAnimCmd1[] =
+{
+    ANIMCMD_FRAME(48, 4),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gNightSlashLeftAnimTable[] =
+{
+    gNightSlashLeftAnimCmd0,
+    gNightSlashLeftAnimCmd1,
+};
+
+const struct SpriteTemplate gNightSlashLeftSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SLASH,
+    .paletteTag = ANIM_TAG_SLASH,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gNightSlashLeftAnimTable,
+    .callback = AnimNightSlash,
+};
+
+const union AnimCmd gNightSlashRightAnimCmd0[] =
+{
+    ANIMCMD_FRAME(0, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_FRAME(48, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gNightSlashRightAnimCmd1[] =
+{
+    ANIMCMD_FRAME(48, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gNightSlashRightAnimTable[] =
+{
+    gNightSlashRightAnimCmd0,
+    gNightSlashRightAnimCmd1,
+};
+
+const struct SpriteTemplate gNightSlashRightSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SLASH,
+    .paletteTag = ANIM_TAG_SLASH,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gNightSlashRightAnimTable,
+    .callback = AnimNightSlash,
+};
+
+const struct SpriteTemplate gLuckyChantBigStarsSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GOLD_STARS,
+    .paletteTag = ANIM_TAG_GOLD_STARS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gPetalDanceBigFlowerAnimTable,
+    .callback = AnimPetalDanceBigFlower,
+};
+
+const struct SpriteTemplate gLuckyChantSmallStarsSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GOLD_STARS,
+    .paletteTag = ANIM_TAG_GOLD_STARS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gPetalDanceSmallFlowerAnimTable,
+    .callback = AnimPetalDanceSmallFlower,
+};
+
+const union AnimCmd gWoodHammerBigAnimCmd_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWoodHammerBigAnimCmd_2[] =
+{
+    ANIMCMD_FRAME(16, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gWoodHammerBigAnims[] =
+{
+    gWoodHammerBigAnimCmd_1,
+    gWoodHammerBigAnimCmd_2,
+};
+
+const union AffineAnimCmd gWoodHammerBigAffineAnimCmd_1[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, -5, 5),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd gWoodHammerBigAffineAnimCmd_2[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 5, 5),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gWoodHammerBigAffineAnims[] =
+{
+    gWoodHammerBigAffineAnimCmd_1,
+    gWoodHammerBigAffineAnimCmd_2,
+};
+
+#define WOOD_HAMMER_SCALE_STEP 5
+#define WOOD_HAMMER_CC_ROTATION_STEP 2
+#define WOOD_HAMMER_BACKWARDS_DURATION 40
+#define WOOD_HAMMER_ROTATED_AMOUNT (WOOD_HAMMER_CC_ROTATION_STEP * WOOD_HAMMER_BACKWARDS_DURATION)
+#define WOOD_HAMMER_SCALED_AMOUNT (WOOD_HAMMER_SCALE_STEP * WOOD_HAMMER_BACKWARDS_DURATION)
+
+const union AffineAnimCmd gWoodHammerHammerAffineAnimCmd_BackwardsRotateAndScale[] =
+{
+    AFFINEANIMCMD_FRAME(WOOD_HAMMER_SCALE_STEP, WOOD_HAMMER_SCALE_STEP, WOOD_HAMMER_CC_ROTATION_STEP, WOOD_HAMMER_BACKWARDS_DURATION),
+    AFFINEANIMCMD_END
+};
+
+const union AffineAnimCmd gWoodHammerHammerAffineAnimCmd_BackwardsRotateAndScaleFlipped[] =
+{
+    AFFINEANIMCMD_FRAME(-0x100, 0x100, 0, 0),
+    AFFINEANIMCMD_FRAME(-WOOD_HAMMER_SCALE_STEP, WOOD_HAMMER_SCALE_STEP, -WOOD_HAMMER_CC_ROTATION_STEP, WOOD_HAMMER_BACKWARDS_DURATION),
+    AFFINEANIMCMD_END
+};
+
+const union AffineAnimCmd gWoodHammerHammerAffineAnimCmd_PunchClockwise[] =
+{
+    AFFINEANIMCMD_FRAME(0x100 + WOOD_HAMMER_SCALED_AMOUNT, 0x100 + WOOD_HAMMER_SCALED_AMOUNT, WOOD_HAMMER_ROTATED_AMOUNT, 0),
+    AFFINEANIMCMD_FRAME(0, 0, -16, 7),
+    AFFINEANIMCMD_END
+};
+
+const union AffineAnimCmd gWoodHammerHammerAffineAnimCmd_PunchCounterClockwise[] =
+{
+    AFFINEANIMCMD_FRAME(-0x100 - WOOD_HAMMER_SCALED_AMOUNT, 0x100 + WOOD_HAMMER_SCALED_AMOUNT, -WOOD_HAMMER_ROTATED_AMOUNT, 0),
+    AFFINEANIMCMD_FRAME(0, 0, 16, 7),
+    AFFINEANIMCMD_END
+};
+
+// Animations 0, 2 are for the player side attacking
+// Animations 1, 3 are for the opponent side attacking (flipped)
+const union AffineAnimCmd *const gWoodHammerHammerAffineAnims[] =
+{
+    gWoodHammerHammerAffineAnimCmd_BackwardsRotateAndScale,
+    gWoodHammerHammerAffineAnimCmd_BackwardsRotateAndScaleFlipped,
+    gWoodHammerHammerAffineAnimCmd_PunchClockwise,
+    gWoodHammerHammerAffineAnimCmd_PunchCounterClockwise,
+};
+
+const union AnimCmd gWoodHammerSmallAnimCmd_1[] =
+{
+    ANIMCMD_FRAME(48, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWoodHammerSmallAnimCmd_2[] =
+{
+    ANIMCMD_FRAME(64, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gWoodHammerSmallAnimCmd_3[] =
+{
+    ANIMCMD_FRAME(80, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gWoodHammerSmallAnims[] =
+{
+    gWoodHammerSmallAnimCmd_1,
+    gWoodHammerSmallAnimCmd_2,
+    gWoodHammerSmallAnimCmd_3,
+};
+
+const struct SpriteTemplate gGrassKnotSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RAZOR_LEAF,
+    .paletteTag = ANIM_TAG_RAZOR_LEAF,
+    .oam = &gOamData_AffineOff_ObjNormal_32x16,
+    .anims = gRazorLeafCutterAnimTable,
+    .callback = AnimGrassKnot,
+};
+
+const struct SpriteTemplate gWoodHammerBigSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WOOD_HAMMER,
+    .paletteTag = ANIM_TAG_WOOD_HAMMER,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gWoodHammerBigAnims,
+    .affineAnims = gWoodHammerBigAffineAnims,
+    .callback = AnimWoodHammerBig,
+};
+
+const struct SpriteTemplate gWoodHammerSmallSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WOOD_HAMMER,
+    .paletteTag = ANIM_TAG_WOOD_HAMMER,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gWoodHammerSmallAnims,
+    .callback = AnimWoodHammerSmall,
+};
+
+const struct SpriteTemplate gWoodHammerHammerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WOOD_HAMMER_HAMMER,
+    .paletteTag = ANIM_TAG_WOOD_HAMMER_HAMMER,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .affineAnims = gWoodHammerHammerAffineAnims,
+    .callback = AnimWoodHammerHammer,
+};
+
+const struct SpriteTemplate gIvyCudgelSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IVY_CUDGEL_GRASS,
+    .paletteTag = ANIM_TAG_IVY_CUDGEL_GRASS,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .affineAnims = gWoodHammerHammerAffineAnims,
+    .callback = AnimWoodHammerHammer,
+};
+
+const struct SpriteTemplate gIvyCudgelFireSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IVY_CUDGEL_GRASS,
+    .paletteTag = ANIM_TAG_IVY_CUDGEL_FIRE,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .affineAnims = gWoodHammerHammerAffineAnims,
+    .callback = AnimWoodHammerHammer,
+};
+
+const struct SpriteTemplate gIvyCudgelRockSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IVY_CUDGEL_GRASS,
+    .paletteTag = ANIM_TAG_IVY_CUDGEL_ROCK,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .affineAnims = gWoodHammerHammerAffineAnims,
+    .callback = AnimWoodHammerHammer,
+};
+
+const struct SpriteTemplate gIvyCudgelWaterSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IVY_CUDGEL_GRASS,
+    .paletteTag = ANIM_TAG_IVY_CUDGEL_WATER,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .affineAnims = gWoodHammerHammerAffineAnims,
+    .callback = AnimWoodHammerHammer,
+};
+
+const struct SpriteTemplate gJudgmentGrayOutwardSpikesTemplate =
+{
+    .tileTag = ANIM_TAG_GREEN_SPIKE,
+    .paletteTag = ANIM_TAG_GUST,
+    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
+    .callback = AnimNeedleArmSpike
+};
+
+const struct SpriteTemplate gJudgmentGrayInwardOrbsTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .callback = AnimNeedleArmSpike
+};
+
+const struct SpriteTemplate gDarkVoidPurpleStarsTemplate =
+{
+    .tileTag = ANIM_TAG_SPARKLE_2,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gGrantingStarsAnimTable,
+    .callback = AnimGrantingStars
+};
+
+const struct SpriteTemplate gSeedFlareGreenCirclesTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_RAZOR_LEAF,
+    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .anims = gPowerAbsorptionOrbAnimTable,
+    .affineAnims = gPowerAbsorptionOrbAffineAnimTable,
+    .callback = AnimPowerAbsorptionOrb
+};
+
+const struct SpriteTemplate gSteelBeamBigOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_STEEL_BEAM,
+    .paletteTag = ANIM_TAG_STEEL_BEAM,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gSolarBeamBigOrbAnimTable,
+    .callback = AnimSolarBeamBigOrb,
+};
+
+const struct SpriteTemplate gSteelBeamSmallOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_STEEL_BEAM,
+    .paletteTag = ANIM_TAG_STEEL_BEAM,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gSolarBeamSmallOrbAnimTable,
+    .callback = AnimSolarBeamSmallOrb,
+};
+
+const struct SpriteTemplate gAcrobaticsSlashesSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WHITE_STREAK,
+    .paletteTag = ANIM_TAG_WHITE_STREAK,
+    .oam = &gOamData_AffineDouble_ObjBlend_32x8,
+    .anims = gRockPolishStreak_AnimCmds,
+    .affineAnims = gRockPolishStreak_AffineAnimCmds,
+    .callback = AnimAcrobaticsSlashes,
+};
+
+const struct SpriteTemplate gPsyshockOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_ORB_2,
+    .paletteTag = ANIM_TAG_POISON_JAB,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .callback = AnimPoisonJabProjectile,
+};
+
+const struct SpriteTemplate gPsyshockSmokeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GRAY_SMOKE,
+    .paletteTag = ANIM_TAG_WISP_FIRE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gOctazookaAnimTable,
+    .callback = AnimSpriteOnMonPos,
+};
+
+const struct SpriteTemplate gChainBindingSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_PURPLE_CHAIN,
+    .paletteTag = ANIM_TAG_PURPLE_CHAIN,
+    .oam = &gOamData_AffineNormal_ObjNormal_64x32,
+    .anims = sAnims_ConstrictBinding,
+    .affineAnims = sAffineAnims_ConstrictBinding,
+    .callback = AnimConstrictBinding,
+};
+
+// functions
+// args[0] - initial x offset
+// args[1] - initial y offset
+// args[2] - some param to linear translation
+// args[3] - some param to linear translation
+// args[4] - offset that gets added to param for Sin
+// args[5] - another param for Sin
+static void AnimGrassKnot(struct Sprite *sprite)
+{
+    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
+        gBattleAnimArgs[0] *= -1;
+
+    InitSpritePosToAnimTarget(sprite, TRUE);
+
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y;
+
+    InitAnimLinearTranslation(sprite);
+
+    sprite->data[5] = gBattleAnimArgs[5];
+    sprite->data[6] = gBattleAnimArgs[4];
+    sprite->data[7] = 0;
+
+    sprite->callback = AnimGrassKnotStep;
 }
 
-static bool32 AI_IsDoubleSpreadMove(enum BattlerId battlerAtk, enum Move move)
+static void AnimGrassKnotStep(struct Sprite *sprite)
 {
-    u32 numOfTargets = 0;
-    enum MoveTarget moveTargetType = AI_GetBattlerMoveTargetType(battlerAtk, move);
-
-    if (!IsSpreadMove(moveTargetType))
-        return FALSE;
-
-    for (enum BattlerId battlerDef = 0; battlerDef < MAX_BATTLERS_COUNT; battlerDef++)
+    if (!AnimTranslateLinear(sprite))
     {
-        if (battlerAtk == battlerDef || !IsBattlerAlive(battlerDef))
-            continue;
-
-        if (moveTargetType == TARGET_BOTH && battlerAtk == BATTLE_PARTNER(battlerDef))
-            continue;
-
-        if (!IsSemiInvulnerable(battlerDef, CHECK_ALL)
-         || BreaksThroughSemiInvulnerablity(battlerAtk, battlerDef, gAiLogicData->abilities[battlerAtk], gAiLogicData->abilities[battlerDef], move))
-            numOfTargets++;
-    }
-
-    if (numOfTargets > 1)
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 AI_IsBattlerGrounded(enum BattlerId battler)
-{
-    return IsBattlerGrounded(battler, gAiLogicData->abilities[battler], gAiLogicData->holdEffects[battler]);
-}
-
-static bool32 AI_CanBattlerHitBothFoesInTerrain(enum BattlerId battler, enum Move move, enum BattleMoveEffects effect)
-{
-    return effect == EFFECT_TERRAIN_BOOST
-        && GetMoveTerrainBoost_HitsBothFoes(move)
-        && IsBattlerTerrainAffected(battler, gAiLogicData->abilities[battler], gAiLogicData->holdEffects[battler], gFieldStatuses, GetMoveTerrainBoost_Terrain(move));
-}
-
-enum MoveTarget AI_GetBattlerMoveTargetType(enum BattlerId battler, enum Move move)
-{
-    enum BattleMoveEffects effect = GetMoveEffect(move);
-    if (effect == EFFECT_CURSE && !IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
-        return TARGET_USER;
-    if (AI_CanBattlerHitBothFoesInTerrain(battler, move, effect))
-        return TARGET_BOTH;
-    if (effect == EFFECT_TERA_STARSTORM && gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR)
-        return TARGET_BOTH;
-
-    return GetMoveTarget(move);
-}
-
-u32 AI_GetDamage(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 moveIndex, enum DamageCalcContext calcContext, struct AiLogicData *aiData)
-{
-    if (calcContext == AI_ATTACKING && BattlerHasAi(battlerAtk))
-    {
-        if ((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_RISKY) && !(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_CONSERVATIVE)) // Risky assumes it deals max damage
-            return aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex].maximum;
-        if ((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_CONSERVATIVE) && !(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_RISKY)) // Conservative assumes it deals min damage
-            return aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex].minimum;
-        return aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex].median; // Default assumes it deals median damage
-    }
-    else if (calcContext == AI_DEFENDING && BattlerHasAi(battlerDef))
-    {
-        if ((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_RISKY) && !(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_CONSERVATIVE)) // Risky assumes it takes min damage
-            return aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex].minimum;
-        if ((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_CONSERVATIVE) && !(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_RISKY)) // Conservative assumes it takes max damage
-            return aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex].maximum;
-        return aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex].median; // Default assumes it takes median damage
+        sprite->y2 += Sin(sprite->data[7] >> 8, sprite->data[5]);
+        sprite->data[7] += sprite->data[6];
     }
     else
     {
-        return aiData->simulatedDmg[battlerAtk][battlerDef][moveIndex].median;
+        DestroyAnimSprite(sprite);
     }
 }
 
-bool32 AI_IsFaster(enum BattlerId battlerAi, enum BattlerId battlerDef, enum Move aiMove, enum Move playerMove, enum ConsiderPriority considerPriority)
+static void AnimWoodHammerBig(struct Sprite *sprite)
 {
-    return (AI_WhoStrikesFirst(battlerAi, battlerDef, aiMove, playerMove, considerPriority) == AI_IS_FASTER);
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        StartSpriteAffineAnim(sprite, 1);
+
+    TranslateAnimSpriteToTargetMonLocation(sprite);
 }
 
-bool32 AI_IsSlower(enum BattlerId battlerAi, enum BattlerId battlerDef, enum Move aiMove, enum Move playerMove, enum ConsiderPriority considerPriority)
+static void AnimWoodHammerSmall(struct Sprite *sprite)
 {
-    return (AI_WhoStrikesFirst(battlerAi, battlerDef, aiMove, playerMove, considerPriority) == AI_IS_SLOWER);
+    StartSpriteAnim(sprite, gBattleAnimArgs[5]);
+    AnimateSprite(sprite);
+
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        sprite->x -= gBattleAnimArgs[0];
+    else
+        sprite->x += gBattleAnimArgs[0];
+
+    sprite->y += gBattleAnimArgs[1];
+
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y + gBattleAnimArgs[3];
+
+    InitSpriteDataForLinearTranslation(sprite);
+    sprite->data[3] = 0;
+    sprite->data[4] = 0;
+
+    sprite->callback = TranslateSpriteLinearFixedPoint;
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
 
-enum Move GetAIChosenMove(enum BattlerId battlerId)
-{
-    return (gBattleMons[battlerId].moves[gAiBattleData->chosenMoveIndex[battlerId]]);
-}
+#define HAMMER_X_OFFSET 40
+#define HAMMER_PUNCH_WAIT_FRAMES 37
 
-bool32 AI_RandLessThan(u32 val)
+static void AnimWoodHammerHammer(struct Sprite *sprite)
 {
-    if ((Random() % 0xFF) < val)
-        return TRUE;
-    return FALSE;
-}
-
-bool32 IsAiFlagPresent(u64 flag)
-{
-    for (enum BattlerId battlerIndex = 0; battlerIndex < MAX_BATTLERS_COUNT; battlerIndex++)
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
     {
-        if (gAiThinkingStruct->aiFlags[battlerIndex] & flag)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 IsAiBattlerAware(enum BattlerId battlerId)
-{
-    if (IsAiFlagPresent(AI_FLAG_OMNISCIENT))
-        return TRUE;
-
-    return BattlerHasAi(battlerId);
-}
-
-bool32 IsAiBattlerAssumingStab(enum BattlerId battlerId)
-{
-    if (IsAiFlagPresent(AI_FLAG_ASSUME_STAB))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 IsAiBattlerAssumingStatusMoves(enum BattlerId battlerId)
-{
-    if (IsAiFlagPresent(AI_FLAG_ASSUME_STATUS_MOVES))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 IsAiBattlerPredictingAbility(enum BattlerId battlerId)
-{
-    if (IsAiFlagPresent(AI_FLAG_WEIGH_ABILITY_PREDICTION))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 CanAiPredictMove(enum BattlerId battlerId)
-{
-    if (IsAiFlagPresent(AI_FLAG_PREDICT_MOVE))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 IsBattlerPredictedToSwitch(enum BattlerId battler)
-{
-    // Check for prediction flag on AI, whether they're using those predictions this turn, and whether the AI thinks the player should switch
-    for (enum BattlerId battlerIndex = 0; battlerIndex < MAX_BATTLERS_COUNT; battlerIndex++)
-    {
-        if (gAiThinkingStruct->aiFlags[battlerIndex] & AI_FLAG_PREDICT_SWITCH)
-        {
-            if (gAiLogicData->predictingSwitch && gAiLogicData->shouldSwitch & (1u << battler))
-                return TRUE;
-        }
-    }
-    return FALSE;
-}
-
-// Either a predicted move or the last used move from an opposing battler
-enum Move GetIncomingMove(enum BattlerId battler, enum BattlerId opposingBattler, struct AiLogicData *aiData)
-{
-    if (aiData->predictingMove && CanAiPredictMove(battler))
-        return aiData->predictedMove[opposingBattler];
-    return aiData->lastUsedMove[opposingBattler];
-}
-
-// When not predicting, don't want to reference player's previous move; leads to weird behaviour for cases like Fake Out or Protect, especially in doubles
-enum Move GetIncomingMoveSpeedCheck(enum BattlerId battler, enum BattlerId opposingBattler, struct AiLogicData *aiData)
-{
-    if (aiData->predictingMove && CanAiPredictMove(battler))
-    {
-        // Ignore moves that don't do damage or only have priority one time
-        if (GetMovePower(aiData->predictedMove[opposingBattler]) != 0 && GetMoveEffect(aiData->predictedMove[opposingBattler]) != EFFECT_FIRST_TURN_ONLY)
-            return aiData->predictedMove[opposingBattler];
-    }
-
-    return MOVE_NONE;
-}
-
-void ClearBattlerMoveHistory(enum BattlerId battlerId)
-{
-    memset(gBattleHistory->usedMoves[battlerId], 0, sizeof(gBattleHistory->usedMoves[battlerId]));
-    memset(gBattleHistory->moveHistory[battlerId], 0, sizeof(gBattleHistory->moveHistory[battlerId]));
-    gBattleHistory->moveHistoryIndex[battlerId] = 0;
-}
-
-void RecordLastUsedMoveBy(enum BattlerId battlerId, enum Move move)
-{
-    u8 *index = &gBattleHistory->moveHistoryIndex[battlerId];
-
-    if (++(*index) >= AI_MOVE_HISTORY_COUNT)
-        *index = 0;
-    gBattleHistory->moveHistory[battlerId][*index] = move;
-}
-
-void RecordKnownMove(enum BattlerId battler, enum Move move)
-{
-    s32 moveIndex;
-
-    for (moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (gBattleMons[battler].moves[moveIndex] == move)
-            break;
-    }
-
-    if (moveIndex < MAX_MON_MOVES && gBattleHistory->usedMoves[battler][moveIndex] == MOVE_NONE)
-    {
-        gBattleHistory->usedMoves[battler][moveIndex] = move;
-        gAiPartyData->mons[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]].moves[moveIndex] = move;
-    }
-}
-
-void RecordAllMoves(enum BattlerId battler)
-{
-    memcpy(gAiPartyData->mons[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]].moves, gBattleMons[battler].moves, MAX_MON_MOVES * sizeof(u16));
-}
-
-void RecordAbilityBattle(enum BattlerId battlerId, enum Ability abilityId)
-{
-    gBattleHistory->abilities[battlerId] = abilityId;
-    gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].ability = abilityId;
-}
-
-void ClearBattlerAbilityHistory(enum BattlerId battlerId)
-{
-    gBattleHistory->abilities[battlerId] = ABILITY_NONE;
-}
-
-void RecordItemEffectBattle(enum BattlerId battlerId, enum HoldEffect itemEffect)
-{
-    gBattleHistory->itemEffects[battlerId] = itemEffect;
-    gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].heldEffect = itemEffect;
-}
-
-void ClearBattlerItemEffectHistory(enum BattlerId battlerId)
-{
-    gBattleHistory->itemEffects[battlerId] = HOLD_EFFECT_NONE;
-}
-
-void SaveBattlerData(enum BattlerId battlerId)
-{
-    if (!BattlerHasAi(battlerId) && !gAiThinkingStruct->saved[battlerId].saved)
-    {
-        gAiThinkingStruct->saved[battlerId].saved = TRUE;
-        gAiThinkingStruct->saved[battlerId].ability = gBattleMons[battlerId].ability;
-        gAiThinkingStruct->saved[battlerId].heldItem = gBattleMons[battlerId].item;
-        gAiThinkingStruct->saved[battlerId].species = gBattleMons[battlerId].species;
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-            gAiThinkingStruct->saved[battlerId].moves[moveIndex] = gBattleMons[battlerId].moves[moveIndex];
-    }
-    // Save and restore types even for AI controlled battlers in case it gets changed during move evaluation process.
-    gAiThinkingStruct->saved[battlerId].types[0] = gBattleMons[battlerId].types[0];
-    gAiThinkingStruct->saved[battlerId].types[1] = gBattleMons[battlerId].types[1];
-}
-
-bool32 ShouldRecordStatusMove(enum Move move)
-{
-    if (ASSUME_STATUS_MOVES_HAS_TUNING)
-    {
-        switch (GetMoveEffect(move))
-        {
-        // variable odds by additional effect
-        case EFFECT_NON_VOLATILE_STATUS:
-            if (GetMoveNonVolatileStatus(move) == MOVE_EFFECT_SLEEP && RandomPercentage(RNG_AI_ASSUME_STATUS_SLEEP, ASSUME_STATUS_HIGH_ODDS))
-                return TRUE;
-            else if (RandomPercentage(RNG_AI_ASSUME_STATUS_NONVOLATILE, ASSUME_STATUS_MEDIUM_ODDS))
-                return TRUE;
-            break;
-        // High odds
-        case EFFECT_AURORA_VEIL:
-        case EFFECT_WEATHER_AND_SWITCH:
-        case EFFECT_FIRST_TURN_ONLY:
-        case EFFECT_FOLLOW_ME:
-        case EFFECT_INSTRUCT:
-        case EFFECT_JUNGLE_HEALING:
-        case EFFECT_SHED_TAIL:
-            return RandomPercentage(RNG_AI_ASSUME_STATUS_HIGH_ODDS, ASSUME_STATUS_HIGH_ODDS);
-        // Medium odds
-        case EFFECT_AFTER_YOU:
-        case EFFECT_DOODLE:
-        case EFFECT_ENCORE:
-        case EFFECT_HAZE:
-        case EFFECT_PARTING_SHOT:
-        case EFFECT_PROTECT:
-        case EFFECT_REST:
-        case EFFECT_ROAR:
-        case EFFECT_ROOST:
-        case EFFECT_SLEEP_TALK:
-        case EFFECT_TAUNT:
-        case EFFECT_TAILWIND:
-        case EFFECT_TRICK:
-        case EFFECT_TRICK_ROOM:
-        // defoggables / screens and hazards
-        case EFFECT_LIGHT_SCREEN:
-        case EFFECT_REFLECT:
-        case EFFECT_SPIKES:
-        case EFFECT_STEALTH_ROCK:
-        case EFFECT_STICKY_WEB:
-        case EFFECT_TOXIC_SPIKES:
-            return RandomPercentage(RNG_AI_ASSUME_STATUS_MEDIUM_ODDS, ASSUME_STATUS_MEDIUM_ODDS);
-        // Low odds
-        case EFFECT_ENTRAINMENT:
-        case EFFECT_FIXED_PERCENT_DAMAGE:
-        case EFFECT_GASTRO_ACID:
-        case EFFECT_IMPRISON:
-        case EFFECT_TELEPORT:
-            return RandomPercentage(RNG_AI_ASSUME_STATUS_LOW_ODDS, ASSUME_STATUS_LOW_ODDS);
-        default:
-            break;
-        }
-    }
-
-    return RandomPercentage(RNG_AI_ASSUME_ALL_STATUS, ASSUME_ALL_STATUS_ODDS) && IsBattleMoveStatus(move);
-}
-
-static bool32 ShouldFailForIllusion(u32 illusionSpecies, enum BattlerId battlerId)
-{
-    u32 learnsetMoveIndex;
-    const struct LevelUpMove *learnset;
-
-    if (gBattleHistory->abilities[battlerId] == ABILITY_ILLUSION)
-        return FALSE;
-
-    // Don't fall for Illusion if the mon used a move it cannot know.
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        enum Move move = gBattleHistory->usedMoves[battlerId][moveIndex];
-        if (move == MOVE_NONE)
-            continue;
-
-        learnset = GetSpeciesLevelUpLearnset(illusionSpecies);
-        for (learnsetMoveIndex = 0; learnset[learnsetMoveIndex].move != MOVE_UNAVAILABLE; learnsetMoveIndex++)
-        {
-            if (learnset[learnsetMoveIndex].move == move)
-                break;
-        }
-        // The used move is in the learnsets of the fake species.
-        if (learnset[learnsetMoveIndex].move != MOVE_UNAVAILABLE)
-            continue;
-
-        // The used move can be learned from Tm/Hm or Move Tutors.
-        if (CanLearnTeachableMove(illusionSpecies, move))
-            continue;
-
-        // 'Illegal move', AI won't fail for the illusion.
-        return FALSE;
-    }
-
-    return TRUE;
-}
-
-void SetBattlerData(enum BattlerId battlerId)
-{
-    if (!BattlerHasAi(battlerId) && gAiThinkingStruct->saved[battlerId].saved)
-    {
-        u32 species, illusionSpecies;
-        enum BattleSide side = GetBattlerSide(battlerId);
-
-        // Simulate Illusion
-        species = gBattleMons[battlerId].species;
-        illusionSpecies = GetIllusionMonSpecies(battlerId);
-        if (illusionSpecies != SPECIES_NONE && ShouldFailForIllusion(illusionSpecies, battlerId))
-        {
-            // If the battler's type has not been changed, AI assumes the types of the illusion mon.
-            if (gBattleMons[battlerId].types[0] == GetSpeciesType(species, 0)
-                && gBattleMons[battlerId].types[1] == GetSpeciesType(species, 1))
-            {
-                gBattleMons[battlerId].types[0] = GetSpeciesType(illusionSpecies, 0);
-                gBattleMons[battlerId].types[1] = GetSpeciesType(illusionSpecies, 1);
-            }
-            species = illusionSpecies;
-        }
-
-        // Use the known battler's ability.
-        if (gAiPartyData->mons[side][gBattlerPartyIndexes[battlerId]].ability != ABILITY_NONE)
-            gBattleMons[battlerId].ability = gAiPartyData->mons[side][gBattlerPartyIndexes[battlerId]].ability;
-        // Check if mon can only have one ability.
-        else if (GetSpeciesAbility(species, 1) == ABILITY_NONE
-                || GetSpeciesAbility(species, 1) == GetSpeciesAbility(species, 0))
-            gBattleMons[battlerId].ability = GetSpeciesAbility(species, 0);
-        // The ability is unknown.
-        else
-            gBattleMons[battlerId].ability = ABILITY_NONE;
-
-        if (gAiPartyData->mons[side][gBattlerPartyIndexes[battlerId]].heldEffect == 0)
-            gBattleMons[battlerId].item = 0;
-
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-        {
-            if (gAiPartyData->mons[side][gBattlerPartyIndexes[battlerId]].moves[moveIndex] == 0)
-                gBattleMons[battlerId].moves[moveIndex] = 0;
-        }
-    }
-}
-
-void RestoreBattlerData(enum BattlerId battlerId)
-{
-    if (!BattlerHasAi(battlerId) && gAiThinkingStruct->saved[battlerId].saved)
-    {
-        gAiThinkingStruct->saved[battlerId].saved = FALSE;
-        gBattleMons[battlerId].ability = gAiThinkingStruct->saved[battlerId].ability;
-        gBattleMons[battlerId].item = gAiThinkingStruct->saved[battlerId].heldItem;
-        gBattleMons[battlerId].species = gAiThinkingStruct->saved[battlerId].species;
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-            gBattleMons[battlerId].moves[moveIndex] = gAiThinkingStruct->saved[battlerId].moves[moveIndex];
-    }
-    gBattleMons[battlerId].types[0] = gAiThinkingStruct->saved[battlerId].types[0];
-    gBattleMons[battlerId].types[1] = gAiThinkingStruct->saved[battlerId].types[1];
-}
-
-u32 GetHealthPercentage(enum BattlerId battlerId)
-{
-    return (u32)((100 * gBattleMons[battlerId].hp) / gBattleMons[battlerId].maxHP);
-}
-
-bool32 AI_BattlerAtMaxHp(enum BattlerId battlerId)
-{
-    if (gAiLogicData->hpPercents[battlerId] == 100)
-        return TRUE;
-    return FALSE;
-}
-
-
-bool32 AI_CanBattlerEscape(enum BattlerId battler)
-{
-    enum HoldEffect holdEffect = gAiLogicData->holdEffects[battler];
-
-    if (GetConfig(CONFIG_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
-        return TRUE;
-    if (holdEffect == HOLD_EFFECT_SHED_SHELL)
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 IsBattlerTrapped(enum BattlerId battlerAtk, enum BattlerId battlerDef)
-{
-    if (AI_CanBattlerEscape(battlerDef))
-        return FALSE;
-
-    if (gBattleMons[battlerDef].volatiles.wrapped)
-        return TRUE;
-    if (gBattleMons[battlerDef].volatiles.escapePrevention)
-        return TRUE;
-    if (gBattleMons[battlerDef].volatiles.semiInvulnerable == STATE_SKY_DROP)
-        return TRUE;
-    if (gBattleMons[battlerDef].volatiles.root)
-        return TRUE;
-    if (gFieldStatuses & STATUS_FIELD_FAIRY_LOCK)
-        return TRUE;
-    if (AI_IsAbilityOnSide(battlerAtk, ABILITY_SHADOW_TAG)
-        && (B_SHADOW_TAG_ESCAPE >= GEN_4 && gAiLogicData->abilities[battlerDef] != ABILITY_SHADOW_TAG))
-        return TRUE;
-    if (AI_IsAbilityOnSide(battlerAtk, ABILITY_ARENA_TRAP)
-        && AI_IsBattlerGrounded(battlerDef))
-        return TRUE;
-    if (AI_IsAbilityOnSide(battlerAtk, ABILITY_MAGNET_PULL)
-        && IS_BATTLER_OF_TYPE(battlerDef, TYPE_STEEL))
-        return TRUE;
-
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && CountUsablePartyMons(battlerDef) == 0)
-        return TRUE;
-
-    return FALSE;
-}
-
-u32 GetTotalBaseStat(u32 species)
-{
-    return GetSpeciesBaseHP(species)
-         + GetSpeciesBaseAttack(species)
-         + GetSpeciesBaseDefense(species)
-         + GetSpeciesBaseSpeed(species)
-         + GetSpeciesBaseSpAttack(species)
-         + GetSpeciesBaseSpDefense(species);
-}
-
-bool32 IsTruantMonVulnerable(enum BattlerId battlerAI, enum BattlerId opposingBattler)
-{
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAI, opposingBattler, gAiLogicData);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        enum Move move = gBattleHistory->usedMoves[opposingBattler][moveIndex];
-        enum BattleMoveEffects effect = GetMoveEffect(move);
-        if (effect == EFFECT_PROTECT && move != MOVE_ENDURE)
-            return TRUE;
-        if (effect == EFFECT_SEMI_INVULNERABLE && AI_IsSlower(battlerAI, opposingBattler, GetAIChosenMove(battlerAI), predictedMoveSpeedCheck, CONSIDER_PRIORITY))
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 Ai_IsPriorityBlocked(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, struct AiLogicData *aiData)
-{
-    s32 atkPriority = GetBattleMovePriority(battlerAtk, aiData->abilities[battlerAtk], move);
-
-    if (atkPriority <= 0 || IsBattlerAlly(battlerAtk, battlerDef))
-        return FALSE;
-
-    if (IsMoldBreakerTypeAbility(battlerAtk, aiData->abilities[battlerAtk]) || MoveIgnoresTargetAbility(move))
-        return FALSE;
-
-    if (IsDazzlingAbility(aiData->abilities[battlerDef]))
-        return TRUE;
-
-    if (IsDoubleBattle() && IsDazzlingAbility(aiData->abilities[BATTLE_PARTNER(battlerDef)]))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 AI_CanMoveBeBlockedByTarget(struct BattleContext *ctx)
-{
-    return CanMoveBeBlockedByTarget(ctx, GetBattleMovePriority(ctx->battlerAtk, ctx->abilityAtk, ctx->move));
-}
-
-// This function checks if all physical/special moves are either unusable or unreasonable to use.
-// Consider a pokemon boosting their attack against a ghost pokemon having only normal-type physical attacks.
-bool32 MovesWithCategoryUnusable(u32 attacker, u32 target, enum DamageCategory category)
-{
-    u32 usable = 0;
-    enum Move *moves = GetMovesArray(attacker);
-    u32 moveLimitations = gAiLogicData->moveLimitations[attacker];
-
-    struct BattleContext ctx = {0};
-    ctx.battlerAtk = attacker;
-    ctx.battlerDef = target;
-    ctx.updateFlags = FALSE;
-    ctx.abilityAtk = gAiLogicData->abilities[attacker];
-    ctx.abilityDef = gAiLogicData->abilities[target];
-    ctx.holdEffectAtk = gAiLogicData->holdEffects[attacker];
-    ctx.holdEffectDef = gAiLogicData->holdEffects[target];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        if (GetBattleMoveCategory(moves[moveIndex]) == category)
-        {
-            SetTypeBeforeUsingMove(moves[moveIndex], attacker);
-            ctx.move = ctx.chosenMove = moves[moveIndex];
-            ctx.moveType = GetBattleMoveType(moves[moveIndex]);
-
-            if (CalcTypeEffectivenessMultiplier(&ctx))
-                usable |= 1u << moveIndex;
-        }
-    }
-
-    return (usable == 0);
-}
-
-// To save computation time this function has 2 variants. One saves, sets and restores battlers, while the other doesn't.
-struct SimulatedDamage AI_CalcDamageSaveBattlers(enum Move move, enum BattlerId battlerAtk, enum BattlerId battlerDef, uq4_12_t *typeEffectiveness, enum AIConsiderGimmick considerGimmickAtk, enum AIConsiderGimmick considerGimmickDef)
-{
-    struct SimulatedDamage dmg;
-
-    SaveBattlerData(battlerAtk);
-    SaveBattlerData(battlerDef);
-    SetBattlerData(battlerAtk);
-    SetBattlerData(battlerDef);
-    dmg = AI_CalcDamage(move, battlerAtk, battlerDef, typeEffectiveness, considerGimmickAtk, considerGimmickDef, AI_GetWeather(), gFieldStatuses);
-    RestoreBattlerData(battlerAtk);
-    RestoreBattlerData(battlerDef);
-    return dmg;
-}
-
-static inline s32 LowestRollDmg(s32 dmg)
-{
-    dmg *= MIN_ROLL_PERCENTAGE;
-    dmg /= 100;
-    return dmg;
-}
-
-static inline s32 HighestRollDmg(s32 dmg)
-{
-    dmg *= MAX_ROLL_PERCENTAGE;
-    dmg /= 100;
-    return dmg;
-}
-
-static inline s32 DmgRoll(s32 dmg)
-{
-    dmg *= DMG_ROLL_PERCENTAGE;
-    dmg /= 100;
-    return dmg;
-}
-
-bool32 IsDamageMoveUnusable(struct BattleContext *ctx)
-{
-    enum Ability battlerDefAbility;
-    enum Ability partnerDefAbility;
-    struct AiLogicData *aiData = gAiLogicData;
-
-    if (ctx->typeEffectivenessModifier == UQ_4_12(0.0))
-        return TRUE;
-    if (gBattleStruct->battlerState[ctx->battlerDef].commandingDondozo)
-        return TRUE;
-
-    // aiData->abilities does not check for Mold Breaker since it happens during combat so it needs to be done manually
-    if (IsMoldBreakerTypeAbility(ctx->battlerAtk, ctx->abilityAtk) || MoveIgnoresTargetAbility(ctx->move))
-    {
-        battlerDefAbility = ABILITY_NONE;
-        partnerDefAbility = ABILITY_NONE;
+        sprite->x += HAMMER_X_OFFSET;
+        StartSpriteAffineAnim(sprite, 1);
     }
     else
     {
-        battlerDefAbility = ctx->abilityDef;
-        partnerDefAbility = aiData->abilities[BATTLE_PARTNER(ctx->battlerDef)];
+        sprite->x -= HAMMER_X_OFFSET;
+        StartSpriteAffineAnim(sprite, 0);
     }
-
-    if (Ai_IsPriorityBlocked(ctx->battlerAtk, ctx->battlerDef, ctx->move, aiData))
-        return TRUE;
-
-    if (AI_CanMoveBeBlockedByTarget(ctx))
-        return TRUE;
-
-    // Limited to Lighning Rod and Storm Drain because otherwise the AI would consider Water Absorb, etc...
-    if (partnerDefAbility == ABILITY_LIGHTNING_ROD || partnerDefAbility == ABILITY_STORM_DRAIN)
-    {
-        u32 originalTarget = ctx->battlerDef; // Need to preserve origin target;
-        ctx->battlerDef = BATTLE_PARTNER(ctx->battlerDef);
-        bool32 canAbilityAbsorbMove = CanAbilityAbsorbMove(ctx);
-        ctx->battlerDef = originalTarget;
-        if (canAbilityAbsorbMove)
-            return TRUE;
-    }
-
-    if (HasWeatherEffect())
-    {
-        if (ctx->weather & B_WEATHER_SUN_PRIMAL && ctx->moveType == TYPE_WATER)
-            return TRUE;
-        if (ctx->weather & B_WEATHER_RAIN_PRIMAL && ctx->moveType == TYPE_FIRE)
-            return TRUE;
-    }
-
-    if (IsMoveDampBanned(ctx->move) && (battlerDefAbility == ABILITY_DAMP || partnerDefAbility == ABILITY_DAMP))
-        return TRUE;
-
-    switch (GetMoveEffect(ctx->move))
-    {
-    case EFFECT_DREAM_EATER:
-        if (!AI_IsBattlerAsleepOrComatose(ctx->battlerDef))
-            return TRUE;
-        break;
-    case EFFECT_BELCH:
-        if (IsBelchPreventingMove(ctx->battlerAtk, ctx->move))
-            return TRUE;
-        break;
-    case EFFECT_LAST_RESORT:
-        if (!CanUseLastResort(ctx->battlerAtk) && !IsConsideringZMove(ctx->battlerAtk, ctx->battlerDef, ctx->move))
-            return TRUE;
-        break;
-    case EFFECT_LOW_KICK:
-    case EFFECT_HEAT_CRASH:
-        if (GetActiveGimmick(ctx->battlerDef) == GIMMICK_DYNAMAX)
-            return TRUE;
-        break;
-    case EFFECT_FAIL_IF_NOT_ARG_TYPE:
-        if (!IS_BATTLER_OF_TYPE(ctx->battlerAtk, GetMoveArgType(ctx->move)))
-            return TRUE;
-        break;
-    case EFFECT_STEEL_ROLLER:
-        if (!(gFieldStatuses & STATUS_FIELD_TERRAIN_ANY))
-            return TRUE;
-        break;
-    case EFFECT_POLTERGEIST:
-        if (gAiLogicData->items[ctx->battlerDef] == ITEM_NONE || !IsBattlerItemEnabled(ctx->battlerDef))
-            return TRUE;
-        break;
-    case EFFECT_FIRST_TURN_ONLY:
-        if (!gBattleStruct->battlerState[ctx->battlerAtk].isFirstTurn)
-            return TRUE;
-        break;
-    default:
-        break;
-    }
-
-    return FALSE;
+    sprite->data[6] = HAMMER_PUNCH_WAIT_FRAMES;
+    sprite->callback = AnimWoodHammerHammer_WaitForPunch;
 }
 
-bool32 IsAdditionalEffectBlocked(enum BattlerId battlerAtk, u32 abilityAtk, enum BattlerId battlerDef, enum Ability abilityDef)
+static void AnimWoodHammerHammer_WaitForPunch(struct Sprite *sprite)
 {
-    if (gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_COVERT_CLOAK)
-        return TRUE;
-
-    if (abilityDef == ABILITY_SHIELD_DUST && !IsMoldBreakerTypeAbility(battlerAtk, abilityAtk))
-        return TRUE;
-
-    return FALSE;
-}
-
-static inline s32 GetDamageByRollType(s32 dmg, enum DamageRollType rollType)
-{
-    if (rollType == DMG_ROLL_LOWEST)
-        return LowestRollDmg(dmg);
-    else if (rollType == DMG_ROLL_HIGHEST)
-        return HighestRollDmg(dmg);
-    else
-        return DmgRoll(dmg);
-}
-
-static inline void AI_StoreBattlerTypes(enum BattlerId battlerAtk, enum Type *types)
-{
-    types[0] = gBattleMons[battlerAtk].types[0];
-    types[1] = gBattleMons[battlerAtk].types[1];
-    types[2] = gBattleMons[battlerAtk].types[2];
-}
-
-static inline void AI_RestoreBattlerTypes(enum BattlerId battlerAtk, enum Type *types)
-{
-    gBattleMons[battlerAtk].types[0] = types[0];
-    gBattleMons[battlerAtk].types[1] = types[1];
-    gBattleMons[battlerAtk].types[2] = types[2];
-}
-
-static inline void CalcDynamicMoveDamage(struct BattleContext *ctx, u16 *medianDamage, u16 *minimumDamage, u16 *maximumDamage)
-{
-    enum BattleMoveEffects effect = GetMoveEffect(ctx->move);
-    u16 median = *medianDamage;
-    u16 minimum = *minimumDamage;
-    u16 maximum = *maximumDamage;
-
-    u32 strikeCount = GetMoveStrikeCount(ctx->move);
-
-    if (effect == EFFECT_BEAT_UP && GetConfig(B_BEAT_UP) >= GEN_5)
-    {
-        u32 partyCount = CalculatePartyCount(GetBattlerParty(ctx->battlerAtk));
-        u32 i;
-        gBattleStruct->beatUpSlot = 0;
-        ctx->isCrit = FALSE;
-        ctx->fixedBasePower = 0;
-        median = 0;
-        for (i = 0; i < partyCount; i++)
-            median += CalculateMoveDamage(ctx);
-        maximum = minimum = median;
-        gBattleStruct->beatUpSlot = 0;
-    }
-    else if (strikeCount > 1 && effect != EFFECT_TRIPLE_KICK)
-    {
-        median *= strikeCount;
-        minimum *= strikeCount;
-        maximum *= strikeCount;
-    }
-    else if (IsMultiHitMove(ctx->move))
-    {
-        if (GetMoveEffect(ctx->move) == EFFECT_SPECIES_POWER_OVERRIDE && gBattleMons[ctx->battlerAtk].species == GetMoveSpeciesPowerOverride_Species(ctx->move))
-        {
-            median *= GetMoveSpeciesPowerOverride_NumOfHits(ctx->move);
-            minimum *= GetMoveSpeciesPowerOverride_NumOfHits(ctx->move);
-            maximum *= GetMoveSpeciesPowerOverride_NumOfHits(ctx->move);
-        }
-        else if (ctx->abilityAtk == ABILITY_SKILL_LINK)
-        {
-            median *= 5;
-            minimum *= 5;
-            maximum *= 5;
-        }
-        else if (ctx->holdEffectAtk == HOLD_EFFECT_LOADED_DICE)
-        {
-            median *= 9;
-            median /= 2;
-            minimum *= 4;
-            maximum *= 5;
-        }
-        else
-        {
-            median *= 3;
-            minimum *= 2;
-            maximum *= 5;
-        }
-    }
-    else if (ctx->abilityAtk == ABILITY_PARENTAL_BOND
-          && strikeCount == 0
-          && !AI_IsDoubleSpreadMove(ctx->battlerAtk, ctx->move))
-    {
-        median  += median  / (B_PARENTAL_BOND_DMG >= GEN_7 ? 4 : 2);
-        minimum += minimum / (B_PARENTAL_BOND_DMG >= GEN_7 ? 4 : 2);
-        maximum += maximum / (B_PARENTAL_BOND_DMG >= GEN_7 ? 4 : 2);
-    }
-
-    if (median == 0)
-        median = 1;
-    if (minimum == 0)
-        minimum = 1;
-    if (maximum == 0)
-        maximum = 1;
-
-    *medianDamage = median;
-    *minimumDamage = minimum;
-    *maximumDamage = maximum;
-}
-
-static inline bool32 ShouldCalcCritDamage(struct BattleContext *ctx)
-{
-    s32 critChanceIndex = 0;
-
-    // Get crit chance
-    if (GetConfig(B_CRIT_CHANCE) == GEN_1)
-        critChanceIndex = CalcCritChanceStageGen1(ctx);
-    else
-        critChanceIndex = CalcCritChanceStage(ctx);
-
-    if (critChanceIndex == CRITICAL_HIT_ALWAYS)
-        return TRUE;
-    if (critChanceIndex >= RISKY_AI_CRIT_STAGE_THRESHOLD // Not guaranteed but above Risky threshold
-        && (gAiThinkingStruct->aiFlags[ctx->battlerAtk] & AI_FLAG_RISKY)
-        && GetConfig(B_CRIT_CHANCE) != GEN_1)
-        return TRUE;
-    if (critChanceIndex >= RISKY_AI_CRIT_THRESHOLD_GEN_1 // Not guaranteed but above Risky threshold
-        && (gAiThinkingStruct->aiFlags[ctx->battlerAtk] & AI_FLAG_RISKY)
-        && GetConfig(B_CRIT_CHANCE) == GEN_1)
-        return TRUE;
-
-    return FALSE;
-}
-
-static s32 HandleKOThroughBerryReduction(struct BattleContext *ctx, s32 dmg)
-{
-    if (ctx->aiCheckBerryModifier) // Only set if AI running calcs
-    {
-        // Only indicate move is ignoring berry resist if it doesn't already OHKO even if resisted
-        if (dmg < gBattleMons[ctx->battlerDef].hp)
-            gAiLogicData->resistBerryAffected[ctx->battlerAtk][ctx->battlerDef][GetMoveIndex(ctx->battlerAtk, ctx->move)] = TRUE;
-
-        // Ignore resist berry if appropriate
-        u32 berryModifier = gAiLogicData->abilities[ctx->battlerDef] == ABILITY_RIPEN ? 4 : 2;
-        u32 unmitigatedDamage = dmg * berryModifier;
-        u32 totalDamage = dmg;
-
-        // Add unmitigated hits up to the set KO threshold, - 1 because the first hit is dmg
-        for (u32 hitsToKO = 0; hitsToKO < AI_IGNORE_BERRY_KO_THRESHOLD - 1; hitsToKO++)
-            totalDamage += unmitigatedDamage;
-
-        // If the total damage from reduced hit and non-reduced hit(s) are a KO, we can see our target KO threshold through berry damage
-        if (totalDamage >= gBattleMons[ctx->battlerDef].hp)
-            return unmitigatedDamage; // Pretend the berry isn't there so the AI can see the KO threshold
-        else
-            return dmg;
-    }
-    return dmg;
-}
-
-static s32 AI_ApplyModifiersAfterDmgRoll(struct BattleContext *ctx, s32 dmg)
-{
-    dmg = ApplyModifiersAfterDmgRoll(ctx, dmg);
-    dmg = HandleKOThroughBerryReduction(ctx, dmg);
-    return dmg;
-}
-
-struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, enum BattlerId battlerDef, uq4_12_t *typeEffectiveness, enum AIConsiderGimmick considerGimmickAtk, enum AIConsiderGimmick considerGimmickDef, u32 weather, u32 fieldStatuses)
-{
-    struct SimulatedDamage simDamage = {0};
-    enum BattleMoveEffects moveEffect = GetMoveEffect(move);
-    bool32 toggledGimmickAtk = FALSE;
-    bool32 toggledGimmickDef = FALSE;
-    struct AiLogicData *aiData = gAiLogicData;
-    gAiLogicData->aiCalcInProgress = TRUE;
-
-    if (moveEffect == EFFECT_HIT_ENEMY_HEAL_ALLY
-     && battlerDef == BATTLE_PARTNER(battlerAtk))
-        return simDamage;
-
-    if (moveEffect == EFFECT_NATURE_POWER)
-        move = GetNaturePowerMove();
-
-    // Temporarily enable gimmicks for damage calcs if planned
-    if (gBattleStruct->gimmick.usableGimmick[battlerAtk] && GetActiveGimmick(battlerAtk) == GIMMICK_NONE
-        && gBattleStruct->gimmick.usableGimmick[battlerAtk] != GIMMICK_NONE && considerGimmickAtk == USE_GIMMICK)
-    {
-        toggledGimmickAtk = TRUE;
-        SetActiveGimmick(battlerAtk, gBattleStruct->gimmick.usableGimmick[battlerAtk]);
-    }
-
-    if (gBattleStruct->gimmick.usableGimmick[battlerDef] && GetActiveGimmick(battlerDef) == GIMMICK_NONE
-        && gBattleStruct->gimmick.usableGimmick[battlerDef] != GIMMICK_NONE && considerGimmickDef == USE_GIMMICK)
-    {
-        toggledGimmickDef = TRUE;
-        SetActiveGimmick(battlerDef, gBattleStruct->gimmick.usableGimmick[battlerDef]);
-    }
-
-    SetDynamicMoveCategory(battlerAtk, battlerDef, move);
-    SetTypeBeforeUsingMove(move, battlerAtk);
-
-    // We can set those globals because they are going to get rerolled on attack execution
-    gBattleStruct->magnitudeBasePower = 70;
-    gBattleStruct->presentBasePower = 80;
-
-    struct BattleContext ctx = {0};
-    ctx.aiCalc = TRUE;
-    ctx.aiCheckBerryModifier = FALSE;
-    ctx.battlerAtk = battlerAtk;
-    ctx.battlerDef = battlerDef;
-    ctx.move = ctx.chosenMove = move;
-    ctx.moveType = GetBattleMoveType(move);
-    ctx.fieldStatuses = fieldStatuses;
-    ctx.randomFactor = FALSE;
-    ctx.updateFlags = FALSE;
-    ctx.weather = weather;
-    ctx.fixedBasePower = 0;
-    ctx.holdEffectAtk = aiData->holdEffects[battlerAtk];
-    ctx.holdEffectDef = aiData->holdEffects[battlerDef];
-    ctx.abilityAtk = aiData->abilities[battlerAtk];
-    ctx.abilityDef = AI_GetMoldBreakerSanitizedAbility(battlerAtk, ctx.abilityAtk, aiData->abilities[battlerDef], ctx.holdEffectDef, move);
-    ctx.isCrit = ShouldCalcCritDamage(&ctx);
-    ctx.typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(&ctx);
-
-    u32 movePower = GetMovePower(move);
-
-    if (movePower && !IsDamageMoveUnusable(&ctx))
-    {
-        enum Type types[3];
-        AI_StoreBattlerTypes(battlerAtk, types);
-        ProteanTryChangeType(battlerAtk, aiData->abilities[battlerAtk], move, ctx.moveType);
-
-        s32 fixedDamage = DoFixedDamageMoveCalc(&ctx);
-        if (fixedDamage != INT32_MAX)
-        {
-            simDamage.minimum = simDamage.median = simDamage.maximum = fixedDamage;
-        }
-        else if (moveEffect == EFFECT_TRIPLE_KICK)
-        {
-            for (gMultiHitCounter = GetMoveStrikeCount(move); gMultiHitCounter > 0; gMultiHitCounter--) // The global is used to simulate actual damage done
-            {
-                s32 damageByRollType = 0;
-
-                s32 oneTripleKickHit = CalculateMoveDamageVars(&ctx);
-
-                damageByRollType = GetDamageByRollType(oneTripleKickHit, DMG_ROLL_LOWEST);
-                simDamage.minimum += AI_ApplyModifiersAfterDmgRoll(&ctx, damageByRollType);
-
-                damageByRollType = GetDamageByRollType(oneTripleKickHit, DMG_ROLL_DEFAULT);
-                simDamage.median += AI_ApplyModifiersAfterDmgRoll(&ctx, damageByRollType);
-
-                damageByRollType = GetDamageByRollType(oneTripleKickHit, DMG_ROLL_HIGHEST);
-                simDamage.maximum += AI_ApplyModifiersAfterDmgRoll(&ctx, damageByRollType);
-            }
-        }
-        else
-        {
-            u32 damage = CalculateMoveDamageVars(&ctx);
-
-            simDamage.minimum = GetDamageByRollType(damage, DMG_ROLL_LOWEST);
-            simDamage.minimum = AI_ApplyModifiersAfterDmgRoll(&ctx, simDamage.minimum);
-
-            simDamage.median = GetDamageByRollType(damage, DMG_ROLL_DEFAULT);
-            simDamage.median = AI_ApplyModifiersAfterDmgRoll(&ctx, simDamage.median);
-
-            simDamage.maximum = GetDamageByRollType(damage, DMG_ROLL_HIGHEST);
-            simDamage.maximum = AI_ApplyModifiersAfterDmgRoll(&ctx, simDamage.maximum);
-        }
-
-        if (GetActiveGimmick(battlerAtk) != GIMMICK_Z_MOVE)
-            CalcDynamicMoveDamage(&ctx, &simDamage.median, &simDamage.minimum, &simDamage.maximum);
-
-        AI_RestoreBattlerTypes(battlerAtk, types);
-    }
-    else
-    {
-        simDamage.minimum = 0;
-        simDamage.median = 0;
-        simDamage.maximum = 0;
-    }
-
-    // convert multiper to AI_EFFECTIVENESS_xX
-    *typeEffectiveness = ctx.typeEffectivenessModifier;
-
-    // Undo temporary settings
-    gBattleStruct->dynamicMoveType = 0;
-    gBattleStruct->swapDamageCategory = FALSE;
-    if (toggledGimmickAtk)
-        SetActiveGimmick(battlerAtk, GIMMICK_NONE);
-    if (toggledGimmickDef)
-        SetActiveGimmick(battlerDef, GIMMICK_NONE);
-    gAiLogicData->aiCalcInProgress = FALSE;
-    return simDamage;
-}
-
-bool32 AI_IsDamagedByRecoil(enum BattlerId battler)
-{
-    enum Ability ability = gAiLogicData->abilities[battler];
-    if (ability == ABILITY_MAGIC_GUARD || ability == ABILITY_ROCK_HEAD)
-        return FALSE;
-    return TRUE;
-}
-
-// Decide whether move having an additional effect for .
-static bool32 AI_IsMoveEffectInPlus(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 noOfHitsToKo)
-{
-    enum Ability abilityDef = gAiLogicData->abilities[battlerDef];
-    enum Ability abilityAtk = gAiLogicData->abilities[battlerAtk];
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    bool32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY);
-
-    if (IsSheerForceAffected(move, abilityAtk)
-     && !(move == MOVE_ORDER_UP && gBattleStruct->battlerState[battlerAtk].commanderSpecies != SPECIES_NONE))
-    {
-        return FALSE;
-    }
-
-    switch (GetMoveEffect(move))
-    {
-    case EFFECT_ABSORB:
-    case EFFECT_DREAM_EATER:
-        if (!IsBattlerAtMaxHp(battlerAtk) || (!aiIsFaster && GetMoveCategory(GetIncomingMove(battlerAtk, battlerDef, gAiLogicData)) != DAMAGE_CATEGORY_STATUS))
-            return TRUE;
-        break;
-    case EFFECT_FELL_STINGER:
-        if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ATK) && noOfHitsToKo == 1)
-            return TRUE;
-        break;
-    case EFFECT_PURSUIT:
-        if (noOfHitsToKo == 1)
-            return TRUE;
-        break;
-    default:
-        break;
-    }
-
-    // check ADDITIONAL_EFFECTS
-    u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
-    for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-    {
-        const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectIndex);
-        // Consider move effects that target self
-        if (additionalEffect->self)
-        {
-            switch (additionalEffect->moveEffect)
-            {
-            case MOVE_EFFECT_ATK_MINUS_1:
-            case MOVE_EFFECT_ATK_MINUS_2:
-                if (abilityAtk == ABILITY_CONTRARY && BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ATK))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_DEF_MINUS_1:
-            case MOVE_EFFECT_DEF_MINUS_2:
-                if (abilityAtk == ABILITY_CONTRARY && BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ATK))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_SPD_MINUS_1:
-            case MOVE_EFFECT_SPD_MINUS_2:
-                if (abilityAtk == ABILITY_CONTRARY && BattlerStatCanRise(battlerAtk, abilityAtk, STAT_DEF))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_SP_ATK_MINUS_1:
-            case MOVE_EFFECT_SP_ATK_MINUS_2:
-                if (abilityAtk == ABILITY_CONTRARY && BattlerStatCanRise(battlerAtk, abilityAtk, STAT_SPATK))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_SP_DEF_MINUS_1:
-            case MOVE_EFFECT_SP_DEF_MINUS_2:
-                if (abilityAtk == ABILITY_CONTRARY && BattlerStatCanRise(battlerAtk, abilityAtk, STAT_SPDEF))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_EVS_MINUS_1:
-            case MOVE_EFFECT_EVS_MINUS_2:
-                if (abilityAtk == ABILITY_CONTRARY && BattlerStatCanRise(battlerAtk, abilityAtk, STAT_EVASION))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_ACC_MINUS_1:
-            case MOVE_EFFECT_ACC_MINUS_2:
-                if (abilityAtk == ABILITY_CONTRARY && BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ACC))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_ATK_DEF_DOWN:
-                if (abilityAtk == ABILITY_CONTRARY && (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ATK) || BattlerStatCanRise(battlerAtk, abilityAtk, STAT_DEF)))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_DEF_SPDEF_DOWN:
-                if (abilityAtk == ABILITY_CONTRARY && (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_DEF) || BattlerStatCanRise(battlerAtk, abilityAtk, STAT_SPDEF)))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_ATK_PLUS_1:
-            case MOVE_EFFECT_ATK_PLUS_2:
-                if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ATK))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_DEF_PLUS_1:
-            case MOVE_EFFECT_DEF_PLUS_2:
-                if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_DEF))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_SPD_PLUS_1:
-            case MOVE_EFFECT_SPD_PLUS_2:
-                if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_SPEED))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_SP_ATK_PLUS_1:
-            case MOVE_EFFECT_SP_ATK_PLUS_2:
-                if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_SPATK))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_EVS_PLUS_1:
-            case MOVE_EFFECT_EVS_PLUS_2:
-                if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_EVASION))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_ACC_PLUS_1:
-            case MOVE_EFFECT_ACC_PLUS_2:
-                if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ACC))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_ALL_STATS_UP:
-                for (enum Stat statId = STAT_ATK; statId <= NUM_STATS; statId++)
-                {
-                    if (BattlerStatCanRise(battlerAtk, abilityAtk, statId))
-                        return TRUE;
-                }
-                break;
-            default:
-                break;
-            }
-        }
-        else // consider move effects that hinder the target
-        {
-            if (IsAdditionalEffectBlocked(battlerAtk, abilityAtk, battlerDef, abilityDef))
-                continue;
-
-            switch (additionalEffect->moveEffect)
-            {
-            case MOVE_EFFECT_POISON:
-            case MOVE_EFFECT_TOXIC:
-                if (AI_CanPoison(battlerAtk, battlerDef, abilityDef, move, MOVE_NONE))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_BURN:
-                if (AI_CanBurn(battlerAtk, battlerDef, abilityDef, BATTLE_PARTNER(battlerAtk), move, MOVE_NONE))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_FREEZE_OR_FROSTBITE:
-                if (CanBeFrozen(battlerAtk, battlerDef, abilityDef))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_PARALYSIS:
-                if (AI_CanParalyze(battlerAtk, battlerDef, abilityDef, move, MOVE_NONE))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_CONFUSION:
-                if (AI_CanConfuse(battlerAtk, battlerDef, abilityDef, BATTLE_PARTNER(battlerAtk), move, MOVE_NONE))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_FLINCH:
-                if (ShouldTryToFlinch(battlerAtk, battlerDef, abilityAtk, abilityDef, move))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_ATK_MINUS_1:
-            case MOVE_EFFECT_DEF_MINUS_1:
-            case MOVE_EFFECT_SPD_MINUS_1:
-            case MOVE_EFFECT_SP_ATK_MINUS_1:
-            case MOVE_EFFECT_SP_DEF_MINUS_1:
-            case MOVE_EFFECT_ACC_MINUS_1:
-            case MOVE_EFFECT_EVS_MINUS_1:
-                if (CanLowerStat(battlerAtk, battlerDef, gAiLogicData, STAT_ATK + (additionalEffect->moveEffect - MOVE_EFFECT_ATK_MINUS_1)) && noOfHitsToKo > 1)
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_ATK_MINUS_2:
-            case MOVE_EFFECT_DEF_MINUS_2:
-            case MOVE_EFFECT_SPD_MINUS_2:
-            case MOVE_EFFECT_SP_ATK_MINUS_2:
-            case MOVE_EFFECT_SP_DEF_MINUS_2:
-            case MOVE_EFFECT_ACC_MINUS_2:
-            case MOVE_EFFECT_EVS_MINUS_2:
-                if (CanLowerStat(battlerAtk, battlerDef, gAiLogicData, STAT_ATK + (additionalEffect->moveEffect - MOVE_EFFECT_ATK_MINUS_2)) && noOfHitsToKo > 1)
-                    return TRUE;
-                break;
-            default:
-                break;
-            }
-        }
-    }
-
-    return FALSE;
-}
-
-static bool32 AI_IsMoveEffectInMinus(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 noOfHitsToKo)
-{
-    enum Ability abilityAtk = gAiLogicData->abilities[battlerAtk];
-    enum Ability abilityDef = gAiLogicData->abilities[battlerDef];
-
-    if (GetMoveStrikeCount(move) > 1 || IsMultiHitMove(move))
-    {
-        if (AI_MoveMakesContact(battlerAtk, battlerDef, abilityAtk, gAiLogicData->holdEffects[battlerAtk], move)
-         && abilityAtk != ABILITY_MAGIC_GUARD
-         && (gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_ROCKY_HELMET || abilityDef == ABILITY_IRON_BARBS))
-        {
-            return TRUE;
-        }
-    }
-
-    if (IsExplosionMove(move))
-        return TRUE;
-
-    switch (GetMoveEffect(move))
-    {
-    case EFFECT_MAX_HP_50_RECOIL:
-    case EFFECT_CHLOROBLAST:
-    case EFFECT_FINAL_GAMBIT:
-        return TRUE;
-    case EFFECT_RECOIL:
-    case EFFECT_RECOIL_IF_MISS:
-        if (AI_IsDamagedByRecoil(battlerAtk))
-            return TRUE;
-        break;
-    case EFFECT_SEMI_INVULNERABLE:
-        if (abilityAtk == ABILITY_NO_GUARD || abilityDef == ABILITY_NO_GUARD)
-        {
-            if (gAiLogicData->holdEffects[battlerAtk] != HOLD_EFFECT_POWER_HERB)
-                return TRUE;
-        }
-        break;
-    case EFFECT_ABSORB:
-        if (abilityDef == ABILITY_LIQUID_OOZE)
-            return TRUE;
-        break;
-    case EFFECT_DREAM_EATER:
-        if (abilityDef == ABILITY_LIQUID_OOZE && GetConfig(B_DREAM_EATER_LIQUID_OOZE) >= GEN_5)
-            return TRUE;
-        break;
-    default:
-    {
-        u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
-        for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-        {
-            const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectIndex);
-            switch (additionalEffect->moveEffect)
-            {
-            case MOVE_EFFECT_ATK_MINUS_1:
-            case MOVE_EFFECT_DEF_MINUS_1:
-            case MOVE_EFFECT_SPD_MINUS_1:
-            case MOVE_EFFECT_SP_ATK_MINUS_1:
-            case MOVE_EFFECT_SP_DEF_MINUS_1:
-            case MOVE_EFFECT_EVS_MINUS_1:
-            case MOVE_EFFECT_ACC_MINUS_1:
-            case MOVE_EFFECT_ATK_MINUS_2:
-            case MOVE_EFFECT_DEF_MINUS_2:
-            case MOVE_EFFECT_SPD_MINUS_2:
-            case MOVE_EFFECT_SP_ATK_MINUS_2:
-            case MOVE_EFFECT_SP_DEF_MINUS_2:
-            case MOVE_EFFECT_EVS_MINUS_2:
-            case MOVE_EFFECT_ACC_MINUS_2:
-            case MOVE_EFFECT_V_CREATE:
-            case MOVE_EFFECT_ATK_DEF_DOWN:
-            case MOVE_EFFECT_DEF_SPDEF_DOWN:
-                if ((additionalEffect->self && abilityAtk != ABILITY_CONTRARY)
-                    || (noOfHitsToKo > 1 && !additionalEffect->self && abilityDef == ABILITY_CONTRARY && !DoesBattlerIgnoreAbilityChecks(battlerAtk, abilityAtk, move)))
-                    return TRUE;
-                break;
-            case MOVE_EFFECT_RECHARGE:
-                return additionalEffect->self;
-            case MOVE_EFFECT_ATK_PLUS_1:
-            case MOVE_EFFECT_DEF_PLUS_1:
-            case MOVE_EFFECT_SPD_PLUS_1:
-            case MOVE_EFFECT_SP_ATK_PLUS_1:
-            case MOVE_EFFECT_SP_DEF_PLUS_1:
-            case MOVE_EFFECT_EVS_PLUS_1:
-            case MOVE_EFFECT_ACC_PLUS_1:
-            case MOVE_EFFECT_ATK_PLUS_2:
-            case MOVE_EFFECT_DEF_PLUS_2:
-            case MOVE_EFFECT_SPD_PLUS_2:
-            case MOVE_EFFECT_SP_ATK_PLUS_2:
-            case MOVE_EFFECT_SP_DEF_PLUS_2:
-            case MOVE_EFFECT_EVS_PLUS_2:
-            case MOVE_EFFECT_ACC_PLUS_2:
-            case MOVE_EFFECT_ALL_STATS_UP:
-                if ((additionalEffect->self && abilityAtk == ABILITY_CONTRARY)
-                    || (noOfHitsToKo > 1 && !additionalEffect->self && !(abilityDef == ABILITY_CONTRARY && !DoesBattlerIgnoreAbilityChecks(battlerAtk, abilityAtk, move))))
-                    return TRUE;
-                break;
-            default:
-                break;
-            }
-        }
-        break;
-    }
-    }
-    return FALSE;
-}
-
-// Checks if one of the moves has side effects or perks, assuming equal dmg or equal no of hits to KO
-enum MoveComparisonResult CompareMoveEffects(enum Move move1, enum Move move2, enum BattlerId battlerAtk, enum BattlerId battlerDef, s32 noOfHitsToKo)
-{
-    bool32 effect1minus, effect1plus, effect2minus, effect2plus;
-    enum Ability defAbility = gAiLogicData->abilities[battlerDef];
-    enum Ability atkAbility = gAiLogicData->abilities[battlerAtk];
-
-    // Check if physical moves hurt.
-    if (gAiLogicData->holdEffects[battlerAtk] != HOLD_EFFECT_PROTECTIVE_PADS && atkAbility != ABILITY_LONG_REACH
-        && (gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_ROCKY_HELMET
-        || defAbility == ABILITY_IRON_BARBS || defAbility == ABILITY_ROUGH_SKIN || defAbility == ABILITY_HARDY_THORNS))
-    {
-        bool32 moveContact1 = MoveMakesContact(move1);
-        bool32 moveContact2 = MoveMakesContact(move2);
-        if (moveContact1 && !moveContact2)
-            return MOVE_LOST_COMPARISON;
-        if (moveContact2 && !moveContact1)
-            return MOVE_WON_COMPARISON;
-    }
-
-    // Check additional effects.
-    gAiThinkingStruct->movesetIndex = GetMoveIndex(battlerAtk, move1);
-    effect1minus = AI_IsMoveEffectInMinus(battlerAtk, battlerDef, move1, noOfHitsToKo);
-    effect1plus = AI_IsMoveEffectInPlus(battlerAtk, battlerDef, move1, noOfHitsToKo);
-
-    gAiThinkingStruct->movesetIndex = GetMoveIndex(battlerAtk, move2);
-    effect2plus = AI_IsMoveEffectInPlus(battlerAtk, battlerDef, move2, noOfHitsToKo);
-    effect2minus = AI_IsMoveEffectInMinus(battlerAtk, battlerDef, move2, noOfHitsToKo);
-
-    gAiThinkingStruct->movesetIndex = 0;
-
-    if (effect2minus && !effect1minus)
-        return MOVE_WON_COMPARISON;
-    if (effect1minus && !effect2minus)
-        return MOVE_LOST_COMPARISON;
-
-    if (effect2plus && !effect1plus)
-        return MOVE_LOST_COMPARISON;
-    if (effect1plus && !effect2plus)
-        return MOVE_WON_COMPARISON;
-
-    return MOVE_NEUTRAL_COMPARISON;
-}
-
-u32 GetNoOfHitsToKO(u32 dmg, s32 hp)
-{
-    if (dmg == 0)
-        return 0;
-    return (hp + dmg - 1) / dmg;
-}
-
-u32 GetNoOfHitsToKOBattlerDmg(u32 dmg, enum BattlerId battlerDef)
-{
-    return GetNoOfHitsToKO(dmg, gBattleMons[battlerDef].hp);
-}
-
-u32 GetNoOfHitsToKOBattler(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 moveIndex, enum DamageCalcContext calcContext, enum AiConsiderEndure considerEndure)
-{
-    u32 hitsToKO = GetNoOfHitsToKOBattlerDmg(AI_GetDamage(battlerAtk, battlerDef, moveIndex, calcContext, gAiLogicData), battlerDef);
-    enum Move *moves = GetMovesArray(battlerAtk);
-
-    if (CanEndureHit(battlerAtk, battlerDef, moves[moveIndex]) && hitsToKO == 1 && considerEndure == CONSIDER_ENDURE)
-        hitsToKO += 1;
-
-    return hitsToKO;
-}
-
-u32 GetBestNoOfHitsToKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum DamageCalcContext calcContext)
-{
-    u32 result = 100;
-    u32 tempResult = 0;
-
-    struct AiLogicData *aiData = gAiLogicData;
-    enum Move *moves = GetMovesArray(battlerAtk);
-    u32 moveLimitations = aiData->moveLimitations[battlerAtk];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        tempResult = GetNoOfHitsToKOBattler(battlerAtk, battlerDef, moveIndex, calcContext, CONSIDER_ENDURE);
-        if (tempResult != 0 && tempResult < result)
-            result = tempResult;
-    }
-
-    return result;
-}
-
-u32 GetCurrDamageHpPercent(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum DamageCalcContext calcContext)
-{
-    int bestDmg = AI_GetDamage(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, calcContext, gAiLogicData);
-
-    return (bestDmg * 100) / gBattleMons[battlerDef].maxHP;
-}
-
-uq4_12_t AI_GetMoveEffectiveness(enum Move move, enum BattlerId battlerAtk, enum BattlerId battlerDef)
-{
-    uq4_12_t typeEffectiveness;
-
-    SaveBattlerData(battlerAtk);
-    SaveBattlerData(battlerDef);
-
-    SetBattlerData(battlerAtk);
-    SetBattlerData(battlerDef);
-
-    gBattleStruct->dynamicMoveType = 0;
-    SetTypeBeforeUsingMove(move, battlerAtk);
-    struct BattleContext ctx = {0};
-    ctx.battlerAtk = battlerAtk;
-    ctx.battlerDef = battlerDef;
-    ctx.move = ctx.chosenMove = move;
-    ctx.moveType = GetBattleMoveType(move);
-    ctx.updateFlags = FALSE;
-    ctx.abilityAtk = gAiLogicData->abilities[battlerAtk];
-    ctx.abilityDef = gAiLogicData->abilities[battlerDef];
-    ctx.holdEffectAtk = gAiLogicData->holdEffects[battlerAtk];
-    ctx.holdEffectDef = gAiLogicData->holdEffects[battlerDef];
-    typeEffectiveness = CalcTypeEffectivenessMultiplier(&ctx);
-
-    RestoreBattlerData(battlerAtk);
-    RestoreBattlerData(battlerDef);
-
-    return typeEffectiveness;
-}
-
-/* Checks to see if AI will move ahead of another battler
- * The function uses a stripped down version of the checks from GetWhichBattlerFasterArgs
- * Output:
-    * AI_IS_FASTER: is user(ai) faster
-    * AI_IS_SLOWER: is target faster
-*/
-s32 AI_WhoStrikesFirst(enum BattlerId battlerAI, enum BattlerId battler, enum Move aiMoveConsidered, enum Move playerMoveConsidered, enum ConsiderPriority considerPriority)
-{
-    u32 speedBattlerAI, speedBattler;
-    enum HoldEffect holdEffectAI = gAiLogicData->holdEffects[battlerAI];
-    enum HoldEffect holdEffectPlayer = gAiLogicData->holdEffects[battler];
-    enum Ability abilityAI = gAiLogicData->abilities[battlerAI];
-    enum Ability abilityPlayer = gAiLogicData->abilities[battler];
-
-    if (considerPriority == CONSIDER_PRIORITY)
-    {
-        s8 aiPriority = GetBattleMovePriority(battlerAI, abilityAI, aiMoveConsidered);
-        s8 playerPriority = GetBattleMovePriority(battler, abilityPlayer, playerMoveConsidered);
-
-        if (aiPriority > playerPriority)
-            return AI_IS_FASTER;
-        else if (aiPriority < playerPriority)
-            return AI_IS_SLOWER;
-    }
-
-    speedBattlerAI = GetBattlerTotalSpeedStat(battlerAI, abilityAI, holdEffectAI);
-    speedBattler   = GetBattlerTotalSpeedStat(battler, abilityPlayer, holdEffectPlayer);
-
-    if (holdEffectAI == HOLD_EFFECT_LAGGING_TAIL && holdEffectPlayer != HOLD_EFFECT_LAGGING_TAIL)
-        return AI_IS_SLOWER;
-    else if (holdEffectAI != HOLD_EFFECT_LAGGING_TAIL && holdEffectPlayer == HOLD_EFFECT_LAGGING_TAIL)
-        return AI_IS_FASTER;
-
-    if (abilityAI == ABILITY_STALL && abilityPlayer != ABILITY_STALL)
-        return AI_IS_SLOWER;
-    else if (abilityAI != ABILITY_STALL && abilityPlayer == ABILITY_STALL)
-        return AI_IS_FASTER;
-
-    if (speedBattlerAI > speedBattler)
-    {
-        if (gFieldStatuses & STATUS_FIELD_TRICK_ROOM)
-            return AI_IS_SLOWER;
-        else
-            return AI_IS_FASTER;
-    }
-    else if (speedBattlerAI == speedBattler)
-    {
-        return AI_IS_FASTER;
-    }
-    else
-    {
-        if (gFieldStatuses & STATUS_FIELD_TRICK_ROOM)
-            return AI_IS_FASTER;
-        else
-            return AI_IS_SLOWER;
-    }
-
-    return AI_IS_SLOWER;
-}
-
-bool32 CanEndureHit(enum BattlerId battler, enum BattlerId battlerTarget, enum Move move)
-{
-    if (!AI_BattlerAtMaxHp(battlerTarget) || IsMultiHitMove(move) || gAiLogicData->abilities[battler]  == ABILITY_PARENTAL_BOND)
-        return FALSE;
-    if (GetMoveStrikeCount(move) > 1 && !(AI_GetBattlerMoveTargetType(battler, move) == TARGET_SMART && !HasTwoOpponents(battler)))
-        return FALSE;
-    if (gAiLogicData->holdEffects[battlerTarget] == HOLD_EFFECT_FOCUS_SASH)
-        return TRUE;
-
-    if (!DoesBattlerIgnoreAbilityChecks(battler, gAiLogicData->abilities[battler], move))
-    {
-        if (GetConfig(CONFIG_STURDY) >= GEN_5 && gAiLogicData->abilities[battlerTarget] == ABILITY_STURDY)
-            return TRUE;
-        if (IsMimikyuDisguised(battlerTarget))
-            return TRUE;
-        if (gAiLogicData->abilities[battlerTarget] == ABILITY_ICE_FACE
-            && gBattleMons[battlerTarget].species == SPECIES_EISCUE_ICE && GetMoveCategory(move) == DAMAGE_CATEGORY_PHYSICAL)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-// Check if target has means to faint ai mon.
-bool32 CanTargetFaintAi(enum BattlerId battlerDef, enum BattlerId battlerAtk)
-{
-    struct AiLogicData *aiData = gAiLogicData;
-    enum Move *moves = GetMovesArray(battlerDef);
-    u32 moveLimitations = aiData->moveLimitations[battlerDef];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        if (AI_GetDamage(battlerDef, battlerAtk, moveIndex, AI_DEFENDING, aiData) >= gBattleMons[battlerAtk].hp
-            && !CanEndureHit(battlerDef, battlerAtk, moves[moveIndex]))
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-u32 NoOfHitsForTargetToFaintBattler(enum BattlerId battlerDef, enum BattlerId battlerAtk, enum AiConsiderEndure considerEndure)
-{
-    u32 currNumberOfHits;
-    u32 leastNumberOfHits = UNKNOWN_NO_OF_HITS;
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        currNumberOfHits = GetNoOfHitsToKOBattler(battlerDef, battlerAtk, moveIndex, AI_DEFENDING, considerEndure);
-        if (currNumberOfHits != 0)
-        {
-            if (currNumberOfHits < leastNumberOfHits)
-                leastNumberOfHits = currNumberOfHits;
-        }
-    }
-    return leastNumberOfHits;
-}
-
-u32 NoOfHitsForTargetToFaintBattlerWithMod(enum BattlerId battlerDef, enum BattlerId battlerAtk, s32 hpMod)
-{
-    u32 currNumberOfHits;
-    u32 leastNumberOfHits = UNKNOWN_NO_OF_HITS;
-    u32 hpCheck = gBattleMons[battlerAtk].hp + hpMod;
-    u32 damageDealt = 0;
-
-    if (hpCheck > gBattleMons[battlerAtk].maxHP)
-        hpCheck = gBattleMons[battlerAtk].maxHP;
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        damageDealt = AI_GetDamage(battlerDef, battlerAtk, moveIndex, AI_DEFENDING, gAiLogicData);
-        if (damageDealt == 0)
-            continue;
-        currNumberOfHits = hpCheck / (damageDealt + 1) + 1;
-        if (currNumberOfHits != 0)
-        {
-            if (currNumberOfHits < leastNumberOfHits)
-                leastNumberOfHits = currNumberOfHits;
-        }
-    }
-    return leastNumberOfHits;
-}
-
-void GetBestDmgMovesFromBattler(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum DamageCalcContext calcContext, enum Move *bestMoves)
-{
-    struct AiLogicData *aiData = gAiLogicData;
-    u32 bestDmg = 0;
-    enum Move *moves = GetMovesArray(battlerAtk);
-    u32 moveLimitations = aiData->moveLimitations[battlerAtk];
-    u32 countBestMoves = 0;
-
-    if (CanAIFaintTarget(battlerAtk, battlerDef, 1))
-    {
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-        {
-            if (CanIndexMoveFaintTarget(battlerAtk, battlerDef, moveIndex, AI_ATTACKING))
-                bestMoves[countBestMoves++] = moves[moveIndex];
-        }
-    }
-    else
-    {
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-        {
-            if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations)
-            || (GetMovePower(moves[moveIndex]) == 0)
-            || (AI_GetDamage(battlerAtk, battlerDef, moveIndex, calcContext, aiData) == 0))
-                continue;
-
-            if (bestDmg < AI_GetDamage(battlerAtk, battlerDef, moveIndex, calcContext, aiData))
-            {
-                countBestMoves = 0;
-                bestDmg = AI_GetDamage(battlerAtk, battlerDef, moveIndex, calcContext, aiData);
-                *bestMoves = 0;
-                bestMoves[countBestMoves++] = moves[moveIndex];
-            }
-            else if (bestDmg == AI_GetDamage(battlerAtk, battlerDef, moveIndex, calcContext, aiData))
-            {
-                bestMoves[countBestMoves++] = moves[moveIndex];
-            }
-        }
-    }
-}
-
-u32 GetMoveIndex(enum BattlerId battler, enum Move move)
-{
-    enum Move *moves = GetMovesArray(battler);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] == move)
-            return moveIndex;
-    }
-
-    return MAX_MON_MOVES;
-}
-
-bool32 IsBestDmgMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum DamageCalcContext calcContext, enum Move move)
-{
-    enum Move bestMoves[MAX_MON_MOVES] = {MOVE_NONE};
-    u32 index = GetMoveIndex(battlerAtk, move);
-
-    if (CanIndexMoveFaintTarget(battlerAtk, battlerDef, index, AI_ATTACKING))
-        return TRUE;
-
-    GetBestDmgMovesFromBattler(battlerAtk, battlerDef, calcContext, bestMoves);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (bestMoves[moveIndex] == move)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 BestDmgMoveHasEffect(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum DamageCalcContext calcContext, enum BattleMoveEffects moveEffect)
-{
-    enum Move bestMoves[MAX_MON_MOVES] = {MOVE_NONE};
-
-    GetBestDmgMovesFromBattler(battlerAtk, battlerDef, calcContext, bestMoves);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (bestMoves[moveIndex] == MOVE_NONE)
-            break;
-
-        if (GetMoveEffect(bestMoves[moveIndex]) == moveEffect)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-u32 GetBestDmgFromBattler(enum BattlerId battler, enum BattlerId battlerTarget, enum DamageCalcContext calcContext)
-{
-    struct AiLogicData *aiData = gAiLogicData;
-    u32 bestDmg = 0;
-    enum Move *moves = GetMovesArray(battler);
-    u32 moveLimitations = aiData->moveLimitations[battler];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        u32 damage = AI_GetDamage(battler, battlerTarget, moveIndex, calcContext, aiData);
-        if (bestDmg < damage)
-            bestDmg = damage;
-    }
-
-    return bestDmg;
-}
-
-// Check if AI mon has the means to faint the target with any of its moves.
-// If numHits > 1, check if the target will be KO'ed by that number of hits (ignoring healing effects)
-bool32 CanAIFaintTarget(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 numHits)
-{
-    struct AiLogicData *aiData = gAiLogicData;
-    s32 dmg;
-    u16 *moves = gBattleMons[battlerAtk].moves;
-    u32 moveLimitations = aiData->moveLimitations[battlerAtk];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        dmg = AI_GetDamage(battlerAtk, battlerDef, moveIndex, AI_ATTACKING, aiData);
-
-        if (numHits)
-            dmg *= numHits;
-
-        if (gBattleMons[battlerDef].hp <= dmg)
-        {
-            if (numHits > 1)
-                return TRUE;
-
-            if (!CanEndureHit(battlerAtk, battlerDef, moves[moveIndex]))
-                return TRUE;
-        }
-    }
-
-    return FALSE;
-}
-
-// Can battler KO the target ignoring any Endure effects (Sturdy, Focus Sash, etc.)
-bool32 CanBattlerKOTargetIgnoringSturdy(enum BattlerId battlerAtk, enum BattlerId battlerDef)
-{
-    struct AiLogicData *aiData = gAiLogicData;
-    s32 dmg;
-    enum Move *moves = GetMovesArray(battlerAtk);
-    u32 moveLimitations = aiData->moveLimitations[battlerAtk];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-        dmg = AI_GetDamage(battlerAtk, battlerDef, moveIndex, AI_ATTACKING, aiData);
-
-        if (gBattleMons[battlerDef].hp <= dmg && CanEndureHit(battlerAtk, battlerDef, moves[moveIndex]))
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 CanTargetMoveFaintAi(enum Move move, enum BattlerId battlerDef, enum BattlerId battlerAtk, u32 nHits)
-{
-    u32 indexSlot = GetMoveSlot(GetMovesArray(battlerDef), move);
-    if (indexSlot < MAX_MON_MOVES)
-    {
-        u32 hitsToKO = GetNoOfHitsToKO(AI_GetDamage(battlerDef, battlerAtk, indexSlot, AI_DEFENDING, gAiLogicData), gBattleMons[battlerAtk].hp);
-        if (hitsToKO <= nHits && hitsToKO != 0 && !(CanEndureHit(battlerDef, battlerAtk, move) && hitsToKO == 1))
-            return TRUE;
-    }
-    return FALSE;
-}
-
-// Check if target has means to faint ai mon after modding hp/dmg
-bool32 CanTargetFaintAiWithMod(enum BattlerId battlerDef, enum BattlerId battlerAtk, s32 hpMod, s32 dmgMod)
-{
-    struct AiLogicData *aiData = gAiLogicData;
-    s32 dmg;
-    enum Move *moves = GetMovesArray(battlerDef);
-    u32 hpCheck = gBattleMons[battlerAtk].hp + hpMod;
-    u32 moveLimitations = aiData->moveLimitations[battlerAtk];
-
-    if (hpCheck > gBattleMons[battlerAtk].maxHP)
-        hpCheck = gBattleMons[battlerAtk].maxHP;
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        dmg = AI_GetDamage(battlerDef, battlerAtk, moveIndex, AI_DEFENDING, aiData);
-
-        if (dmgMod)
-            dmg *= dmgMod;
-
-        // Applies modified HP percent to AI data for consideration when running CanEndureHit
-        gAiLogicData->hpPercents[battlerAtk] = (hpCheck/gBattleMons[battlerAtk].maxHP)*100;
-
-        if (dmg >= hpCheck && !(CanEndureHit(battlerDef, battlerAtk, moves[moveIndex]) && (dmgMod <= 1)))
-        {
-            gAiLogicData->hpPercents[battlerAtk] = (gBattleMons[battlerAtk].hp / gBattleMons[battlerAtk].maxHP) * 100;
-            return TRUE;
-        }
-        gAiLogicData->hpPercents[battlerAtk] = (gBattleMons[battlerAtk].hp / gBattleMons[battlerAtk].maxHP) * 100;
-    }
-
-    return FALSE;
-}
-
-bool32 AI_IsAbilityOnSide(enum BattlerId battlerId, enum Ability ability)
-{
-    if (IsBattlerAlive(battlerId) && gAiLogicData->abilities[battlerId] == ability)
-        return TRUE;
-    else if (IsBattlerAlive(BATTLE_PARTNER(battlerId)) && gAiLogicData->abilities[BATTLE_PARTNER(battlerId)] == ability)
-        return TRUE;
-    else
-        return FALSE;
-}
-
-// does NOT include ability suppression checks
-enum Ability AI_DecideKnownAbilityForTurn(enum BattlerId battlerId)
-{
-    enum Ability validAbilities[NUM_ABILITY_SLOTS];
-    u8 numValidAbilities = 0;
-    enum Ability knownAbility = GetBattlerAbilityIgnoreMoldBreaker(battlerId);
-    enum Ability indexAbility;
-    enum Ability abilityAiRatings[NUM_ABILITY_SLOTS] = {0};
-
-    // We've had ability overwritten by e.g. Worry Seed. It is not part of gAiPartyData in case of switching
-    if (gBattleMons[battlerId].volatiles.overwrittenAbility)
-        return gBattleMons[battlerId].volatiles.overwrittenAbility;
-
-    // The AI knows its own ability, and omniscience handling
-    if (IsAiBattlerAware(battlerId) || (IsAiBattlerAssumingStab(battlerId) && ASSUME_STAB_SEES_ABILITY))
-        return knownAbility;
-
-    // Check neutralizing gas, gastro acid
-    if (knownAbility == ABILITY_NONE)
-        return knownAbility;
-
-    if (gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].ability != ABILITY_NONE)
-        return gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].ability;
-
-    // Abilities that prevent fleeing - treat as always known
-    if (knownAbility == ABILITY_SHADOW_TAG || knownAbility == ABILITY_MAGNET_PULL || knownAbility == ABILITY_ARENA_TRAP)
-        return knownAbility;
-
-    for (u32 abilityIndex = 0; abilityIndex < NUM_ABILITY_SLOTS; abilityIndex++)
-    {
-        indexAbility = GetSpeciesAbility(gBattleMons[battlerId].species, abilityIndex);
-        if (indexAbility != ABILITY_NONE)
-        {
-            abilityAiRatings[numValidAbilities] = gAbilitiesInfo[indexAbility].aiRating;
-            validAbilities[numValidAbilities++] = indexAbility;
-        }
-    }
-
-    if (numValidAbilities > 0 && IsAiBattlerPredictingAbility(battlerId))
-        return validAbilities[RandomWeighted(RNG_AI_PREDICT_ABILITY, abilityAiRatings[0], abilityAiRatings[1], abilityAiRatings[2])];
-
-    if (numValidAbilities > 0)
-        return validAbilities[RandomUniform(RNG_AI_ABILITY, 0, numValidAbilities - 1)];
-
-    return ABILITY_NONE; // Unknown.
-}
-
-enum HoldEffect AI_DecideHoldEffectForTurn(enum BattlerId battlerId)
-{
-    enum HoldEffect holdEffect = HOLD_EFFECT_NONE;
-
-    if (gBattleMons[battlerId].item == ITEM_NONE) // Failsafe for when user recorded an item but it was consumed
-        return holdEffect;
-
-    if (!IsAiBattlerAware(battlerId))
-        holdEffect = gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].heldEffect;
-    else
-        holdEffect = GetBattlerHoldEffectIgnoreNegation(battlerId);
-
-    if (gAiThinkingStruct->aiFlags[battlerId] & AI_FLAG_NEGATE_UNAWARE)
-        return holdEffect;
-
-    if (gBattleMons[battlerId].volatiles.embargo)
-        return HOLD_EFFECT_NONE;
-    if (gFieldStatuses & STATUS_FIELD_MAGIC_ROOM)
-        return HOLD_EFFECT_NONE;
-    if (gAiLogicData->abilities[battlerId] == ABILITY_KLUTZ && !gBattleMons[battlerId].volatiles.gastroAcid)
-        return HOLD_EFFECT_NONE;
-
-    return holdEffect;
-}
-
-bool32 DoesBattlerIgnoreAbilityChecks(enum BattlerId battlerAtk, enum Ability atkAbility, enum Move move)
-{
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_NEGATE_UNAWARE)
-        return FALSE;   // AI handicap flag: doesn't understand ability suppression concept
-
-    if (atkAbility == ABILITY_MYCELIUM_MIGHT && IsBattleMoveStatus(move))
-        return TRUE;
-
-    if (IsMoldBreakerTypeAbility(battlerAtk, atkAbility) || MoveIgnoresTargetAbility(move))
-        return TRUE;
-
-    return FALSE;
-}
-
-static inline bool32 AI_WeatherHasEffect(void)
-{
-    if (gAiThinkingStruct->aiFlags[B_POSITION_OPPONENT_LEFT] & AI_FLAG_NEGATE_UNAWARE
-     || gAiThinkingStruct->aiFlags[B_POSITION_OPPONENT_RIGHT] & AI_FLAG_NEGATE_UNAWARE)
-        return TRUE;   // AI doesn't understand weather supression (handicap)
-
-    return gAiLogicData->weatherHasEffect;  // weather damping abilities are announced
-}
-
-u32 AI_GetWeather(void)
-{
-    if (gBattleWeather == B_WEATHER_NONE)
-        return B_WEATHER_NONE;
-    if (!AI_WeatherHasEffect())
-        return B_WEATHER_NONE;
-    return gBattleWeather;
-}
-
-u32 AI_GetSwitchinWeather(enum BattlerId battler)
-{
-    enum Ability ability = gBattleMons[battler].ability;
-    // Forced weather behaviour
-    if (!AI_WeatherHasEffect())
-        return B_WEATHER_NONE;
-    if (ability == ABILITY_CLOUD_NINE || ability == ABILITY_AIR_LOCK)
-        return B_WEATHER_NONE;
-    if (gBattleWeather & B_WEATHER_PRIMAL_ANY)
-        return gBattleWeather;
-
-    // Switchin will introduce new weather
-    switch (ability)
-    {
-    case ABILITY_DRIZZLE:
-        return B_WEATHER_RAIN_NORMAL;
-    case ABILITY_DROUGHT:
-        return B_WEATHER_SUN_NORMAL;
-    case ABILITY_SAND_STREAM:
-        return B_WEATHER_SANDSTORM;
-    case ABILITY_SNOW_WARNING:
-        return GetConfig(CONFIG_SNOW_WARNING) >= GEN_9 ? B_WEATHER_SNOW : B_WEATHER_HAIL;
-    default:
-        return gBattleWeather;
-    }
-}
-
-u32 SwitchinChangeBattleTerrain(u32 newTerrain, u32 fieldStatus)
-{
-    if (gBattleStruct->isSkyBattle)
-        return fieldStatus;
-
-    if (!(fieldStatus & newTerrain))
-    {
-        fieldStatus &= ~STATUS_FIELD_TERRAIN_ANY;
-        fieldStatus |= newTerrain;
-        return fieldStatus;
-    }
-
-    return fieldStatus;
-}
-
-u32 AI_GetSwitchinFieldStatus(enum BattlerId battler)
-{
-    enum Ability ability = gBattleMons[battler].ability;
-    u32 startingFieldStatus = gFieldStatuses;
-    // Switchin will introduce new terrain
-    switch (ability)
-    {
-    case ABILITY_ELECTRIC_SURGE:
-    case ABILITY_HADRON_ENGINE:
-        return SwitchinChangeBattleTerrain(STATUS_FIELD_ELECTRIC_TERRAIN, startingFieldStatus);
-    case ABILITY_GRASSY_SURGE:
-        return SwitchinChangeBattleTerrain(STATUS_FIELD_GRASSY_TERRAIN, startingFieldStatus);
-    case ABILITY_MISTY_SURGE:
-        return SwitchinChangeBattleTerrain(STATUS_FIELD_MISTY_TERRAIN, startingFieldStatus);
-    case ABILITY_PSYCHIC_SURGE:
-        return SwitchinChangeBattleTerrain(STATUS_FIELD_PSYCHIC_TERRAIN, startingFieldStatus);
-    default:
-        return startingFieldStatus;
-    }
-}
-
-enum WeatherState IsWeatherActive(u32 flags)
-{
-    enum WeatherState state = WEATHER_INACTIVE;
-
-    if (gBattleWeather & flags)
-        state = WEATHER_ACTIVE;
-    else
-        state = WEATHER_INACTIVE;
-
-    if (!AI_WeatherHasEffect())
-    {
-        if (state == WEATHER_ACTIVE)
-            state = WEATHER_ACTIVE_BUT_BLOCKED;
-        else
-            state = WEATHER_INACTIVE_AND_BLOCKED;
-    }
-
-    return state;
-}
-
-bool32 IsAromaVeilProtectedEffect(enum BattleMoveEffects moveEffect)
-{
-    switch (moveEffect)
-    {
-    case EFFECT_DISABLE:
-    case EFFECT_ATTRACT:
-    case EFFECT_ENCORE:
-    case EFFECT_TORMENT:
-    case EFFECT_TAUNT:
-    case EFFECT_HEAL_BLOCK:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsNonVolatileStatusMove(enum Move move)
-{
-    return GetMoveNonVolatileStatus(move) != MOVE_EFFECT_NONE;
-}
-
-bool32 IsConfusionMoveEffect(enum BattleMoveEffects moveEffect)
-{
-    switch (moveEffect)
-    {
-    case EFFECT_CONFUSE:
-    case EFFECT_SWAGGER:
-    case EFFECT_FLATTER:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsHazardMove(enum Move move)
-{
-    // Hazard setting moves like Stealth Rock, Spikes, etc.
-    enum BattleMoveEffects moveEffect = GetMoveEffect(move);
-    switch (moveEffect)
-    {
-    case EFFECT_CEASELESS_EDGE:
-    case EFFECT_SPIKES:
-    case EFFECT_STEALTH_ROCK:
-    case EFFECT_STICKY_WEB:
-    case EFFECT_STONE_AXE:
-    case EFFECT_TOXIC_SPIKES:
-        return TRUE;
-    default:
-        break;
-    }
-
-    u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
-    for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-    {
-        const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectIndex);
-        switch (additionalEffect->moveEffect)
-        {
-        case MOVE_EFFECT_STEALTH_ROCK:
-        case MOVE_EFFECT_STEELSURGE:
-            return TRUE;
-        default:
-            break;
-        }
-    }
-    return FALSE;
-}
-
-bool32 IsHazardClearingMove(enum Move move)
-{
-    // Hazard clearing effects like Rapid Spin, Tidy Up, etc.
-    enum BattleMoveEffects moveEffect = GetMoveEffect(move);
-    switch (moveEffect)
-    {
-    case EFFECT_RAPID_SPIN:
-    case EFFECT_TIDY_UP:
-        return TRUE;
-    case EFFECT_DEFOG:
-        if (GetConfig(CONFIG_DEFOG_EFFECT_CLEARING) >= GEN_6)
-            return TRUE;
-        break;
-    default:
-        break;
-    }
-
-    u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
-    for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-    {
-        const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectIndex);
-        switch (additionalEffect->moveEffect)
-        {
-        case MOVE_EFFECT_DEFOG:
-            return TRUE;
-        default:
-            break;
-        }
-    }
-
-    return FALSE;
-}
-
-bool32 IsAllyProtectingFromMove(enum BattlerId battlerAtk, enum Move attackerMove, enum Move allyMove)
-{
-    enum BattleMoveEffects effect = GetMoveEffect(allyMove);
-
-    if (effect != EFFECT_PROTECT)
-    {
-        return FALSE;
-    }
-    else
-    {
-        enum ProtectMethod protectMethod = GetMoveProtectMethod(allyMove);
-
-        if (protectMethod == PROTECT_QUICK_GUARD)
-        {
-            u32 moveTarget = GetBattlerMoveTargetType(battlerAtk, attackerMove);
-            return (GetBattlerSide(battlerAtk) != GetBattlerSide(BATTLE_PARTNER(battlerAtk))
-                && moveTarget != TARGET_OPPONENTS_FIELD
-                && moveTarget != TARGET_ALL_BATTLERS);
-        }
-    case PROTECT_WIDE_GUARD:
-        return IsSpreadMove(GetBattlerMoveTargetType(battlerAtk, attackerMove));
-    case PROTECT_NORMAL:
-    case PROTECT_SPIKY_SHIELD:
-    case PROTECT_MAX_GUARD:
-    case PROTECT_BANEFUL_BUNKER:
-    case PROTECT_BURNING_BULWARK:
-        return TRUE;
-    case PROTECT_OBSTRUCT:
-    case PROTECT_SILK_TRAP:
-    case PROTECT_KINGS_SHIELD:
-        return !IsBattleMoveStatus(attackerMove);
-    case PROTECT_QUICK_GUARD:
-        return (GetChosenMovePriority(battlerAtk, gAiLogicData->abilities[battlerAtk]) > 0);
-    case PROTECT_MAT_BLOCK:
-        return !IsBattleMoveStatus(attackerMove);
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsMoveRedirectionPrevented(enum BattlerId battlerAtk, enum Move move, enum Ability atkAbility)
-{
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_NEGATE_UNAWARE)
-        return FALSE;
-
-    enum BattleMoveEffects effect = GetMoveEffect(move);
-    if (effect == EFFECT_SKY_DROP
-      || effect == EFFECT_SNIPE_SHOT
-      || atkAbility == ABILITY_PROPELLER_TAIL
-      || atkAbility == ABILITY_STALWART)
-        return TRUE;
-    return FALSE;
-}
-
-bool32 ShouldTryOHKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability atkAbility, enum Ability defAbility, enum Move move)
-{
-    enum HoldEffect holdEffect = gAiLogicData->holdEffects[battlerDef];
-    u32 accuracy = gAiLogicData->moveAccuracy[battlerAtk][battlerDef][gAiThinkingStruct->movesetIndex];
-
-    gPotentialItemEffectBattler = battlerDef;
-    if (holdEffect == HOLD_EFFECT_FOCUS_BAND && (Random() % 100) < gAiLogicData->holdEffectParams[battlerDef])
-        return FALSE;   //probabilistically speaking, focus band should activate so dont OHKO
-    else if (holdEffect == HOLD_EFFECT_FOCUS_SASH && AI_BattlerAtMaxHp(battlerDef))
-        return FALSE;
-
-    if (!DoesBattlerIgnoreAbilityChecks(battlerAtk, atkAbility, move) && defAbility == ABILITY_STURDY)
-        return FALSE;
-
-    bool32 sureHit = (gBattleMons[battlerAtk].volatiles.battlerWithSureHit == battlerDef + 1) || atkAbility == ABILITY_NO_GUARD || defAbility == ABILITY_NO_GUARD;
-    if (sureHit && gBattleMons[battlerAtk].level >= gBattleMons[battlerDef].level)
-    {
-        return TRUE;
-    }
-    else    // test the odds
-    {
-        u32 odds = accuracy + (gBattleMons[battlerAtk].level - gBattleMons[battlerDef].level);
-        if (MoveHasIncreasedAccByTenOnSameType(move) && !IS_BATTLER_OF_TYPE(battlerAtk, GetMoveType(move)))
-            odds -= 10;
-        if (Random() % 100 + 1 < odds && gBattleMons[battlerAtk].level >= gBattleMons[battlerDef].level)
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 ShouldRaiseAnyStat(enum BattlerId battlerAtk, enum BattlerId battlerDef)
-{
-    if (AreBattlersStatsMaxed(battlerAtk))
-        return FALSE;
-
-    // Don't increase stats if opposing battler has Unaware
-    if (AI_IsAbilityOnSide(battlerDef, ABILITY_UNAWARE))
-        return FALSE;
-
-    // Don't increase stats if Yawn'd
-    if (gBattleMons[battlerAtk].volatiles.yawn && CanBeSlept(battlerDef, battlerDef, gAiLogicData->abilities[battlerDef], BLOCKED_BY_SLEEP_CLAUSE))
-        return FALSE;
-
-    // Don't set up if AI is dead to residual damage from weather
-    if (GetBattlerSecondaryDamage(battlerAtk) >= gBattleMons[battlerAtk].hp)
-        return FALSE;
-
-    // Don't increase stats if opposing battler has Opportunist
-    if (AI_IsAbilityOnSide(battlerDef, ABILITY_OPPORTUNIST))
-        return FALSE;
-
-    // Don't increase stats if opposing battler has used Haze effect or AI effect
-    if (!RandomPercentage(RNG_AI_BOOST_INTO_HAZE, BOOST_INTO_HAZE_CHANCE)
-      && HasBattlerSideUsedMoveWithEffect(battlerDef, EFFECT_HAZE))
-        return FALSE;
-
-    if (CountPositiveStatStages(battlerAtk) > 0
-      && HasBattlerSideMoveWithAIEffect(battlerDef, AI_EFFECT_RESET_STATS))
-        return FALSE;
-
-    // Don't increase stats if AI could KO target through Sturdy effect, as otherwise it always 2HKOs
-    if (CanBattlerKOTargetIgnoringSturdy(battlerAtk, battlerDef))
-        return FALSE;
-
-    return TRUE;
-}
-
-bool32 ShouldSetWeather(enum BattlerId battler, u32 weather)
-{
-    if (AI_GetWeather() & weather)
-        return FALSE;
-
-    return WeatherChecker(battler, weather, FIELD_EFFECT_POSITIVE);
-}
-
-bool32 ShouldClearWeather(enum BattlerId battler, u32 weather)
-{
-    return WeatherChecker(battler, weather, FIELD_EFFECT_NEGATIVE);
-}
-
-bool32 ShouldSetFieldStatus(enum BattlerId battler, u32 fieldStatus)
-{
-    if (gFieldStatuses & fieldStatus)
-    {
-        if (!(fieldStatus & STATUS_FIELD_TRICK_ROOM))
-            return FALSE;
-        // DOUBLE_TRICK_ROOM_ON_LAST_TURN_CHANCE
-        else if (gFieldTimers.trickRoomTimer != 1)
-            return FALSE;
-    }
-
-    return FieldStatusChecker(battler, fieldStatus, FIELD_EFFECT_POSITIVE);
-}
-
-bool32 ShouldClearFieldStatus(enum BattlerId battler, u32 fieldStatus)
-{
-    return FieldStatusChecker(battler, fieldStatus, FIELD_EFFECT_NEGATIVE);
-}
-
-bool32 IsBattlerDamagedByStatus(enum BattlerId battler)
-{
-    return gBattleMons[battler].status1 & STATUS1_DAMAGING
-        || gBattleMons[battler].volatiles.wrapped
-        || gBattleMons[battler].volatiles.nightmare
-        || gBattleMons[battler].volatiles.cursed
-        || gBattleMons[battler].volatiles.saltCure
-        || gBattleMons[battler].volatiles.leechSeed
-        || gBattleMons[battler].volatiles.perishSong
-        || gSideStatuses[GetBattlerSide(battler)] & (SIDE_STATUS_SEA_OF_FIRE | SIDE_STATUS_DAMAGE_NON_TYPES);
-}
-
-s32 ProtectChecks(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, enum Move predictedMove)
-{
-    s32 score = 0;
-
-    // TODO more sophisticated logic
-    u32 uses = gBattleMons[battlerAtk].volatiles.consecutiveMoveUses;
-
-    if (predictedMove != MOVE_NONE && predictedMove != MOVE_UNAVAILABLE)
-    {
-        if (MoveIgnoresProtect(predictedMove))
-            return WORST_EFFECT;
-    }
-
-    if (GetMoveProtectMethod(move) != PROTECT_MAX_GUARD
-     && IsUnseenFistContactMove(battlerDef, battlerAtk, predictedMove))
-    {
-        return WORST_EFFECT;
-    }
-
-    /*if (GetMoveResultFlags(predictedMove) & (MOVE_RESULT_NO_EFFECT | MOVE_RESULT_MISSED))
-    {
-        ADJUST_SCORE_PTR(-5);
+    if (!sprite->affineAnimEnded)
         return;
-    }*/
 
-    if (uses == 0)
+    if (sprite->data[6] != 0)
     {
-        if (predictedMove != MOVE_NONE && predictedMove != MOVE_UNAVAILABLE && !IsBattleMoveStatus(predictedMove))
-            score += DECENT_EFFECT;
-        else if (Random() % 256 < 100)
-            score += WEAK_EFFECT;
+        sprite->data[6]--;
+        if (sprite->data[6] & 1)
+        {
+            if ((sprite->data[6] / 2) & 1)
+                sprite->x2++;
+            else
+                sprite->x2--;
+        }
+        return;
+    }
+
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        StartSpriteAffineAnim(sprite, 3);
     }
     else
     {
-        if (!IsBattle1v1())
-            score -= (2 * min(uses, 3));
-        else
-            score -= (min(uses, 3));
+        StartSpriteAffineAnim(sprite, 2);
     }
-
-    if (IsBattlerDamagedByStatus(battlerAtk))
-    {
-        score -= 1;
-    }
-
-    if (IsBattlerDamagedByStatus(battlerDef))
-    {
-        score += DECENT_EFFECT;
-    }
-
-    return score;
+    sprite->callback = AnimWoodHammerHammer_WaitForDestruction;
 }
 
-// stat stages
-bool32 CanLowerStat(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct AiLogicData *aiData, enum Stat stat)
+static void AnimWoodHammerHammer_WaitForDestruction(struct Sprite *sprite)
 {
-    if (gBattleMons[battlerDef].statStages[stat] == MIN_STAT_STAGE)
-        return FALSE;
-
-    if (aiData->holdEffects[battlerDef] == HOLD_EFFECT_CLEAR_AMULET)
-        return FALSE;
-
-    enum Move move = gAiThinkingStruct->moveConsidered;
-    enum Ability abilityAtk = aiData->abilities[battlerAtk];
-
-    if (gSideStatuses[GetBattlerSide(battlerDef)] & SIDE_STATUS_MIST && abilityAtk != ABILITY_INFILTRATOR)
-        return FALSE;
-
-    if (!DoesBattlerIgnoreAbilityChecks(battlerAtk, abilityAtk, move))
+    if (sprite->affineAnimEnded)
     {
-        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS) && AI_IsAbilityOnSide(battlerDef, ABILITY_FLOWER_VEIL))
-            return FALSE;
+        DestroySpriteAndMatrix(sprite);
+    }
+}
 
-        switch (aiData->abilities[battlerDef])
+#undef HAMMER_X_OFFSET
+#undef HAMMER_PUNCH_WAIT_FRAMES
+
+// Animates the falling particles that horizontally wave back and forth.
+// Used by Sleep Powder, Stun Spore, Poison Powder, and Magic Powder.
+void AnimMovePowderParticle(struct Sprite *sprite)
+{
+    CMD_ARGS(x, y, duration, yVelocity, waveAmplitude, waveSpeed);
+
+    sprite->x += cmd->x;
+    sprite->y += cmd->y;
+    sprite->data[0] = cmd->duration;
+    sprite->data[1] = cmd->yVelocity;
+
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        sprite->data[3] = -cmd->waveAmplitude;
+    }
+    else
+    {
+        sprite->data[3] = cmd->waveAmplitude;
+    }
+
+    sprite->data[4] = cmd->waveSpeed;
+    sprite->callback = AnimMovePowderParticle_Step;
+}
+
+static void AnimMovePowderParticle_Step(struct Sprite *sprite)
+{
+    if (sprite->data[0] > 0)
+    {
+        sprite->data[0]--;
+        sprite->y2 = sprite->data[2] >> 8;
+        sprite->data[2] += sprite->data[1];
+        sprite->x2 = Sin(sprite->data[5], sprite->data[3]);
+        sprite->data[5] = (sprite->data[5] + sprite->data[4]) & 0xFF;
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
+}
+
+// Moves an energy orb towards the center of the mon.
+void AnimPowerAbsorptionOrb(struct Sprite *sprite)
+{
+    CMD_ARGS(x, y, duration);
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    sprite->data[0] = cmd->duration;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+}
+
+// Moves an orb in a straight line towards the target mon.
+void AnimSolarBeamBigOrb(struct Sprite *sprite)
+{
+    CMD_ARGS(x, y, duration, animation);
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    StartSpriteAnim(sprite, cmd->animation);
+    sprite->data[0] = cmd->duration;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+// Moves a small orb in a wavy pattern towards the target mon.
+// The small orb "circles" the big orbs in AnimSolarBeamBigOrb.
+static void AnimSolarBeamSmallOrb(struct Sprite *sprite)
+{
+    CMD_ARGS(x, y, duration, waveOffset);
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+
+    if (IsDoubleBattle() && gAnimMoveIndex == MOVE_CORE_ENFORCER)
+    {
+        CoreEnforcerLoadBeamTarget(sprite);
+    }
+    else
+    {
+        sprite->data[0] = cmd->duration;
+        sprite->data[1] = sprite->x;
+        sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+        sprite->data[3] = sprite->y;
+        sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    }
+
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = cmd->waveOffset;
+    sprite->callback = AnimSolarBeamSmallOrb_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimSolarBeamSmallOrb_Step(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite))
+    {
+        DestroySprite(sprite);
+    }
+    else
+    {
+        if (sprite->data[5] > 0x7F)
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimTarget) + 1;
+        else
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimTarget) + 6;
+
+        sprite->x2 += Sin(sprite->data[5], 5);
+        sprite->y2 += Cos(sprite->data[5], 14);
+        sprite->data[5] = (sprite->data[5] + 15) & 0xFF;
+    }
+}
+
+// Creates 15 small secondary orbs used in the SolarBeam anim effect.
+// There is a 7-frame delay between each of them.
+// No args.
+void AnimTask_CreateSmallSolarBeamOrbs(u8 taskId)
+{
+    if (--gTasks[taskId].data[0] == -1)
+    {
+        gTasks[taskId].data[1]++;
+        gTasks[taskId].data[0] = 6;
+        gBattleAnimArgs[0] = 15;
+        gBattleAnimArgs[1] = 0;
+        gBattleAnimArgs[2] = 80;
+        gBattleAnimArgs[3] = 0;
+        CreateSpriteAndAnimate(&gSolarBeamSmallOrbSpriteTemplate, 0, 0, GetBattlerSpriteSubpriority(gBattleAnimTarget) + 1);
+    }
+
+    if (gTasks[taskId].data[1] == 15)
+        DestroyAnimVisualTask(taskId);
+}
+
+// Moves an orb from the target mon to the attacking mon in an arc-like fashion.
+void AnimAbsorptionOrb(struct Sprite *sprite)
+{
+    CMD_ARGS(x, y, waveAmplitude, wavePeriod);
+
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = cmd->wavePeriod;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->data[5] = cmd->waveAmplitude;
+    InitAnimArcTranslation(sprite);
+    sprite->callback = AnimAbsorptionOrb_Step;
+}
+
+static void AnimAbsorptionOrb_Step(struct Sprite *sprite)
+{
+    if (TranslateAnimHorizontalArc(sprite))
+        DestroyAnimSprite(sprite);
+}
+
+// Moves an orb in a wave-like fashion towards the target mon. The wave's
+// properties and the sprite anim are randomly determined.
+void AnimHyperBeamOrb(struct Sprite *sprite)
+{
+    u16 speed;
+    u16 animNum = Random2();
+
+    StartSpriteAnim(sprite, animNum % ARRAY_COUNT(gSolarBeamBigOrbAnimTable));
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        sprite->x -= 20;
+    else
+        sprite->x += 20;
+
+    speed = Random2();
+    sprite->data[0] = (speed & 31) + 64;
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    InitAnimFastLinearTranslationWithSpeed(sprite);
+    sprite->data[5] = Random2() & 0xFF;
+    sprite->data[6] = sprite->subpriority;
+    sprite->callback = AnimHyperBeamOrb_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimHyperBeamOrb_Step(struct Sprite *sprite)
+{
+    if (AnimFastTranslateLinear(sprite))
+    {
+        DestroyAnimSprite(sprite);
+    }
+    else
+    {
+        sprite->y2 += Cos(sprite->data[5], 12);
+        if (sprite->data[5] < 0x7F)
+            sprite->subpriority = sprite->data[6];
+        else
+            sprite->subpriority = sprite->data[6] + 1;
+
+        sprite->data[5] += 24;
+        sprite->data[5] &= 0xFF;
+    }
+}
+
+static void AnimMoveWorrySeedWait(struct Sprite *sprite)
+{
+    if (TranslateAnimHorizontalArc(sprite))
+        DestroyAnimSprite(sprite);
+}
+
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: wave period
+// arg 3: wave amplitude
+static void AnimMoveWorrySeed(struct Sprite *sprite)
+{
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X);
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+
+    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[5] = gBattleAnimArgs[3];
+    InitAnimArcTranslation(sprite);
+    sprite->callback = AnimMoveWorrySeedWait;
+}
+
+static void AnimMoveSmallCloudAnimate(struct Sprite *sprite)
+{
+    sprite->x2 += sprite->data[0];
+    sprite->y2 += sprite->data[1];
+
+    if (sprite->affineAnimEnded)
+        DestroyAnimSprite(sprite);
+}
+#define ONE_IF_ZERO(x) ((x) > 0 ? (x) : 1)
+
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: cloud type animation [0..2]
+// arg 3: horizontal velocity
+// arg 4: vertical velocity
+// arg 5: duration
+static void AnimMoveSmallCloud(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = gBattleAnimArgs[4];
+    sprite->callback = AnimMoveSmallCloudAnimate;
+    StartSpriteAffineAnim(sprite, gBattleAnimArgs[2]+1);
+}
+
+static void AnimPluckParticle(struct Sprite *sprite)
+{
+    if (sprite->data[0] > 0)
+    {
+        s16 yVelocity = sprite->data[5];
+        s16 xVelocity = sprite->data[2];
+        sprite->y -= yVelocity;
+        sprite->x += xVelocity;
+        if ((sprite->data[0] % 7) == 0)
         {
-        case ABILITY_SPEED_BOOST:
-            if (stat == STAT_SPEED)
-                return FALSE;
-        case ABILITY_HYPER_CUTTER:
-            if (stat == STAT_ATK)
-                return FALSE;
-        case ABILITY_BIG_PECKS:
-            if (stat == STAT_DEF)
-                return FALSE;
-        case ABILITY_ILLUMINATE:
-            if (GetConfig(CONFIG_ILLUMINATE_EFFECT) < GEN_9)
-                break;
-        case ABILITY_KEEN_EYE:
-        case ABILITY_MINDS_EYE:
-            if (stat == STAT_ACC)
-                return FALSE;
-        case ABILITY_CONTRARY:
-        case ABILITY_CLEAR_BODY:
-        case ABILITY_WHITE_SMOKE:
-        case ABILITY_FULL_METAL_BODY:
-            return FALSE;
-        case ABILITY_SHIELD_DUST:
-            if (!IsBattleMoveStatus(move) && GetActiveGimmick(battlerAtk) != GIMMICK_DYNAMAX)
-                return FALSE;
+            sprite->data[5] = yVelocity-1;
+        }
+        sprite->data[0]--;
+    }
+    else
+    {
+        sprite->callback = DestroyAnimSprite;
+    }
+}
+
+// brown seed particle (jumps up, falls down.)
+// used by Pluck.
+// arg 0: initial x offset from target
+// arg 1: initial y offset from target
+// arg 2: lifetime of the particle
+// arg 3: upward velocity initial (decreases over time)
+// arg 4: horizontal velocity (stays the same)
+static void AnimPluck(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+
+    sprite->data[0] = gBattleAnimArgs[2]; //lifetime of the particle
+    sprite->data[5] = gBattleAnimArgs[3]; //upward velocity
+    sprite->data[2] = gBattleAnimArgs[4]; //horizontal velocity
+    sprite->x += gBattleAnimArgs[0];
+    sprite->y += gBattleAnimArgs[1];
+    sprite->callback = AnimPluckParticle;
+}
+
+static void AnimMoveFeintSwipeStep(struct Sprite *sprite)
+{
+    switch (sprite->data[5])
+    {
+    case 0:
+        if (AnimTranslateLinear(sprite))
+        {
+            //Not the most elegant solution here, but it works without messing up the sprites coordinates
+            sprite->x2 = 0;
+            sprite->x += 64;
+            sprite->data[5]++;
+            sprite->data[0] = sprite->data[6];
+            sprite->data[1] = sprite->x;
+            sprite->data[2] = sprite->x - 64;
+            sprite->data[3] = sprite->y;
+            sprite->data[4] = sprite->y;
+            InitAnimLinearTranslation(sprite);
+        }
+        break;
+    case 1:
+        if (AnimTranslateLinear(sprite))
+        {
+            sprite->callback = DestroyAnimSprite;
+        }
+        break;
+    }
+
+}
+
+static void AnimMoveFeintSwipe(struct Sprite *sprite)
+{
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+    }
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[6] = gBattleAnimArgs[2];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + 64;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y;
+    sprite->data[5] = 0;
+    InitAnimLinearTranslation(sprite);
+    sprite->callback = AnimMoveFeintSwipeStep;
+}
+
+static void AnimMoveFeintZoom(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = RunStoredCallbackWhenAffineAnimEnds;
+}
+
+static void AnimMoveTrumpCardArc(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite))
+    {
+        DestroyAnimSprite(sprite);
+    }
+    else
+    {
+        sprite->y2 = Sin(sprite->data[5], -20);
+        sprite->data[5] -= sprite->data[6];
+    }
+
+}
+
+static void AnimMoveTrumpCard(struct Sprite *sprite)
+{
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+    }
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x - 80;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y;
+    sprite->data[5] = 128;
+    sprite->data[6] = 128 / sprite->data[0];
+    InitAnimLinearTranslation(sprite);
+    sprite->callback = AnimMoveTrumpCardArc;
+}
+
+static void AnimMoveTrumpCardParticleAlive(struct Sprite *sprite)
+{
+    if (sprite->data[0] > 0)
+    {
+        s16 yVelocity = sprite->data[2];
+        s16 xVelocity = sprite->data[1];
+        sprite->y -= yVelocity;
+        sprite->x += xVelocity;
+        if ((sprite->data[0] % 2) == 0)
+        {
+            if (xVelocity > 0)
+                xVelocity--;
+            else if (xVelocity < 0)
+                xVelocity++;
+
+            if (yVelocity > 0)
+                yVelocity--;
+            else if (yVelocity < 0)
+                yVelocity++;
+            sprite->data[1] = xVelocity;
+            sprite->data[2] = yVelocity;
+        }
+        sprite->data[0]--;
+    }
+    else
+    {
+        sprite->callback = DestroyAnimSprite;
+    }
+}
+
+static void AnimMoveTrumpCardParticle(struct Sprite *sprite)
+{
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+    }
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+    StartSpriteAffineAnim(sprite, gBattleAnimArgs[6]);
+    sprite->data[0] = gBattleAnimArgs[3]; //lifespan
+    sprite->data[1] = gBattleAnimArgs[4]; //horizontal velocity, decaying
+    sprite->data[2] = gBattleAnimArgs[5]; //vertical velocity, decaying
+    sprite->callback = AnimMoveTrumpCardParticleAlive;
+}
+
+static void AnimMoveAccupressureTransition(struct Sprite *sprite)
+{
+    switch (sprite->data[5])
+    {
+    case 0:
+        if (AnimTranslateLinear(sprite))
+        {
+            StartSpriteAffineAnim(sprite, 1);
+            sprite->data[5]++;
+        }
+        break;
+    case 1:
+        if (sprite->affineAnimEnded)
+        {
+            DestroyAnimSprite(sprite);
+        }
+        break;
+    }
+}
+
+static void AnimMoveAccupressure(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X);
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+    sprite->data[5] = 0;
+    InitAnimLinearTranslation(sprite);
+    sprite->callback = AnimMoveAccupressureTransition;
+}
+
+static void AnimMoveWringOutCircle(struct Sprite *sprite)
+{
+    sprite->x2 = Cos(sprite->data[3], sprite->data[2]);
+    sprite->y2 = Sin(sprite->data[3], sprite->data[2]);
+    if (sprite->data[1] > 0)
+    {
+        if (sprite->data[3] + sprite->data[0] >= 256)
+        {
+            sprite->data[3] = (sprite->data[0] + sprite->data[3]) % 256;
+            sprite->data[1]--;
+        }
+        else
+        {
+            sprite->data[3] += sprite->data[0];
+        }
+
+    }
+    else if (sprite->data[3] < 64)
+    {
+        //We need to go for an extra 90°
+        sprite->data[3] += sprite->data[0];
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
+}
+
+static void AnimMoveWringOut(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    if (gBattleAnimArgs[5] == TRUE)
+    {
+        sprite->oam.objMode = ST_OAM_OBJ_BLEND;
+    }
+    sprite->data[0] = 256 / gBattleAnimArgs[2]; //step size
+    sprite->data[1] = gBattleAnimArgs[3]; //Number of circle spins
+    sprite->data[2] = gBattleAnimArgs[4]; //radius
+    sprite->data[3] = 64; //current angle 90°
+    sprite->callback = AnimMoveWringOutCircle;
+}
+
+// seed (sprouts a sapling from a seed.)
+// Used by Leech Seed.
+static void AnimLeechSeed(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY, targetX, targetY, duration, waveAmplitude);
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        cmd->targetX = -cmd->targetX;
+
+    sprite->data[0] = cmd->duration;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X) + cmd->targetX;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y) + cmd->targetY;
+    sprite->data[5] = cmd->waveAmplitude;
+    InitAnimArcTranslation(sprite);
+    sprite->callback = AnimLeechSeed_Step;
+}
+
+static void AnimLeechSeed_Step(struct Sprite *sprite)
+{
+    if (TranslateAnimHorizontalArc(sprite))
+    {
+        sprite->invisible = TRUE;
+        sprite->data[0] = 10;
+        sprite->callback = WaitAnimForDuration;
+        StoreSpriteCallbackInData6(sprite, AnimLeechSeedSprouts);
+    }
+}
+
+static void AnimLeechSeedSprouts(struct Sprite *sprite)
+{
+    sprite->invisible = FALSE;
+    StartSpriteAnim(sprite, 1);
+    sprite->data[0] = 60;
+    sprite->callback = WaitAnimForDuration;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+// Moves a spore particle in a halo around the target mon.
+// The sprite's priority is updated to give the effect of going
+// behind the mon's sprite.
+void AnimSporeParticle(struct Sprite *sprite)
+{
+    CMD_ARGS(x, y, waveOffset, duration, blend);
+
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    StartSpriteAnim(sprite, cmd->blend);
+    if (cmd->blend == TRUE)
+        sprite->oam.objMode = ST_OAM_OBJ_BLEND;
+
+    sprite->data[0] = cmd->duration;
+    sprite->data[1] = cmd->waveOffset;
+    sprite->callback = AnimSporeParticle_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimSporeParticle_Step(struct Sprite *sprite)
+{
+    sprite->x2 = Sin(sprite->data[1], 32);
+    sprite->y2 = Cos(sprite->data[1], -3) + ((sprite->data[2] += 24) >> 8);
+    if ((u16)(sprite->data[1] - 0x40) < 0x80)
+    {
+        sprite->oam.priority = GetBattlerSpriteBGPriority(gBattleAnimTarget);
+    }
+    else
+    {
+        u8 priority = GetBattlerSpriteBGPriority(gBattleAnimTarget) + 1;
+        if (priority > 3)
+            priority = 3;
+
+        sprite->oam.priority = priority;
+    }
+
+    sprite->data[1] += 2;
+    sprite->data[1] &= 0xFF;
+    if (--sprite->data[0] == -1)
+        DestroyAnimSprite(sprite);
+}
+
+// In a double battle, Updates the mon sprite background priorities to allow
+// the circling effect controlled by AnimSporeParticle.
+// No args.
+void AnimTask_SporeDoubleBattle(u8 taskId)
+{
+    if (IsContest() || !IsDoubleBattle())
+    {
+        DestroyAnimVisualTask(taskId);
+    }
+    else
+    {
+        if (GetBattlerSpriteBGPriorityRank(gBattleAnimTarget) == 1)
+            SetAnimBgAttribute(2, BG_ANIM_PRIORITY, 3);
+        else
+            SetAnimBgAttribute(1, BG_ANIM_PRIORITY, 1);
+
+        DestroyAnimVisualTask(taskId);
+    }
+}
+
+// Rotates a big flower around the attacking mon, and slowly floats
+// downward.
+void AnimPetalDanceBigFlower(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY, targetY, duration);
+
+    InitSpritePosToAnimAttacker(sprite, FALSE);
+    sprite->data[0] = cmd->duration;
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + cmd->targetY;
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceBigFlower_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceBigFlower_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 32);
+        sprite->y2 += Cos(sprite->data[5], -5);
+        if ((u16)(sprite->data[5] - 0x40) < 0x80)
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimAttacker) - 1;
+        else
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimAttacker) + 1;
+
+        sprite->data[5] = (sprite->data[5] + 5) & 0xFF;
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
+}
+
+// Slowly floats a small flower downard, while swaying from right to left.
+void AnimPetalDanceSmallFlower(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY, targetY, duration);
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    sprite->data[0] = cmd->duration;
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + cmd->targetY;
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceSmallFlower_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceSmallFlower_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 8);
+        if ((u16)(sprite->data[5] - 59) < 5 || (u16)(sprite->data[5] - 187) < 5)
+            sprite->oam.matrixNum ^= ST_OAM_HFLIP;
+
+        sprite->data[5] += 5;
+        sprite->data[5] &= 0xFF;
+    }
+    else
+    {
+       DestroyAnimSprite(sprite);
+    }
+}
+
+// Shoots a leaf upward, then floats it downward while swaying back and forth.
+static void AnimRazorLeafParticle(struct Sprite *sprite)
+{
+    CMD_ARGS(upwardDeltaX, upwardDeltaY, upwardDuration);
+
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->data[0] = cmd->upwardDeltaX;
+    sprite->data[1] = cmd->upwardDeltaY;
+    sprite->data[2] = cmd->upwardDuration;
+    sprite->callback = AnimRazorLeafParticle_Step1;
+}
+
+static void AnimRazorLeafParticle_Step1(struct Sprite *sprite)
+{
+    if (!sprite->data[2])
+    {
+        if (sprite->data[1] & 1)
+        {
+            sprite->data[0] = 0x80;
+            sprite->data[1] = 0;
+            sprite->data[2] = 0;
+        }
+        else
+        {
+            sprite->data[0] = 0;
+            sprite->data[1] = 0;
+            sprite->data[2] = 0;
+        }
+        sprite->callback = AnimRazorLeafParticle_Step2;
+    }
+    else
+    {
+        sprite->data[2]--;
+        sprite->x += sprite->data[0];
+        sprite->y += sprite->data[1];
+    }
+}
+
+static void AnimRazorLeafParticle_Step2(struct Sprite *sprite)
+{
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        sprite->x2 = -Sin(sprite->data[0], 25);
+    else
+        sprite->x2 = Sin(sprite->data[0], 25);
+
+    sprite->data[0] += 2;
+    sprite->data[0] &= 0xFF;
+    sprite->data[1]++;
+    if (!(sprite->data[1] & 1))
+        sprite->y2++;
+
+    if (sprite->data[1] > 80)
+        DestroyAnimSprite(sprite);
+}
+
+static const union AnimCmd sAnim_TeraStarstormBeamRing_0[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_TeraStarstormBeamRing_1[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_TeraStarstormBeamRing[] =
+{
+    sAnim_TeraStarstormBeamRing_0,
+    sAnim_TeraStarstormBeamRing_1,
+};
+
+static const union AffineAnimCmd sAffineAnim_TeraStarstormBeamRing[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 1),
+    AFFINEANIMCMD_FRAME(0x60, 0x60, 0, 1),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd *const sAffineAnims_TeraStarstormBeamRing[] =
+{
+    sAffineAnim_TeraStarstormBeamRing,
+};
+
+const struct SpriteTemplate gTeraStarstormBeamSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_STARSTORM,
+    .paletteTag = ANIM_TAG_STARSTORM,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .callback = AnimTeraStarstormBeam,
+};
+
+//  arg0: start offset x
+//  arg1: start offset y
+//  arg2: end offset x
+//  arg3: end offset y
+//  arg4: duration
+static void AnimTeraStarstormBeam(struct Sprite *sprite)
+{
+    gBattleAnimArgs[0] += 4;
+    gBattleAnimArgs[1] -= 30;
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[3] = 0;
+    sprite->data[4] = -70;
+    InitAnimLinearTranslation(sprite);
+    sprite->callback = AnimTeraStarstormBeam_Step;
+    sprite->affineAnimPaused = TRUE;
+    sprite->callback(sprite);
+
+}
+
+static void AnimTeraStarstormBeam_Step(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite))
+        DestroyAnimSprite(sprite);
+}
+
+const union AffineAnimCmd gTeraStarAffineAnimCmds[] = {
+    AFFINEANIMCMD_FRAME(0, 0, 0, 1),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gTeraStarAffineAnimTable[] = {
+    gTeraStarAffineAnimCmds,
+};
+
+//  arg0: start offset x
+//  arg1: start offset y
+//  arg2: end offset x
+//  arg3: end offset y
+//  arg4: duration
+//  arg5: target partner
+//  arg6: ?????
+const struct SpriteTemplate gTeraStarSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_YELLOW_STAR,
+    .paletteTag = ANIM_TAG_YELLOW_STAR,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .affineAnims = gTeraStarAffineAnimTable,
+    .callback = AnimTeraStarstormStars,
+};
+
+
+void AnimTeraStarstormStars(struct Sprite *sprite)
+{
+    gBattleAnimArgs[0] += 4;
+    gBattleAnimArgs[1] -= 100;
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[1] = sprite->x;
+    sprite->data[3] = sprite->y;
+    if (gBattleAnimArgs[5] == 1)
+    {
+        enum BattlerId targetPartner;
+        if (IsOnPlayerSide(gBattleAnimTarget))
+        {
+            if (gBattleAnimTarget == 0)
+                targetPartner = 2;
+            else
+                targetPartner = 0;
+        }
+        else
+        {
+            if (gBattleAnimTarget == 1)
+                targetPartner = 3;
+            else
+                targetPartner = 1;
+        }
+        sprite->data[2] = GetBattlerSpriteCoord(targetPartner, BATTLER_COORD_X_2) + gBattleAnimArgs[2] ;
+        sprite->data[4] = GetBattlerSpriteCoord(targetPartner, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3];
+    }
+    else
+    {
+        sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2] ;
+        sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3];
+    }
+    InitAnimLinearTranslation(sprite);
+    sprite->callback = AnimTeraStarstormStars_Step;
+    sprite->affineAnimPaused = TRUE;
+    sprite->callback(sprite);
+}
+
+static void AnimTeraStarstormStars_Step(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite))
+        DestroyAnimSprite(sprite);
+    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
+    {
+        StartSpriteAnim(sprite, 1);
+        sprite->affineAnimPaused = FALSE;
+    }
+}
+
+// Animates a sprite that moves linearly from one location to another, with a
+// single-cycle sine wave added to the y position along the way.
+// Used by Razor Leaf and Magical Leaf.
+void AnimTranslateLinearSingleSineWave(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY, targetX, targetY, duration, waveAmplitude, targetBoth);
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        cmd->targetX = -cmd->targetX;
+
+    sprite->data[0] = cmd->duration;
+    if (!cmd->targetBoth)
+    {
+        sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->targetX;
+        sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->targetY;
+    }
+    else
+    {
+        SetAverageBattlerPositions(gBattleAnimTarget, TRUE, &sprite->data[2], &sprite->data[4]);
+        sprite->data[2] += cmd->targetX;
+        sprite->data[4] += cmd->targetY;
+    }
+
+    sprite->data[5] = cmd->waveAmplitude;
+    InitAnimArcTranslation(sprite);
+    if (IsBattlerAlly(gBattleAnimAttacker, gBattleAnimTarget))
+        sprite->data[0] = 1;
+    else
+        sprite->data[0] = 0;
+
+    sprite->callback = AnimTranslateLinearSingleSineWave_Step;
+}
+
+static void AnimTranslateLinearSingleSineWave_Step(struct Sprite *sprite)
+{
+    bool8 destroy = FALSE;
+    s16 a = sprite->data[0];
+    s16 b = sprite->data[7];
+    s16 r0;
+
+    sprite->data[0] = 1;
+    TranslateAnimHorizontalArc(sprite);
+    r0 = sprite->data[7];
+    sprite->data[0] = a;
+    if (b > 200 && r0 < 56 && sprite->oam.affineParam == 0)
+        sprite->oam.affineParam++;
+
+    if (sprite->oam.affineParam && sprite->data[0])
+    {
+        sprite->invisible ^= 1;
+        sprite->oam.affineParam++;
+        if (sprite->oam.affineParam == 30)
+            destroy = TRUE;
+    }
+
+    if (sprite->x + sprite->x2 > DISPLAY_WIDTH + 16
+     || sprite->x + sprite->x2 < -16
+     || sprite->y + sprite->y2 > DISPLAY_HEIGHT
+     || sprite->y + sprite->y2 < -16)
+        destroy = TRUE;
+
+    if (destroy)
+        DestroyAnimSprite(sprite);
+}
+
+// Animates particles in the Twister move animation.
+void AnimMoveTwisterParticle(struct Sprite *sprite)
+{
+    CMD_ARGS(duration, distanceY, wavePeriod, waveAmplitude, speedUpOnFrame);
+
+    if (IsDoubleBattle() == TRUE)
+        SetAverageBattlerPositions(gBattleAnimTarget, TRUE, &sprite->x, &sprite->y);
+
+    sprite->y += 32;
+    sprite->data[0] = cmd->duration;
+    sprite->data[1] = cmd->distanceY;
+    sprite->data[2] = cmd->wavePeriod;
+    sprite->data[3] = cmd->waveAmplitude;
+    sprite->data[4] = cmd->speedUpOnFrame;
+    sprite->callback = AnimMoveTwisterParticle_Step;
+}
+
+static void AnimMoveTwisterParticle_Step(struct Sprite *sprite)
+{
+    if (sprite->data[1] == 0xFF)
+    {
+        sprite->y -= 2;
+    }
+    else if (sprite->data[1] > 0)
+    {
+        sprite->y -= 2;
+        sprite->data[1] -= 2;
+    }
+
+    sprite->data[5] += sprite->data[2];
+    if (sprite->data[0] < sprite->data[4])
+        sprite->data[5] += sprite->data[2];
+
+    sprite->data[5] &= 0xFF;
+    sprite->x2 = Cos(sprite->data[5], sprite->data[3]);
+    sprite->y2 = Sin(sprite->data[5], 5);
+    if (sprite->data[5] < 0x80)
+        sprite->oam.priority = GetBattlerSpriteBGPriority(gBattleAnimTarget) - 1;
+    else
+        sprite->oam.priority = GetBattlerSpriteBGPriority(gBattleAnimTarget) + 1;
+
+    if (--sprite->data[0] == 0)
+        DestroyAnimSprite(sprite);
+}
+
+// Squeezes a constricting "rope" several times via affine animations.
+static void AnimConstrictBinding(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY, affineAnimation, squeezes);
+
+    InitSpritePosToAnimTarget(sprite, FALSE);
+    sprite->affineAnimPaused = 1;
+    StartSpriteAffineAnim(sprite, cmd->affineAnimation);
+    sprite->data[6] = cmd->affineAnimation;
+    sprite->data[7] = cmd->squeezes;
+    sprite->callback = AnimConstrictBinding_Step1;
+}
+
+static void AnimConstrictBinding_Step1(struct Sprite *sprite)
+{
+    u8 UNUSED spriteId;
+
+    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
+    {
+        sprite->affineAnimPaused = 0;
+        spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+        sprite->data[0] = 0x100;
+        sprite->callback = AnimConstrictBinding_Step2;
+    }
+}
+
+static void AnimConstrictBinding_Step2(struct Sprite *sprite)
+{
+    u8 UNUSED spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+    if (!sprite->data[2])
+        sprite->data[0] += 11;
+    else
+        sprite->data[0] -= 11;
+
+    if (++sprite->data[1] == 6)
+    {
+        sprite->data[1] = 0;
+        sprite->data[2] ^= 1;
+    }
+
+    if (sprite->affineAnimEnded)
+    {
+        if (--sprite->data[7] > 0)
+            StartSpriteAffineAnim(sprite, sprite->data[6]);
+        else
+            DestroyAnimSprite(sprite);
+    }
+}
+
+// unk1 may be some sort of duration?
+void AnimTask_ShrinkTargetCopy(u8 taskId)
+{
+    CMD_ARGS(unk0, unk1);
+
+    u8 spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+    if (gSprites[spriteId].invisible)
+    {
+        DestroyAnimVisualTask(taskId);
+    }
+    else
+    {
+        PrepareBattlerSpriteForRotScale(spriteId, ST_OAM_OBJ_BLEND);
+        gTasks[taskId].data[14] = gSprites[spriteId].oam.priority;
+        gSprites[spriteId].oam.priority = GetBattlerSpriteBGPriority(gBattleAnimTarget);
+        spriteId = GetAnimBattlerSpriteId(ANIM_DEF_PARTNER);
+        gTasks[taskId].data[15] = gSprites[spriteId].oam.priority;
+        gSprites[spriteId].oam.priority = GetBattlerSpriteBGPriority(BATTLE_PARTNER(gBattleAnimTarget));
+        gTasks[taskId].data[0] = cmd->unk0;
+        gTasks[taskId].data[1] = cmd->unk1;
+        gTasks[taskId].data[11] = 0x100;
+        gTasks[taskId].func = AnimTask_DuplicateAndShrinkToPos_Step1;
+    }
+}
+
+static void AnimTask_DuplicateAndShrinkToPos_Step1(u8 taskId)
+{
+    u8 spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+    gTasks[taskId].data[10] += gTasks[taskId].data[0];
+    gSprites[spriteId].x2 = gTasks[taskId].data[10] >> 8;
+    if (!IsOnPlayerSide(gBattleAnimTarget))
+        gSprites[spriteId].x2 = -gSprites[spriteId].x2;
+
+    gTasks[taskId].data[11] += 16;
+    SetSpriteRotScale(spriteId, gTasks[taskId].data[11], gTasks[taskId].data[11], 0);
+    SetBattlerSpriteYOffsetFromYScale(spriteId);
+    if (--gTasks[taskId].data[1] == 0)
+    {
+        gTasks[taskId].data[0] = 0;
+        gTasks[taskId].func = AnimTask_DuplicateAndShrinkToPos_Step2;
+    }
+}
+
+static void AnimTask_DuplicateAndShrinkToPos_Step2(u8 taskId)
+{
+    // TODO: gBattleAnimArgs[ARG_RET_ID]?
+    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
+    {
+        if (gTasks[taskId].data[0] == 0)
+        {
+            u8 spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+            ResetSpriteRotScale(spriteId);
+            gSprites[spriteId].x2 = 0;
+            gSprites[spriteId].y2 = 0;
+            gSprites[spriteId].oam.priority = gTasks[taskId].data[14];
+            spriteId = GetAnimBattlerSpriteId(ANIM_DEF_PARTNER);
+            gSprites[spriteId].oam.priority = gTasks[taskId].data[15];
+            gTasks[taskId].data[0]++;
+            return;
+        }
+    }
+    else
+    {
+        if (gTasks[taskId].data[0] == 0)
+            return;
+    }
+
+    gTasks[taskId].data[0]++;
+    if (gTasks[taskId].data[0] == 3)
+        DestroyAnimVisualTask(taskId);
+}
+
+// Moves an orb from the target mon to the attacking mon.
+void AnimMimicOrb(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY);
+
+    switch (sprite->data[0])
+    {
+    case 0:
+        if (IsOnPlayerSide(gBattleAnimTarget))
+            cmd->initialX *= -1;
+
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X) + cmd->initialX;
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y) + cmd->initialY;
+        sprite->invisible = TRUE;
+        sprite->data[0]++;
+        break;
+    case 1:
+        sprite->invisible = FALSE;
+        if (sprite->affineAnimEnded)
+        {
+            ChangeSpriteAffineAnim(sprite, 1);
+            sprite->data[0] = 25;
+            sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+            sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+            sprite->callback = InitAndRunAnimFastLinearTranslation;
+            StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+            break;
+        }
+    }
+}
+
+// Animates a root that flickers away after some time.
+static void AnimIngrainRoot(struct Sprite *sprite)
+{
+    CMD_ARGS(offsetX, offsetY, subpriorityM30, animation, duration);
+
+    if (!sprite->data[0])
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y);
+        sprite->x2 = cmd->offsetX;
+        sprite->y2 = cmd->offsetY;
+        sprite->subpriority = cmd->subpriorityM30 + 30;
+        StartSpriteAnim(sprite, cmd->animation);
+        sprite->data[2] = cmd->duration;
+        sprite->data[0]++;
+        if (sprite->y + sprite->y2 > 120)
+            sprite->y += sprite->y2 + sprite->y - 120;
+    }
+    sprite->callback = AnimRootFlickerOut;
+}
+
+// Places a root on the path to the target mon that flickers away after some time.
+static void AnimFrenzyPlantRoot(struct Sprite *sprite)
+{
+    CMD_ARGS(interpolatePercent, offsetX, offsetY, subpriorityM30, animation, duration);
+
+    s16 attackerX = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+    s16 attackerY = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+    s16 targetX = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    s16 targetY = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+
+    targetX -= attackerX;
+    targetY -= attackerY;
+    sprite->x = attackerX + targetX * cmd->interpolatePercent / 100;
+    sprite->y = attackerY + targetY * cmd->interpolatePercent / 100;
+    sprite->x2 = cmd->offsetX;
+    sprite->y2 = cmd->offsetY;
+    sprite->subpriority = cmd->subpriorityM30 + 30;
+    StartSpriteAnim(sprite, cmd->animation);
+    sprite->data[2] = cmd->duration;
+    sprite->callback = AnimRootFlickerOut;
+}
+
+static void AnimRootFlickerOut(struct Sprite *sprite)
+{
+    if (++sprite->data[0] > (sprite->data[2] - 10))
+        sprite->invisible = sprite->data[0] % 2;
+
+    if (sprite->data[0] > sprite->data[2])
+        DestroyAnimSprite(sprite);
+}
+
+// Moves an orb in a fast wavy path.
+static void AnimIngrainOrb(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY, velocityX, waveAmplitude, duration);
+
+    if (!sprite->data[0])
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + cmd->initialX;
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y) + cmd->initialY;
+        sprite->data[1] = cmd->velocityX;
+        sprite->data[2] = cmd->waveAmplitude;
+        sprite->data[3] = cmd->duration;
+    }
+
+    sprite->data[0]++;
+    sprite->x2 = sprite->data[1] * sprite->data[0];
+    sprite->y2 = Sin((sprite->data[0] * 20) & 0xFF, sprite->data[2]);
+    if (sprite->data[0] > sprite->data[3])
+        DestroyAnimSprite(sprite);
+}
+
+static void InitItemBagData(struct Sprite *sprite, s16 c)
+{
+    int a = (sprite->x << 8) | sprite->y;
+    int b = (sprite->data[6] << 8) | sprite->data[7];
+    c <<= 8;
+    sprite->data[5] = a;
+    sprite->data[6] = b;
+    sprite->data[7] = c;
+}
+
+bool8 moveAlongLinearPath(struct Sprite *sprite)
+{
+    u16 xStartPos = (u8)(sprite->data[5] >> 8);
+    u16 yStartPos = (u8)sprite->data[5];
+    s32 xEndPos = (u8)(sprite->data[6] >> 8);
+    s32 yEndPos = (u8)sprite->data[6];
+    s16 totalTime = sprite->data[7] >> 8;
+    s16 currentTime = sprite->data[7] & 0xFF;
+    s16 yEndPos_2;
+    s16 r0;
+    s32 var1;
+    s32 vaxEndPos;
+
+    if (xEndPos == 0)
+        xEndPos = -32;
+    else if (xEndPos == 255)
+        xEndPos = DISPLAY_WIDTH + 32;
+
+    yEndPos_2 = yEndPos - yStartPos;
+    r0 = xEndPos - xStartPos;
+    var1 = r0 * currentTime / totalTime;
+    vaxEndPos = yEndPos_2 * currentTime / totalTime;
+    sprite->x = var1 + xStartPos;
+    sprite->y = vaxEndPos + yStartPos;
+    if (++currentTime == totalTime)
+        return TRUE;
+
+    sprite->data[7] = (totalTime << 8) | currentTime;
+    return FALSE;
+}
+
+static void AnimItemSteal_Step2(struct Sprite *sprite)
+{
+    if (sprite->data[0] == 10)
+        StartSpriteAffineAnim(sprite, 1);
+
+    sprite->data[0]++;
+    if (sprite->data[0] > 50)
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimItemSteal_Step1(struct Sprite *sprite)
+{
+    sprite->data[0] += sprite->data[3] * 128 / sprite->data[4];
+    if (sprite->data[0] >= 128)
+    {
+        sprite->data[1]++;
+        sprite->data[0] = 0;
+    }
+
+    sprite->y2 = Sin(sprite->data[0] + 128, 30 - sprite->data[1] * 8);
+    if (moveAlongLinearPath(sprite))
+    {
+        sprite->y2 = 0;
+        sprite->data[0] = 0;
+        sprite->callback = AnimItemSteal_Step2;
+    }
+}
+
+static void AnimPresent(struct Sprite *sprite)
+{
+    // Arguments are unused
+    //CMD_ARGS(initialX, initialY, unk2, unk3, unk4);
+
+    s16 targetX;
+    s16 targetY;
+    InitSpritePosToAnimAttacker(sprite, FALSE);
+    targetX = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X);
+    targetY = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget)
+    {
+        sprite->data[6] = targetX;
+        sprite->data[7] = targetY + 10;
+        InitItemBagData(sprite, 60);
+        sprite->data[3] = 1;
+    }
+    else
+    {
+        sprite->data[6] = targetX;
+        sprite->data[7] = targetY + 10;
+        InitItemBagData(sprite, 60);
+        sprite->data[3] = 3;
+    }
+
+    sprite->data[4] = 60;
+    sprite->callback = AnimItemSteal_Step1;
+}
+
+static void AnimKnockOffOpponentsItem(struct Sprite *sprite)
+{
+    sprite->data[0] += ((sprite->data[3] * 128) / sprite->data[4]);
+    if (sprite->data[0] > 0x7F)
+    {
+        sprite->data[1]++;
+        sprite->data[0] = 0;
+    }
+
+    sprite->y2 = Sin(sprite->data[0] + 0x80, 30 - sprite->data[1] * 8);
+    if (moveAlongLinearPath(sprite))
+    {
+        sprite->y2 = 0;
+        sprite->data[0] = 0;
+        DestroyAnimSprite(sprite);
+    }
+}
+
+static void AnimKnockOffItem(struct Sprite *sprite)
+{
+    s16 targetY = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+    if (IsOnPlayerSide(gBattleAnimTarget))
+    {
+        sprite->data[6] = 0;
+        sprite->data[7] = targetY + 10;
+        InitItemBagData(sprite, 40);
+        sprite->data[3] = 3;
+        sprite->data[4] = 60;
+        sprite->callback = AnimItemSteal_Step1;
+    }
+    else
+    {
+        sprite->data[6] = 255;
+        sprite->data[7] = targetY + 10;
+        if (IsContest())
+            sprite->data[6] = 0;
+
+        InitItemBagData(sprite, 40);
+        sprite->data[3] = 3;
+        sprite->data[4] = 60;
+        sprite->callback = AnimKnockOffOpponentsItem;
+    }
+}
+
+// Animates a heal particle upward.
+static void AnimPresentHealParticle(struct Sprite *sprite)
+{
+    CMD_ARGS(initialX, initialY, velocityY, unused3);
+
+    if (!sprite->data[0])
+    {
+        InitSpritePosToAnimTarget(sprite, FALSE);
+        sprite->data[1] = cmd->velocityY;
+    }
+
+    sprite->data[0]++;
+    sprite->y2 = sprite->data[1] * sprite->data[0];
+    if (sprite->animEnded)
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimItemSteal(struct Sprite *sprite)
+{
+    // Arguments are unused
+    //CMD_ARGS(initialX, initialY);
+
+    s16 attackerX;
+    s16 attackerY;
+    InitSpritePosToAnimTarget(sprite, FALSE);
+    attackerX = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X);
+    attackerY = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y);
+    if (BATTLE_PARTNER(gBattleAnimTarget) == gBattleAnimAttacker)
+    {
+        sprite->data[6] = attackerX;
+        sprite->data[7] = attackerY + 10;
+        InitItemBagData(sprite, 60);
+        sprite->data[3] = 1;
+    }
+    else
+    {
+        sprite->data[6] = attackerX;
+        sprite->data[7] = attackerY + 10;
+        InitItemBagData(sprite, 60);
+        sprite->data[3] = 3;
+    }
+
+    sprite->data[4] = 60;
+    sprite->callback = AnimItemSteal_Step3;
+}
+
+static void AnimItemSteal_Step3(struct Sprite *sprite)
+{
+    sprite->data[0] += ((sprite->data[3] * 128) / sprite->data[4]);
+    if (sprite->data[0] > 127)
+    {
+        sprite->data[1]++;
+        sprite->data[0] = 0;
+    }
+
+    sprite->y2 = Sin(sprite->data[0] + 0x80, 30 - sprite->data[1] * 8);
+    if (sprite->y2 == 0)
+        PlaySE12WithPanning(SE_M_BUBBLE2, BattleAnimAdjustPanning(SOUND_PAN_TARGET));
+
+    if (moveAlongLinearPath(sprite))
+    {
+        sprite->y2 = 0;
+        sprite->data[0] = 0;
+        sprite->callback = AnimItemSteal_Step2;
+        PlaySE12WithPanning(SE_M_BUBBLE2, BattleAnimAdjustPanning(SOUND_PAN_ATTACKER));
+    }
+}
+
+// Moves a bag in a circular motion.
+static void AnimTrickBag(struct Sprite *sprite)
+{
+    CMD_ARGS(initialY, waveOffset);
+
+    int a;
+    int b;
+
+    if (!sprite->data[0])
+    {
+        if (!IsContest())
+        {
+            sprite->data[1] = cmd->waveOffset;
+            sprite->x = 120;
+        }
+        else
+        {
+            a = cmd->waveOffset - 32;
+            if (a < 0)
+                b = cmd->waveOffset + 0xDF;
+            else
+                b = a;
+
+            sprite->data[1] = a - ((b >> 8) << 8);
+            sprite->x = 70;
+        }
+
+        sprite->y = cmd->initialY;
+        sprite->data[2] = cmd->initialY;
+        sprite->data[4] = 20;
+        sprite->x2 = Cos(sprite->data[1], 60);
+        sprite->y2 = Sin(sprite->data[1], 20);
+        sprite->callback = AnimTrickBag_Step1;
+        if (sprite->data[1] > 0 && sprite->data[1] < 192)
+            sprite->subpriority = 31;
+        else
+            sprite->subpriority = 29;
+    }
+}
+
+static void AnimTrickBag_Step1(struct Sprite *sprite)
+{
+    switch (sprite->data[3])
+    {
+    case 0:
+        if (sprite->data[2] > 78)
+        {
+            sprite->data[3] = 1;
+            StartSpriteAffineAnim(sprite, 1);
+            break;
+        }
+        else
+        {
+            sprite->data[2] += sprite->data[4] / 10;
+            sprite->data[4] += 3;
+            sprite->y = sprite->data[2];
+            break;
+        }
+        break;
+    case 1:
+        if (sprite->data[3] && sprite->affineAnimEnded)
+        {
+            sprite->data[0] = 0;
+            sprite->data[2] = 0;
+            sprite->callback = AnimTrickBag_Step2;
+        }
+        break;
+    }
+}
+
+static void AnimTrickBag_Step2(struct Sprite *sprite)
+{
+    if (sprite->data[2] == gTrickBagCoordinates[sprite->data[0]][1])
+    {
+        if (gTrickBagCoordinates[sprite->data[0]][2] == 127)
+        {
+            sprite->data[0] = 0;
+            sprite->callback = AnimTrickBag_Step3;
+        }
+
+        sprite->data[2] = 0;
+        sprite->data[0]++;
+    }
+    else
+    {
+        sprite->data[2]++;
+        sprite->data[1] = (gTrickBagCoordinates[sprite->data[0]][0] * gTrickBagCoordinates[sprite->data[0]][2] + sprite->data[1]) & 0xFF;
+        if (!IsContest())
+        {
+            if ((u16)(sprite->data[1] - 1) < 191)
+                sprite->subpriority = 31;
+            else
+                sprite->subpriority = 29;
+        }
+
+        sprite->x2 = Cos(sprite->data[1], 60);
+        sprite->y2 = Sin(sprite->data[1], 20);
+    }
+}
+
+static void AnimTrickBag_Step3(struct Sprite *sprite)
+{
+    if (sprite->data[0] > 20)
+        DestroyAnimSprite(sprite);
+
+    sprite->invisible = sprite->data[0] % 2;
+    sprite->data[0]++;
+}
+
+void AnimTask_LeafBlade(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+
+    task->data[4] = GetBattlerSpriteSubpriority(gBattleAnimTarget) - 1;
+    task->data[6] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    task->data[7] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    task->data[10] = GetBattlerSpriteCoordAttr(gBattleAnimTarget, BATTLER_COORD_ATTR_WIDTH);
+    task->data[11] = GetBattlerSpriteCoordAttr(gBattleAnimTarget, BATTLER_COORD_ATTR_HEIGHT);
+    task->data[5] = (!IsOnPlayerSide(gBattleAnimTarget)) ? 1 : -1;
+    task->data[9] = 56 - (task->data[5] * 64);
+    task->data[8] = task->data[7] - task->data[9] + task->data[6];
+    task->data[2] = CreateSprite(&gLeafBladeSpriteTemplate, task->data[8], task->data[9], task->data[4]);
+    if (task->data[2] == MAX_SPRITES)
+        DestroyAnimVisualTask(taskId);
+
+    gSprites[task->data[2]].data[0] = 10;
+    gSprites[task->data[2]].data[1] = task->data[8];
+    gSprites[task->data[2]].data[2] = task->data[6] - (task->data[10] / 2 + 10) * task->data[5];
+    gSprites[task->data[2]].data[3] = task->data[9];
+    gSprites[task->data[2]].data[4] = task->data[7] + (task->data[11] / 2 + 10) * task->data[5];
+    gSprites[task->data[2]].data[5] = LeafBladeGetPosFactor(&gSprites[task->data[2]]);
+    InitAnimArcTranslation(&gSprites[task->data[2]]);
+    task->func = AnimTask_LeafBlade_Step;
+}
+
+static void AnimTask_LeafBlade_Step(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+    struct Sprite *sprite = &gSprites[task->data[2]];
+    int a = task->data[0];
+    switch (a)
+    {
+    case 4:
+        AnimTask_LeafBlade_Step2(task, taskId);
+        if (TranslateAnimHorizontalArc(sprite))
+        {
+            task->data[15] = 5;
+            task->data[0] = 0xFF;
+        }
+        break;
+    case 8:
+        AnimTask_LeafBlade_Step2(task, taskId);
+        if (TranslateAnimHorizontalArc(sprite))
+        {
+            task->data[15] = 9;
+            task->data[0] = 0xFF;
+        }
+        break;
+    case 0:
+        AnimTask_LeafBlade_Step2(task, taskId);
+        if (TranslateAnimHorizontalArc(sprite))
+        {
+            task->data[15] = 1;
+            task->data[0] = 0xFF;
+        }
+        break;
+    case 1:
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->x2 = 0;
+        sprite->y2 = 0;
+        sprite->data[0] = 10;
+        sprite->data[1] = sprite->x;
+        sprite->data[2] = task->data[6];
+        sprite->data[3] = sprite->y;
+        sprite->data[4] = task->data[7];
+        sprite->data[5] = LeafBladeGetPosFactor(sprite);
+        task->data[4] += 2;
+        task->data[3] = a;
+        sprite->subpriority = task->data[4];
+        StartSpriteAnim(sprite, task->data[3]);
+        InitAnimArcTranslation(sprite);
+        task->data[0]++;
+        break;
+    case 2:
+        AnimTask_LeafBlade_Step2(task, taskId);
+        if (TranslateAnimHorizontalArc(sprite))
+        {
+            task->data[15] = 3;
+            task->data[0] = 0xFF;
+        }
+        break;
+    case 3:
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->x2 = 0;
+        sprite->y2 = 0;
+        sprite->data[0] = 10;
+        sprite->data[1] = sprite->x;
+        sprite->data[2] = task->data[6] - ((task->data[10] / 2) + 10) * task->data[5];
+        sprite->data[3] = sprite->y;
+        sprite->data[4] = task->data[7] - ((task->data[11] / 2) + 10) * task->data[5];
+        sprite->data[5] = LeafBladeGetPosFactor(sprite);
+        task->data[3] = 2;
+        sprite->subpriority = task->data[4];
+        StartSpriteAnim(sprite, task->data[3]);
+        InitAnimArcTranslation(sprite);
+        task->data[0]++;
+        break;
+    case 5:
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->x2 = 0;
+        sprite->y2 = 0;
+        sprite->data[0] = 10;
+        sprite->data[1] = sprite->x;
+        sprite->data[2] = task->data[6] + ((task->data[10] / 2) + 10) * task->data[5];
+        sprite->data[3] = sprite->y;
+        sprite->data[4] = task->data[7] + ((task->data[11] / 2) + 10) * task->data[5];
+        sprite->data[5] = LeafBladeGetPosFactor(sprite);
+        task->data[4] -= 2;
+        task->data[3] = 3;
+        sprite->subpriority = task->data[4];
+        StartSpriteAnim(sprite, task->data[3]);
+        InitAnimArcTranslation(sprite);
+        task->data[0]++;
+        break;
+    case 6:
+        AnimTask_LeafBlade_Step2(task, taskId);
+        if (TranslateAnimHorizontalArc(sprite))
+        {
+            task->data[15] = 7;
+            task->data[0] = 0xFF;
+        }
+        break;
+    case 7:
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->x2 = 0;
+        sprite->y2 = 0;
+        sprite->data[0] = 10;
+        sprite->data[1] = sprite->x;
+        sprite->data[2] = task->data[6];
+        sprite->data[3] = sprite->y;
+        sprite->data[4] = task->data[7];
+        sprite->data[5] = LeafBladeGetPosFactor(sprite);
+        task->data[4] += 2;
+        task->data[3] = 4;
+        sprite->subpriority = task->data[4];
+        StartSpriteAnim(sprite, task->data[3]);
+        InitAnimArcTranslation(sprite);
+        task->data[0]++;
+        break;
+    case 9:
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->x2 = 0;
+        sprite->y2 = 0;
+        sprite->data[0] = 10;
+        sprite->data[1] = sprite->x;
+        sprite->data[2] = task->data[6] - ((task->data[10] / 2) + 10) * task->data[5];
+        sprite->data[3] = sprite->y;
+        sprite->data[4] = task->data[7] + ((task->data[11] / 2) + 10) * task->data[5];
+        sprite->data[5] = LeafBladeGetPosFactor(sprite);
+        task->data[3] = 5;
+        sprite->subpriority = task->data[4];
+        StartSpriteAnim(sprite, task->data[3]);
+        InitAnimArcTranslation(sprite);
+        task->data[0]++;
+        break;
+    case 10:
+        AnimTask_LeafBlade_Step2(task, taskId);
+        if (TranslateAnimHorizontalArc(sprite))
+        {
+            task->data[15] = 11;
+            task->data[0] = 0xFF;
+        }
+        break;
+    case 11:
+    {
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->x2 = 0;
+        sprite->y2 = 0;
+        sprite->data[0] = 10;
+        sprite->data[1] = sprite->x;
+        sprite->data[2] = task->data[8];
+        sprite->data[3] = sprite->y;
+        sprite->data[4] = task->data[9];
+        sprite->data[5] = LeafBladeGetPosFactor(sprite);
+        task->data[4] -= 2;
+        task->data[3] = 6;
+        sprite->subpriority = task->data[4];
+        StartSpriteAnim(sprite, task->data[3]);
+        InitAnimArcTranslation(sprite);
+        task->data[0]++;
+        break;
+    }
+    case 12:
+        AnimTask_LeafBlade_Step2(task, taskId);
+        if (TranslateAnimHorizontalArc(sprite))
+        {
+            DestroySprite(sprite);
+            task->data[0]++;
+        }
+        break;
+    case 13:
+        if (task->data[12] == 0)
+            DestroyAnimVisualTask(taskId);
+        break;
+    case 0xFF:
+        if (++task->data[1] > 5)
+        {
+            task->data[1] = 0;
+            task->data[0] = task->data[15];
+        }
+        break;
+    }
+}
+
+static s16 LeafBladeGetPosFactor(struct Sprite *sprite)
+{
+    s16 var = 8;
+    if (sprite->data[4] < sprite->y)
+        var = -var;
+
+    return var;
+}
+
+static void AnimTask_LeafBlade_Step2(struct Task *task, u8 taskId)
+{
+    task->data[14]++;
+    if (task->data[14] > 0)
+    {
+        u8 spriteId;
+        s16 spriteX;
+        s16 spriteY;
+        task->data[14] = 0;
+        spriteX = gSprites[task->data[2]].x + gSprites[task->data[2]].x2;
+        spriteY = gSprites[task->data[2]].y + gSprites[task->data[2]].y2;
+        spriteId = CreateSprite(&gLeafBladeSpriteTemplate, spriteX, spriteY, task->data[4]);
+        if (spriteId != MAX_SPRITES)
+        {
+            gSprites[spriteId].data[6] = taskId;
+            gSprites[spriteId].data[7] = 12;
+            gTasks[taskId].data[12]++;
+            gSprites[spriteId].data[0] = task->data[13] & 1;
+            gTasks[taskId].data[13]++;
+            StartSpriteAnim(&gSprites[spriteId], task->data[3]);
+            gSprites[spriteId].subpriority = task->data[4];
+            gSprites[spriteId].callback = AnimTask_LeafBlade_Step2_Callback;
+        }
+    }
+}
+
+static void AnimTask_LeafBlade_Step2_Callback(struct Sprite *sprite)
+{
+    sprite->data[0]++;
+    if (sprite->data[0] > 1)
+    {
+        sprite->data[0] = 0;
+        sprite->invisible ^= 1;
+        sprite->data[1]++;
+        if (sprite->data[1] > 8)
+        {
+            gTasks[sprite->data[6]].data[sprite->data[7]]--;
+            DestroySprite(sprite);
+        }
+    }
+}
+
+static void AnimFlyingParticle(struct Sprite *sprite)
+{
+    // unk6 chooses an anchor?
+    // unk3 is probably some sort of y offset relative to the center of
+    // the screen?
+    // unk5 is some kind of mode. it affects priority and y.
+    CMD_ARGS(unk0, unk1, unk2, unk3, unk4, unk5, unk6);
+
+    enum BattlerId battler;
+    if (!cmd->unk6)
+        battler = gBattleAnimAttacker;
+    else
+        battler = gBattleAnimTarget;
+
+    if (!IsOnPlayerSide(battler))
+    {
+        sprite->data[4] = 0;
+        sprite->data[2] = cmd->unk3;
+        sprite->x = -16;
+    }
+    else
+    {
+        sprite->data[4] = 1;
+        sprite->data[2] = -cmd->unk3;
+        sprite->x = DISPLAY_WIDTH + 16;
+    }
+
+    sprite->data[1] = cmd->unk1;
+    sprite->data[0] = cmd->unk2;
+    sprite->data[3] = cmd->unk4;
+    switch (cmd->unk5)
+    {
+    case 0:
+        sprite->y = cmd->unk0;
+        sprite->oam.priority = GetBattlerSpriteBGPriority(battler);
+        break;
+    case 1:
+        sprite->y = cmd->unk0;
+        sprite->oam.priority = GetBattlerSpriteBGPriority(battler) + 1;
+        break;
+    case 2:
+        sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET) + cmd->unk0;
+        sprite->oam.priority = GetBattlerSpriteBGPriority(battler);
+        break;
+    case 3:
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->unk0;
+        GetAnimBattlerSpriteId(ANIM_TARGET);
+        sprite->oam.priority = GetBattlerSpriteBGPriority(battler) + 1;
+        break;
+    }
+
+    sprite->callback = AnimFlyingParticle_Step;
+}
+
+static void AnimFlyingParticle_Step(struct Sprite *sprite)
+{
+    int a = sprite->data[7];
+    sprite->data[7]++;
+    sprite->y2 = (sprite->data[1] * gSineTable[sprite->data[0]]) >> 8;
+    sprite->x2 = sprite->data[2] * a;
+    sprite->data[0] = (sprite->data[3] * a) & 0xFF;
+    if (!sprite->data[4])
+    {
+        if (sprite->x2 + sprite->x < DISPLAY_WIDTH + 8)
+            return;
+    }
+    else
+    {
+        if (sprite->x2 + sprite->x > -16)
+            return;
+    }
+
+    DestroySpriteAndMatrix(sprite);
+}
+
+void AnimTask_CycleMagicalLeafPal(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+    switch (task->data[0])
+    {
+    case 0:
+        task->data[8] = OBJ_PLTT_ID(IndexOfSpritePaletteTag(ANIM_TAG_LEAF));
+        task->data[12] = OBJ_PLTT_ID(IndexOfSpritePaletteTag(ANIM_TAG_RAZOR_LEAF));
+        task->data[0]++;
+        break;
+    case 1:
+        if (++task->data[9] >= 0)
+        {
+            task->data[9] = 0;
+            BlendPalette(task->data[8], 16, task->data[10], gMagicalLeafBlendColors[task->data[11]]);
+            BlendPalette(task->data[12], 16, task->data[10], gMagicalLeafBlendColors[task->data[11]]);
+            if (++task->data[10] == 17)
+            {
+                task->data[10] = 0;
+                if (++task->data[11] == 7)
+                    task->data[11] = 0;
+            }
+        }
+        break;
+    }
+
+    // TODO: gBattleAnimArgs[ARG_RET_ID]?
+    if (gBattleAnimArgs[7] == -1)
+        DestroyAnimVisualTask(taskId);
+}
+
+void AnimNeedleArmSpike(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3, unk4);
+
+    s16 a;
+    s16 b;
+    u16 c;
+    u16 x;
+    u16 y;
+
+    if (cmd->unk4 == 0)
+    {
+        DestroyAnimSprite(sprite);
+    }
+    else
+    {
+        if (cmd->unk0 == 0)
+        {
+            if (GetMoveTarget(gAnimMoveIndex) == TARGET_BOTH)
+            {
+                SetAverageBattlerPositions(gBattleAnimAttacker, TRUE, &a, &b);
+            }
+            else
+            {
+                a = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+                b = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+            }
+        }
+        else
+        {
+            if (GetMoveTarget(gAnimMoveIndex) == TARGET_BOTH)
+            {
+                SetAverageBattlerPositions(gBattleAnimTarget, TRUE, &a, &b);
+            }
+            else
+            {
+                a = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+                b = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+            }
+        }
+
+        sprite->data[0] = cmd->unk4;
+        if (cmd->unk1 == 0)
+        {
+            sprite->x = cmd->unk2 + a;
+            sprite->y = cmd->unk3 + b;
+            sprite->data[5] = a;
+            sprite->data[6] = b;
+        }
+        else
+        {
+            sprite->x = a;
+            sprite->y = b;
+            sprite->data[5] = cmd->unk2 + a;
+            sprite->data[6] = cmd->unk3 + b;
+        }
+
+        x = sprite->x;
+        sprite->data[1] = x * 16;
+        y = sprite->y;
+        sprite->data[2] = y * 16;
+        sprite->data[3] = (sprite->data[5] - sprite->x) * 16 / cmd->unk4;
+        sprite->data[4] = (sprite->data[6] - sprite->y) * 16 / cmd->unk4;
+        c = ArcTan2Neg(sprite->data[5] - x, sprite->data[6] - y);
+        if (IsContest())
+            c -= 0x8000;
+
+        TrySetSpriteRotScale(sprite, FALSE, 0x100, 0x100, c);
+        sprite->callback = AnimNeedleArmSpike_Step;
+    }
+}
+
+void AnimNeedleArmSpike_Step(struct Sprite *sprite)
+{
+    if (sprite->data[0])
+    {
+        sprite->data[1] += sprite->data[3];
+        sprite->data[2] += sprite->data[4];
+        sprite->x = sprite->data[1] >> 4 ;
+        sprite->y = sprite->data[2] >> 4 ;
+        sprite->data[0]--;
+    }
+    else
+    {
+        DestroySpriteAndMatrix(sprite);
+    }
+}
+
+static void AnimWhipHit_WaitEnd(struct Sprite *sprite)
+{
+    if (sprite->animEnded)
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimSlidingHit(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        sprite->x -= cmd->unk0;
+        sprite->y += cmd->unk1;
+    }
+    else
+    {
+        sprite->x += cmd->unk0;
+        sprite->y += cmd->unk1;
+    }
+
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+static void AnimWhipHit(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    if (IsOnPlayerSide(gBattleAnimAttacker))
+        StartSpriteAnim(sprite, 1);
+
+    sprite->callback = AnimWhipHit_WaitEnd;
+    SetAnimSpriteInitialXOffset(sprite, cmd->unk0);
+    sprite->y += cmd->unk1;
+}
+
+static void AnimFlickeringPunch(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3, unk4, unk5, unk6);
+
+    sprite->x += cmd->unk0;
+    sprite->y += cmd->unk1;
+    sprite->data[0] = cmd->unk2;
+    sprite->data[1] = cmd->unk3;
+    sprite->data[3] = cmd->unk4;
+    sprite->data[5] = cmd->unk5;
+    StartSpriteAffineAnim(sprite, cmd->unk6);
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = TranslateSpriteLinearAndFlicker;
+}
+
+// Moves the sprite in a diagonally slashing motion across the target mon.
+// Used by moves such as MOVE_CUT and MOVE_AERIAL_ACE.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: slice direction; 0 = right-to-left, 1 = left-to-right
+void AnimCuttingSlice(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2);
+
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X);
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+    if (IsOnPlayerSide(gBattleAnimTarget))
+        sprite->y += 8;
+
+    sprite->callback = AnimSlice_Step;
+    if (cmd->unk2 == 0)
+    {
+        sprite->x += cmd->unk0;
+    }
+    else
+    {
+        sprite->x -= cmd->unk0;
+        sprite->hFlip = 1;
+    }
+
+    sprite->y += cmd->unk1;
+    sprite->data[1] -= 0x400;
+    sprite->data[2] += 0x400;
+    sprite->data[5] = cmd->unk2;
+    if (sprite->data[5] == 1)
+        sprite->data[1] = -sprite->data[1];
+}
+
+static void AnimAirCutterSlice(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3);
+
+    u8 x, y;
+    switch (cmd->unk3)
+    {
+    case 1:
+        x = GetBattlerSpriteCoord(BATTLE_PARTNER(gBattleAnimTarget), BATTLER_COORD_X);
+        y = GetBattlerSpriteCoord(BATTLE_PARTNER(gBattleAnimTarget), BATTLER_COORD_Y);
+        break;
+    case 2:
+        x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X);
+        y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+        if (IsBattlerSpriteVisible(BATTLE_PARTNER(gBattleAnimTarget)))
+        {
+            x = (GetBattlerSpriteCoord(BATTLE_PARTNER(gBattleAnimTarget), BATTLER_COORD_X) + x) / 2;
+            y = (GetBattlerSpriteCoord(BATTLE_PARTNER(gBattleAnimTarget), BATTLER_COORD_Y) + y) / 2;
+        }
+        break;
+    case 0:
+    default:
+        x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X);
+        y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+        break;
+    }
+
+    sprite->x = x;
+    sprite->y = y;
+    if (IsOnPlayerSide(gBattleAnimTarget))
+        sprite->y += 8;
+
+    sprite->callback = AnimSlice_Step;
+    if (cmd->unk2 == 0)
+    {
+        sprite->x += cmd->unk0;
+    }
+    else
+    {
+        sprite->x -= cmd->unk0;
+        sprite->hFlip = 1;
+    }
+
+    sprite->y += cmd->unk1;
+    sprite->data[1] -= 0x400;
+    sprite->data[2] += 0x400;
+    sprite->data[5] = cmd->unk2;
+    if (sprite->data[5] == 1)
+        sprite->data[1] = -sprite->data[1];
+}
+
+static void AnimSlice_Step(struct Sprite *sprite)
+{
+    sprite->data[3] += sprite->data[1];
+    sprite->data[4] += sprite->data[2];
+    if (sprite->data[5] == 0)
+        sprite->data[1] += 0x18;
+    else
+        sprite->data[1] -= 0x18;
+
+    sprite->data[2] -= 0x18;
+    sprite->x2 = sprite->data[3] >> 8;
+    sprite->y2 = sprite->data[4] >> 8;
+    sprite->data[0]++;
+    if (sprite->data[0] == 20)
+    {
+        StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+        sprite->data[0] = 3;
+        sprite->callback = WaitAnimForDuration;
+    }
+}
+
+static void UNUSED UnusedFlickerAnim(struct Sprite *sprite)
+{
+    if (sprite->data[2] > 1)
+    {
+        if (sprite->data[3] & 1)
+        {
+            sprite->invisible = FALSE;
+            gSprites[sprite->data[0]].invisible = FALSE;
+            gSprites[sprite->data[1]].invisible = FALSE;
+        }
+        else
+        {
+            sprite->invisible = TRUE;
+            gSprites[sprite->data[0]].invisible = TRUE;
+            gSprites[sprite->data[1]].invisible = TRUE;
+        }
+
+        sprite->data[2] = 0;
+        sprite->data[3]++;
+    }
+    else
+    {
+        sprite->data[2]++;
+    }
+
+    if (sprite->data[3] == 10)
+    {
+        DestroySprite(&gSprites[sprite->data[0]]);
+        DestroySprite(&gSprites[sprite->data[1]]);
+        DestroyAnimSprite(sprite);
+    }
+}
+
+static void AnimCirclingMusicNote(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3, unk4, unk5);
+
+    sprite->data[0] = cmd->unk2;
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        sprite->x -= cmd->unk0;
+    else
+        sprite->x += cmd->unk0;
+
+    StartSpriteAnim(sprite, cmd->unk5);
+    sprite->data[1] = -cmd->unk3;
+    sprite->y += cmd->unk1;
+    sprite->data[3] = cmd->unk4;
+    sprite->callback = AnimCirclingMusicNote_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimCirclingMusicNote_Step(struct Sprite *sprite)
+{
+    sprite->x2 = Cos(sprite->data[0], 100);
+    sprite->y2 = Sin(sprite->data[0], 20);
+    if (sprite->data[0] < 128)
+        sprite->subpriority = 0;
+    else
+        sprite->subpriority = 14;
+
+    sprite->data[0] = (sprite->data[0] + sprite->data[1]) & 0xFF;
+    sprite->data[5] += 130;
+    sprite->y2 += sprite->data[5] >> 8;
+    sprite->data[2]++;
+    if (sprite->data[2] == sprite->data[3])
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimProtect(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2);
+
+    if (IsContest())
+        cmd->unk1 += 8;
+
+    sprite->x = GetBattlerSpriteCoord2(gBattleAnimAttacker, BATTLER_COORD_X) + cmd->unk0;
+    sprite->y = GetBattlerSpriteCoord2(gBattleAnimAttacker, BATTLER_COORD_Y) + cmd->unk1;
+    if (IsOnPlayerSide(gBattleAnimAttacker) || IsContest())
+        sprite->oam.priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker) + 1;
+    else
+        sprite->oam.priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker);
+
+    sprite->data[0] = cmd->unk2;
+    sprite->data[2] = OBJ_PLTT_ID(IndexOfSpritePaletteTag(ANIM_TAG_PROTECT));
+    sprite->data[7] = 16;
+    SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT2_ALL | BLDCNT_EFFECT_BLEND);
+    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(16 - sprite->data[7], sprite->data[7]));
+    sprite->callback = AnimProtect_Step;
+}
+
+static void AnimProtect_Step(struct Sprite *sprite)
+{
+    int i, id, savedPal;
+    sprite->data[5] += 96;
+    sprite->x2 = -(sprite->data[5] >> 8);
+    if (++sprite->data[1] > 1)
+    {
+        sprite->data[1] = 0;
+        savedPal = gPlttBufferFaded[sprite->data[2] + 1];
+        i = 0;
+        while (i < 6)
+        {
+            id = sprite->data[2] + ++i;
+            gPlttBufferFaded[id] = gPlttBufferFaded[id + 1];
+        }
+
+        gPlttBufferFaded[sprite->data[2] + 7] = savedPal;
+    }
+
+    if (sprite->data[7] > 6 && sprite->data[0] >0 && ++sprite->data[6] > 1)
+    {
+        sprite->data[6] = 0;
+        sprite->data[7] -= 1;
+        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(16 - sprite->data[7], sprite->data[7]));
+    }
+
+    if (sprite->data[0] > 0)
+    {
+        sprite->data[0] -= 1;
+    }
+    else if (++sprite->data[6] > 1)
+    {
+        sprite->data[6] = 0;
+        sprite->data[7]++;
+        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(16 - sprite->data[7], sprite->data[7]));
+        if (sprite->data[7] == 16)
+        {
+            sprite->invisible = TRUE;
+            sprite->callback = DestroyAnimSpriteAndDisableBlend;
+        }
+    }
+}
+
+static void AnimMilkBottle(struct Sprite *sprite)
+{
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + 0xFFE8;
+    sprite->data[0] = 0;
+    sprite->data[1] = 0;
+    sprite->data[2] = 0;
+    sprite->data[3] = 0;
+    sprite->data[4] = 0;
+    sprite->data[6] = 0;
+    sprite->data[7] = 16;
+    SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT2_ALL | BLDCNT_EFFECT_BLEND);
+    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(sprite->data[6], sprite->data[7]));
+    sprite->callback = AnimMilkBottle_Step1;
+}
+
+static void AnimMilkBottle_Step1(struct Sprite *sprite)
+{
+    switch (sprite->data[0])
+    {
+    case 0:
+        if (++sprite->data[2] > 0)
+        {
+            sprite->data[2] = 0;
+            if (((++sprite->data[1]) & 1) != 0)
+            {
+                if (sprite->data[6] <= 15)
+                    sprite->data[6]++;
+            }
+            else if (sprite->data[7] > 0)
+            {
+                sprite->data[7]--;
+            }
+
+            SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(sprite->data[6], sprite->data[7]));
+            if (sprite->data[6] == 16 && sprite->data[7] == 0)
+            {
+                sprite->data[1] = 0;
+                sprite->data[0]++;
+            }
+        }
+        break;
+    case 1:
+        if (++sprite->data[1] > 8)
+        {
+            sprite->data[1] = 0;
+            StartSpriteAffineAnim(sprite, 1);
+            sprite->data[0]++;
+        }
+        break;
+    case 2:
+        AnimMilkBottle_Step2(sprite, 16, 4);
+        if (++sprite->data[1] > 2)
+        {
+            sprite->data[1] = 0;
+            sprite->y++;
+        }
+
+        if (++sprite->data[2] <= 29)
+            break;
+
+        if (sprite->data[2] & 1)
+        {
+            if (sprite->data[6] > 0)
+                sprite->data[6]--;
+        }
+        else if (sprite->data[7] <= 15)
+        {
+            sprite->data[7]++;
+        }
+
+        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(sprite->data[6], sprite->data[7]));
+        if (sprite->data[6] == 0 && sprite->data[7] == 16)
+        {
+            sprite->data[1] = 0;
+            sprite->data[2] = 0;
+            sprite->data[0]++;
+        }
+        break;
+    case 3:
+        sprite->invisible = TRUE;
+        sprite->data[0]++;
+        break;
+    case 4:
+        SetGpuReg(REG_OFFSET_BLDCNT, 0);
+        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(0, 0));
+        DestroyAnimSprite(sprite);
+        break;
+    }
+}
+
+static void AnimMilkBottle_Step2(struct Sprite *sprite, int unk1, int unk2)
+{
+    if (sprite->data[3] <= 11)
+        sprite->data[4] += 2;
+
+    if ((u16)(sprite->data[3] - 0x12) <= 0x17)
+        sprite->data[4] -= 2;
+
+    if ((sprite->data[3]) > 0x2F)
+        sprite->data[4] += 2;
+
+    sprite->x2 = sprite->data[4] / 9;
+    sprite->y2 = sprite->data[4] / 14;
+    if (sprite->y2 < 0)
+        sprite->y2 *= -1;
+
+    sprite->data[3]++;
+    if (sprite->data[3] > 0x3B)
+        sprite->data[3] = 0;
+}
+
+void AnimGrantingStars(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3, unk4, unk5);
+
+    enum AnimBattler animBattler = cmd->unk2;
+    if (!InitSpritePosToAnimBattler(animBattler, sprite, FALSE))
+        return;
+
+    SetAnimSpriteInitialXOffset(sprite, cmd->unk0);
+    sprite->y += cmd->unk1;
+    sprite->data[0] = cmd->unk5;
+    sprite->data[1] = cmd->unk3;
+    sprite->data[2] = cmd->unk4;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+    sprite->callback = TranslateSpriteLinearFixedPoint;
+}
+
+static void AnimSparklingStars(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3, unk4, unk5, unk6);
+
+    enum BattlerId battler;
+    if (!cmd->unk2)
+        battler = gBattleAnimAttacker;
+    else
+        battler = gBattleAnimTarget;
+
+    if (IsDoubleBattle() && IsBattlerSpriteVisible(BATTLE_PARTNER(battler)))
+    {
+        SetAverageBattlerPositions(battler, cmd->unk6, &sprite->x, &sprite->y);
+        SetAnimSpriteInitialXOffset(sprite, cmd->unk0);
+        sprite->y += cmd->unk1;
+    }
+    else
+    {
+        if (!cmd->unk6)
+        {
+            sprite->x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X);
+            sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y) + cmd->unk1;
+        }
+        else
+        {
+            sprite->x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X_2);
+            sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET) + cmd->unk1;
+        }
+
+        SetAnimSpriteInitialXOffset(sprite, cmd->unk0);
+    }
+
+    sprite->data[0] = cmd->unk5;
+    sprite->data[1] = cmd->unk3;
+    sprite->data[2] = cmd->unk4;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+    sprite->callback = TranslateSpriteLinearFixedPoint;
+}
+
+static void AnimBubbleBurst(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+    if (IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        sprite->x += cmd->unk0;
+        sprite->y += cmd->unk1;
+    }
+    else
+    {
+        sprite->x -= cmd->unk0;
+        sprite->y += cmd->unk1;
+        StartSpriteAnim(sprite, 1);
+    }
+
+    sprite->callback = AnimBubbleBurst_Step;
+}
+
+static void AnimBubbleBurst_Step(struct Sprite *sprite)
+{
+    if (++sprite->data[0] > 30)
+    {
+        sprite->y2 = (30 - sprite->data[0]) / 3;
+        sprite->x2 = Sin(sprite->data[1] * 4, 3);
+        sprite->data[1]++;
+    }
+
+    if (sprite->animEnded)
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimSleepLetterZ(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+    if (IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        sprite->x += cmd->unk0;
+        sprite->y += cmd->unk1;
+        sprite->data[3] = 1;
+    }
+    else
+    {
+        sprite->x -= cmd->unk0;
+        sprite->y += cmd->unk1;
+        sprite->data[3] = 0xFFFF;
+        StartSpriteAffineAnim(sprite, 1);
+    }
+
+    sprite->callback = AnimSleepLetterZ_Step;
+}
+
+static void AnimSleepLetterZ_Step(struct Sprite *sprite)
+{
+    sprite->y2 = -(sprite->data[0] / 0x28);
+    sprite->x2 = sprite->data[4] / 10;
+    sprite->data[4] += sprite->data[3] * 2;
+    sprite->data[0] += sprite->data[1];
+    if (++sprite->data[1] > 60)
+        DestroySpriteAndMatrix(sprite);
+}
+
+static void AnimLockOnTarget(struct Sprite *sprite)
+{
+    sprite->x -= 32;
+    sprite->y -= 32;
+    sprite->data[0] = 20;
+    sprite->callback = WaitAnimForDuration;
+    StoreSpriteCallbackInData6(sprite, AnimLockOnTarget_Step1);
+}
+
+static void AnimLockOnTarget_Step1(struct Sprite *sprite)
+{
+    switch (sprite->data[5] & 1)
+    {
+    case 0:
+        sprite->data[0] = 1;
+        sprite->callback = WaitAnimForDuration;
+        StoreSpriteCallbackInData6(sprite, AnimLockOnTarget_Step1);
+        break;
+    case 1:
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->y2 = 0;
+        sprite->x2 = 0;
+        sprite->data[0] = 8;
+        sprite->data[2] = sprite->x + gInclineMonCoordTable[sprite->data[5] >> 8][0];
+        sprite->data[4] = sprite->y + gInclineMonCoordTable[sprite->data[5] >> 8][1];
+        sprite->callback = StartAnimLinearTranslation;
+        StoreSpriteCallbackInData6(sprite, AnimLockOnTarget_Step2);
+        sprite->data[5] += 0x100;
+        PlaySE12WithPanning(SE_M_LOCK_ON, BattleAnimAdjustPanning(SOUND_PAN_TARGET));
+        break;
+    }
+
+    sprite->data[5] ^= 1;
+}
+
+static void AnimLockOnTarget_Step2(struct Sprite *sprite)
+{
+    if ((sprite->data[5] >> 8) == 4)
+    {
+        sprite->data[0] = 10;
+        sprite->callback = WaitAnimForDuration;
+        StoreSpriteCallbackInData6(sprite, AnimLockOnTarget_Step3);
+    }
+    else
+    {
+        sprite->callback = AnimLockOnTarget_Step1;
+    }
+}
+
+static void AnimLockOnTarget_Step3(struct Sprite *sprite)
+{
+    s16 a;
+    s16 b;
+    if (sprite->oam.affineParam == 0)
+    {
+        sprite->data[0] = 3;
+        sprite->data[1] = 0;
+        sprite->data[2] = 0;
+        sprite->callback = WaitAnimForDuration;
+        StoreSpriteCallbackInData6(sprite, AnimLockOnTarget_Step4);
+    }
+    else
+    {
+        switch (sprite->oam.affineParam)
+        {
+        case 1:
+            a = -8;
+            b = -8;
+            break;
+        case 2:
+            a = -8;
+            b = 8;
+            break;
+        case 3:
+            a = 8;
+            b = -8;
             break;
         default:
+            a = 8;
+            b = 8;
+            break;
+        }
+
+        sprite->x += sprite->x2;
+        sprite->y += sprite->y2;
+        sprite->y2 = 0;
+        sprite->x2 = 0;
+        sprite->data[0] = 6;
+        sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + a;
+        sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + b;
+        sprite->callback = StartAnimLinearTranslation;
+        StoreSpriteCallbackInData6(sprite, AnimLockOnTarget_Step5);
+    }
+}
+
+static void AnimLockOnTarget_Step4(struct Sprite *sprite)
+{
+    if (sprite->data[2] == 0)
+    {
+        if ((sprite->data[1] += 3) > 16)
+            sprite->data[1] = 16;
+    }
+    else if ((sprite->data[1] -= 3) < 0)
+    {
+        sprite->data[1] = 0;
+    }
+
+    BlendPalettes(GetBattlePalettesMask(TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, FALSE), sprite->data[1], RGB_WHITE);
+    if (sprite->data[1] == 16)
+    {
+        int pal;
+        sprite->data[2]++;
+        pal = sprite->oam.paletteNum;
+        LoadPalette(&gPlttBufferUnfaded[OBJ_PLTT_ID(pal) + 8], OBJ_PLTT_ID(pal) + 1, PLTT_SIZEOF(2));
+        PlaySE12WithPanning(SE_M_LEER, BattleAnimAdjustPanning(SOUND_PAN_TARGET));
+    }
+    else if (sprite->data[1] == 0)
+    {
+        sprite->callback = AnimLockOnTarget_Step5;
+    }
+}
+
+static void AnimLockOnTarget_Step5(struct Sprite *sprite)
+{
+    // TODO: gBattleAnimArgs[ARG_RET_ID]?
+    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
+    {
+        sprite->data[1] = 0;
+        sprite->data[0] = 0;
+        sprite->callback = AnimLockOnTarget_Step6;
+    }
+}
+
+static void AnimLockOnTarget_Step6(struct Sprite *sprite)
+{
+    if (sprite->data[0] % 3 == 0)
+    {
+        sprite->data[1]++;
+        sprite->invisible ^= 1;
+    }
+
+    sprite->data[0]++;
+    if (sprite->data[1] == 8)
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimLockOnMoveTarget(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0);
+
+    sprite->oam.affineParam = cmd->unk0;
+    if ((s16)sprite->oam.affineParam == 1)
+    {
+        sprite->x -= 0x18;
+        sprite->y -= 0x18;
+    }
+    else if ((s16)sprite->oam.affineParam == 2)
+    {
+        sprite->x -= 0x18;
+        sprite->y += 0x18;
+        sprite->oam.matrixNum = ST_OAM_VFLIP;
+    }
+    else if ((s16)sprite->oam.affineParam == 3)
+    {
+        sprite->x += 0x18;
+        sprite->y -= 0x18;
+        sprite->oam.matrixNum = ST_OAM_HFLIP;
+    }
+    else
+    {
+        sprite->x += 0x18;
+        sprite->y += 0x18;
+        sprite->oam.matrixNum = ST_OAM_HFLIP | ST_OAM_VFLIP;
+    }
+
+    sprite->oam.tileNum = (sprite->oam.tileNum + 16);
+    sprite->callback = AnimLockOnTarget;
+    sprite->callback(sprite);
+}
+
+static void AnimBowMon(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0);
+
+    sprite->invisible = TRUE;
+    sprite->data[0] = 0;
+    switch (cmd->unk0)
+    {
+    case 0:
+        sprite->callback = AnimBowMon_Step1;
+        break;
+    case 1:
+        sprite->callback = AnimBowMon_Step2;
+        break;
+    case 2:
+        sprite->callback = AnimBowMon_Step3;
+        break;
+    default:
+        sprite->callback = AnimBowMon_Step4;
+        break;
+    }
+}
+
+static void AnimBowMon_Step1(struct Sprite *sprite)
+{
+    sprite->data[0] = 6;
+    sprite->data[1] = (!IsOnPlayerSide(gBattleAnimAttacker)) ? 2 : -2;
+    sprite->data[2] = 0;
+    sprite->data[3] = gBattlerSpriteIds[gBattleAnimAttacker];
+    StoreSpriteCallbackInData6(sprite, AnimBowMon_Step1_Callback);
+    sprite->callback = TranslateSpriteLinearById;
+}
+
+static void AnimBowMon_Step1_Callback(struct Sprite *sprite)
+{
+    if (sprite->data[0] == 0)
+    {
+        sprite->data[3] = gBattlerSpriteIds[gBattleAnimAttacker];
+        PrepareBattlerSpriteForRotScale(sprite->data[3], ST_OAM_OBJ_NORMAL);
+        sprite->data[4] = (sprite->data[6] = !IsOnPlayerSide(gBattleAnimAttacker)) ? 768 : -768;
+        sprite->data[5] = 0;
+    }
+
+    sprite->data[5] += sprite->data[4];
+    SetSpriteRotScale(sprite->data[3], 256, 256, sprite->data[5]);
+    SetBattlerSpriteYOffsetFromRotation(sprite->data[3]);
+    if (++sprite->data[0] > 3)
+    {
+        sprite->data[0] = 0;
+        sprite->callback = AnimBowMon_Step4;
+    }
+}
+
+static void AnimBowMon_Step2(struct Sprite *sprite)
+{
+    sprite->data[0] = 4;
+    sprite->data[1] = (!IsOnPlayerSide(gBattleAnimAttacker)) ? -3 : 3;
+    sprite->data[2] = 0;
+    sprite->data[3] = gBattlerSpriteIds[gBattleAnimAttacker];
+    StoreSpriteCallbackInData6(sprite, AnimBowMon_Step4);
+    sprite->callback = TranslateSpriteLinearById;
+}
+
+static void AnimBowMon_Step3(struct Sprite *sprite)
+{
+    if (++sprite->data[0] > 8)
+    {
+        sprite->data[0] = 0;
+        sprite->callback = AnimBowMon_Step3_Callback;
+    }
+}
+
+static void AnimBowMon_Step3_Callback(struct Sprite *sprite)
+{
+    if (sprite->data[0] == 0)
+    {
+        sprite->data[3] = gBattlerSpriteIds[gBattleAnimAttacker];
+        sprite->data[6] = GetBattlerSide(gBattleAnimAttacker);
+        if (!IsOnPlayerSide(gBattleAnimAttacker))
+        {
+            sprite->data[4] = 0xFC00;
+            sprite->data[5] = 0xC00;
+        }
+        else
+        {
+            sprite->data[4] = 0x400;
+            sprite->data[5] = 0xF400;
+        }
+    }
+
+    sprite->data[5] += sprite->data[4];
+    SetSpriteRotScale(sprite->data[3], 0x100, 0x100, sprite->data[5]);
+    SetBattlerSpriteYOffsetFromRotation(sprite->data[3]);
+    if (++sprite->data[0] > 2)
+    {
+        ResetSpriteRotScale(sprite->data[3]);
+        sprite->callback = AnimBowMon_Step4;
+    }
+}
+
+static void AnimBowMon_Step4(struct Sprite *sprite)
+{
+    DestroyAnimSprite(sprite);
+}
+
+static void AnimTipMon(struct Sprite *sprite)
+{
+    sprite->data[0] = 0;
+    sprite->callback = AnimTipMon_Step;
+}
+
+static void AnimTipMon_Step(struct Sprite *sprite)
+{
+    switch (sprite->data[0])
+    {
+    case 0:
+        sprite->data[1] = 0;
+        sprite->data[2] = gBattlerSpriteIds[gBattleAnimAttacker];
+        sprite->data[3] = GetBattlerSide(gBattleAnimAttacker);
+        sprite->data[4] = !IsOnPlayerSide(gBattleAnimAttacker) ? 0x200 : -0x200;
+        sprite->data[5] = 0;
+        PrepareBattlerSpriteForRotScale(sprite->data[2], ST_OAM_OBJ_NORMAL);
+        sprite->data[0]++;
+        // fall through
+    case 1:
+        sprite->data[5] += sprite->data[4];
+        SetSpriteRotScale(sprite->data[2], 0x100, 0x100, sprite->data[5]);
+        SetBattlerSpriteYOffsetFromRotation(sprite->data[2]);
+        if (++sprite->data[1] > 3)
+        {
+            sprite->data[1] = 0;
+            sprite->data[4] *= -1;
+            sprite->data[0]++;
+        }
+        break;
+    case 2:
+        sprite->data[5] += sprite->data[4];
+        SetSpriteRotScale(sprite->data[2], 0x100, 0x100, sprite->data[5]);
+        SetBattlerSpriteYOffsetFromRotation(sprite->data[2]);
+        if (++sprite->data[1] > 3)
+        {
+            ResetSpriteRotScale(sprite->data[2]);
+            DestroyAnimSprite(sprite);
+        }
+        break;
+    }
+}
+
+void AnimTask_SkullBashPosition(u8 taskId)
+{
+    CMD_ARGS(unk0);
+
+    gTasks[taskId].data[0] = gBattlerSpriteIds[gBattleAnimAttacker];
+    gTasks[taskId].data[1] = GetBattlerSide(gBattleAnimAttacker);
+    gTasks[taskId].data[2] = 0;
+    switch (cmd->unk0)
+    {
+    default:
+        DestroyAnimVisualTask(taskId);
+        break;
+    case 0:
+        gTasks[taskId].data[2] = 0;
+        gTasks[taskId].data[3] = 8;
+        gTasks[taskId].data[4] = 0;
+        gTasks[taskId].data[5] = 3;
+        if (IsOnPlayerSide(gBattleAnimAttacker))
+            gTasks[taskId].data[5] *= -1;
+
+        gTasks[taskId].func = AnimTask_SkullBashPositionSet;
+        break;
+    case 1:
+        gTasks[taskId].data[3] = 8;
+        gTasks[taskId].data[4] = 0x600;
+        gTasks[taskId].data[5] = 0xC0;
+        if (IsOnPlayerSide(gBattleAnimAttacker))
+        {
+            gTasks[taskId].data[4] = -gTasks[taskId].data[4];
+            gTasks[taskId].data[5] = -gTasks[taskId].data[5];
+        }
+
+        gTasks[taskId].func = AnimTask_SkullBashPositionReset;
+        break;
+    }
+}
+
+static void AnimTask_SkullBashPositionSet(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+    switch (task->data[2])
+    {
+    case 0:
+        if (task->data[3])
+        {
+            task->data[4] += task->data[5];
+            gSprites[task->data[0]].x2 = task->data[4];
+            task->data[3]--;
+        }
+        else
+        {
+            task->data[3] = 8;
+            task->data[4] = 0;
+            task->data[5] = (task->data[1] == 0) ? -0xC0 : 0xC0;
+            PrepareBattlerSpriteForRotScale(task->data[0], ST_OAM_OBJ_NORMAL);
+            task->data[2]++;
+        }
+        break;
+    case 1:
+        if (task->data[3])
+        {
+            task->data[4] += task->data[5];
+            SetSpriteRotScale(task->data[0], 0x100, 0x100, task->data[4]);
+            SetBattlerSpriteYOffsetFromRotation(task->data[0]);
+            task->data[3]--;
+        }
+        else
+        {
+            task->data[3] = 8;
+            task->data[4] = gSprites[task->data[0]].x2;
+            task->data[5] = (task->data[1] == 0) ? 0x2 : -0x2;
+            task->data[6] = 1;
+            task->data[2]++;
+        }
+        break;
+    case 2:
+        if (task->data[3])
+        {
+            if (task->data[6])
+            {
+                task->data[6]--;
+            }
+            else
+            {
+                if (task->data[3] & 1)
+                    gSprites[task->data[0]].x2 = task->data[4] + task->data[5];
+                else
+                    gSprites[task->data[0]].x2 = task->data[4] - task->data[5];
+
+                task->data[6] = 1;
+                task->data[3]--;
+            }
+        }
+        else
+        {
+            gSprites[task->data[0]].x2 = task->data[4];
+            task->data[3] = 12;
+            task->data[2]++;
+        }
+        break;
+    case 3:
+        if (task->data[3])
+        {
+            task->data[3]--;
+        }
+        else
+        {
+            task->data[3] = 3;
+            task->data[4] = gSprites[task->data[0]].x2;
+            task->data[5] = (task->data[1] == 0) ? 8 : -8;
+            task->data[2]++;
+        }
+        break;
+    case 4:
+        if (task->data[3])
+        {
+            task->data[4] += task->data[5];
+            gSprites[task->data[0]].x2 = task->data[4];
+            task->data[3]--;
+        }
+        else
+        {
+            DestroyAnimVisualTask(taskId);
+        }
+        break;
+    }
+}
+
+static void AnimTask_SkullBashPositionReset(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+    if (task->data[3])
+    {
+        task->data[4] -= task->data[5];
+        SetSpriteRotScale(task->data[0], 0x100, 0x100, task->data[4]);
+        SetBattlerSpriteYOffsetFromRotation(task->data[0]);
+        task->data[3]--;
+    }
+    else
+    {
+        ResetSpriteRotScale(task->data[0]);
+        DestroyAnimVisualTask(taskId);
+    }
+}
+
+static void AnimSlashSlice(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2);
+
+    if (cmd->unk0 == 0)
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + cmd->unk1;
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + cmd->unk2;
+    }
+    else
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->unk1;
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->unk2;
+    }
+
+    sprite->data[0] = 0;
+    sprite->data[1] = 0;
+    StoreSpriteCallbackInData6(sprite, AnimFalseSwipeSlice_Step3);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+}
+
+static void AnimFalseSwipeSlice(struct Sprite *sprite)
+{
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + 0xFFD0;
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    StoreSpriteCallbackInData6(sprite, AnimFalseSwipeSlice_Step1);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+}
+
+static void AnimFalseSwipePositionedSlice(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0);
+
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) - 48 + cmd->unk0;
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    StartSpriteAnim(sprite, 1);
+    sprite->data[0] = 0;
+    sprite->data[1] = 0;
+    sprite->callback = AnimFalseSwipeSlice_Step3;
+}
+
+static void AnimFalseSwipeSlice_Step1(struct Sprite *sprite)
+{
+    if (++sprite->data[0] > 8)
+    {
+        sprite->data[0] = 12;
+        sprite->data[1] = 8;
+        sprite->data[2] = 0;
+        StoreSpriteCallbackInData6(sprite, AnimFalseSwipeSlice_Step2);
+        sprite->callback = TranslateSpriteLinear;
+    }
+}
+
+static void AnimFalseSwipeSlice_Step2(struct Sprite *sprite)
+{
+    sprite->data[0] = 0;
+    sprite->data[1] = 0;
+    sprite->callback = AnimFalseSwipeSlice_Step3;
+}
+
+void AnimFalseSwipeSlice_Step3(struct Sprite *sprite)
+{
+    if (++sprite->data[0] > 1)
+    {
+        sprite->data[0] = 0;
+        sprite->invisible = !sprite->invisible;
+        if (++sprite->data[1] > 8)
+            DestroyAnimSprite(sprite);
+    }
+}
+
+void AnimEndureEnergy(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3);
+
+    if (cmd->unk0 == 0)
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X) + cmd->unk1;
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y) + cmd->unk2;
+    }
+    else
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X) + cmd->unk1;
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y) + cmd->unk2;
+    }
+
+    sprite->data[0] = 0;
+    sprite->data[1] = cmd->unk3;
+    sprite->callback = AnimEndureEnergy_Step;
+}
+
+static void AnimEndureEnergy_Step(struct Sprite *sprite)
+{
+    if (++sprite->data[0] > sprite->data[1])
+    {
+        sprite->data[0] = 0;
+        sprite->y--;
+    }
+
+    sprite->y -= sprite->data[0];
+    if (sprite->animEnded)
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimSharpenSphere(struct Sprite *sprite)
+{
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) - 12;
+    sprite->data[0] = 0;
+    sprite->data[1] = 2;
+    sprite->data[2] = 0;
+    sprite->data[3] = 0;
+    sprite->data[4] = 0;
+    sprite->data[5] = BattleAnimAdjustPanning(SOUND_PAN_ATTACKER);
+    sprite->callback = AnimSharpenSphere_Step;
+}
+
+static void AnimSharpenSphere_Step(struct Sprite *sprite)
+{
+    if (++sprite->data[0] >= sprite->data[1])
+    {
+        sprite->invisible = !sprite->invisible;
+        if (!sprite->invisible)
+        {
+            sprite->data[4]++;
+            if (!(sprite->data[4] & 1))
+                PlaySE12WithPanning(SE_M_SWAGGER2, sprite->data[5]);
+        }
+
+        sprite->data[0] = 0;
+        if (++sprite->data[2] > 1)
+        {
+            sprite->data[2] = 0;
+            sprite->data[1]++;
+        }
+    }
+
+    if (sprite->animEnded && sprite->data[1] > 16 && sprite->invisible)
+        DestroyAnimSprite(sprite);
+}
+
+void AnimConversion(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    if (sprite->data[0] == 0)
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X) + cmd->unk0;
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y) + cmd->unk1;
+        if (IsContest())
+            sprite->y += 10;
+
+        sprite->data[0]++;
+    }
+
+    // TODO: gBattleAnimArgs[ARG_RET_ID]?
+    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
+        DestroyAnimSprite(sprite);
+}
+
+void AnimTask_ConversionAlphaBlend(u8 taskId)
+{
+    if (gTasks[taskId].data[2] == 1)
+    {
+        // TODO: gBattleAnimArgs[ARG_RET_ID]?
+        gBattleAnimArgs[7] = 0xFFFF;
+        gTasks[taskId].data[2]++;
+    }
+    else if (gTasks[taskId].data[2] == 2)
+    {
+        DestroyAnimVisualTask(taskId);
+    }
+    else
+    {
+        if (++gTasks[taskId].data[0] == 4)
+        {
+            gTasks[taskId].data[0] = 0;
+            gTasks[taskId].data[1]++;
+            SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(16 - gTasks[taskId].data[1], gTasks[taskId].data[1]));
+            if (gTasks[taskId].data[1] == 16)
+                gTasks[taskId].data[2]++;
+        }
+    }
+}
+
+static void AnimConversion2(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2);
+
+    InitSpritePosToAnimTarget(sprite, FALSE);
+    sprite->animPaused = 1;
+    sprite->data[0] = cmd->unk2;
+    sprite->callback = AnimConversion2_Step;
+}
+
+static void AnimConversion2_Step(struct Sprite *sprite)
+{
+    if (sprite->data[0])
+    {
+        sprite->data[0]--;
+    }
+    else
+    {
+        sprite->animPaused = 0;
+        sprite->data[0] = 30;
+        sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+        sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+        sprite->callback = StartAnimLinearTranslation;
+        StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+    }
+}
+
+void AnimTask_Conversion2AlphaBlend(u8 taskId)
+{
+    if (++gTasks[taskId].data[0] == 4)
+    {
+        gTasks[taskId].data[0] = 0;
+        gTasks[taskId].data[1]++;
+        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(gTasks[taskId].data[1], 16 - gTasks[taskId].data[1]));
+        if (gTasks[taskId].data[1] == 16)
+            DestroyAnimVisualTask(taskId);
+    }
+}
+
+static void UNUSED AnimTask_HideBattlersHealthbox(u8 taskId)
+{
+    CMD_ARGS(unk0, unk1);
+
+    for (enum BattlerId i = 0; i < gBattlersCount; i++)
+    {
+        if (cmd->unk0 == TRUE && IsOnPlayerSide(i))
+            SetHealthboxSpriteInvisible(gHealthboxSpriteIds[i]);
+
+        if (cmd->unk1 == TRUE && !IsOnPlayerSide(i))
+            SetHealthboxSpriteInvisible(gHealthboxSpriteIds[i]);
+    }
+
+    DestroyAnimVisualTask(taskId);
+}
+
+static void UNUSED AnimTask_ShowBattlersHealthbox(u8 taskId)
+{
+    for (enum BattlerId i = 0; i < gBattlersCount; i++)
+        SetHealthboxSpriteVisible(gHealthboxSpriteIds[i]);
+
+    DestroyAnimVisualTask(taskId);
+}
+
+// args[0] - sprite x
+// args[1] - sprite y
+static void AnimMoon(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    if (IsContest())
+    {
+        sprite->x = 48;
+        sprite->y = 40;
+    }
+    else
+    {
+        sprite->x = cmd->unk0;
+        sprite->y = cmd->unk1;
+    }
+
+    sprite->oam.shape = SPRITE_SHAPE(64x64);
+    sprite->oam.size = SPRITE_SIZE(64x64);
+    sprite->data[0] = 0;
+    sprite->callback = AnimMoon_Step;
+}
+
+static void AnimMoon_Step(struct Sprite *sprite)
+{
+    if (sprite->data[0])
+        DestroyAnimSprite(sprite);
+}
+
+static void AnimMoonlightSparkle(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + cmd->unk0;
+    sprite->y = cmd->unk1;
+    sprite->data[0] = 0;
+    sprite->data[1] = 0;
+    sprite->data[2] = 0;
+    sprite->data[3] = 0;
+    sprite->data[4] = 1;
+    sprite->callback = AnimMoonlightSparkle_Step;
+}
+
+static void AnimMoonlightSparkle_Step(struct Sprite *sprite)
+{
+    if (++sprite->data[1] > 1)
+    {
+        sprite->data[1] = 0;
+        if (sprite->data[2] < 120)
+        {
+            sprite->y++;
+            sprite->data[2]++;
+        }
+    }
+
+    if (sprite->data[0])
+        DestroyAnimSprite(sprite);
+}
+
+void AnimTask_MoonlightEndFade(u8 taskId)
+{
+    int a = GetBattlePalettesMask(TRUE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE) & 0xFFFF;
+    int b;
+    int c;
+    int d;
+
+    gTasks[taskId].data[0] = 0;
+    gTasks[taskId].data[1] = 0;
+    gTasks[taskId].data[2] = 0;
+    gTasks[taskId].data[3] = a;
+    gTasks[taskId].data[4] = 0;
+    gTasks[taskId].data[5] = 0;
+    gTasks[taskId].data[6] = 0;
+    gTasks[taskId].data[7] = 13;
+    gTasks[taskId].data[8] = 14;
+    gTasks[taskId].data[9] = 15;
+    b = GetBattleMonSpritePalettesMask(1, 1, 1, 1);
+    c = a | b;
+    StorePointerInVars(&gTasks[taskId].data[14], &gTasks[taskId].data[15], (void *)c);
+    b = b | (0x10000 << IndexOfSpritePaletteTag(ANIM_TAG_MOON));
+    d = IndexOfSpritePaletteTag(ANIM_TAG_GREEN_SPARKLE);
+    BeginNormalPaletteFade((0x10000 << d) | b, 0, 0, 16, RGB(27, 29, 31));
+    gTasks[taskId].func = AnimTask_MoonlightEndFade_Step;
+    gTasks[taskId].func(taskId);
+}
+
+static void AnimTask_MoonlightEndFade_Step(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+    switch (task->data[0])
+    {
+    case 0:
+        if (++task->data[1] > 0)
+        {
+            u16 color;
+            u16 bitmask;
+            u16 r3;
+            u16 i;
+            u16 j;
+            task->data[1] = 0;
+            if (++task->data[2] <= 15)
+            {
+                u16 red;
+                u16 green;
+                u16 blue;
+                task->data[4] += task->data[7];
+                task->data[5] += task->data[8];
+                task->data[6] += task->data[9];
+                red = task->data[4] >> 3;
+                green = task->data[5] >> 3;
+                blue = task->data[6] >> 3;
+                color = RGB(red, green, blue);
+            }
+            else
+            {
+                color = RGB(27, 29, 31);
+                task->data[0]++;
+            }
+
+            bitmask = 1;
+            r3 = 0;
+            for (i = 0; i <= 15; i++)
+            {
+                if (task->data[3] & bitmask)
+                {
+                    for (j = 1; j <= 15; j++)
+                    {
+                        gPlttBufferFaded[r3 + j] = color;
+                    }
+                }
+
+                bitmask <<= 1;
+                r3 += 16;
+            }
+        }
+        break;
+    case 1:
+        if (!gPaletteFade.active)
+        {
+            u8 spriteId;
+            for (spriteId = 0; spriteId < MAX_SPRITES; spriteId++)
+            {
+                if (gSprites[spriteId].template == &gMoonSpriteTemplate || gSprites[spriteId].template == &gMoonlightSparkleSpriteTemplate)
+                    gSprites[spriteId].data[0] = 1;
+            }
+
+            task->data[1] = 0;
+            task->data[0]++;
+        }
+        break;
+    case 2:
+        if (++task->data[1] > 30)
+        {
+            BeginNormalPaletteFade((u32)LoadPointerFromVars(task->data[14], task->data[15]), 0, 16, 0, RGB(27, 29, 31));
+            task->data[0]++;
+        }
+        break;
+    case 3:
+        if (!gPaletteFade.active)
+            DestroyAnimVisualTask(taskId);
+        break;
+    }
+}
+
+static void AnimHornHit(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2);
+
+    if (cmd->unk2 < 2)
+        cmd->unk2 = 2;
+
+    if (cmd->unk2 > 0x7F)
+        cmd->unk2 = 0x7F;
+
+    sprite->data[0] = 0;
+    sprite->data[1] = cmd->unk2;
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + cmd->unk0;
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + cmd->unk1;
+    sprite->data[6] = sprite->x;
+    sprite->data[7] = sprite->y;
+    if (IsContest())
+    {
+        sprite->oam.matrixNum = ST_OAM_HFLIP;
+        sprite->x += 40;
+        sprite->y += 20;
+        sprite->data[2] = sprite->x << 7;
+        sprite->data[3] = -0x1400 / sprite->data[1];
+        sprite->data[4] = sprite->y << 7;
+        sprite->data[5] = -0xA00 / sprite->data[1];
+    }
+    else if (IsOnPlayerSide(gBattleAnimAttacker))
+    {
+        sprite->x -= 40;
+        sprite->y += 20;
+        sprite->data[2] = sprite->x << 7;
+        sprite->data[3] = 0x1400 / sprite->data[1];
+        sprite->data[4] = sprite->y << 7;
+        sprite->data[5] = -0xA00 / sprite->data[1];
+    }
+    else
+    {
+        sprite->x += 40;
+        sprite->y -= 20;
+        sprite->data[2] = sprite->x << 7;
+        sprite->data[3] = -0x1400 / sprite->data[1];
+        sprite->data[4] = sprite->y << 7;
+        sprite->data[5] = 0xA00 / sprite->data[1];
+        sprite->oam.matrixNum = (ST_OAM_HFLIP | ST_OAM_VFLIP);
+    }
+
+    sprite->callback = AnimHornHit_Step;
+}
+
+static void AnimHornHit_Step(struct Sprite *sprite)
+{
+    sprite->data[2] += sprite->data[3];
+    sprite->data[4] += sprite->data[5];
+    sprite->x = sprite->data[2] >> 7;
+    sprite->y = sprite->data[4] >> 7;
+    if (--sprite->data[1] == 1)
+    {
+        sprite->x = sprite->data[6];
+        sprite->y = sprite->data[7];
+    }
+
+    if (sprite->data[1] == 0)
+        DestroyAnimSprite(sprite);
+}
+
+// Double Team and Ally Switch.
+#define tBattlerSpriteId    data[0]
+#define tSpoonPal           data[1]
+#define tBlendSpritesCount  data[3]
+#define tBattlerId          data[4]
+#define tIsAllySwitch       data[5]
+
+#define sCounter            data[0]
+#define sSinIndex           data[1]
+#define sTaskId             data[2]
+#define sCounter2           data[3]
+#define sSinAmplitude       data[4]
+#define sSinIndexMod        data[5]
+#define sBattlerFlank       data[6]
+
+void PrepareDoubleTeamAnim(u32 taskId, enum AnimBattler animBattler, bool32 forAllySwitch)
+{
+    s32 i, spriteId;
+    u16 palOffsetBattler, palOffsetSpoon;
+    struct Task *task = &gTasks[taskId];
+
+    task->tBattlerSpriteId = GetAnimBattlerSpriteId(animBattler);
+    task->tSpoonPal = AllocSpritePalette(ANIM_TAG_BENT_SPOON);
+    task->tBattlerId = GetAnimBattlerId(animBattler);
+    task->tIsAllySwitch = forAllySwitch;
+    palOffsetSpoon = OBJ_PLTT_ID(task->tSpoonPal);
+    palOffsetBattler = OBJ_PLTT_ID2(gSprites[task->tBattlerSpriteId].oam.paletteNum);
+    for (i = 1; i < 16; i++)
+        gPlttBufferUnfaded[palOffsetSpoon + i] = gPlttBufferUnfaded[palOffsetBattler + i];
+
+    BlendPalette(palOffsetSpoon, 16, 11, RGB_BLACK);
+    task->tBlendSpritesCount = 0;
+    for (i = 0; i < ((forAllySwitch == TRUE) ? 1 : 2); i++)
+    {
+        spriteId = CloneBattlerSpriteWithBlend(animBattler);
+        if (spriteId < 0)
+            break;
+        gSprites[spriteId].oam.paletteNum = task->tSpoonPal;
+        gSprites[spriteId].sCounter = 0;
+        gSprites[spriteId].sSinIndex = i << 7;
+        gSprites[spriteId].sTaskId = taskId;
+        // Which direction
+        if (gBattleAnimAttacker & BIT_FLANK)
+            gSprites[spriteId].sBattlerFlank = (animBattler != ANIM_ATTACKER);
+        else
+            gSprites[spriteId].sBattlerFlank = (animBattler == ANIM_ATTACKER);
+
+        // correct direction on opponent side
+        if (!IsOnPlayerSide(gBattleAnimAttacker))
+            gSprites[spriteId].sBattlerFlank ^= 1;
+
+        gSprites[spriteId].callback = AnimDoubleTeam;
+        task->tBlendSpritesCount++;
+    }
+
+    task->func = AnimTask_DoubleTeam_Step;
+    if (GetBattlerSpriteBGPriorityRank(task->tBattlerId) == 1)
+        ClearGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_BG1_ON);
+    else
+        ClearGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_BG2_ON);
+}
+
+void AnimTask_DoubleTeam(u8 taskId)
+{
+    PrepareDoubleTeamAnim(taskId, ANIM_ATTACKER, FALSE);
+}
+
+static inline void SwapStructData(void *s1, void *s2, void *data, u32 size)
+{
+    memcpy(data, s1, size);
+    memcpy(s1, s2, size);
+    memcpy(s2, data, size);
+}
+
+static void ReloadBattlerSprites(enum BattlerId battler, struct Pokemon *party)
+{
+    struct Pokemon *mon = &party[gBattlerPartyIndexes[battler]];
+    BattleLoadMonSpriteGfx(mon, battler);
+    CreateBattlerSprite(battler);
+    UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], mon, HEALTHBOX_ALL);
+    // If battler has an indicator for a gimmick, hide the sprite until the move animation finishes.
+    UpdateIndicatorVisibilityAndType(gHealthboxSpriteIds[battler], TRUE);
+
+    // Try to recreate shadow sprite
+    if (B_ENEMY_MON_SHADOW_STYLE >= GEN_4 && P_GBA_STYLE_SPECIES_GFX == FALSE)
+    {
+        // Both of these *should* be true, but use an OR just to be certain
+        if (gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary < MAX_SPRITES
+            || gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdSecondary < MAX_SPRITES)
+        {
+            DestroySprite(&gSprites[gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary]);
+            DestroySprite(&gSprites[gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdSecondary]);
+            gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary = MAX_SPRITES;
+            gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdSecondary = MAX_SPRITES;
+            CreateEnemyShadowSprite(battler);
+            SetBattlerShadowSpriteCallback(battler, GetMonData(mon, MON_DATA_SPECIES));
+        }
+    }
+    else
+    {
+        if (gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary < MAX_SPRITES)
+        {
+            DestroySprite(&gSprites[gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary]);
+            gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary = MAX_SPRITES;
+            CreateEnemyShadowSprite(battler);
+            SetBattlerShadowSpriteCallback(battler, GetMonData(mon, MON_DATA_SPECIES));
+        }
+    }
+}
+
+static void TrySwapSkyDropTargets(enum BattlerId battlerAtk, enum BattlerId battlerPartner)
+{
+    u32 temp;
+
+    // battlerAtk is using Ally Switch
+    // check if our partner is the target of sky drop
+    // If so, change that index to battlerAtk
+    for (enum BattlerId i = 0; i < gBattlersCount; i++) {
+        if (gBattleStruct->skyDropTargets[i] == battlerPartner) {
+            gBattleStruct->skyDropTargets[i] = battlerAtk;
             break;
         }
     }
 
-    if (stat == STAT_SPEED)
+    // Then swap our own sky drop targets with the partner in case our partner is mid-skydrop
+    SWAP(gBattleStruct->skyDropTargets[battlerAtk], gBattleStruct->skyDropTargets[battlerPartner], temp);
+}
+
+#define TRY_SIDE_TIMER_BATTLER_ID_SWAP(battlerAtk, battlerPartner, side, field)    \
+    if (gSideTimers[side].field == battlerAtk)                      \
+        gSideTimers[side].field = battlerPartner;                   \
+    else if (gSideTimers[side].field == battlerPartner)             \
+        gSideTimers[side].field = battlerAtk;
+
+static void TrySwapStickyWebBattlerId(enum BattlerId battlerAtk, enum BattlerId battlerPartner)
+{
+    u32 oppSide = GetBattlerSide(BATTLE_OPPOSITE(battlerAtk));
+
+    // if we've set sticky web on the opposing side, need to swap stickyWebBattlerId for mirror armor
+    TRY_SIDE_TIMER_BATTLER_ID_SWAP(battlerAtk, battlerPartner, oppSide, stickyWebBattlerId);
+}
+#undef TRY_SIDE_TIMER_BATTLER_ID_SWAP
+
+static void TrySwapWishBattlerIds(enum BattlerId battlerAtk, enum BattlerId battlerPartner)
+{
+    u32 temp;
+
+    // if used future sight on opposing side, properly track who used it
+    if (gBattleStruct->futureSight[LEFT_FOE(battlerAtk)].counter > 0
+     || gBattleStruct->futureSight[RIGHT_FOE(battlerAtk)].counter > 0)
     {
-        enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-        // If AI is faster and doesn't have any mons left, lowering speed doesn't give any
-        return !(AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, DONT_CONSIDER_PRIORITY)
-            && CountUsablePartyMons(battlerAtk) == 0
-            && !HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_ELECTRO_BALL));
-    }
-
-    return TRUE;
-}
-
-enum AIScore IncreaseStatDownScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Stat stat)
-{
-    enum AIScore tempScore = NO_INCREASE;
-
-    // Don't increase score if target is already -3 stat stage
-    if (stat != STAT_SPEED && gBattleMons[battlerDef].statStages[stat] <= DEFAULT_STAT_STAGE - 3)
-        return NO_INCREASE;
-
-    // Don't decrease stat if target will die to residual damage
-    if (GetBattlerSecondaryDamage(battlerDef) >= gBattleMons[battlerDef].hp)
-        return NO_INCREASE;
-
-    if (DoesAbilityRaiseStatsWhenLowered(gAiLogicData->abilities[battlerDef]))
-        return NO_INCREASE;
-
-    // TODO: Avoid decreasing stat if
-    // player can kill ai in 2 hits with decreased attack / sp atk stages
-    // ai can kill target in 2 hits without decreasing defense / sp def stages
-
-    switch (stat)
-    {
-    case STAT_ATK:
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
-            tempScore += DECENT_EFFECT;
-        break;
-    case STAT_DEF:
-        if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_PHYSICAL)
-         || HasMoveWithCategory(BATTLE_PARTNER(battlerAtk), DAMAGE_CATEGORY_PHYSICAL))
-            tempScore += DECENT_EFFECT;
-        break;
-    case STAT_SPEED:
-    {
-        enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-        if (AI_IsSlower(battlerAtk, battlerDef, MOVE_NONE, predictedMoveSpeedCheck, DONT_CONSIDER_PRIORITY)
-        || AI_IsSlower(BATTLE_PARTNER(battlerAtk), battlerDef, MOVE_NONE, predictedMoveSpeedCheck, DONT_CONSIDER_PRIORITY))
-            tempScore += DECENT_EFFECT;
-        break;
-    }
-    case STAT_SPATK:
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
-            tempScore += DECENT_EFFECT;
-        break;
-    case STAT_SPDEF:
-        if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_SPECIAL)
-         || HasMoveWithCategory(BATTLE_PARTNER(battlerAtk), DAMAGE_CATEGORY_SPECIAL))
-            tempScore += DECENT_EFFECT;
-        break;
-    case STAT_ACC:
-        tempScore += WEAK_EFFECT;
-        if (IsBattlerTrapped(battlerAtk, battlerDef))
-            tempScore += DECENT_EFFECT;
-        if (gBattleMons[battlerDef].volatiles.leechSeed)
-            tempScore += WEAK_EFFECT;
-        if (gBattleMons[battlerDef].volatiles.cursed)
-            tempScore += WEAK_EFFECT;
-        break;
-    case STAT_EVASION:
-        if (gBattleMons[battlerDef].status1 & STATUS1_PSN_ANY)
-            tempScore += WEAK_EFFECT;
-        if (gBattleMons[battlerDef].volatiles.leechSeed)
-            tempScore += WEAK_EFFECT;
-        if (gBattleMons[battlerDef].volatiles.root)
-            tempScore += WEAK_EFFECT;
-        if (gBattleMons[battlerDef].volatiles.cursed)
-            tempScore += WEAK_EFFECT;
-        break;
-    default:
-        break;
-    }
-
-    return (tempScore > BEST_EFFECT) ? BEST_EFFECT : tempScore; // don't inflate score so only max +4
-}
-
-bool32 BattlerStatCanRise(enum BattlerId battler, enum Ability battlerAbility, enum Stat stat)
-{
-    if ((gBattleMons[battler].statStages[stat] < MAX_STAT_STAGE && battlerAbility != ABILITY_CONTRARY)
-      || (battlerAbility == ABILITY_CONTRARY && gBattleMons[battler].statStages[stat] > MIN_STAT_STAGE))
-        return TRUE;
-    return FALSE;
-}
-
-bool32 AreBattlersStatsMaxed(enum BattlerId battlerId)
-{
-    for (enum Stat statId = STAT_ATK; statId < NUM_BATTLE_STATS; statId++)
-    {
-        if (gBattleMons[battlerId].statStages[statId] < MAX_STAT_STAGE)
-            return FALSE;
-    }
-    return TRUE;
-}
-
-bool32 AnyStatIsRaised(enum BattlerId battlerId)
-{
-    for (enum Stat statId = STAT_ATK; statId < NUM_BATTLE_STATS; statId++)
-    {
-        if (gBattleMons[battlerId].statStages[statId] > DEFAULT_STAT_STAGE)
-            return TRUE;
-    }
-    return FALSE;
-}
-
-u32 CountPositiveStatStages(enum BattlerId battlerId)
-{
-    u32 count = 0;
-    for (enum Stat statId = STAT_ATK; statId < NUM_BATTLE_STATS; statId++)
-    {
-        if (gBattleMons[battlerId].statStages[statId] > DEFAULT_STAT_STAGE)
-            count++;
-    }
-    return count;
-}
-
-u32 CountNegativeStatStages(enum BattlerId battlerId)
-{
-    u32 count = 0;
-    for (enum Stat statId = STAT_ATK; statId < NUM_BATTLE_STATS; statId++)
-    {
-        if (gBattleMons[battlerId].statStages[statId] < DEFAULT_STAT_STAGE)
-            count++;
-    }
-    return count;
-}
-
-bool32 CanIndexMoveFaintTarget(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 moveIndex, enum DamageCalcContext calcContext)
-{
-    s32 dmg;
-    enum Move *moves = gBattleMons[battlerAtk].moves;
-
-    if (IsDoubleBattle() && battlerDef == BATTLE_PARTNER(battlerAtk))
-        dmg = gAiLogicData->simulatedDmg[battlerAtk][battlerDef][moveIndex].maximum; // Attacking partner, be careful
-    else
-        dmg = AI_GetDamage(battlerAtk, battlerDef, moveIndex, calcContext, gAiLogicData);
-
-    if (gBattleMons[battlerDef].hp <= dmg && !CanEndureHit(battlerAtk, battlerDef, moves[moveIndex]))
-        return TRUE;
-    return FALSE;
-}
-
-enum Move *GetMovesArray(enum BattlerId battler)
-{
-    if (IsAiBattlerAware(battler) || IsAiBattlerAware(BATTLE_PARTNER(battler)))
-        return gBattleMons[battler].moves;
-    else
-        return gBattleHistory->usedMoves[battler];
-}
-
-u32 GetBattlerMoveIndexWithEffect(enum BattlerId battler, enum BattleMoveEffects effect)
-{
-    enum Move *moves = GetMovesArray(battler);
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (GetMoveEffect(moves[moveIndex]) == effect)
-            return moveIndex;
-    }
-    return MAX_MON_MOVES;
-}
-
-bool32 HasPhysicalBestMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum DamageCalcContext calcContext)
-{
-    enum Move atkBestMoves[MAX_MON_MOVES] = {MOVE_NONE};
-    GetBestDmgMovesFromBattler(battlerAtk, battlerDef, calcContext, atkBestMoves);
-    bool32 bestMoveIsPhysical = TRUE;
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (atkBestMoves[moveIndex] == MOVE_NONE)
+        for (enum BattlerId i = 0; i < gBattlersCount; i++)
         {
-            break;
-        }
-        else
-        {
-            if (GetBattleMoveCategory(atkBestMoves[moveIndex]) == DAMAGE_CATEGORY_SPECIAL)
+            if (IsBattlerAlly(i, battlerAtk))
+                continue;   // only on opposing side
+
+            if (gBattleStruct->futureSight[i].battlerIndex == battlerAtk)
             {
-                bestMoveIsPhysical = FALSE;
+                // if target was attacked with future sight from us, now they'll be the partner slot
+                gBattleStruct->futureSight[i].battlerIndex = battlerPartner;
+                gBattleStruct->futureSight[i].partyIndex = gBattlerPartyIndexes[battlerPartner];
+                break;
+            }
+            else if (gBattleStruct->futureSight[i].battlerIndex == battlerPartner)
+            {
+                gBattleStruct->futureSight[i].battlerIndex = battlerAtk;
+                gBattleStruct->futureSight[i].partyIndex = gBattlerPartyIndexes[battlerAtk];
                 break;
             }
         }
     }
-    return bestMoveIsPhysical;
+
+    // swap wish party indices
+    if (gBattleStruct->wish[battlerAtk].counter > 0
+     || gBattleStruct->wish[battlerPartner].counter > 0)
+        SWAP(gBattleStruct->wish[battlerAtk].partyId, gBattleStruct->wish[battlerPartner].partyId, temp);
 }
 
-bool32 HasOnlyMovesWithCategory(enum BattlerId battlerId, enum DamageCategory category, bool32 onlyOffensive)
+static void TrySwapAttractBattlerIds(enum BattlerId battlerAtk, enum BattlerId battlerPartner)
 {
-    enum Move *moves = GetMovesArray(battlerId);
+    u32 attractedTo;
 
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    // our own infatuation handled with gBattleMons struct data swapping
+
+    // if another battler is infatuated with one of us, change to other battler
+    for (enum BattlerId i = 0; i < gBattlersCount; i++)
     {
-        if (onlyOffensive && IsBattleMoveStatus(moves[moveIndex]))
+        if (i == battlerAtk || i == battlerPartner || !gBattleMons[i].volatiles.infatuation)
             continue;
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && GetBattleMoveCategory(moves[moveIndex]) != category)
-            return FALSE;
-    }
 
-    return TRUE;
-}
-
-bool32 HasMoveWithCategory(enum BattlerId battler, enum DamageCategory category)
-{
-    enum Move *moves = GetMovesArray(battler);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && GetBattleMoveCategory(moves[moveIndex]) == category)
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 HasMoveWithType(enum BattlerId battler, enum Type type)
-{
-    enum Move *moves = GetMovesArray(battler);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && GetMoveType(moves[moveIndex]) == type)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasMoveWithEffect(enum BattlerId battler, enum BattleMoveEffects effect)
-{
-    enum Move *moves = GetMovesArray(battler);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && GetMoveEffect(moves[moveIndex]) == effect)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasMoveWithAIEffect(enum BattlerId battler, u32 aiEffect)
-{
-    enum Move *moves = GetMovesArray(battler);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE)
+        attractedTo = INFATUATED_WITH(i);
+        if (attractedTo == battlerAtk)
         {
-            if (GetAIEffectGroupFromMove(battler, moves[moveIndex]) & aiEffect)
-                return TRUE;
+            gBattleMons[i].volatiles.infatuation = INFATUATED_WITH(battlerPartner);
+            break;
         }
-    }
-
-    return FALSE;
-}
-
-bool32 HasBattlerSideMoveWithEffect(enum BattlerId battler, enum BattleMoveEffects effect)
-{
-    if (HasMoveWithEffect(battler, effect))
-        return TRUE;
-    if (HasPartnerIgnoreFlags(battler) && HasMoveWithEffect(BATTLE_PARTNER(battler), effect))
-        return TRUE;
-    return FALSE;
-}
-
-bool32 HasBattlerSideMoveWithAIEffect(enum BattlerId battler, u32 aiEffect)
-{
-    if (HasMoveWithAIEffect(battler, aiEffect))
-        return TRUE;
-    if (HasPartnerIgnoreFlags(battler) && HasMoveWithAIEffect(BATTLE_PARTNER(battler), aiEffect))
-        return TRUE;
-    return FALSE;
-}
-
-// HasBattlerSideMoveWithEffect checks if the AI knows a side has a move effect,
-// while HasBattlerSideUsedMoveWithEffect checks if the side has actively USED the move effect.
-// It matches both on move effect and on AI move effect; eg, EFFECT_HAZE will also bring up Freezy Frost or Clear Smog, anything with AI_EFFECT_RESET_STATS.
-bool32 HasBattlerSideUsedMoveWithEffect(enum BattlerId battler, enum BattleMoveEffects effect)
-{
-    u32 aiEffect = GetAIEffectGroup(effect);
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (GetMoveEffect(gBattleHistory->usedMoves[battler][moveIndex]) == effect)
-            return TRUE;
-
-        if (aiEffect != AI_EFFECT_NONE)
+        else if (attractedTo == battlerPartner)
         {
-            if (GetAIEffectGroupFromMove(battler, gBattleHistory->usedMoves[battler][moveIndex]) & aiEffect)
-                return TRUE;
-        }
-
-        if (HasPartnerIgnoreFlags(battler))
-        {
-            if (GetMoveEffect(gBattleHistory->usedMoves[BATTLE_PARTNER(battler)][moveIndex]) == effect)
-                return TRUE;
-
-            if (aiEffect != AI_EFFECT_NONE)
-            {
-                if (GetAIEffectGroupFromMove(battler, gBattleHistory->usedMoves[BATTLE_PARTNER(battler)][moveIndex]) & aiEffect)
-                    return TRUE;
-            }
-        }
-    }
-    return FALSE;
-}
-
-bool32 HasNonVolatileMoveEffect(enum BattlerId battlerId, enum MoveEffect effect)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (GetMoveNonVolatileStatus(moves[moveIndex]) == effect)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 IsPowerBasedOnStatus(enum BattlerId battlerId, enum BattleMoveEffects effect, u32 argument)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE
-            && GetMoveEffect(moves[moveIndex]) == effect
-            && (GetMoveEffectArg_Status(moves[moveIndex]) & argument))
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasMoveWithAdditionalEffect(enum BattlerId battlerId, enum MoveEffect moveEffect)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE
-            && MoveHasAdditionalEffect(moves[moveIndex], moveEffect))
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasBattlerSideMoveWithAdditionalEffect(enum BattlerId battler, enum MoveEffect moveEffect)
-{
-    if (HasMoveWithAdditionalEffect(battler, moveEffect))
-        return TRUE;
-    if (HasPartnerIgnoreFlags(battler) && HasMoveWithAdditionalEffect(BATTLE_PARTNER(battler), moveEffect))
-        return TRUE;
-    return FALSE;
-}
-
-bool32 HasMoveWithCriticalHitChance(enum BattlerId battlerId)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE
-            && GetMoveCriticalHitStage(moves[moveIndex]) > 0)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasMoveWithMoveEffectExcept(enum BattlerId battlerId, enum MoveEffect moveEffect, enum BattleMoveEffects exception)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE
-            && GetMoveEffect(moves[moveIndex]) != exception
-            && MoveHasAdditionalEffect(moves[moveIndex], moveEffect))
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasMove(enum BattlerId battlerId, enum Move move)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && moves[moveIndex] == move)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasAnyKnownMove(enum BattlerId battlerId)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasMoveThatLowersOwnStats(enum BattlerId battlerId)
-{
-    enum Move aiMove;
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        aiMove = moves[moveIndex];
-        if (aiMove != MOVE_NONE && aiMove != MOVE_UNAVAILABLE)
-        {
-            u32 additionalEffectCount = GetMoveAdditionalEffectCount(aiMove);
-            for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-            {
-                const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(aiMove, effectIndex);
-                if (IsSelfStatLoweringEffect(additionalEffect->moveEffect) && additionalEffect->self)
-                    return TRUE;
-            }
-        }
-    }
-    return FALSE;
-}
-
-bool32 HasMoveThatRaisesOwnStats(enum BattlerId battlerId)
-{
-    enum Move aiMove;
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        aiMove = moves[moveIndex];
-        if (aiMove != MOVE_NONE && aiMove != MOVE_UNAVAILABLE)
-        {
-            u32 additionalEffectCount = GetMoveAdditionalEffectCount(aiMove);
-            for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-            {
-                const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(aiMove, effectIndex);
-                if (IsSelfStatRaisingEffect(additionalEffect->moveEffect) && additionalEffect->self)
-                    return TRUE;
-            }
-        }
-    }
-    return FALSE;
-}
-
-bool32 HasMoveWithLowAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 accCheck, bool32 ignoreStatus)
-{
-    enum Move *moves = GetMovesArray(battlerAtk);
-    u32 moveLimitations = gAiLogicData->moveLimitations[battlerAtk];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        if (ignoreStatus && IsBattleMoveStatus(moves[moveIndex]))
-            continue;
-
-        if (!IsBattleMoveStatus(moves[moveIndex]) && GetMoveAccuracy(moves[moveIndex]) == 0)
-            continue;
-
-        enum MoveTarget target = AI_GetBattlerMoveTargetType(battlerAtk, moves[moveIndex]);
-        if (target == TARGET_USER || target == TARGET_OPPONENTS_FIELD)
-            continue;
-
-        if (gAiLogicData->moveAccuracy[battlerAtk][battlerDef][moveIndex] <= accCheck)
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasSleepMoveWithLowAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef)
-{
-    enum Move *moves = GetMovesArray(battlerAtk);
-    u32 moveLimitations = gAiLogicData->moveLimitations[battlerAtk];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        if (GetMoveNonVolatileStatus(moves[moveIndex]) == MOVE_EFFECT_SLEEP
-        && gAiLogicData->moveAccuracy[battlerAtk][battlerDef][moveIndex] < 85)
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 HasHealingEffect(enum BattlerId battlerId)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && IsHealingMove(moves[moveIndex]))
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 IsTrappingMove(enum Move move)
-{
-    switch (GetMoveEffect(move))
-    {
-    case EFFECT_MEAN_LOOK:
-    case EFFECT_FAIRY_LOCK:
-    //case EFFECT_NO_RETREAT:   // TODO
-        return TRUE;
-    default:
-        return MoveHasAdditionalEffect(move, MOVE_EFFECT_PREVENT_ESCAPE)
-            || MoveHasAdditionalEffect(move, MOVE_EFFECT_WRAP);
-    }
-}
-
-bool32 HasTrappingMoveEffect(enum BattlerId battler)
-{
-    enum Move *moves = GetMovesArray(battler);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && IsTrappingMove(moves[moveIndex]))
-            return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 HasThawingMove(enum BattlerId battler)
-{
-    enum Move *moves = GetMovesArray(battler);
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && MoveThawsUser(moves[moveIndex]))
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 HasUsableWhileAsleepMove(enum BattlerId battler)
-{
-    enum Move *moves = GetMovesArray(battler);
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && IsUsableWhileAsleepEffect(GetMoveEffect(moves[moveIndex])))
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 IsUngroundingEffect(enum BattleMoveEffects effect)
-{
-    switch (effect)
-    {
-    case EFFECT_MAGNET_RISE:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-// for anger point
-bool32 IsAttackBoostMoveEffect(enum BattleMoveEffects effect)
-{
-    switch (effect)
-    {
-    case EFFECT_ATTACK_UP:
-    case EFFECT_ATTACK_UP_2:
-    case EFFECT_ATTACK_ACCURACY_UP:
-    case EFFECT_ATTACK_SPATK_UP:
-    case EFFECT_MEDITATE:
-    case EFFECT_COIL:
-    case EFFECT_BELLY_DRUM:
-    case EFFECT_BULK_UP:
-    case EFFECT_GROWTH:
-    case EFFECT_FILLET_AWAY:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsStatRaisingEffect(enum BattleMoveEffects effect)
-{
-    switch (effect)
-    {
-    case EFFECT_ATTACK_UP:
-    case EFFECT_ATTACK_UP_2:
-    case EFFECT_DEFENSE_UP:
-    case EFFECT_DEFENSE_UP_2:
-    case EFFECT_DEFENSE_UP_3:
-    case EFFECT_AUTOTOMIZE:
-    case EFFECT_SPEED_UP:
-    case EFFECT_SPEED_UP_2:
-    case EFFECT_SPECIAL_ATTACK_UP:
-    case EFFECT_SPECIAL_ATTACK_UP_2:
-    case EFFECT_SPECIAL_ATTACK_UP_3:
-    case EFFECT_SPECIAL_DEFENSE_UP:
-    case EFFECT_SPECIAL_DEFENSE_UP_2:
-    case EFFECT_ACCURACY_UP:
-    case EFFECT_ACCURACY_UP_2:
-    case EFFECT_EVASION_UP:
-    case EFFECT_EVASION_UP_2:
-    case EFFECT_MINIMIZE:
-    case EFFECT_DEFENSE_CURL:
-    case EFFECT_CALM_MIND:
-    case EFFECT_COSMIC_POWER:
-    case EFFECT_DRAGON_DANCE:
-    case EFFECT_MEDITATE:
-    case EFFECT_ACUPRESSURE:
-    case EFFECT_SHELL_SMASH:
-    case EFFECT_SHIFT_GEAR:
-    case EFFECT_ATTACK_ACCURACY_UP:
-    case EFFECT_ATTACK_SPATK_UP:
-    case EFFECT_GROWTH:
-    case EFFECT_COIL:
-    case EFFECT_QUIVER_DANCE:
-    case EFFECT_BULK_UP:
-    case EFFECT_GEOMANCY:
-    case EFFECT_STOCKPILE:
-    case EFFECT_VICTORY_DANCE:
-        return TRUE;
-    case EFFECT_CHARGE:
-        return B_CHARGE_SPDEF_RAISE >= GEN_5;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsStatLoweringEffect(enum BattleMoveEffects effect)
-{
-    // ignore other potentially-beneficial effects like defog, gravity
-    switch (effect)
-    {
-    case EFFECT_ATTACK_DOWN:
-    case EFFECT_DEFENSE_DOWN:
-    case EFFECT_SPEED_DOWN:
-    case EFFECT_SPECIAL_ATTACK_DOWN:
-    case EFFECT_SPECIAL_DEFENSE_DOWN:
-    case EFFECT_ACCURACY_DOWN:
-    case EFFECT_EVASION_DOWN:
-    case EFFECT_ATTACK_DOWN_2:
-    case EFFECT_DEFENSE_DOWN_2:
-    case EFFECT_SPEED_DOWN_2:
-    case EFFECT_SPECIAL_ATTACK_DOWN_2:
-    case EFFECT_SPECIAL_DEFENSE_DOWN_2:
-    case EFFECT_ACCURACY_DOWN_2:
-    case EFFECT_EVASION_DOWN_2:
-    case EFFECT_TICKLE:
-    case EFFECT_CAPTIVATE:
-    case EFFECT_NOBLE_ROAR:
-    case EFFECT_MEMENTO:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsSelfStatLoweringEffect(enum MoveEffect effect)
-{
-    // Self stat lowering moves like Overheart, Superpower etc.
-    switch (effect)
-    {
-    case MOVE_EFFECT_ATK_MINUS_1:
-    case MOVE_EFFECT_DEF_MINUS_1:
-    case MOVE_EFFECT_SPD_MINUS_1:
-    case MOVE_EFFECT_SP_ATK_MINUS_1:
-    case MOVE_EFFECT_SP_DEF_MINUS_1:
-    case MOVE_EFFECT_EVS_MINUS_1:
-    case MOVE_EFFECT_ACC_MINUS_1:
-    case MOVE_EFFECT_ATK_MINUS_2:
-    case MOVE_EFFECT_DEF_MINUS_2:
-    case MOVE_EFFECT_SPD_MINUS_2:
-    case MOVE_EFFECT_SP_ATK_MINUS_2:
-    case MOVE_EFFECT_SP_DEF_MINUS_2:
-    case MOVE_EFFECT_EVS_MINUS_2:
-    case MOVE_EFFECT_ACC_MINUS_2:
-    case MOVE_EFFECT_V_CREATE:
-    case MOVE_EFFECT_ATK_DEF_DOWN:
-    case MOVE_EFFECT_DEF_SPDEF_DOWN:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsSelfStatRaisingEffect(enum MoveEffect effect)
-{
-    // Self stat lowering moves like Power Up Punch or Charge Beam
-    switch (effect)
-    {
-    case MOVE_EFFECT_ATK_PLUS_1:
-    case MOVE_EFFECT_DEF_PLUS_1:
-    case MOVE_EFFECT_SPD_PLUS_1:
-    case MOVE_EFFECT_SP_ATK_PLUS_1:
-    case MOVE_EFFECT_SP_DEF_PLUS_1:
-    case MOVE_EFFECT_EVS_PLUS_1:
-    case MOVE_EFFECT_ACC_PLUS_1:
-    case MOVE_EFFECT_ATK_PLUS_2:
-    case MOVE_EFFECT_DEF_PLUS_2:
-    case MOVE_EFFECT_SPD_PLUS_2:
-    case MOVE_EFFECT_SP_ATK_PLUS_2:
-    case MOVE_EFFECT_SP_DEF_PLUS_2:
-    case MOVE_EFFECT_EVS_PLUS_2:
-    case MOVE_EFFECT_ACC_PLUS_2:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsSwitchOutEffect(enum BattleMoveEffects effect)
-{
-    // Switch out effects like U-Turn, Volt Switch, etc.
-    switch (effect)
-    {
-    case EFFECT_TELEPORT:
-        if (GetConfig(CONFIG_TELEPORT_BEHAVIOR) >= GEN_8)
-            return TRUE;
-    case EFFECT_HIT_ESCAPE:
-    case EFFECT_PARTING_SHOT:
-    case EFFECT_BATON_PASS:
-    case EFFECT_WEATHER_AND_SWITCH:
-    case EFFECT_SHED_TAIL:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsSelfSacrificeEffect(enum Move move)
-{
-    // All self sacrificing effects like Explosion, Final Gambit, Memento, etc.
-    if (IsExplosionMove(move))
-        return TRUE;
-
-    switch (GetMoveEffect(move))
-    {
-    case EFFECT_FINAL_GAMBIT:
-    case EFFECT_MEMENTO:
-    case EFFECT_HEALING_WISH:
-    case EFFECT_REVIVAL_BLESSING:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsSubstituteEffect(enum BattleMoveEffects effect)
-{
-    // Substitute effects like Substitute, Shed Tail, etc.
-    switch (effect)
-    {
-    case EFFECT_SUBSTITUTE:
-    case EFFECT_SHED_TAIL:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsChaseEffect(enum BattleMoveEffects effect)
-{
-    // Effects that hit switching out mons like Pursuit
-    switch (effect)
-    {
-    case EFFECT_PURSUIT:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-static inline bool32 IsMoveSleepClauseTrigger(enum Move move)
-{
-    enum BattleMoveEffects effect = GetMoveEffect(move);
-
-    // Sleeping effects like Sleep Powder, Yawn, Dark Void, etc.
-    switch (effect)
-    {
-    case EFFECT_YAWN:
-    case EFFECT_DARK_VOID:
-        return TRUE;
-    default:
-        break;
-    }
-    switch (GetMoveNonVolatileStatus(move))
-    {
-    case MOVE_EFFECT_SLEEP:
-        return TRUE;
-    default:
-        break;
-    }
-
-    // Sleeping effects like G-Max Befuddle, G-Max Snooze, etc.
-    u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
-    for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-    {
-        const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectIndex);
-        switch (additionalEffect->moveEffect)
-        {
-        // Skip MOVE_EFFECT_SLEEP as moves with a secondary chance of applying sleep are allowed by Smogon's rules (ie. Relic Song)
-        case MOVE_EFFECT_EFFECT_SPORE_SIDE:
-        case MOVE_EFFECT_YAWN_FOE:
-            return TRUE;
-        default:
+            gBattleMons[i].volatiles.infatuation = INFATUATED_WITH(battlerAtk);
             break;
         }
     }
-    return FALSE;
 }
 
-bool32 HasDamagingMove(enum BattlerId battler)
+static void SwapBattlerMoveData(enum BattlerId battler1, enum BattlerId battler2)
 {
-    enum Move *moves = GetMovesArray(battler);
+    u32 temp;
+    SWAP(gBattleStruct->chosenMovePositions[battler1], gBattleStruct->chosenMovePositions[battler2], temp);
+    SWAP(gChosenMoveByBattler[battler1], gChosenMoveByBattler[battler2], temp);
+    SWAP(gBattleStruct->moveTarget[battler1], gBattleStruct->moveTarget[battler2], temp);
+    SWAP(gMoveSelectionCursor[battler1], gMoveSelectionCursor[battler2], temp);
+    SWAP(gLockedMoves[battler1], gLockedMoves[battler2], temp);
 
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && GetMovePower(moves[moveIndex]) > 0)
-            return TRUE;
-    }
-
-    return FALSE;
+    // update last moves
+    SWAP(gLastPrintedMoves[battler1],   gLastPrintedMoves[battler2], temp);
+    SWAP(gLastMoves[battler1],          gLastMoves[battler2], temp);
+    SWAP(gLastLandedMoves[battler1],    gLastLandedMoves[battler2], temp);
+    SWAP(gLastHitByType[battler1],      gLastHitByType[battler2], temp);
+    SWAP(gLastUsedMoveType[battler1],   gLastUsedMoveType[battler2], temp);
+    SWAP(gLastResultingMoves[battler1], gLastResultingMoves[battler2], temp);
+    SWAP(gLastHitBy[battler1],          gLastHitBy[battler2], temp);
 }
 
-bool32 HasDamagingMoveOfType(enum BattlerId battler, enum Type type)
+static void AnimTask_AllySwitchDataSwap(u8 taskId)
 {
-    enum Move *moves = GetMovesArray(battler);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] != MOVE_NONE && moves[moveIndex] != MOVE_UNAVAILABLE && GetMovePower(moves[moveIndex]) > 0)
-        {
-            enum Type moveType = GetDynamicMoveType(GetBattlerMon(battler), moves[moveIndex], battler, MON_IN_BATTLE);
-
-            if (moveType != TYPE_NONE && type == moveType)
-                return TRUE;
-            if (GetMoveType(moves[moveIndex]) == type)
-                return TRUE;
-            if (GetMoveEffect(moves[moveIndex]) == EFFECT_NATURE_POWER && GetMoveType(GetNaturePowerMove()) == type)
-                return TRUE;
-        }
-    }
-
-    return FALSE;
-}
-
-bool32 HasMoveWithFlag(enum BattlerId battler, MoveFlag getFlag)
-{
-    enum Move *moves = GetMovesArray(battler);
-    u32 moveLimitations = gAiLogicData->moveLimitations[battler];
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
-            continue;
-
-        if (getFlag(moves[moveIndex]))
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 IsTwoTurnNotSemiInvulnerableMove(enum BattlerId battlerAtk, enum Move move)
-{
-    switch (GetMoveEffect(move))
-    {
-    case EFFECT_SOLAR_BEAM:
-    case EFFECT_TWO_TURNS_ATTACK:
-        return !(gAiLogicData->holdEffects[battlerAtk] == HOLD_EFFECT_POWER_HERB
-              || (AI_GetWeather() & GetMoveTwoTurnAttackWeather(move)));
-    default:
-        return FALSE;
-    }
-}
-
-static u32 GetLeechSeedDamage(enum BattlerId battler)
-{
-    u32 damage = 0;
-    u32 leechSeeder = gBattleMons[battler].volatiles.leechSeed;
-    if (leechSeeder && gBattleMons[leechSeeder - 1].hp != 0)
-     {
-        damage = GetNonDynamaxMaxHP(battler) / 8;
-        if (damage == 0)
-            damage = 1;
-     }
-     return damage;
-}
-
-static u32 GetNightmareDamage(enum BattlerId battlerId)
-{
-    u32 damage = 0;
-    if (gBattleMons[battlerId].volatiles.nightmare
-     && ((gBattleMons[battlerId].status1 & STATUS1_SLEEP)
-     || gAiLogicData->abilities[battlerId] == ABILITY_COMATOSE))
-    {
-        damage = GetNonDynamaxMaxHP(battlerId) / 4;
-        if (damage == 0)
-            damage = 1;
-    }
-    return damage;
-}
-
-static u32 GetCurseDamage(enum BattlerId battlerId)
-{
-    u32 damage = 0;
-    if (gBattleMons[battlerId].volatiles.cursed)
-    {
-        damage = GetNonDynamaxMaxHP(battlerId) / 4;
-        if (damage == 0)
-            damage = 1;
-    }
-    return damage;
-}
-
-static u32 GetTrapDamage(enum BattlerId battler)
-{
-    // ai has no knowledge about turns remaining
-    u32 damage = 0;
-    if (gBattleMons[battler].volatiles.wrapped)
-    {
-        if (gAiLogicData->holdEffects[gBattleMons[battler].volatiles.wrappedBy] == HOLD_EFFECT_BINDING_BAND)
-            damage = GetNonDynamaxMaxHP(battler) / (B_BINDING_DAMAGE >= GEN_6 ? 6 : 8);
-        else
-            damage = GetNonDynamaxMaxHP(battler) / (B_BINDING_DAMAGE >= GEN_6 ? 8 : 16);
-
-        if (damage == 0)
-            damage = 1;
-    }
-    return damage;
-}
-
-static u32 GetPoisonDamage(enum BattlerId battlerId)
-{
-    u32 damage = 0;
-
-    if (gAiLogicData->abilities[battlerId] == ABILITY_POISON_HEAL)
-        return damage;
-
-    if (gBattleMons[battlerId].status1 & STATUS1_POISON)
-    {
-        damage = gBattleMons[battlerId].maxHP / 8;
-        if (damage == 0)
-            damage = 1;
-    }
-    else if (gBattleMons[battlerId].status1 & STATUS1_TOXIC_POISON)
-    {
-        u32 status1Temp = gBattleMons[battlerId].status1;
-        damage = gBattleMons[battlerId].maxHP / 16;
-        if (damage == 0)
-            damage = 1;
-        if ((status1Temp & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
-            status1Temp += STATUS1_TOXIC_TURN(1);
-        damage *= (status1Temp & STATUS1_TOXIC_COUNTER) >> 8;
-    }
-    return damage;
-}
-
-static bool32 DoesBattlerTakeSandstormDamage(enum BattlerId battlerId, enum Ability ability)
-{
-    if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
-      && ability != ABILITY_SAND_VEIL
-      && ability != ABILITY_SAND_FORCE
-      && ability != ABILITY_HARDY_THORNS
-      && ability != ABILITY_SAND_RUSH
-      && ability != ABILITY_OVERCOAT)
-        return TRUE;
-    return FALSE;
-}
-
-static bool32 DoesBattlerTakeHailDamage(enum BattlerId battlerId, enum Ability ability)
-{
-    if (!IS_BATTLER_OF_TYPE(battlerId, TYPE_ICE)
-      && ability != ABILITY_SNOW_CLOAK
-      && ability != ABILITY_OVERCOAT
-      && ability != ABILITY_ICE_BODY)
-        return TRUE;
-    return FALSE;
-}
-
-static u32 GetWeatherDamage(enum BattlerId battlerId)
-{
-    enum Ability ability = gAiLogicData->abilities[battlerId];
-    enum HoldEffect holdEffect = gAiLogicData->holdEffects[battlerId];
-    u32 damage = 0;
-    u32 weather = AI_GetWeather();
-    if (!weather)
-        return 0;
-
-    if (weather & B_WEATHER_SANDSTORM)
-    {
-        if (BattlerAffectedBySandstorm(battlerId, ability)
-          && gBattleMons[battlerId].volatiles.semiInvulnerable != STATE_UNDERGROUND
-          && gBattleMons[battlerId].volatiles.semiInvulnerable != STATE_UNDERWATER
-          && holdEffect != HOLD_EFFECT_SAFETY_GOGGLES)
-        {
-            damage = GetNonDynamaxMaxHP(battlerId) / 16;
-            if (damage == 0)
-                damage = 1;
-        }
-    }
-    if ((weather & B_WEATHER_HAIL) && ability != ABILITY_ICE_BODY)
-    {
-        if (BattlerAffectedByHail(battlerId, ability)
-          && gBattleMons[battlerId].volatiles.semiInvulnerable != STATE_UNDERGROUND
-          && gBattleMons[battlerId].volatiles.semiInvulnerable != STATE_UNDERWATER
-          && holdEffect != HOLD_EFFECT_SAFETY_GOGGLES)
-        {
-            damage = GetNonDynamaxMaxHP(battlerId) / 16;
-            if (damage == 0)
-                damage = 1;
-        }
-    }
-    return damage;
-}
-
-u32 GetBattlerSecondaryDamage(enum BattlerId battlerId)
-{
-    u32 secondaryDamage;
-
-    if (gAiLogicData->abilities[battlerId] == ABILITY_MAGIC_GUARD)
-        return FALSE;
-
-    secondaryDamage = GetLeechSeedDamage(battlerId)
-     + GetNightmareDamage(battlerId)
-     + GetCurseDamage(battlerId)
-     + GetTrapDamage(battlerId)
-     + GetPoisonDamage(battlerId)
-     + GetWeatherDamage(battlerId);
-
-    return secondaryDamage;
-}
-
-bool32 BattlerWillFaintFromWeather(enum BattlerId battler, enum Ability ability)
-{
-    if ((BattlerAffectedBySandstorm(battler, ability) || BattlerAffectedByHail(battler, ability))
-      && gBattleMons[battler].hp <= max(1, gBattleMons[battler].maxHP / 16))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 BattlerWillFaintFromSecondaryDamage(enum BattlerId battler, enum Ability ability)
-{
-    if (GetBattlerSecondaryDamage(battler) != 0
-      && gBattleMons[battler].hp <= max(1, gBattleMons[battler].maxHP / 16))
-        return TRUE;
-    return FALSE;
-}
-
-bool32 AnyUsefulStatIsRaised(enum BattlerId battler)
-{
-    for (enum Stat statId = STAT_ATK; statId < NUM_BATTLE_STATS; statId++)
-    {
-        if (gBattleMons[battler].statStages[statId] > DEFAULT_STAT_STAGE)
-        {
-            switch (statId)
-            {
-            case STAT_ATK:
-                if (HasMoveWithCategory(battler, DAMAGE_CATEGORY_PHYSICAL))
-                    return TRUE;
-                break;
-            case STAT_SPATK:
-                if (HasMoveWithCategory(battler, DAMAGE_CATEGORY_SPECIAL))
-                    return TRUE;
-                break;
-            case STAT_SPEED:
-                return TRUE;
-            default:
-                break;
-            }
-        }
-    }
-
-    return FALSE;
-}
-
-bool32 BattlerHasMaxHPProtection(enum BattlerId battler)
-{
-    enum Ability ability = gAiLogicData->abilities[battler];
-    if (!AI_BattlerAtMaxHp(battler))
-        return FALSE;
-    if (gAiLogicData->holdEffects[battler] == HOLD_EFFECT_FOCUS_SASH)
-        return TRUE;
-    if (B_STURDY >= GEN_5 && ability == ABILITY_STURDY)
-        return TRUE;
-    if (ability == ABILITY_MULTISCALE || ability == ABILITY_SHADOW_SHIELD)
-        return TRUE;
-    return FALSE;
-}
-
-enum AIPivot ShouldPivot(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    bool32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY);
-    bool32 hasGoodSwitchin = gAiLogicData->mostSuitableMonId[battlerAtk] >= PARTY_SIZE ? FALSE : TRUE;
-    // If AI should switch, it should pivot
-    if (aiIsFaster)
-    {
-        if (gAiLogicData->shouldSwitch & (1u << battlerAtk))
-            return SHOULD_PIVOT;
-    }
-    else
-    {
-        if (gAiLogicData->shouldSwitch & (1u << battlerAtk) && !CanTargetFaintAi(battlerDef, battlerAtk))
-            return SHOULD_PIVOT;
-    }
-    // Break Focus Sash / Multiscale effects if a good switchin exists
-    if (!IsBattleMoveStatus(move) && BattlerHasMaxHPProtection(battlerDef) && hasGoodSwitchin && RandomPercentage(RNG_AI_SHOULD_PIVOT_BREAK_SASH, SHOULD_PIVOT_BREAK_SASH_CHANCE))
-        return SHOULD_PIVOT;
-    // Would benefit from Regenerator and have a good switchin
-    if (gAiLogicData->abilities[battlerAtk] == ABILITY_REGENERATOR && ShouldRecover(battlerAtk, battlerDef, move, 33) && hasGoodSwitchin)
-        return SHOULD_PIVOT;
-    // Palafin always wants to activate Zero to Hero via pivoting when able
-    if (gAiLogicData->abilities[battlerAtk] == ABILITY_ZERO_TO_HERO && gBattleMons[battlerAtk].species == SPECIES_PALAFIN_ZERO && CountUsablePartyMons(battlerAtk) != 0)
-        return SHOULD_PIVOT;
-    // If no good switchin candidate and can't KO to change the situation, not good to pivot
-    if (GetNoOfHitsToKOBattler(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, AI_ATTACKING, CONSIDER_ENDURE) && !hasGoodSwitchin)
-        return DONT_PIVOT;
-    // Otherwise, neutral effect
-    return CAN_TRY_PIVOT;
-}
-
-#define BATTLE_TYPE_CANT_KNOCK_OFF (BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_LINK \
-                                  | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_SECRET_BASE \
-                                  | (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE ? BATTLE_TYPE_TRAINER : 0))
-bool32 CanKnockOffItem(enum BattlerId fromBattler, enum BattlerId battler, enum Item item)
-{
-    if (item == ITEM_NONE)
-        return FALSE;
-
-    if (!(gBattleTypeFlags & BATTLE_TYPE_CANT_KNOCK_OFF) && IsOnPlayerSide(fromBattler))
-        return FALSE;
-
-    if (gAiLogicData->abilities[fromBattler] == ABILITY_STICKY_HOLD)
-        return FALSE;
-
-    if (!CanBattlerGetOrLoseItem(fromBattler, battler, item))
-        return FALSE;
-
-    return TRUE;
-}
-#undef BATTLE_TYPE_CANT_KNOCK_OFF
-
-// status checks
-bool32 IsBattlerIncapacitated(enum BattlerId battler, enum Ability ability)
-{
-    if ((gBattleMons[battler].status1 & STATUS1_FREEZE) && !HasThawingMove(battler))
-        return TRUE;    // if battler has thawing move we assume they will definitely use it, and thus being frozen should be neglected
-
-    if (gBattleMons[battler].status1 & STATUS1_SLEEP && !HasMoveWithEffect(battler, EFFECT_SLEEP_TALK))
-        return TRUE;
-
-    if (gBattleMons[battler].volatiles.rechargeTimer > 0 || (ability == ABILITY_TRUANT && gBattleMons[battler].volatiles.truantCounter != 0))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 AI_CanPutToSleep(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability defAbility, enum Move move, enum Move partnerMove)
-{
-    if (!CanBeSlept(battlerAtk, battlerDef, defAbility, BLOCKED_BY_SLEEP_CLAUSE)
-      || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-      || PartnerMoveEffectIsStatusSameTarget(BATTLE_PARTNER(battlerAtk), battlerDef, partnerMove))   // shouldn't try to sleep mon that partner is trying to make sleep
-        return FALSE;
-    return TRUE;
-}
-
-static inline bool32 DoesBattlerBenefitFromAllVolatileStatus(enum BattlerId battler, enum Ability ability)
-{
-    if (ability == ABILITY_MARVEL_SCALE
-     || ability == ABILITY_QUICK_FEET
-     || ability == ABILITY_MAGIC_GUARD
-     || (ability == ABILITY_GUTS && HasMoveWithCategory(battler, DAMAGE_CATEGORY_PHYSICAL))
-     || HasMoveWithEffect(battler, EFFECT_FACADE)
-     || HasMoveWithEffect(battler, EFFECT_PSYCHO_SHIFT))
-        return TRUE;
-    return FALSE;
-}
-
-bool32 ShouldPoison(enum BattlerId battlerAtk, enum BattlerId battlerDef)
-{
-    enum Ability abilityDef = gAiLogicData->abilities[battlerDef];
-    // Battler can be poisoned and has move/ability that synergizes with being poisoned
-    if (CanBePoisoned(battlerAtk, battlerDef, gAiLogicData->abilities[battlerAtk], abilityDef) && (
-        DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef)
-        || abilityDef == ABILITY_POISON_HEAL
-        || (abilityDef == ABILITY_TOXIC_BOOST && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))))
-    {
-        if (battlerAtk == battlerDef) // Targeting self
-            return TRUE;
-        else
-            return FALSE;
-    }
-    if (battlerAtk == battlerDef)
-        return FALSE;
-    else
-        return TRUE;
-}
-
-bool32 ShouldBurn(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability abilityDef)
-{
-    // Battler can be burned and has move/ability that synergizes with being burned
-    if (CanBeBurned(battlerAtk, battlerDef, abilityDef) && (
-        DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef)
-        || abilityDef == ABILITY_HEATPROOF
-        || (abilityDef == ABILITY_FLARE_BOOST && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))))
-    {
-        if (battlerAtk == battlerDef) // Targeting self
-            return TRUE;
-        else
-            return FALSE;
-    }
-
-    if (battlerAtk == battlerDef)
-        return FALSE;
-    else
-        return TRUE;
-}
-
-bool32 ShouldFreezeOrFrostbite(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability abilityDef)
-{
-    if (!B_USE_FROSTBITE)
-    {
-        if (CanBeFrozen(battlerAtk, battlerDef, abilityDef))
-        {
-            if (battlerAtk == battlerDef) // Targeting self
-                return FALSE;
-            else
-                return TRUE;
-        }
-        return FALSE;
-    }
-    else
-    {
-        // Battler can be frostbitten and has move/ability that synergizes with being frostbitten
-        if (CanBeFrozen(battlerAtk, battlerDef, abilityDef)
-            && DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef))
-        {
-            if (battlerAtk == battlerDef) // Targeting self
-                return TRUE;
-            else
-                return FALSE;
-        }
-
-        if (battlerAtk == battlerDef)
-            return FALSE;
-        else
-            return TRUE;
-    }
-}
-
-bool32 ShouldParalyze(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability abilityDef)
-{
-    // Battler can be paralyzed and has move/ability that synergizes with being paralyzed
-    if (CanBeParalyzed(battlerAtk, battlerDef, abilityDef) && (
-        DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef)))
-    {
-        if (battlerAtk == battlerDef) // Targeting self
-            return TRUE;
-        else
-            return FALSE;
-    }
-    if (battlerAtk == battlerDef)
-        return FALSE;
-    else
-        return TRUE;
-}
-
-bool32 AI_CanPoison(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability defAbility, enum Move move, enum Move partnerMove)
-{
-    if (!CanBePoisoned(battlerAtk, battlerDef, gAiLogicData->abilities[battlerAtk], defAbility)
-      || gAiLogicData->effectiveness[battlerAtk][battlerDef][gAiThinkingStruct->movesetIndex] == UQ_4_12(0.0)
-      || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-      || PartnerMoveEffectIsStatusSameTarget(BATTLE_PARTNER(battlerAtk), battlerDef, partnerMove))
-        return FALSE;
-
-    return TRUE;
-}
-
-bool32 AI_CanParalyze(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability defAbility, enum Move move, enum Move partnerMove)
-{
-    if (!CanBeParalyzed(battlerAtk, battlerDef, defAbility)
-      || gAiLogicData->effectiveness[battlerAtk][battlerDef][gAiThinkingStruct->movesetIndex] == UQ_4_12(0.0)
-      || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-      || PartnerMoveEffectIsStatusSameTarget(BATTLE_PARTNER(battlerAtk), battlerDef, partnerMove))
-        return FALSE;
-    return TRUE;
-}
-
-bool32 AI_CanBeConfused(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, enum Ability abilityDef)
-{
-    if (gBattleMons[battlerDef].volatiles.confusionTurns > 0
-     || (abilityDef == ABILITY_OWN_TEMPO && !DoesBattlerIgnoreAbilityChecks(battlerAtk, gAiLogicData->abilities[battlerAtk], move))
-     || IsMistyTerrainAffected(battlerDef, abilityDef, gAiLogicData->holdEffects[battlerDef], gFieldStatuses)
-     || gSideStatuses[GetBattlerSide(battlerDef)] & SIDE_STATUS_SAFEGUARD
-     || DoesSubstituteBlockMove(battlerAtk, battlerDef, move))
-        return FALSE;
-    return TRUE;
-}
-
-bool32 AI_CanConfuse(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability defAbility, enum BattlerId battlerAtkPartner, enum Move move, enum Move partnerMove)
-{
-    if (AI_GetBattlerMoveTargetType(battlerAtk, move) == TARGET_FOES_AND_ALLY
-     && AI_CanBeConfused(battlerAtk, battlerDef, move, defAbility)
-     && !AI_CanBeConfused(battlerAtk, BATTLE_PARTNER(battlerDef), move, gAiLogicData->abilities[BATTLE_PARTNER(battlerDef)]))
-        return FALSE;
-
-    if (!AI_CanBeConfused(battlerAtk, battlerDef, move, defAbility)
-     || DoesPartnerHaveSameMoveEffect(battlerAtkPartner, battlerDef, move, partnerMove))
-        return FALSE;
-
-    return TRUE;
-}
-
-bool32 AI_CanBurn(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability defAbility, enum BattlerId battlerAtkPartner, enum Move move, enum Move partnerMove)
-{
-    if (!CanBeBurned(battlerAtk, battlerDef, defAbility)
-      || gAiLogicData->effectiveness[battlerAtk][battlerDef][gAiThinkingStruct->movesetIndex] == UQ_4_12(0.0)
-      || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-      || PartnerMoveEffectIsStatusSameTarget(battlerAtkPartner, battlerDef, partnerMove))
-    {
-        return FALSE;
-    }
-    return TRUE;
-}
-
-bool32 AI_CanGiveFrostbite(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability defAbility, enum BattlerId battlerAtkPartner, enum Move move, enum Move partnerMove)
-{
-    if (!CanBeFrozen(battlerAtk, battlerDef, defAbility)
-      || gAiLogicData->effectiveness[battlerAtk][battlerDef][gAiThinkingStruct->movesetIndex] == UQ_4_12(0.0)
-      || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-      || PartnerMoveEffectIsStatusSameTarget(battlerAtkPartner, battlerDef, partnerMove))
-    {
-        return FALSE;
-    }
-    return TRUE;
-}
-
-bool32 AI_CanBeInfatuated(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability defAbility)
-{
-    if (gBattleMons[battlerDef].volatiles.infatuation
-      || gAiLogicData->effectiveness[battlerAtk][battlerDef][gAiThinkingStruct->movesetIndex] == UQ_4_12(0.0)
-      || defAbility == ABILITY_OBLIVIOUS
-    //   || !AreBattlersOfOppositeGender(battlerAtk, battlerDef)
-      || AI_IsAbilityOnSide(battlerDef, ABILITY_AROMA_VEIL))
-        return FALSE;
-    return TRUE;
-}
-
-bool32 ShouldTryToFlinch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability atkAbility, enum Ability defAbility, enum Move move)
-{
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    if (((!IsMoldBreakerTypeAbility(battlerAtk, gAiLogicData->abilities[battlerAtk]) && (defAbility == ABILITY_SHIELD_DUST || defAbility == ABILITY_INNER_FOCUS))
-      || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_COVERT_CLOAK
-      || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-      || AI_IsSlower(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY))) // Opponent goes first
-    {
-        return FALSE;
-    }
-    else if ((atkAbility == ABILITY_SERENE_GRACE
-      || gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS
-      || gBattleMons[battlerDef].volatiles.infatuation
-      || gBattleMons[battlerDef].volatiles.confusionTurns > 0)
-      || ((AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY)) && CanTargetFaintAi(battlerDef, battlerAtk)))
-    {
-        return TRUE;   // good idea to flinch
-    }
-
-    return FALSE;   // don't try to flinch
-}
-
-bool32 ShouldTrap(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    if (AI_CanBattlerEscape(battlerDef))
-        return FALSE;
-
-    if (IsBattlerTrapped(battlerAtk, battlerDef))
-        return FALSE;
-
-    if (BattlerWillFaintFromSecondaryDamage(battlerDef, gAiLogicData->abilities[battlerDef]))
-        return TRUE;    // battler is taking secondary damage with low HP
-
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_STALL)
-    {
-        if (!CanTargetFaintAi(battlerDef, battlerAtk))
-            return TRUE;    // attacker goes first and opponent can't kill us
-    }
-
-    return FALSE;
-}
-
-bool32 IsFlinchGuaranteed(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    if (!MoveHasAdditionalEffect(move, MOVE_EFFECT_FLINCH))
-        return FALSE;
-
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    if (AI_IsSlower(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY))
-        return FALSE;
-
-    u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
-    // check move additional effects that are likely to happen
-    for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-    {
-        const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectIndex);
-        // Only consider effects with a guaranteed chance to happen
-        if (!MoveEffectIsGuaranteed(battlerAtk, gAiLogicData->abilities[battlerAtk], additionalEffect))
-            continue;
-
-        if (additionalEffect->moveEffect == MOVE_EFFECT_FLINCH)
-        {
-            if (gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_COVERT_CLOAK
-            || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-            || (!IsMoldBreakerTypeAbility(battlerAtk, gAiLogicData->abilities[battlerAtk])
-            && (gAiLogicData->abilities[battlerDef] == ABILITY_SHIELD_DUST || gAiLogicData->abilities[battlerDef] == ABILITY_INNER_FOCUS)))
-                return FALSE;
-            else
-                return TRUE;
-        }
-    }
-    return FALSE;
-}
-
-bool32 HasChoiceEffect(enum BattlerId battler)
-{
-    enum Ability ability = gAiLogicData->abilities[battler];
-    if (ability == ABILITY_GORILLA_TACTICS)
-        return TRUE;
-
-    if (ability == ABILITY_KLUTZ)
-        return FALSE;
-
-    enum HoldEffect holdEffect = gAiLogicData->holdEffects[battler];
-    switch (holdEffect)
-    {
-    case HOLD_EFFECT_CHOICE_BAND:
-    case HOLD_EFFECT_CHOICE_SCARF:
-    case HOLD_EFFECT_CHOICE_SPECS:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsWakeupTurn(enum BattlerId battler)
-{
-    // Check if rest was used 2 turns ago
-    if ((gBattleMons[battler].status1 & STATUS1_SLEEP) == 1 && GetMoveEffect(FindMoveUsedXTurnsAgo(battler, 2)) == EFFECT_REST)
-        return TRUE;
-    else // no way to know
-        return FALSE;
-}
-
-bool32 AnyPartyMemberStatused(enum BattlerId battlerId, bool32 checkSoundproof)
-{
+    enum BattlerId i, j;
     struct Pokemon *party;
-    u32 battlerOnField1, battlerOnField2;
-    bool32 hasStatusToCure = FALSE;
+    u32 temp;
+    enum BattlerId battlerAtk = gBattlerAttacker;
+    enum BattlerId battlerPartner = BATTLE_PARTNER(battlerAtk);
 
-    party = GetBattlerParty(battlerId);
-
-    if (HasPartner(battlerId))
+    void *data = Alloc(0x200);
+    if (data == NULL)
     {
-        battlerOnField1 = gBattlerPartyIndexes[battlerId];
-        battlerOnField2 = gBattlerPartyIndexes[GetPartnerBattler(battlerId)];
-        // Check partner's status
-        if ((GetConfig(CONFIG_HEAL_BELL_SOUNDPROOF) == GEN_5
-            || gAiLogicData->abilities[BATTLE_PARTNER(battlerId)] != ABILITY_SOUNDPROOF
-            || !checkSoundproof)
-         && GetMonData(&party[battlerOnField2], MON_DATA_STATUS) != STATUS1_NONE
-         && ShouldCureStatus(battlerId, BATTLE_PARTNER(battlerId), gAiLogicData))
-            hasStatusToCure = TRUE;
-    }
-    else // In singles there's only one battlerId by side.
-    {
-        battlerOnField1 = gBattlerPartyIndexes[battlerId];
-        battlerOnField2 = gBattlerPartyIndexes[battlerId];
+        SoftReset(1);
     }
 
-    // Check attacker's status
-    if ((GetConfig(CONFIG_HEAL_BELL_SOUNDPROOF) == GEN_5
-      || GetConfig(CONFIG_HEAL_BELL_SOUNDPROOF) >= GEN_8
-      || gAiLogicData->abilities[battlerId] != ABILITY_SOUNDPROOF || !checkSoundproof)
-     && GetMonData(&party[battlerOnField1], MON_DATA_STATUS) != STATUS1_NONE
-     && ShouldCureStatus(battlerId, battlerId, gAiLogicData))
-        hasStatusToCure = TRUE;
+    SwapStructData(&gBattleMons[battlerAtk], &gBattleMons[battlerPartner], data, sizeof(struct BattlePokemon));
+    SwapStructData(&gSpecialStatuses[battlerAtk], &gSpecialStatuses[battlerPartner], data, sizeof(struct SpecialStatus));
+    SwapStructData(&gProtectStructs[battlerAtk], &gProtectStructs[battlerPartner], data, sizeof(struct ProtectStruct));
+    SwapStructData(&gBattleSpritesDataPtr->battlerData[battlerAtk], &gBattleSpritesDataPtr->battlerData[battlerPartner], data, sizeof(struct BattleSpriteInfo));
+    SwapStructData(&gBattleStruct->illusion[battlerAtk], &gBattleStruct->illusion[battlerPartner], data, sizeof(struct Illusion));
+    SwapStructData(&gBattleStruct->battlerState[battlerAtk], &gBattleStruct->battlerState[battlerPartner], data, sizeof(struct BattlerState));
 
-    // Check inactive party mons' status
-    for (u32 monIndex = 0; monIndex < PARTY_SIZE; monIndex++)
+    // Swap those back since they aren't affected by ally switch
+    SWAP(gBattleStruct->battlerState[battlerAtk].storedHealingWish, gBattleStruct->battlerState[battlerPartner].storedHealingWish, temp);
+    SWAP(gBattleStruct->battlerState[battlerAtk].storedLunarDance, gBattleStruct->battlerState[battlerPartner].storedLunarDance, temp);
+
+    SWAP(gBattleSpritesDataPtr->battlerData[battlerAtk].invisible, gBattleSpritesDataPtr->battlerData[battlerPartner].invisible, temp);
+    SWAP(gTransformedPersonalities[battlerAtk], gTransformedPersonalities[battlerPartner], temp);
+    SWAP(gTransformedShininess[battlerAtk], gTransformedShininess[battlerPartner], temp);
+
+    SwapBattlerMoveData(battlerAtk, battlerPartner);
+
+    // Swap turn order, so that all the battlers take action
+    SWAP(gChosenActionByBattler[battlerAtk], gChosenActionByBattler[battlerPartner], temp);
+    for (i = 0; i < gBattlersCount; i++)
     {
-        if (monIndex == battlerOnField1 || monIndex == battlerOnField2)
-            continue;
-        if (GetConfig(CONFIG_HEAL_BELL_SOUNDPROOF) < GEN_5
-         && checkSoundproof
-         && GetMonAbility(&party[monIndex]) == ABILITY_SOUNDPROOF)
-            continue;
-        if (GetMonData(&party[monIndex], MON_DATA_STATUS) != STATUS1_NONE)
-            return TRUE;
-    }
-
-    return hasStatusToCure;
-}
-
-bool32 ShouldUseRecoilMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 recoilDmg, u32 moveIndex)
-{
-    if (recoilDmg >= gBattleMons[battlerAtk].hp //Recoil kills attacker
-      && CountUsablePartyMons(battlerDef) != 0) //Foe has more than 1 target left
-    {
-        if (recoilDmg >= gBattleMons[battlerDef].hp && !CanAIFaintTarget(battlerAtk, battlerDef, 0))
-            return TRUE; //If it's the only KO move then just use it
-        else
-            return FALSE; //Not as good to use move if you'll faint and not win
-    }
-
-    return TRUE;
-}
-
-static inline bool32 RecoveryEnablesWinning1v1(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, bool32 aiIsFaster, u32 healAmount)
-{
-    if (aiIsFaster)
-    {
-        if (CanTargetFaintAi(battlerDef, battlerAtk)
-          && !CanTargetFaintAiWithMod(battlerDef, battlerAtk, healAmount, 0))
-            return TRUE;    // target can faint attacker unless they heal
-        else if (!CanTargetFaintAi(battlerDef, battlerAtk) && gAiLogicData->hpPercents[battlerAtk] < ENABLE_RECOVERY_THRESHOLD && RandomPercentage(RNG_AI_SHOULD_RECOVER, SHOULD_RECOVER_CHANCE))
-            return TRUE;    // target can't faint attacker at all, generally safe
-    }
-    else
-    {
-        if (!CanTargetFaintAi(battlerDef, battlerAtk)
-          && GetBestDmgFromBattler(battlerDef, battlerAtk, AI_DEFENDING) < healAmount
-          && NoOfHitsForTargetToFaintBattler(battlerDef, battlerAtk, CONSIDER_ENDURE) < NoOfHitsForTargetToFaintBattlerWithMod(battlerDef, battlerAtk, healAmount))
-            return TRUE;    // target can't faint attacker and is dealing less damage than we're healing
-        else if (!CanTargetFaintAi(battlerDef, battlerAtk) && gAiLogicData->hpPercents[battlerAtk] < ENABLE_RECOVERY_THRESHOLD && RandomPercentage(RNG_AI_SHOULD_RECOVER, SHOULD_RECOVER_CHANCE))
-            return TRUE;    // target can't faint attacker at all, generally safe
-    }
-    return FALSE;
-}
-
-static inline bool32 ShouldDrainHPToWithstandHit(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 currHP, u32 healAmount)
-{
-    s32 bestDamageFromPlayer = GetBestDmgFromBattler(battlerDef, battlerAtk, AI_DEFENDING);
-
-    if (bestDamageFromPlayer >= GetNonDynamaxMaxHP(battlerAtk) + healAmount)
-        return FALSE;
-
-    if (bestDamageFromPlayer >= currHP && currHP + healAmount > bestDamageFromPlayer)
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 ShouldAbsorb(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    u32 maxHP = gBattleMons[battlerAtk].maxHP;
-    u32 currHP = gBattleMons[battlerAtk].hp;
-    u32 healAmount = (AI_GetDamage(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, AI_ATTACKING, gAiLogicData) * GetMoveAbsorbPercentage(move) / 100);
-    healAmount = GetDrainedBigRootHp(battlerAtk, healAmount);
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    bool32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY);
-    if (healAmount == 0)
-        healAmount = 1;
-    if (healAmount + currHP > maxHP)
-        healAmount = maxHP - currHP;
-    if (gBattleMons[battlerAtk].volatiles.healBlock)
-        healAmount = 0;
-
-    if (gAiLogicData->abilities[battlerDef] == ABILITY_LIQUID_OOZE)
-        return FALSE;
-    if (IsBattlerAtMaxHp(battlerAtk) && (aiIsFaster || GetMoveCategory(GetIncomingMove(battlerAtk, battlerDef, gAiLogicData)) == DAMAGE_CATEGORY_STATUS))
-        return FALSE;
-    if (RecoveryEnablesWinning1v1(battlerAtk, battlerDef, move, aiIsFaster, healAmount))
-        return TRUE;
-    if (ShouldDrainHPToWithstandHit(battlerAtk, battlerDef, currHP, healAmount))
-        return TRUE;
-
-    return FALSE;
-}
-
-bool32 ShouldRecover(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, u32 healPercent)
-{
-    u32 maxHP = gBattleMons[battlerAtk].maxHP;
-    u32 currHP = gBattleMons[battlerAtk].hp;
-    u32 healAmount = (healPercent * maxHP) / 100;
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    bool32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY);
-    if (healAmount + currHP > maxHP)
-        healAmount = maxHP - currHP;
-    if (gBattleMons[battlerAtk].volatiles.healBlock)
-        healAmount = 0;
-
-    if (IsBattlerAtMaxHp(battlerAtk))
-        return FALSE;
-    if (RecoveryEnablesWinning1v1(battlerAtk, battlerDef, move, aiIsFaster, healAmount))
-        return TRUE;
-    return FALSE;
-}
-
-bool32 ShouldSetScreen(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum BattleMoveEffects moveEffect)
-{
-    enum BattleSide atkSide = GetBattlerSide(battlerAtk);
-
-    // Don't waste a turn if screens will be broken
-    if (HasMoveWithAIEffect(battlerDef, AI_EFFECT_BREAK_SCREENS))
-        return FALSE;
-
-    switch (moveEffect)
-    {
-    case EFFECT_AURORA_VEIL:
-        // Use only in Hail and only if AI doesn't already have Reflect, Light Screen or Aurora Veil itself active.
-        if ((AI_GetWeather() & (B_WEATHER_ICY_ANY))
-            && !(gSideStatuses[atkSide] & (SIDE_STATUS_REFLECT | SIDE_STATUS_LIGHTSCREEN | SIDE_STATUS_AURORA_VEIL)))
-            return TRUE;
-        break;
-    case EFFECT_REFLECT:
-        // Use only if the player has a physical move and AI doesn't already have Reflect itself active.
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL)
-            && !(gSideStatuses[atkSide] & (SIDE_STATUS_REFLECT | SIDE_STATUS_AURORA_VEIL)))
-            return TRUE;
-        break;
-    case EFFECT_LIGHT_SCREEN:
-        // Use only if the player has a special move and AI doesn't already have Light Screen itself active.
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL)
-            && !(gSideStatuses[atkSide] & (SIDE_STATUS_LIGHTSCREEN | SIDE_STATUS_AURORA_VEIL)))
-            return TRUE;
-        break;
-    default:
-        break;
-    }
-
-    return FALSE;
-}
-
-static bool32 ShouldCureStatusInternal(enum BattlerId battlerAtk, enum BattlerId battlerDef, bool32 usingItem, struct AiLogicData *aiData)
-{
-    bool32 targetingSelf = (battlerAtk == battlerDef);
-    bool32 targetingAlly = IsTargetingPartner(battlerAtk, battlerDef);
-    u32 status = gBattleMons[battlerDef].status1;
-
-    if (status & STATUS1_SLEEP)
-    {
-        if (targetingAlly || targetingSelf)
+        if (gBattlerByTurnOrder[i] == battlerAtk || gBattlerByTurnOrder[i] == battlerPartner)
         {
-            if (HasUsableWhileAsleepMove(battlerDef))
-                return FALSE;
-            else
-                return usingItem || targetingAlly;
-        }
-        return FALSE;
-    }
-
-    if (status & STATUS1_FREEZE)
-    {
-        if (targetingAlly || targetingSelf)
-        {
-            if (HasThawingMove(battlerDef))
-                return FALSE;
-            return usingItem || targetingAlly;
-        }
-        return FALSE;
-    }
-
-    bool32 isHarmless = FALSE;
-
-    if (DoesBattlerBenefitFromAllVolatileStatus(battlerDef, aiData->abilities[battlerDef]))
-        isHarmless = TRUE;
-
-    if (status & STATUS1_PSN_ANY)
-    {
-        if (aiData->holdEffects[battlerDef] == HOLD_EFFECT_TOXIC_ORB)
-            return FALSE;
-
-        if (aiData->abilities[battlerDef] == ABILITY_POISON_HEAL)
-            isHarmless = TRUE;
-
-        if (aiData->abilities[battlerDef] == ABILITY_TOXIC_BOOST && !isHarmless)
-        {
-            if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
-                isHarmless = TRUE;
-            else if (!(targetingSelf || targetingAlly) && !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
-                isHarmless = TRUE;
-        }
-    }
-
-    if (status & STATUS1_BURN)
-    {
-        if (aiData->holdEffects[battlerDef] == HOLD_EFFECT_FLAME_ORB)
-            return FALSE;
-
-        if (aiData->abilities[battlerDef] == ABILITY_FLARE_BOOST && !isHarmless)
-        {
-            if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
-                isHarmless = TRUE;
-            else if (!(targetingSelf || targetingAlly) && !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
-                isHarmless = TRUE;
-        }
-    }
-
-/*
-    if (status & STATUS1_PARALYSIS)
-    if (status & STATUS1_FROSTBITE)
-*/
-
-    if (isHarmless)
-    {
-        if (targetingSelf || targetingAlly)
-            return FALSE;
-        else
-            return TRUE;
-    }
-    else
-    {
-        if (targetingSelf || targetingAlly)
-            return TRUE;
-        else
-            return FALSE;
-    }
-}
-
-bool32 ShouldCureStatus(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct AiLogicData *aiData)
-{
-    return ShouldCureStatusInternal(battlerAtk, battlerDef, FALSE, aiData);
-}
-
-bool32 ShouldCureStatusWithItem(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct AiLogicData *aiData)
-{
-    return ShouldCureStatusInternal(battlerAtk, battlerDef, TRUE, aiData);
-}
-
-// Partner Logic
-bool32 IsBattle1v1(void)
-{
-    if (IsDoubleBattle()
-      && ((IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)) && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT)))
-      || (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)) && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))))
-        return FALSE;
-    return TRUE;
-}
-
-bool32 HasTwoOpponents(enum BattlerId battler)
-{
-    if (IsDoubleBattle()
-      && IsBattlerAlive(LEFT_FOE(battler)) && IsBattlerAlive(RIGHT_FOE(battler)))
-        return TRUE;
-    return FALSE;
-}
-
-bool32 HasPartner(enum BattlerId battler)
-{
-    if (IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(battler)))
-    {
-        if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_ATTACKS_PARTNER)
-            return FALSE;
-        else
-            return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 HasPartnerIgnoreFlags(enum BattlerId battler)
-{
-    if (IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(battler)))
-    {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 IsTargetingPartner(enum BattlerId battlerAtk, enum BattlerId battlerDef)
-{
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_ATTACKS_PARTNER)
-        return FALSE;
-    return ((battlerAtk) == (battlerDef ^ BIT_FLANK));
-}
-
-enum Move GetAllyChosenMove(enum BattlerId battlerId)
-{
-    enum BattlerId partnerBattler = BATTLE_PARTNER(battlerId);
-
-    if (!IsBattlerAlive(partnerBattler) || !IsAiBattlerAware(partnerBattler))
-        return MOVE_NONE;
-    else if (partnerBattler > battlerId) // Battler with the lower id chooses the move first.
-        return gAiLogicData->lastUsedMove[partnerBattler];
-    else
-        return GetBattlerChosenMove(partnerBattler);
-}
-
-bool32 AreMovesEquivalent(enum BattlerId battlerAtk, enum BattlerId battlerAtkPartner, enum Move move, enum Move partnerMove)
-{
-    if (!IsBattlerAlive(battlerAtkPartner) || partnerMove == MOVE_NONE)
-        return FALSE;
-
-    enum BattlerId battlerDef = gBattleStruct->moveTarget[battlerAtk];
-
-    // We don't care the effect is basically the same; we would use this move anyway.
-    if (IsBestDmgMove(battlerAtk, battlerDef, AI_ATTACKING, move))
-        return FALSE;
-
-    u32 atkEffect = GetAIEffectGroupFromMove(battlerAtk, move);
-    u32 partnerEffect = GetAIEffectGroupFromMove(battlerAtkPartner, partnerMove);
-
-    // shared bits indicate they're meaningfully the same in some way
-    if (atkEffect & partnerEffect)
-    {
-        if (GetMoveTarget(move) == TARGET_SELECTED && GetMoveTarget(partnerMove) == TARGET_SELECTED)
-        {
-            if (battlerDef == gBattleStruct->moveTarget[battlerAtkPartner])
-                return TRUE;
-            else
-                return FALSE;
-        }
-        return TRUE;
-    }
-    return FALSE;
-}
-
-static u32 GetAIEffectGroup(enum BattleMoveEffects effect)
-{
-    u32 aiEffect = AI_EFFECT_NONE;
-
-    switch (effect)
-    {
-    case EFFECT_WEATHER:
-    case EFFECT_WEATHER_AND_SWITCH:
-        aiEffect |= AI_EFFECT_WEATHER;
-        break;
-    case EFFECT_ELECTRIC_TERRAIN:
-    case EFFECT_GRASSY_TERRAIN:
-    case EFFECT_MISTY_TERRAIN:
-    case EFFECT_PSYCHIC_TERRAIN:
-    case EFFECT_STEEL_ROLLER:
-    case EFFECT_ICE_SPINNER:
-        aiEffect |= AI_EFFECT_TERRAIN;
-        break;
-    case EFFECT_COURT_CHANGE:
-        aiEffect |= AI_EFFECT_CLEAR_HAZARDS | AI_EFFECT_AURORA_VEIL | AI_EFFECT_BREAK_SCREENS;
-        break;
-    case EFFECT_DEFOG:
-        aiEffect |= AI_EFFECT_CLEAR_HAZARDS | AI_EFFECT_BREAK_SCREENS;
-        break;
-    case EFFECT_RAPID_SPIN:
-    case EFFECT_TIDY_UP:
-        aiEffect |= AI_EFFECT_CLEAR_HAZARDS;
-        break;
-    case EFFECT_HAZE:
-        aiEffect |= AI_EFFECT_RESET_STATS;
-        break;
-    case EFFECT_HIT_SWITCH_TARGET:
-    case EFFECT_ROAR:
-        aiEffect |= AI_EFFECT_FORCE_SWITCH;
-        break;
-    case EFFECT_TORMENT:
-        aiEffect |= AI_EFFECT_TORMENT;
-        break;
-    case EFFECT_AURORA_VEIL:
-        aiEffect |= AI_EFFECT_AURORA_VEIL;
-        break;
-    case EFFECT_LIGHT_SCREEN:
-        aiEffect |= AI_EFFECT_LIGHT_SCREEN;
-        break;
-    case EFFECT_REFLECT:
-        aiEffect |= AI_EFFECT_REFLECT;
-        break;
-    case EFFECT_GRAVITY:
-        aiEffect |= AI_EFFECT_GRAVITY;
-        break;
-    case EFFECT_DOODLE:
-    case EFFECT_ENTRAINMENT:
-    case EFFECT_GASTRO_ACID:
-    case EFFECT_ROLE_PLAY:
-    case EFFECT_SKILL_SWAP:
-    case EFFECT_OVERWRITE_ABILITY:
-        aiEffect |= AI_EFFECT_CHANGE_ABILITY;
-        break;
-    default:
-        break;
-    }
-
-    return aiEffect;
-}
-
-static u32 GetAIEffectGroupFromMove(enum BattlerId battler, enum Move move)
-{
-    u32 aiEffect = GetAIEffectGroup(GetMoveEffect(move));
-
-    u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
-    for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-    {
-        switch (GetMoveAdditionalEffectById(move, effectIndex)->moveEffect)
-        {
-        case MOVE_EFFECT_SUN:
-        case MOVE_EFFECT_RAIN:
-        case MOVE_EFFECT_SANDSTORM:
-        case MOVE_EFFECT_HAIL:
-            aiEffect |= AI_EFFECT_WEATHER;
-            break;
-        case MOVE_EFFECT_ELECTRIC_TERRAIN:
-        case MOVE_EFFECT_GRASSY_TERRAIN:
-        case MOVE_EFFECT_MISTY_TERRAIN:
-        case MOVE_EFFECT_PSYCHIC_TERRAIN:
-            aiEffect |= AI_EFFECT_TERRAIN;
-            break;
-        case MOVE_EFFECT_DEFOG:
-            aiEffect |= AI_EFFECT_CLEAR_HAZARDS | AI_EFFECT_BREAK_SCREENS;
-            break;
-        case MOVE_EFFECT_CLEAR_SMOG:
-        case MOVE_EFFECT_HAZE:
-            aiEffect |= AI_EFFECT_RESET_STATS;
-            break;
-        case MOVE_EFFECT_TORMENT_SIDE:
-            aiEffect |= AI_EFFECT_TORMENT;
-            break;
-        case MOVE_EFFECT_LIGHT_SCREEN:
-            aiEffect |= AI_EFFECT_LIGHT_SCREEN;
-            break;
-        case MOVE_EFFECT_REFLECT:
-            aiEffect |= AI_EFFECT_REFLECT;
-            break;
-        case MOVE_EFFECT_AURORA_VEIL:
-            aiEffect |= AI_EFFECT_AURORA_VEIL;
-            break;
-        case MOVE_EFFECT_GRAVITY:
-            aiEffect |= AI_EFFECT_GRAVITY;
-            break;
-        case MOVE_EFFECT_BREAK_SCREEN:
-            aiEffect |= AI_EFFECT_BREAK_SCREENS;
-            break;
-        default:
+            for (j = i + 1; j < gBattlersCount; j++)
+            {
+                if (gBattlerByTurnOrder[j] == battlerAtk || gBattlerByTurnOrder[j] == battlerPartner)
+                    break;
+            }
+            SWAP(gBattlerByTurnOrder[i], gBattlerByTurnOrder[j], temp);
+            SWAP(gActionsByTurnOrder[i], gActionsByTurnOrder[j], temp);
             break;
         }
     }
 
-    return aiEffect;
-}
-
-// It matches both on move effect and on AI move effect; eg, EFFECT_HAZE will also bring up Freezy Frost or Clear Smog, anything with AI_EFFECT_RESET_STATS.
-bool32 DoesPartnerHaveSameMoveEffect(enum BattlerId battlerAtkPartner, enum BattlerId battlerDef, enum Move move, enum Move partnerMove)
-{
-    if (!HasPartner(battlerAtkPartner))
-        return FALSE;
-
-    if (GetMoveEffect(move) == GetMoveEffect(partnerMove)
-      && partnerMove != MOVE_NONE)
-    {
-        if (GetMoveTarget(move) == TARGET_SELECTED && GetMoveTarget(partnerMove) == TARGET_SELECTED)
-        {
-            return gBattleStruct->moveTarget[battlerAtkPartner] == battlerDef;
-        }
-        return TRUE;
-    }
-    return FALSE;
-}
-
-//PARTNER_MOVE_EFFECT_IS_STATUS_SAME_TARGET
-bool32 PartnerMoveEffectIsStatusSameTarget(enum BattlerId battlerAtkPartner, enum BattlerId battlerDef, enum Move partnerMove)
-{
-    if (!HasPartner(battlerAtkPartner))
-        return FALSE;
-
-    enum BattleMoveEffects partnerEffect = GetMoveEffect(partnerMove);
-    enum MoveEffect nonVolatileStatus = GetMoveNonVolatileStatus(partnerMove);
-    if (partnerMove != MOVE_NONE
-     && gBattleStruct->moveTarget[battlerAtkPartner] == battlerDef
-     && (nonVolatileStatus == MOVE_EFFECT_POISON
-       || nonVolatileStatus == MOVE_EFFECT_TOXIC
-       || nonVolatileStatus == MOVE_EFFECT_SLEEP
-       || nonVolatileStatus == MOVE_EFFECT_PARALYSIS
-       || nonVolatileStatus == MOVE_EFFECT_BURN
-       || partnerEffect == EFFECT_YAWN))
-        return TRUE;
-    return FALSE;
-}
-
-//PARTNER_MOVE_EFFECT_IS
-bool32 PartnerMoveEffectIs(enum BattlerId battlerAtkPartner, enum Move partnerMove, enum BattleMoveEffects effectCheck)
-{
-    if (!HasPartner(battlerAtkPartner))
-        return FALSE;
-
-    if (partnerMove != MOVE_NONE && GetMoveEffect(partnerMove) == effectCheck)
-        return TRUE;
-
-    return FALSE;
-}
-
-//PARTNER_MOVE_IS_TAILWIND_TRICKROOM
-bool32 PartnerMoveIs(enum BattlerId battlerAtkPartner, enum Move partnerMove, enum Move moveCheck)
-{
-    if (!HasPartner(battlerAtkPartner))
-        return FALSE;
-
-    if (partnerMove != MOVE_NONE && partnerMove == moveCheck)
-        return TRUE;
-    return FALSE;
-}
-
-//PARTNER_MOVE_IS_SAME
-bool32 PartnerMoveIsSameAsAttacker(enum BattlerId battlerAtkPartner, enum BattlerId battlerDef, enum Move move, enum Move partnerMove)
-{
-    if (!HasPartner(battlerAtkPartner))
-        return FALSE;
-
-    if (partnerMove != MOVE_NONE && move == partnerMove && gBattleStruct->moveTarget[battlerAtkPartner] == battlerDef)
-        return TRUE;
-    return FALSE;
-}
-
-//PARTNER_MOVE_IS_SAME_NO_TARGET
-bool32 PartnerMoveIsSameNoTarget(enum BattlerId battlerAtkPartner, enum Move move, enum Move partnerMove)
-{
-    if (!HasPartner(battlerAtkPartner))
-        return FALSE;
-    if (partnerMove != MOVE_NONE && move == partnerMove)
-        return TRUE;
-    return FALSE;
-}
-
-bool32 PartnerMoveActivatesSleepClause(enum Move partnerMove)
-{
-    if (IsBattle1v1() || !IsSleepClauseEnabled())
-        return FALSE;
-    return IsMoveSleepClauseTrigger(partnerMove);
-}
-
-bool32 ShouldUseWishAromatherapy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    s32 firstId, lastId;
-    struct Pokemon *party;
-    bool32 hasStatus = AnyPartyMemberStatused(battlerAtk, IsSoundMove(move));
-    bool32 needHealing = FALSE;
-
-    GetAIPartyIndexes(battlerAtk, &firstId, &lastId);
     party = GetBattlerParty(battlerAtk);
+    SwitchTwoBattlersInParty(battlerAtk, battlerPartner);
+    SWAP(gBattlerPartyIndexes[battlerAtk], gBattlerPartyIndexes[battlerPartner], temp);
 
-    if (CountUsablePartyMons(battlerAtk) == 0
-      && (CanTargetFaintAi(battlerDef, battlerAtk) || BattlerWillFaintFromSecondaryDamage(battlerAtk, gAiLogicData->abilities[battlerAtk])))
-        return FALSE; // Don't heal if last mon and will faint
+    TrySwapSkyDropTargets(battlerAtk, battlerPartner);
+    TrySwapStickyWebBattlerId(battlerAtk, battlerPartner);
+    TrySwapWishBattlerIds(battlerAtk, battlerPartner);
+    TrySwapAttractBattlerIds(battlerAtk, battlerPartner);
 
-    for (u32 monIndex = 0; monIndex < PARTY_SIZE; monIndex++)
+    // For Snipe Shot and abilities Stalwart/Propeller Tail - keep the original target.
+    for (i = 0; i < gBattlersCount; i++)
     {
-        u32 currHp = GetMonData(&party[monIndex], MON_DATA_HP);
-        u32 maxHp = GetMonData(&party[monIndex], MON_DATA_MAX_HP);
-
-        if (!GetMonData(&party[monIndex], MON_DATA_IS_EGG) && currHp > 0)
-        {
-            if ((currHp * 100) / maxHp < 65 // Less than 65% health remaining
-              && monIndex >= firstId && monIndex < lastId) // Can only switch to mon on your team
-            {
-                needHealing = TRUE;
-            }
-        }
-    }
-
-    if (IsBattle1v1())
-    {
-        switch (GetMoveEffect(move))
-        {
-        case EFFECT_WISH:
-            if (needHealing)
-                return TRUE;
-            break;
-        case EFFECT_HEAL_BELL:
-            if (hasStatus)
-                return TRUE;
-            break;
-        default:
-            break;
-        }
-    }
-    else
-    {
-        switch (GetMoveEffect(move))
-        {
-        case EFFECT_WISH:
-            return ShouldRecover(battlerAtk, battlerDef, move, 50); // Switch recovery isn't good idea in doubles
-        case EFFECT_HEAL_BELL:
-            if (hasStatus)
-                return TRUE;
-            break;
-        default:
-            break;
-        }
-    }
-
-    return FALSE;
-}
-
-#define SIZE_G_BATTLE_MONS (sizeof(struct BattlePokemon) * MAX_BATTLERS_COUNT)
-
-struct BattlePokemon *AllocSaveBattleMons(void)
-{
-    struct BattlePokemon *savedBattleMons = Alloc(SIZE_G_BATTLE_MONS);
-    memcpy(savedBattleMons, gBattleMons, SIZE_G_BATTLE_MONS);
-    return savedBattleMons;
-}
-
-void FreeRestoreBattleMons(struct BattlePokemon *savedBattleMons)
-{
-    memcpy(gBattleMons, savedBattleMons, SIZE_G_BATTLE_MONS);
-    Free(savedBattleMons);
-}
-
-#define SIZE_G_AI_LOGIC_DATA (sizeof(struct AiLogicData))
-
-struct AiLogicData *AllocSaveAiLogicData(void)
-{
-    struct AiLogicData *savedAiLogicData = Alloc(SIZE_G_AI_LOGIC_DATA);
-    memcpy(savedAiLogicData, gAiLogicData, SIZE_G_AI_LOGIC_DATA);
-    return savedAiLogicData;
-}
-
-void FreeRestoreAiLogicData(struct AiLogicData *savedAiLogicData)
-{
-    memcpy(gAiLogicData, savedAiLogicData, SIZE_G_AI_LOGIC_DATA);
-    Free(savedAiLogicData);
-}
-
-// Set potential field effect from ability for switch in
-void SetBattlerFieldStatusForSwitchin(enum BattlerId battler)
-{
-    switch (gAiLogicData->abilities[battler])
-    {
-    case ABILITY_VESSEL_OF_RUIN:
-        gBattleMons[battler].volatiles.vesselOfRuin = TRUE;
-        break;
-    case ABILITY_SWORD_OF_RUIN:
-        gBattleMons[battler].volatiles.swordOfRuin = TRUE;
-        break;
-    case ABILITY_TABLETS_OF_RUIN:
-        gBattleMons[battler].volatiles.tabletsOfRuin = TRUE;
-        break;
-    case ABILITY_BEADS_OF_RUIN:
-        gBattleMons[battler].volatiles.beadsOfRuin = TRUE;
-        break;
-    default:
-        break;
-    }
-}
-
-// party logic
-s32 CountUsablePartyMons(enum BattlerId battlerId)
-{
-    s32 battlerOnField1, battlerOnField2, ret;
-    struct Pokemon *party;
-    party = GetBattlerParty(battlerId);
-
-    if (IsDoubleBattle())
-    {
-        battlerOnField1 = gBattlerPartyIndexes[battlerId];
-        battlerOnField2 = gBattlerPartyIndexes[GetPartnerBattler(battlerId)];
-    }
-    else // In singles there's only one battlerId by side.
-    {
-        battlerOnField1 = gBattlerPartyIndexes[battlerId];
-        battlerOnField2 = gBattlerPartyIndexes[battlerId];
-    }
-
-    ret = 0;
-    s32 firstId, lastId;
-    GetAIPartyIndexes(battlerId, &firstId, &lastId);
-    for (u32 monIndex = firstId; monIndex < lastId; monIndex++)
-    {
-        if (monIndex != battlerOnField1 && monIndex != battlerOnField2
-         && GetMonData(&party[monIndex], MON_DATA_HP) != 0
-         && GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
-         && GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG)
-        {
-            ret++;
-        }
-    }
-
-    return ret;
-}
-
-bool32 IsPartyFullyHealedExceptBattler(enum BattlerId battlerId)
-{
-    struct Pokemon *party = GetBattlerParty(battlerId);
-
-    for (u32 monIndex = 0; monIndex < PARTY_SIZE; monIndex++)
-    {
-        if (monIndex != gBattlerPartyIndexes[battlerId]
-         && GetMonData(&party[monIndex], MON_DATA_HP) != 0
-         && GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
-         && GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
-         && GetMonData(&party[monIndex], MON_DATA_HP) < GetMonData(&party[monIndex], MON_DATA_MAX_HP))
-            return FALSE;
-    }
-    return TRUE;
-}
-
-bool32 PartyHasMoveCategory(enum BattlerId battlerId, enum DamageCategory category)
-{
-    struct Pokemon *party = GetBattlerParty(battlerId);
-
-    for (u32 monIndex = 0; monIndex < PARTY_SIZE; monIndex++)
-    {
-        if (GetMonData(&party[monIndex], MON_DATA_HP) == 0)
+        enum Ability ability = GetBattlerAbility(i);
+        // if not targeting a slot that got switched, continue
+        if (!IsBattlerAlly(gBattleStruct->moveTarget[i], battlerAtk))
             continue;
 
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-        {
-            enum Move move = GetMonData(&party[monIndex], MON_DATA_MOVE1 + moveIndex);
-            u32 pp = GetMonData(&party[monIndex], MON_DATA_PP1 + moveIndex);
-
-            if (pp > 0 && move != MOVE_NONE)
-            {
-                //TODO - handle photon geyser, light that burns the sky
-                if (GetMoveCategory(move) == category)
-                    return TRUE;
-            }
-        }
+        if (GetMoveEffect(gChosenMoveByBattler[i]) == EFFECT_SNIPE_SHOT || ability == ABILITY_PROPELLER_TAIL || ability == ABILITY_STALWART)
+            gBattleStruct->moveTarget[i] ^= BIT_FLANK;
     }
 
-    return FALSE;
-}
-
-bool32 SideHasMoveCategory(enum BattlerId battlerId, enum DamageCategory category)
-{
-    if (HasPartnerIgnoreFlags(battlerId))
+    // For some reason the order in which the sprites are created matters. Looks like an issue with the sprite system, potentially with the Sprite Template.
+    if ((battlerAtk & BIT_FLANK) != 0)
     {
-        if (HasMoveWithCategory(battlerId, category) || HasMoveWithCategory(BATTLE_PARTNER(battlerId), category))
-            return TRUE;
+        ReloadBattlerSprites(battlerAtk, party);
+        ReloadBattlerSprites(battlerPartner, party);
     }
     else
     {
-        if (HasMoveWithCategory(battlerId, category))
-            return TRUE;
+        ReloadBattlerSprites(battlerPartner, party);
+        ReloadBattlerSprites(battlerAtk, party);
     }
-    return FALSE;
+
+    Free(data);
+
+    gBattleScripting.battler = battlerPartner;
+    DestroyAnimVisualTask(taskId);
 }
 
-bool32 IsAbilityOfRating(enum Ability ability, s32 rating)
+static void AnimTask_DoubleTeam_Step(u8 taskId)
 {
-    if (gAbilitiesInfo[ability].aiRating >= rating)
-        return TRUE;
-    return FALSE;
+    struct Task *task = &gTasks[taskId];
+    if (task->tBlendSpritesCount == 0)
+    {
+        if (GetBattlerSpriteBGPriorityRank(task->tBattlerId) == 1)
+            SetGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_BG1_ON);
+        else
+            SetGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_BG2_ON);
+
+        FreeSpritePaletteByTag(ANIM_TAG_BENT_SPOON);
+        // Swap attacker and partner data-wise and visually
+        if (task->tIsAllySwitch && task->tBattlerId == BATTLE_PARTNER(gBattlerAttacker))
+            gTasks[taskId].func = AnimTask_AllySwitchDataSwap;
+        else
+            DestroyAnimVisualTask(taskId);
+    }
 }
 
-static const u16 sRecycleEncouragedItems[] =
+static void AnimDoubleTeam(struct Sprite *sprite)
 {
-    ITEM_CHESTO_BERRY,
-    ITEM_LUM_BERRY,
-    ITEM_STARF_BERRY,
-    ITEM_SITRUS_BERRY,
-    ITEM_MICLE_BERRY,
-    ITEM_CUSTAP_BERRY,
-    ITEM_MENTAL_HERB,
-    ITEM_FOCUS_SASH,
-    ITEM_SALAC_BERRY,
-    ITEM_LIECHI_BERRY,
-    ITEM_AGUAV_BERRY,
-    ITEM_FIGY_BERRY,
-    ITEM_IAPAPA_BERRY,
-    ITEM_MAGO_BERRY,
-    ITEM_WIKI_BERRY,
-    ITEM_MENTAL_HERB,
-    ITEM_POWER_HERB,
-    ITEM_BERRY_JUICE,
-    ITEM_WEAKNESS_POLICY,
-    ITEM_BLUNDER_POLICY,
-    ITEM_KEE_BERRY,
-    ITEM_MARANGA_BERRY,
-    // TODO expand this
+    if (++sprite->sCounter2 > 1)
+    {
+        sprite->sCounter2 = 0;
+        sprite->sCounter++;
+    }
+
+    if (sprite->sCounter > 64)
+    {
+        gTasks[sprite->sTaskId].tBlendSpritesCount--;
+        // If Ally Switch - destroy the mon sprites, they'll be created again later.
+        if (gTasks[sprite->sTaskId].tIsAllySwitch && gTasks[sprite->sTaskId].tBattlerId == BATTLE_PARTNER(gBattlerAttacker))
+        {
+            DestroySprite(&gSprites[gBattlerSpriteIds[gBattlerAttacker]]);
+            DestroySprite(&gSprites[gBattlerSpriteIds[BATTLE_PARTNER(gBattlerAttacker)]]);
+        }
+        DestroySpriteWithActiveSheet(sprite);
+    }
+    else
+    {
+        sprite->sSinAmplitude = gSineTable[sprite->sCounter] / 6;
+        sprite->sSinIndexMod = gSineTable[sprite->sCounter] / 13;
+        sprite->sSinIndex = (sprite->sSinIndex + sprite->sSinIndexMod) & 0xFF;
+        sprite->x2 = Sin(sprite->sSinIndex, sprite->sSinAmplitude);
+        if (gTasks[sprite->sTaskId].tIsAllySwitch)
+        {
+            if (sprite->sBattlerFlank)
+                sprite->x2 = abs(sprite->x2);
+            else
+                sprite->x2 = -(abs(sprite->x2));
+        }
+    }
+}
+
+void AnimTask_AllySwitchAttacker(u8 taskId)
+{
+    PrepareDoubleTeamAnim(taskId, ANIM_ATTACKER, TRUE);
+    gSprites[gBattlerSpriteIds[gBattlerAttacker]].invisible = TRUE;
+    gSprites[gBattlerSpriteIds[BATTLE_PARTNER(gBattlerAttacker)]].invisible = TRUE;
+    // Edge case: Partner's sprite is invisible(i.e. after using Dig).
+    if (gBattleSpritesDataPtr->battlerData[BATTLE_PARTNER(gBattlerAttacker)].invisible)
+    {
+        gBattleSpritesDataPtr->battlerData[BATTLE_PARTNER(gBattlerAttacker)].invisible = FALSE;
+        gBattleSpritesDataPtr->battlerData[gBattlerAttacker].invisible = TRUE;
+    }
+}
+
+void AnimTask_AllySwitchPartner(u8 taskId)
+{
+    PrepareDoubleTeamAnim(taskId, ANIM_ATK_PARTNER, TRUE);
+}
+
+#undef tBattlerSpriteId
+#undef tSpoonPal
+#undef tBlendSpritesCount
+#undef tBattlerId
+#undef tIsAllySwitch
+
+#undef sCounter
+#undef sSinIndex
+#undef sTaskId
+#undef sCounter2
+#undef sSinAmplitude
+#undef sSinIndexMod
+#undef sBattlerFlank
+
+static void AnimSuperFang(struct Sprite *sprite)
+{
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+}
+
+void AnimTask_MusicNotesRainbowBlend(u8 taskId)
+{
+    u16 i;
+    u16 j;
+    u16 index;
+
+    index = IndexOfSpritePaletteTag(gParticlesColorBlendTable[0][0]);
+    if (index != 0xFF)
+    {
+        index = OBJ_PLTT_ID(index);
+        for (i = 1; i < ARRAY_COUNT(gParticlesColorBlendTable[0]); i++)
+            gPlttBufferFaded[index + i] = gParticlesColorBlendTable[0][i];
+    }
+
+    for (j = 1; j < ARRAY_COUNT(gParticlesColorBlendTable); j++)
+    {
+        index = AllocSpritePalette(gParticlesColorBlendTable[j][0]);
+        if (index != 0xFF)
+        {
+            index = OBJ_PLTT_ID(index);
+            for (i = 1; i < ARRAY_COUNT(gParticlesColorBlendTable[0]); i++)
+                gPlttBufferFaded[index + i] = gParticlesColorBlendTable[j][i];
+        }
+    }
+    DestroyAnimVisualTask(taskId);
+}
+
+// clears the rainbow effect for musical notes.
+void AnimTask_MusicNotesClearRainbowBlend(u8 taskId)
+{
+    u16 i;
+    for (i = 1; i < ARRAY_COUNT(gParticlesColorBlendTable); i++)
+        FreeSpritePaletteByTag(gParticlesColorBlendTable[i][0]);
+
+    DestroyAnimVisualTask(taskId);
+}
+
+#define sMoveTimer      data[0]
+#define sBlendTableIdx  data[1]
+#define sBlendTimer     data[2]
+#define sBlendCycleTime data[3]
+#define sX              data[4]
+#define sY              data[5]
+#define sVelocX         data[6]
+#define sVelocY         data[7]
+
+static void AnimWavyMusicNotes(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2);
+
+    u8 index;
+    u8 x, y;
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+    StartSpriteAnim(sprite, cmd->unk0);
+    if ((index = IndexOfSpritePaletteTag(gParticlesColorBlendTable[cmd->unk1][0])) != 0xFF)
+        sprite->oam.paletteNum = index;
+
+    sprite->sBlendTableIdx = cmd->unk1;
+    sprite->sBlendTimer = 0;
+    sprite->sBlendCycleTime = cmd->unk2;
+    if (IsContest())
+    {
+        x = 48;
+        y = 40;
+    }
+    else
+    {
+        x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+        y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    }
+
+    sprite->sX = sprite->x << 4;
+    sprite->sY = sprite->y << 4;
+    AnimWavyMusicNotes_CalcVelocity(x - sprite->x, y - sprite->y, &sprite->sVelocX, &sprite->sVelocY, 40);
+    sprite->callback = AnimWavyMusicNotes_Step;
+}
+
+static void AnimWavyMusicNotes_CalcVelocity(s16 x, s16 y, s16 *velocX, s16 *velocY, s8 xSpeedFactor)
+{
+    int x2;
+    int time;
+    if (x < 0)
+        xSpeedFactor = -xSpeedFactor;
+
+    x2 = x * 256;
+    time = x2 / xSpeedFactor;
+    if (time == 0)
+        time = 1;
+
+    *velocX = x2 / time;
+    *velocY = (y * 256) / time;
+}
+
+static void AnimWavyMusicNotes_Step(struct Sprite *sprite)
+{
+    s16 y, trigIdx;
+    u8 index;
+
+    sprite->sMoveTimer++;
+    trigIdx = sprite->sMoveTimer * 5 - ((sprite->sMoveTimer * 5 / 256) << 8);
+    sprite->sX += sprite->sVelocX;
+    sprite->sY += sprite->sVelocY;
+    sprite->x = sprite->sX >> 4;
+    sprite->y = sprite->sY >> 4;
+    sprite->y2 = Sin(trigIdx, 15);
+
+    y = sprite->y;
+    if (sprite->x < -16 || sprite->x > DISPLAY_WIDTH + 16 || y < -16 || y > DISPLAY_HEIGHT - 32)
+    {
+        DestroySpriteAndMatrix(sprite);
+    }
+    else
+    {
+        if (sprite->sBlendCycleTime && ++sprite->sBlendTimer > sprite->sBlendCycleTime)
+        {
+            sprite->sBlendTimer = 0;
+            if (++sprite->sBlendTableIdx > (int)ARRAY_COUNT(gParticlesColorBlendTable) - 1)
+                sprite->sBlendTableIdx = 0;
+
+            index = IndexOfSpritePaletteTag(gParticlesColorBlendTable[sprite->sBlendTableIdx][0]);
+            if (index != 0xFF)
+                sprite->oam.paletteNum = index;
+        }
+    }
+}
+
+static void AnimFlyingMusicNotes(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2);
+
+    if (!IsOnPlayerSide(gBattleAnimAttacker))
+        gBattleAnimArgs[1] *= -1;
+
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + cmd->unk1;
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + cmd->unk2;
+    StartSpriteAnim(sprite, cmd->unk0);
+    sprite->data[2] = 0;
+    sprite->data[3] = 0;
+    sprite->data[4] = sprite->x << 4;
+    sprite->data[5] = sprite->y << 4;
+    sprite->data[6] = (cmd->unk1 << 4) / 5;
+    sprite->data[7] = (cmd->unk2 << 7) / 5;
+    sprite->callback = AnimFlyingMusicNotes_Step;
+}
+
+static void AnimFlyingMusicNotes_Step(struct Sprite *sprite)
+{
+    sprite->data[4] += sprite->data[6];
+    sprite->data[5] += sprite->data[7];
+    sprite->x = sprite->data[4] >> 4;
+    sprite->y = sprite->data[5] >> 4;
+    if (sprite->data[0] > 5 && sprite->data[3] == 0)
+    {
+        sprite->data[2] = (sprite->data[2] + 16) & 0xFF;
+        sprite->x2 = Cos(sprite->data[2], 18);
+        sprite->y2 = Sin(sprite->data[2], 18);
+        if (sprite->data[2] == 0)
+            sprite->data[3] = 1;
+    }
+
+    if (++sprite->data[0] == 48)
+        DestroySpriteAndMatrix(sprite);
+}
+
+static void AnimBellyDrumHand(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0);
+
+    s16 a;
+    if (cmd->unk0 == 1)
+    {
+        sprite->oam.matrixNum = ST_OAM_HFLIP;
+        a = 16;
+    }
+    else
+    {
+        a = -16;
+    }
+
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + a;
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + 8;
+    sprite->data[0] = 8;
+    sprite->callback = WaitAnimForDuration;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+void AnimSlowFlyingMusicNotes(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1, unk2, unk3);
+
+    s16 xDiff;
+    u8 index;
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+    sprite->y += 8;
+    StartSpriteAnim(sprite, cmd->unk1);
+    index = IndexOfSpritePaletteTag(gParticlesColorBlendTable[cmd->unk2][0]);
+    if (index != 0xFF)
+        sprite->oam.paletteNum = index;
+
+    xDiff = (cmd->unk0 == 0) ? -32 : 32;
+    sprite->data[0] = 40;
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = xDiff + sprite->data[1];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->data[3] - 40;
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = cmd->unk3;
+    sprite->callback = AnimSlowFlyingMusicNotes_Step;
+}
+
+static void AnimSlowFlyingMusicNotes_Step(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite) == 0)
+    {
+        s16 xDiff;
+        xDiff = Sin(sprite->data[5], 8);
+        if (sprite->x2 < 0)
+            xDiff = -xDiff;
+
+        sprite->x2 += xDiff;
+        sprite->y2 += Sin(sprite->data[5], 4);
+        sprite->data[5] = (sprite->data[5] + 8) & 0xFF;
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
+}
+
+void SetSpriteNextToMonHead(enum BattlerId battler, struct Sprite *sprite)
+{
+    if (IsOnPlayerSide(battler))
+        sprite->x = GetBattlerSpriteCoordAttr(battler, BATTLER_COORD_ATTR_RIGHT) + 8;
+    else
+        sprite->x = GetBattlerSpriteCoordAttr(battler, BATTLER_COORD_ATTR_LEFT) - 8;
+
+    sprite->y = GetBattlerSpriteCoord(battler, BATTLER_COORD_Y_PIC_OFFSET) - (s16)GetBattlerSpriteCoordAttr(battler, BATTLER_COORD_ATTR_HEIGHT) / 4;
+}
+
+void AnimThoughtBubble(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0, unk1);
+
+    u8 animNum;
+    enum BattlerId battler;
+    if (cmd->unk0 == 0)
+        battler = gBattleAnimAttacker;
+    else
+        battler = gBattleAnimTarget;
+
+    SetSpriteNextToMonHead(battler, sprite);
+    animNum = (IsOnPlayerSide(battler)) ? 0 : 1;
+    sprite->data[0] = cmd->unk1;
+    sprite->data[1] = animNum + 2;
+    StartSpriteAnim(sprite, animNum);
+    StoreSpriteCallbackInData6(sprite, AnimThoughtBubble_Step);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+}
+
+static void AnimThoughtBubble_Step(struct Sprite *sprite)
+{
+    if (--sprite->data[0] == 0)
+    {
+        StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+        StartSpriteAnim(sprite, sprite->data[1]);
+        sprite->callback = RunStoredCallbackWhenAnimEnds;
+    }
+}
+
+void AnimMetronomeFinger(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0);
+
+    enum BattlerId battler;
+    if (cmd->unk0 == 0)
+        battler = gBattleAnimAttacker;
+    else
+        battler = gBattleAnimTarget;
+
+    SetSpriteNextToMonHead(battler, sprite);
+    sprite->data[0] = 0;
+    StoreSpriteCallbackInData6(sprite, AnimMetronomeFinger_Step);
+    sprite->callback = RunStoredCallbackWhenAffineAnimEnds;
+}
+
+static void AnimMetronomeFinger_Step(struct Sprite *sprite)
+{
+    if (++sprite->data[0] > 16)
+    {
+        StartSpriteAffineAnim(sprite, 1);
+        StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+        sprite->callback = RunStoredCallbackWhenAffineAnimEnds;
+    }
+}
+
+void AnimFollowMeFinger(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0);
+
+    enum BattlerId battler;
+    if (cmd->unk0 == 0)
+        battler = gBattleAnimAttacker;
+    else
+        battler = gBattleAnimTarget;
+
+    sprite->x = GetBattlerSpriteCoord(battler, BATTLER_COORD_X);
+    sprite->y = GetBattlerSpriteCoordAttr(battler, BATTLER_COORD_ATTR_TOP);
+    if (sprite->y <= 9)
+        sprite->y = 10;
+
+    sprite->data[0] = 1;
+    sprite->data[1] = 0;
+    sprite->data[2] = sprite->subpriority;
+    sprite->data[3] = sprite->subpriority + 4;
+    sprite->data[4] = 0;
+    StoreSpriteCallbackInData6(sprite, AnimFollowMeFinger_Step1);
+    sprite->callback = RunStoredCallbackWhenAffineAnimEnds;
+}
+
+static void AnimFollowMeFinger_Step1(struct Sprite *sprite)
+{
+    if (++sprite->data[4] > 12)
+        sprite->callback = AnimFollowMeFinger_Step2;
+}
+
+static void AnimFollowMeFinger_Step2(struct Sprite *sprite)
+{
+    s16 x1, x2;
+
+    sprite->data[1] += 4;
+    if (sprite->data[1] > 254)
+    {
+        if (--sprite->data[0] == 0)
+        {
+            sprite->x2 = 0;
+            sprite->callback = AnimMetronomeFinger_Step;
+            return;
+        }
+        else
+        {
+            sprite->data[1] &= 0xFF;
+        }
+    }
+
+    if (sprite->data[1] > 0x4F)
+        sprite->subpriority = sprite->data[3];
+
+    if (sprite->data[1] > 0x9F)
+        sprite->subpriority = sprite->data[2];
+
+    x1 = gSineTable[sprite->data[1]];
+    x2 = x1 >> 3;
+    sprite->x2 = (x1 >> 3) + (x2 >> 1);
+}
+
+static void AnimTauntFinger(struct Sprite *sprite)
+{
+    CMD_ARGS(unk0);
+
+    enum BattlerId battler;
+    if (cmd->unk0 == 0)
+        battler = gBattleAnimAttacker;
+    else
+        battler = gBattleAnimTarget;
+
+    SetSpriteNextToMonHead(battler, sprite);
+    if (IsOnPlayerSide(battler))
+    {
+        StartSpriteAnim(sprite, 0);
+        sprite->data[0] = 2;
+    }
+    else
+    {
+        StartSpriteAnim(sprite, 1);
+        sprite->data[0] = 3;
+    }
+
+    sprite->callback = AnimTauntFinger_Step1;
+}
+
+static void AnimTauntFinger_Step1(struct Sprite *sprite)
+{
+    if (++sprite->data[1] > 10)
+    {
+        sprite->data[1] = 0;
+        StartSpriteAnim(sprite, sprite->data[0]);
+        StoreSpriteCallbackInData6(sprite, AnimTauntFinger_Step2);
+        sprite->callback = RunStoredCallbackWhenAnimEnds;
+    }
+}
+
+static void AnimTauntFinger_Step2(struct Sprite *sprite)
+{
+    if (++sprite->data[1] > 5)
+        DestroyAnimSprite(sprite);
+}
+
+// Animates a white streak by giving it a random rotation.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+static void AnimRockPolishStreak(struct Sprite *sprite)
+{
+    int affineAnimNum = Random2() % ARRAY_COUNT(gRockPolishStreak_AffineAnimCmds);
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    StartSpriteAffineAnim(sprite, affineAnimNum);
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+}
+
+// Places a blue sparkle that plays its default animation.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+static void AnimRockPolishSparkle(struct Sprite *sprite)
+{
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+}
+
+// Moves a projectile towards the center of the target mon.  The sprite is rotated to look
+// like it's traveling along that path.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: duration
+void AnimPoisonJabProjectile(struct Sprite *sprite)
+{
+    s16 targetXPos;
+    s16 targetYPos;
+    u16 rotation;
+
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    targetXPos = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    targetYPos = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    rotation = ArcTan2Neg(targetXPos - sprite->x, targetYPos - sprite->y);
+    TrySetSpriteRotScale(sprite, FALSE, 0x100, 0x100, rotation);
+    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[2] = targetXPos;
+    sprite->data[4] = targetYPos;
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+void AnimTask_BlendNightSlash(u8 taskId)
+{
+    int paletteOffset = IndexOfSpritePaletteTag(ANIM_TAG_SLASH) * 16 + 256;
+    BlendPalette(paletteOffset, 16, 6, RGB_RED);
+    DestroyAnimVisualTask(taskId);
+}
+
+static void AnimNightSlash(struct Sprite *sprite)
+{
+    sprite->callback = AnimSlashSlice;
+    sprite->callback(sprite);
+}
+
+static const union AffineAnimCmd sCompressTargetHorizontallyAffineAnimCmds[] =
+{
+    AFFINEANIMCMD_FRAME(64, 0, 0, 16), //Compress
+    AFFINEANIMCMD_FRAME(0, 0, 0, 64),
+    AFFINEANIMCMD_FRAME(-64, 0, 0, 16),
+    AFFINEANIMCMD_END,
 };
 
-// Its assumed that the berry is strategically given, so no need to check benefits of the berry
-bool32 IsStatBoostingBerry(enum Item item)
+static const union AffineAnimCmd sCompressTargetHorizontallyAffineAnimCmdsFast[] =
 {
-    switch (item)
-    {
-    case ITEM_LIECHI_BERRY:
-    case ITEM_GANLON_BERRY:
-    case ITEM_SALAC_BERRY:
-    case ITEM_PETAYA_BERRY:
-    case ITEM_APICOT_BERRY:
-    //case ITEM_LANSAT_BERRY:
-    case ITEM_STARF_BERRY:
-    case ITEM_MICLE_BERRY:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 ShouldRestoreHpBerry(enum BattlerId battlerAtk, enum Item item)
-{
-    switch (item)
-    {
-    case ITEM_ORAN_BERRY:
-        if (gBattleMons[battlerAtk].maxHP <= 50)
-            return TRUE;    // Only worth it in the early game
-        return FALSE;
-    case ITEM_SITRUS_BERRY:
-    case ITEM_FIGY_BERRY:
-    case ITEM_WIKI_BERRY:
-    case ITEM_MAGO_BERRY:
-    case ITEM_AGUAV_BERRY:
-    case ITEM_IAPAPA_BERRY:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 IsRecycleEncouragedItem(enum Item item)
-{
-    for (u32 recycleIndex = 0; recycleIndex < ARRAY_COUNT(sRecycleEncouragedItems); recycleIndex++)
-    {
-        if (item == sRecycleEncouragedItems[recycleIndex])
-            return TRUE;
-    }
-    return FALSE;
-}
-
-static bool32 HasMoveThatChangesKOThreshold(enum BattlerId battlerId, u32 noOfHitsToFaint, bool32 aiIsFaster)
-{
-    enum Move *moves = GetMovesArray(battlerId);
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (moves[moveIndex] == MOVE_NONE || moves[moveIndex] == MOVE_UNAVAILABLE)
-            continue;
-        if (noOfHitsToFaint <= 2)
-        {
-            if (GetMovePriority(moves[moveIndex]) > 0)
-                return TRUE;
-
-            u32 additionalEffectCount = GetMoveAdditionalEffectCount(moves[moveIndex]);
-            for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
-            {
-                const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(moves[moveIndex], effectIndex);
-                switch (additionalEffect->moveEffect)
-                {
-                case MOVE_EFFECT_SPD_MINUS_1:
-                case MOVE_EFFECT_SPD_MINUS_2:
-                {
-                    if (aiIsFaster && !additionalEffect->self)
-                        return TRUE;
-                }
-                default:
-                    break;
-                }
-            }
-        }
-    }
-
-    return FALSE;
-}
-
-static enum Stat GetStatBeingChanged(enum StatChange statChange)
-{
-    switch (statChange)
-    {
-    case STAT_CHANGE_ATK:
-    case STAT_CHANGE_ATK_2:
-    case STAT_CHANGE_ATK_3:
-    case STAT_CHANGE_ATK_MAX:
-        return STAT_ATK;
-    case STAT_CHANGE_DEF:
-    case STAT_CHANGE_DEF_2:
-    case STAT_CHANGE_DEF_3:
-        return STAT_DEF;
-    case STAT_CHANGE_SPEED:
-    case STAT_CHANGE_SPEED_2:
-    case STAT_CHANGE_SPEED_3:
-        return STAT_SPEED;
-    case STAT_CHANGE_SPATK:
-    case STAT_CHANGE_SPATK_2:
-    case STAT_CHANGE_SPATK_3:
-        return STAT_SPATK;
-    case STAT_CHANGE_SPDEF:
-    case STAT_CHANGE_SPDEF_2:
-    case STAT_CHANGE_SPDEF_3:
-        return STAT_SPDEF;
-    case STAT_CHANGE_ACC:
-        return STAT_ACC;
-    case STAT_CHANGE_EVASION:
-        return STAT_EVASION;
-    }
-    return 0; // STAT_HP, should never be getting changed
-}
-
-static u32 GetStagesOfStatChange(enum StatChange statChange)
-{
-    switch (statChange)
-    {
-    case STAT_CHANGE_ATK:
-    case STAT_CHANGE_DEF:
-    case STAT_CHANGE_SPEED:
-    case STAT_CHANGE_SPATK:
-    case STAT_CHANGE_SPDEF:
-    case STAT_CHANGE_ACC:
-    case STAT_CHANGE_EVASION:
-        return 1;
-    case STAT_CHANGE_ATK_2:
-    case STAT_CHANGE_DEF_2:
-    case STAT_CHANGE_SPEED_2:
-    case STAT_CHANGE_SPATK_2:
-    case STAT_CHANGE_SPDEF_2:
-        return 2;
-    case STAT_CHANGE_ATK_3:
-    case STAT_CHANGE_DEF_3:
-    case STAT_CHANGE_SPEED_3:
-    case STAT_CHANGE_SPATK_3:
-    case STAT_CHANGE_SPDEF_3:
-        return 3;
-    case STAT_CHANGE_ATK_MAX:
-            return 6;
-    }
-    return 0; // STAT_HP, should never be getting changed
-}
-
-static enum AIScore IncreaseStatUpScoreInternal(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum StatChange statChange, bool32 considerContrary)
-{
-    enum AIScore tempScore = NO_INCREASE;
-    u32 noOfHitsToFaint = NoOfHitsForTargetToFaintBattler(battlerDef, battlerAtk, DONT_CONSIDER_ENDURE);
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    bool32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, MOVE_NONE, predictedMoveSpeedCheck, DONT_CONSIDER_PRIORITY); // Don't care about the priority of our setup move, care about outspeeding otherwise
-    bool32 shouldSetUp = ((noOfHitsToFaint >= 2 && aiIsFaster) || (noOfHitsToFaint >= 3 && !aiIsFaster) || noOfHitsToFaint == UNKNOWN_NO_OF_HITS);
-    enum Stat statId = GetStatBeingChanged(statChange);
-    u32 stages = GetStagesOfStatChange(statChange);
-
-    if (considerContrary && gAiLogicData->abilities[battlerAtk] == ABILITY_CONTRARY)
-        return NO_INCREASE;
-
-    if (!ShouldRaiseAnyStat(battlerAtk, battlerDef))
-        return NO_INCREASE;
-
-    // Don't increase stat if AI is at +4
-    if (gBattleMons[battlerAtk].statStages[statId] >= MAX_STAT_STAGE - 2)
-        return NO_INCREASE;
-
-    // Don't increase stat if AI has less then 70% HP and number of hits isn't known
-    if (gAiLogicData->hpPercents[battlerAtk] < 70 && noOfHitsToFaint == UNKNOWN_NO_OF_HITS)
-        return NO_INCREASE;
-
-    // Don't increase stats if player has a move that can change the KO threshold
-    if (HasMoveThatChangesKOThreshold(battlerDef, noOfHitsToFaint, aiIsFaster))
-        return NO_INCREASE;
-
-    // Stat stages are effectively doubled under Simple.
-    if (gAiLogicData->abilities[battlerAtk] == ABILITY_SIMPLE)
-        stages *= 2;
-
-    // Predicting switch
-    if (IsBattlerPredictedToSwitch(battlerDef))
-    {
-        struct Pokemon *playerParty = GetBattlerParty(battlerDef);
-        // If expected switchin outspeeds and has Encore, don't increase
-        for (u32 monIndex = 0; monIndex < MAX_MON_MOVES; monIndex++)
-        {
-            if (GetMoveEffect(GetMonData(&playerParty[gAiLogicData->mostSuitableMonId[battlerDef]], MON_DATA_MOVE1 + monIndex)) == EFFECT_ENCORE
-                && GetMonData(&playerParty[gAiLogicData->mostSuitableMonId[battlerDef]], MON_DATA_PP1 + monIndex) > 0);
-            {
-                if (GetMonData(&playerParty[gAiLogicData->mostSuitableMonId[battlerDef]], MON_DATA_SPEED) > gBattleMons[battlerAtk].speed)
-                    return NO_INCREASE;
-            }
-        }
-        // Otherwise if predicting switch, stat increases are great momentum
-        tempScore += WEAK_EFFECT;
-    }
-
-    switch (statId)
-    {
-    case STAT_ATK:
-        if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_PHYSICAL) && shouldSetUp)
-        {
-            if (stages == 1)
-                tempScore += DECENT_EFFECT;
-            else if (stages == 6)
-                tempScore += BEST_EFFECT;
-            else
-                tempScore += GOOD_EFFECT;
-        }
-        break;
-    case STAT_DEF:
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL) || !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
-        {
-            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_STALL)
-                tempScore += WEAK_EFFECT;
-            if (stages == 1)
-                tempScore += WEAK_EFFECT;
-            else
-                tempScore += DECENT_EFFECT;
-        }
-        break;
-    case STAT_SPEED:
-        if ((noOfHitsToFaint >= 3 && !aiIsFaster) || noOfHitsToFaint == UNKNOWN_NO_OF_HITS)
-        {
-            if (stages == 1)
-                tempScore += DECENT_EFFECT;
-            else
-                tempScore += GOOD_EFFECT;
-        }
-        break;
-    case STAT_SPATK:
-        if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_SPECIAL) && shouldSetUp)
-        {
-            if (stages == 1)
-                tempScore += DECENT_EFFECT;
-            else
-                tempScore += GOOD_EFFECT;
-        }
-        break;
-    case STAT_SPDEF:
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL) || !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
-        {
-            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_STALL)
-                tempScore += WEAK_EFFECT;
-            if (stages == 1)
-                tempScore += WEAK_EFFECT;
-            else
-                tempScore += DECENT_EFFECT;
-        }
-        break;
-    case STAT_ACC:
-        if (gBattleMons[battlerAtk].statStages[statId] <= DEFAULT_STAT_STAGE - 3) // Increase only if necessary
-            tempScore += DECENT_EFFECT;
-        break;
-    case STAT_EVASION:
-        if (noOfHitsToFaint > 3 || noOfHitsToFaint == UNKNOWN_NO_OF_HITS)
-            tempScore += GOOD_EFFECT;
-        else
-            tempScore += DECENT_EFFECT;
-        break;
-    default:
-        break;
-    }
-
-    // if already inclined to boost, be slightly more likely to if boost levels matter
-    if (tempScore > 0 && HasMoveWithEffect(battlerAtk, EFFECT_STORED_POWER))
-        tempScore += WEAK_EFFECT;
-
-    return tempScore;
-}
-
-bool32 HasHPForDamagingSetup(enum BattlerId battlerAtk, enum BattlerId battlerDef, u32 hpThreshold)
-{
-    bool32 bestMoveIsPhysical = HasPhysicalBestMove(battlerDef, battlerAtk, AI_DEFENDING);
-
-    if (GetBestDmgFromBattler(battlerDef, battlerAtk, AI_DEFENDING) < ((hpThreshold * gBattleMons[battlerAtk].maxHP) / 100))
-        return TRUE;
-
-    if (bestMoveIsPhysical
-     && gAiLogicData->abilities[battlerAtk] == ABILITY_ICE_FACE
-     && gBattleMons[battlerAtk].species == SPECIES_EISCUE_ICE
-     && !IsMoldBreakerTypeAbility(battlerDef, gAiLogicData->abilities[battlerDef])) // ice face will absorb the hit, safe to use setup
-        return TRUE;
-
-    if (gAiLogicData->abilities[battlerAtk] == ABILITY_DISGUISE
-     && IsMimikyuDisguised(battlerAtk)
-     && !IsMoldBreakerTypeAbility(battlerDef, gAiLogicData->abilities[battlerDef])) // disguise will absorb the hit, safe to use setup
-        return TRUE;
-
-    return FALSE;
-}
-
-enum AIScore IncreaseStatUpScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum StatChange statChange)
-{
-    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statChange, TRUE);
-}
-
-enum AIScore IncreaseStatUpScoreContrary(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum StatChange statChange)
-{
-    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statChange, FALSE);
-}
-
-void IncreasePoisonScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score)
-{
-    if (((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_TRY_TO_FAINT) && CanAIFaintTarget(battlerAtk, battlerDef, 0))
-            || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_PSN || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_STATUS)
-        return;
-
-    if (AI_CanPoison(battlerAtk, battlerDef, gAiLogicData->abilities[battlerDef], move, gAiLogicData->partnerMove) && gAiLogicData->hpPercents[battlerDef] > 20)
-    {
-        if (!HasDamagingMove(battlerDef))
-            ADJUST_SCORE_PTR(DECENT_EFFECT);
-
-        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_STALL && HasMoveWithEffect(battlerAtk, EFFECT_PROTECT))
-            ADJUST_SCORE_PTR(WEAK_EFFECT);    // stall tactic
-
-        if (IsPowerBasedOnStatus(battlerAtk, EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_PSN_ANY)
-         || HasMoveWithEffect(battlerAtk, EFFECT_VENOM_DRENCH)
-         || gAiLogicData->abilities[battlerAtk] == ABILITY_MERCILESS)
-            ADJUST_SCORE_PTR(DECENT_EFFECT);
-        else
-            ADJUST_SCORE_PTR(WEAK_EFFECT);
-    }
-}
-
-void IncreaseBurnScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score)
-{
-    if (((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_TRY_TO_FAINT) && CanAIFaintTarget(battlerAtk, battlerDef, 0))
-            || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_BRN || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_STATUS)
-        return;
-
-    if (AI_CanBurn(battlerAtk, battlerDef, gAiLogicData->abilities[battlerDef], BATTLE_PARTNER(battlerAtk), move, gAiLogicData->partnerMove))
-    {
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL)
-            || (!(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_OMNISCIENT) // Not Omniscient but expects physical attacker
-                && GetSpeciesBaseAttack(gBattleMons[battlerDef].species) >= GetSpeciesBaseSpAttack(gBattleMons[battlerDef].species) + 10))
-        {
-            enum Move defBestMoves[MAX_MON_MOVES] = {MOVE_NONE};
-            bool32 hasPhysical = FALSE;
-
-            GetBestDmgMovesFromBattler(battlerAtk, battlerDef, AI_DEFENDING, defBestMoves);
-
-            for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-            {
-                if (defBestMoves[moveIndex] == MOVE_NONE)
-                    break;
-
-                if (GetMoveCategory(defBestMoves[moveIndex]) == DAMAGE_CATEGORY_PHYSICAL)
-                {
-                    hasPhysical = TRUE;
-                    break;
-                }
-            }
-
-            if (hasPhysical)
-                ADJUST_SCORE_PTR(DECENT_EFFECT);
-            else
-                ADJUST_SCORE_PTR(WEAK_EFFECT);
-        }
-
-        if (IsPowerBasedOnStatus(battlerAtk, EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_BURN)
-          || IsPowerBasedOnStatus(BATTLE_PARTNER(battlerAtk), EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_BURN))
-            ADJUST_SCORE_PTR(WEAK_EFFECT);
-    }
-}
-
-void IncreaseParalyzeScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score)
-{
-    if (((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_TRY_TO_FAINT) && CanAIFaintTarget(battlerAtk, battlerDef, 0))
-            || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_PAR || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_STATUS)
-        return;
-
-    if (AI_CanParalyze(battlerAtk, battlerDef, gAiLogicData->abilities[battlerDef], move, gAiLogicData->partnerMove))
-    {
-        u32 atkSpeed = gAiLogicData->speedStats[battlerAtk];
-        u32 defSpeed = gAiLogicData->speedStats[battlerDef];
-
-        if ((defSpeed >= atkSpeed && defSpeed / 2 < atkSpeed) // You'll go first after paralyzing foe
-          || IsPowerBasedOnStatus(battlerAtk, EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_PARALYSIS)
-          || (HasMoveWithMoveEffectExcept(battlerAtk, MOVE_EFFECT_FLINCH, EFFECT_FIRST_TURN_ONLY)) // filter out Fake Out
-          || gBattleMons[battlerDef].volatiles.infatuation
-          || gBattleMons[battlerDef].volatiles.confusionTurns > 0)
-            ADJUST_SCORE_PTR(GOOD_EFFECT);
-        else
-            ADJUST_SCORE_PTR(DECENT_EFFECT);
-    }
-}
-
-void IncreaseSleepScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score)
-{
-    if (gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_SLP || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_STATUS)
-        return;
-
-    if (((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_TRY_TO_FAINT) && CanAIFaintTarget(battlerAtk, battlerDef, 0)))
-    {
-        enum Move bestMoves[MAX_MON_MOVES] = {MOVE_NONE};
-
-        GetBestDmgMovesFromBattler(battlerAtk, battlerDef, AI_ATTACKING, bestMoves);
-
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-        {
-            if ((GetMoveEffect(bestMoves[moveIndex]) != EFFECT_FOCUS_PUNCH) && (bestMoves[moveIndex] != MOVE_NONE))
-                return;
-        }
-    }
-
-    if (AI_CanPutToSleep(battlerAtk, battlerDef, gAiLogicData->abilities[battlerDef], move, gAiLogicData->partnerMove))
-        ADJUST_SCORE_PTR(DECENT_EFFECT);
-    else
-        return;
-
-    if ((HasMoveWithEffect(battlerAtk, EFFECT_DREAM_EATER) || HasMoveWithEffect(battlerAtk, EFFECT_NIGHTMARE))
-      && !HasUsableWhileAsleepMove(battlerDef))
-        ADJUST_SCORE_PTR(WEAK_EFFECT);
-
-    if (IsPowerBasedOnStatus(battlerAtk, EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_SLEEP)
-      || IsPowerBasedOnStatus(BATTLE_PARTNER(battlerAtk), EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_SLEEP))
-        ADJUST_SCORE_PTR(WEAK_EFFECT);
-}
-
-void IncreaseConfusionScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score)
-{
-    if (((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_TRY_TO_FAINT) && CanAIFaintTarget(battlerAtk, battlerDef, 0))
-            || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_CONFUSION || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_STATUS)
-        return;
-
-    if (AI_CanConfuse(battlerAtk, battlerDef, gAiLogicData->abilities[battlerDef], BATTLE_PARTNER(battlerAtk), move, gAiLogicData->partnerMove)
-      && gAiLogicData->holdEffects[battlerDef] != HOLD_EFFECT_CURE_CONFUSION
-      && gAiLogicData->holdEffects[battlerDef] != HOLD_EFFECT_CURE_STATUS)
-    {
-        if (gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS
-          || gBattleMons[battlerDef].volatiles.infatuation
-          || (gAiLogicData->abilities[battlerAtk] == ABILITY_SERENE_GRACE && HasMoveWithMoveEffectExcept(battlerAtk, MOVE_EFFECT_FLINCH, EFFECT_FIRST_TURN_ONLY)))
-            ADJUST_SCORE_PTR(GOOD_EFFECT);
-        else
-            ADJUST_SCORE_PTR(DECENT_EFFECT);
-    }
-}
-
-void IncreaseFrostbiteScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score)
-{
-    if ((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_TRY_TO_FAINT) && CanAIFaintTarget(battlerAtk, battlerDef, 0))
-        return;
-
-    if (AI_CanGiveFrostbite(battlerAtk, battlerDef, gAiLogicData->abilities[battlerDef], BATTLE_PARTNER(battlerAtk), move, gAiLogicData->partnerMove))
-    {
-        if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL)
-            || (!(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_OMNISCIENT) // Not Omniscient but expects special attacker
-                && GetSpeciesBaseSpAttack(gBattleMons[battlerDef].species) >= GetSpeciesBaseAttack(gBattleMons[battlerDef].species) + 10))
-        {
-            enum Move defBestMoves[MAX_MON_MOVES] = {MOVE_NONE};
-            bool32 hasSpecial = FALSE;
-
-            GetBestDmgMovesFromBattler(battlerAtk, battlerDef, AI_DEFENDING, defBestMoves);
-
-            for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-            {
-                if (defBestMoves[moveIndex] == MOVE_NONE)
-                    break;
-
-                if (GetMoveCategory(defBestMoves[moveIndex]) == DAMAGE_CATEGORY_SPECIAL)
-                {
-                    hasSpecial = TRUE;
-                    break;
-                }
-            }
-
-            if (hasSpecial)
-                ADJUST_SCORE_PTR(DECENT_EFFECT);
-            else
-                ADJUST_SCORE_PTR(WEAK_EFFECT);
-        }
-
-        if (IsPowerBasedOnStatus(battlerAtk, EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_FROSTBITE)
-          || IsPowerBasedOnStatus(BATTLE_PARTNER(battlerAtk), EFFECT_DOUBLE_POWER_ON_ARG_STATUS, STATUS1_FROSTBITE))
-            ADJUST_SCORE_PTR(WEAK_EFFECT);
-    }
-}
-
-bool32 AI_MoveMakesContact(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability ability, enum HoldEffect holdEffect, enum Move move)
-{
-    if (GetMoveEffect(move) == EFFECT_SHELL_SIDE_ARM)
-    {
-        if (gBattleStruct->shellSideArmCategory[battlerAtk][battlerDef] != DAMAGE_CATEGORY_PHYSICAL)
-            return FALSE;
-    }
-    else if (!MoveMakesContact(move))
-    {
-        return FALSE;
-    }
-
-    if (ability == ABILITY_LONG_REACH)
-        return FALSE;
-    if (holdEffect == HOLD_EFFECT_PROTECTIVE_PADS)
-        return FALSE;
-    if (holdEffect == HOLD_EFFECT_PUNCHING_GLOVE && IsPunchingMove(move))
-        return FALSE;
-    return TRUE;
-}
-
-bool32 IsUnseenFistContactMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    if (move == MOVE_NONE || move == MOVE_UNAVAILABLE)
-        return FALSE;
-    if (gAiLogicData->abilities[battlerAtk] != ABILITY_UNSEEN_FIST)
-        return FALSE;
-    if (GetMoveEffect(move) == EFFECT_SHELL_SIDE_ARM)
-    {
-        if (gBattleStruct->shellSideArmCategory[battlerAtk][battlerDef] != DAMAGE_CATEGORY_PHYSICAL)
-            return FALSE;
-    }
-    else if (!MoveMakesContact(move))
-    {
-        return FALSE;
-    }
-
-    if (gAiLogicData->holdEffects[battlerAtk] == HOLD_EFFECT_PUNCHING_GLOVE && IsPunchingMove(move))
-        return FALSE;
-
-    return TRUE;
-}
-
-
-bool32 IsConsideringZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    if (GetMovePower(move) == 0 && GetMoveZEffect(move) == Z_EFFECT_NONE)
-        return FALSE;
-
-    return gBattleStruct->gimmick.usableGimmick[battlerAtk] == GIMMICK_Z_MOVE && ShouldUseZMove(battlerAtk, battlerDef, move);
-}
-
-//TODO - this could use some more sophisticated logic
-bool32 ShouldUseZMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move chosenMove)
-{
-    // simple logic. just upgrades chosen move to z move if possible, unless regular move would kill opponent
-    enum MoveTarget target = AI_GetBattlerMoveTargetType(battlerAtk, chosenMove);
-    if ((IsDoubleBattle()) && battlerDef == BATTLE_PARTNER(battlerAtk) && target != TARGET_ALLY && target != TARGET_USER_OR_ALLY)
-        return FALSE;   // don't use z move on partner
-    if (HasTrainerUsedGimmick(battlerAtk, GIMMICK_Z_MOVE))
-        return FALSE;   // can't use z move twice
-
-    if (IsViableZMove(battlerAtk, chosenMove))
-    {
-        enum BattleMoveEffects baseEffect = GetMoveEffect(chosenMove);
-        bool32 isEager = FALSE; // more likely to use a z move than typical
-
-        enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-        bool32 isSlower = AI_IsSlower(battlerAtk, battlerDef, chosenMove, predictedMoveSpeedCheck, CONSIDER_PRIORITY);
-
-        switch (baseEffect)
-        {
-        case EFFECT_BELLY_DRUM:
-        case EFFECT_FILLET_AWAY:
-            if (isSlower)
-                return TRUE;
-            isEager = TRUE;
-            break;
-        case EFFECT_PROTECT:
-            if (HasDamagingMoveOfType(battlerAtk, GetMoveType(chosenMove)))
-                return FALSE;
-            else
-                isEager = TRUE;
-            break;
-        case EFFECT_TELEPORT:
-            isEager = TRUE;
-            break;
-        case EFFECT_TRANSFORM:
-            if (IsBattlerTrapped(battlerDef, battlerAtk) && !HasDamagingMoveOfType(battlerDef, GetMoveType(chosenMove)))
-                return TRUE;
-            if (isSlower)
-                isEager = TRUE;
-            break;
-        default:
-            break;
-        }
-
-        enum Move zMove = GetUsableZMove(battlerAtk, chosenMove);
-
-        if (IsBattleMoveStatus(chosenMove))
-        {
-            enum ZEffect zEffect = GetMoveZEffect(chosenMove);
-            enum StatChange statChange = 0;
-
-            if (zEffect == Z_EFFECT_CURSE)
-            {
-                if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GHOST))
-                    zEffect = Z_EFFECT_RECOVER_HP;
-                else
-                    zEffect = Z_EFFECT_ATK_UP_1;
-            }
-
-            switch (zEffect)
-            {
-            case Z_EFFECT_NONE:
-                if (GetMovePower(chosenMove) == 0)
-                    return FALSE;
-                break;
-            case Z_EFFECT_RESET_STATS:
-                if (CountNegativeStatStages(battlerAtk) > 1)
-                    return TRUE;
-                break;
-            case Z_EFFECT_ALL_STATS_UP_1:
-                return ShouldRaiseAnyStat(battlerAtk, battlerDef);
-            case Z_EFFECT_BOOST_CRITS:
-                return TRUE;
-            case Z_EFFECT_FOLLOW_ME:
-                return HasPartnerIgnoreFlags(battlerAtk) && (GetHealthPercentage(battlerAtk) <= Z_EFFECT_FOLLOW_ME_THRESHOLD || GetBestNoOfHitsToKO(battlerDef, battlerAtk, AI_DEFENDING) == 1);
-                break;
-            case Z_EFFECT_RECOVER_HP:
-                if (GetBestNoOfHitsToKO(battlerDef, battlerAtk, AI_DEFENDING) == 1 && GetHealthPercentage(battlerAtk) > Z_EFFECT_RESTORE_HP_HIGHER_THRESHOLD)
-                    return TRUE;
-                if (isEager)
-                    return GetHealthPercentage(battlerAtk) <= Z_EFFECT_RESTORE_HP_HIGHER_THRESHOLD;
-                return GetHealthPercentage(battlerAtk) <= Z_EFFECT_RESTORE_HP_LOWER_THRESHOLD;
-            case Z_EFFECT_RESTORE_REPLACEMENT_HP:
-                break;
-            case Z_EFFECT_ACC_UP_1:
-            case Z_EFFECT_ACC_UP_2:
-            case Z_EFFECT_ACC_UP_3:
-                statChange = STAT_CHANGE_ACC;
-                break;
-            case Z_EFFECT_EVSN_UP_1:
-            case Z_EFFECT_EVSN_UP_2:
-            case Z_EFFECT_EVSN_UP_3:
-                statChange = STAT_CHANGE_EVASION;
-                break;
-            case Z_EFFECT_ATK_UP_1:
-            case Z_EFFECT_DEF_UP_1:
-            case Z_EFFECT_SPD_UP_1:
-            case Z_EFFECT_SPATK_UP_1:
-            case Z_EFFECT_SPDEF_UP_1:
-                statChange = STAT_CHANGE_ATK + zEffect - Z_EFFECT_ATK_UP_1;
-                break;
-            case Z_EFFECT_ATK_UP_2:
-            case Z_EFFECT_DEF_UP_2:
-            case Z_EFFECT_SPD_UP_2:
-            case Z_EFFECT_SPATK_UP_2:
-            case Z_EFFECT_SPDEF_UP_2:
-                statChange = STAT_CHANGE_ATK_2 + zEffect - Z_EFFECT_ATK_UP_2;
-                break;
-            case Z_EFFECT_ATK_UP_3:
-            case Z_EFFECT_DEF_UP_3:
-            case Z_EFFECT_SPD_UP_3:
-            case Z_EFFECT_SPATK_UP_3:
-            case Z_EFFECT_SPDEF_UP_3:
-                statChange = STAT_CHANGE_ATK_2 + zEffect - Z_EFFECT_ATK_UP_3;
-                break;
-            default:
-                return FALSE;
-            }
-
-            if (statChange != 0 && (isEager || IncreaseStatUpScoreContrary(battlerAtk, battlerDef, statChange) > 0))
-                return TRUE;
-
-        }
-        else if (GetMoveEffect(zMove) == EFFECT_EXTREME_EVOBOOST)
-        {
-            return gAiLogicData->abilities[battlerAtk] != ABILITY_CONTRARY && ShouldRaiseAnyStat(battlerAtk, battlerDef);
-        }
-        else if (!IsBattleMoveStatus(chosenMove) && IsBattleMoveStatus(zMove))
-        {
-            return FALSE;
-        }
-
-        if (GetMoveEffect(chosenMove) == EFFECT_LAST_RESORT && !CanUseLastResort(battlerAtk))
-            return TRUE;
-
-        uq4_12_t effectiveness;
-        struct SimulatedDamage dmg;
-
-        if (gBattleMons[battlerDef].ability == ABILITY_DISGUISE
-            && !MoveIgnoresTargetAbility(zMove)
-            && IsMimikyuDisguised(battlerDef))
-            return FALSE; // Don't waste a Z-Move busting disguise
-        if (gBattleMons[battlerDef].ability == ABILITY_ICE_FACE
-            && !MoveIgnoresTargetAbility(zMove)
-            && gBattleMons[battlerDef].species == SPECIES_EISCUE_ICE && IsBattleMovePhysical(chosenMove))
-            return FALSE; // Don't waste a Z-Move busting Ice Face
-
-        dmg = AI_CalcDamageSaveBattlers(chosenMove, battlerAtk, battlerDef, &effectiveness, NO_GIMMICK, NO_GIMMICK);
-
-        // don't waste a damaging z move if the normal move will KO
-        if (!IsBattleMoveStatus(chosenMove) && dmg.minimum >= gBattleMons[battlerDef].hp)
-        {
-            // Risky AI skips accuracy check.
-            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_RISKY)
-                return FALSE;
-
-            u32 acc = gAiLogicData->moveAccuracy[battlerAtk][battlerDef][gAiThinkingStruct->movesetIndex];
-
-            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_CONSERVATIVE)
-                return (acc < 100);
-
-            return acc < LOW_ACCURACY_THRESHOLD;
-        }
-
-        return TRUE;
-    }
-
-    return FALSE;
-}
-
-void SetAIUsingGimmick(enum BattlerId battler, enum AIConsiderGimmick use)
-{
-    if (use == USE_GIMMICK)
-        gAiBattleData->aiUsingGimmick |= (1<<battler);
-    else
-        gAiBattleData->aiUsingGimmick &= ~(1<<battler);
-}
-
-bool32 IsAIUsingGimmick(enum BattlerId battler)
-{
-    return (gAiBattleData->aiUsingGimmick & (1<<battler)) != 0;
-}
-
-struct AltTeraCalcs
-{
-    struct SimulatedDamage takenWithTera[MAX_MON_MOVES];
-    struct SimulatedDamage dealtWithoutTera[MAX_MON_MOVES];
+    AFFINEANIMCMD_FRAME(32, 0, 0, 16), //Compress
+    AFFINEANIMCMD_FRAME(0, 0, 0, 32),
+    AFFINEANIMCMD_FRAME(-32, 0, 0, 16),
+    AFFINEANIMCMD_END,
 };
 
-enum AIConsiderGimmick ShouldTeraFromCalcs(enum BattlerId battler, enum BattlerId opposingBattler, struct AltTeraCalcs *altCalcs);
-
-void DecideTerastal(enum BattlerId battler)
+static void AnimTask_CompressTargetStep(u8 taskId)
 {
-    if (gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_TERA)
-        return;
+    struct Task* task = &gTasks[taskId];
 
-    if (!(gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SMART_TERA))
-        return;
-
-    // TODO: Currently only single battles are considered.
-    if (!IsBattle1v1())
-        return;
-
-    // TODO: A lot of these checks are most effective for an omnicient ai.
-    // If we don't have enough information about the opponent's moves, consider simpler checks based on type effectivness.
-
-    enum BattlerId opposingBattler = GetOppositeBattler(battler);
-
-    // Default calculations automatically assume gimmicks for the attacker, but not the defender.
-    // Consider calcs for the other possibilities.
-    struct AltTeraCalcs altCalcs;
-
-    struct SimulatedDamage noDmg = {0};
-
-    uq4_12_t effectivenessTakenWithTera[MAX_MON_MOVES];
-
-    enum Move *aiMoves = GetMovesArray(battler);
-    enum Move *oppMoves = GetMovesArray(opposingBattler);
-
-    uq4_12_t effectiveness;
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (!IsMoveUnusable(moveIndex, aiMoves[moveIndex], gAiLogicData->moveLimitations[battler]) && !IsBattleMoveStatus(aiMoves[moveIndex]))
-            altCalcs.dealtWithoutTera[moveIndex] = AI_CalcDamage(aiMoves[moveIndex], battler, opposingBattler, &effectiveness, NO_GIMMICK, NO_GIMMICK, AI_GetWeather(), gFieldStatuses);
-        else
-            altCalcs.dealtWithoutTera[moveIndex] = noDmg;
-
-
-        if (!IsMoveUnusable(moveIndex, oppMoves[moveIndex], gAiLogicData->moveLimitations[opposingBattler]) && !IsBattleMoveStatus(oppMoves[moveIndex]))
-        {
-            altCalcs.takenWithTera[moveIndex] = AI_CalcDamage(oppMoves[moveIndex], opposingBattler, battler, &effectiveness, USE_GIMMICK, USE_GIMMICK, AI_GetWeather(), gFieldStatuses);
-            effectivenessTakenWithTera[moveIndex] = effectiveness;
-        }
-        else
-        {
-            altCalcs.takenWithTera[moveIndex] = noDmg;
-            effectivenessTakenWithTera[moveIndex] = Q_4_12(0.0);
-        }
-    }
-
-
-    enum AIConsiderGimmick res = ShouldTeraFromCalcs(battler, opposingBattler, &altCalcs);
-
-
-    if (res == USE_GIMMICK)
-    {
-        // Damage calcs for damage received assumed we wouldn't tera. Adjust that so that further AI decisions are more accurate.
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-        {
-            gAiLogicData->simulatedDmg[opposingBattler][battler][moveIndex] = altCalcs.takenWithTera[moveIndex];
-            gAiLogicData->effectiveness[opposingBattler][battler][moveIndex] = effectivenessTakenWithTera[moveIndex];
-        }
-    }
-    else
-    {
-        // Damage calcs for damage dealt assumed we would tera. Adjust that so that further AI decisions are more accurate.
-        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-            gAiLogicData->simulatedDmg[battler][opposingBattler][moveIndex] = altCalcs.dealtWithoutTera[moveIndex];
-    }
-
-    SetAIUsingGimmick(battler, res);
-    return;
+    if (!RunAffineAnimFromTaskData(task))
+        DestroyAnimVisualTask(taskId);
 }
 
-// macros are not expanded recursively
-#define dealtWithTera gAiLogicData->simulatedDmg[battler][opposingBattler]
-#define dealtWithoutTera altCalcs->dealtWithoutTera
-#define takenWithTera altCalcs->takenWithTera
-#define takenWithoutTera gAiLogicData->simulatedDmg[opposingBattler][battler]
-
-enum AIConsiderGimmick ShouldTeraFromCalcs(enum BattlerId battler, enum BattlerId opposingBattler, struct AltTeraCalcs *altCalcs)
+void AnimTask_CompressTargetHorizontally(u8 taskId)
 {
-    struct Pokemon *party = GetBattlerParty(battler);
-
-    // Check how many pokemon we have that could tera
-    int numPossibleTera = 0;
-    for (u32 monIndex = 0; monIndex < PARTY_SIZE; monIndex++)
-    {
-        if (GetMonData(&party[monIndex], MON_DATA_HP) != 0
-         && GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
-         && GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
-         && GetMonData(&party[monIndex], MON_DATA_TERA_TYPE) > 0)
-            numPossibleTera++;
-    }
-
-    u32 aiHp = gBattleMons[battler].hp;
-    u32 oppHp = gBattleMons[opposingBattler].hp;
-
-    enum Move *aiMoves = GetMovesArray(battler);
-    enum Move *oppMoves = GetMovesArray(opposingBattler);
-
-    // Check whether tera enables a KO
-    bool32 hasKoWithout = FALSE;
-    enum Move killingMove = MOVE_NONE;
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (dealtWithTera[moveIndex].median >= oppHp)
-        {
-            enum Move move = aiMoves[moveIndex];
-            if (killingMove == MOVE_NONE || GetBattleMovePriority(battler, gAiLogicData->abilities[battler], move) > GetBattleMovePriority(battler, gAiLogicData->abilities[battler], killingMove))
-                killingMove = move;
-        }
-        if (dealtWithoutTera[moveIndex].median >= oppHp)
-            hasKoWithout = TRUE;
-    }
-
-    bool32 enablesKo = (killingMove != MOVE_NONE) && !hasKoWithout;
-
-    // Check whether tera saves us from a KO
-    bool32 savedFromKo = FALSE;
-    bool32 getsKodRegardlessBySingleMove = FALSE;
-
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (takenWithoutTera[moveIndex].maximum >= aiHp && takenWithTera[moveIndex].maximum >= aiHp)
-            getsKodRegardlessBySingleMove = TRUE;
-
-        if (takenWithoutTera[moveIndex].maximum >= aiHp && takenWithTera[moveIndex].maximum < aiHp)
-            savedFromKo = TRUE;
-    }
-
-    if (getsKodRegardlessBySingleMove)
-        savedFromKo = FALSE;
-
-    // Check whether opponent can punish tera by ko'ing
-    enum Move hardPunishingMove = MOVE_NONE;
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (takenWithTera[moveIndex].maximum >= aiHp)
-        {
-            enum Move move = oppMoves[moveIndex];
-            if (hardPunishingMove == MOVE_NONE || GetBattleMovePriority(opposingBattler, gAiLogicData->abilities[opposingBattler], move) > GetBattleMovePriority(opposingBattler, gAiLogicData->abilities[opposingBattler], hardPunishingMove))
-                hardPunishingMove = move;
-        }
-    }
-
-    // Check whether there is a move that deals over half hp, and all such moves are reduced to under 1/4 hp by tera
-    // (e.g. a weakness becomes a resistance, a 4x weakness becomes neutral, etc)
-    bool32 takesBigHit = FALSE;
-    bool32 savedFromAllBigHits = TRUE;
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (takenWithoutTera[moveIndex].median > aiHp/2)
-        {
-            takesBigHit = TRUE;
-            if (takenWithTera[moveIndex].median > aiHp/4)
-                savedFromAllBigHits = FALSE;
-        }
-    }
-
-    // Check for any benefit whatsoever. Only used for the last possible mon that could tera.
-    bool32 anyOffensiveBenefit = FALSE;
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (dealtWithTera[moveIndex].median > dealtWithoutTera[moveIndex].median)
-            anyOffensiveBenefit = TRUE;
-    }
-
-    bool32 anyDefensiveBenefit = FALSE;
-    bool32 anyDefensiveDrawback = FALSE;
-    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
-    {
-        if (takenWithTera[moveIndex].median < takenWithoutTera[moveIndex].median)
-            anyDefensiveBenefit = TRUE;
-
-        if (takenWithTera[moveIndex].median > takenWithoutTera[moveIndex].median)
-            anyDefensiveDrawback = TRUE;
-    }
-
-    // Make decisions
-    // This is done after all loops to minimize the possibility of a timing attack in which the player could
-    // determine whether the AI will tera based on the time taken to select a move.
-
-    if (enablesKo)
-    {
-        if (hardPunishingMove == MOVE_NONE)
-        {
-            return USE_GIMMICK;
-        }
-        else
-        {
-            enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battler, opposingBattler, gAiLogicData);
-            // will we go first?
-            if (AI_WhoStrikesFirst(battler, opposingBattler, killingMove, predictedMoveSpeedCheck, CONSIDER_PRIORITY) == AI_IS_FASTER && GetBattleMovePriority(battler, gAiLogicData->abilities[battler], killingMove) >= GetBattleMovePriority(opposingBattler, gAiLogicData->abilities[opposingBattler], hardPunishingMove))
-                return USE_GIMMICK;
-        }
-    }
-
-    // Decide to conserve tera based on number of possible later oppotunities
-    u32 conserveTeraChance = AI_CONSERVE_TERA_CHANCE_PER_MON * (numPossibleTera-1);
-    if (RandomPercentage(RNG_AI_CONSERVE_TERA, conserveTeraChance))
-        return NO_GIMMICK;
-
-    if (savedFromKo)
-    {
-        if (hardPunishingMove == MOVE_NONE)
-        {
-            return USE_GIMMICK;
-        }
-        else
-        {
-            // If tera saves us from a ko from one move, but enables a ko otherwise, randomly predict
-            // savesFromKo being true ensures opponent doesn't have a ko if we don't tera
-            if (Random() % 100 < AI_TERA_PREDICT_CHANCE)
-                return USE_GIMMICK;
-        }
-    }
-
-    if (hardPunishingMove != MOVE_NONE)
-        return NO_GIMMICK;
-
-    if (takesBigHit && savedFromAllBigHits)
-        return USE_GIMMICK;
-
-    // No strongly compelling reason to tera. Conserve it if possible.
-    if (numPossibleTera > 1)
-        return NO_GIMMICK;
-
-    if (anyOffensiveBenefit || (anyDefensiveBenefit && !anyDefensiveDrawback))
-        return USE_GIMMICK;
-
-    // TODO: Effects other than direct damage are not yet considered. For example, may want to tera poison to avoid a Toxic.
-
-
-    return NO_GIMMICK;
-}
-#undef dealtWithTera
-#undef dealtWithoutTera
-#undef takenWithTera
-#undef takenWithoutTera
-
-bool32 AI_IsBattlerAsleepOrComatose(enum BattlerId battlerId)
-{
-    return (gBattleMons[battlerId].status1 & STATUS1_SLEEP) || gAiLogicData->abilities[battlerId] == ABILITY_COMATOSE;
+    struct Task* task = &gTasks[taskId];
+    u8 spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+    PrepareAffineAnimInTaskData(task, spriteId, sCompressTargetHorizontallyAffineAnimCmds);
+    task->func = AnimTask_CompressTargetStep;
 }
 
-s32 AI_TryToClearStats(enum BattlerId battlerAtk, enum BattlerId battlerDef, bool32 isDoubleBattle)
+void AnimTask_CompressTargetHorizontallyFast(u8 taskId)
 {
-    if (isDoubleBattle)
-        return min(CountPositiveStatStages(battlerDef) + CountPositiveStatStages(BATTLE_PARTNER(battlerDef)), 7);
-    else
-        return min(CountPositiveStatStages(battlerDef), 4);
+    struct Task* task = &gTasks[taskId];
+    u8 spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+    PrepareAffineAnimInTaskData(task, spriteId, sCompressTargetHorizontallyAffineAnimCmdsFast);
+    task->func = AnimTask_CompressTargetStep;
 }
 
-bool32 AI_ShouldCopyStatChanges(enum BattlerId battlerAtk, enum BattlerId battlerDef)
+void AnimTask_CreateSmallSteelBeamOrbs(u8 taskId)
 {
-    // Want to copy positive stat changes
-    for (enum Stat statId = STAT_ATK; statId < NUM_BATTLE_STATS; statId++)
+    if (--gTasks[taskId].data[0] == -1)
     {
-        if (gBattleMons[battlerDef].statStages[statId] > gBattleMons[battlerAtk].statStages[statId])
-        {
-            switch (statId)
-            {
-            case STAT_ATK:
-                return (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_PHYSICAL));
-            case STAT_SPATK:
-                return (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_SPECIAL));
-            case STAT_ACC:
-                return HasMoveWithLowAccuracy(battlerAtk, battlerDef, LOW_ACCURACY_THRESHOLD, FALSE);
-            case STAT_EVASION:
-            case STAT_SPEED:
-                return TRUE;
-            case STAT_DEF:
-            case STAT_SPDEF:
-                return (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_STALL);
-            default:
-                break;
-            }
-        }
+        gTasks[taskId].data[1]++;
+        gTasks[taskId].data[0] = 6;
+        gBattleAnimArgs[0] = 15;
+        gBattleAnimArgs[1] = 0;
+        gBattleAnimArgs[2] = 80;
+        gBattleAnimArgs[3] = 0;
+        CreateSpriteAndAnimate(&gSteelBeamSmallOrbSpriteTemplate, 0, 0, GetBattlerSpriteSubpriority(gBattleAnimTarget) + 1);
     }
 
-    return FALSE;
+    if (gTasks[taskId].data[1] == 15)
+        DestroyAnimVisualTask(taskId);
 }
 
-//TODO - track entire opponent party data to determine hazard effectiveness
-bool32 AI_ShouldSetUpHazards(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, struct AiLogicData *aiData)
+static void AnimAcrobaticsSlashes(struct Sprite *sprite)
 {
-    if (CountUsablePartyMons(battlerDef) == 0
-     || HasBattlerSideMoveWithAIEffect(battlerDef, AI_EFFECT_CLEAR_HAZARDS))
-        return FALSE;
-
-    if (IsBattleMoveStatus(move))
-    {
-        if (HasMoveWithEffect(battlerDef, EFFECT_MAGIC_COAT))
-            return FALSE;
-        if (DoesBattlerIgnoreAbilityChecks(battlerAtk, aiData->abilities[battlerAtk], move))
-            return TRUE;
-        if (aiData->abilities[battlerDef] == ABILITY_MAGIC_BOUNCE)
-            return FALSE;
-    }
-    else
-    {
-        if (DoesBattlerIgnoreAbilityChecks(battlerAtk, aiData->abilities[battlerAtk], move))
-            return TRUE;
-        if (aiData->abilities[battlerDef] == ABILITY_SHIELD_DUST)
-            return FALSE;
-    }
-    return TRUE;
-}
-
-void IncreaseTidyUpScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score)
-{
-    if (AreAnyHazardsOnSide(GetBattlerSide(battlerAtk)) && CountUsablePartyMons(battlerAtk) != 0)
-        ADJUST_SCORE_PTR(GOOD_EFFECT);
-    if (AreAnyHazardsOnSide(GetBattlerSide(battlerDef)) && CountUsablePartyMons(battlerDef) != 0)
-        ADJUST_SCORE_PTR(-2);
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
-    if (gBattleMons[battlerAtk].volatiles.substitute && AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, DONT_CONSIDER_PRIORITY))
-        ADJUST_SCORE_PTR(-10);
-    if (gBattleMons[battlerDef].volatiles.substitute)
-        ADJUST_SCORE_PTR(GOOD_EFFECT);
-
-    if (gBattleMons[battlerAtk].volatiles.leechSeed)
-        ADJUST_SCORE_PTR(DECENT_EFFECT);
-    if (gBattleMons[battlerDef].volatiles.leechSeed)
-        ADJUST_SCORE_PTR(-2);
-}
-
-bool32 AI_ShouldSpicyExtract(enum BattlerId battlerAtk, enum BattlerId battlerAtkPartner, enum Move move, struct AiLogicData *aiData)
-{
-    bool32 preventsStatLoss;
-    enum Ability partnerAbility = aiData->abilities[battlerAtkPartner];
-    enum BattlerPosition opposingPosition = BATTLE_OPPOSITE(GetBattlerPosition(battlerAtk));
-    enum BattlerId opposingBattler = GetBattlerAtPosition(opposingPosition);
-
-    if (gBattleMons[battlerAtkPartner].statStages[STAT_ATK] == MAX_STAT_STAGE
-     || partnerAbility == ABILITY_CONTRARY
-     || partnerAbility == ABILITY_GOOD_AS_GOLD
-     || HasBattlerSideMoveWithEffect(LEFT_FOE(battlerAtk), EFFECT_FOUL_PLAY))
-        return FALSE;
-
-    preventsStatLoss = !CanLowerStat(battlerAtk, battlerAtkPartner, aiData, STAT_DEF);
-
-    switch (GetMoveEffect(aiData->partnerMove))
-    {
-    case EFFECT_DEFENSE_UP:
-    case EFFECT_DEFENSE_UP_2:
-    case EFFECT_DEFENSE_UP_3:
-    case EFFECT_BULK_UP:
-    case EFFECT_STOCKPILE:
-        if (!preventsStatLoss)
-            return FALSE;
-    default:
-        break;
-    }
-    enum Move predictedMoveSpeedCheck = GetIncomingMoveSpeedCheck(battlerAtk, opposingBattler, gAiLogicData);
-    return (preventsStatLoss
-         && AI_IsFaster(battlerAtk, battlerAtkPartner, MOVE_NONE, predictedMoveSpeedCheck, CONSIDER_PRIORITY)
-         && HasMoveWithCategory(battlerAtkPartner, DAMAGE_CATEGORY_PHYSICAL));
-}
-
-u32 IncreaseSubstituteMoveScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
-{
-    enum BattleMoveEffects effect = GetMoveEffect(move);
-    u32 scoreIncrease = 0;
-    if (effect == EFFECT_SUBSTITUTE) // Substitute specific
-    {
-        if (HasAnyKnownMove(battlerDef) && GetBestDmgFromBattler(battlerDef, battlerAtk, AI_DEFENDING) < gBattleMons[battlerAtk].maxHP / 4)
-            scoreIncrease += GOOD_EFFECT;
-    }
-    else if (effect == EFFECT_SHED_TAIL) // Shed Tail specific
-    {
-        if ((ShouldPivot(battlerAtk, battlerDef, move))
-        && (HasAnyKnownMove(battlerDef) && (GetBestDmgFromBattler(battlerDef, battlerAtk, AI_DEFENDING) < gBattleMons[battlerAtk].maxHP / 2)))
-            scoreIncrease += BEST_EFFECT;
-    }
-
-    if (gBattleMons[battlerDef].volatiles.perishSong)
-        scoreIncrease += GOOD_EFFECT;
-
-    if (gBattleMons[battlerDef].status1 & STATUS1_SLEEP)
-        scoreIncrease += GOOD_EFFECT;
-    else if (gBattleMons[battlerDef].status1 & STATUS1_DAMAGING)
-        scoreIncrease += DECENT_EFFECT;
-
-    if (IsBattlerPredictedToSwitch(battlerDef))
-        scoreIncrease += DECENT_EFFECT;
-
-    if (HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_SLEEP)
-     || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_TOXIC)
-     || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_PARALYSIS)
-     || HasNonVolatileMoveEffect(battlerDef, MOVE_EFFECT_BURN)
-     || HasMoveWithEffect(battlerDef, EFFECT_CONFUSE)
-     || HasMoveWithEffect(battlerDef, EFFECT_LEECH_SEED))
-        scoreIncrease += GOOD_EFFECT;
-
-    if (gAiLogicData->hpPercents[battlerAtk] > 70)
-        scoreIncrease += WEAK_EFFECT;
-    return scoreIncrease;
-}
-
-bool32 IsBattlerItemEnabled(enum BattlerId battler)
-{
-    if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_NEGATE_UNAWARE)
-        return TRUE;
-    if (gFieldStatuses & STATUS_FIELD_MAGIC_ROOM)
-        return FALSE;
-    if (gBattleMons[battler].volatiles.embargo)
-        return FALSE;
-    if (gBattleMons[battler].ability == ABILITY_KLUTZ && !gBattleMons[battler].volatiles.gastroAcid)
-        return FALSE;
-    return TRUE;
-}
-
-u32 GetFriendlyFireKOThreshold(enum BattlerId battler)
-{
-    if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_RISKY)
-        return FRIENDLY_FIRE_RISKY_THRESHOLD;
-    if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_CONSERVATIVE)
-        return FRIENDLY_FIRE_CONSERVATIVE_THRESHOLD;
-    if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_ATTACKS_PARTNER)
-        return 0;
-
-    return FRIENDLY_FIRE_NORMAL_THRESHOLD;
-}
-
-bool32 IsMoxieTypeAbility(enum Ability ability)
-{
-    switch (ability)
-    {
-    case ABILITY_MOXIE:
-    case ABILITY_BEAST_BOOST:
-    case ABILITY_CHILLING_NEIGH:
-    case ABILITY_AS_ONE_ICE_RIDER:
-    case ABILITY_GRIM_NEIGH:
-    case ABILITY_AS_ONE_SHADOW_RIDER:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 DoesAbilityRaiseStatsWhenLowered(enum Ability ability)
-{
-    switch (ability)
-    {
-    case ABILITY_CONTRARY:
-    case ABILITY_COMPETITIVE:
-    case ABILITY_DEFIANT:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-bool32 DoesIntimidateRaiseStats(enum Ability ability)
-{
-    switch (ability)
-    {
-    case ABILITY_COMPETITIVE:
-    case ABILITY_CONTRARY:
-    case ABILITY_DEFIANT:
-    case ABILITY_GUARD_DOG:
-    case ABILITY_RATTLED:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-// TODO: work out when to attack into the player's contextually 'beneficial' ability
-bool32 ShouldTriggerAbility(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability ability)
-{
-    if (IsTargetingPartner(battlerAtk, battlerDef))
-    {
-        switch (ability)
-        {
-        case ABILITY_LIGHTNING_ROD:
-        case ABILITY_STORM_DRAIN:
-            if (GetConfig(CONFIG_REDIRECT_ABILITY_IMMUNITY) < GEN_5)
-                return FALSE;
-            else
-                return (BattlerStatCanRise(battlerDef, ability, STAT_SPATK) && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL));
-
-        case ABILITY_DEFIANT:
-        case ABILITY_JUSTIFIED:
-        case ABILITY_MOXIE:
-        case ABILITY_SAP_SIPPER:
-        case ABILITY_THERMAL_EXCHANGE:
-            return (BattlerStatCanRise(battlerDef, ability, STAT_ATK) && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL));
-
-        case ABILITY_COMPETITIVE:
-            return (BattlerStatCanRise(battlerDef, ability, STAT_SPATK) && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL));
-
-        // TODO: logic for when to trigger Contrary
-        case ABILITY_CONTRARY:
-            return TRUE;
-
-        case ABILITY_DRY_SKIN:
-        case ABILITY_VOLT_ABSORB:
-        case ABILITY_WATER_ABSORB:
-            return (gAiThinkingStruct->aiFlags[battlerDef] & AI_FLAG_HP_AWARE);
-
-        case ABILITY_RATTLED:
-        case ABILITY_STEAM_ENGINE:
-            return BattlerStatCanRise(battlerDef, ability, STAT_SPEED);
-
-        case ABILITY_FLASH_FIRE:
-            return (HasMoveWithType(battlerDef, TYPE_FIRE) && !gBattleMons[battlerDef].volatiles.flashFireBoosted);
-
-        case ABILITY_WATER_COMPACTION:
-        case ABILITY_WELL_BAKED_BODY:
-            return (BattlerStatCanRise(battlerDef, ability, STAT_DEF));
-
-        default:
-            return FALSE;
-        }
-    }
-    else
-    {
-        return FALSE;
-    }
-}
-
-// Used by CheckBadMove; this is determining purely if the effect CAN change an ability, not if it SHOULD.
-// At the moment, the parts about Mummy and Wandering Spirit are not actually used.
-bool32 CanEffectChangeAbility(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, struct AiLogicData *aiData)
-{
-    enum BattleMoveEffects effect = GetMoveEffect(move);
-
-    // Dynamaxed Pokemon are immune to some ability-changing effects.
-    if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
-    {
-        switch (effect)
-        {
-        case EFFECT_ENTRAINMENT:
-        case EFFECT_SKILL_SWAP:
-            return FALSE;
-        default:
-            break;
-        }
-    }
-
-    if (gBattleMons[battlerDef].volatiles.gastroAcid)
-        return FALSE;
-
-    enum Ability atkAbility = aiData->abilities[battlerAtk];
-    enum Ability defAbility = aiData->abilities[battlerDef];
-    bool32 hasSameAbility = (atkAbility == defAbility);
-
-    if (defAbility == ABILITY_NONE)
-        return FALSE;
-
-    if (atkAbility == ABILITY_NONE)
-    {
-        switch (effect)
-        {
-        case EFFECT_DOODLE:
-        case EFFECT_ENTRAINMENT:
-        case EFFECT_ROLE_PLAY:
-        case EFFECT_SKILL_SWAP:
-            return FALSE;
-
-        default:
-            break;
-        }
-    }
-
-    // Checking for Ability-specific immunities.
-    switch (effect)
-    {
-    case EFFECT_DOODLE:
-        if (hasSameAbility || gAbilitiesInfo[atkAbility].cantBeSuppressed || gAbilitiesInfo[defAbility].cantBeCopied)
-            return FALSE;
-
-        if (HasPartnerIgnoreFlags(battlerAtk))
-        {
-            enum Ability partnerAbility = aiData->abilities[BATTLE_PARTNER(battlerAtk)];
-            if (gAbilitiesInfo[partnerAbility].cantBeSuppressed)
-                return FALSE;
-            if (partnerAbility == defAbility)
-                return FALSE;
-        }
-        break;
-
-    case EFFECT_ROLE_PLAY:
-        if (hasSameAbility || gAbilitiesInfo[atkAbility].cantBeSuppressed || gAbilitiesInfo[defAbility].cantBeCopied)
-            return FALSE;
-        break;
-
-    case EFFECT_SKILL_SWAP:
-        if (hasSameAbility || gAbilitiesInfo[atkAbility].cantBeSwapped || gAbilitiesInfo[defAbility].cantBeSwapped)
-            return FALSE;
-        break;
-
-    case EFFECT_GASTRO_ACID:
-        if (gAbilitiesInfo[defAbility].cantBeSuppressed)
-            return FALSE;
-        break;
-
-    case EFFECT_ENTRAINMENT:
-        if (hasSameAbility || gAbilitiesInfo[defAbility].cantBeOverwritten || gAbilitiesInfo[atkAbility].cantBeCopied)
-            return FALSE;
-        break;
-
-    case EFFECT_OVERWRITE_ABILITY:
-        if (defAbility == GetMoveOverwriteAbility(move) || gAbilitiesInfo[defAbility].cantBeOverwritten)
-            return FALSE;
-        break;
-
-    default:
-        return FALSE;
-    }
-
-    if (aiData->holdEffects[battlerDef] == HOLD_EFFECT_ABILITY_SHIELD)
-    {
-        switch (effect)
-        {
-        case EFFECT_ENTRAINMENT:
-        case EFFECT_GASTRO_ACID:
-        case EFFECT_ROLE_PLAY:
-        case EFFECT_SKILL_SWAP:
-        case EFFECT_OVERWRITE_ABILITY:
-            return FALSE;
-        default:
-            break;
-        }
-    }
-
-    if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_ABILITY_SHIELD)
-    {
-        switch (effect)
-        {
-        case EFFECT_DOODLE:
-        case EFFECT_ROLE_PLAY:
-        case EFFECT_SKILL_SWAP:
-            return FALSE;
-        default:
-            break;
-        }
-    }
-
-    return TRUE;
-}
-
-bool32 DoesEffectReplaceTargetAbility(u32 effect)
-{
-    switch (effect)
-    {
-    case EFFECT_ENTRAINMENT:
-    case EFFECT_GASTRO_ACID:
-    case EFFECT_SKILL_SWAP:
-    case EFFECT_OVERWRITE_ABILITY:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
-
-void AbilityChangeScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 *score, struct AiLogicData *aiData)
-{
-    enum BattleMoveEffects effect = GetMoveEffect(move);
-    bool32 isTargetingPartner = IsTargetingPartner(battlerAtk, battlerDef);
-    enum Ability abilityAtk = aiData->abilities[battlerAtk];
-    enum Ability abilityDef = aiData->abilities[battlerDef];
-    bool32 partnerHasBadAbility = FALSE;
-    enum Ability partnerAbility = ABILITY_NONE;
-    bool32 attackerHasBadAbility = (gAbilitiesInfo[abilityAtk].aiRating < 0);
-    enum AIScore currentAbilityScore, transferredAbilityScore = NO_INCREASE;
-
-    if (HasPartner(battlerAtk))
-    {
-        partnerAbility = aiData->abilities[BATTLE_PARTNER(battlerAtk)];
-        if (!(gAbilitiesInfo[partnerAbility].cantBeSuppressed) && (gAbilitiesInfo[partnerAbility].aiRating < 0))
-            partnerHasBadAbility = TRUE;
-    }
-
-    if (effect == EFFECT_GASTRO_ACID)
-        abilityAtk = ABILITY_NONE;
-    else if (effect == EFFECT_OVERWRITE_ABILITY)
-        abilityAtk = GetMoveOverwriteAbility(move);
-
-    if (effect == EFFECT_DOODLE || effect == EFFECT_ROLE_PLAY || effect == EFFECT_SKILL_SWAP)
-    {
-        if (partnerHasBadAbility && effect == EFFECT_DOODLE)
-            ADJUST_SCORE_PTR(DECENT_EFFECT);
-
-        if (attackerHasBadAbility)
-            ADJUST_SCORE_PTR(DECENT_EFFECT);
-
-        currentAbilityScore = BattlerBenefitsFromAbilityScore(battlerAtk, abilityAtk, aiData);
-        transferredAbilityScore = BattlerBenefitsFromAbilityScore(battlerAtk, abilityDef, aiData);
-        ADJUST_SCORE_PTR(transferredAbilityScore - currentAbilityScore);
-    }
-
-    if (isTargetingPartner)
-    {
-        if (DoesEffectReplaceTargetAbility(effect))
-        {
-            if (partnerHasBadAbility)
-                ADJUST_SCORE_PTR(BEST_EFFECT);
-
-            currentAbilityScore = BattlerBenefitsFromAbilityScore(battlerDef, abilityDef, aiData);
-            transferredAbilityScore = BattlerBenefitsFromAbilityScore(battlerDef, abilityAtk, aiData);
-            ADJUST_SCORE_PTR(transferredAbilityScore - currentAbilityScore);
-        }
-        else // This is only Role Play as Doodle can't target the partner
-        {
-            ADJUST_SCORE_PTR(-20);
-        }
-
-        // Trigger Plus or Minus in modern gens. This is not in the overarching function because Skill Swap is rarely beneficial here.
-        if (B_PLUS_MINUS_INTERACTION >= GEN_5)
-        {
-            if (((effect == EFFECT_ENTRAINMENT) && (abilityAtk == ABILITY_PLUS || abilityAtk == ABILITY_MINUS)) || ((effect == EFFECT_ROLE_PLAY) && (abilityDef == ABILITY_PLUS || abilityDef == ABILITY_MINUS)))
-                ADJUST_SCORE_PTR(DECENT_EFFECT);
-        }
-
-    }
-    // Targeting an opponent.
-    else
-    {
-        // We already checked if we want their ability, so now we look to see if we want them to lose their ability.
-        if (DoesEffectReplaceTargetAbility(effect))
-        {
-            currentAbilityScore = BattlerBenefitsFromAbilityScore(battlerDef, abilityDef, aiData);
-            transferredAbilityScore = BattlerBenefitsFromAbilityScore(battlerDef, abilityAtk, aiData);
-            ADJUST_SCORE_PTR(currentAbilityScore - transferredAbilityScore);
-        }
-    }
-}
-
-enum AIScore BattlerBenefitsFromAbilityScore(enum BattlerId battler, enum Ability ability, struct AiLogicData *aiData)
-{
-    if (gAbilitiesInfo[ability].aiRating < 0)
-        return WORST_EFFECT;
-
-    switch (ability)
-    {
-    // Transferrable abilities that can be assumed to be always beneficial.
-    case ABILITY_CLEAR_BODY:
-    case ABILITY_GOOD_AS_GOLD:
-    case ABILITY_MAGIC_GUARD:
-    case ABILITY_MOODY:
-    case ABILITY_PURIFYING_SALT:
-    case ABILITY_SPEED_BOOST:
-    case ABILITY_WHITE_SMOKE:
-        return GOOD_EFFECT;
-    // Conditional ability logic goes here.
-    case ABILITY_COMPOUND_EYES:
-        if (HasMoveWithLowAccuracy(battler, LEFT_FOE(battler), 90, FALSE)
-         || HasMoveWithLowAccuracy(battler, RIGHT_FOE(battler), 90, FALSE))
-            return GOOD_EFFECT;
-        break;
-    case ABILITY_CONTRARY:
-        if (HasMoveThatLowersOwnStats(battler))
-            return BEST_EFFECT;
-        if (HasMoveThatRaisesOwnStats(battler))
-            return AWFUL_EFFECT;
-        break;
-    case ABILITY_FRIEND_GUARD:
-    case ABILITY_POWER_SPOT:
-    case ABILITY_VICTORY_STAR:
-        if (HasPartner(battler) && aiData->abilities[BATTLE_PARTNER(battler)] != ability)
-            return BEST_EFFECT;
-        break;
-    case ABILITY_GUTS:
-        if (HasMoveWithCategory(battler, DAMAGE_CATEGORY_PHYSICAL) && gBattleMons[battler].status1 & (STATUS1_CAN_MOVE))
-            return GOOD_EFFECT;
-        break;
-    case ABILITY_HUGE_POWER:
-    case ABILITY_PURE_POWER:
-        if (HasMoveWithCategory(battler, DAMAGE_CATEGORY_PHYSICAL))
-            return BEST_EFFECT;
-        break;
-    // Also used to Worry Seed WORRY_SEED
-    case ABILITY_INSOMNIA:
-    case ABILITY_VITAL_SPIRIT:
-        if (HasMoveWithEffect(battler, EFFECT_REST))
-            return WORST_EFFECT;
-        break;
-    case ABILITY_INTIMIDATE:
-    {
-        enum Ability abilityDef = aiData->abilities[LEFT_FOE(battler)];
-        if (DoesIntimidateRaiseStats(abilityDef))
-        {
-            return AWFUL_EFFECT;
-        }
-        else
-        {
-            if (HasTwoOpponents(battler))
-            {
-                abilityDef = aiData->abilities[RIGHT_FOE(battler)];
-                if (DoesIntimidateRaiseStats(abilityDef))
-                {
-                    return AWFUL_EFFECT;
-                }
-                else
-                {
-                    enum AIScore score1 = IncreaseStatDownScore(battler, LEFT_FOE(battler), STAT_ATK);
-                    enum AIScore score2 = IncreaseStatDownScore(battler, RIGHT_FOE(battler), STAT_ATK);
-                    if (score1 > score2)
-                        return score1;
-                    else
-                        return score2;
-                }
-            }
-            return IncreaseStatDownScore(battler, LEFT_FOE(battler), STAT_ATK);
-        }
-    }
-    case ABILITY_NO_GUARD:
-        if (HasMoveWithLowAccuracy(battler, LEFT_FOE(battler), LOW_ACCURACY_THRESHOLD, FALSE)
-         || HasMoveWithLowAccuracy(battler, RIGHT_FOE(battler), LOW_ACCURACY_THRESHOLD, FALSE))
-            return GOOD_EFFECT;
-        break;
-    // Toxic counter ticks upward while Poison Healed; losing Poison Heal while Toxiced can KO.
-    case ABILITY_POISON_HEAL:
-        if (gBattleMons[battler].status1 & (STATUS1_POISON))
-            return WEAK_EFFECT;
-        if (gBattleMons[battler].status1 & (STATUS1_TOXIC_POISON))
-            return BEST_EFFECT;
-        if (gBattleMons[battler].status1 & STATUS1_ANY)
-            return NO_INCREASE;
-        break;
-    // Also used to Simple Beam SIMPLE_BEAM.
-    case ABILITY_SIMPLE:
-        // Prioritize moves like Metal Claw, Charge Beam, or Power up Punch
-        if (HasMoveThatRaisesOwnStats(battler))
-            return GOOD_EFFECT;
-        return NO_INCREASE;
-    case ABILITY_BEADS_OF_RUIN:
-    case ABILITY_SWORD_OF_RUIN:
-    case ABILITY_TABLETS_OF_RUIN:
-    case ABILITY_VESSEL_OF_RUIN:
-        if (HasPartner(battler))
-        {
-            if (aiData->abilities[BATTLE_PARTNER(battler)] != ability)
-                return GOOD_EFFECT;
-            else
-                return NO_INCREASE;
-        }
-        return GOOD_EFFECT;
-    case ABILITY_NONE:
-        return NO_INCREASE;
-    default:
-        break;
-    }
-
-    return WEAK_EFFECT;
-}
-
-bool32 IsNaturalEnemy(u32 speciesAttacker, u32 speciesTarget)
-{
-    if (B_WILD_NATURAL_ENEMIES != TRUE)
-        return FALSE;
-
-    switch (speciesAttacker)
-    {
-    case SPECIES_ZANGOOSE:
-        return (speciesTarget == SPECIES_SEVIPER);
-    case SPECIES_SEVIPER:
-        return (speciesTarget == SPECIES_ZANGOOSE);
-    case SPECIES_HEATMOR:
-        return (speciesTarget == SPECIES_DURANT);
-    case SPECIES_DURANT:
-        return (speciesTarget == SPECIES_HEATMOR);
-    case SPECIES_SABLEYE:
-        return (speciesTarget == SPECIES_CARBINK);
-    case SPECIES_MAREANIE:
-        return (speciesTarget == SPECIES_CORSOLA);
-    default:
-        return FALSE;
-    }
-    return FALSE;
-}
-
-u32 GetAIExplosionChanceFromHP(u32 hpPercent)
-{
-    if (hpPercent >= EXPLOSION_HIGHER_HP_THRESHOLD)
-        return EXPLOSION_MINIMUM_CHANCE;
-    if (hpPercent <= EXPLOSION_LOWER_HP_THRESHOLD)
-        return EXPLOSION_MAXIMUM_CHANCE;
-    return (EXPLOSION_HIGHER_HP_THRESHOLD - hpPercent);
-}
-
-bool32 ShouldFinalGambit(enum BattlerId battlerAtk, enum BattlerId battlerDef, bool32 aiIsFaster)
-{
-    if (!gAiLogicData->shouldConsiderFinalGambit)
-        return FALSE;
-    // Note to use GetScaledHPFraction
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_OMNISCIENT)
-    {
-        if (gBattleMons[battlerAtk].hp >= gBattleMons[battlerDef].hp && aiIsFaster)
-            return TRUE;
-    }
-    else if (gAiLogicData->hpPercents[battlerAtk] >= gAiLogicData->hpPercents[battlerDef] // Consider using GetScaledHPFraction and moving B_HEALTHBAR_PIXELS define
-        && GetSpeciesBaseHP(gBattleMons[battlerAtk].species) >= GetSpeciesBaseHP(gBattleMons[battlerDef].species)
-        && aiIsFaster)
-    {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 ShouldConsiderSelfSacrificeDamageEffect(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, bool32 aiIsFaster)
-{
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_WILL_SUICIDE)
-        return TRUE;
-    if (!IsDoubleBattle() && IsExplosionMove(move) && gAiLogicData->shouldConsiderExplosion)
-        return TRUE;
-    if (GetMoveEffect(move) == EFFECT_FINAL_GAMBIT)
-        return ShouldFinalGambit(battlerAtk, battlerDef, aiIsFaster);
-    return FALSE;
-}
-
-bool32 AiExpectsToFaintPlayer(enum BattlerId battler)
-{
-    u8 target = gAiBattleData->chosenTarget[battler];
-
-    if (gAiBattleData->actionFlee || gAiBattleData->choiceWatch)
-        return FALSE; // AI not planning to use move
-
-    if (!IsBattlerAlly(target, battler)
-      && CanIndexMoveFaintTarget(battler, target, gAiBattleData->chosenMoveIndex[battler], AI_ATTACKING)
-      && AI_IsFaster(battler, target, GetAIChosenMove(battler), GetIncomingMove(battler, target, gAiLogicData), CONSIDER_PRIORITY))
-    {
-        // We expect to faint the target and move first -> dont use an item or switch
-        return TRUE;
-    }
-
-    return FALSE;
-}
-
-bool32 AI_OpponentCanFaintAiWithMod(enum BattlerId battler, u32 healAmount)
-{
-    // Check special cases to NOT heal
-    for (enum BattlerId battlerIndex = 0; battlerIndex < gBattlersCount; battlerIndex++)
-    {
-        if (IsOnPlayerSide(battlerIndex) && CanTargetFaintAiWithMod(battlerIndex, battler, healAmount, 0))
-        {
-            // Target is expected to faint us
-            return TRUE;
-        }
-    }
-    return FALSE;
-}
-
-void GetAIPartyIndexes(enum BattlerId battler, s32 *firstId, s32 *lastId)
-{
-    if (BATTLE_TWO_VS_ONE_OPPONENT && (battler & BIT_SIDE) == B_SIDE_OPPONENT)
-    {
-        *firstId = 0, *lastId = PARTY_SIZE;
-    }
-    else if (gBattleTypeFlags & (BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_TOWER_LINK_MULTI))
-    {
-        if ((battler & BIT_FLANK) == B_FLANK_LEFT)
-            *firstId = 0, *lastId = PARTY_SIZE / 2;
-        else
-            *firstId = PARTY_SIZE / 2, *lastId = PARTY_SIZE;
-    }
-    else
-    {
-        *firstId = 0, *lastId = PARTY_SIZE;
-    }
-}
-
-bool32 ShouldInstructPartner(enum BattlerId partner, enum Move move)
-{
-    if (GetMoveEffect(move) == EFFECT_MAX_HP_50_RECOIL && gAiLogicData->abilities[partner] != ABILITY_MAGIC_GUARD)
-        return FALSE;
-
-    enum MoveTarget type = AI_GetBattlerMoveTargetType(partner, move);
-    switch (type)
-    {
-    case TARGET_SELECTED:
-    case TARGET_SMART:
-    case TARGET_DEPENDS:
-    case TARGET_RANDOM:
-    case TARGET_BOTH:
-    case TARGET_FOES_AND_ALLY:
-    case TARGET_USER_AND_ALLY:
-    case TARGET_OPPONENTS_FIELD:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-
-    return FALSE;
-}
-
-bool32 CanMoveBeBouncedBack(enum BattlerId battler, enum Move move)
-{
-    if (!MoveCanBeBouncedBack(move) || !IsBattleMoveStatus(move))
-        return FALSE;
-
-    enum MoveTarget type = AI_GetBattlerMoveTargetType(battler, move);
-    switch (type)
-    {
-    case TARGET_SELECTED:
-    case TARGET_SMART:
-    case TARGET_OPPONENTS_FIELD:
-    case TARGET_BOTH:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-
-    return FALSE;
-}
-
-u32 GetActiveBattlerIds(enum BattlerId battler, enum BattlerId *battlerIn1, enum BattlerId *battlerIn2)
-{
-    enum BattlerId opposingBattler = 0;
-    enum BattlerPosition battlerPosition = GetBattlerPosition(battler);
-    if (IsDoubleBattle())
-    {
-        *battlerIn1 = battler;
-        if (gAbsentBattlerFlags & (1u << BATTLE_PARTNER(battler)))
-            *battlerIn2 = battler;
-        else
-            *battlerIn2 = GetBattlerAtPosition(BATTLE_PARTNER(battlerPosition));
-
-        opposingBattler = BATTLE_OPPOSITE(*battlerIn1);
-        if (gAbsentBattlerFlags & (1u << opposingBattler))
-            opposingBattler ^= BIT_FLANK;
-    }
-    else
-    {
-        opposingBattler = GetBattlerAtPosition(BATTLE_OPPOSITE(battlerPosition));
-        *battlerIn1 = battler;
-        *battlerIn2 = battler;
-    }
-
-    return opposingBattler;
-}
-
-bool32 IsPartyMonOnFieldOrChosenToSwitch(u32 partyIndex, enum BattlerId battlerIn1, enum BattlerId battlerIn2)
-{
-    if (partyIndex == gBattlerPartyIndexes[battlerIn1]
-            || partyIndex == gBattlerPartyIndexes[battlerIn2])
-        return TRUE;
-    if (partyIndex == gBattleStruct->monToSwitchIntoId[battlerIn1]
-            || partyIndex == gBattleStruct->monToSwitchIntoId[battlerIn2])
-        return TRUE;
-    return FALSE;
+    int affineAnimNum = Random2() % ARRAY_COUNT(gRockPolishStreak_AffineAnimCmds);
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    StartSpriteAffineAnim(sprite, affineAnimNum);
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
 }

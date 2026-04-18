@@ -735,7 +735,6 @@ struct BattleStruct
     u8 dancerSavedTarget:3;
     u8 padding:2;
     u8 movePreviewDisplayed:2;
-    u8 padding3:2;
 };
 
 struct AiBattleData
