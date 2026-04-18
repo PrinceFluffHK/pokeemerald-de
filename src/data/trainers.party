@@ -941,7 +941,6 @@ Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
 - Poison Sting
-- Leech Seed
 
 === TRAINER_CHIP ===
 Name: CHIP
@@ -4511,7 +4510,6 @@ Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
 - Poison Sting
-- Leech Seed
 
 === TRAINER_LARRY ===
 Name: LARRY
@@ -10292,7 +10290,6 @@ Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
 - Poison Sting
-- Leech Seed
 
 Baltoy
 Ability: Levitate
@@ -16546,7 +16543,6 @@ Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Needle Arm
 - Poison Sting
-- Leech Seed
 
 Skarmory
 Ability: Sturdy
