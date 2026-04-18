@@ -1276,7 +1276,7 @@ BattleScript_EffectHitEnemyHealAlly::
 BattleScript_EffectDefog::
 	setstatchanger STAT_EVASION, 1, TRUE
 	attackcanceler
-	jumpifgenconfiglowerthan CONFIG_B_DEFOG_EFFECT_CLEARING, GEN_5, BattleScript_DefogAfterSubstituteCheck
+	jumpifgenconfiglowerthan CONFIG_DEFOG_EFFECT_CLEARING, GEN_5, BattleScript_DefogAfterSubstituteCheck
 	jumpifsubstituteblocks BattleScript_DefogIfCanClearHazards
 BattleScript_DefogAfterSubstituteCheck:
 	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_EVASION, MIN_STAT_STAGE, BattleScript_DefogWorks
@@ -3372,7 +3372,7 @@ BattleScript_EffectFutureSight::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectTeleport::
-	jumpifgenconfiglowerthan CONFIG_B_TELEPORT_BEHAVIOR, GEN_8, BattleScript_EffectTeleportGen7
+	jumpifgenconfiglowerthan CONFIG_TELEPORT_BEHAVIOR, GEN_8, BattleScript_EffectTeleportGen7
 	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_EffectBatonPass
 	jumpifside BS_ATTACKER, B_SIDE_PLAYER, BattleScript_EffectBatonPass
 	goto BattleScript_DoEffectTeleport
