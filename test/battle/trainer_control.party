@@ -1,37 +1,4 @@
-=== TRAINER_NONE ===
-Name:
-Class: Pkmn Trainer 1
-Pic: Hiker
-Gender: Male
-Music: Male
-Double Battle: No
-
-=== 1 ===
-Name: RED
-Class: Rival
-Pic: Red
-Gender: Male
-Music: Male
-Double Battle: No
-
-Charmander
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== 2 ===
-Name: LEAF
-Class: Rival
-Pic: Leaf
-Gender: Female
-Music: Male
-Double Battle: No
-
-Bulbasaur
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-
-=== 3 ===
+=== 0 ===
 Name: Test1
 Class: Pkmn Trainer 1
 Pic: Red
@@ -47,7 +14,7 @@ IVs: 25 HP / 26 Atk / 27 Def / 29 SpA / 30 SpD / 28 Spe
 EVs: 252 HP / 4 SpA / 252 Spe
 Happiness: 42
 Shiny: Yes
-Ball: Master
+Ball: Master Ball
 Dynamax Level: 5
 - Air Slash
 - Barrier
@@ -63,7 +30,7 @@ Wynaut
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== 4 ===
+=== 1 ===
 Name: Test2
 Class: Pkmn Trainer 1
 Pic: Red
@@ -75,7 +42,7 @@ Difficulty: Normal
 Mewtwo
 Level: 5
 
-=== 5 ===
+=== 2 ===
 Name: Test2
 Class: Pkmn Trainer 1
 Pic: Red
@@ -87,7 +54,7 @@ Difficulty: Normal
 Mewtwo
 Level: 50
 
-=== 5 ===
+=== 2 ===
 Name: Test2
 Class: Pkmn Trainer 1
 Pic: Red
@@ -99,7 +66,7 @@ Difficulty: Easy
 Metapod
 Level: 1
 
-=== 5 ===
+=== 2 ===
 Name: Test2
 Class: Pkmn Trainer 1
 Pic: Red
@@ -111,7 +78,7 @@ Difficulty: Hard
 Arceus
 Level: 99
 
-=== 6 ===
+=== 3 ===
 Name: Test3
 Class: Pkmn Trainer 1
 Pic: Red
@@ -128,7 +95,7 @@ Eevee
 
 Mew
 
-=== 7 ===
+=== 4 ===
 Name: Test4
 Class: Pkmn Trainer 1
 Pic: Red
@@ -153,7 +120,7 @@ Tags: Ace
 Aron
 Tags: Lead
 
-=== 8 ===
+=== 5 ===
 Name: Test5
 Class: Pkmn Trainer 1
 Pic: Red
@@ -191,7 +158,7 @@ Oddish
 
 Eevee
 
-=== 9 ===
+=== 6 ===
 Name: Test6
 Class: Pkmn Trainer 1
 Pic: Red
@@ -210,7 +177,7 @@ Tags: Lead
 Eevee
 Tags: Lead
 
-=== 10 ===
+=== 7 ===
 Name: Test1
 Class: Pkmn Trainer 1
 Pic: Red
@@ -228,7 +195,7 @@ Tags: Lead
 
 Eevee
 
-=== 11 ===
+=== 8 ===
 Name: Test1
 Class: Pkmn Trainer 1
 Pic: Red
@@ -247,7 +214,7 @@ Wobbuffet
 Eevee
 Tags: Lead
 
-=== 12 ===
+=== 9 ===
 Name: Test9
 Class: Pkmn Trainer 1
 Pic: Red
@@ -260,7 +227,7 @@ Wynaut
 
 Wobbuffet
 
-=== 13 ===
+=== 10 ===
 Name: Test10
 Class: Pkmn Trainer 1
 Pic: Red
@@ -272,24 +239,3 @@ Party Size: 2
 Wynaut
 
 Wobbuffet
-
-=== 14 ===
-Name: Test11
-Class: Black Belt
-Pic: Red
-Gender: Male
-Music: Male
-Battle Type: Singles
-Party Size: 6
-
-Wynaut
-
-Wobbuffet
-
-Eevee
-
-Mew
-
-Oddish
-
-Aron

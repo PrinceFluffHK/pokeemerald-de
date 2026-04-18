@@ -30,8 +30,8 @@ DOUBLE_BATTLE_TEST("Synchronoise will fail if there is no corresponding typing o
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SYNCHRONOISE, playerLeft);
         MESSAGE("Wobbuffet used Synchronoise!");
-        MESSAGE("It doesn't affect Bulbasaur…");
         MESSAGE("It doesn't affect the opposing Bulbasaur…");
+        MESSAGE("It doesn't affect Bulbasaur…");
         MESSAGE("It doesn't affect the opposing Bulbasaur…");
         NOT MESSAGE("But it failed!");
     }
@@ -67,40 +67,7 @@ DOUBLE_BATTLE_TEST("Synchronoise will fail if the corresponding typing mon prote
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_PROTECT); MOVE(playerLeft, MOVE_SYNCHRONOISE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, opponentLeft);
-        MESSAGE("The opposing Wobbuffet protected itself!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SYNCHRONOISE, playerLeft);
-    }
-}
-
-DOUBLE_BATTLE_TEST("Synchronoise will fail for a typeless user even if a target is typeless")
-{
-    GIVEN {
-        ASSUME(GetMoveEffect(MOVE_BURN_UP) == EFFECT_FAIL_IF_NOT_ARG_TYPE);
-        PLAYER(SPECIES_ARCANINE) { Moves(MOVE_BURN_UP, MOVE_SYNCHRONOISE); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_ARCANINE) { Moves(MOVE_BURN_UP, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_WOBBUFFET);
-    } WHEN {
-        TURN {
-            MOVE(playerLeft, MOVE_BURN_UP, target: opponentRight);
-            MOVE(opponentLeft, MOVE_BURN_UP, target: playerRight);
-            MOVE(playerRight, MOVE_CELEBRATE);
-            MOVE(opponentRight, MOVE_CELEBRATE);
-        }
-        TURN {
-            MOVE(playerLeft, MOVE_SYNCHRONOISE);
-            MOVE(opponentLeft, MOVE_CELEBRATE);
-            MOVE(playerRight, MOVE_CELEBRATE);
-            MOVE(opponentRight, MOVE_CELEBRATE);
-        }
-    } SCENE {
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SYNCHRONOISE, playerLeft);
-        MESSAGE("Arcanine used Synchronoise!");
-        MESSAGE("It doesn't affect Wobbuffet…");
-        MESSAGE("It doesn't affect the opposing Arcanine…");
-        MESSAGE("It doesn't affect the opposing Wobbuffet…");
-        NOT MESSAGE("But it failed!");
     }
 }
 

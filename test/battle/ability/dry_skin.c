@@ -135,7 +135,7 @@ SINGLE_BATTLE_TEST("Dry Skin is only triggered once on multi strike moves")
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_WATER_SHURIKEN) == TYPE_WATER);
-        ASSUME(IsMultiHitMove(MOVE_WATER_SHURIKEN));
+        ASSUME(GetMoveEffect(MOVE_WATER_SHURIKEN) == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); HP(100); MaxHP(200); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -149,7 +149,7 @@ SINGLE_BATTLE_TEST("Dry Skin is only triggered once on multi strike moves")
 
 SINGLE_BATTLE_TEST("Dry Skin prevents Absorb Bulb and Luminous Moss from activating")
 {
-    enum Item item;
+    u32 item;
     PARAMETRIZE { item = ITEM_ABSORB_BULB; }
     PARAMETRIZE { item = ITEM_LUMINOUS_MOSS; }
     GIVEN {

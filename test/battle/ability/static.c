@@ -3,7 +3,7 @@
 
 SINGLE_BATTLE_TEST("Static inflicts paralysis on contact")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_SWIFT; }
     GIVEN {

@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Poison Puppeteer confuses target if it was poisoned by a dam
 
 SINGLE_BATTLE_TEST("Poison Puppeteer confuses target if it was (badly) poisoned by a status move")
 {
-    enum Move move;
+    u32 move;
 
     PARAMETRIZE { move = MOVE_POISON_POWDER; }
     PARAMETRIZE { move = MOVE_TOXIC; }

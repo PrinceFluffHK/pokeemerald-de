@@ -3,7 +3,7 @@
 
 SINGLE_BATTLE_TEST("Effect Spore only inflicts status on contact")
 {
-    enum Move move;
+    u32 move;
 
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_SWIFT; }

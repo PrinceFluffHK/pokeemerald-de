@@ -10,7 +10,7 @@ ASSUMPTIONS
 
 SINGLE_BATTLE_TEST("Tangling Hair drops opposing mon's speed if ability user got hit by a contact move")
 {
-    enum Move move;
+    u32 move;
 
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_SWIFT; }

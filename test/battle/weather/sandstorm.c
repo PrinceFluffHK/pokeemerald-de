@@ -19,8 +19,7 @@ SINGLE_BATTLE_TEST("Sandstorm deals 1/16 damage per turn")
 
 SINGLE_BATTLE_TEST("Sandstorm multiplies the special defense of Rock-types by 1.5x (Gen4+)", s16 damage)
 {
-    enum Move move;
-    u32 config;
+    u32 move, config;
     PARAMETRIZE { move = MOVE_CELEBRATE; config = GEN_3; }
     PARAMETRIZE { move = MOVE_SANDSTORM; config = GEN_3; }
     PARAMETRIZE { move = MOVE_SANDSTORM; config = GEN_4; }

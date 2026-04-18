@@ -74,7 +74,7 @@ DOUBLE_BATTLE_TEST("Coaching fails if all allies are is semi-invulnerable")
             MESSAGE("Hawlucha's Attack rose!");
             MESSAGE("Hawlucha's Defense rose!");
         }
-        MESSAGE("Hawlucha avoided the attack!");
+        MESSAGE("But it failed!");
     }
 }
 
@@ -120,7 +120,7 @@ DOUBLE_BATTLE_TEST("Coaching fails if there's no ally")
 
 AI_DOUBLE_BATTLE_TEST("AI uses Coaching")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_HEADBUTT; }
     PARAMETRIZE { move = MOVE_DAZZLING_GLEAM; }
 

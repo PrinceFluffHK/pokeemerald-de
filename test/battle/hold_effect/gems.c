@@ -28,7 +28,7 @@ SINGLE_BATTLE_TEST("Gem is consumed when it corresponds to the type of a move")
 
 SINGLE_BATTLE_TEST("Gem is not consumed when using Struggle", s16 damage)
 {
-    enum Item item = ITEM_NONE;
+    u32 item = 0;
 
     PARAMETRIZE { item = ITEM_NONE; }
     PARAMETRIZE { item = ITEM_NORMAL_GEM; }

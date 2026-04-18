@@ -2,15 +2,12 @@
 #include "generational_changes.h"
 #include "malloc.h"
 #include "constants/generational_changes.h"
-#include "config/pokerus.h"
 
-#define UNPACK_BATTLE_CONFIG_GEN_CHANGES(_name, _field, ...) ._field = _name,
-#define UNPACK_POKEMON_CONFIG_GEN_CHANGES(_name, _field, ...) ._field = P_##_name,
+#define UNPACK_CONFIG_GEN_CHANGES2(_name, _field, ...) ._field = B_##_name,
 
 const struct GenChanges sConfigChanges =
 {
-    BATTLE_CONFIG_DEFINITIONS(UNPACK_BATTLE_CONFIG_GEN_CHANGES)
-    POKEMON_CONFIG_DEFINITIONS(UNPACK_POKEMON_CONFIG_GEN_CHANGES)
+    CONFIG_DEFINITIONS(UNPACK_CONFIG_GEN_CHANGES2)
     /* Expands to:
     .critChance     = B_CRIT_CHANCE,
     .critMultiplier = B_CRIT_MULTIPLIER,
@@ -41,14 +38,13 @@ u32 GetConfig(enum ConfigTag _genConfig)
     {
         switch (_genConfig)
         {
-        BATTLE_CONFIG_DEFINITIONS(UNPACK_CONFIG_GETTERS)
-        POKEMON_CONFIG_DEFINITIONS(UNPACK_CONFIG_GETTERS)
+            CONFIG_DEFINITIONS(UNPACK_CONFIG_GETTERS)
         /* Expands to:
-        case CONFIG_CRIT_CHANCE:
-            return gConfigChangesTestOverride->critChance;
+            case CONFIG_CRIT_CHANCE:
+                return gConfigChangesTestOverride->critChance;
         */
-        default:
-            return 0;
+            default:
+                return 0;
         }
     }
     else
@@ -56,14 +52,13 @@ u32 GetConfig(enum ConfigTag _genConfig)
     {
         switch (_genConfig)
         {
-        BATTLE_CONFIG_DEFINITIONS(UNPACK_CONFIG_OVERRIDE_GETTERS)
-        POKEMON_CONFIG_DEFINITIONS(UNPACK_CONFIG_OVERRIDE_GETTERS)
+            CONFIG_DEFINITIONS(UNPACK_CONFIG_OVERRIDE_GETTERS)
         /* Expands to:
-        case CONFIG_CRIT_CHANCE:
-            return sConfigChanges.critChance;
+            case CONFIG_CRIT_CHANCE:
+                 return sConfigChanges.critChance;
         */
-        default: // Invalid config tag
-            return 0;
+            default: // Invalid config tag
+                return 0;
         }
      }
 }
@@ -72,12 +67,11 @@ u32 GetConfig(enum ConfigTag _genConfig)
 u32 GetClampedValue(enum ConfigTag _genConfig, u32 newValue)
 {
     u32 clampedValue = 0;
-    switch (_genConfig)
+    switch(_genConfig)
     {
-    BATTLE_CONFIG_DEFINITIONS(UNPACK_CONFIG_CLAMPER)
-    POKEMON_CONFIG_DEFINITIONS(UNPACK_CONFIG_CLAMPER)
-    default:
-        return 0;
+        CONFIG_DEFINITIONS(UNPACK_CONFIG_CLAMPER)
+        default:
+            return 0;
     }
     return clampedValue;
 }
@@ -90,20 +84,19 @@ void SetConfig(enum ConfigTag _genConfig, u32 _value)
     u32 clampedValue = GetClampedValue(_genConfig, _value);
     switch (_genConfig)
     {
-    BATTLE_CONFIG_DEFINITIONS(UNPACK_CONFIG_SETTERS)
-    POKEMON_CONFIG_DEFINITIONS(UNPACK_CONFIG_SETTERS)
+        CONFIG_DEFINITIONS(UNPACK_CONFIG_SETTERS)
     /* Expands to:
     #if TESTING
-    case CONFIG_CRIT_CHANCE:
-        gConfigChangesTestOverride->critChance = clampedValue;
-        break;
+        case CONFIG_CRIT_CHANCE:
+            gConfigChangesTestOverride->critChance = clampedValue;
+            break;
     #else
-    case CONFIG_CRIT_CHANCE:
-        return;
+        case CONFIG_CRIT_CHANCE:
+            return;
     #endif
     */
-    default: // Invalid config tag
-        return;
+        default: // Invalid config tag
+            return;
     }
 #endif
 }

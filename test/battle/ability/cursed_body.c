@@ -73,7 +73,7 @@ SINGLE_BATTLE_TEST("Cursed Body cannot trigger if the target is behind a Substit
 SINGLE_BATTLE_TEST("Cursed Body does not stop a multistrike move mid-execution")
 {
     GIVEN {
-        ASSUME(IsMultiHitMove(MOVE_ROCK_BLAST));
+        ASSUME(GetMoveEffect(MOVE_ROCK_BLAST) == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_FRILLISH) { Ability(ABILITY_CURSED_BODY); }
     } WHEN {
@@ -104,8 +104,7 @@ SINGLE_BATTLE_TEST("Cursed Body disables the move that called another move inste
         ABILITY_POPUP(opponent, ABILITY_CURSED_BODY);
         MESSAGE("Wobbuffet's Sleep Talk was disabled by the opposing Frillish's Cursed Body!");
     } THEN {
-        u32 disabledMove = player->volatiles.disabledMove;
-        EXPECT_EQ(disabledMove, MOVE_SLEEP_TALK);
+        EXPECT_EQ(gDisableStructs[B_POSITION_PLAYER_LEFT].disabledMove, MOVE_SLEEP_TALK);
     }
 }
 
@@ -126,8 +125,7 @@ SINGLE_BATTLE_TEST("Cursed Body disables the base move of a status Z-Move")
         ABILITY_POPUP(opponent, ABILITY_CURSED_BODY);
         MESSAGE("Wobbuffet's Nature Power was disabled by the opposing Frillish's Cursed Body!");
     } THEN {
-        u32 disabledMove = player->volatiles.disabledMove;
-        EXPECT_EQ(disabledMove, MOVE_NATURE_POWER);
+        EXPECT_EQ(gDisableStructs[B_POSITION_PLAYER_LEFT].disabledMove, MOVE_NATURE_POWER);
     }
 }
 

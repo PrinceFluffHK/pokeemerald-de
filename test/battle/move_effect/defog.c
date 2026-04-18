@@ -99,7 +99,7 @@ SINGLE_BATTLE_TEST("Defog fails if target has minimum evasion stat change behind
 
 SINGLE_BATTLE_TEST("Defog does not lower evasiveness if target behind Substitute (Gen5+)")
 {
-    enum Move move;
+    u32 move;
 
     PARAMETRIZE { move = MOVE_LIGHT_SCREEN; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
@@ -136,7 +136,7 @@ SINGLE_BATTLE_TEST("Defog does not lower evasiveness if target behind Substitute
 
 DOUBLE_BATTLE_TEST("Defog doesn't remove Reflect or Light Screen from the user's side", s16 damagePhysical, s16 damageSpecial)
 {
-    enum Move move;
+    u16 move;
 
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
@@ -169,7 +169,7 @@ DOUBLE_BATTLE_TEST("Defog doesn't remove Reflect or Light Screen from the user's
 
 DOUBLE_BATTLE_TEST("Defog removes Reflect and Light Screen from target's side", s16 damagePhysical, s16 damageSpecial)
 {
-    enum Move move;
+    u16 move;
 
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
@@ -202,7 +202,7 @@ DOUBLE_BATTLE_TEST("Defog removes Reflect and Light Screen from target's side", 
 
 DOUBLE_BATTLE_TEST("Defog doesn't remove Mist or Safeguard from the user's side")
 {
-    enum Move move;
+    u16 move;
 
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
@@ -234,7 +234,7 @@ DOUBLE_BATTLE_TEST("Defog doesn't remove Mist or Safeguard from the user's side"
 
 DOUBLE_BATTLE_TEST("Defog removes Mist and Safeguard from target's side")
 {
-    enum Move move;
+    u16 move;
 
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
@@ -276,7 +276,7 @@ DOUBLE_BATTLE_TEST("Defog removes Mist and Safeguard from target's side")
 
 DOUBLE_BATTLE_TEST("Defog removes Stealth Rock and Sticky Web from target's side")
 {
-    enum Move move;
+    u32 move;
 
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     PARAMETRIZE { move = MOVE_DEFOG; }
@@ -327,8 +327,7 @@ DOUBLE_BATTLE_TEST("Defog removes Stealth Rock and Sticky Web from target's side
 
 DOUBLE_BATTLE_TEST("Defog removes Stealth Rock and Sticky Web from user's side (Gen 6+)")
 {
-    enum Move move;
-    u32 config;
+    u32 move, config;
 
     PARAMETRIZE { move = MOVE_CELEBRATE; config = GEN_5; }
     PARAMETRIZE { move = MOVE_DEFOG;     config = GEN_5; }
@@ -381,7 +380,7 @@ DOUBLE_BATTLE_TEST("Defog removes Stealth Rock and Sticky Web from user's side (
 
 SINGLE_BATTLE_TEST("Defog removes Spikes from target's side")
 {
-    enum Move move;
+    u32 move;
 
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     PARAMETRIZE { move = MOVE_DEFOG;     }
@@ -412,8 +411,7 @@ SINGLE_BATTLE_TEST("Defog removes Spikes from target's side")
 
 SINGLE_BATTLE_TEST("Defog removes Spikes from user's side (Gen 6+)")
 {
-    enum Move move;
-    u32 config;
+    u32 move, config;
 
     PARAMETRIZE { move = MOVE_CELEBRATE; config = GEN_5; }
     PARAMETRIZE { move = MOVE_DEFOG;     config = GEN_5; }
@@ -448,8 +446,7 @@ SINGLE_BATTLE_TEST("Defog removes Spikes from user's side (Gen 6+)")
 
 SINGLE_BATTLE_TEST("Defog removes terrain (Gen 8+)")
 {
-    enum Move move;
-    u32 config;
+    u32 move, config;
 
     PARAMETRIZE { move = MOVE_PSYCHIC_TERRAIN;  config = GEN_7; }
     PARAMETRIZE { move = MOVE_ELECTRIC_TERRAIN; config = GEN_7; }
@@ -496,7 +493,7 @@ SINGLE_BATTLE_TEST("Defog removes terrain (Gen 8+)")
 
 SINGLE_BATTLE_TEST("Defog removes Toxic Spikes from target's side")
 {
-    enum Move move;
+    u32 move;
 
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     PARAMETRIZE { move = MOVE_DEFOG; }
@@ -531,8 +528,7 @@ SINGLE_BATTLE_TEST("Defog removes Toxic Spikes from target's side")
 
 SINGLE_BATTLE_TEST("Defog removes Toxic Spikes from user's side (Gen 6+)")
 {
-    enum Move move;
-    u32 config;
+    u32 move, config;
 
     PARAMETRIZE { move = MOVE_CELEBRATE; config = GEN_5; }
     PARAMETRIZE { move = MOVE_DEFOG;     config = GEN_5; }
@@ -568,13 +564,12 @@ SINGLE_BATTLE_TEST("Defog removes Toxic Spikes from user's side (Gen 6+)")
 
 DOUBLE_BATTLE_TEST("Defog doesn't remove Aurora Veil from the user's side", s16 damagePhysical, s16 damageSpecial)
 {
-    enum Move move;
+    u16 move;
 
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_HAIL) == BATTLE_WEATHER_HAIL);
+        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
         ASSUME(GetSpeciesType(SPECIES_GLALIE, 0) == TYPE_ICE);
         PLAYER(SPECIES_GLALIE) { Speed(4); }
         PLAYER(SPECIES_GLALIE) { Speed(3); }
@@ -610,13 +605,12 @@ DOUBLE_BATTLE_TEST("Defog doesn't remove Aurora Veil from the user's side", s16 
 
 DOUBLE_BATTLE_TEST("Defog removes Aurora Veil from target's side", s16 damagePhysical, s16 damageSpecial)
 {
-    enum Move move;
+    u16 move;
 
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_HAIL) == BATTLE_WEATHER_HAIL);
+        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
         ASSUME(GetSpeciesType(SPECIES_GLALIE, 0) == TYPE_ICE);
         PLAYER(SPECIES_GLALIE) { Speed(4); }
         PLAYER(SPECIES_GLALIE) { Speed(3); }
@@ -656,9 +650,8 @@ DOUBLE_BATTLE_TEST("Defog removes everything it can")
     PARAMETRIZE { config = GEN_5; }
     PARAMETRIZE { config = GEN_6; }
     GIVEN {
-        WITH_CONFIG(B_DEFOG_EFFECT_CLEARING, config);
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_HAIL) == BATTLE_WEATHER_HAIL);
+        WITH_CONFIG(CONFIG_DEFOG_EFFECT_CLEARING, config);
+        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
         ASSUME(GetSpeciesType(SPECIES_GLALIE, 0) == TYPE_ICE);
         PLAYER(SPECIES_GLALIE) { Speed(4); }
         PLAYER(SPECIES_GLALIE) { Speed(3); }

@@ -3,7 +3,7 @@
 
 SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_SWIFT; }
     GIVEN {

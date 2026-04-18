@@ -10,7 +10,7 @@ ASSUMPTIONS
 
 SINGLE_BATTLE_TEST("Thick Fat halves damage from fire and ice type moves", s16 damage[2])
 {
-    enum Move move;
+    u16 move;
 
     PARAMETRIZE { move = MOVE_POWDER_SNOW; }
     PARAMETRIZE { move = MOVE_EMBER; }

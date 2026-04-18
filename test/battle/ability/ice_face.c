@@ -36,15 +36,13 @@ SINGLE_BATTLE_TEST("Ice Face does not block special moves, Eiscue stays in Ice F
 
 SINGLE_BATTLE_TEST("Ice Face is restored if hail or snow begins while Noice Face Eiscue is out")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     PARAMETRIZE { move = MOVE_HAIL; }
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
-        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_SNOWSCAPE) == BATTLE_WEATHER_SNOW);
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_HAIL) == BATTLE_WEATHER_HAIL);
+        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_SNOWSCAPE);
+        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -68,15 +66,13 @@ SINGLE_BATTLE_TEST("Ice Face is restored if hail or snow begins while Noice Face
 
 SINGLE_BATTLE_TEST("Ice Face is restored if Noice Face Eiscue is sent in while hail or snow is active")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     PARAMETRIZE { move = MOVE_HAIL; }
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
-        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_SNOWSCAPE) == BATTLE_WEATHER_SNOW);
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_HAIL) == BATTLE_WEATHER_HAIL);
+        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_SNOWSCAPE);
+        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -96,15 +92,13 @@ SINGLE_BATTLE_TEST("Ice Face is restored if Noice Face Eiscue is sent in while h
 
 SINGLE_BATTLE_TEST("Ice Face is not restored if Eiscue changes into Noice Face form while there's already hail or snow")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     PARAMETRIZE { move = MOVE_HAIL; }
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
-        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_SNOWSCAPE) == BATTLE_WEATHER_SNOW);
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_HAIL) == BATTLE_WEATHER_HAIL);
+        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_SNOWSCAPE);
+        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -154,15 +148,13 @@ SINGLE_BATTLE_TEST("Ice Face doesn't transform Eiscue if Cloud Nine/Air Lock is 
 
 SINGLE_BATTLE_TEST("Ice Face is not restored if hail or snow and Eiscue are already out")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     PARAMETRIZE { move = MOVE_HAIL; }
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
-        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_SNOWSCAPE) == BATTLE_WEATHER_SNOW);
-        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_WEATHER);
-        ASSUME(GetMoveWeatherType(MOVE_HAIL) == BATTLE_WEATHER_HAIL);
+        ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_SNOWSCAPE);
+        ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);

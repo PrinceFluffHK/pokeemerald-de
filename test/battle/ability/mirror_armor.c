@@ -3,8 +3,7 @@
 
 SINGLE_BATTLE_TEST("Mirror Armor lowers a stat of the attacking Pokémon")
 {
-    enum Move move;
-    u32 statId;
+    u16 move, statId;
 
     PARAMETRIZE { move = MOVE_LEER;        statId = STAT_DEF; }
     PARAMETRIZE { move = MOVE_GROWL;       statId = STAT_ATK; }
@@ -227,26 +226,5 @@ SINGLE_BATTLE_TEST("Mirror Armor reflects Obstruct defense drop")
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         ABILITY_POPUP(opponent, ABILITY_MIRROR_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-    }
-}
-
-SINGLE_BATTLE_TEST("Mirror Armor does not trigger if the user is behind a Substitute")
-{
-    GIVEN {
-        ASSUME(GetMoveEffect(MOVE_SUBSTITUTE) == EFFECT_SUBSTITUTE);
-        PLAYER(SPECIES_DUGTRIO) { Ability(ABILITY_TANGLING_HAIR); }
-        OPPONENT(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); }
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_SUBSTITUTE); }
-        TURN { MOVE(opponent, MOVE_SCRATCH); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, opponent);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
-        ABILITY_POPUP(player, ABILITY_TANGLING_HAIR);
-        NONE_OF {
-            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            ABILITY_POPUP(opponent, ABILITY_MIRROR_ARMOR);
-            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        }
     }
 }

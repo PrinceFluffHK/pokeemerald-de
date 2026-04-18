@@ -3,8 +3,7 @@
 
 SINGLE_BATTLE_TEST("Mummy/Lingering Aroma replace the attacker's ability on contact")
 {
-    enum Move move;
-    u32 species;
+    u32 move, species;
     enum Ability ability;
 
     PARAMETRIZE { move = MOVE_AQUA_JET; ability = ABILITY_MUMMY; species = SPECIES_YAMASK; }

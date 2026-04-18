@@ -3,7 +3,7 @@
 
 SINGLE_BATTLE_TEST("Stance Change changes Aegislash from Shield to Blade when using a damaging move")
 {
-    enum Move move;
+    u16 move;
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_SWIFT; }
     PARAMETRIZE { move = MOVE_GROWL; }
@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Stance Change changes Aegislash from Shield to Blade when us
 
 SINGLE_BATTLE_TEST("Stance Change changes Aegislash from Blade to Shield when using King's Shield")
 {
-    enum Move move;
+    u16 move;
     PARAMETRIZE { move = MOVE_PROTECT; }
     PARAMETRIZE { move = MOVE_KINGS_SHIELD; }
     GIVEN {

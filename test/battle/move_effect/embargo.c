@@ -47,7 +47,7 @@ SINGLE_BATTLE_TEST("Embargo blocks an affected Pokémon's trainer from using ite
 
 WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect experience gain", s32 exp)
 {
-    enum Item item;
+    u32 item;
 
     PARAMETRIZE { item = ITEM_LUCKY_EGG; }
     PARAMETRIZE { item = ITEM_NONE; }

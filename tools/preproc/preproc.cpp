@@ -51,11 +51,9 @@ void PrintAsmBytes(unsigned char *s, int length)
     }
 }
 
-void PreprocAsmFile(std::string filename, bool isStdin, bool doEnum, bool doSize)
+void PreprocAsmFile(std::string filename, bool isStdin, bool doEnum)
 {
     std::stack<AsmFile> stack;
-    Label prevLabel;
-    bool inScriptData = false;
 
     stack.push(AsmFile(filename, isStdin, doEnum));
     std::printf("# 1 \"%s\"\n", filename.c_str());
@@ -64,11 +62,6 @@ void PreprocAsmFile(std::string filename, bool isStdin, bool doEnum, bool doSize
     {
         while (stack.top().IsAtEnd())
         {
-            const char *ps = prevLabel.symbol.c_str();
-            if (doSize && inScriptData && prevLabel)
-                std::printf(".ifdef %s ; .size %s, . - %s ; .endif\n", ps, ps, ps);
-            prevLabel = Label();
-
             stack.pop();
 
             if (stack.empty())
@@ -107,28 +100,15 @@ void PreprocAsmFile(std::string filename, bool isStdin, bool doEnum, bool doSize
         }
         case Directive::Unknown:
         {
-            Label label = stack.top().GetLabel();
+            std::string globalLabel = stack.top().GetGlobalLabel();
 
-            if (label)
+            if (globalLabel.length() != 0)
             {
-                const char *s = label.symbol.c_str();
-                const char *ps = prevLabel.symbol.c_str();
-
-                if (doSize && inScriptData && prevLabel)
-                    std::printf(".ifdef %s ; .size %s, . - %s ; .endif ; ", ps, ps, ps);
-
-                if (label.type == Label::global)
-                    std::printf(".global %s\n%s:\n", s, s);
-
-                prevLabel = label;
+                const char *s = globalLabel.c_str();
+                std::printf("%s: ; .global %s\n", s, s);
             }
             else
             {
-                std::string section = stack.top().PeekSection();
-                if (section == "script_data")
-                    inScriptData = true;
-                else if (section != "")
-                    inScriptData = false;
                 stack.top().OutputLine();
             }
 
@@ -167,7 +147,7 @@ const char* GetFileExtension(const char* filename)
 
 static void UsageAndExit(const char *program)
 {
-    std::fprintf(stderr, "Usage: %s [-i] [-e] [-s] SRC_FILE CHARMAP_FILE\nwhere -i denotes if input is from stdin\n      -e enables enum handling\n        -s enables '.size' handling\n", program);
+    std::fprintf(stderr, "Usage: %s [-i] [-e] SRC_FILE CHARMAP_FILE\nwhere -i denotes if input is from stdin\n      -e enables enum handling\n", program);
     std::exit(EXIT_FAILURE);
 }
 
@@ -178,10 +158,9 @@ int main(int argc, char **argv)
     const char *charmap = NULL;
     bool isStdin = false;
     bool doEnum = false;
-    bool doSize = false;
 
-    /* preproc [-i] [-e] [-s] SRC_FILE CHARMAP_FILE */
-    while ((opt = getopt(argc, argv, "ies")) != -1)
+    /* preproc [-i] [-e] SRC_FILE CHARMAP_FILE */
+    while ((opt = getopt(argc, argv, "ie")) != -1)
     {
         switch (opt)
         {
@@ -190,9 +169,6 @@ int main(int argc, char **argv)
             break;
         case 'e':
             doEnum = true;
-            break;
-        case 's':
-            doSize = true;
             break;
         default:
             UsageAndExit(argv[0]);
@@ -220,7 +196,7 @@ int main(int argc, char **argv)
 
     if ((extension[0] == 's') && extension[1] == 0)
     {
-        PreprocAsmFile(source, isStdin, doEnum, doSize);
+        PreprocAsmFile(source, isStdin, doEnum);
     }
     else if ((extension[0] == 'c' || extension[0] == 'i') && extension[1] == 0)
     {

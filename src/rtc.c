@@ -19,8 +19,6 @@ static u16 sSavedIme;
 COMMON_DATA struct Time gLocalTime = {0};
 
 // const rom
-static const u8 sText_AM[] = _("AM");
-static const u8 sText_PM[] = _("PM");
 
 static const struct SiiRtcInfo sRtcDummy = {0, MONTH_JAN, 1}; // 2000 Jan 1
 
@@ -351,8 +349,7 @@ void RtcCalcLocalTimeOffset(s32 days, s32 hours, s32 minutes, s32 seconds)
     gLocalTime.hours = hours;
     gLocalTime.minutes = minutes;
     gLocalTime.seconds = seconds;
-    if (OW_USE_FAKE_RTC)
-        FakeRtc_ManuallySetTime(gLocalTime.days, gLocalTime.hours, gLocalTime.minutes, seconds);
+    FakeRtc_ManuallySetTime(gLocalTime.days, gLocalTime.hours, gLocalTime.minutes, seconds);
     RtcGetInfo(&sRtc);
     RtcCalcTimeDifference(&sRtc, &gSaveBlock2Ptr->localTimeOffset, &gLocalTime);
 }
@@ -415,9 +412,9 @@ void FormatDecimalTimeWithoutSeconds(u8 *txtPtr, s8 hour, s8 minute, bool32 is24
         txtPtr = ConvertIntToDecimalStringN(txtPtr, minute, STR_CONV_MODE_LEADING_ZEROS, 2);
         txtPtr = StringAppend(txtPtr, gText_Space);
         if (hour < 12)
-            txtPtr = StringAppend(txtPtr, sText_AM);
+            txtPtr = StringAppend(txtPtr, gText_AM);
         else
-            txtPtr = StringAppend(txtPtr, sText_PM);
+            txtPtr = StringAppend(txtPtr, gText_PM);
     }
 
     *txtPtr++ = EOS;
@@ -462,21 +459,10 @@ enum Weekday GetDayOfWeek(void)
 
 enum TimeOfDay GenConfigTimeOfDay(enum TimeOfDay timeOfDay)
 {
-    if (timeOfDay >= TIME_LAST)
-        return timeOfDay;
-
-    switch (OW_TIMES_OF_DAY)
-    {
-    case GEN_3:
-        if (timeOfDay == TIME_MORNING || timeOfDay == TIME_EVENING)
-            timeOfDay++;
-        break;
-    case GEN_2:
-    case GEN_4:
-        if (timeOfDay == TIME_EVENING)
-            timeOfDay++;
-        break;
-    }
+    if ((((timeOfDay == TIME_MORNING || timeOfDay == TIME_EVENING) && OW_TIMES_OF_DAY == GEN_3)
+        || (timeOfDay == TIME_EVENING && OW_TIMES_OF_DAY == GEN_4))
+        && timeOfDay < TIME_LAST)
+        timeOfDay++;
 
     return timeOfDay;
 }

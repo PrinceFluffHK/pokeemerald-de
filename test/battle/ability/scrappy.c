@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Scrappy prevents Intimidate (Gen8+)")
 
 SINGLE_BATTLE_TEST("Scrappy allows to hit Ghost-type Pokémon with Normal- and Fighting-type moves")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_KARATE_CHOP; }
 
@@ -74,7 +74,7 @@ SINGLE_BATTLE_TEST("Scrappy allows to hit Ghost-type Pokémon with Normal- and F
 
 SINGLE_BATTLE_TEST("Scrappy doesn't bypass a Ghost-type's Wonder Guard")
 {
-    enum Move move;
+    u32 move;
     PARAMETRIZE { move = MOVE_SCRATCH; }
     PARAMETRIZE { move = MOVE_KARATE_CHOP; }
 
@@ -89,5 +89,6 @@ SINGLE_BATTLE_TEST("Scrappy doesn't bypass a Ghost-type's Wonder Guard")
             HP_BAR(opponent);
         }
         ABILITY_POPUP(opponent, ABILITY_WONDER_GUARD);
+        MESSAGE("The opposing Shedinja avoided damage with Wonder Guard!");
     }
 }

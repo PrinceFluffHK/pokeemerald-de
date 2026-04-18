@@ -1,6 +1,5 @@
 #include "global.h"
 #include "test/battle.h"
-#include "battle_anim_scripts.h"
 
 // These tests are very heavy computationally. Only use them to review animation PRs.
 
@@ -60,7 +59,7 @@ static void ParametrizeMovesAndSpecies(u32 j, u32 *pMove, u32 *pSpecies, u32 var
     }
 }
 
-static u32 ParametrizeFriendship(enum Move move, u32 variation)
+static u32 ParametrizeFriendship(u32 move, u32 variation)
 {
     if (gMovesInfo[move].effect == EFFECT_FRUSTRATION
         || gMovesInfo[move].effect == EFFECT_RETURN
@@ -78,7 +77,7 @@ static u32 ParametrizeFriendship(enum Move move, u32 variation)
     return 0;
 }
 
-static u32 GetParametrizedHP(enum Move move, u32 variation)
+static u32 GetParametrizedHP(u32 move, u32 variation)
 {
     if (gMovesInfo[move].effect == EFFECT_POWER_BASED_ON_USER_HP && variation > 0)
     {
@@ -92,7 +91,7 @@ static u32 GetParametrizedHP(enum Move move, u32 variation)
     return 9997;
 }
 
-static u32 GetParametrizedItem(enum Move move, u32 variation)
+static u32 GetParametrizedItem(u32 move, u32 variation)
 {
     if ((move == MOVE_TECHNO_BLAST) && variation > 0)
     {
@@ -108,7 +107,7 @@ static u32 GetParametrizedItem(enum Move move, u32 variation)
     return ITEM_ORAN_BERRY;
 }
 
-static u32 GetParametrizedLevel(enum Move move, u32 variation)
+static u32 GetParametrizedLevel(u32 move, u32 variation)
 {
     if (gMovesInfo[move].effect == EFFECT_LEVEL_DAMAGE && variation > 0)
     {
@@ -120,37 +119,36 @@ static u32 GetParametrizedLevel(enum Move move, u32 variation)
     return 100;
 }
 
-static bool32 GetParametrizedShinyness(enum Move move, u32 variation)
+static bool32 GetParametrizedShinyness(u32 move, u32 variation)
 {
-    if ((GetMoveAnimationScript(move) == gBattleAnimMove_DragonDarts && variation == 2)
-        || (GetMoveAnimationScript(move) == gBattleAnimMove_SyrupBomb && variation == 1)
+    if ((gMovesInfo[move].effect == EFFECT_DRAGON_DARTS && variation == 2)
+        || (move == MOVE_SYRUP_BOMB && variation == 1)
         )
         return TRUE;
     return FALSE;
 }
 
-static bool32 TargetHasToMove(enum Move move) // Opponent needs to hit the player first
+static bool32 TargetHasToMove(u32 move) // Opponent needs to hit the player first
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
-    if (effect == EFFECT_REFLECT_DAMAGE
+    if (effect == EFFECT_COUNTER
      || effect == EFFECT_MIRROR_MOVE
      || effect == EFFECT_CONVERSION_2
+     || effect == EFFECT_MIRROR_COAT
+     || effect == EFFECT_METAL_BURST
      || effect == EFFECT_COPYCAT
      || effect == EFFECT_SUCKER_PUNCH
-     || effect == EFFECT_INSTRUCT
-     || effect == EFFECT_DISABLE
-     || effect == EFFECT_MIMIC
-     || effect == EFFECT_SPITE
-     || effect == EFFECT_ENCORE)
+     || effect == EFFECT_INSTRUCT)
         return TRUE;
     return FALSE;
 }
 
-static bool32 AttackerHasToSwitch(enum Move move) // User needs to send out a different team member
+static bool32 AttackerHasToSwitch(u32 move) // User needs to send out a different team member
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
-    if (IsExplosionMove(move)
-     || effect == EFFECT_TELEPORT
+    if (effect == EFFECT_TELEPORT
+     || effect == EFFECT_EXPLOSION
+     || effect == EFFECT_MISTY_EXPLOSION
      || effect == EFFECT_BATON_PASS
      || effect == EFFECT_MEMENTO
      || effect == EFFECT_HEALING_WISH
@@ -159,12 +157,12 @@ static bool32 AttackerHasToSwitch(enum Move move) // User needs to send out a di
      || effect == EFFECT_FINAL_GAMBIT
      || effect == EFFECT_PARTING_SHOT
      || effect == EFFECT_SHED_TAIL
-     || effect == EFFECT_WEATHER_AND_SWITCH)
+     || effect == EFFECT_CHILLY_RECEPTION)
         return TRUE;
     return FALSE;
 }
 
-static bool32 UserHasToGoFirst(enum Move move) // Player needs to go first
+static bool32 UserHasToGoFirst(u32 move) // Player needs to go first
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
     if (effect == EFFECT_PROTECT
@@ -180,7 +178,7 @@ static bool32 UserHasToGoFirst(enum Move move) // Player needs to go first
     return FALSE;
 }
 
-static u32 GetVariationsNumber(enum Move move, bool8 isDouble)
+static u32 GetVariationsNumber(u32 move, bool8 isDouble)
 {
     u32 variationsNumber;
 
@@ -195,7 +193,7 @@ static u32 GetVariationsNumber(enum Move move, bool8 isDouble)
         variationsNumber = 4;
     else if (gMovesInfo[move].effect == EFFECT_SPIT_UP
           || gMovesInfo[move].effect == EFFECT_SWALLOW
-          || GetMoveAnimationScript(move) == gBattleAnimMove_DragonDarts
+          || gMovesInfo[move].effect == EFFECT_DRAGON_DARTS
           || move == MOVE_SEISMIC_TOSS)
         variationsNumber = 3;
     else if (gMovesInfo[move].effect == EFFECT_CURSE
@@ -210,7 +208,7 @@ static u32 GetVariationsNumber(enum Move move, bool8 isDouble)
         variationsNumber = 1;
     return variationsNumber;
 }
-static void WhenSingles(enum Move move, struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 variation)
+static void WhenSingles(u32 move, struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 variation)
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
     // Setup turn
@@ -295,15 +293,9 @@ static void WhenSingles(enum Move move, struct BattlePokemon *attacker, struct B
     }
     // Effective turn
     TURN {
-        if (effect == EFFECT_REFLECT_DAMAGE)
+        if (TargetHasToMove(move))
         {
-            bool32 useSpecialMove = GetMoveReflectDamage_DamageCategories(move) == 1u << DAMAGE_CATEGORY_SPECIAL;
-            MOVE(defender, useSpecialMove ? MOVE_SWIFT : MOVE_POUND);
-            MOVE(attacker, move);
-        }
-        else if (TargetHasToMove(move))
-        {
-            MOVE(defender, MOVE_POUND);
+            MOVE(defender, effect == EFFECT_MIRROR_COAT ? MOVE_SWIFT : MOVE_POUND);
             MOVE(attacker, move);
         }
         else if (effect == EFFECT_SNATCH)
@@ -311,7 +303,7 @@ static void WhenSingles(enum Move move, struct BattlePokemon *attacker, struct B
             MOVE(attacker, move);
             MOVE(defender, MOVE_SWORDS_DANCE);
         }
-        else if (effect == EFFECT_OHKO)
+        else if (effect == EFFECT_OHKO || effect == EFFECT_SHEER_COLD)
         { // defender needs to send out a different team member
             MOVE(attacker, move);
             SEND_OUT(defender, 1);
@@ -398,7 +390,7 @@ static void WhenSingles(enum Move move, struct BattlePokemon *attacker, struct B
     }
 }
 
-static void SceneSingles(enum Move move, struct BattlePokemon *mon)
+static void SceneSingles(u32 move, struct BattlePokemon *mon)
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
     if (effect == EFFECT_FOLLOW_ME
@@ -426,7 +418,7 @@ static void SceneSingles(enum Move move, struct BattlePokemon *mon)
     }
 }
 
-static void DoublesWhen(enum Move move, struct BattlePokemon *attacker, struct BattlePokemon *target, struct BattlePokemon *ignore1, struct BattlePokemon *ignore2, u32 variation)
+static void DoublesWhen(u32 move, struct BattlePokemon *attacker, struct BattlePokemon *target, struct BattlePokemon *ignore1, struct BattlePokemon *ignore2, u32 variation)
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
     // Setup turn
@@ -511,15 +503,9 @@ static void DoublesWhen(enum Move move, struct BattlePokemon *attacker, struct B
     }
     // Effective turn
     TURN {
-        if (effect == EFFECT_REFLECT_DAMAGE)
-        {
-            bool32 useSpecialMove = GetMoveReflectDamage_DamageCategories(move) == 1u << DAMAGE_CATEGORY_SPECIAL;
-            MOVE(target, useSpecialMove ? MOVE_SWIFT : MOVE_POUND, target: attacker);
-            MOVE(attacker, move);
-        }
-        else if (TargetHasToMove(move))
-        {
-            MOVE(target, MOVE_POUND, target: attacker);
+        if (TargetHasToMove(move))
+        { // Opponent needs to hit the player first
+            MOVE(target, effect == EFFECT_MIRROR_COAT ? MOVE_SWIFT : MOVE_POUND, target: attacker);
             MOVE(attacker, move, target: target);
         }
         else if (effect == EFFECT_SNATCH)
@@ -527,7 +513,7 @@ static void DoublesWhen(enum Move move, struct BattlePokemon *attacker, struct B
             MOVE(attacker, move, target: target);
             MOVE(target, MOVE_SWORDS_DANCE);
         }
-        else if (effect == EFFECT_OHKO)
+        else if (effect == EFFECT_OHKO || effect == EFFECT_SHEER_COLD)
         { // Opponent needs to send out a different team member
             MOVE(attacker, move, target: target);
             SEND_OUT(target, 2);
@@ -558,10 +544,6 @@ static void DoublesWhen(enum Move move, struct BattlePokemon *attacker, struct B
         { // Opponent needs to choose priority move
             MOVE(attacker, move, target: target);
             MOVE(target, MOVE_QUICK_ATTACK, target: attacker);
-        }
-        else if (effect == EFFECT_ACUPRESSURE)
-        {
-            MOVE(attacker, move, target: attacker);
         }
         else if (gBattleMoveEffects[gMovesInfo[move].effect].twoTurnEffect)
         {
@@ -627,7 +609,7 @@ static void DoublesWhen(enum Move move, struct BattlePokemon *attacker, struct B
     }
 }
 
-static void DoublesScene(enum Move move, struct BattlePokemon *attacker)
+static void DoublesScene(u32 move, struct BattlePokemon *attacker)
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
     if (effect == EFFECT_MAGNETIC_FLUX || effect == EFFECT_GEAR_UP) // For some reason, Magnetic Flux and Gear Up are failing in Double Battles here
@@ -648,7 +630,7 @@ static void DoublesScene(enum Move move, struct BattlePokemon *attacker)
     }
 }
 
-//static void SameSideTargeting(enum Move move, struct BattlePokemon *attacker)
+//static void SameSideTargeting(u32 move, struct BattlePokemon *attacker)
 //{
 //    //  Don't know how to make sure this is correct, some moves don't display
 //}
