@@ -5110,8 +5110,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 0,
-        // .pp = 8,
-        .pp = 5,
+        // .pp = 5,
+        .pp = 8,
         .target = MOVE_TARGET_USER,
         #if B_UPDATED_MOVE_DATA >= GEN_5
             .priority = 4,
@@ -8356,12 +8356,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_NEEDLE_ARM] =
     {
         .name = COMPOUND_STRING("Needle Arm"),
-        .description = COMPOUND_STRING(
-            "Moves 1st and flinches. Only\n"
-            "works on user's 1st turn."),
         // .description = COMPOUND_STRING(
-        //     "Attacks with thorny arms.\n"
-        //     "May cause flinching."),
+            // "Moves 1st and flinches. Only\n"
+            // "works on user's 1st turn."),
+        .description = COMPOUND_STRING(
+            "May cause flinching. Sets\n"
+            "Spikes that hurt switches."),
         .effect = EFFECT_CEASELESS_EDGE, //EFFECT_FIRST_TURN_ONLY, //EFFECT_HIT,
         .power = 60,
         .type = TYPE_GRASS,
@@ -15656,8 +15656,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_STEEL,
         .accuracy = 0,
-        // .pp = 8,
-        .pp = 5,
+        // .pp = 5,
+        .pp = 8,
         .target = MOVE_TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -15867,8 +15867,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_GRASS,
         .accuracy = 0,
-        // .pp = 8,
-        .pp = 5,
+        // .pp = 5,
+        .pp = 8,
         .target = MOVE_TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -16581,8 +16581,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_POISON,
         .accuracy = 0,
-        // .pp = 8,
-        .pp = 5,
+        // .pp = 5,
+        .pp = 8,
         .target = MOVE_TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -21784,8 +21784,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_FIRE,
         .accuracy = 0,
-        // .pp = 8,
-        .pp = 5,
+        // .pp = 5,
+        .pp = 8,
         .target = MOVE_TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,

@@ -13132,14 +13132,14 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_HEAVY_SLAM] =
+    [ITEM_TM_WEATHER_BALL] =
     {
         .name = ITEM_NAME("TM93"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Electrifies the\n"
-            "ground for 5 turns.\n"
-            "Prevents sleep."),
+            "The move's type\n"
+            "and power change\n"
+            "with the weather."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
