@@ -775,7 +775,7 @@
       "x": 9,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_JOLLY_MINT",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_RARE_CANDY_1"
     },
     {
@@ -783,7 +783,7 @@
       "x": 31,
       "y": 11,
       "elevation": 3,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_MAX_REVIVE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_REVIVE"
     },
     {

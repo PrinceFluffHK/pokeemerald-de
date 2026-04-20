@@ -6062,11 +6062,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Gift explodes on foes,\n"
             "but restores ally's HP."),
         .effect = EFFECT_HIT_ENEMY_HEAL_ALLY, //EFFECT_PRESENT,
-        .power = 90, //1,
+        .power = 80, //1,
         .type = TYPE_FAIRY, //TYPE_NORMAL,
         .accuracy = 100, //90,
         // .pp = 15,
-        .pp = 16,
+        .pp = 8,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
