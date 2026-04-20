@@ -729,14 +729,14 @@ AI: Smart Trainer
 
 Clamperl @ Deep-Sea Scale
 Ability: Dazzling
-Level: 34
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Clamp
 - Iron Defense
 
 Pelipper
 Ability: Drizzle
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Wing Attack
 - Water Pulse
@@ -744,7 +744,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Skarmory
 Ability: Weak Armor
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Steel Wing
 - Slash
@@ -753,7 +753,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Anorith
 Ability: Swift Swim
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - X-Scissor
 - Rock Slide
@@ -761,7 +761,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Seaking
 Ability: Swift Swim
-Level: 33
+Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Waterfall
 - Flip Turn
@@ -9179,7 +9179,7 @@ AI: Smart Trainer
 
 Swellow
 Ability: Guts
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
 - Wing Attack
@@ -9187,7 +9187,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Swellow
 Ability: Guts
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
 - Wing Attack
@@ -9476,7 +9476,7 @@ AI: Smart Trainer
 
 Ninjask
 Ability: Speed Boost
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bug Bite
 - Fury Swipes
@@ -9484,7 +9484,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Koffing
 Ability: Levitate
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sludge Bomb
 - Assurance
@@ -12819,7 +12819,7 @@ AI: Smart Trainer
 
 Breloom
 Ability: Technician
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Mach Punch
 - Mega Drain
@@ -12827,7 +12827,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Castform
 Ability: Forecast
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Weather Ball
 - Rain Dance
@@ -12949,7 +12949,7 @@ AI: Smart Trainer
 
 Gloom
 Ability: Chlorophyll
-Level: 31
+Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Magical Leaf
 - Acid
@@ -12957,7 +12957,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Vulpix
 Ability: Drought
-Level: 31
+Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Flame Burst
 - Extrasensory
@@ -12965,7 +12965,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Roselia
 Ability: Leaf Guard
-Level: 31
+Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Solar Beam
 - Poison Jab
@@ -17559,7 +17559,7 @@ AI: Smart Trainer
 
 Slugma
 Ability: Flame Body
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Spin
 - Ancient Power
@@ -17567,7 +17567,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Numel
 Ability: Oblivious
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bulldoze
 - Mud Slap
@@ -17584,7 +17584,7 @@ AI: Smart Trainer
 
 Psyduck
 Ability: Cloud Nine
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Zen Headbutt
 - Aqua Tail
@@ -17592,7 +17592,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Lombre
 Ability: Swift Swim
-Level: 32
+Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fake Out
 - Mega Drain
