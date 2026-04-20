@@ -402,13 +402,29 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 27
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Wing Attack
+- Bite
 
-Poochyena
-Level: 27
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Wailmer
+Ability: Water Veil
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Whirlpool
+- Heavy Slam
+- Astonish
+
+Mightyena
+Ability: Intimidate
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Poison Fang
+- Howl
 
 === TRAINER_GRUNT_WEATHER_INST_2 ===
 Name: GRUNT
@@ -419,13 +435,22 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 27
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Poison Fang
+- Howl
 
 Carvanha
-Level: 27
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rough Skin
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Bite
+- Ice Fang
+- Poison Fang
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===
 Name: GRUNT
@@ -436,17 +461,31 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+"Mightyena
+Ability: Intimidate
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Snarl
+- Crunch
+- Poison Fang
+- Howl
 
-Zubat
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Wing Attack
+- Bite
 
 Carvanha
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rough Skin
+Level: 30
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Bite
+- Ice Fang
+- Poison Fang"
 
 === TRAINER_GRUNT_MUSEUM_1 ===
 Name: GRUNT
@@ -578,12 +617,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Carvanha
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rough Skin
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Bite
+- Ice Fang
+- Poison Fang
 
-Carvanha
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Wing Attack
+- Bite
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
 Name: GRUNT
@@ -679,13 +727,45 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Clamperl @ Deep-Sea Scale
+Ability: Dazzling
+Level: 34
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Clamp
+- Iron Defense
 
-Mightyena
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pelipper
+Ability: Drizzle
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Wing Attack
+- Water Pulse
+- Tailwind
+
+Skarmory
+Ability: Weak Armor
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Steel Wing
+- Slash
+- Payback
+- Spikes
+
+Anorith
+Ability: Swift Swim
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- X-Scissor
+- Rock Slide
+- Liquidation
+
+Seaking
+Ability: Swift Swim
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Flip Turn
+- Smart Strike
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
@@ -11760,17 +11840,39 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Slugma
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Grumpig
+Ability: Magic Bounce
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heart Stamp
+- Psybeam
+- Power Gem
+- Bounce
 
-Pelipper
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magcargo @ Air Balloon
+Ability: Flame Body
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Slide
+- Clear Smog
+
+Wailmer @ Chesto Berry
+Ability: Water Veil
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Heavy Slam
+- Body Slam
+- Rest
 
 Grovyle
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Overgrow
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Giga Drain
+- X-Scissor
+- Aerial Ace
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
 Name: BRENDAN
@@ -11832,17 +11934,38 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Pelipper
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Grumpig
+Ability: Magic Bounce
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heart Stamp
+- Psybeam
+- Power Gem
+- Bounce
 
-Lombre
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Combusken
+Breloom @ Toxic Orb
+Ability: Poison Heal
 Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Mega Drain
+- Headbutt
+
+Magcargo @ Air Balloon
+Ability: Flame Body
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Slide
+- Clear Smog
+
+Marshtomp
+Ability: Torrent
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Mud Shot
+- Body Press
 
 === TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
 Name: BRENDAN
@@ -11903,17 +12026,39 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Lombre
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Grumpig
+Ability: Magic Bounce
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heart Stamp
+- Psybeam
+- Power Gem
+- Bounce
 
-Slugma
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Marshtomp
+Wailmer @ Chesto Berry
+Ability: Water Veil
 Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Heavy Slam
+- Body Slam
+- Rest
+
+Breloom @ Toxic Orb
+Ability: Poison Heal
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Mega Drain
+- Headbutt
+
+Combusken
+Ability: Blaze
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Temper Flare
+- Double Kick
+- Aerial Ace
 
 === TRAINER_MAY_ROUTE_103_MUDKIP ===
 Name: MAY
@@ -11974,17 +12119,39 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Slugma
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Grumpig
+Ability: Magic Bounce
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heart Stamp
+- Psybeam
+- Power Gem
+- Bounce
 
-Lombre
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magcargo @ Air Balloon
+Ability: Flame Body
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Slide
+- Clear Smog
+
+Wailmer @ Chesto Berry
+Ability: Water Veil
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Heavy Slam
+- Body Slam
+- Rest
 
 Grovyle
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Overgrow
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Giga Drain
+- X-Scissor
+- Aerial Ace
 
 === TRAINER_MAY_ROUTE_103_TREECKO ===
 Name: MAY
@@ -12046,17 +12213,38 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Pelipper
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Grumpig
+Ability: Magic Bounce
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heart Stamp
+- Psybeam
+- Power Gem
+- Bounce
 
-Lombre
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Combusken
+Breloom @ Toxic Orb
+Ability: Poison Heal
 Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Mega Drain
+- Headbutt
+
+Magcargo @ Air Balloon
+Ability: Flame Body
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Slide
+- Clear Smog
+
+Marshtomp
+Ability: Torrent
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Mud Shot
+- Body Press
 
 === TRAINER_MAY_ROUTE_103_TORCHIC ===
 Name: MAY
@@ -12117,17 +12305,39 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Lombre
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Grumpig
+Ability: Magic Bounce
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heart Stamp
+- Psybeam
+- Power Gem
+- Bounce
 
-Slugma
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Marshtomp
+Wailmer @ Chesto Berry
+Ability: Water Veil
 Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Heavy Slam
+- Body Slam
+- Rest
+
+Breloom @ Toxic Orb
+Ability: Poison Heal
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Mega Drain
+- Headbutt
+
+Combusken
+Ability: Blaze
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Temper Flare
+- Double Kick
+- Aerial Ace
 
 === TRAINER_ISAAC_1 ===
 Name: ISAAC
@@ -13462,13 +13672,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 27
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Wing Attack
+- Bite
 
-Poochyena
-Level: 27
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Poison Fang
+- Howl
 
 === TRAINER_TABITHA_MT_CHIMNEY ===
 Name: TABITHA
