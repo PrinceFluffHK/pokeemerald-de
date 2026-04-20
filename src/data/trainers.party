@@ -461,7 +461,7 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-"Mightyena
+Mightyena
 Ability: Intimidate
 Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -485,7 +485,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Aqua Jet
 - Bite
 - Ice Fang
-- Poison Fang"
+- Poison Fang
 
 === TRAINER_GRUNT_MUSEUM_1 ===
 Name: GRUNT
