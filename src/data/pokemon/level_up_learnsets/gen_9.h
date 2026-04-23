@@ -8404,6 +8404,7 @@ static const struct LevelUpMove sMawileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(32, MOVE_THUNDER_FANG),
     LEVEL_UP_MOVE(32, MOVE_ICE_FANG),
+    //Winona
     LEVEL_UP_MOVE(36, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(40, MOVE_TAUNT),
     LEVEL_UP_MOVE(44, MOVE_FAKE_TEARS),
@@ -9234,6 +9235,7 @@ static const struct LevelUpMove sZangooseLevelUpLearnset[] = {
     //Flannery
     //Norman
     LEVEL_UP_MOVE(33, MOVE_SWITCHEROO),
+    //Winona
     LEVEL_UP_MOVE(36, MOVE_DETECT),
     LEVEL_UP_MOVE(40, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(43, MOVE_TAUNT),
@@ -9261,6 +9263,7 @@ static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_POISON_JAB),
     //Norman
     LEVEL_UP_MOVE(34, MOVE_HAZE),
+    //Seviper
     LEVEL_UP_MOVE(39, MOVE_CRUNCH),
     LEVEL_UP_MOVE(41, MOVE_BELCH),
     LEVEL_UP_MOVE(44, MOVE_COIL),
