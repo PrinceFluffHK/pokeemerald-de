@@ -115,7 +115,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ETHER",
+      "trainer_sight_or_berry_tree_id": "ITEM_ABILITY_SHIELD",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_PETALBURG_CITY_ETHER"
     },
@@ -328,7 +328,7 @@
       "x": 11,
       "y": 29,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_IRON",
       "flag": "FLAG_HIDDEN_ITEM_PETALBURG_CITY_RARE_CANDY"
     }
   ]

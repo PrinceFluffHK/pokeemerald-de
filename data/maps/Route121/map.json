@@ -328,7 +328,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_GRASS_KNOT",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_121_REVIVE"
     },
@@ -451,7 +451,7 @@
       "x": 58,
       "y": 3,
       "elevation": 3,
-      "item": "ITEM_NUGGET",
+      "item": "ITEM_TIMID_MINT",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_NUGGET"
     },
     {
@@ -459,7 +459,7 @@
       "x": 72,
       "y": 5,
       "elevation": 3,
-      "item": "ITEM_FULL_HEAL",
+      "item": "ITEM_FULL_RESTORE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_FULL_HEAL"
     },
     {

@@ -2219,8 +2219,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_ORICHALCUM_PULSE] =
     {
-        .name = _("Orichalcum Pulse"),
-        .description = COMPOUND_STRING("Summons sunlight in battle."),
+        .name = _("Mollusca Pulse"),
+        .description = COMPOUND_STRING("Summons sun, boosts ATK."),
         .aiRating = 8,
     },
 

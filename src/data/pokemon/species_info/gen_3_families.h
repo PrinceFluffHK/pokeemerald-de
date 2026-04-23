@@ -2517,7 +2517,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_RAIN_DISH, ABILITY_HYDRATION, ABILITY_KEEN_EYE },
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_RAIN_DISH, ABILITY_HYDRATION },
     #else
         .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_RAIN_DISH },
     #endif
@@ -2598,7 +2598,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_RAIN_DISH, ABILITY_DRIZZLE, ABILITY_GALE_WINGS },
+        .abilities = { ABILITY_KEEN_EYE, ABILITY_RAIN_DISH, ABILITY_DRIZZLE },
     #else
         .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_RAIN_DISH },
     #endif
@@ -2685,7 +2685,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,
-        .abilities = { ABILITY_TELEPATHY, ABILITY_TRACE, ABILITY_SYNCHRONIZE },
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TRACE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Ralts"),
         .cryId = CRY_RALTS,
@@ -2754,7 +2754,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,
-        .abilities = { ABILITY_TELEPATHY, ABILITY_TRACE, ABILITY_SYNCHRONIZE },
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TRACE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Kirlia"),
         .cryId = CRY_KIRLIA,
@@ -2832,7 +2832,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,
-        .abilities = { ABILITY_TELEPATHY, ABILITY_TRACE, ABILITY_SYNCHRONIZE },
+        .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TRACE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Gardevoir"),
         .cryId = CRY_GARDEVOIR,
@@ -2979,7 +2979,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,
     #if P_UPDATED_ABILITIES >= GEN_9
-        .abilities = { ABILITY_TELEPATHY, ABILITY_SHARPNESS, ABILITY_JUSTIFIED },
+        .abilities = { ABILITY_JUSTIFIED, ABILITY_SHARPNESS, ABILITY_TELEPATHY },
     #else
         .abilities = { ABILITY_STEADFAST, ABILITY_NONE, ABILITY_JUSTIFIED },
     #endif
@@ -11020,7 +11020,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_ERRATIC,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_RATTLED, ABILITY_ANTICIPATION },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_RATTLED, ABILITY_DAZZLING },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Clamperl"),
         .cryId = CRY_CLAMPERL,

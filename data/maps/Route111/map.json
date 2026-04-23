@@ -154,7 +154,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 34,
-      "y": 60,
+      "y": 59,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
       "movement_range_x": 0,

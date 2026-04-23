@@ -94,7 +94,7 @@
     F(IMPRISON) \
     F(IRON_HEAD) \
     F(ELECTRIC_TERRAIN) \
-    F(HEAVY_SLAM) \
+    F(WEATHER_BALL) \
     F(EARTH_POWER) \
     F(SNARL) \
     F(STONE_EDGE) \
