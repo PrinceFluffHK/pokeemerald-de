@@ -2270,12 +2270,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sableye
-Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Prankster
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Knock Off
+- Night Shade
+- Disable
 
-Sableye
-Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Girafarig
+Ability: Inner Focus
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Stomp
+- Psybeam
+- Agility
 
 === TRAINER_HOPE ===
 Name: HOPE
@@ -6209,17 +6217,25 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Quick Guard
 
 Pelipper
-Ability: Keen Eye
-Level: 33
+Ability: Rain Dish
+Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Wing Attack
 - Water Pulse
 - Tailwind
 - Wide Guard
 
+Vibrava
+Ability: Levitate
+Level: 33
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bulldoze
+- Aerial Ace
+- Bug Buzz
+
 Skarmory
-Ability: Keen Eye
-Level: 34
+Ability: Sturdy
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Steel Wing
 - Aerial Ace
@@ -6227,14 +6243,14 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Tropius
 Ability: Protosynthesis
-Level: 32
+Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Magical Leaf
 - Fly
 - Stomp
 
-Altaria
-Ability: Natural Cure
+Altaria @ Sitrus Berry
+Ability: Cloud Nine
 Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Aerial Ace
@@ -9136,7 +9152,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Tailwind
 
 Skarmory
-Ability: Keen Eye
+Ability: Sturdy
 Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Steel Wing
@@ -9220,7 +9236,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Double Kick
 
 Skarmory
-Ability: Keen Eye
+Ability: Sturdy
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Wing Attack
@@ -9245,7 +9261,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Skarmory
-Ability: Keen Eye
+Ability: Sturdy
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Wing Attack
@@ -9295,7 +9311,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Double Kick
 
 Pelipper
-Ability: Keen Eye
+Ability: Rain Dish
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Wing Attack
@@ -9312,13 +9328,23 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Wingull
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pelipper
+Ability: Rain Dish
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Wing Attack
+- Water Pulse
+- Tailwind
+- Protect
 
-Natu
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Xatu
+Ability: Synchronize
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Stored Power
+- Air Slash
+- Night Shade
+- Calm Mind
 
 === TRAINER_ROBERT_1 ===
 Name: ROBERT
@@ -10041,12 +10067,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Castform
-Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rain Dance
+Ability: Forecast
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Weather Ball
-- Thunder
-- Water Pulse
+- Thunderbolt
+- Rain Dance
+
+Lombre
+Ability: Swift Swim
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 === TRAINER_MADELINE_2 ===
 Name: MADELINE
@@ -12897,17 +12932,30 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Seedot
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Nuzleaf
+Ability: Chlorophyll
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Razor Leaf
+- Knock Off
 
 Nuzleaf
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Chlorophyll
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Razor Leaf
+- Knock Off
 
 Lombre
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Giga Drain
+- Bubble Beam
+- Fury Swipes
 
 === TRAINER_SEBASTIAN ===
 Name: SEBASTIAN
@@ -13036,17 +13084,31 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Lotad
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Lombre
+Ability: Swift Swim
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 Lombre
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Mega Drain
+- Bubble Beam
+- Fury Swipes
 
 Nuzleaf
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Chlorophyll
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Razor Leaf
+- Air Cutter
 
 === TRAINER_SOPHIA ===
 Name: SOPHIA
@@ -15107,21 +15169,21 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Nincada
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Leech Life
-- Fury Swipes
-- Mind Reader
-- Dig
-
 Koffing
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Tackle
-- Self Destruct
-- Sludge
-- Smokescreen
+Ability: Levitate
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Assurance
+- Clear Smog
+
+Shedinja
+Ability: Wonder Guard
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Sneak
+- Fury Cutter
+- Grudge
 
 === TRAINER_FLINT ===
 Name: FLINT
@@ -17664,7 +17726,7 @@ Numel
 Ability: Oblivious
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Bulldoze
+- Incinerate
 - Mud Slap
 - Take Down
 
@@ -17704,18 +17766,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Manectric
-Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Thunder
+Ability: Static
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
-- Thunder Wave
+- Thunder
+- Bite
+- Howl
 
-Manectric
-Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Thunder
-- Quick Attack
-- Thunder Wave
+Lairon
+Ability: Sturdy
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Metal Claw
+- Smack Down
+- Headbutt
+- Protect
 
 === TRAINER_CALLIE ===
 Name: CALLIE
@@ -17727,12 +17793,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meditite
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pure Power
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Force Palm
+- Zen Headbutt
+- Meditate
+- Detect
 
-Makuhita
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Hariyama
+Ability: Thick Fat
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Arm Thrust
+- Bulk Up
+- Wide Guard
 
 === TRAINER_CALE ===
 Name: CALE
