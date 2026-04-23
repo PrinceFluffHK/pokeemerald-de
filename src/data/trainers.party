@@ -11931,7 +11931,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Grumpig
+"Grumpig
 Ability: Magic Bounce
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -11957,13 +11957,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Body Slam
 - Rest
 
-Grovyle
+Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Giga Drain
 - X-Scissor
-- Aerial Ace
+- Aerial Ace"
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
 Name: BRENDAN
@@ -12025,7 +12025,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Grumpig
+"Grumpig
 Ability: Magic Bounce
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12033,6 +12033,15 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Psybeam
 - Power Gem
 - Bounce
+
+Wailmer @ Chesto Berry
+Ability: Water Veil
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Heavy Slam
+- Body Slam
+- Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
@@ -12042,21 +12051,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mega Drain
 - Headbutt
 
-Magcargo @ Air Balloon
-Ability: Flame Body
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fire Spin
-- Rock Slide
-- Clear Smog
-
-Marshtomp
-Ability: Torrent
+Combusken @ Sitrus Berry
+Ability: Blaze
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Pulse
-- Mud Shot
-- Body Press
+- Temper Flare
+- Double Kick
+- Aerial Ace"
 
 === TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
 Name: BRENDAN
@@ -12117,7 +12118,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Grumpig
+"Grumpig
 Ability: Magic Bounce
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12125,15 +12126,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Psybeam
 - Power Gem
 - Bounce
-
-Wailmer @ Chesto Berry
-Ability: Water Veil
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Brine
-- Heavy Slam
-- Body Slam
-- Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
@@ -12143,13 +12135,21 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mega Drain
 - Headbutt
 
-Combusken
-Ability: Blaze
+Magcargo @ Air Balloon
+Ability: Flame Body
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Slide
+- Clear Smog
+
+Marshtomp @ Sitrus Berry
+Ability: Torrent
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Temper Flare
-- Double Kick
-- Aerial Ace
+- Water Pulse
+- Mud Shot
+- Body Press"
 
 === TRAINER_MAY_ROUTE_103_MUDKIP ===
 Name: MAY
@@ -12210,7 +12210,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Grumpig
+"Grumpig
 Ability: Magic Bounce
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12236,13 +12236,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Body Slam
 - Rest
 
-Grovyle
+Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Giga Drain
 - X-Scissor
-- Aerial Ace
+- Aerial Ace"
 
 === TRAINER_MAY_ROUTE_103_TREECKO ===
 Name: MAY
@@ -12304,7 +12304,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Grumpig
+"Grumpig
 Ability: Magic Bounce
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12312,6 +12312,15 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Psybeam
 - Power Gem
 - Bounce
+
+Wailmer @ Chesto Berry
+Ability: Water Veil
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Heavy Slam
+- Body Slam
+- Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
@@ -12321,21 +12330,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mega Drain
 - Headbutt
 
-Magcargo @ Air Balloon
-Ability: Flame Body
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fire Spin
-- Rock Slide
-- Clear Smog
-
-Marshtomp
-Ability: Torrent
+Combusken @ Sitrus Berry
+Ability: Blaze
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Pulse
-- Mud Shot
-- Body Press
+- Temper Flare
+- Double Kick
+- Aerial Ace"
 
 === TRAINER_MAY_ROUTE_103_TORCHIC ===
 Name: MAY
@@ -12396,7 +12397,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Grumpig
+"Grumpig
 Ability: Magic Bounce
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12404,15 +12405,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Psybeam
 - Power Gem
 - Bounce
-
-Wailmer @ Chesto Berry
-Ability: Water Veil
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Brine
-- Heavy Slam
-- Body Slam
-- Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
@@ -12422,13 +12414,21 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Mega Drain
 - Headbutt
 
-Combusken
-Ability: Blaze
+Magcargo @ Air Balloon
+Ability: Flame Body
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Spin
+- Rock Slide
+- Clear Smog
+
+Marshtomp @ Sitrus Berry
+Ability: Torrent
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Temper Flare
-- Double Kick
-- Aerial Ace
+- Water Pulse
+- Mud Shot
+- Body Press"
 
 === TRAINER_ISAAC_1 ===
 Name: ISAAC

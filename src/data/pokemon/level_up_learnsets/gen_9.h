@@ -2540,12 +2540,17 @@ static const struct LevelUpMove sGrimerLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE(12, MOVE_DISABLE),
     LEVEL_UP_MOVE(15, MOVE_SLUDGE),
+    //Catch
     LEVEL_UP_MOVE(18, MOVE_MUD_SHOT),
     LEVEL_UP_MOVE(21, MOVE_MINIMIZE),
     LEVEL_UP_MOVE(26, MOVE_TOXIC),
     LEVEL_UP_MOVE(29, MOVE_SLUDGE_BOMB),
+    //Flannery
+    //Norman
     LEVEL_UP_MOVE(32, MOVE_SLUDGE_WAVE),
+    //Winona
     LEVEL_UP_MOVE(37, MOVE_SCREECH),
+    //Evo Lv38
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
     LEVEL_UP_MOVE(43, MOVE_ACID_ARMOR),
     LEVEL_UP_MOVE(46, MOVE_BELCH),
@@ -2566,8 +2571,11 @@ static const struct LevelUpMove sMukLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(32, MOVE_SLUDGE_WAVE),
     LEVEL_UP_MOVE(37, MOVE_SCREECH),
+    //Evo Lv38
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
+    //T&L
     LEVEL_UP_MOVE(46, MOVE_ACID_ARMOR),
+    //Juan
     LEVEL_UP_MOVE(52, MOVE_BELCH),
     LEVEL_UP_MOVE(57, MOVE_MEMENTO),
     LEVEL_UP_END
@@ -3233,8 +3241,10 @@ static const struct LevelUpMove sWeezingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_SLUDGE_BOMB),
     //Evo Lv35
     LEVEL_UP_MOVE(38, MOVE_TOXIC),
+    //Tate&Liza
     LEVEL_UP_MOVE(44, MOVE_BELCH),
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan
     LEVEL_UP_MOVE(56, MOVE_MEMENTO),
     LEVEL_UP_MOVE(62, MOVE_DESTINY_BOND),
     LEVEL_UP_END
@@ -7981,6 +7991,8 @@ static const struct LevelUpMove sMasquerainLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(38, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(44, MOVE_BUG_BUZZ),
+    //Tate&Liza
+    //Juan
     LEVEL_UP_MOVE(52, MOVE_QUIVER_DANCE),
     LEVEL_UP_END
 };
@@ -9261,7 +9273,9 @@ static const struct LevelUpMove sAltariaLevelUpLearnset[] = {
     //Evo Lv35
     LEVEL_UP_MOVE(38, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(44, MOVE_MOONBLAST),
+    //T&L
     LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    //Juan
     LEVEL_UP_MOVE(56, MOVE_SKY_ATTACK),
     LEVEL_UP_END
 };
@@ -9382,6 +9396,7 @@ static const struct LevelUpMove sSolrockLevelUpLearnset[] = {
     //Tate&Liza
     LEVEL_UP_MOVE(45, MOVE_WONDER_ROOM),
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SOLROCK
@@ -9398,7 +9413,7 @@ static const struct LevelUpMove sBarboachLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(27, MOVE_STOMPING_TANTRUM),
     //Flannery
-    //Evo Lv30?
+    //Evo Lv30
     LEVEL_UP_MOVE(31, MOVE_MUDDY_WATER),
     LEVEL_UP_MOVE(36, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(39, MOVE_ZEN_HEADBUTT),
@@ -9879,6 +9894,7 @@ static const struct LevelUpMove sChimechoLevelUpLearnset[] = {
 
 #if P_FAMILY_ABSOL
 static const struct LevelUpMove sAbsolLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_FUTURE_SIGHT),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_DOUBLE_TEAM),
@@ -9886,11 +9902,15 @@ static const struct LevelUpMove sAbsolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_DETECT),
     LEVEL_UP_MOVE(20, MOVE_TAUNT),
     LEVEL_UP_MOVE(25, MOVE_SLASH),
+    //Catch
     LEVEL_UP_MOVE(30, MOVE_NIGHT_SLASH),
+    //Winona
     LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(40, MOVE_SUCKER_PUNCH),
+    //T&L
     LEVEL_UP_MOVE(45, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_DOOM_DESIRE),
+    //Juan
     LEVEL_UP_MOVE(55, MOVE_PERISH_SONG),
     LEVEL_UP_END
 };
