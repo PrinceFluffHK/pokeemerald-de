@@ -3469,7 +3469,7 @@
             "mons": [
               {
                 "min_level": 29,
-                "max_level": 29,
+                "max_level": 30,
                 "species": "SPECIES_MIGHTYENA"
               },
               {

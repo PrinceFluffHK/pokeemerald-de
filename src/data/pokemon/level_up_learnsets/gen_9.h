@@ -1813,7 +1813,9 @@ static const struct LevelUpMove sMachokeLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(36, MOVE_DUAL_CHOP),
     LEVEL_UP_MOVE(42, MOVE_BULK_UP),
+    //T&L
     LEVEL_UP_MOVE(48, MOVE_SEISMIC_TOSS),
+    //Juan
     LEVEL_UP_MOVE(54, MOVE_DYNAMIC_PUNCH),
     LEVEL_UP_MOVE(60, MOVE_CROSS_CHOP),
     LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
@@ -6474,7 +6476,9 @@ static const struct LevelUpMove sMagcargoLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(39, MOVE_AMNESIA),
     LEVEL_UP_MOVE(43, MOVE_BODY_SLAM),
+    //T&L
     LEVEL_UP_MOVE(47, MOVE_RECOVER),
+    //Juan
     LEVEL_UP_MOVE(54, MOVE_ERUPTION),
     LEVEL_UP_END
 };
@@ -6789,10 +6793,15 @@ static const struct LevelUpMove sDonphanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(19, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(24, MOVE_RAPID_SPIN),
     //Evo Lv25
+    //Flannery
     LEVEL_UP_MOVE(30, MOVE_STOMPING_TANTRUM),
+    //Norman
+    //Winona
     LEVEL_UP_MOVE(37, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(43, MOVE_HIGH_HORSEPOWER),
+    //T&L
     LEVEL_UP_MOVE(50, MOVE_BODY_PRESS),
+    //Juan
     LEVEL_UP_MOVE(56, MOVE_GIGA_IMPACT),
     LEVEL_UP_MOVE(63, MOVE_HEADLONG_RUSH),
     LEVEL_UP_END
@@ -7351,7 +7360,7 @@ static const struct LevelUpMove sMightyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_HOWL),
     LEVEL_UP_MOVE(13, MOVE_LEER),
     LEVEL_UP_MOVE(16, MOVE_ROAR),
-    //Evo
+    //Evo Lv18
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(24, MOVE_POISON_FANG),
     //Wattson
@@ -7361,7 +7370,9 @@ static const struct LevelUpMove sMightyenaLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(36, MOVE_TAUNT),
     LEVEL_UP_MOVE(44, MOVE_ASSURANCE),
+    //T&L
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
+    //Juan
     LEVEL_UP_MOVE(52, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(56, MOVE_PSYCHIC_FANGS),
     LEVEL_UP_END
@@ -8524,7 +8535,9 @@ static const struct LevelUpMove sLaironLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(35, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
+    //T&L
     LEVEL_UP_MOVE(46, MOVE_AUTOTOMIZE),
+    //Juan
     LEVEL_UP_MOVE(52, MOVE_IRON_TAIL),
     LEVEL_UP_MOVE(58, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(64, MOVE_HEAVY_SLAM),
@@ -8912,7 +8925,9 @@ static const struct LevelUpMove sSharpedoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(34, MOVE_CRUNCH),
     //Winona
     LEVEL_UP_MOVE(40, MOVE_AGILITY),
+    //T&L
     LEVEL_UP_MOVE(46, MOVE_LIQUIDATION),
+    //Juan
     LEVEL_UP_MOVE(52, MOVE_TAKE_DOWN),
     LEVEL_UP_END
 };
@@ -9036,8 +9051,10 @@ static const struct LevelUpMove sTorkoalLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
+    //T&L
     LEVEL_UP_MOVE(44, MOVE_CURSE),
     LEVEL_UP_MOVE(48, MOVE_HEAT_WAVE),
+    //Juan
     LEVEL_UP_MOVE(52, MOVE_AMNESIA),
     LEVEL_UP_MOVE(56, MOVE_INFERNO),
     LEVEL_UP_MOVE(60, MOVE_SHELL_SMASH),
@@ -10070,11 +10087,13 @@ static const struct LevelUpMove sClamperlLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_CLAMP),
     LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
+    //Catch
     LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sHuntailLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_REVERSAL),
     LEVEL_UP_MOVE( 1, MOVE_CLAMP),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -10082,9 +10101,8 @@ static const struct LevelUpMove sHuntailLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE( 5, MOVE_SCREECH),
     LEVEL_UP_MOVE( 9, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(11, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(11, MOVE_LOW_SWEEP),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
-    //Roxanne
     LEVEL_UP_MOVE(16, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(19, MOVE_BRINE),
     LEVEL_UP_MOVE(23, MOVE_SUCKER_PUNCH),
@@ -10093,7 +10111,10 @@ static const struct LevelUpMove sHuntailLevelUpLearnset[] = {
     LEVEL_UP_MOVE(34, MOVE_CRUNCH),
     LEVEL_UP_MOVE(39, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(45, MOVE_COIL),
+    //T&L
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan
+    LEVEL_UP_MOVE(56, MOVE_CLOSE_COMBAT),
     LEVEL_UP_END
 };
 
