@@ -593,7 +593,7 @@ AI: Smart Trainer
 
 Golbat
 Ability: Inner Focus
-Level: 34
+Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Poison Fang
 - Wing Attack
@@ -602,7 +602,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Grimer
 Ability: Poison Touch
-Level: 34
+Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sludge Bomb
 - Mud Shot
@@ -610,7 +610,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Tentacruel
 Ability: Clear Body
-Level: 34
+Level: 35
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Pulse
 - Acid
@@ -13585,7 +13585,7 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-"Mightyena
+Mightyena
 Ability: Intimidate
 Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -13599,7 +13599,7 @@ Level: 25
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Incinerate
 - Mud Slap
-- Take Down"
+- Take Down
 
 === TRAINER_MARC ===
 Name: MARC
@@ -14239,17 +14239,58 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Crobat
+Claydol @ Room Service
+Ability: Levitate
 Level: 38
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earthquake
+- Extrasensory
+- Ancient Power
+- Trick Room
 
-Camerupt
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Probopass
+Ability: Levitate
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Power Gem
+- Discharge
+- Thunder Wave
+- Stealth Rock
+
+Magnezone
+Ability: Sturdy
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunderbolt
+- Mirror Shot
+- Metal Sound
+- Magnet Rise
+
+Weezing @ Air Balloon
+Ability: Neutralizing Gas
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Clear Smog
+- Assurance
+- Will-O-Wisp
+
+Blaziken
+Ability: Blaze
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Punch
+- Aura Sphere
+- Aerial Ace
+- Substitute
+
+Camerupt - Mega @ Cameruptite
+Ability: Sheer Force
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scorching Sands
+- Eruption
+- Rock Slide
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
 Name: MAXIE
@@ -17257,13 +17298,31 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magcargo
+Ability: Flame Body
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Lava Plume
+- Rock Slide
+- Yawn
+- Recover
+
+Torkoal
+Ability: White Smoke
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flamethrower
+- Body Press
+- Sunny Day
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
 Name: GRUNT
@@ -17274,13 +17333,22 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Snarl
+- Crunch
+- Fire Fang
+- Howl
 
-Poochyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Koffing
+Ability: Levitate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Assurance
+- Clear Smog
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
 Name: GRUNT
@@ -17292,12 +17360,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Own Tempo
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Earth Power
+- Take Down
 
-Numel
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Koffing
+Ability: Levitate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Assurance
+- Clear Smog
+- Will-O-Wisp
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
 Name: GRUNT
@@ -17309,12 +17386,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Baltoy
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Levitate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Earth Power
+- Ancient Power
+- Cosmic Power
 
-Zubat
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
 Name: GRUNT
@@ -17326,12 +17413,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Baltoy
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Levitate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Earth Power
+- Ancient Power
+- Cosmic Power
 
 Numel
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Own Tempo
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Earth Power
+- Take Down
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
 Name: GRUNT
@@ -17343,12 +17439,22 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Mightyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Intimidate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Snarl
+- Crunch
+- Fire Fang
+- Howl
 
-Mightyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magcargo
+Ability: Flame Body
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flamethrower
+- Rock Slide
+- Yawn
+- Recover
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: GRUNT
@@ -17359,13 +17465,22 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magneton
+Ability: Magnet Pull
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunderbolt
+- Mirror Shot
+- Tri Attack
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
 Name: GRUNT
@@ -17376,13 +17491,21 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Rhyhorn
+Ability: Lightning Rod
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Drill Run
+- Horn Attack
 
-Poochyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tropius
+Ability: Protosynthesis
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Fly
+- Stomp
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
 Name: GRUNT
@@ -17393,13 +17516,22 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Numel
+Ability: Own Tempo
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Earth Power
+- Take Down
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
 Name: GRUNT
@@ -17410,13 +17542,21 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Nosepass
+Ability: Electric Surge
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Tomb
+- Discharge
+- Thunder Wave
 
-Mightyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magneton
+Ability: Magnet Pull
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunderbolt
+- Mirror Shot
+- Tri Attack
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
 Name: GRUNT
@@ -17428,12 +17568,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Baltoy
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Levitate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Earth Power
+- Trick Room
 
-Baltoy
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Graveler
+Ability: Rock Head
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earthquake
+- Rock Blast
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
 Name: GRUNT
@@ -17444,13 +17591,20 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Numel
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Vulpix
+Ability: Drought
+Level: 34
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Burst
+- Extrasensory
+- Sunny Day
 
-Numel
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Castform
+Ability: Forecast
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Weather Ball
+- Sunny Day
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
 Name: GRUNT
@@ -17461,13 +17615,22 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
-Zubat
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Numel
+Ability: Own Tempo
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Earth Power
+- Take Down
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
 Name: GRUNT
@@ -17478,13 +17641,21 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Vileplume
+Ability: Chlorophyll
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Acid
+- Strength Sap
 
-Mightyena
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Bellossom
+Ability: Chlorophyll
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Moonblast
+- Quiver Dance
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
 Name: GRUNT
@@ -17496,12 +17667,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Numel
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Own Tempo
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Incinerate
+- Earth Power
+- Take Down
 
-Numel
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Donphan
+Ability: Sturdy
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bulldoze
+- Fire Fang
+- Horn Attack
+- Rollout
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
 Name: GRUNT
@@ -17513,12 +17693,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Baltoy
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Levitate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Earth Power
+- Ancient Power
+- Cosmic Power
 
-Baltoy
-Level: 29
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Torkoal
+Ability: White Smoke
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Overheat
+- Body Press
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
 Name: TABITHA
@@ -17529,21 +17717,49 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Numel
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Torkoal
+Ability: Drought
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Overheat
+- Body Press
+- Body Slam
+- Iron Defense
 
-Mightyena
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Solrock
+Ability: Levitate
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Zen Headbutt
+- Rock Slide
+- Flare Blitz
+- Sunny Day
 
-Zubat
-Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Shiftry
+Ability: Chlorophyll
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Leaf Blade
+- Knock Off
+- Air Slash
 
-Camerupt
-Level: 33
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tropius
+Ability: Protosynthesis
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Solar Beam
+- Fly
+- Stomp
+
+Magcargo @ Air Balloon
+Ability: Orichalcum Pulse
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Overheat
+- Rock Slide
+- Earthquake
+- Gyro Ball
 
 === TRAINER_DARCY ===
 Name: DARCY
