@@ -1174,7 +1174,7 @@ static const struct LevelUpMove sBellossomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_RAZOR_LEAF),
     LEVEL_UP_MOVE(26, MOVE_TOXIC),
     LEVEL_UP_MOVE(32, MOVE_MOONBLAST),
-    //Evo
+    //Evo Sun Stone
     LEVEL_UP_MOVE(38, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(44, MOVE_MORNING_SUN),
     LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
@@ -1471,6 +1471,7 @@ static const struct LevelUpMove sPsyduckLevelUpLearnset[] = {
     //Evo Lv33
     LEVEL_UP_MOVE(34, MOVE_AMNESIA),
     LEVEL_UP_MOVE(39, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE(43, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
 };
 
@@ -8851,7 +8852,9 @@ static const struct LevelUpMove sGulpinLevelUpLearnset[] = {
     //Wattson
     LEVEL_UP_MOVE(25, MOVE_TOXIC),
     //Evo Lv26
-    LEVEL_UP_MOVE(28, MOVE_STUFF_CHEEKS),
+    LEVEL_UP_MOVE(28, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE(28, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE(28, MOVE_SWALLOW),
     LEVEL_UP_MOVE(33, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(36, MOVE_GASTRO_ACID),
     LEVEL_UP_MOVE(41, MOVE_BELCH),
@@ -8862,6 +8865,7 @@ static const struct LevelUpMove sGulpinLevelUpLearnset[] = {
 
 static const struct LevelUpMove sSwalotLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE( 1, MOVE_STUFF_CHEEKS),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_SLUDGE),
@@ -8874,7 +8878,9 @@ static const struct LevelUpMove sSwalotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_TOXIC),
     //Evo Lv26
     //Flannery
-    LEVEL_UP_MOVE(30, MOVE_STUFF_CHEEKS),
+    LEVEL_UP_MOVE(30, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE(30, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE(30, MOVE_SWALLOW),
     //Norman
     //Winona
     LEVEL_UP_MOVE(37, MOVE_SLUDGE_BOMB),
@@ -9720,9 +9726,6 @@ static const struct LevelUpMove sCastformLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(35, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(45, MOVE_HURRICANE),
-    LEVEL_UP_MOVE(60, MOVE_HYDRO_STEAM),
-    LEVEL_UP_MOVE(60, MOVE_MOUNTAIN_GALE),
-    LEVEL_UP_MOVE(60, MOVE_ELECTRO_SHOT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CASTFORM
