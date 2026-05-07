@@ -2158,13 +2158,13 @@ static void CreateSpeedTiersWindow(void)
             if (moveTarget == MOVE_TARGET_SELECTED)
             {
                 if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_RIGHT] == B_POSITION_OPPONENT_LEFT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
+                    StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}A"));
                 else if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_RIGHT] == B_POSITION_OPPONENT_RIGHT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
+                    StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-A"));
                 else if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_RIGHT] == B_POSITION_PLAYER_LEFT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-"));
+                    StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-A"));
                 else if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_RIGHT] == B_POSITION_PLAYER_RIGHT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}"));
+                    StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}A"));
             }
             else if (moveTarget == MOVE_TARGET_BOTH)
             {
@@ -2177,15 +2177,14 @@ static void CreateSpeedTiersWindow(void)
                 else if(B_POSITION_OPPONENT_RIGHT == B_POSITION_OPPONENT_RIGHT)
                     StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{V_D_ARROW}"));
             }
-            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS 
-                     || MOVE_TARGET_OPPONENTS_FIELD)
+            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS)
             {
                 StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}"));
             }
-            else if (moveTarget == MOVE_TARGET_USER)
-            {
-                    StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
-            }
+            // else if (moveTarget == MOVE_TARGET_USER)
+            // {
+            //     StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
+            // }
         }
     }
     if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
@@ -2195,26 +2194,26 @@ static void CreateSpeedTiersWindow(void)
         {
             StringAppend(gStringVar1, COMPOUND_STRING(" : "));
         }
-        StringAppend(gStringVar1, gStringVar2);
-
+        
         if (gBattleStruct->monToSwitchIntoId[GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)] != PARTY_SIZE) // If the opponent is switching:
         {
             StringAppend(gStringVar1, COMPOUND_STRING("Sw"));
         }
         else
+        StringAppend(gStringVar1, gStringVar2);
         {
             u32 move = gBattleMons[B_POSITION_OPPONENT_LEFT].moves[gBattleStruct->chosenMovePositions[B_POSITION_OPPONENT_LEFT]];
             u32 moveTarget = GetBattlerMoveTargetType(B_POSITION_OPPONENT_LEFT, move);
             if (moveTarget == MOVE_TARGET_SELECTED)
             {
                 if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_LEFT] == B_POSITION_OPPONENT_LEFT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
-                else if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_LEFT] == B_POSITION_OPPONENT_LEFT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
+                    StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}B"));
+                else if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_LEFT] == B_POSITION_OPPONENT_RIGHT)
+                    StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-B"));
                 else if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_LEFT] == B_POSITION_PLAYER_LEFT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-"));
+                    StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-B"));
                 else if (gAiBattleData->chosenTarget[B_POSITION_OPPONENT_LEFT] == B_POSITION_PLAYER_RIGHT)
-                    StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}"));
+                    StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}B"));
             }
             else if (moveTarget == MOVE_TARGET_BOTH)
             {
@@ -2227,15 +2226,14 @@ static void CreateSpeedTiersWindow(void)
                 else if(B_POSITION_OPPONENT_LEFT == B_POSITION_OPPONENT_LEFT)
                     StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{V_D_ARROW}"));
             }
-            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS
-                     || MOVE_TARGET_OPPONENTS_FIELD)
+            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS)
             {
                 StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}"));
             }
-            else if (moveTarget == MOVE_TARGET_USER)
-            {
-                    StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
-            }
+            // else if (moveTarget == MOVE_TARGET_USER)
+            // {
+            //     StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
+            // }
         }
     }
     StringAppend(gStringVar1, COMPOUND_STRING("\nPrev  "));
