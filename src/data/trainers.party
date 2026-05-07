@@ -114,13 +114,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Thunder Fang
+- Howl
 
-Poochyena
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Night Slash
+- Ice Fang
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
 Name: GRUNT
@@ -131,13 +139,22 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
-Carvanha
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Night Slash
+- Ice Fang
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
 Name: GRUNT
@@ -148,13 +165,22 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pelipper
+Ability: Rain Dish
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Air Slash
+- Water Pulse
+- Tailwind
+- Protect
 
-Zubat
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Machoke
+Ability: Guts
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brick Break
+- Knock Off
+- Focus Energy
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
 Name: GRUNT
@@ -165,13 +191,22 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Night Slash
+- Ice Fang
 
-Carvanha
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tentacruel
+Ability: Clear Body
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Acid
+- Wrap
+- Screech
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
 Name: GRUNT
@@ -721,13 +756,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Night Slash
+- Ice Fang
 
-Carvanha
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Starmie
+Ability: Natural Cure
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psybeam
+- Power Gem
+- Swift
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
 Name: GRUNT
@@ -738,13 +781,22 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
-Zubat
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Machoke
+Ability: Guts
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brick Break
+- Knock Off
+- Focus Energy
 
 === TRAINER_FREDRICK ===
 Name: FREDRICK
@@ -779,15 +831,52 @@ Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Mightyena
-Level: 34
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Intimidate
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Play Rough
+- Thunder Fang
+- Howl
 
-Golbat
-Level: 34
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Crobat
+Ability: Inner Focus
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Cross Poison
+- Aerial Ace
+- Bite
+- U-Turn
+
+Crawdaunt
+Ability: Adaptability
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Razor Shell
+- Night Slash
+- Swords Dance
+
+Machamp
+Ability: Guts
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Cross Chop
+- Dual Chop
+- Knock Off
+- Bulk Up
+
+Huntail @ White Herb
+Ability: Defiant
+Level: 41
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Tail
+- Close Combat
+- Ice Fang
+- Shell Smash
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -4591,13 +4680,22 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Thunder Fang
+- Howl
 
-Zubat
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golbat
+Ability: Inner Focus
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
 Name: GRUNT
@@ -4608,13 +4706,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Wailmer
+Ability: Water Veil
+Level: 37
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Whirlpool
+- Heavy Slam
+- Body Slam
 
-Carvanha
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 39
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Night Slash
+- Ice Fang
 
 === TRAINER_SHAWN ===
 Name: SHAWN
@@ -14980,7 +15086,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Claydol @ Room Service
 Ability: Levitate
@@ -14988,19 +15094,27 @@ Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earthquake
 - Extrasensory
-- Ancient Power
 - Trick Room
 
-Probopass
+Weezing
 Ability: Levitate
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Power Gem
-- Discharge
+- Sludge Bomb
+- Clear Smog
+- Assurance
+- Will-O-Wisp
+
+Nosepass @ Eviolite
+Ability: Magnet Pull
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Body Press
+- Iron Defense
 - Thunder Wave
 - Stealth Rock
 
-Magnezone
+Magneton
 Ability: Sturdy
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -15009,30 +15123,21 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Metal Sound
 - Magnet Rise
 
-Weezing @ Air Balloon
-Ability: Neutralizing Gas
-Level: 38
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Sludge Bomb
-- Clear Smog
-- Assurance
-- Will-O-Wisp
-
 Blaziken
-Ability: Blaze
+Ability: Speed Boost
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fire Punch
-- Aura Sphere
+- Overheat
+- Sky Uppercut
 - Aerial Ace
 - Substitute
 
-Camerupt - Mega @ Cameruptite
-Ability: Sheer Force
+Camerupt @ Cameruptite
+Ability: Solid Rock
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Scorching Sands
-- Eruption
+- Earth Power
+- Heat Wave
 - Rock Slide
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
@@ -15070,13 +15175,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Thunder Wave
 - Harden
 
-Koffing @ Air Balloon
-Ability: Neutralizing Gas
+Koffing
+Ability: Levitate
 Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sludge
 - Assurance
-- Toxic
+- Will-O-Wisp
 
 Camerupt
 Ability: Solid Rock
@@ -17765,7 +17870,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Ability: Analytic
+Ability: Magnet Pull
 Level: 16
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunder Shock
@@ -18305,23 +18410,21 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Ability: Intimidate
+Vileplume
+Ability: Chlorophyll
 Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Snarl
-- Crunch
-- Fire Fang
-- Howl
+- Magical Leaf
+- Acid
+- Strength Sap
 
-Magcargo
-Ability: Flame Body
+Bellossom
+Ability: Chlorophyll
 Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Flamethrower
-- Rock Slide
-- Yawn
-- Recover
+- Magical Leaf
+- Moonblast
+- Quiver Dance
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: GRUNT
@@ -18440,95 +18543,21 @@ Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Psybeam
 - Earth Power
-- Trick Room
+- Ancient Power
+- Cosmic Power
 
-Graveler
-Ability: Rock Head
+Torkoal
+Ability: White Smoke
 Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Earthquake
-- Rock Blast
+- Overheat
+- Body Press
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
 Name: GRUNT
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
-Music: Magma
-Double Battle: Yes
-AI: Smart Trainer
-
-Vulpix
-Ability: Drought
-Level: 34
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Flame Burst
-- Extrasensory
-- Sunny Day
-
-Castform
-Ability: Forecast
-Level: 38
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Weather Ball
-- Sunny Day
-
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
-Music: Magma
-Double Battle: Yes
-AI: Smart Trainer
-
-Golbat
-Ability: Inner Focus
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Poison Fang
-- Aerial Ace
-- Bite
-- Screech
-
-Numel
-Ability: Own Tempo
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Incinerate
-- Earth Power
-- Take Down
-
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt F
-Gender: Female
-Music: Magma
-Double Battle: Yes
-AI: Smart Trainer
-
-Vileplume
-Ability: Chlorophyll
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Magical Leaf
-- Acid
-- Strength Sap
-
-Bellossom
-Ability: Chlorophyll
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Magical Leaf
-- Moonblast
-- Quiver Dance
-
-=== TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
-Name: GRUNT
-Class: Team Magma
-Pic: Magma Grunt F
-Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
@@ -18550,6 +18579,84 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Horn Attack
 - Rollout
 
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer
+
+Golbat
+Ability: Inner Focus
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Fang
+- Aerial Ace
+- Bite
+- Screech
+
+Koffing
+Ability: Levitate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Assurance
+- Clear Smog
+- Will-O-Wisp
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: Female
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer
+
+Mightyena
+Ability: Intimidate
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Snarl
+- Crunch
+- Fire Fang
+- Howl
+
+Magcargo
+Ability: Flame Body
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flamethrower
+- Rock Slide
+- Yawn
+- Recover
+
+=== TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
+Name: GRUNT
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: Female
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer
+
+Vulpix
+Ability: Drought
+Level: 34
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Burst
+- Extrasensory
+- Sunny Day
+
+Castform
+Ability: Forecast
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Weather Ball
+- Sunny Day
+
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
 Name: GRUNT
 Class: Team Magma
@@ -18565,15 +18672,14 @@ Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Psybeam
 - Earth Power
-- Ancient Power
-- Cosmic Power
+- Trick Room
 
-Torkoal
-Ability: White Smoke
+Graveler
+Ability: Rock Head
 Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Overheat
-- Body Press
+- Earthquake
+- Rock Blast
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
 Name: TABITHA
@@ -18778,7 +18884,7 @@ Starmie
 Ability: Natural Cure
 Level: 30
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Gun
+- Aqua Jet
 - Psybeam
 - Swift
 
