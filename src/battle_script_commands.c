@@ -13588,7 +13588,8 @@ static void Cmd_handleballthrow(void)
                 break;
             case BALL_SAFARI:
                 if (B_SAFARI_BALL_MODIFIER <= GEN_7)
-                    ballMultiplier = 150;
+                    ballMultiplier = 350;
+                    // ballMultiplier = 150;
                 else if (B_SAFARI_BALL_MODIFIER == GEN_1)
                     ballMultiplier = 200;
                 break;
