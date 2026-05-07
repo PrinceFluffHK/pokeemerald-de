@@ -1027,17 +1027,14 @@ Route104_Text_ImNotATrainer:
 Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 	.string "I like to go hiking in the woods\n"
 	.string "with my family!\p"
-	.string "Here, you can have this.\p"
-	.string "It's pretty fragile, but I met a\n"
-	.string "guy in Ever Grande City who sold\n"
-	.string "all kinds of them for cheap!."
+	.string "Here, you can have this TM.\p"
+	.string "TMs like this one are pretty sturdy,\n"
+	.string "I've never seen one break!$"
 
 Route104_Text_TMsAreOneTimeUse:
 	.string "A word of advice!\p"
-	.string "A TM, TECHNICAL MACHINE, is good only\n"
-	.string "for one-time use.\p"
-	.string "Once you use it, it's gone until\n"
-	.string "you find someone to sell you more.$"
+	.string "A TM, or TECHNICAL MACHINE, can be\n"
+	.string "used over and over again!$"
 
 Route104_Text_DontNeedThisTakeIt:
 	.string "This FLOWER SHOP started selling\n"
