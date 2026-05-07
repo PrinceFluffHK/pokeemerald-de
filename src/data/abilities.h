@@ -2419,6 +2419,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Sand immune with barbs."),
         .aiRating = 6,
     },
+
+    [ABILITY_PYROCLASTIC_FLOW] =
+    {
+        .name = _("Pyroclastic Flow"),
+        .description = COMPOUND_STRING("Burns attackers."),
+        .aiRating = 8,
+    },
     
     // [ABILITY_PSYCH_OUT] =
     // {
