@@ -2177,9 +2177,14 @@ static void CreateSpeedTiersWindow(void)
                 else if(B_POSITION_OPPONENT_RIGHT == B_POSITION_OPPONENT_RIGHT)
                     StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{V_D_ARROW}"));
             }
-            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS)
+            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS 
+                     || MOVE_TARGET_OPPONENTS_FIELD)
             {
                 StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}"));
+            }
+            else if (moveTarget == MOVE_TARGET_USER)
+            {
+                    StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
             }
         }
     }
@@ -2222,9 +2227,14 @@ static void CreateSpeedTiersWindow(void)
                 else if(B_POSITION_OPPONENT_LEFT == B_POSITION_OPPONENT_LEFT)
                     StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{V_D_ARROW}"));
             }
-            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS)
+            else if (moveTarget == MOVE_TARGET_ALL_BATTLERS
+                     || MOVE_TARGET_OPPONENTS_FIELD)
             {
                 StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}"));
+            }
+            else if (moveTarget == MOVE_TARGET_USER)
+            {
+                    StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
             }
         }
     }
