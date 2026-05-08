@@ -64,7 +64,6 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_EJECT_PACK
 	.2byte ITEM_ROOM_SERVICE
 	.2byte ITEM_UTILITY_UMBRELLA
-	.2byte ITEM_BLACK_SLUDGE
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
