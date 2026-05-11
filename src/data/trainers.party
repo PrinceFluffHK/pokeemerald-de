@@ -217,13 +217,20 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Thunder Fang
+- Howl
 
-Poochyena
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Crawdaunt
+Ability: Adaptability
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Razor Shell
+- Night Slash
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: GRUNT
@@ -234,12 +241,17 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crunch
+- Ice Fang
 
-Carvanha
-Level: 36
+Cradily
+Ability: Suction Cups
+Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
@@ -251,13 +263,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Seviper
+Ability: Shed Skin
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Tail
+- Crunch
+- Wrap
 
-Zubat
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Toxic Boost
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Thunder Fang
+- Howl
 
 === TRAINER_GABRIELLE_1 ===
 Name: GABRIELLE
@@ -402,13 +422,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crunch
+- Ice Fang
 
-Carvanha
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Machamp
+Ability: Guts
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brick Break
+- Knock Off
+- Focus Energy
 
 === TRAINER_DECLAN ===
 Name: DECLAN
@@ -925,9 +953,8 @@ Pelipper
 Ability: Drizzle
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Wing Attack
+- Air Slash
 - Water Pulse
-- Tailwind
 
 Skarmory
 Ability: Weak Armor
@@ -963,13 +990,48 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Sharpedo
-Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Skarmory
+Ability: Weak Armor
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Steel Wing
+- Slash
+- Payback
+- Spikes
 
-Mightyena
-Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Armaldo
+Ability: Swift Swim
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Slide
+- X-Scissor
+- Liquidation
+- Knock Off
+
+Lanturn @ Choice Scarf
+Ability: Dazzling
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Hydro Pump
+- Volt Switch
+
+Pelipper
+Ability: Drizzle
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Hurricane
+- Water Pulse
+- U-Turn
+- Rain Dance
+
+Gorebyss @ White Herb
+Ability: Swift Swim
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scald
+- Moonblast
+- Ice Beam
+- Shell Smash
 
 === TRAINER_ARCHIE ===
 Name: ARCHIE
@@ -980,17 +1042,56 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
 Crobat
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Sharpedo
+Ability: Inner Focus
 Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dual Wingbeat
+- Cross Poison
+- U-Turn
+
+Swampert
+Ability: Gooey
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Muddy Water
+- Stomping Tantrum
+- Rock Slide
+- Stealth Rock
+
+Gyarados
+Ability: Intimidate
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Ice Fang
+- Crunch
+- Temper Flare
+
+Muk @ Black Sludge
+Ability: Poison Touch
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Acid Spray
+- Knock Off
+- Mud Shot
+- Haze
+
+Tentacruel
+Ability: Clear Body
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scald
+- Sludge Bomb
+- Wrap
+
+Sharpedo @ Sharpedonite
+Ability: Speed Boost
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crunch
+- Ice Fang
 
 === TRAINER_LEAH ===
 Name: LEAH
@@ -14253,13 +14354,29 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Gyarados
+Ability: Intimidate
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Tail
+- Ice Fang
+- Crunch
 
-Golbat
-Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tentacruel
+Ability: Clear Body
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scald
+- Sludge Bomb
+- Wrap
+
+Wailord
+Ability: Pressure
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Spout
+- Heavy Slam
+- Body Slam
 
 === TRAINER_GRUNT_UNUSED ===
 Name: GRUNT
@@ -17262,7 +17379,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lanturn
-Ability: Dazzling
+Ability: Volt Absorb
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
@@ -17538,7 +17655,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lanturn
-Ability: Dazzling
+Ability: Volt Absorb
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
