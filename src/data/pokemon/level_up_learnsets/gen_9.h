@@ -7942,7 +7942,9 @@ static const struct LevelUpMove sGardevoirLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(35, MOVE_CALM_MIND),
     LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
+    //T&L
     LEVEL_UP_MOVE(49, MOVE_MOONBLAST),
+    //Juan
     LEVEL_UP_MOVE(56, MOVE_DREAM_EATER),
     LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
@@ -7982,7 +7984,9 @@ static const struct LevelUpMove sGalladeLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(35, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(42, MOVE_PSYCHO_CUT),
+    //T&L
     LEVEL_UP_MOVE(49, MOVE_HEAL_PULSE),
+    //Juan
     LEVEL_UP_MOVE(56, MOVE_WIDE_GUARD),
     LEVEL_UP_MOVE(56, MOVE_QUICK_GUARD),
     LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
@@ -9339,13 +9343,14 @@ static const struct LevelUpMove sAltariaLevelUpLearnset[] = {
 
 #if P_FAMILY_ZANGOOSE
 static const struct LevelUpMove sZangooseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DETECT),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 1, MOVE_COUNTER),
     LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE( 1, MOVE_CURSE),
     LEVEL_UP_MOVE( 1, MOVE_FLAIL),
-    LEVEL_UP_MOVE( 1, MOVE_BELLY_DRUM),
+    LEVEL_UP_MOVE( 1, MOVE_TAUNT),
     LEVEL_UP_MOVE( 1, MOVE_FEINT),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_HIT),
@@ -9366,11 +9371,13 @@ static const struct LevelUpMove sZangooseLevelUpLearnset[] = {
     //Norman
     LEVEL_UP_MOVE(33, MOVE_SWITCHEROO),
     //Winona
-    LEVEL_UP_MOVE(36, MOVE_DETECT),
+    LEVEL_UP_MOVE(36, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(40, MOVE_X_SCISSOR),
-    LEVEL_UP_MOVE(43, MOVE_TAUNT),
-    LEVEL_UP_MOVE(47, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(43, MOVE_BELLY_DRUM),
+    //T&L
+    LEVEL_UP_MOVE(47, MOVE_DIRE_CLAW),
     LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZANGOOSE
@@ -9381,23 +9388,25 @@ static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 4, MOVE_BITE),
     LEVEL_UP_MOVE( 6, MOVE_LICK),
-    LEVEL_UP_MOVE( 9, MOVE_POISON_TAIL),
+    LEVEL_UP_MOVE( 9, MOVE_GASTRO_ACID),
     LEVEL_UP_MOVE(11, MOVE_FEINT),
     LEVEL_UP_MOVE(14, MOVE_SCREECH),
     LEVEL_UP_MOVE(19, MOVE_GLARE),
     LEVEL_UP_MOVE(21, MOVE_POISON_FANG),
     LEVEL_UP_MOVE(24, MOVE_VENOSHOCK),
     //Catch
-    LEVEL_UP_MOVE(29, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE(29, MOVE_POISON_TAIL),
     //Flannery
     LEVEL_UP_MOVE(31, MOVE_POISON_JAB),
     //Norman
     LEVEL_UP_MOVE(34, MOVE_HAZE),
-    //Seviper
+    //Winona
     LEVEL_UP_MOVE(39, MOVE_CRUNCH),
     LEVEL_UP_MOVE(41, MOVE_BELCH),
     LEVEL_UP_MOVE(44, MOVE_COIL),
+    //T&L
     LEVEL_UP_MOVE(46, MOVE_SLUDGE_BOMB),
+    //Juan
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SEVIPER
@@ -9425,6 +9434,7 @@ static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
     //Tate&Liza
     LEVEL_UP_MOVE(45, MOVE_MAGIC_ROOM),
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LUNATONE
