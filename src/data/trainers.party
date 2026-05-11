@@ -253,6 +253,9 @@ Cradily
 Ability: Suction Cups
 Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+- Giga Drain
+- Ancient Power
+- Leech Seed
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: GRUNT
