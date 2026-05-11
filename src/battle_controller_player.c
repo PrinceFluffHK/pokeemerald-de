@@ -91,7 +91,7 @@ static void Task_SetControllerToWaitForString(u8);
 static void Task_GiveExpWithExpBar(u8);
 static void Task_UpdateLvlInHealthbox(u8);
 static void PrintLinkStandbyMsg(void);
-static void CreateSpeedTiersWindow(void);
+static void CreateSpeedTiersWindow(u32 battler);
 
 static void ReloadMoveNames(u32 battler);
 static u32 CheckTypeEffectiveness(u32 battlerAtk, u32 battlerDef);
@@ -437,12 +437,12 @@ static void HandleInputChooseAction(u32 battler)
                 }
                 else
                 {
-                    CreateSpeedTiersWindow();
+                    CreateSpeedTiersWindow(battler);
                     gBattleStruct->movePreviewDisplayed=0;
                 }
                 break;
             case 2:
-                    CreateSpeedTiersWindow();
+                    CreateSpeedTiersWindow(battler);
                     gBattleStruct->movePreviewDisplayed=0;
                 break;
         }
@@ -2132,7 +2132,7 @@ static void PlayerHandleChooseAction(u32 battler)
     else
     {
         gBattleStruct->movePreviewDisplayed = 0;
-        CreateSpeedTiersWindow();
+        CreateSpeedTiersWindow(battler);
         //BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
     }
 }
@@ -2214,7 +2214,7 @@ static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeed
     AppendMoveTarget(battler, isRightSide);
 }
 
-static void CreateSpeedTiersWindow(void)
+static void CreateSpeedTiersWindow(u32 battler)
 {
     StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
 
@@ -2233,19 +2233,33 @@ static void CreateSpeedTiersWindow(void)
     }
 
     StringAppend(gStringVar1, COMPOUND_STRING("\nPrev  "));
-
+    
     bool32 pLeftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
     bool32 pRightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
 
+    
+    
     if (pLeftAlive)
+        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
+            StringAppend(gStringVar1, COMPOUND_STRING("["));
+
         AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
+
+        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
+            StringAppend(gStringVar1, COMPOUND_STRING("]"));
 
     if (pRightAlive)
     {
         if (pLeftAlive)
             StringAppend(gStringVar1, COMPOUND_STRING(" / "));
 
+        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
+            StringAppend(gStringVar1, COMPOUND_STRING("["));
+
         AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
+
+        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
+            StringAppend(gStringVar1, COMPOUND_STRING("]"));
     }
 
     BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
