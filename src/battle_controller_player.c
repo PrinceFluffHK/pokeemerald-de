@@ -2242,14 +2242,12 @@ static void CreateSpeedTiersWindow(u32 battler)
     if (pLeftAlive)
     {
         if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
-            {
-                StringAppend(gStringVar1, COMPOUND_STRING("["));
-            }
+                StringAppend(gStringVar1, COMPOUND_STRING("-"));
 
         AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
 
         if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
-            StringAppend(gStringVar1, COMPOUND_STRING("]"));
+            StringAppend(gStringVar1, COMPOUND_STRING("-"));
     }
 
     if (pRightAlive)
@@ -2258,14 +2256,12 @@ static void CreateSpeedTiersWindow(u32 battler)
             StringAppend(gStringVar1, COMPOUND_STRING(" / "));
 
         if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
-        {
-            StringAppend(gStringVar1, COMPOUND_STRING("["));
-        }
+            StringAppend(gStringVar1, COMPOUND_STRING("-"));
 
         AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
 
-        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
-            StringAppend(gStringVar1, COMPOUND_STRING("]"));
+        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
+            StringAppend(gStringVar1, COMPOUND_STRING("-"));
     }
 
     BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
