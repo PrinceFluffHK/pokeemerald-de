@@ -217,13 +217,20 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Poochyena
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Intimidate
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Thunder Fang
+- Howl
 
-Poochyena
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Crawdaunt
+Ability: Adaptability
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Razor Shell
+- Night Slash
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: GRUNT
@@ -234,13 +241,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crunch
+- Ice Fang
 
-Carvanha
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Cradily
+Ability: Suction Cups
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Giga Drain
+- Ancient Power
+- Leech Seed
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: GRUNT
@@ -251,13 +266,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Seviper
+Ability: Shed Skin
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Poison Tail
+- Crunch
+- Wrap
 
-Zubat
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mightyena
+Ability: Toxic Boost
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Thunder Fang
+- Howl
 
 === TRAINER_GABRIELLE_1 ===
 Name: GABRIELLE
@@ -402,13 +425,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sharpedo
+Ability: Rough Skin
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crunch
+- Ice Fang
 
-Carvanha
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Machamp
+Ability: Guts
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brick Break
+- Knock Off
+- Focus Energy
 
 === TRAINER_DECLAN ===
 Name: DECLAN
@@ -617,13 +648,21 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Numel
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Camerupt
+Ability: Solid Rock
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earth Power
+- Eruption
+- Rock Slide
 
-Numel
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golem
+Ability: Rock Head
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Stomping Tantrum
+- Wide Guard
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: GRUNT
@@ -961,7 +1000,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Skarmory
 Ability: Weak Armor
@@ -1013,19 +1052,58 @@ Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer
-
-Mightyena
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+AI: Smart Trainer / Ace Pokemon
 
 Crobat
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Sharpedo
+Ability: Inner Focus
 Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dual Wingbeat
+- Cross Poison
+- U-Turn
+
+Swampert
+Ability: Gooey
+Level: 43
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Muddy Water
+- Stomping Tantrum
+- Rock Slide
+- Stealth Rock
+
+Gyarados
+Ability: Intimidate
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Ice Fang
+- Crunch
+- Temper Flare
+
+Muk @ Black Sludge
+Ability: Poison Touch
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Acid Spray
+- Knock Off
+- Mud Shot
+- Haze
+
+Tentacruel
+Ability: Clear Body
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scald
+- Sludge Bomb
+- Wrap
+
+Sharpedo @ Sharpedonite
+Ability: Speed Boost
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crunch
+- Ice Fang
 
 === TRAINER_LEAH ===
 Name: LEAH
@@ -2982,16 +3060,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Mightyena
-Level: 26
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Intimidate
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Fire Fang
+- Howl
 
-Mightyena
-Level: 28
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Mawile @ Muscle Band
+Ability: Intimidate
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Iron Head
+- Play Rough
+- Poison Fang
 
-Numel
-Level: 30
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Camerupt
+Ability: Solid Rock
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earth Power
+- Eruption
+- Rock Slide
 
 === TRAINER_CINDY_2 ===
 Name: CINDY
@@ -6961,7 +7051,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-"Crawdaunt
+Crawdaunt
 Ability: Adaptability
 Level: 48
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -12841,19 +12931,34 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Camerupt
-Level: 36
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Torkoal @ Eject Pack
+Ability: Drought
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Overheat
+- Body Press
+- Body Slam
+- Iron Defense
 
-Mightyena
-Level: 38
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tropius
+Ability: Protosynthesis
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Leaf Blade
+- Fly
+- Stomp
+- Sunny Day
 
-Golbat
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magcargo @ Air Balloon
+Ability: Pyroclastic Flow
+Level: 44
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heat Wave
+- Power Gem
+- Earth Power
+- Gyro Ball
 
 === TRAINER_EDWIN_2 ===
 Name: EDWIN
@@ -14819,13 +14924,22 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Crobat
+Ability: Inner Focus
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Cross Poison
+- Aerial Ace
+- Bite
 
-Poochyena
-Level: 31
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ninetales
+Ability: Flash Fire
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Burst
+- Extrasensory
+- Hex
+- Disable
 
 === TRAINER_GRUNT_SPACE_CENTER_4 ===
 Name: GRUNT
@@ -14836,13 +14950,22 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Baltoy
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Claydol
+Ability: Levitate
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Extrasensory
+- Earth Power
+- Cosmic Power
 
-Baltoy
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Nosepass @ Eviolite
+Ability: Sturdy
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Slide
+- Thunderbolt
+- Body Press
+- Thunder Wave
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
 Name: GRUNT
@@ -14853,13 +14976,20 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Weezing
+Ability: Levitate
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Clear Smog
+- Will-O-Wisp
 
-Zubat
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Donphan
+Ability: Sturdy
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earthquake
+- Body Press
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
 Name: GRUNT
@@ -14870,13 +15000,21 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Rhydon
+Ability: Lightning Rod
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Drill Run
+- Stone Edge
+- Fire Punch
 
 Mightyena
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Intimidate
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Crunch
+- Fire Fang
+- Howl
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
 Name: GRUNT
@@ -14887,13 +15025,28 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Baltoy
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Magcargo
+Ability: Pyroclastic Flow
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Heat Wave
+- Power Gem
 
-Baltoy
-Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golem
+Ability: Rock Head
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Stomping Tantrum
+- Wide Guard
+
+Magneton
+Ability: Magnet Pull
+Level: 42
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Charge Beam
+- Flash Cannon
+- Tri Attack
 
 === TRAINER_MACEY ===
 Name: MACEY
@@ -15069,7 +15222,7 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Torkoal
+Torkoal @ Eject Pack
 Ability: Drought
 Level: 22
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -18808,7 +18961,7 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Torkoal
+Torkoal @ Eject Pack
 Ability: Drought
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -18886,17 +19039,31 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Crobat
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Camerupt
+Weezing
+Ability: Levitate
 Level: 44
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Heat Wave
+- Assurance
+- Will-O-Wisp
+
+Magneton
+Ability: Sturdy
+Level: 44
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunderbolt
+- Flash Cannon
+- Metal Sound
+- Magnet Rise
+
+Camerupt @ Cameruptite
+Ability: Anger Point
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earth Power
+- Heat Wave
+- Rock Slide
 
 === TRAINER_PETE ===
 Name: PETE
