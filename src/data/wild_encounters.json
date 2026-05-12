@@ -65,6 +65,16 @@
               11
             ]
           }
+        },
+        {
+          "type": "water_mons",
+          "encounter_rates": [
+            60,
+            30,
+            5,
+            4,
+            1
+          ]
         }
       ],
       "encounters": [
@@ -604,6 +614,36 @@
                 "min_level": 35,
                 "max_level": 45,
                 "species": "SPECIES_WAILORD"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 35,
+                "species": "SPECIES_TENTACOOL"
+              },
+              {
+                "min_level": 10,
+                "max_level": 30,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 15,
+                "max_level": 25,
+                "species": "SPECIES_WINGULL"
+              },
+              {
+                "min_level": 25,
+                "max_level": 30,
+                "species": "SPECIES_PELIPPER"
+              },
+              {
+                "min_level": 25,
+                "max_level": 30,
+                "species": "SPECIES_PELIPPER"
               }
             ]
           }
@@ -2079,7 +2119,37 @@
         },
         {
           "map": "MAP_UNDERWATER_ROUTE126",
-          "base_label": "gUnderwater_Route126"
+          "base_label": "gUnderwater_Route126",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 37,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              }
+            ]
+          }
         },
         {
           "map": "MAP_ABANDONED_SHIP_ROOMS_B1F",

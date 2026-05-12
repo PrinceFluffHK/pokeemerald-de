@@ -8,7 +8,6 @@
 #include "constants/form_change_types.h"
 #include "constants/hold_effects.h"
 #include "constants/items.h"
-#include "constants/map_groups.h"
 #include "constants/regions.h"
 #include "constants/region_map_sections.h"
 #include "constants/map_groups.h"
