@@ -217,20 +217,13 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Mightyena
-Ability: Intimidate
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Crunch
-- Thunder Fang
-- Howl
+Poochyena
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Crawdaunt
-Ability: Adaptability
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Razor Shell
-- Night Slash
+Poochyena
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: GRUNT
@@ -241,21 +234,13 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Sharpedo
-Ability: Rough Skin
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Aqua Jet
-- Crunch
-- Ice Fang
-
-Cradily
-Ability: Suction Cups
-Level: 42
+Carvanha
+Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Giga Drain
-- Ancient Power
-- Leech Seed
+
+Carvanha
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: GRUNT
@@ -266,21 +251,13 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Seviper
-Ability: Shed Skin
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Poison Tail
-- Crunch
-- Wrap
+Zubat
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Mightyena
-Ability: Toxic Boost
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Crunch
-- Thunder Fang
-- Howl
+Zubat
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_GABRIELLE_1 ===
 Name: GABRIELLE
@@ -425,21 +402,13 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Sharpedo
-Ability: Rough Skin
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Aqua Jet
-- Crunch
-- Ice Fang
+Carvanha
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Machamp
-Ability: Guts
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Brick Break
-- Knock Off
-- Focus Energy
+Carvanha
+Level: 36
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_DECLAN ===
 Name: DECLAN
@@ -956,8 +925,9 @@ Pelipper
 Ability: Drizzle
 Level: 31
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Air Slash
+- Wing Attack
 - Water Pulse
+- Tailwind
 
 Skarmory
 Ability: Weak Armor
@@ -1045,56 +1015,17 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
+Mightyena
+Level: 41
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
 Crobat
-Ability: Inner Focus
+Level: 41
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+Sharpedo
 Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Dual Wingbeat
-- Cross Poison
-- U-Turn
-
-Swampert
-Ability: Gooey
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Muddy Water
-- Stomping Tantrum
-- Rock Slide
-- Stealth Rock
-
-Gyarados
-Ability: Intimidate
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Waterfall
-- Ice Fang
-- Crunch
-- Temper Flare
-
-Muk @ Black Sludge
-Ability: Poison Touch
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Acid Spray
-- Knock Off
-- Mud Shot
-- Haze
-
-Tentacruel
-Ability: Clear Body
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Scald
-- Sludge Bomb
-- Wrap
-
-Sharpedo @ Sharpedonite
-Ability: Speed Boost
-Level: 47
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Aqua Jet
-- Crunch
-- Ice Fang
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_LEAH ===
 Name: LEAH
@@ -3024,21 +2955,22 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Luvdisc @ Nugget
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Attract
-- Sweet Kiss
-- Flail
-- Water Pulse
+Whiscash
+Ability: Oblivious
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Muddy Water
+- Earth Power
+- Zen Headbutt
 
-Luvdisc @ Nugget
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Attract
-- Safeguard
-- Take Down
-- Water Pulse
+Luvdisc
+Ability: Swift Swim
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Draining Kiss
+- Hydro Pump
+- Charm
+- Life Dew
 
 === TRAINER_GRUNT_SPACE_CENTER_2 ===
 Name: GRUNT
@@ -3091,13 +3023,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Seaking @ Nugget
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Seaking
+Ability: Swift Swim
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Megahorn
+- Smart Strike
 
-Seaking @ Nugget
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Whiscash
+Ability: Oblivious
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Muddy Water
+- Earth Power
+- Zen Headbutt
 
 === TRAINER_NAOMI ===
 Name: NAOMI
@@ -3305,13 +3245,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Goldeen
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Seaking
+Ability: Swift Swim
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Megahorn
+- Smart Strike
 
-Goldeen
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Corsola
+Ability: Regenerator
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Power Gem
+- Scald
+- Life Dew
 
 === TRAINER_BRIDGET ===
 Name: BRIDGET
@@ -3322,13 +3270,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Azumarill
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Walrein
+Ability: Thick Fat
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Aurora Beam
+- Body Slam
 
-Azumarill
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Gorebyss
+Ability: Swift Swim
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast
+- Hydro Pump
+- Coil
 
 === TRAINER_OLIVIA ===
 Name: OLIVIA
@@ -3339,28 +3295,28 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Clamperl
-Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Iron Defense
-- Whirlpool
-- Rain Dance
-- Water Pulse
+Starmie
+Ability: Natural Cure
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scald
+- Psychic
+- Thunderbolt
 
-Corphish
-Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Taunt
-- Crabhammer
-- Water Pulse
+Crawdaunt
+Ability: Adaptability
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Razor Shell
+- Night Slash
 
-Lombre
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Uproar
-- Fury Swipes
-- Fake Out
-- Water Pulse
+Gyarados
+Ability: Intimidate
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Crunch
+- Ice Fang
 
 === TRAINER_TIFFANY ===
 Name: TIFFANY
@@ -3371,13 +3327,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Carvanha
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pelipper
+Ability: Rain Dish
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Air Slash
+- Scald
+- Protect
 
 Sharpedo
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Rough Skin
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Liquidation
+- Crunch
+- Ice Fang
 
 === TRAINER_JESSICA_2 ===
 Name: JESSICA
@@ -6997,45 +6961,58 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Luvdisc
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Water Pulse
-- Attract
-- Sweet Kiss
-- Flail
+"Crawdaunt
+Ability: Adaptability
+Level: 48
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crabhammer
+- Knock Off
 
 Whiscash
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Rain Dance
-- Water Pulse
-- Amnesia
-- Earthquake
+Ability: Oblivious
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Muddy Water
+- Earth Power
+- Zen Headbutt
+- Dragon Dance
 
-Sealeo
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Encore
+Walrein
+Ability: Thick Fat
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Ice Beam
 - Body Slam
-- Aurora Beam
-- Water Pulse
+- Substitute
 
-Crawdaunt
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Water Pulse
-- Crabhammer
-- Taunt
-- Leer
+Ludicolo
+Ability: Rain Dish
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Energy Ball
+- Hydro Pump
+- Rain Dance
+
+Milotic @ Leftovers
+Ability: Competitive
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scald
+- Alluring Voice
+- Coil
+- Recover
 
 Kingdra @ Chesto Berry
-Level: 46
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Water Pulse
-- Double Team
-- Ice Beam
+Ability: Swift Swim
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Snipe Shot
+- Dragon Pulse
 - Rest
+- Rain Dance
 
 === TRAINER_JERRY_1 ===
 Name: JERRY
@@ -7668,17 +7645,21 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Azurill @ Oran Berry
-Level: 35
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Azumarill
+Ability: Thick Fat
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Play Rough
+- Bounce
 
-Marill @ Oran Berry
-Level: 37
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Azumarill @ Oran Berry
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ludicolo
+Ability: Rain Dish
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Energy Ball
+- Bubble Beam
 
 === TRAINER_ISABEL_1 ===
 Name: ISABEL
@@ -12556,21 +12537,21 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Feebas @ Oran Berry
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flail
-- Water Pulse
-- Return
-- Attract
+Azumarill
+Ability: Huge Power
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Play Rough
+- Bounce
 
-Feebas @ Oran Berry
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Flail
+Milotic
+Ability: Competitive
+Level: 46
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Pulse
-- Return
-- Attract
+- Alluring Voice
+- Recover
 
 === TRAINER_JAZMYN ===
 Name: JAZMYN
@@ -12720,7 +12701,7 @@ Rhydon
 Ability: Lightning Rod
 Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Rock Blast
+- Stone Edge
 - Drill Run
 - Horn Attack
 
@@ -14359,7 +14340,7 @@ AI: Smart Trainer
 
 Gyarados
 Ability: Intimidate
-Level: 42
+Level: 43
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Aqua Tail
 - Ice Fang
@@ -14367,7 +14348,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Tentacruel
 Ability: Clear Body
-Level: 42
+Level: 43
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Scald
 - Sludge Bomb
@@ -14375,7 +14356,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Wailord
 Ability: Pressure
-Level: 42
+Level: 43
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Spout
 - Heavy Slam
@@ -15531,12 +15512,21 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Luvdisc
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Swift Swim
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Draining Kiss
+- Hydro Pump
+- Charm
+- Life Dew
 
-Luvdisc
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Golduck
+Ability: Cloud Nine
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Liquidation
+- Zen Headbutt
+- Disable
 
 === TRAINER_CRISSY ===
 Name: CRISSY
@@ -15547,13 +15537,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Goldeen
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Lanturn
+Ability: Volt Absorb
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Hydro Pump
+- Thunderbolt
+- Signal Beam
 
-Wailmer
-Level: 39
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Wailord
+Ability: Water Veil
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dive
+- Heavy Slam
+- Body Slam
 
 === TRAINER_RICK ===
 Name: RICK
@@ -17382,7 +17380,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lanturn
-Ability: Volt Absorb
+Ability: Dazzling
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
@@ -17658,7 +17656,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lanturn
-Ability: Volt Absorb
+Ability: Dazzling
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
@@ -18844,14 +18842,15 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Solar Beam
 - Fly
 - Stomp
+- Sunny Day
 
 Magcargo @ Air Balloon
-Ability: Orichalcum Pulse
+Ability: Pyroclastic Flow
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Overheat
-- Rock Slide
-- Earthquake
+- Heat Wave
+- Power Gem
+- Earth Power
 - Gyro Ball
 
 === TRAINER_DARCY ===
@@ -18875,7 +18874,7 @@ Ability: Solid Rock
 Level: 41
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earth Power
-- Heat Wave
+- Eruption
 - Rock Slide
 
 === TRAINER_MAXIE_MOSSDEEP ===
