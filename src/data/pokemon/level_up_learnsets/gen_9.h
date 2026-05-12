@@ -3594,6 +3594,8 @@ static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(37, MOVE_WATERFALL),
     LEVEL_UP_MOVE(44, MOVE_SOAK),
+    //T&L
+    //Juan
     LEVEL_UP_MOVE(51, MOVE_MEGAHORN),
     LEVEL_UP_MOVE(58, MOVE_DRILL_RUN),
     LEVEL_UP_END
@@ -3612,6 +3614,8 @@ static const struct LevelUpMove sStaryuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(28, MOVE_BRINE),
     LEVEL_UP_MOVE(32, MOVE_LIGHT_SCREEN),
+    //Catch
+    //Evo Water Stone
     LEVEL_UP_MOVE(36, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC),
     LEVEL_UP_MOVE(44, MOVE_SURF),
@@ -3627,7 +3631,7 @@ static const struct LevelUpMove sStarmieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_AQUA_JET),
     LEVEL_UP_MOVE( 8, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(12, MOVE_RAPID_SPIN),
-    //Catch
+    //Evo Water Stone
     LEVEL_UP_MOVE(16, MOVE_MINIMIZE),
     LEVEL_UP_MOVE(20, MOVE_SWIFT),
     LEVEL_UP_MOVE(24, MOVE_PSYBEAM),
