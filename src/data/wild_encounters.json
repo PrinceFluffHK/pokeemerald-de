@@ -65,6 +65,16 @@
               11
             ]
           }
+        },
+        {
+          "type": "water_mons",
+          "encounter_rates": [
+            50,
+            30,
+            10,
+            5,
+            5
+          ]
         }
       ],
       "encounters": [
@@ -2079,7 +2089,37 @@
         },
         {
           "map": "MAP_UNDERWATER_ROUTE126",
-          "base_label": "gUnderwater_Route126"
+          "base_label": "gUnderwater_Route126",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 35,
+                "max_level": 38,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 34,
+                "max_level": 36,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 37,
+                "max_level": 40,
+                "species": "SPECIES_LANTURN"
+              },
+              {
+                "min_level": 37,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 38,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              }
+            ]
+          }
         },
         {
           "map": "MAP_ABANDONED_SHIP_ROOMS_B1F",
@@ -8009,7 +8049,37 @@
         },
         {
           "map": "MAP_UNDERWATER_ROUTE124",
-          "base_label": "gUnderwater_Route124"
+          "base_label": "gUnderwater_Route124",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 35,
+                "max_level": 38,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 34,
+                "max_level": 36,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 37,
+                "max_level": 40,
+                "species": "SPECIES_LANTURN"
+              },
+              {
+                "min_level": 37,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 38,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              }
+            ]
+          }
         },
         {
           "map": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
