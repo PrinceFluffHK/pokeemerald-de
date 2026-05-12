@@ -69,11 +69,11 @@
         {
           "type": "water_mons",
           "encounter_rates": [
-            60,
+            50,
             30,
+            10,
             5,
-            4,
-            1
+            5
           ]
         }
       ],
@@ -614,36 +614,6 @@
                 "min_level": 35,
                 "max_level": 45,
                 "species": "SPECIES_WAILORD"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 4,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
-              },
-              {
-                "min_level": 10,
-                "max_level": 30,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
-              },
-              {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_PELIPPER"
               }
             ]
           }
@@ -2125,18 +2095,18 @@
             "mons": [
               {
                 "min_level": 35,
-                "max_level": 40,
+                "max_level": 38,
                 "species": "SPECIES_CLAMPERL"
               },
               {
-                "min_level": 35,
-                "max_level": 40,
+                "min_level": 34,
+                "max_level": 36,
                 "species": "SPECIES_CHINCHOU"
               },
               {
-                "min_level": 35,
+                "min_level": 37,
                 "max_level": 40,
-                "species": "SPECIES_RELICANTH"
+                "species": "SPECIES_LANTURN"
               },
               {
                 "min_level": 37,
@@ -2144,7 +2114,7 @@
                 "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 40,
+                "min_level": 38,
                 "max_level": 40,
                 "species": "SPECIES_RELICANTH"
               }
@@ -8079,7 +8049,37 @@
         },
         {
           "map": "MAP_UNDERWATER_ROUTE124",
-          "base_label": "gUnderwater_Route124"
+          "base_label": "gUnderwater_Route124",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 35,
+                "max_level": 38,
+                "species": "SPECIES_CLAMPERL"
+              },
+              {
+                "min_level": 34,
+                "max_level": 36,
+                "species": "SPECIES_CHINCHOU"
+              },
+              {
+                "min_level": 37,
+                "max_level": 40,
+                "species": "SPECIES_LANTURN"
+              },
+              {
+                "min_level": 37,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 38,
+                "max_level": 40,
+                "species": "SPECIES_RELICANTH"
+              }
+            ]
+          }
         },
         {
           "map": "MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
