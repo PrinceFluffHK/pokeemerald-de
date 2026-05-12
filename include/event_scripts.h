@@ -573,6 +573,7 @@ extern const u8 EventScript_UseWaterfall[];
 extern const u8 EventScript_CannotUseWaterfall[];
 extern const u8 EventScript_UseDive[];
 extern const u8 EventScript_UseDiveUnderwater[];
+extern const u8 EventScript_CurrentTooFast[];
 extern const u8 EventScript_UseRockClimb[];
 extern const u8 EventScript_FallDownHole[];
 extern const u8 EventScript_FieldPoison[];
@@ -685,6 +686,10 @@ extern const u8 EventScript_PokemonGotAway[];
 extern const u8 EventScript_LostSignal[];
 extern const u8 EventScript_TooDark[];
 extern const u8 EventScript_MovedTooFast[];
+
+extern const u8 FieldMove_EventScript_Cut[]; // field items
+
+extern const u8 FieldMove_EventScript_Cut[]; // field items
 
 
 #endif // GUARD_EVENT_SCRIPTS_H
