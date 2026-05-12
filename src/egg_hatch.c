@@ -934,6 +934,7 @@ u8 GetEggCyclesToSubtract(void)
             enum Ability ability = GetMonAbility(&gPlayerParty[i]);
             if (ability == ABILITY_MAGMA_ARMOR
              || ability == ABILITY_FLAME_BODY
+             || ability == ABILITY_PYROCLASTIC_FLOW
              || ability == ABILITY_STEAM_ENGINE)
                 return 2;
         }
