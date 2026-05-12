@@ -1495,7 +1495,9 @@ static const struct LevelUpMove sGolduckLevelUpLearnset[] = {
     //Winona
     LEVEL_UP_MOVE(36, MOVE_AMNESIA),
     LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP),
+    //T&L
     LEVEL_UP_MOVE(45, MOVE_WONDER_ROOM),
+    //Juan
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PSYDUCK
@@ -7685,7 +7687,9 @@ static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
     //Evo Post-Norman
     //Winona
     LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
+    //T&L
     LEVEL_UP_MOVE(50, MOVE_ZEN_HEADBUTT),
+    //Juan
     LEVEL_UP_MOVE(57, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(64, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
