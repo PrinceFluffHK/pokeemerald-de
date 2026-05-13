@@ -2426,6 +2426,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Burns attackers."),
         .aiRating = 8,
     },
+
+    [ABILITY_JUGGERNAUT] =
+    {
+        .name = _("Juggernaut"),
+        .description = COMPOUND_STRING("Ups Attack and locks move."),
+        .aiRating = 4,
+    },
     
     // [ABILITY_PSYCH_OUT] =
     // {
