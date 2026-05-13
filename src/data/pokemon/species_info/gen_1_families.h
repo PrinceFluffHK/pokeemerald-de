@@ -15163,7 +15163,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_DAMP, ABILITY_SNIPER, ABILITY_POISON_POINT },
+        .abilities = { ABILITY_DAMP, ABILITY_SNIPER, ABILITY_SWIFT_SWIM },
     #else
         .abilities = { ABILITY_POISON_POINT, ABILITY_NONE, ABILITY_DAMP },
     #endif
