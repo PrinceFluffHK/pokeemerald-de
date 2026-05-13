@@ -76,7 +76,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MAX_ELIXIR",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_FLAMETHROWER",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR"
     },
@@ -89,7 +89,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_POLTERGEIST",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_VICTORY_ROAD_1F_PP_UP"
     },
@@ -196,7 +196,7 @@
       "x": 30,
       "y": 39,
       "elevation": 4,
-      "item": "ITEM_ULTRA_BALL",
+      "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL"
     }
   ]

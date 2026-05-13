@@ -6749,7 +6749,7 @@
                 "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 5,
+                "min_level": 50,
                 "max_level": 50,
                 "species": "SPECIES_GYARADOS"
               }

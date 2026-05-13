@@ -384,7 +384,7 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle6Reward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle7Reward::
-	giveitem ITEM_TM_DRACO_METEOR
+	giveitem ITEM_MEGA_RING
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
