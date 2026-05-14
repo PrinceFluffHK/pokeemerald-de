@@ -1062,18 +1062,9 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Cross Poison
 - U-Turn
 
-Swampert
-Ability: Gooey
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Muddy Water
-- Stomping Tantrum
-- Rock Slide
-- Stealth Rock
-
 Gyarados
 Ability: Intimidate
-Level: 45
+Level: 43
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Waterfall
 - Ice Fang
@@ -1097,13 +1088,21 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Sludge Bomb
 - Wrap
 
-Sharpedo @ Sharpedonite
+Sharpedo
 Ability: Speed Boost
 Level: 47
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Aqua Jet
+- Fishious Rend
 - Crunch
 - Ice Fang
+
+Salamence @ Red Orb
+Ability: Moxie
+Level: 47
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dragon Claw
+- Bite
+- Hydro Pump
 
 === TRAINER_LEAH ===
 Name: LEAH
@@ -15355,7 +15354,7 @@ Ability: Levitate
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sludge Bomb
-- Clear Smog
+- Flamethrower
 - Assurance
 - Will-O-Wisp
 
@@ -15363,8 +15362,8 @@ Nosepass @ Eviolite
 Ability: Magnet Pull
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Power Gem
 - Body Press
-- Iron Defense
 - Thunder Wave
 - Stealth Rock
 
@@ -15373,26 +15372,24 @@ Ability: Sturdy
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunderbolt
-- Mirror Shot
+- Flash Cannon
 - Metal Sound
 - Magnet Rise
 
-Blaziken
-Ability: Speed Boost
-Level: 38
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Overheat
-- Sky Uppercut
-- Aerial Ace
-- Substitute
-
-Camerupt @ Cameruptite
-Ability: Solid Rock
+Camerupt
+Ability: Sheer Force
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earth Power
 - Heat Wave
 - Rock Slide
+
+Donphan @ Blue Orb
+Ability: Juggernaut
+Level: 40
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Iron Head
+- Stomping Tantrum
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
 Name: MAXIE
@@ -15403,14 +15400,11 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Baltoy
-Ability: Levitate
+Donphan @ Wide Lens
+Ability: Juggernaut
 Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Psybeam
-- Rock Tomb
-- Imprison
-- Protect
+- Rollout
 
 Magneton
 Ability: Sturdy
@@ -15438,7 +15432,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Will-O-Wisp
 
 Camerupt
-Ability: Solid Rock
+Ability: Sheer Force
 Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Incinerate
@@ -19057,8 +19051,8 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Metal Sound
 - Magnet Rise
 
-Camerupt @ Cameruptite
-Ability: Anger Point
+Camerupt 
+Ability: Sheer Force
 Level: 46
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earth Power
