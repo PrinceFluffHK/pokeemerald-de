@@ -8537,21 +8537,31 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Gardevoir
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Skill Swap
-- Psychic
-- Thunderbolt
-- Calm Mind
+Weezing
+Ability: Neutralizing Gas
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Assurance
+- Poison Gas
+- Protect
 
 Slaking
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Earthquake
-- Shadow Ball
-- Aerial Ace
-- Brick Break
+Ability: Truant
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Body Slam
+- Throat Chop
+- Hammer Arm
+
+Sableye @ Spell Tag
+Ability: Prankster
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Foul Play
+- Shadow Claw
+- Leer
 
 === TRAINER_JAYLEN ===
 Name: JAYLEN
