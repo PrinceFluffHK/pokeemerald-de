@@ -2211,46 +2211,47 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Whirlwind
 
 === TRAINER_EDGAR ===
-Name: EDGAR
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: ALEXANDER
+Class: Ruin Maniac
+Pic: Ruin Maniac
 Gender: Male
-Music: Cool
+Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Blaziken
-Ability: Speed Boost
+Farigiraf @ Sitrus Berry
+Ability: Armor Tail
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fire Pledge
-- Sky Uppercut
-- Aerial Ace
+- Psychic Noise
+- Signal Beam
+- Trick Room
 - Swords Dance
 
-Sceptile @ Sitrus Berry
-Ability: Unburden
+Raichu
+Ability: Static
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Grass Pledge
-- Dragon Pulse
-- Shed Tail
+- Fake Out
+- Volt Tackle
+- Nuzzle
 
-Swampert
-Ability: Gooey
+Aggron @ Air Balloon
+Ability: Filter
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Water Pledge
-- Earth Power
+- Rock Slide
 - Body Press
+- Iron Defense
+- Protect
 
-Aggron
-Ability: Sturdy
+Cacturne
+Ability: Sand Stream
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Iron Head
-- Head Smash
-- Dragon Tail
+- Energy Ball
+- Sucker Punch
+- Spiky Shield
 
 === TRAINER_ALBERT ===
 Name: SCRAGGUS
@@ -2840,7 +2841,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Trick Room
 
 === TRAINER_MICHELLE ===
-Name: MICHELLE
+Name: ANNA
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -2848,17 +2849,38 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Torkoal
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Blaziken
+Ability: Speed Boost
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Pledge
+- Sky Uppercut
+- Aerial Ace
+- Swords Dance
 
-Medicham
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sceptile @ Sitrus Berry
+Ability: Unburden
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Grass Pledge
+- Dragon Pulse
+- Shed Tail
 
-Ludicolo
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Swampert
+Ability: Gooey
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pledge
+- Earth Power
+- Body Press
+
+Aggron
+Ability: Sturdy
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Iron Head
+- Head Smash
+- Dragon Tail
 
 === TRAINER_CAROLINE ===
 Name: THALIA
