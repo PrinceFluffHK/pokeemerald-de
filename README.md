@@ -1,4 +1,4 @@
-# About `pokeemerald-expansion`
+# `pokeemerald-expansion` Features
 
 ![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer ID, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokémon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokémon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokémon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
 
@@ -20,9 +20,9 @@ If you use **`pokeemerald-expansion`**, please credit **RHH (Rom Hacking Hideout
 Based off RHH's pokeemerald-expansion 1.14.2 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
-Please consider [crediting all contributors](CREDITS.md) involved in the project!
+A collection of feature branches to implement flexible systems to the [pokeemerald-expansion codebase](https://github.com/rh-hideout/pokeemerald-expansion).
 
-# Choosing `pokeemerald` or **`pokeemerald-expansion`**
+Please visit [the wiki](https://github.com/fisham-org/pokeemerald-expansion-features/wiki) for detailed descriptions, videos & implementation details for the feature branches within this repo.
 
 - **`pokeemerald-expansion`** supports multiplayer functionality with other games built on **`pokeemerald-expansion`**. It is not compatible with official Pokémon games.
 - If compatibility with official games is important, use [`pokeemerald`](https://github.com/pret/pokeemerald). Otherwise, we recommend using **`pokeemerald-expansion`**.
@@ -51,3 +51,4 @@ If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull r
 [![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
 
 Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
+> Note: In addition to hand-writing it, AI has been used to generate documentation & code used for these features.

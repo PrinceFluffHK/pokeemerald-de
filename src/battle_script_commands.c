@@ -2885,7 +2885,8 @@ void StealTargetItem(u8 battlerStealer, u8 itemBattler)
     BtlController_EmitSetMonData(itemBattler, B_COMM_TO_CONTROLLER, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[itemBattler].item), &gBattleMons[itemBattler].item);  // remove target item
     MarkBattlerForControllerExec(itemBattler);
 
-    if (GetBattlerAbility(itemBattler) != ABILITY_GORILLA_TACTICS)
+    if (GetBattlerAbility(itemBattler) != ABILITY_GORILLA_TACTICS
+        && GetBattlerAbility(itemBattler) != ABILITY_JUGGERNAUT)
         gBattleStruct->choicedMove[itemBattler] = MOVE_NONE;
 
     TrySaveExchangedItem(itemBattler, gLastUsedItem);
@@ -5805,7 +5806,8 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
             }
             gLastUsedItem = gBattleMons[gBattlerTarget].item;
             gBattleMons[gBattlerTarget].item = 0;
-            if (gBattleMons[gBattlerTarget].ability != ABILITY_GORILLA_TACTICS)
+            if (gBattleMons[gBattlerTarget].ability != ABILITY_GORILLA_TACTICS
+                && gBattleMons[gBattlerTarget].ability != ABILITY_JUGGERNAUT)
                 gBattleStruct->choicedMove[gBattlerTarget] = MOVE_NONE;
             CheckSetUnburden(gBattlerTarget);
 
@@ -12744,9 +12746,11 @@ static void Cmd_tryswapitems(void)
             BtlController_EmitSetMonData(gBattlerTarget, B_COMM_TO_CONTROLLER, REQUEST_HELDITEM_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].item), &gBattleMons[gBattlerTarget].item);
             MarkBattlerForControllerExec(gBattlerTarget);
 
-            if (GetBattlerAbility(gBattlerTarget) != ABILITY_GORILLA_TACTICS)
+            if (GetBattlerAbility(gBattlerTarget) != ABILITY_GORILLA_TACTICS
+                && GetBattlerAbility(gBattlerTarget) != ABILITY_JUGGERNAUT)
                 gBattleStruct->choicedMove[gBattlerTarget] = MOVE_NONE;
-            if (GetBattlerAbility(gBattlerAttacker) != ABILITY_GORILLA_TACTICS)
+            if (GetBattlerAbility(gBattlerAttacker) != ABILITY_GORILLA_TACTICS
+                && GetBattlerAbility(gBattlerAttacker) != ABILITY_JUGGERNAUT)
                 gBattleStruct->choicedMove[gBattlerAttacker] = MOVE_NONE;
 
             gBattlescriptCurrInstr = cmd->nextInstr;
