@@ -1198,16 +1198,28 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Medicham
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Psychic
+"Medicham
+Ability: Pure Power
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Zen Headbutt
+- High Jump Kick
 
 Claydol
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Skill Swap
+Ability: Levitate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earthquake
+- Skill Swap
+
+Seaking
+Ability: Lightning Rod
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Waterfall
+- Megahorn
+- Smart Strike
 
 === TRAINER_VIOLET ===
 Name: VIOLET
@@ -2205,53 +2217,118 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Cacturne
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Blaziken
+Ability: Speed Boost
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Pledge
+- Sky Uppercut
+- Aerial Ace
+- Swords Dance
 
-Pelipper
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Sceptile @ Sitrus Berry
+Ability: Unburden
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Grass Pledge
+- Dragon Pulse
+- Shed Tail
+
+Swampert
+Ability: Gooey
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pledge
+- Earth Power
+- Body Press
+
+Aggron
+Ability: Sturdy
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Iron Head
+- Head Smash
+- Dragon Tail
 
 === TRAINER_ALBERT ===
-Name: ALBERT
+Name: SCRAGGUS
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Magneton
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Donphan @ Rocky Helmet
+Ability: Protosynthesis
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earthquake
+- Rock Slide
+- Ice Spinner
+- Body Press
 
-Muk
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Weezing
+Ability: Levitate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Sludge Bomb
+- Heat Wave
+- Sunny Day
+- Protect
+
+Zangoose @ Toxic Orb
+Ability: Toxic Boost
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Facade
+- Dire Claw
+- Fire Punch
+- Fling
+
+Masquerain
+Ability: Intimidate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Struggle Bug
+- Air Slash
+- Quiver Dance
 
 === TRAINER_SAMUEL ===
 Name: SAMUEL
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Swellow
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Natu
+Ability: Synchronize
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Stored Power
+- Pluck
+- Calm Mind
 
-Mawile
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Pelipper
+Ability: Rain Dish
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Wing Attack
+- Water Pulse
+- Tailwind
+- Protect
 
-Kadabra
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tropius
+Ability: Protosynthesis
+Level: 31
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Magical Leaf
+- Gust
+- Stomp
 
 === TRAINER_VITO ===
 Name: VITO
@@ -2260,44 +2337,93 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Dodrio
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Early Bird
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Drill Peck
+- Facade
+- Swords Dance
 
-Kadabra
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Alakazam
+Ability: Magic Guard
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psychic
+- Disable
+- Recover
 
 Electrode
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Aftermath
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Electro Ball
+- Reflect
+- Eerie Impulse
+- Screech
 
 Shiftry
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Wind Rider
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Leaf Blade
+- Throat Chop
+- Air Slash
+
+Tyranitar
+Ability: Sand Stream
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Slide
+- Pursuit
 
 === TRAINER_OWEN ===
-Name: OWEN
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: ETHAN
+Class: Pokemaniac
+Pic: Pokemaniac
 Gender: Male
-Music: Cool
+Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Kecleon
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Torkoal
+Ability: Drought
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flamethrower
+- Eruption
+- Body Press
+- Yawn
 
-Graveler
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Donphan @ Sitrus Berry
+Ability: Protosynthesis
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Ice Shard
+- High Horsepower
+- Rock Slide
+- Knock Off
 
-Wailord
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Tropius
+Ability: Protosynthesis
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Leaf Blade
+- Dual Wingbeat
+- Synthesis
+- Dragon Dance
+
+Magneton @ Red Orb
+Ability: Sturdy
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Thunderbolt
+- Earth Power
+- Steel Beam
+- Sunny Day
 
 === TRAINER_WILTON_2 ===
 Name: WILTON
@@ -2625,38 +2751,93 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Agility
 
 === TRAINER_HOPE ===
-Name: HOPE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Name: KAT
+Class: Beauty
+Pic: Beauty
 Gender: Female
-Music: Cool
+Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Roselia
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Altaria @ Sitrus Berry
+Ability: Pixilate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dragon Pulse
+- Hyper Voice
+- Cotton Guard
+- Roost
 
-Roselia
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Milotic
+Ability: Competitive
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scald
+- Ice Beam
+- Coil
+- Recover
+
+Ninetales
+Ability: Drought
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Burst
+- Extrasensory
+- Hex
+- Disable
+
+Tropius
+Ability: Chlorophyll
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Leaf Blade
+- Dual Wingbeat
+- Dragon Rush
 
 === TRAINER_SHANNON ===
-Name: SHANNON
-Class: Cooltrainer
-Pic: Cooltrainer F
+Name: CIEL
+Class: Hex Maniac
+Pic: Hex Maniac
 Gender: Female
-Music: Cool
+Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer @ Ace Pokemon
+
+Shedinja @ Focus Sash
+Ability: Wonder Guard
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Will-O-Wisp
+- Shadow Sneak
+- Confuse Ray
+- Bug Bite
+
+Dusknoir
+Ability: Levitate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Leech Life
+- Fire Punch
+- Ice Punch
+- Trick Room
+
+Breloom @ Toxic Orb
+Ability: Poison Heal
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Seed Bomb
+- Drain Punch
+- Spore
+- Swords Dance
 
 Claydol
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-
-Claydol
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Levitate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Zen Headbutt
+- Earthquake
+- Self-Destruct
+- Trick Room
 
 === TRAINER_MICHELLE ===
 Name: MICHELLE
@@ -2665,7 +2846,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Torkoal
 Level: 42
@@ -2680,42 +2861,86 @@ Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_CAROLINE ===
-Name: CAROLINE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Name: THALIA
+Class: Pkmn Ranger
+Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Skarmory
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Wigglytuff
+Ability: Friend Guard
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Moonblast
+- Light Screen
+- Reflect
 
-Sableye
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Hariyama @ Sitrus Berry
+Ability: Sheer Force
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bullet Punch
+- Low Sweep
+- Throat Chop
+- Belly Drum
+
+Masquerain
+Ability: Intimidate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bug Buzz
+- Air Slash
+- Tailwind
+- Helping Hand
+
+Donphan @ Choice Scarf
+Ability: Juggernaut
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earthquake
 
 === TRAINER_JULIE ===
-Name: JULIE
+Name: CALE
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer @ Ace Pokemon
 
-Sandslash
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Swalot @ Black Sludge
+Ability: Earth Eater
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Gunk Shot
+- Knock Off
+- Body Press
+- Curse
 
-Ninetales
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Flygon
+Ability: Levitate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Earthquake
 
-Tropius
-Level: 42
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Gardevoir @ Life Orb
+Ability: Telepathy
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast
+- Psychic
+- Icy Wind
+
+Roserade @ Choice Scarf
+Ability: Poison Point
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Energy Ball
+- Sludge Bomb
+- Extrasensory
 
 === TRAINER_BROOKE_2 ===
 Name: BROOKE
@@ -3702,7 +3927,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Brine
 
 === TRAINER_THALIA_1 ===
-Name: THALIA
+Name: CAROLINE
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -4567,10 +4792,8 @@ Slaking
 Ability: Truant
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Mach Punch
-- Giga Drain
-- Pounce
-- Spore
+- Body Slam
+- Throat Chop
 
 === TRAINER_KIYO ===
 Name: KIYO
@@ -5398,7 +5621,7 @@ Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ETHAN_1 ===
-Name: ETHAN
+Name: OWEN
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -6441,59 +6664,57 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-Mightyena  
-Ability: Intimidate  
-Level: 49  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Snarl  
-- Crunch  
-- Play Rough  
-- Taunt  
-
-Crobat  
-Ability: Inner Focus  
-Level: 49  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Cross Poison  
-- Dual Wingbeat  
-- Heat Wave  
-- U-turn  
-
-Cacturne  
-Ability: Rough Skin  
-Level: 50  
+"Mightyena
+Ability: Intimidate
+Level: 52
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Spiky Shield  
-- Leech Seed  
-- Dark Pulse  
-- Giga Drain  
+- Snarl
+- Crunch
+- Play Rough
+- Taunt
 
-Crawdaunt  
-Ability: Adaptability  
-Level: 50  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Swords Dance  
-- Aqua Jet  
-- Crabhammer  
-- Knock Off  
+Cacturne @ Miracle Seed
+Ability: Hardy Thorns
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Needle Arm
+- Sucker Punch
+- Spiky Shield
 
-Shiftry  
-Ability: Wind Rider  
-Level: 50  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Leaf Blade  
-- Throat Chop  
-- Fake Out  
-- Extrasensory  
+Crobat
+Ability: Inner Focus
+Level: 52
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Cross Poison
+- Dual Wingbeat
+- Heat Wave
+- U-Turn
 
-Absol  
-Ability: Super Luck  
-Level: 51  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Night Slash  
-- Doom Desire  
-- Swords Dance  
-- Extreme Speed  
+Shiftry
+Ability: Pickpocket
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Leaf Blade
+- Throat Chop
+- Extrasensory
+
+Crawdaunt
+Ability: Adaptability
+Level: 53
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Aqua Jet
+- Crabhammer
+- Knock Off
+
+Absol
+Ability: Sharpness
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Extreme Speed
+- Night Slash
+- Doom Desire
+- Agility
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
@@ -6505,59 +6726,58 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
-Dusclops @ Eviolite  
-Ability: Frisk  
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-Level: 51  
-- Protect  
-- Trick Room  
-- Night Shade  
-- Ally Switch  
-
-Sableye  
-Ability: Prankster  
-Level: 51
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Fake Out  
-- Will-O-Wisp  
-- Foul Play  
-- Poltergeist  
-
-Bellossom  
-Ability: Flower Veil  
-Level: 51
+"Dusclops @ Eviolite
+Ability: Pressure
+Level: 54
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Moonblast  
-- Quiver Dance  
-- Energy Ball  
-- Strength Sap  
+- Night Shade
+- Ally Switch
+- Trick Room
+- Protect
 
-Shedinja  
-Ability: Wonder Guard  
-Level: 51
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Phantom Force  
-- X-Scissor  
-- Ally Switch  
-- Swords Dance  
+Sableye
+Ability: Prankster
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fake Out
+- Poltergeist
+- Foul Play
+- Will-O-Wisp
 
-Banette  
-Ability: Cursed Body  
-Level: 52
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Claw  
-- Body Slam  
-- Knock Off  
-- Shadow Sneak  
+Cursola @ Power Herb
+Ability: Cursed Body
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Ball
+- Meteor Beam
+- Scald
+- Strength Sap
 
-Dusknoir @ Life Orb  
-Ability: Levitate  
-Level: 53
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Shadow Punch  
-- Ice Punch  
-- Fire Punch  
-- Thunder Punch  
+Bellossom @ Pixie Plate
+Ability: Dancer
+Level: 54
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast
+- Energy Ball
+- Pollen Puff
+
+Banette
+Ability: Cursed Body
+Level: 55
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Sneak
+- Shadow Force
+- Body Slam
+- Knock Off
+
+Dusknoir @ Life Orb
+Ability: Levitate
+Level: 56
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Shadow Punch
+- Ice Punch
+- Fire Punch
+- Thunder Punch
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -6995,7 +7215,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rock Slide
 - Zen Headbutt
 - Flare Blitz
-- Rock Polish
 
 Xatu (F)
 Ability: Magic Bounce
@@ -7052,7 +7271,7 @@ AI: Smart Trainer / Ace Pokemon
 
 Crawdaunt
 Ability: Adaptability
-Level: 48
+Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Aqua Jet
 - Crabhammer
@@ -7060,7 +7279,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Whiscash
 Ability: Oblivious
-Level: 47
+Level: 48
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Muddy Water
 - Earth Power
@@ -7069,7 +7288,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Walrein
 Ability: Thick Fat
-Level: 47
+Level: 48
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Brine
 - Ice Beam
@@ -7078,7 +7297,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Ludicolo
 Ability: Rain Dish
-Level: 47
+Level: 48
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fake Out
 - Energy Ball
@@ -7087,7 +7306,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Milotic @ Leftovers
 Ability: Competitive
-Level: 49
+Level: 50
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Scald
 - Alluring Voice
@@ -7096,7 +7315,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 Kingdra @ Chesto Berry
 Ability: Swift Swim
-Level: 49
+Level: 50
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Snipe Shot
 - Dragon Pulse
@@ -8255,36 +8474,44 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Bite
 
 === TRAINER_QUINCY ===
-Name: QUINCY
-Class: Cooltrainer
-Pic: Cooltrainer M
+Name: DAVE
+Class: Expert
+Pic: Expert M
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Slaking
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Attract
-- Ice Beam
-- Thunderbolt
-- Flamethrower
+Ability: Truant
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Body Slam
+- Throat Chop
+- Hammer Arm
 
 Dusclops
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Pressure
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Night Shade
 - Skill Swap
+- Imprison
 - Protect
-- Will O Wisp
-- Toxic
+
+Exploud
+Ability: Soundproof
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Boomburst
+- Crunch
 
 === TRAINER_KATELYNN ===
 Name: KATELYNN
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Expert
+Pic: Expert F
 Gender: Female
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
@@ -9640,7 +9867,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Pin Missile
 
 Electrode
-Ability: Soundproof
+Ability: Aftermath
 Level: 39
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Electro Ball
@@ -9880,7 +10107,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Rapid Spin
 
 Dodrio
-Ability: Run Away
+Ability: Early Bird
 Level: 39
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Drill Peck
@@ -10102,37 +10329,44 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_HUGH ===
 Name: HUGH
-Class: Bird Keeper
-Pic: Bird Keeper
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Natu
-Ability: Synchronize
-Level: 31
+Azumarill
+Ability: Huge Power
+Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Stored Power
-- Pluck
-- Calm Mind
+- Waterfall
+- Play Rough
+- Belly Drum
 
-Pelipper
-Ability: Rain Dish
-Level: 31
+Medicham
+Ability: Pure Power
+Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Wing Attack
-- Water Pulse
-- Tailwind
-- Protect
+- Fake Out
+- Zen Headbutt
+- High Jump Kick
 
-Tropius
-Ability: Protosynthesis
-Level: 31
+Mawile
+Ability: Huge Power
+Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Magical Leaf
-- Gust
-- Stomp
+- Iron Head
+- Play Rough
+- Sucker Punch
+
+Starmie
+Ability: Huge Power
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Liquidation
+- Zen Headbutt
+- Rapid Spin
 
 === TRAINER_PHIL ===
 Name: PHIL
@@ -10548,17 +10782,27 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Claydol
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Skill Swap
+"Claydol
+Ability: Levitate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earthquake
+- Skill Swap
 
 Lanturn
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Ability: Volt Absorb
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunderbolt
 - Earthquake
+
+Golem
+Ability: Rock Head
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Rock Blast
+- Stomping Tantrum
+- Wide Guard
 
 === TRAINER_JANI ===
 Name: JANI
@@ -13034,47 +13278,55 @@ Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Altaria
-Level: 44
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
-
-Delcatty
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
-
-Roselia
-Level: 44
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Magical Leaf
-- Leech Seed
+Roserade
+Ability: Poison Point
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Giga Drain
-- Toxic
+- Venoshock
+- Toxic Spikes
 
-Magneton
-Level: 41
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Supersonic
+Farigiraf
+Ability: Armor Tail
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Hyper Voice
+- Twin Beam
+
+Froslass
+Ability: Snow Warning
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Frost Breath
+- Shadow Ball
+- Aurora Veil
+
+Magnezone
+Ability: Magnet Pull
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunderbolt
-- Tri Attack
-- Screech
+- Flash Cannon
+- Metal Sound
 
-Gardevoir
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-- Double Team
-- Calm Mind
-- Psychic
-- Future Sight
+Probopass
+Ability: Levitate
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Power Gem
+- Flash Cannon
+- Body Press
+
+Gallade
+Ability: Sharpness
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Psycho Cut
+- Sacred Sword
+- Night Slash
+- Agility
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
 Name: BRENDAN
@@ -22573,7 +22825,7 @@ Level: 37
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_THALIA_2 ===
-Name: THALIA
+Name: CAROLINE
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -22590,7 +22842,7 @@ Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_THALIA_3 ===
-Name: THALIA
+Name: CAROLINE
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -22611,7 +22863,7 @@ Level: 36
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_THALIA_4 ===
-Name: THALIA
+Name: CAROLINE
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -22632,7 +22884,7 @@ Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_THALIA_5 ===
-Name: THALIA
+Name: CAROLINE
 Class: Beauty
 Pic: Beauty
 Gender: Female
