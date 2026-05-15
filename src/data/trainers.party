@@ -1198,7 +1198,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-"Medicham
+Medicham
 Ability: Pure Power
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -2802,7 +2802,7 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer @ Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 
 Shedinja @ Focus Sash
 Ability: Wonder Guard
@@ -2931,7 +2931,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer @ Ace Pokemon
+AI: Smart Trainer / Ace Pokemon
 
 Swalot @ Black Sludge
 Ability: Earth Eater
@@ -6686,7 +6686,7 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Purple
 
-"Mightyena
+Mightyena
 Ability: Intimidate
 Level: 52
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -6748,7 +6748,7 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Green
 
-"Dusclops @ Eviolite
+Dusclops @ Eviolite
 Ability: Pressure
 Level: 54
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -10814,7 +10814,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-"Claydol
+Claydol
 Ability: Levitate
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  

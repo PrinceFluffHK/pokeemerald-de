@@ -3456,7 +3456,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_CORSOLA_GALAR"
               },
               {
                 "min_level": 25,
@@ -3476,7 +3476,7 @@
               {
                 "min_level": 25,
                 "max_level": 35,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_CORSOLA_GALAR"
               },
               {
                 "min_level": 35,
@@ -3496,7 +3496,7 @@
               {
                 "min_level": 35,
                 "max_level": 45,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_CORSOLA_GALAR"
               }
             ]
           }
