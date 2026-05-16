@@ -7637,7 +7637,7 @@
           "map": "MAP_DEWFORD_TOWN",
           "base_label": "gDewfordTown",
           "fishing_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 100,
             "mons": [
               {
                 "min_level": 5,

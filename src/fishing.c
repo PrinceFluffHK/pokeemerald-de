@@ -48,8 +48,8 @@ static u32 CalculateFishingTimeOfDayBoost(void);
 #define FISHING_GEN3_STICKY_CHANCE 85  //Active if config I_FISHING_STICKY_BOOST is set to GEN_3 or lower
 
 #if I_FISHING_BITE_ODDS >= GEN_4
-    #define FISHING_OLD_ROD_ODDS 25
-    #define FISHING_GOOD_ROD_ODDS 50
+    #define FISHING_OLD_ROD_ODDS 67
+    #define FISHING_GOOD_ROD_ODDS 67
     #define FISHING_SUPER_ROD_ODDS 75
 #elif I_FISHING_BITE_ODDS >= GEN_3
     #define FISHING_OLD_ROD_ODDS 50
