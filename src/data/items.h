@@ -1355,7 +1355,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HP_UP] =
     {
         .name = ITEM_NAME("HP Up"),
-        .price = 100,
+        .price = 1200,
         .description = COMPOUND_STRING(
             "Raises the base HP\n"
             "of one Pokémon by\n"
@@ -1373,7 +1373,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PROTEIN] =
     {
         .name = ITEM_NAME("Protein"),
-        .price = 100,
+        .price = 1200,
         .description = COMPOUND_STRING(
             "Raises the base\n"
             "Attack stat by\n"
@@ -1391,7 +1391,7 @@ const struct Item gItemsInfo[] =
     [ITEM_IRON] =
     {
         .name = ITEM_NAME("Iron"),
-        .price = 100,
+        .price = 1200,
         .description = COMPOUND_STRING(
             "Raises the base\n"
             "Defense stat by\n"
@@ -1409,7 +1409,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CALCIUM] =
     {
         .name = ITEM_NAME("Calcium"),
-        .price = 100,
+        .price = 1200,
         .description = COMPOUND_STRING(
             "Raises the base\n"
             "Sp. Atk stat by\n"
@@ -1427,7 +1427,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ZINC] =
     {
         .name = ITEM_NAME("Zinc"),
-        .price = 100,
+        .price = 1200,
         .description = COMPOUND_STRING(
             "Raises the base\n"
             "Sp. Def stat by\n"
@@ -1446,7 +1446,7 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("Carbos"),
         .pluralName = ITEM_PLURAL_NAME("Carbos"),
-        .price = 100,
+        .price = 1200,
         .description = COMPOUND_STRING(
             "Raises the base\n"
             "Speed stat by\n"

@@ -2293,10 +2293,10 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_ALBERT ===
 Name: SCRAGGUS
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Expert
+Pic: Expert M
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 

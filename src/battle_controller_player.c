@@ -2181,6 +2181,7 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
     }
 
     case MOVE_TARGET_BOTH:
+    case MOVE_TARGET_OPPONENTS_FIELD:
         StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{DOWN_ARROW}"));
         break;
 
@@ -2204,7 +2205,7 @@ static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeed
 
     if (gBattleStruct->monToSwitchIntoId[battler] != PARTY_SIZE)
     {
-        StringAppend(gStringVar1, COMPOUND_STRING("Sw"));
+        StringAppend(gStringVar1, COMPOUND_STRING("Switch"));
         return;
     }
 
@@ -2241,13 +2242,13 @@ static void CreateSpeedTiersWindow(u32 battler)
     
     if (pLeftAlive)
     {
-        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
-                StringAppend(gStringVar1, COMPOUND_STRING("-"));
+        // if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
+        //         StringAppend(gStringVar1, COMPOUND_STRING("-"));
 
         AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
 
         if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
-            StringAppend(gStringVar1, COMPOUND_STRING("-"));
+            StringAppend(gStringVar1, COMPOUND_STRING("?"));
     }
 
     if (pRightAlive)
@@ -2255,13 +2256,13 @@ static void CreateSpeedTiersWindow(u32 battler)
         if (pLeftAlive)
             StringAppend(gStringVar1, COMPOUND_STRING(" / "));
 
-        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
-            StringAppend(gStringVar1, COMPOUND_STRING("-"));
+        // if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
+        //     StringAppend(gStringVar1, COMPOUND_STRING("-"));
 
         AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
 
         if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
-            StringAppend(gStringVar1, COMPOUND_STRING("-"));
+            StringAppend(gStringVar1, COMPOUND_STRING("?"));
     }
 
     BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
