@@ -281,7 +281,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Copies special ability."),
         .aiRating = 6,
         .cantBeCopied = TRUE,
-        .cantBeTraced = TRUE, //B_UPDATED_ABILITY_DATA >= GEN_4
+        .cantBeTraced = TRUE,
     },
 
     [ABILITY_HUGE_POWER] =
@@ -1212,13 +1212,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Zen Mode"),
         .description = COMPOUND_STRING("Transforms at half HP."),
+        .cantBeSwapped = B_UPDATED_ABILITY_DATA >= GEN_7,
         .aiRating = -1,
         .cantBeCopied = TRUE,
-        .cantBeSwapped = B_UPDATED_ABILITY_DATA >= GEN_7,
-        .cantBeTraced = TRUE,
-        .cantBeSuppressed = B_UPDATED_ABILITY_DATA >= GEN_7,
         .cantBeOverwritten = B_UPDATED_ABILITY_DATA >= GEN_7,
         .failsOnImposter = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = B_UPDATED_ABILITY_DATA >= GEN_7,
     },
 
     [ABILITY_VICTORY_STAR] =
@@ -2234,7 +2234,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ORICHALCUM_PULSE] =
     {
         .name = _("Orichalcum Pulse"),
-        .description = COMPOUND_STRING("Summons sunlight in battle."),
+        .description = COMPOUND_STRING("Summons sun, boosts ATK."),
         .aiRating = 8,
         .cantBeSwapped = TRUE,
         .cantBeCopied = TRUE,
@@ -2432,4 +2432,32 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_HARDY_THORNS] =
+    {
+        .name = _("Hardy Thorns"),
+        .description = COMPOUND_STRING("Sand immune with barbs."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_PYROCLASTIC_FLOW] =
+    {
+        .name = _("Pyroclastic Flow"),
+        .description = COMPOUND_STRING("Burns attackers."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_JUGGERNAUT] =
+    {
+        .name = _("Juggernaut"),
+        .description = COMPOUND_STRING("Ups Attack and locks move."),
+        .aiRating = 4,
+    },
+    
+    // [ABILITY_PSYCH_OUT] =
+    // {
+    //     .name = _("Psych Out"),
+    //     .description = COMPOUND_STRING("Lowers the foe's SpA."),
+    //     .aiRating = 7,
+    // },
 };
