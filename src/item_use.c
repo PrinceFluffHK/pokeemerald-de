@@ -47,9 +47,6 @@
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/songs.h"
-#include "region_map.h"
-#include "field_move.h"
-#include "field_control_avatar.h"
 
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
@@ -59,7 +56,7 @@ static void Task_UseItemfinder(u8);
 static void Task_CloseItemfinderMessage(u8);
 static void Task_HiddenItemNearby(u8);
 static void Task_StandingOnHiddenItem(u8);
-static void PlayerFaceHiddenItem(u8);
+static void PlayerFaceHiddenItem(enum Direction);
 static void CheckForHiddenItemsInMapConnection(u8);
 static void Task_OpenRegisteredPokeblockCase(u8);
 static void Task_AccessPokemonBoxLink(u8);
@@ -83,14 +80,6 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
-static void ItemUseOnFieldCB_Cut(u8 taskId);
-static void ItemUseOnFieldCB_Surf(u8 taskId);
-static void ItemUseOnFieldCB_Strength(u8 taskId);
-static void ItemUseOnFieldCB_Flash(u8 taskId);
-static void ItemUseOnFieldCB_RockSmash(u8 taskId);
-static void ItemUseOnFieldCB_Waterfall(u8 taskId);
-static void ItemUseOnFieldCB_Dive(u8 taskId);
-static void ItemUseOnFieldCB_DiveUnderwater(u8 taskId);
 
 static const u8 sText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
@@ -100,7 +89,7 @@ static const u8 sText_CoinCase[] = _("Your COINS:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS
 static const u8 sText_PowderQty[] = _("POWDER QTY: {STR_VAR_1}{PAUSE_UNTIL_PRESS}");
 static const u8 sText_BootedUpTM[] = _("Booted up a TM.");
 static const u8 sText_BootedUpHM[] = _("Booted up an HM.");
-static const u8 sText_TMHMContainedVar1[] = _("Teach {STR_VAR_1}\nto a POKéMON?");
+static const u8 sText_TMHMContainedVar1[] = _("It contained\n{STR_VAR_1}.\pTeach {STR_VAR_1}\nto a POKéMON?");
 static const u8 sText_UsedVar2WildLured[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild POKéMON will be lured.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild POKéMON will be repelled.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayedPokeFluteCatchy[] = _("Played the POKé FLUTE.\pNow, that's a catchy tune!{PAUSE_UNTIL_PRESS}");
@@ -134,7 +123,7 @@ static const struct YesNoFuncTable sUseTMHMYesNoFuncTable =
 #define tEnigmaBerryType data[4]
 static void SetUpItemUseCallback(u8 taskId)
 {
-    u8 type;
+    enum ItemType type;
     if (gSpecialVar_ItemId == ITEM_ENIGMA_BERRY_E_READER)
         type = gTasks[taskId].tEnigmaBerryType - 1;
     else
@@ -230,14 +219,14 @@ static void Task_CloseCantUseKeyItemMessage(u8 taskId)
     UnlockPlayerFieldControls();
 }
 
-u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId)
+u8 CheckIfItemIsTMHMOrEvolutionStone(enum Item itemId)
 {
     if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_TMHM)
-        return 1;
+        return ITEM_IS_TM_HM;
     else if (GetItemFieldFunc(itemId) == ItemUseOutOfBattle_EvolutionStone)
-        return 2;
+        return ITEM_IS_EVOLUTION_STONE;
     else
-        return 0;
+        return ITEM_IS_OTHER;
 }
 
 // Mail in the bag menu can't have a message but it can be checked (view the mail background, no message)
@@ -245,6 +234,7 @@ static void CB2_CheckMail(void)
 {
     struct Mail mail;
     mail.itemId = gSpecialVar_ItemId;
+    mail.species = SPECIES_NONE;
     ReadMail(&mail, CB2_ReturnToBagMenuPocket, FALSE);
 }
 
@@ -309,7 +299,9 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 static void ItemUseOnFieldCB_Bike(u8 taskId)
 {
-    if (GetItemSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)
+    if (GetItemSecondaryId(gSpecialVar_ItemId) == STANDARD_BIKE)
+        GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE);
+    else if (GetItemSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)
         GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE);
     else // ACRO_BIKE
         GetOnOffBike(PLAYER_AVATAR_FLAG_ACRO_BIKE);
@@ -632,7 +624,7 @@ static void SetDistanceOfClosestHiddenItem(u8 taskId, s16 itemDistanceX, s16 ite
     }
 }
 
-u8 GetDirectionToHiddenItem(s16 itemDistanceX, s16 itemDistanceY)
+enum Direction GetDirectionToHiddenItem(s16 itemDistanceX, s16 itemDistanceY)
 {
     s16 absX, absY;
 
@@ -678,7 +670,7 @@ u8 GetDirectionToHiddenItem(s16 itemDistanceX, s16 itemDistanceY)
     }
 }
 
-static void PlayerFaceHiddenItem(u8 direction)
+static void PlayerFaceHiddenItem(enum Direction direction)
 {
     ObjectEventClearHeldMovementIfFinished(&gObjectEvents[GetObjectEventIdByLocalIdAndMap(LOCALID_PLAYER, 0, 0)]);
     ObjectEventClearHeldMovement(&gObjectEvents[GetObjectEventIdByLocalIdAndMap(LOCALID_PLAYER, 0, 0)]);
@@ -1072,7 +1064,7 @@ void HandleUseExpiredLure(struct ScriptContext *ctx)
 
 static void Task_UsedBlackWhiteFlute(u8 taskId)
 {
-    if(++gTasks[taskId].data[8] > 7)
+    if (++gTasks[taskId].data[8] > 7)
     {
         PlaySE(SE_GLASS_FLUTE);
         if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
@@ -1157,7 +1149,7 @@ static u32 GetBallThrowableState(void)
         return BALL_THROW_UNABLE_TWO_MONS;
     else if (IsPlayerPartyAndPokemonStorageFull() == TRUE)
         return BALL_THROW_UNABLE_NO_ROOM;
-    else if (B_SEMI_INVULNERABLE_CATCH >= GEN_4 &&  IsSemiInvulnerable(GetCatchingBattler(), CHECK_ALL))
+    else if (GetConfig(B_SEMI_INVULNERABLE_CATCH) >= GEN_4 &&  IsSemiInvulnerable(GetCatchingBattler(), CHECK_ALL))
         return BALL_THROW_UNABLE_SEMI_INVULNERABLE;
     else if (FlagGet(B_FLAG_NO_CATCHING) || !IsAllowedToUseBag())
         return BALL_THROW_UNABLE_DISABLED_FLAG;
@@ -1238,7 +1230,7 @@ void ItemUseInBattle_PartyMenuChooseMove(u8 taskId)
     ItemUseInBattle_ShowPartyMenu(taskId);
 }
 
-static bool32 IteamHealsMonVolatile(u32 battler, u16 itemId)
+static bool32 IteamHealsMonVolatile(enum BattlerId battler, enum Item itemId)
 {
     const u8 *effect = GetItemEffect(itemId);
     if (effect[3] & ITEM3_STATUS_ALL)
@@ -1251,7 +1243,7 @@ static bool32 IteamHealsMonVolatile(u32 battler, u16 itemId)
     return FALSE;
 }
 
-static bool32 SelectedMonHasVolatile(u16 itemId)
+static bool32 SelectedMonHasVolatile(enum Item itemId)
 {
     if (gPartyMenu.slotId == 0)
         return IteamHealsMonVolatile(0, itemId);
@@ -1261,30 +1253,41 @@ static bool32 SelectedMonHasVolatile(u16 itemId)
 }
 
 // Returns whether an item can be used in battle and sets the fail text.
-bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
+bool32 CannotUseItemsInBattle(enum Item itemId, struct Pokemon *mon)
 {
     u16 battleUsage = GetItemBattleUsage(itemId);
     bool8 cannotUse = FALSE;
     const u8* failStr = NULL;
-    u32 i;
+    u32 i, battlerTarget;
     u16 hp = GetMonData(mon, MON_DATA_HP);
 
+    if (gPartyMenu.slotId == 0)
+        battlerTarget = B_POSITION_PLAYER_LEFT;
+    else if (gPartyMenu.slotId == 1)
+        battlerTarget = B_POSITION_PLAYER_RIGHT;
+    else
+        battlerTarget = MAX_POSITION_COUNT;
+
     // Embargo Check
-    if ((gPartyMenu.slotId == 0 && gBattleMons[B_POSITION_PLAYER_LEFT].volatiles.embargo)
-        || (gPartyMenu.slotId == 1 && gBattleMons[B_POSITION_PLAYER_RIGHT].volatiles.embargo))
+    if (battlerTarget < MAX_POSITION_COUNT && GetItemType(itemId) != ITEM_USE_BAG_MENU)
     {
-        return TRUE;
+        if (gBattleMons[battlerTarget].volatiles.embargo)
+            return TRUE;
     }
 
     // battleUsage checks
     switch (battleUsage)
     {
     case EFFECT_ITEM_INCREASE_STAT:
-        if (CompareStat(gBattlerInMenuId, GetItemEffect(itemId)[1], MAX_STAT_STAGE, CMP_EQUAL, GetBattlerAbility(gBattlerInMenuId)))
+        if (hp == 0 || gPartyMenu.slotId > 1)
+            cannotUse = TRUE;
+        else if (CompareStat(battlerTarget, GetItemEffect(itemId)[1], MAX_STAT_STAGE, CMP_EQUAL, GetBattlerAbility(battlerTarget)))
             cannotUse = TRUE;
         break;
     case EFFECT_ITEM_SET_FOCUS_ENERGY:
-        if (gBattleMons[gBattlerInMenuId].volatiles.dragonCheer || gBattleMons[gBattlerInMenuId].volatiles.focusEnergy)
+        if (hp == 0 ||gPartyMenu.slotId > 1)
+            cannotUse = TRUE;
+        else if (gBattleMons[battlerTarget].volatiles.dragonCheer || gBattleMons[battlerTarget].volatiles.focusEnergy)
             cannotUse = TRUE;
         break;
     case EFFECT_ITEM_SET_MIST:
@@ -1318,11 +1321,15 @@ bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
         break;
     case EFFECT_ITEM_INCREASE_ALL_STATS:
     {
-        u32 ability = GetBattlerAbility(gBattlerInMenuId);
-        cannotUse = TRUE;
+        if (hp == 0 || gPartyMenu.slotId > 1)
+        {
+            cannotUse = TRUE;
+            break;
+        }
+        u32 ability = GetBattlerAbility(battlerTarget);
         for (i = STAT_ATK; i < NUM_STATS; i++)
         {
-            if (!CompareStat(gBattlerInMenuId, i, MAX_STAT_STAGE, CMP_EQUAL, ability))
+            if (CompareStat(battlerTarget, i, MAX_STAT_STAGE, CMP_EQUAL, ability))
             {
                 cannotUse = FALSE;
                 break;
@@ -1377,6 +1384,7 @@ bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
 
 void ItemUseInBattle_BagMenu(u8 taskId)
 {
+    gPartyMenu.slotId = gBattleStruct->itemPartyIndex[gBattlerInMenuId] = gBattlerPartyIndexes[gBattlerInMenuId];
     if (CannotUseItemsInBattle(gSpecialVar_ItemId, NULL))
     {
         if (CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
@@ -1626,210 +1634,6 @@ void ItemUseOutOfBattle_TownMap(u8 taskId)
     else
     {
         gTasks[taskId].func = ItemUseOnFieldCB_TownMap;
-    }
-}
-
-static void ItemUseOnFieldCB_Cut(u8 taskId)
-{
-    LockPlayerFieldControls();
-    ScriptContext_SetupScript(FieldMove_EventScript_Cut);
-    DestroyTask(taskId);
-}
-
-void ItemUseOutOfBattle_Cut(u8 taskId)
-{
-    if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_CUTTABLE_TREE))
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_Cut;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
-}
-
-void ItemUseOutOfBattle_Fly(u8 taskId)
-{
-    // First, perform all the checks to see if Fly can be used at all.
-    if (IsFieldMoveUnlocked(FIELD_MOVE_FLY) == TRUE
-     && Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE
-     && !MenuHelpers_IsLinkActive())
-    {
-        // If the checks pass, now we figure out HOW the item was used.
-        // gTasks[taskId].data[3] is TRUE if it was a registered item.
-        if (gTasks[taskId].data[3] != TRUE)
-        {
-            // Case 1: Used from the Bag Menu.
-            // Set the callback directly to the fly map initializer and close the bag.
-            gBagMenu->newScreenCallback = CB2_OpenFlyMap;
-            Task_FadeAndCloseBagMenu(taskId);
-        }
-        else
-        {
-            // Case 2: Used as a Registered Item on the field.
-            // Fade the screen and set up a task to open the map.
-            FadeScreen(FADE_TO_BLACK, 0);
-            gTasks[taskId].func = Task_OpenRegisteredFly;
-        }
-    }
-    else
-    {
-        // If any of the checks fail, show the "can't use" message.
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
-    }
-}
-
-void CB2_OpenFlyItemFromBag(void)
-{
-    CB2_OpenFlyMap();
-}
-
-void Task_OpenRegisteredFly(u8 taskId)
-{
-    if (!gPaletteFade.active)
-    {
-        CleanupOverworldWindowsAndTilemaps();
-        SetMainCallback2(CB2_OpenFlyMap);
-        DestroyTask(taskId);
-    }
-}
-
-static void ItemUseOnFieldCB_Surf(u8 taskId)
-{
-    // Run the surf script and destroy this task.
-    ScriptContext_SetupScript(EventScript_UseSurf);
-    DestroyTask(taskId);
-}
-
-void ItemUseOutOfBattle_Surf(u8 taskId)
-{
-    // Check if the player is facing water.
-    if (IsPlayerFacingSurfableFishableWater() == TRUE)
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_Surf;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else
-    {
-        // Not facing water, so show the "can't use" message.
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
-    }
-}
-
-// Add the function definition
-void ItemUseOutOfBattle_Strength(u8 taskId)
-{
-    if (IsFieldMoveUnlocked(FIELD_MOVE_STRENGTH) == TRUE)
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_Strength;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else
-    {
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
-    }
-}
-
-static void ItemUseOnFieldCB_Strength(u8 taskId)
-{
-    ScriptContext_SetupScript(EventScript_UseStrength);
-    DestroyTask(taskId);
-}
-
-void ItemUseOutOfBattle_Flash(u8 taskId)
-{
-    // We only check for the badge here. The script will handle
-    // checking if the cave is actually dark.
-    if (IsFieldMoveUnlocked(FIELD_MOVE_FLASH) == TRUE)
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_Flash;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else
-    {
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
-    }
-}
-
-static void ItemUseOnFieldCB_Flash(u8 taskId)
-{
-    ScriptContext_SetupScript(EventScript_UseFlash);
-    DestroyTask(taskId);
-}
-
-void ItemUseOutOfBattle_RockSmash(u8 taskId)
-{
-    if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BREAKABLE_ROCK) == TRUE)
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_RockSmash;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else
-    {
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
-    }
-}
-
-static void ItemUseOnFieldCB_RockSmash(u8 taskId)
-{
-    ScriptContext_SetupScript(EventScript_UseRockSmash);
-    DestroyTask(taskId);
-}
-
-static bool8 IsPlayerFacingWaterfall(void)
-{
-    s16 x, y;
-    GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
-    return MetatileBehavior_IsWaterfall(MapGridGetMetatileBehaviorAt(x, y));
-}
-
-void ItemUseOutOfBattle_Waterfall(u8 taskId)
-{
-    if (IsPlayerFacingWaterfall() == TRUE)
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_Waterfall;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else
-    {
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
-    }
-}
-
-static void ItemUseOnFieldCB_Waterfall(u8 taskId)
-{
-    ScriptContext_SetupScript(EventScript_UseWaterfall);
-    DestroyTask(taskId);
-}
-
-static void ItemUseOnFieldCB_Dive(u8 taskId)
-{
-    ScriptContext_SetupScript(EventScript_UseDive);
-    DestroyTask(taskId);
-}
-
-static void ItemUseOnFieldCB_DiveUnderwater(u8 taskId)
-{
-    ScriptContext_SetupScript(EventScript_UseDiveUnderwater);
-    DestroyTask(taskId);
-}
-
-void ItemUseOutOfBattle_Dive(u8 taskId)
-{
-    u8 diveWarpStatus = TrySetDiveWarp();
-
-    if (diveWarpStatus == 2) // On a dive spot
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_Dive;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else if (diveWarpStatus == 1) // On a surfacing spot
-    {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_DiveUnderwater;
-        SetUpItemUseOnFieldCallback(taskId);
-    }
-    else // Not a valid spot
-    {
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].data[3]);
     }
 }
 

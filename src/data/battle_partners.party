@@ -13,30 +13,46 @@ Pic: Steven
 Gender: Male
 Music: Male
 Back Pic: Steven
-AI: Smart Trainer / Ace Pokemon
+AI: Basic Trainer
 
-Skarmory @ Metal Coat
-Ability: Sturdy
-Level: 43
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Steel Wing
-- Drill Peck
-- Spikes
-
-Claydol @ Light Clay
-Ability: Levitate
-Level: 44
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Earth Power
-- Extrasensory
+Metang
+Brave Nature
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 252 Def / 6 SpA
 - Light Screen
+- Psychic
 - Reflect
+- Metal Claw
+
+Skarmory
+Impish Nature
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 6 SpA / 252 SpD
+- Toxic
+- Aerial Ace
+- Protect
+- Steel Wing
 
 Aggron
-Ability: Sturdy
-Level: 45
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Heavy Slam
-- Head Smash
-- Body Press
-- Dragon Tail
+Adamant Nature
+Level: 44
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 252 SpA / 6 SpD
+- Thunder
+- Protect
+- Solar Beam
+- Dragon Claw
+
+=== PARTNER_DUMMY ===
+Name:
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Back Pic: Brendan
+Party Size: 0
+
+Wynaut
+

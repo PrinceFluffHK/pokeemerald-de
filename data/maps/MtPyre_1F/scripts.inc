@@ -6,7 +6,7 @@ MtPyre_1F_EventScript_CleanseTagWoman::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_CLEANSE_TAG, MtPyre_1F_EventScript_ReceivedCleanseTag
 	msgbox MtPyre_1F_Text_TakeThisForYourOwnGood, MSGBOX_DEFAULT
-	giveitem ITEM_SPELL_TAG
+	giveitem ITEM_CLEANSE_TAG
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_CLEANSE_TAG
 	release
@@ -33,9 +33,8 @@ MtPyre_1F_Text_TakeThisForYourOwnGood:
 
 MtPyre_1F_Text_ExplainCleanseTag:
 	.string "Have a POKéMON hold that\n"
-	.string "SPELL TAG.\p"
-	.string "It will help defeat GHOST-type.$"
-	.string "POKéMON.$"
+	.string "CLEANSE TAG.\p"
+	.string "It will help ward off wild POKéMON.$"
 
 MtPyre_1F_Text_ComeToPayRespects:
 	.string "Did you come to pay your respect\n"

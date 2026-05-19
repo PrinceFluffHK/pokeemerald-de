@@ -67,10 +67,10 @@ The test runner rigs the RNG so that unless otherwise specified, moves always hi
 ### Example 2
 As a second example, to manually test that Stun Spore does not effect Grass-types you might:
 1. Put a Wobbuffet that knows Stun Spore in your party.
-2. Battle a wild Oddish.
+2. Battle an opponent with Oddish.
 3. Use Stun Spore.
 4. Check that the move animation does not play.
-5. Check that a "It doesn't affect Foe Oddish…" message is shown.
+5. Check that a "It doesn't affect the opposing Oddish…" message is shown.
 
 This can again be translated as follows:
 
@@ -80,7 +80,7 @@ SINGLE_BATTLE_TEST("Stun Spore does not affect Grass-types")
     GIVEN {
         ASSUME(IsPowderMove(MOVE_STUN_SPORE));
         ASSUME(GetSpeciesType(SPECIES_ODDISH, 0) == TYPE_GRASS);
-        PLAYER(SPECIES_ODDISH); // 1.
+        PLAYER(SPECIES_WOBBUFFET); // 1.
         OPPONENT(SPECIES_ODDISH); // 2.
     } WHEN {
         TURN { MOVE(player, MOVE_STUN_SPORE); } // 3.
@@ -292,7 +292,7 @@ Adds the species to the player's, player partner's, opponent A's, or opponent B'
 Pokemon can be customised as per the guidance for `PLAYER(species)` and `OPPONENT(species)`.
 The functions assign the Pokémon to the party of the trainer at `B_POSITION_PLAYER_LEFT`, `B_POSITION_PLAYER_RIGHT`, `B_POSITION_OPPONENT_LEFT`, and `B_POSITION_OPPONENT_RIGHT`, respectively.
 `MULTI_PLAYER(species)` and `MULTI_OPPONENT_A(species)` set Pokémon starting at party index 0, while `MULTI_PARTNER(species)` and `MULTI_OPPONENT_B(species)` set Pokémon starting at party index 3.
-For `ONE_VS_TWO` tests, `MULTI_PLAYER(species)` must be used for all player-side Pokémon, and for `TWO_VS_ONE` tests, `MULTI_OPPONENT_A(species)` must be used for all opponent-side Pokémon. 
+For `ONE_VS_TWO` tests, `MULTI_PLAYER(species)` must be used for all player-side Pokémon, and for `TWO_VS_ONE` tests, `MULTI_OPPONENT_A(species)` must be used for all opponent-side Pokémon.
 All `MULTI_PLAYER(species)` Pokémon must be set before any `MULTI_PARTNER(species)` Pokémon, and all `MULTI_OPPONENT_A(species)` must be set before any `MULTI_OPPONENT_B(species)` Pokémon, else Pokémon will be set in the incorrect parties in the test.
 **Note where a side in a test has two trainers, the test setup manages the assigning of correct multi-party orders, therefore when using functions such as SEND_OUT, Player and Opponent A Pokémon may be referenced using indexes 0, 1, and 2, and Player's Partner and Opponent B Pokémon may be referenced using indexes 3, 4, and 5.**
 
@@ -476,6 +476,14 @@ SUB_HIT(player, captureDamage: &damage);
 If `subBreak` is set to `TRUE`, the test will fail unless the substitute breaks. And if set to `FALSE`, the test will fail unless the substitute survives.
 ```
 SUB_HIT(player, subBreak: TRUE);
+```
+
+### `CATCHING_CHANCE`
+`CATCHING_CHANCE(address)`
+Causes the test to fail if no catching attempt is made and then writes the computed catch chance in the `address` pointer.
+```
+    u32 recordedCatchChance;
+    CATCHING_CHANCE(&recordedCatchChance);
 ```
 
 ### `NOT`

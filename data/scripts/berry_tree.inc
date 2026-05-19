@@ -74,7 +74,6 @@ BerryTree_EventScript_ChooseBerryToPlant::
 	fadescreen FADE_TO_BLACK
 	closemessage
 	special Bag_ChooseBerry
-	waitstate
 	goto_if_eq VAR_ITEM_ID, 0, BerryTree_EventScript_CancelPlanting
 	removeitem VAR_ITEM_ID
 	call BerryTree_EventScript_PlantBerry
@@ -239,7 +238,6 @@ BerryTree_EventScript_WaterBerry::
 	waitmessage
 	special ObjectEventInteractionWaterBerryTree
 	special DoWateringBerryTreeAnim
-	waitstate
 	message BerryTree_Text_PlantIsDelighted
 	waitmessage
 	waitbuttonpress
@@ -312,12 +310,12 @@ BerryTree_Text_CareAdverbGood:
 	.string "prettily$"
 
 BerryTree_Text_WantToPick:
-	.string "You found a {STR_VAR_1}!\p"
+	.string "You found {STR_VAR_2} {STR_VAR_1}!\p"
 	.string "Do you want to pick the\n"
 	.string "{STR_VAR_1}?$"
 
 BerryTree_Text_PickedTheBerry:
-	.string "{PLAYER} picked the {STR_VAR_1}.$"
+	.string "{PLAYER} picked the {STR_VAR_2} {STR_VAR_1}.$"
 
 BerryTree_Text_PutAwayBerry:
 	.string "{PLAYER} put away the {STR_VAR_1}\n"

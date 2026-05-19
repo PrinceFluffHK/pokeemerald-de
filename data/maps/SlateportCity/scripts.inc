@@ -125,15 +125,12 @@ SlateportCity_EventScript_EnergyGuru::
 
 	.align 2
 SlateportCity_Pokemart_EnergyGuru:
-	.2byte ITEM_SEA_INCENSE
-	.2byte ITEM_LAX_INCENSE
-	.2byte ITEM_ODD_INCENSE
-	.2byte ITEM_ROCK_INCENSE
-	.2byte ITEM_FULL_INCENSE
-	.2byte ITEM_WAVE_INCENSE
-	.2byte ITEM_ROSE_INCENSE
-	.2byte ITEM_LUCK_INCENSE
-	.2byte ITEM_PURE_INCENSE
+	.2byte ITEM_PROTEIN
+	.2byte ITEM_IRON
+	.2byte ITEM_CARBOS
+	.2byte ITEM_ZINC
+	.2byte ITEM_CALCIUM
+	.2byte ITEM_HP_UP
 	pokemartlistend
 
 SlateportCity_EventScript_EffortRibbonWoman::
@@ -540,34 +537,8 @@ SlateportCity_EventScript_PowerTMClerk::
 
 	.align 2
 SlateportCity_Pokemart_PowerTMs:
-@	.2byte ITEM_TM_HIDDEN_POWER
-@	.2byte ITEM_TM_SECRET_POWER
-	.2byte ITEM_ALAKAZITE
-	.2byte ITEM_PINSIRITE
-	.2byte ITEM_GYARADOSITE
-	.2byte ITEM_HERACRONITE
-	.2byte ITEM_SCEPTILITE
-	.2byte ITEM_BLAZIKENITE
-	.2byte ITEM_SWAMPERTITE
-	.2byte ITEM_GARDEVOIRITE
-	.2byte ITEM_SABLENITE
-	.2byte ITEM_MAWILITE
-	.2byte ITEM_AGGRONITE
-	.2byte ITEM_MEDICHAMITE
-	.2byte ITEM_MANECTITE
-	.2byte ITEM_SHARPEDONITE
-	.2byte ITEM_CAMERUPTITE
-	.2byte ITEM_ALTARIANITE
-	.2byte ITEM_BANETTITE
-	.2byte ITEM_ABSOLITE
-	.2byte ITEM_GLALITITE
-	.2byte ITEM_SALAMENCITE
-	.2byte ITEM_METAGROSSITE
-	.2byte ITEM_LATIASITE
-	.2byte ITEM_LATIOSITE
-	.2byte ITEM_STARMINITE
-	.2byte ITEM_SKARMORITE
-	.2byte ITEM_FROSLASSITE
+	.2byte ITEM_TM_HIDDEN_POWER
+	.2byte ITEM_TM_SECRET_POWER
 	pokemartlistend
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
@@ -762,7 +733,6 @@ SlateportCity_EventScript_ChooseBerryPowderItem::
 	waitmessage
 	setvar VAR_0x8004, SCROLL_MULTI_BERRY_POWDER_VENDOR
 	special ShowScrollableMultichoice
-	waitstate
 	switch VAR_RESULT
 	case 0, SlateportCity_EventScript_EnergyPowder
 	case 1, SlateportCity_EventScript_EnergyRoot
@@ -944,13 +914,12 @@ SlateportCity_Movement_ScottExitAfterBattleTent:
 SlateportCity_EventScript_BerryCrushRankingsSign::
 	lockall
 	special ShowBerryCrushRankings
-	waitstate
 	releaseall
 	end
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed:
-	.string "I'm the INCENSE GURU! I'll go for it\n"
-	.string "and sell you what you need!$"
+	.string "I'm the ENERGY GURU! I'll go for it and\n"
+	.string "sell you what you need!$"
 
 SlateportCity_Text_OhYourPokemon:
 	.string "Oh?\n"

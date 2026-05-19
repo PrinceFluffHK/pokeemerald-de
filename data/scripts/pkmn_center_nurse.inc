@@ -4,7 +4,6 @@ Common_EventScript_PkmnCenterNurse::
 	setvar VAR_0x8004, 0
 	specialvar VAR_RESULT, CountPlayerTrainerStars
 	goto_if_eq VAR_RESULT, 4, EventScript_PkmnCenterNurse_GoldCard
-	goto EventScript_PkmnCenterNurse_HealPkmn
 	msgbox gText_WouldYouLikeToRestYourPkmn, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_PkmnCenterNurse_HealPkmn
 	goto_if_eq VAR_RESULT, NO, EventScript_PkmnCenterNurse_Goodbye
@@ -44,18 +43,11 @@ EventScript_PkmnCenterNurse_TakeAndHealPkmn::
 	clearflag OW_FLAG_MOVE_UNION_ROOM_CHECK
 .endif
 	waitfieldeffect FLDEFF_POKECENTER_HEAL
-@	checkitem ITEM_SACRED_ASH
-@	call_if_eq VAR_RESULT, FALSE, EventScript_PkmnCenterNurse_RestoreSacredAsh
 	applymovement VAR_0x800B, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	special HealPlayerParty
 	callnative UpdateFollowingPokemon
 	return
-
-@EventScript_PkmnCenterNurse_RestoreSacredAsh::
-@	giveitem ITEM_SACRED_ASH
-@	closemessage
-@	return
 
 EventScript_PkmnCenterNurse_CheckTrainerHillAndUnionRoom::
 	specialvar VAR_RESULT, PlayerNotAtTrainerHillEntrance

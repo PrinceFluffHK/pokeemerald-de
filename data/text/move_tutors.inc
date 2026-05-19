@@ -32,16 +32,16 @@ MoveTutor_Text_RolloutTeach:
 	.string "that way.\p"
 	.string "Do you think your POKéMON will\n"
 	.string "want to roll, too?\p"
-	.string "I can teach one the move HELPING HAND\n"
+	.string "I can teach one the move ROLLOUT\n"
 	.string "if you'd like.$"
 
 MoveTutor_Text_RolloutDeclined:
 	.string "You don't need to be shy about it.\n"
-	.string "Come on everybody, do the little clap!$"
+	.string "Let's roll!$"
 
 MoveTutor_Text_RolloutWhichMon:
 	.string "Ehehe, sure thing! It'd be great if\n"
-	.string "the POKéMON looked helpful.$"
+	.string "the POKéMON looked like me.$"
 
 MoveTutor_Text_RolloutTaught:
 	.string "Rolling around in the grass makes me\n"

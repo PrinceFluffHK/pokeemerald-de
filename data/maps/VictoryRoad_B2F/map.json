@@ -75,7 +75,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM_DAZZLING_GLEAM",
+      "trainer_sight_or_berry_tree_id": "ITEM_FULL_HEAL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL"
     },
@@ -143,7 +143,7 @@
       "x": 28,
       "y": 5,
       "elevation": 3,
-      "item": "ITEM_ZINC",
+      "item": "ITEM_ELIXIR",
       "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_ELIXIR"
     },
     {
@@ -151,7 +151,7 @@
       "x": 37,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_CALCIUM",
+      "item": "ITEM_MAX_REPEL",
       "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_MAX_REPEL"
     }
   ]

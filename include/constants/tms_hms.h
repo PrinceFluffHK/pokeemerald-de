@@ -2,13 +2,13 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(EXPLOSION) \
+    F(FOCUS_PUNCH) \
     F(DRAGON_CLAW) \
-    F(FIRE_PUNCH) \
+    F(WATER_PULSE) \
     F(CALM_MIND) \
     F(ROAR) \
     F(TOXIC) \
-    F(SNOWSCAPE) \
+    F(HAIL) \
     F(BULK_UP) \
     F(BULLET_SEED) \
     F(HIDDEN_POWER) \
@@ -22,20 +22,20 @@
     F(RAIN_DANCE) \
     F(GIGA_DRAIN) \
     F(SAFEGUARD) \
-    F(SWORDS_DANCE) \
+    F(FRUSTRATION) \
     F(SOLAR_BEAM) \
     F(IRON_TAIL) \
     F(THUNDERBOLT) \
     F(THUNDER) \
     F(EARTHQUAKE) \
-    F(SUPERPOWER) \
+    F(RETURN) \
     F(DIG) \
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(ICE_PUNCH) \
+    F(DOUBLE_TEAM) \
     F(REFLECT) \
-    F(THUNDER_PUNCH) \
+    F(SHOCK_WAVE) \
     F(FLAMETHROWER) \
     F(SLUDGE_BOMB) \
     F(SANDSTORM) \
@@ -46,62 +46,12 @@
     F(FACADE) \
     F(SECRET_POWER) \
     F(REST) \
-    F(HELPING_HAND) \
+    F(ATTRACT) \
     F(THIEF) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
-    F(FALSE_SWIPE) \
-    F(OVERHEAT) \
-    F(ICY_WIND) \
-    F(PSYCHIC_TERRAIN) \
-    F(CHARGE_BEAM) \
-    F(BREAKING_SWIPE) \
-    F(METEOR_BEAM) \
-    F(SCORCHING_SANDS) \
-    F(ELECTROWEB) \
-    F(SUPERCELL_SLAM) \
-    F(BUG_BUZZ) \
-    F(SCALE_SHOT) \
-    F(FLIP_TURN) \
-    F(POLTERGEIST) \
-    F(MYSTICAL_FIRE) \
-    F(GRASSY_TERRAIN) \
-    F(ICE_SPINNER) \
-    F(ALLURING_VOICE) \
-    F(TRICK_ROOM) \
-    F(SCALD) \
-    F(FOCUS_BLAST) \
-    F(BODY_PRESS) \
-    F(FLASH_CANNON) \
-    F(WILL_O_WISP) \
-    F(THUNDER_WAVE) \
-    F(MISTY_TERRAIN) \
-    F(TOXIC_SPIKES) \
-    F(SPIKES) \
-    F(STEALTH_ROCK) \
-    F(STOMPING_TANTRUM) \
-    F(ROCK_SLIDE) \
-    F(LIQUIDATION) \
-    F(GRASS_KNOT) \
-    F(TRAILBLAZE) \
-    F(PSYCHIC_NOISE) \
-    F(DRAIN_PUNCH) \
-    F(U_TURN) \
-    F(STRUGGLE_BUG) \
-    F(VOLT_SWITCH) \
-    F(KNOCK_OFF) \
-    F(CHILLING_WATER) \
-    F(IMPRISON) \
-    F(IRON_HEAD) \
-    F(ELECTRIC_TERRAIN) \
-    F(WEATHER_BALL) \
-    F(EARTH_POWER) \
-    F(SNARL) \
-    F(STONE_EDGE) \
-    F(GIGA_IMPACT) \
-    F(DARK_PULSE) \
-    F(DRACO_METEOR) \
-    F(DAZZLING_GLEAM) 
+    F(SNATCH) \
+    F(OVERHEAT)
 
 #define FOREACH_HM(F) \
     F(CUT) \
