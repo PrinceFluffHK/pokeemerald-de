@@ -385,9 +385,9 @@ static u32 GetRelearnerTutorMoves(struct BoxPokemon *mon, u16 *moves);
 static const struct RelearnType sRelearnTypes[MOVE_RELEARNER_COUNT] =
 {
     [MOVE_RELEARNER_LEVEL_UP_MOVES] = {HasRelearnerLevelUpMoves},
-    [MOVE_RELEARNER_EGG_MOVES] = {HasRelearnerEggMoves},
     [MOVE_RELEARNER_TM_MOVES] = {HasRelearnerTMMoves},
     [MOVE_RELEARNER_TUTOR_MOVES] = {HasRelearnerTutorMoves},
+    [MOVE_RELEARNER_EGG_MOVES] = {HasRelearnerEggMoves},
 };
 
 static void VBlankCB_MoveRelearner(void)
