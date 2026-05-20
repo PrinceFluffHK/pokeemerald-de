@@ -67,7 +67,8 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	setvar VAR_BRINEY_LOCATION, 1
 	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	setvar VAR_DEVON_CORP_3F_STATE, 1
-	setvar VAR_RUSTBORO_CITY_STATE, 6
+	setvar VAR_RUSTBORO_CITY_STATE, 7
+@	setvar VAR_RUSTBORO_CITY_STATE, 6
 	releaseall
 	end
 
@@ -250,12 +251,12 @@ RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "MR. STONE: A POKéMON holding that\n"
-	.string "EXP. SHARE will be given some of the\l"
+	.string "LUCKY EGG will be given twice the\l"
 	.string "EXP Points from battle.\p"
-	.string "It will get EXP Points even if it didn't\n"
-	.string "actually battle.\p"
-	.string "I would say EXP. SHARE is quite useful\n"
-	.string "for raising weak POKéMON.$"
+@	.string "It will get EXP Points even if it didn't\n"
+@	.string "actually battle.\p"
+	.string "I would say a LUCKY EGG is quite\n"
+	.string "useful for raising weak POKéMON.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "MR. STONE: Since my youth, I've immersed\n"
