@@ -15976,7 +15976,7 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
 
-     [ITEM_CUT_TOOL] =
+    [ITEM_CUT_TOOL] =
     {
         .name = ITEM_NAME("Cut Item"),
         .price = 0,
