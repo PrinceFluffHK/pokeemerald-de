@@ -23,7 +23,7 @@
 #define I_LAX_INCENSE_BOOST             GEN_LATEST  // In Gen4+, Lax Incense increases evasion by 10% instead of 5%.
 
 // TM config
-#define I_REUSABLE_TMS          FALSE       // In Gen5-8, TMs are reusable. Setting this to TRUE will make all vanilla TMs reusable, though they can also be cherry-picked by setting their importance to 1.
+#define I_REUSABLE_TMS          TRUE       // In Gen5-8, TMs are reusable. Setting this to TRUE will make all vanilla TMs reusable, though they can also be cherry-picked by setting their importance to 1.
 
 // Exp. Share config
 // To use this feature, replace the 0 with the flag ID you're assigning it to.
@@ -41,7 +41,7 @@
 #define I_SHOW_NO_ID_TRAINER        DISABLED_ON_RELEASE   // If TRUE, object events with a trainer type but no visible trainer id will be shown with a question mark. You may want to add vsseeker_rematchid TRAINER_ID as the top of the script to let the VS seeker know what reaction it's supposed to show.
 
 // ORAS Dowsing Machine
-#define I_ORAS_DOWSING_FLAG         0           // Replace 0 with an unused flag to enable the Dowsing Machine mechanic from ORAS.
+#define I_ORAS_DOWSING_FLAG         FLAG_DOWSING_MCHN          // Replace 0 with an unused flag to enable the Dowsing Machine mechanic from ORAS.
 #define I_ORAS_DOWSING_SOUNDS       TRUE        // If TRUE, the Dowsing Machine will make sounds based on how far away the hidden item is.
 #define I_ORAS_DOWSING_COLOR_PAL    15          // The color within the palette that will change based on proximity to the item.
 // Color values for the ORAS dowsing distances/anims

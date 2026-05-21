@@ -645,6 +645,7 @@ static void CB2_EndWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+    RechargePlayerParty();
 
     if (IsNPCFollowerWildBattle())
     {
@@ -671,6 +672,7 @@ static void CB2_EndScriptedWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+    RechargePlayerParty();
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE)
     {
@@ -690,6 +692,7 @@ static void CB2_EndMarowakBattle(void)
 {
     CpuFill16(0, (void *)BG_PLTT, BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+    RechargePlayerParty();
 
     if (IsPlayerDefeated(gBattleOutcome))
     {
@@ -992,6 +995,7 @@ static void CB2_StartFirstBattle(void)
 static void CB2_EndFirstBattle(void)
 {
     Overworld_ClearSavedMusic();
+    RechargePlayerParty();
     DowngradeBadPoison();
     SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }
@@ -1386,6 +1390,7 @@ static void CB2_EndDebugBattle(void)
         }
         LoadPlayerParty();
     }
+    RechargePlayerParty();
     SetMainCallback2(CB2_EndTrainerBattle);
 }
 
@@ -1428,6 +1433,7 @@ static void HandleBattleVariantEndParty(void)
 static void CB2_EndTrainerBattle(void)
 {
     HandleBattleVariantEndParty();
+    RechargePlayerParty();
 
     gIsDebugBattle = FALSE;
     if (FollowerNPCIsBattlePartner())
@@ -1495,6 +1501,7 @@ static void CB2_EndTrainerBattle(void)
 
 static void CB2_EndRematchBattle(void)
 {
+    RechargePlayerParty();
     if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_SECRET_BASE)
     {
         DowngradeBadPoison();

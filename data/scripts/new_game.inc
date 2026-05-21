@@ -273,6 +273,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SKY_PILLAR_WALLACE
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 	setflag B_SMART_WILD_AI_FLAG
+	setflag FLAG_DOWSING_MCHN
 	call EventScript_ResetAllBerries
 	end
 
