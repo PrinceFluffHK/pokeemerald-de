@@ -90,6 +90,7 @@ static void Task_SetControllerToWaitForString(u8);
 static void Task_GiveExpWithExpBar(u8);
 static void Task_UpdateLvlInHealthbox(u8);
 static void PrintLinkStandbyMsg(void);
+static void CreateSpeedTiersWindow(u32 battler);
 
 static void ReloadMoveNames(enum BattlerId battler);
 static u32 CheckTypeEffectiveness(enum BattlerId battlerAtk, enum BattlerId battlerDef);
@@ -2077,8 +2078,150 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     else
     {
         BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
+        CreateSpeedTiersWindow(battler);
     }
 }
+
+static void AppendSpeed(u32 battler)
+{
+    ConvertUIntToDecimalStringN(
+        gStringVar2,
+        GetBattlerTotalSpeedStat(
+            battler,
+            GetBattlerAbility(battler),
+            GetBattlerHoldEffect(battler)
+        ),
+        STR_CONV_MODE_LEFT_ALIGN,
+        3
+    );
+    StringAppend(gStringVar1, gStringVar2);
+}
+
+static void AppendMoveTarget(u32 battler, bool32 isRightSide)
+{
+    u32 move = gBattleMons[battler].moves[gBattleStruct->chosenMovePositions[battler]];
+    u32 moveTarget = GetBattlerMoveTargetType(battler, move);
+
+    switch (moveTarget)
+    {
+    case TARGET_USER:
+        StringAppend(gStringVar1,
+            isRightSide ? COMPOUND_STRING(" {UP_ARROW}-")
+                        : COMPOUND_STRING(" -{UP_ARROW}"));
+        break;
+
+    case TARGET_SELECTED:
+    {
+        u32 target = gAiBattleData->chosenTarget[battler];
+
+        if (target == B_POSITION_OPPONENT_LEFT)
+            StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
+        else if (target == B_POSITION_OPPONENT_RIGHT)
+            StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
+        else if (target == B_POSITION_PLAYER_LEFT)
+            StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-"));
+        else if (target == B_POSITION_PLAYER_RIGHT)
+            StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}"));
+        break;
+    }
+
+    case TARGET_ALLY:
+        StringAppend(gStringVar1,
+            isRightSide ? COMPOUND_STRING(" -{UP_ARROW}")
+                        : COMPOUND_STRING(" {UP_ARROW}-"));
+        break;
+
+    case TARGET_DEPENDS:
+        StringAppend(gStringVar1, COMPOUND_STRING(" ??"));
+        break;
+
+    case TARGET_USER_OR_ALLY:
+        StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}{UP_ARROW}"));
+        break;
+
+    case TARGET_BOTH:
+    case TARGET_OPPONENTS_FIELD:
+        StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{DOWN_ARROW}"));
+        break;
+
+    case TARGET_FOES_AND_ALLY:
+        StringAppend(gStringVar1,
+            isRightSide ? COMPOUND_STRING(" {DOWN_ARROW}{V_D_ARROW}")
+            : COMPOUND_STRING(" {V_D_ARROW}{DOWN_ARROW}"));
+        break;
+        
+    case TARGET_FIELD:
+    case TARGET_ALL_BATTLERS:
+        StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}"));
+        break;
+    }
+}
+
+static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeedFirst)
+{
+    u32 battler = GetBattlerAtPosition(position);
+    if (!IsBattlerAlive(battler))
+        return;
+
+    if (gBattleStruct->monToSwitchIntoId[battler] != PARTY_SIZE)
+    {
+        StringAppend(gStringVar1, COMPOUND_STRING("Switch"));
+        return;
+    }
+
+    if (showSpeedFirst)
+        AppendSpeed(battler);
+
+    AppendMoveTarget(battler, isRightSide);
+}
+
+static void CreateSpeedTiersWindow(u32 battler)
+{
+    StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
+
+    bool32 rightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT));
+    bool32 leftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
+
+    if (rightAlive)
+        AppendBattlerInfo(B_POSITION_OPPONENT_RIGHT, TRUE, TRUE);
+
+    if (leftAlive)
+    {
+        if (rightAlive)
+            StringAppend(gStringVar1, COMPOUND_STRING(" / "));
+
+        AppendBattlerInfo(B_POSITION_OPPONENT_LEFT, FALSE, TRUE);
+    }
+
+    StringAppend(gStringVar1, COMPOUND_STRING("\nPrev  "));
+    
+    bool32 pLeftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
+    bool32 pRightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
+
+    
+    
+    if (pLeftAlive)
+    {
+        AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
+
+        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
+            StringAppend(gStringVar1, COMPOUND_STRING("?"));
+    }
+
+    if (pRightAlive)
+    {
+        if (pLeftAlive)
+            StringAppend(gStringVar1, COMPOUND_STRING(" / "));
+
+        AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
+
+        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
+            StringAppend(gStringVar1, COMPOUND_STRING("?"));
+    }
+
+    BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
+}
+
 
 static void PlayerHandleYesNoBox(enum BattlerId battler)
 {

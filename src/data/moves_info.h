@@ -3100,7 +3100,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_PSYCHIC,
         .accuracy = 0,
         .pp = 20,
-        .target = TARGET_USER,
+        .target = TARGET_USER_OR_ALLY, //TARGET_USER,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
