@@ -1071,13 +1071,22 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Crunch
 - Temper Flare
 
+Machamp
+Ability: Guts
+Level: 45
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Cross Chop
+- Payback
+- Thunder Punch
+- Focus Energy
+
 Muk @ Black Sludge
 Ability: Poison Touch
 Level: 45
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Acid Spray
 - Knock Off
-- Mud Shot
+- Substitute
 - Haze
 
 Tentacruel
@@ -1088,21 +1097,14 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Sludge Bomb
 - Wrap
 
-Sharpedo
-Ability: Speed Boost
+Sharpedo @ Focus Sash
+Ability: Strong Jaw
 Level: 47
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Fishious Rend
+- Aqua Jet
 - Crunch
 - Ice Fang
-
-Salamence @ Red Orb
-Ability: Moxie
-Level: 47
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Dragon Claw
-- Bite
-- Hydro Pump
+- Psychic Fangs
 
 === TRAINER_LEAH ===
 Name: LEAH
@@ -15927,6 +15929,7 @@ Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earthquake
 - Extrasensory
+- Stealth Rock
 - Trick Room
 
 Weezing
@@ -15934,8 +15937,8 @@ Ability: Levitate
 Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sludge Bomb
-- Flamethrower
-- Assurance
+- Heat Wave
+- Haze
 - Will-O-Wisp
 
 Nosepass @ Eviolite
@@ -15944,8 +15947,8 @@ Level: 38
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Power Gem
 - Body Press
-- Thunder Wave
-- Stealth Rock
+- Sandstorm
+- Zap Cannon
 
 Magneton
 Ability: Sturdy
@@ -15956,20 +15959,21 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Metal Sound
 - Magnet Rise
 
-Camerupt
+Magcargo
+Ability: Pyroclastic Flow
+Level: 38
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flamethrower
+- Power Gem
+- Substitute
+- Recover
+
+Camerupt @ Passho Berry
 Ability: Sheer Force
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Earth Power
 - Heat Wave
-- Rock Slide
-
-Donphan @ Blue Orb
-Ability: Juggernaut
-Level: 40
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Iron Head
-- Stomping Tantrum
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
 Name: MAXIE
@@ -15980,11 +15984,13 @@ Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Donphan @ Wide Lens
-Ability: Juggernaut
+Baltoy
+Ability: Levitate
 Level: 24
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Rollout
+- Psybeam
+- Rock Tomb
+- Trick Room
 
 Magneton
 Ability: Sturdy
@@ -16011,13 +16017,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Assurance
 - Will-O-Wisp
 
-Camerupt
+Camerupt @ Passho Berry
 Ability: Sheer Force
 Level: 26
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Incinerate
 - Stomping Tantrum
-- Rock Slide
 
 === TRAINER_TIANA ===
 Name: TIANA
