@@ -565,9 +565,9 @@ SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_METAGROSSITE
 	.2byte ITEM_LATIASITE
 	.2byte ITEM_LATIOSITE
-	.2byte ITEM_STARMINITE
-	.2byte ITEM_SKARMORITE
-	.2byte ITEM_FROSLASSITE
+@	.2byte ITEM_STARMINITE
+@	.2byte ITEM_SKARMORITE
+@	.2byte ITEM_FROSLASSITE
 	pokemartlistend
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
