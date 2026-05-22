@@ -14237,44 +14237,43 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_MITCHELL ===
 Name: JAKE
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Rich Boy
+Pic: Rich Boy
 Gender: Male
-Music: Cool
+Music: Rich
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Crobat
-Ability: Inner Focus
+Seviper @ Choice Scarf
+Ability: Merciless
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Poison Fang
-- Mean Look
-- Screech
+- Poison Tail
 
-Crobat
-Ability: Inner Focus
+Gallade
+Ability: Sharpness
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Dual Wingbeat
-- Cross Poison
-- Crunch
+- Sacred Sword
+- Psycho Cut
+- Leaf Blade
 
-Crobat @ Wise Glasses
-Ability: Inner Focus
+Wigglytuff
+Ability: Friend Guard
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Venoshock
-- Air Slash
-- Shadow Ball
+- Hyper Voice
+- Dazzling Gleam
+- Icy Wind
+- Helping Hand
 
-Crobat @ Black Sludge
-Ability: Inner Focus
+Probopass @ Weakness Policy
+Ability: Levitate
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Brave Bird
-- Leech Life
-- Roost
+- Rock Slide
+- Body Press
+- Thunderbolt
 
 === TRAINER_ISAAC_2 ===
 Name: ISAAC
