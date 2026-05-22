@@ -1231,6 +1231,7 @@ void PrepareStringBattle(enum StringID stringId, enum BattlerId battler)
             stringId = STRINGID_STATSWONTINCREASE2;
         break;
     case STRINGID_PKMNCUTSATTACKWITH:
+    case STRINGID_PKMNCUTSSPATTACKWITH:
         if (GetConfig(B_UPDATED_INTIMIDATE) >= GEN_8
          && targetAbility == ABILITY_RATTLED
          && CompareStat(gBattlerTarget, STAT_SPEED, MAX_STAT_STAGE, CMP_LESS_THAN, targetAbility))
@@ -1252,7 +1253,7 @@ void PrepareStringBattle(enum StringID stringId, enum BattlerId battler)
         break;
     }
 
-    if ((stringId == STRINGID_PKMNCUTSATTACKWITH || stringId == STRINGID_DEFENDERSSTATFELL)
+    if ((stringId == STRINGID_PKMNCUTSATTACKWITH || stringId == STRINGID_DEFENDERSSTATFELL || stringId == STRINGID_PKMNCUTSSPATTACKWITH)
      && ShouldDefiantCompetitiveActivate(gBattlerTarget, targetAbility))
     {
         gBattlerAbility = gBattlerTarget;
@@ -3440,6 +3441,16 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 gBattlerAttacker = battler;
                 SET_STATCHANGER(STAT_ATK, 1, TRUE);
                 BattleScriptCall(BattleScript_IntimidateActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_PSYCH_OUT:
+            if (shouldAbilityTrigger && !IsOpposingSideEmpty(battler))
+            {
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
+                SET_STATCHANGER(STAT_SPATK, 1, TRUE);
+                BattleScriptCall(BattleScript_PsychOutActivates);
                 effect++;
             }
             break;

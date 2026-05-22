@@ -173,7 +173,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_INTIMIDATE] =
     {
         .name = _("Intimidate"),
-        .description = COMPOUND_STRING("Lowers the foe's Attack."),
+        .description = COMPOUND_STRING("Lowers the foes' Attack."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_PSYCH_OUT] =
+    {
+        .name = _("Psych Out"),
+        .description = COMPOUND_STRING("Lowers the foes' Sp. Atk."),
         .aiRating = 7,
     },
 

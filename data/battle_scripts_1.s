@@ -6256,6 +6256,71 @@ BattleScript_IntimidateInReverse::
 	call BattleScript_TryIntimidateHoldEffects
 	goto BattleScript_IntimidateLoopIncrement
 
+BattleScript_TryPsychOutHoldEffects:
+	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryPsychOutHoldEffectsRet
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_TryPsychOutHoldEffectsRet
+	setstatchanger STAT_SPEED, 1, FALSE
+	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryPsychOutHoldEffectsRet
+	copybyte sBATTLER, gBattlerTarget
+	setlastuseditem BS_TARGET
+	printstring STRINGID_USINGITEMSTATOFPKMNROSE
+	waitmessage B_WAIT_TIME_LONG
+	removeitem BS_TARGET
+BattleScript_TryPsychOutHoldEffectsRet:
+	return
+
+BattleScript_PsychOutActivates::
+	savetarget
+	call BattleScript_AbilityPopUp
+	setbyte gBattlerTarget, 0
+BattleScript_PsychOutLoop:
+	jumpiftargetally BattleScript_PsychOutLoopIncrement
+	jumpifabsent BS_TARGET, BattleScript_PsychOutLoopIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_PsychOutLoopIncrement
+	jumpifpsychoutabilityprevented
+BattleScript_PsychOutEffect:
+	copybyte sBATTLER, gBattlerAttacker
+	setstatchanger STAT_ATK, 1, TRUE
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_PsychOutLoopIncrement
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_PsychOutWontDecrease
+	printstring STRINGID_PKMNCUTSSPATTACKWITH
+BattleScript_PsychOutEffect_WaitString:
+	waitmessage B_WAIT_TIME_LONG
+	saveattacker
+	savetarget
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_TryPsychOutHoldEffects
+	restoreattacker
+	restoretarget
+BattleScript_PsychOutLoopIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_PsychOutLoop
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	restoretarget
+	restoreattacker
+	pause B_WAIT_TIME_MED
+	return
+
+BattleScript_PsychOutPrevented::
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_PKMNPREVENTSSTATLOSSWITH
+	goto BattleScript_PsychOutEffect_WaitString
+
+BattleScript_PsychOutWontDecrease:
+	printstring STRINGID_STATSWONTDECREASE
+	goto BattleScript_PsychOutEffect_WaitString
+
+BattleScript_PsychOutInReverse::
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUpTarget
+	pause B_WAIT_TIME_SHORT
+	modifybattlerstatstage BS_TARGET, STAT_ATK, INCREASE, 1, BattleScript_PsychOutLoopIncrement, ANIM_ON
+	call BattleScript_TryPsychOutHoldEffects
+	goto BattleScript_PsychOutLoopIncrement
+
 BattleScript_SupersweetSyrupActivates::
  	savetarget
 	call BattleScript_AbilityPopUp
