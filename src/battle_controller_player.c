@@ -476,6 +476,7 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
         break;
 
     case TARGET_SELECTED:
+    case TARGET_USER_OR_ALLY:
     {
         u32 target = gAiBattleData->chosenTarget[battler];
 
@@ -497,14 +498,17 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
         break;
 
     case TARGET_DEPENDS:
+    case TARGET_OPPONENT:
+    case TARGET_RANDOM:
         StringAppend(gStringVar1, COMPOUND_STRING(" ??"));
         break;
 
-    case TARGET_USER_OR_ALLY:
+    case TARGET_USER_AND_ALLY:
         StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}{UP_ARROW}"));
         break;
 
     case TARGET_BOTH:
+    case TARGET_SMART:
     case TARGET_OPPONENTS_FIELD:
         StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{DOWN_ARROW}"));
         break;
