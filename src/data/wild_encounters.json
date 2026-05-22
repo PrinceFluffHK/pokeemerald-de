@@ -2027,62 +2027,62 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_RATTATA"
+                "species": "SPECIES_ZIGZAGOON_GALAR"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_CATERPIE"
+                "species": "SPECIES_ZIGZAGOON_GALAR"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MEOWTH"
+                "species": "SPECIES_VULPIX_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PONYTA"
+                "species": "SPECIES_GRIMER_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_GASTLY"
+                "species": "SPECIES_VULPIX_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_GROWLITHE"
+                "species": "SPECIES_GRIMER_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_CLEFAIRY"
+                "species": "SPECIES_VULPIX_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_SCYTHER"
+                "species": "SPECIES_TOEDSCOOL"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_EEVEE"
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_IRON_HANDS"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_BULBASAUR"
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_IRON_TREADS"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_DITTO"
+                "min_level": 38,
+                "max_level": 40,
+                "species": "SPECIES_IRON_VALIANT"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_MOLTRES"
+                "min_level": 38,
+                "max_level": 40,
+                "species": "SPECIES_IRON_VALIANT"
               }
             ]
           }
@@ -6319,62 +6319,62 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_ELEKID"
+                "species": "SPECIES_ZIGZAGOON_GALAR"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MAGBY"
+                "species": "SPECIES_ZIGZAGOON_GALAR"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_SNEASEL"
+                "species": "SPECIES_SANDSHREW_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_SMOOCHUM"
+                "species": "SPECIES_VOLTORB_HISUI"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MURKROW"
+                "species": "SPECIES_SANDSHREW_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MISDREAVUS"
+                "species": "SPECIES_VOLTORB_HISUI"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_FARFETCHD_GALAR"
+                "species": "SPECIES_SANDSHREW_ALOLA"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_TYROGUE"
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_SCREAM_TAIL"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_DUNSPARCE"
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_SANDY_SHOCKS"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_CYNDAQUIL"
+                "min_level": 35,
+                "max_level": 40,
+                "species": "SPECIES_GREAT_TUSK"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
-                "species": "SPECIES_DELIBIRD"
+                "min_level": 38,
+                "max_level": 40,
+                "species": "SPECIES_ROARING_MOON"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_RAIKOU"
+                "min_level": 38,
+                "max_level": 40,
+                "species": "SPECIES_ROARING_MOON"
               }
             ]
           },
@@ -6384,17 +6384,17 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_DIGLETT"
+                "species": "SPECIES_GEODUDE_ALOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_CUBONE"
+                "species": "SPECIES_CORSOLA_GALAR"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_ONIX"
+                "species": "SPECIES_GEODUDE_ALOLA"
               }
             ]
           }
