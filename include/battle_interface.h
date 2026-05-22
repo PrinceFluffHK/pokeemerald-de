@@ -140,5 +140,8 @@ void TryToAddMoveInfoWindow(void);
 void TryToHideMoveInfoWindow(void);
 void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId, bool8 noStatus);
 void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon);
+// full turn preview
+void TryToAddMovePreviewWindow(void);
+void TryToHideMovePreviewWindow(void);
 
 #endif // GUARD_BATTLE_INTERFACE_H

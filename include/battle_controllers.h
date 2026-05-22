@@ -414,6 +414,9 @@ void HandleInputShowTargets(enum BattlerId battler);
 void HandleMoveSwitching(enum BattlerId battler);
 void HandleChooseMoveAfterDma3(enum BattlerId battler);
 
+// full turn preview
+void CreateMovePreviewText(u32 BattlerPosition);
+
 // recorded player controller
 void SetControllerToRecordedPlayer(enum BattlerId battler);
 void RecordedPlayerBufferExecCompleted(enum BattlerId battler);
