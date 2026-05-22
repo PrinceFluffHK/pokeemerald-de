@@ -373,7 +373,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Xatu
-Ability: Synchronize
+Ability: Psych Out
 Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Stored Power
@@ -382,7 +382,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Calm Mind
 
 Xatu
-Ability: Synchronize
+Ability: Psych Out
 Level: 34
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Stored Power
@@ -6432,7 +6432,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Xatu
-Ability: Magic Bounce
+Ability: Psych Out
 Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Future Sight
@@ -6491,7 +6491,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Disable
 
 Xatu
-Ability: Synchronize
+Ability: Psych Out
 Level: 33
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Stored Power
@@ -10672,7 +10672,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Stomp
 
 Xatu
-Ability: Synchronize
+Ability: Psych Out
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Stored Power
@@ -10725,7 +10725,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Protect
 
 Xatu
-Ability: Synchronize
+Ability: Psych Out
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Stored Power
@@ -10905,7 +10905,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Xatu
-Ability: Synchronize
+Ability: Psych Out
 Level: 40
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Stored Power
@@ -13544,30 +13544,42 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Roserade
+Gardevoir
+Ability: Telepathy
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Moonblast
+- Psychic
+- Calm Mind
+
+Roselia @ Eviolite
 Ability: Poison Point
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Giga Drain
 - Venoshock
 - Toxic Spikes
+- Spikes
 
-Farigiraf
-Ability: Armor Tail
+Delcatty @ Silk Scarf
+Ability: Normalize
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Hyper Voice
-- Twin Beam
+- Fake Out
+- Iron Tail
+- Charm
+- Sing
 
-Froslass
-Ability: Snow Warning
+Altaria
+Ability: Cloud Nine
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Frost Breath
-- Shadow Ball
-- Aurora Veil
+- Aerial Ace
+- Dragon Pulse
+- Dazzling Gleam
+- Dragon Dance
 
-Magnezone
+Magneton @ Eviolite
 Ability: Magnet Pull
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
@@ -13575,22 +13587,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Flash Cannon
 - Metal Sound
 
-Probopass
-Ability: Levitate
+Gallade @ Galladite
+Ability: Telepathy
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Power Gem
-- Flash Cannon
-- Body Press
-
-Gallade
-Ability: Sharpness
-Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
-- Psycho Cut
 - Sacred Sword
-- Night Slash
-- Agility
+- Psycho Cut
+- Swords Dance
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
 Name: BRENDAN
@@ -15639,7 +15642,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Xatu
-Ability: Magic Bounce
+Ability: Psych Out
 Level: 42
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Future Sight
@@ -22307,7 +22310,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Stomp
 
 Xatu
-Ability: Synchronize
+Ability: Psych Out
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Stored Power
