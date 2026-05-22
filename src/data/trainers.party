@@ -2921,6 +2921,7 @@ Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Grass Pledge
 - Dragon Pulse
+- X-Scissor
 - Shed Tail
 
 Swampert
@@ -2931,13 +2932,13 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 - Earth Power
 - Body Press
 
-Aggron
-Ability: Sturdy
+Mawile @ Mawilite
+Ability: Intimidate
 Level: 49
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Iron Head
-- Head Smash
-- Dragon Tail
+- Play Rough
+- Poison Fang
 
 === TRAINER_CAROLINE ===
 Name: THALIA

@@ -12183,7 +12183,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_DRAGON_CLAW] =
     {
         .name = ITEM_NAME("TM02"),
-        .price = 5000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "Slashes the foe\n"
             "with sharp claws."),
@@ -12395,7 +12395,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_LIGHT_SCREEN] =
     {
         .name = ITEM_NAME("TM16"),
-        .price = 10000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "Creates a wall of\n"
             "light that lowers\n"
@@ -12437,7 +12437,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_GIGA_DRAIN] =
     {
         .name = ITEM_NAME("TM19"),
-        .price = 5000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "Recovers half the\n"
             "HP of the damage\n"
@@ -12451,7 +12451,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_SAFEGUARD] =
     {
         .name = ITEM_NAME("TM20"),
-        .price = 3000,
+        .price = 2000,
         .description = COMPOUND_STRING(
             "Prevents status\n"
             "abnormality with a\n"
@@ -12633,7 +12633,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_REFLECT] =
     {
         .name = ITEM_NAME("TM33"),
-        .price = 10000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "Creates a wall of\n"
             "light that weakens\n"
@@ -12899,7 +12899,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_PSYCHIC_TERRAIN] =
     {
         .name = ITEM_NAME("TM52"),
-        .price = 3000,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "The ground turns\n"
             "weird for 5 turns.\n"
@@ -12983,7 +12983,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_SUPERCELL_SLAM] =
     {
         .name = ITEM_NAME("TM58"),
-        .price = 3000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "A charged slam.\n"
             "If it misses, the\n"
@@ -13053,7 +13053,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_MYSTICAL_FIRE] =
     {
         .name = ITEM_NAME("TM63"),
-        .price = 3000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "Throws a special,\n"
             "hot flame.\n"
@@ -13067,7 +13067,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_GRASSY_TERRAIN] =
     {
         .name = ITEM_NAME("TM64"),
-        .price = 3000,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "The ground turns\n"
             "to grass 5 turns.\n"
@@ -13081,7 +13081,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_ICE_SPINNER] =
     {
         .name = ITEM_NAME("TM65"),
-        .price = 3000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "Ice-covered feet\n"
             "hit a foe, removing\n"
@@ -13207,7 +13207,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_MISTY_TERRAIN] =
     {
         .name = ITEM_NAME("TM74"),
-        .price = 3000,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "Covers the ground\n"
             "with mist for 5\n"
@@ -13403,7 +13403,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_KNOCK_OFF] =
     {
         .name = ITEM_NAME("TM88"),
-        .price = 3000,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "Knocks down the\n"
             "foe's held item to\n"
@@ -13459,7 +13459,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_ELECTRIC_TERRAIN] =
     {
         .name = ITEM_NAME("TM92"),
-        .price = 3000,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "Electrifies the\n"
             "ground for 5 turns.\n"
@@ -13529,7 +13529,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_GIGA_IMPACT] =
     {
         .name = ITEM_NAME("TM97"),
-        .price = 3000,
+        .price = 10000,
         .description = COMPOUND_STRING(
             "Powerful, but needs\n"
             "recharging the\n"
