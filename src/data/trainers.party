@@ -3321,20 +3321,27 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Igglybuff
+Igglybuff @ Nugget
 Ability: Friend Guard
 Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Pound
 - Defense Curl
+- Sing
 
-Pichu
+Pichu @ Nugget
 Ability: Static
 Level: 5
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunder Shock
 - Play Nice
 - Tail Whip
+
+Slakoth @ Nugget
+Ability: Truant
+Level: 5
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Scratch
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
