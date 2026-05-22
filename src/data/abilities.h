@@ -2176,6 +2176,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 5,
     },
 
+    [ABILITY_WOOLLY_CHARGED] =
+    {
+        .name = _("Woolly-Charged"),
+        .description = COMPOUND_STRING("Gets Charged when hit."),
+        .aiRating = 5,
+    },
+
     [ABILITY_PROTOSYNTHESIS] =
     {
         .name = _("Protosynthesis"),

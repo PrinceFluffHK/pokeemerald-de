@@ -4329,6 +4329,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 break;
             // fall through
         case ABILITY_ELECTROMORPHOSIS:
+        case ABILITY_WOOLLY_CHARGED:
             if (!gBattleStruct->unableToUseMove
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES))
             {
