@@ -15,8 +15,9 @@ Route104_Text_TrainersOftenMakeMonHoldBerries:
 	.string "TRAINER, no?\p"
 	.string "TRAINERS often make POKéMON hold\n"
 	.string "BERRIES.\p"
-	.string "It's up to you whether to grow BERRIES\n"
-	.string "or use them.$"
+	.string "Oddly enough, the BERRIES never\n"
+	.string "disappear, even after being eaten.\p"
+	.string "Quite the mystery!$"
 
 Route111_Text_WateredPlantsEveryDayTakeBerry:
 	.string "I watered the plants every day.\n"
