@@ -2675,11 +2675,11 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_BOTTLE_CAP] =
     {
         .name = ITEM_NAME("Bottle Cap"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 5000,
+        .price = 5000,
         .description = COMPOUND_STRING(
-            "A beautiful bottle\n"
-            "cap that gives off\n"
-            "a silver gleam."),
+            "The cap reads: “All\n"
+            "IVs are set to 31.“\n"
+            "on the bottom."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,

@@ -161,9 +161,13 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 
 RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
 	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT
-	giveitem ITEM_EXP_SHARE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+@	giveitem ITEM_LUCKY_EGG
+@	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	playfanfare MUS_OBTAIN_ITEM
+	message RustboroCity_DevonCorp_3F_Text_GotDexNav
+	waitfanfare
 	setflag FLAG_RECEIVED_EXP_SHARE
+	setflag FLAG_DN_DEXNAV_GET
 	msgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
@@ -250,13 +254,13 @@ RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 	.string "It should help you, a TRAINER.$"
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
-	.string "MR. STONE: A POKéMON holding that\n"
-	.string "LUCKY EGG will be given twice the\l"
-	.string "EXP Points from battle.\p"
+	.string "MR. STONE: The DEXNAV will let you\n"
+	.string "survey your surroundings for\l"
+	.string "rare and interesting POKéMON.\p"
 @	.string "It will get EXP Points even if it didn't\n"
 @	.string "actually battle.\p"
-	.string "I would say a LUCKY EGG is quite\n"
-	.string "useful for raising weak POKéMON.$"
+	.string "I would say a DEXNAV is quite\n"
+	.string "useful for filling a POKEDEX!$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "MR. STONE: Since my youth, I've immersed\n"
@@ -305,3 +309,6 @@ RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "It's a collection of rare rocks and\n"
 	.string "stones assembled by the PRESIDENT.$"
 
+RustboroCity_DevonCorp_3F_Text_GotDexNav:
+	.string "{PLAYER} was given a DEXNAV\n"
+	.string "by MR. STONE.$"

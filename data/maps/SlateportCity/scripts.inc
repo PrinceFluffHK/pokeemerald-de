@@ -75,6 +75,7 @@ SlateportCity_EventScript_ScottScene::
 	setflag FLAG_ENABLE_SCOTT_MATCH_CALL
 	msgbox SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
+	giveitem ITEM_ABILITY_PATCH
 	applymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottExit
 	waitmovement 0
 	removeobject LOCALID_SLATEPORT_SCOTT
@@ -1367,7 +1368,8 @@ SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
 	.string "on the talents of other people, too.\p"
 	.string "So, I'll be off to roam other towns\n"
 	.string "a bit more.\p"
-	.string "Be seeing you, {PLAYER}{KUN}!$"
+	.string "Be seeing you, {PLAYER}{KUN}!\p"
+	.string "Here, take another ABILITY PATCH!$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
 	.string "SCOTT: Oh, hey!\n"

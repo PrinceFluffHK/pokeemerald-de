@@ -3199,22 +3199,22 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             SET8(GetSubstruct3(boxMon)->otGender);
             break;
         case MON_DATA_HP_IV:
-            SET8(GetSubstruct3(boxMon)->hpIV);
+            GetSubstruct3(boxMon)->hpIV = MAX_PER_STAT_IVS;
             break;
         case MON_DATA_ATK_IV:
-            SET8(GetSubstruct3(boxMon)->attackIV);
+            GetSubstruct3(boxMon)->attackIV = MAX_PER_STAT_IVS;
             break;
         case MON_DATA_DEF_IV:
-            SET8(GetSubstruct3(boxMon)->defenseIV);
+            GetSubstruct3(boxMon)->defenseIV = MAX_PER_STAT_IVS;
             break;
         case MON_DATA_SPEED_IV:
-            SET8(GetSubstruct3(boxMon)->speedIV);
+            GetSubstruct3(boxMon)->speedIV = MAX_PER_STAT_IVS;
             break;
         case MON_DATA_SPATK_IV:
-            SET8(GetSubstruct3(boxMon)->spAttackIV);
+            GetSubstruct3(boxMon)->spAttackIV = MAX_PER_STAT_IVS;
             break;
         case MON_DATA_SPDEF_IV:
-            SET8(GetSubstruct3(boxMon)->spDefenseIV);
+            GetSubstruct3(boxMon)->spDefenseIV = MAX_PER_STAT_IVS;
             break;
         case MON_DATA_IS_EGG:
             SET8(GetSubstruct3(boxMon)->isEgg);
@@ -3279,15 +3279,13 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             break;
         case MON_DATA_IVS:
         {
-            u32 ivs;
             struct PokemonSubstruct3 *substruct3 = GetSubstruct3(boxMon);
-            SET32(ivs);
-            substruct3->hpIV = ivs & MAX_IV_MASK;
-            substruct3->attackIV = (ivs >> 5) & MAX_IV_MASK;
-            substruct3->defenseIV = (ivs >> 10) & MAX_IV_MASK;
-            substruct3->speedIV = (ivs >> 15) & MAX_IV_MASK;
-            substruct3->spAttackIV = (ivs >> 20) & MAX_IV_MASK;
-            substruct3->spDefenseIV = (ivs >> 25) & MAX_IV_MASK;
+            substruct3->hpIV = MAX_PER_STAT_IVS;
+            substruct3->attackIV = MAX_PER_STAT_IVS;
+            substruct3->defenseIV = MAX_PER_STAT_IVS;
+            substruct3->speedIV = MAX_PER_STAT_IVS;
+            substruct3->spAttackIV = MAX_PER_STAT_IVS;
+            substruct3->spDefenseIV = MAX_PER_STAT_IVS;
             break;
         }
         case MON_DATA_HYPER_TRAINED_HP:

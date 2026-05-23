@@ -2444,7 +2444,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isTotem = TRUE,
         .isAlolanForm = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sRaticateAlolaLevelUpLearnset,
         .teachableLearnset = sRaticateAlolaTeachableLearnset,
         .formSpeciesIdTable = sRaticateFormSpeciesIdTable,
@@ -13759,7 +13758,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isTotem = TRUE,
         .isAlolanForm = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMarowakAlolaLevelUpLearnset,
         .teachableLearnset = sMarowakAlolaTeachableLearnset,
         .formSpeciesIdTable = sMarowakFormSpeciesIdTable,
@@ -19727,7 +19725,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gShinyOverworldPalette_Articuno
         )
         .isSubLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sArticunoLevelUpLearnset,
         .teachableLearnset = sArticunoTeachableLearnset,
         .formSpeciesIdTable = sArticunoFormSpeciesIdTable,
@@ -19795,7 +19792,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isSubLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sArticunoGalarLevelUpLearnset,
         .teachableLearnset = sArticunoGalarTeachableLearnset,
         .formSpeciesIdTable = sArticunoFormSpeciesIdTable,
@@ -19880,7 +19876,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gShinyOverworldPalette_Zapdos
         )
         .isSubLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sZapdosLevelUpLearnset,
         .teachableLearnset = sZapdosTeachableLearnset,
         .formSpeciesIdTable = sZapdosFormSpeciesIdTable,
@@ -19948,7 +19943,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isSubLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sZapdosGalarLevelUpLearnset,
         .teachableLearnset = sZapdosGalarTeachableLearnset,
         .formSpeciesIdTable = sZapdosFormSpeciesIdTable,
@@ -20057,7 +20051,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gShinyOverworldPalette_Moltres
         )
         .isSubLegendary = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMoltresLevelUpLearnset,
         .teachableLearnset = sMoltresTeachableLearnset,
         .formSpeciesIdTable = sMoltresFormSpeciesIdTable,
@@ -20125,7 +20118,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isSubLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMoltresGalarLevelUpLearnset,
         .teachableLearnset = sMoltresGalarTeachableLearnset,
         .formSpeciesIdTable = sMoltresFormSpeciesIdTable,
@@ -20484,7 +20476,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isRestrictedLegendary = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMewtwoLevelUpLearnset,
         .teachableLearnset = sMewtwoTeachableLearnset,
         .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
@@ -20560,7 +20551,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .isRestrictedLegendary = TRUE,
         .isMegaEvolution = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMewtwoLevelUpLearnset,
         .teachableLearnset = sMewtwoTeachableLearnset,
         .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
@@ -20636,7 +20626,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .isRestrictedLegendary = TRUE,
         .isMegaEvolution = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMewtwoLevelUpLearnset,
         .teachableLearnset = sMewtwoTeachableLearnset,
         .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
@@ -20720,7 +20709,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
-        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .teachingType = ALL_TEACHABLES,
         .levelUpLearnset = sMewLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,

@@ -154,6 +154,7 @@ Route119_EventScript_RivalExitScottArrive::
 	addvar VAR_SCOTT_STATE, 1
 	msgbox Route119_Text_ScottWayToGoBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
+	giveitem ITEM_ABILITY_PATCH
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_ScottExit1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_ScottExit2
 	removeobject LOCALID_ROUTE119_SCOTT
@@ -544,8 +545,8 @@ Route119_Text_ScottWayToGoBeSeeingYou:
 	.string "a face all red from anger.\p"
 	.string "I sure seem to run into you often.\n"
 	.string "Are you off to FORTREE GYM next?\p"
-	.string "I expect that you'll do well at the GYM.\n"
-	.string "Well, I'll be seeing you!$"
+	.string "I expect that you'll do well at the GYM,\n"
+	.string "but just in case…$"
 
 
 Route119_Text_ScottYouWonAtFortreeGym:
