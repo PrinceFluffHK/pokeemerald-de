@@ -2277,7 +2277,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_DRAGON_RAGE] =
     {
-        .name = COMPOUND_STRING("Wyrm Spark"),
+        .name = COMPOUND_STRING("Spitfire"),
         .description = COMPOUND_STRING(
             "Launches shock waves that\n"
             "might burn the target."),
@@ -2291,7 +2291,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
-            .chance = 10,
+            .chance = 20,
         }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_BETTER_WHEN_LATER,
         .contestCategory = CONTEST_CATEGORY_COOL,

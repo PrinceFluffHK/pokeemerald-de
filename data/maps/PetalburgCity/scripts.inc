@@ -759,8 +759,8 @@ PetalburgCity_Text_WellMaybeNot:
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
-	.string "Sorry to keep rambling on, kid.\p"
-	.string "Here, take this ABILITY PATCH for\n"
-	.string "humoring me.\p"
-	.string "They're a little scarce on the mainland,\n"
-	.string "but I can just buy 'em back home!\p"
+	.string "Sorry to keep rambling on, kid.$"
+	// .string "Here, take this ABILITY PATCH for\n"
+	// .string "humoring me.\p"
+	// .string "They're a little scarce on the mainland,\n"
+	// .string "but I can just buy 'em back home!\p"

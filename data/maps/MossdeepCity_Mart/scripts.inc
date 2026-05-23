@@ -20,18 +20,18 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_MAX_POTION
+	.2byte ITEM_REVIVE
 	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_REPEL
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_ICE_HEAL
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
 	pokemartlistend
 
 MossdeepCity_Mart_EventScript_Clerk_2::

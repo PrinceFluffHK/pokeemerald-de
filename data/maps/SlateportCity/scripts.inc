@@ -1368,8 +1368,10 @@ SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
 	.string "on the talents of other people, too.\p"
 	.string "So, I'll be off to roam other towns\n"
 	.string "a bit more.\p"
-	.string "Be seeing you, {PLAYER}{KUN}!\p"
-	.string "Here, take another ABILITY PATCH!$"
+	.string "Here, take this ABILITY PATCH.\p"
+	.string "They sell 'em in EVER GRANDE CITY, but\n"
+	.string "they're rare out here.\p"
+	.string "Be seeing you, {PLAYER}{KUN}!$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
 	.string "SCOTT: Oh, hey!\n"
