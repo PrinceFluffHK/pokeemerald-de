@@ -2677,9 +2677,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Bottle Cap"),
         .price = 5000,
         .description = COMPOUND_STRING(
-            "The cap reads: “All\n"
-            "IVs are set to 31.“\n"
-            "on the bottom."),
+            "The bottom reads:\n"
+            "“All IVs are already\n"
+            "set to 31.”"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,

@@ -8347,9 +8347,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Fires a meteor-like punch.\n"
             "May raise Attack."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 90 : 100,
+        .power = 100,
         .type = TYPE_STEEL,
-        .accuracy = 100, //B_UPDATED_MOVE_DATA >= GEN_6 ? 90 : 85,
+        .accuracy = 85,
         .pp = 12,
         .target = TARGET_SELECTED,
         .priority = 0,

@@ -2983,9 +2983,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
         .formChangeTable = sPikachuFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU, CONDITIONS({IF_NOT_REGION, REGION_ALOLA})}
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU}
                             #if P_ALOLAN_FORMS
-                                ,{EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU_ALOLA, CONDITIONS({IF_REGION, REGION_ALOLA})}
+                                ,{EVO_ITEM, ITEM_SUN_STONE, SPECIES_RAICHU_ALOLA}
                             #endif
                             ),
     },
@@ -14292,10 +14292,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sKoffingLevelUpLearnset,
         .teachableLearnset = sKoffingTeachableLearnset,
         .eggMoveLearnset = sKoffingEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING, CONDITIONS({IF_NOT_REGION, REGION_GALAR})}
+        .evolutions = EVOLUTION(
                             #if P_GALARIAN_FORMS
-                                ,{EVO_LEVEL, 35, SPECIES_WEEZING_GALAR, CONDITIONS({IF_REGION, REGION_GALAR})}
+                                {EVO_LEVEL, 35, SPECIES_WEEZING_GALAR, CONDITIONS({IF_HOLD_ITEM, ITEM_BIG_NUGGET})},
                             #endif
+                                {EVO_LEVEL, 35, SPECIES_WEEZING}
                             ),
     },
 
