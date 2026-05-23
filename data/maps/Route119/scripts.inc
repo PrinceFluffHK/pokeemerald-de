@@ -155,6 +155,7 @@ Route119_EventScript_RivalExitScottArrive::
 	msgbox Route119_Text_ScottWayToGoBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
 	giveitem ITEM_ABILITY_PATCH
+	closemessage
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_ScottExit1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_ScottExit2
 	removeobject LOCALID_ROUTE119_SCOTT

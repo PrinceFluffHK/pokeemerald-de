@@ -937,8 +937,8 @@ LittlerootTown_Text_WearTheseRunningShoes:
 @	.string "RUNNING SHOES.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "MOM: {PLAYER}, those shoes came with\n"
-	.string "instructions.\p"
+	.string "MOM: {PLAYER}, that HELD ITEM came\n"
+	.string "with instructions.\p"
 	.string "“Activate this classic EXP SHARE by\n"
 	.string "giving it to one of your POKéMON!”$"
 @	.string "“Slip on these RUNNING SHOES and race\n"

@@ -1026,8 +1026,8 @@ Route104_Text_ImNotATrainer:
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 	.string "I like to go hiking in the woods\n"
-	.string "with my family!\p"
-	.string "Here, you can have this TM.\p"
+	.string "with my family.\p"
+	.string "Here, take this TECHNICAL MACHINE.\p"
 	.string "TMs like this one are pretty sturdy,\n"
 	.string "I've never seen one break!$"
 
@@ -1066,14 +1066,14 @@ Route104_Text_PrettyPetalFlowShop:
 
 Route104_Text_TrainerTipsDoubleBattles:
 	.string "TRAINER TIPS\p"
-	.string "In the HOENN region there are pairs\n"
-	.string "of TRAINERS who challenge others\l"
-	.string "for 2-on-2 POKéMON battles called\l"
+	.string "In the HOENN region all TRAINERS\n"
+	.string "prefer to challenge others to\l"
+	.string "2-on-2 POKéMON battles called\l"
 	.string "DOUBLE BATTLES.\p"
 	.string "In a DOUBLE BATTLE, the TRAINER must\n"
 	.string "send out two POKéMON, the one at the\l"
-	.string "left of the list and the top one.\l"
-	.string "Watch how POKéMON are lined up.$"
+	.string "front of the party on the left and\l"
+	.string "the one behind it on the right.$"
 
 Route104_Text_MayWeShouldRegister:
 	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"

@@ -744,14 +744,17 @@ LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "PROF. BIRCH: The POKéDEX is a high-tech\n"
-	.string "tool that automatically makes a record\l"
-	.string "of any POKéMON you meet or catch.\p"
+	.string "tool that automatically makes an in-\l"
+	.string "depth record of any POKéMON you catch.\p"
 	.string "My kid, {RIVAL}, goes everywhere\n"
 	.string "with it.\p"
-	.string "Whenever my kid catches a rare POKéMON\n"
-	.string "and records its data in the POKéDEX,\l"
-	.string "why, {RIVAL} looks for me while I'm out\l"
-	.string "doing fieldwork, and shows me.$"
+	.string "It shows EVOLUTION and LOCATION data,\n"
+	.string "as well as what MOVES a POKéMON\l"
+	.string "can learn and its standard ABILITIES.$"
+@	.string "Whenever my kid catches a rare POKéMON\n"
+@	.string "and records its data in the POKéDEX,\l"
+@	.string "why, {RIVAL} looks for me while I'm out\l"
+@	.string "doing fieldwork, and shows me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
 	.string "PROF. BIRCH: Countless POKéMON\n"

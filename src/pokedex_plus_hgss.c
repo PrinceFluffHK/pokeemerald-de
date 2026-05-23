@@ -5075,7 +5075,8 @@ static bool8 CalculateMoves(void)
     }
     else
     {
-        numEggMoves = GetEggMovesBySpecies(species, statsMovesEgg);
+        numEggMoves = 0;
+        // numEggMoves = GetEggMovesBySpecies(species, statsMovesEgg);
     }
 
     // Level up moves

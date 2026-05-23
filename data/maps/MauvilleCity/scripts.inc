@@ -165,6 +165,7 @@ MauvilleCity_EventScript_DefeatedWally::
 	msgbox MauvilleCity_Text_ScottYouDidntHoldBack, MSGBOX_DEFAULT
 	closemessage
 	giveitem ITEM_ABILITY_PATCH
+	closemessage
 	addvar VAR_SCOTT_STATE, 1
 	call_if_eq VAR_FACING, DIR_NORTH, MauvilleCity_EventScript_ScottExitNorth
 	call_if_eq VAR_FACING, DIR_EAST, MauvilleCity_EventScript_ScottExitEast

@@ -76,6 +76,7 @@ SlateportCity_EventScript_ScottScene::
 	msgbox SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou, MSGBOX_DEFAULT
 	closemessage
 	giveitem ITEM_ABILITY_PATCH
+	closemessage
 	applymovement LOCALID_SLATEPORT_SCOTT, SlateportCity_Movement_ScottExit
 	waitmovement 0
 	removeobject LOCALID_SLATEPORT_SCOTT
