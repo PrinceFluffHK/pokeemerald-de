@@ -6262,15 +6262,15 @@ Level: 54
 Bellossom @ Pixie Plate
 Ability: Dancer
 Level: 54
-- Moonblast
 - Energy Ball
+- Moonblast
 - Pollen Puff
 
 Banette
 Ability: Cursed Body
 Level: 55
 - Shadow Sneak
-- Shadow Force
+- Shadow Claw
 - Body Slam
 - Knock Off
 
@@ -6292,52 +6292,51 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Pink
 
-Glalie  
-Ability: Inner Focus  
-Level: 53  
-- Crunch  
-- Ice Spinner  
-- Super Fang  
+Glalie
+Ability: Inner Focus
+Level: 56
+- Crunch
+- Blizzard
+- Ice Beam
+- Double-Edge
 
-Froslass  
-Ability: Snow Warning  
-Level: 53  
-- Shadow Ball  
-- Draining Kiss  
-- Icy Wind  
-- Disable  
+Sealeo @ Eviolite
+Ability: Thick Fat
+Level: 56
+- Brine
+- Super Fang
+- Yawn
+- Snowscape
 
-Donphan  
-Ability: Sturdy  
-Level: 53  
-- Ice Shard  
-- High Horsepower  
-- Body Press  
-- Rapid Spin  
-
-Jynx  
-Ability: Oblivious  
-Level: 53  
-- Fake Out  
-- Ice Beam  
-- Lovely Kiss  
-- Psychic  
-
-Ninetales-Alola
+Ninetales - Alola
 Ability: Snow Warning
-Level: 54  
-- Blizzard  
-- Moonblast  
-- Aurora Veil  
-- Life Dew  
+Level: 56
+- Icy Wind
+- Moonblast
+- Chilling Water
+- Aurora Veil
 
-Walrein @ Leftovers  
-Ability: Ice Body  
-Level: 55  
-- Glaciate  
-- Dive  
-- Body Slam  
-- Snowscape  
+Donphan @ Never-Melt Ice
+Ability: Sturdy
+Level: 57
+- Ice Shard
+- Headlong Rush
+- Body Press
+
+Froslass
+Ability: Snow Warning
+Level: 57
+- Shadow Ball
+- Blizzard
+- Draining Kiss
+- Disable
+
+Walrein @ Leftovers
+Ability: Thick Fat
+Level: 58
+- Glaciate
+- Dive
+- Body Slam
 
 === TRAINER_DRAKE ===
 Name: DRAKE
@@ -6349,53 +6348,51 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Blue
 
-Gyarados  
-Ability: Intimidate  
-Level: 54  
-- Waterfall  
-- Dragon Dance  
-- Crunch  
-- Earthquake  
+Gyarados
+Ability: Intimidate
+Level: 58
+- Waterfall
+- Temper Flare
+- Crunch
+- Dragon Dance
 
-Flygon  
-Ability: Levitate  
-Level: 54  
-- U-turn  
-- Rock Slide  
-- Dragon Claw  
-- Earth Power  
+Flygon @ Choice Scarf
+Ability: Levitate
+Level: 58
+- Earthquake
+- Dragon Rush
+- U-Turn
 
-Altaria  
-Ability: Cloud Nine  
-Level: 55  
-- Moonblast  
-- Dragon Pulse  
-- Heal Bell  
-- Feather Dance  
+Altaria
+Ability: Cloud Nine
+Level: 58
+- Dragon Pulse
+- Moonblast
+- Feather Dance
+- Heal Bell
 
-Kingdra  
-Ability: Swift Swim  
-Level: 54  
-- Flip Turn  
-- Scald  
-- Outrage  
-- Ice Beam  
+Kingdra @ Scope Lens
+Ability: Sniper
+Level: 58
+- Draco Meteor
+- Snipe Shot
+- Ice Beam
+- Focus Energy
 
-Sceptile  
-Ability: Technician  
-Level: 55  
-- Dual Chop  
-- Detect  
-- Leaf Blade  
-- Iron Tail  
+Tropius
+Ability: Protosynthesis
+Level: 58
+- Leaf Blade
+- Fly
+- Dragon Rush
 
-Salamence  
-Ability: Intimidate  
-Level: 56  
-- Dragon Claw  
-- Dual Wingbeat  
-- Flamethrower  
-- Dragon Dance  
+Salamence
+Ability: Intimidate
+Level: 58
+- Dragon Claw
+- Dual Wingbeat
+- Flamethrower
+- Dragon Dance
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -8113,53 +8110,51 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Mugshot: Yellow
 
-Skarmory  
-Ability: Weak Armor  
-Level: 56  
-- Spikes  
-- Iron Head  
-- Drill Peck  
-- Toxic  
+Skarmory @ Metal Coat
+Ability: Sturdy
+Level: 59
+- Steel Wing
+- Drill Peck
+- Spikes
+- Roost
 
-Claydol  
-Ability: Levitate  
-Level: 56  
-- Sandstorm  
-- Extrasensory  
-- Ancient Power  
-- Earth Power  
+Cradily @ Leftovers
+Ability: Storm Drain
+Level: 59
+- Giga Drain
+- Protect
+- Sandstorm
+- Leech Seed
 
-Cradily  
-Ability: Storm Drain  
-Level: 56  
-- Stealth Rock  
-- Giga Drain  
-- Sandstorm  
-- Acid  
+Claydol
+Ability: Levitate
+Level: 59
+- Earth Power
+- Extrasensory
+- Light Screen
+- Meteor Beam
 
-Armaldo  
-Ability: Swift Swim  
-Level: 56  
-- X-Scissor  
-- Rock Slide  
-- Knock Off  
-- Rapid Spin  
+Armaldo @ Hard Stone
+Ability: Tough Claws
+Level: 59
+- X-Scissor
+- Rock Slide
+- Crush Claw
+- Swords Dance
 
-Aggron  
-Ability: Sturdy  
-Level: 57  
-- Heavy Slam  
-- Head Smash  
-- Body Press  
-- Dragon Tail  
+Aggron
+Ability: Sturdy
+Level: 60
+- Iron Tail
+- Head Smash
+- Body Press
+- Outrage
 
-Metagross  
-Ability: Full Metal Body  
-Level: 60  
-- Meteor Mash  
-- Zen Headbutt  
-- Stomping Tantrum  
-- Shadow Ball  
+Metagross @ Sitrus Berry
+Ability: Full-Metal Body
+Level: 63
+- Meteor Mash
+- Zen Headbutt
 
 === TRAINER_ANDREW ===
 Name: ANDREW
@@ -12923,6 +12918,7 @@ AI: Smart Trainer / Ace Pokemon
 Seviper @ Choice Scarf
 Ability: Merciless
 Level: 49
+Shiny: Yes
 - Poison Tail
 
 Gallade
