@@ -10791,7 +10791,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_DRAGON_RUSH] =
     {
-        .name = COMPOUND_STRING("Dragon Impact"),
+        .name = COMPOUND_STRING("Dragon Rush"),
         .description = COMPOUND_STRING(
             "Tackles the foe with menace.\n"
             "Also hurts the user."),
