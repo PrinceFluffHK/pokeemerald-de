@@ -510,8 +510,11 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
 
     case TARGET_BOTH:
     case TARGET_SMART:
-    case TARGET_OPPONENTS_FIELD:
         StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{DOWN_ARROW}"));
+        break;
+
+    case TARGET_OPPONENTS_FIELD:
+        StringAppend(gStringVar1, COMPOUND_STRING(" xx"));
         break;
 
     case TARGET_FOES_AND_ALLY:

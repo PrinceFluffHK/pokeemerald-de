@@ -156,6 +156,7 @@ BerryTree_EventScript_CheckBerryFullyGrown::
 .if OW_BERRY_MUTATIONS == TRUE
 	goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_CheckBerryFullyGrown_Mutation
 .endif
+	goto BerryTree_EventScript_PickBerry
 	msgbox BerryTree_Text_WantToPick, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, BerryTree_EventScript_PickBerry
 	goto_if_eq VAR_RESULT, NO, BerryTree_EventScript_CancelPickingBerry
@@ -166,6 +167,7 @@ BerryTree_EventScript_CheckBerryFullyGrown::
 .set BERRY_MUTATION_SPACE_IN_BAG, 3
 
 BerryTree_EventScript_PickBerry::
+	setvar VAR_0x8006, 1
 	special ObjectEventInteractionPickBerryTree
 	goto_if_eq VAR_0x8004, BERRY_NORMAL_BAG_FULL, BerryTree_EventScript_BerryPocketFull
 .if OW_BERRY_MUTATIONS == TRUE
