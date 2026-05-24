@@ -45,6 +45,7 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_REVIVE
 	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_FRESH_START_MOCHI
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_REPEL

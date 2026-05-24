@@ -49,14 +49,15 @@ RustboroCity_Mart_EventScript_Clerk_2::
 RustboroCity_Mart_Pokemart_Secondary:
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_POTION
+	.2byte ITEM_REPEL
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_FRESH_START_MOCHI
+	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_ICE_HEAL
-	.2byte ITEM_REPEL
-	.2byte ITEM_SERIOUS_MINT
-	.2byte ITEM_ABILITY_CAPSULE
 	pokemartlistend
 
 RustboroCity_Mart_EventScript_PokefanF::

@@ -24,6 +24,7 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_REVIVE
 	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_FRESH_START_MOCHI
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_REPEL
 	.2byte ITEM_SUPER_REPEL
@@ -49,10 +50,11 @@ SootopolisCity_Mart_EventScript_Clerk_2::
 
 	.align 2
 SootopolisCity_Mart_Pokemart_Secondary:
-	.2byte ITEM_TM_FIRE_PUNCH
-	.2byte ITEM_TM_ICE_PUNCH
-	.2byte ITEM_TM_THUNDER_PUNCH
-	.2byte ITEM_TM_DRAIN_PUNCH
+	.2byte ITEM_TM_MYSTICAL_FIRE
+	.2byte ITEM_TM_SUPERCELL_SLAM
+	.2byte ITEM_TM_ICE_SPINNER
+	.2byte ITEM_TM_DRAGON_CLAW
+	.2byte ITEM_TM_KNOCK_OFF
 	pokemartlistend
 
 SootopolisCity_Mart_EventScript_FatMan::

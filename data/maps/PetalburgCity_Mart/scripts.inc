@@ -40,6 +40,7 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_REVIVE
 	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_FRESH_START_MOCHI
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_REPEL
 	.2byte ITEM_SUPER_REPEL
