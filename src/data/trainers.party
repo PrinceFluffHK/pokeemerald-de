@@ -2670,7 +2670,7 @@ Level: 49
 - Body Press
 
 Mawile @ Mawilite
-Ability: Intimidate
+Ability: Huge Power
 Level: 49
 - Iron Head
 - Play Rough
@@ -13892,12 +13892,12 @@ Level: 22
 - Bite
 - Supersonic
 
-Torkoal
-Ability: White Smoke
+Koffing
+Ability: Levitate
 Level: 22
-- Flame Wheel
-- Smog
-- Withdraw
+- Sludge
+- Assurance
+- Will-O-Wisp
 
 === TRAINER_CLARENCE ===
 Name: CLARENCE

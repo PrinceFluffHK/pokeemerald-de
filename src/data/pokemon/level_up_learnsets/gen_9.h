@@ -7849,10 +7849,10 @@ static const struct LevelUpMove sWingullLevelUpLearnset[] = {
     //Brawly
     LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
     //Evo Lv25
-    LEVEL_UP_MOVE(26, MOVE_TAILWIND),
-    LEVEL_UP_MOVE(30, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE(35, MOVE_MIST),
-    LEVEL_UP_MOVE(40, MOVE_ROOST),
+    LEVEL_UP_MOVE(26, MOVE_MIST),
+    LEVEL_UP_MOVE(30, MOVE_ROOST),
+    LEVEL_UP_MOVE(35, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(40, MOVE_TAILWIND),
     LEVEL_UP_MOVE(45, MOVE_HURRICANE),
     LEVEL_UP_END
 };
@@ -7873,14 +7873,15 @@ static const struct LevelUpMove sPelipperLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
     //Evo Lv25
     //Wattson
-    LEVEL_UP_MOVE(28, MOVE_TAILWIND),
+    LEVEL_UP_MOVE(28, MOVE_MIST),
     //Flannery
     //Norman
-    LEVEL_UP_MOVE(34, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(34, MOVE_ROOST),
     //Winona
-    LEVEL_UP_MOVE(41, MOVE_MIST),
-    LEVEL_UP_MOVE(48, MOVE_ROOST),
+    LEVEL_UP_MOVE(41, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(48, MOVE_TAILWIND),
     LEVEL_UP_MOVE(55, MOVE_HURRICANE),
+    //Elite4
     LEVEL_UP_MOVE(62, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
@@ -7958,7 +7959,9 @@ static const struct LevelUpMove sGardevoirLevelUpLearnset[] = {
     //T&L
     LEVEL_UP_MOVE(49, MOVE_MOONBLAST),
     //Juan
+    //Sidney
     LEVEL_UP_MOVE(56, MOVE_DREAM_EATER),
+    //Steven
     LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
 };
@@ -8000,9 +8003,11 @@ static const struct LevelUpMove sGalladeLevelUpLearnset[] = {
     //T&L
     LEVEL_UP_MOVE(49, MOVE_HEAL_PULSE),
     //Juan
+    //Sidney
     LEVEL_UP_MOVE(56, MOVE_WIDE_GUARD),
     LEVEL_UP_MOVE(56, MOVE_QUICK_GUARD),
     LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
+    //Steven
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
