@@ -751,16 +751,19 @@ PetalburgCity_Text_AreYouATrainer:
 
 PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
-	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+	.string "Oh yeah, now I see it in your eyes.\p"
+	.string "You've got a pretty good intuition\n"
+	.string "for POKéMON BATTLING.\p"
+	.string "Am I right?\p"
+	// .string "You're still a rookie TRAINER,\n"
+	// .string "but you're just an ordinary kid.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
 	.string "Sorry to keep rambling on, kid.$"
-	// .string "Here, take this ABILITY PATCH for\n"
-	// .string "humoring me.\p"
-	// .string "They're a little scarce on the mainland,\n"
-	// .string "but I can just buy 'em back home!\p"
+	.string "Here, take this ABILITY CAPSULE\n"
+	.string "humoring me.\p"
+	.string "You can buy 'em at any POKéMART, but\n"
+	.string "you'll only find ABILITY PATCHES\l"
+	.string "for sale in EVER GRANDE CITY.$"

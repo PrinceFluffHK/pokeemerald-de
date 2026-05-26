@@ -1346,7 +1346,8 @@ SlateportCity_Text_YouDroveTeamAquaAway:
 	.string "If not, my name's SCOTT.\p"
 	.string "I just saw TEAM AQUA run away from\n"
 	.string "here like they were stung.\p"
-	.string "Let me guess--you drove them away?$"
+	.string "Let me guess--you drove them away\n"
+	.string "with that keen instinct?$"
 
 SlateportCity_Text_MaybeThisTrainer:
 	.string "SCOTT: Hmm…\n"
@@ -1370,8 +1371,8 @@ SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
 	.string "So, I'll be off to roam other towns\n"
 	.string "a bit more.\p"
 	.string "Here, take this ABILITY PATCH.\p"
-	.string "They sell 'em in EVER GRANDE CITY, but\n"
-	.string "they're rare out here.\p"
+	.string "I picked a couple up when I was in\n"
+	.string "EVER GRANDE CITY.\p"
 	.string "Be seeing you, {PLAYER}{KUN}!$"
 
 SlateportCity_Text_TakingBattleTentChallenge:

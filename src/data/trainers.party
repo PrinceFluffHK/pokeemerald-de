@@ -12273,7 +12273,7 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Gardevoir
+Gardevoir (F)
 Ability: Telepathy
 Level: 49
 - Moonblast
@@ -12311,9 +12311,9 @@ Level: 49
 - Flash Cannon
 - Metal Sound
 
-Gallade @ Galladite
+Gallade (M) @ Galladite
 Ability: Telepathy
-Level: 49
+Level: 50
 - Sacred Sword
 - Psycho Cut
 - Swords Dance
@@ -15772,7 +15772,7 @@ Level: 44
 - Tri Attack
 - Screech
 
-Gardevoir
+Gardevoir (F)
 Level: 48
 - Double Team
 - Calm Mind
@@ -15918,7 +15918,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Grumpig
 Ability: Thick Fat
@@ -15965,7 +15965,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Grumpig
 Ability: Thick Fat
@@ -15996,6 +15996,7 @@ Level: 35
 - Force Palm
 - Mega Drain
 - Headbutt
+- Spore
 
 Blaziken @ Sitrus Berry
 Ability: Blaze
@@ -16012,7 +16013,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Grumpig
 Ability: Thick Fat
@@ -16036,6 +16037,7 @@ Level: 35
 - Force Palm
 - Mega Drain
 - Headbutt
+- Spore
 
 Magcargo
 Ability: Pyroclastic Flow
@@ -16059,7 +16061,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Grumpig
 Ability: Thick Fat
@@ -16106,7 +16108,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Grumpig
 Ability: Thick Fat
@@ -16137,6 +16139,7 @@ Level: 35
 - Force Palm
 - Mega Drain
 - Headbutt
+- Spore
 
 Blaziken @ Sitrus Berry
 Ability: Blaze
@@ -16153,7 +16156,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
 Grumpig
 Ability: Thick Fat
@@ -16177,6 +16180,7 @@ Level: 35
 - Force Palm
 - Mega Drain
 - Headbutt
+- Spore
 
 Magcargo
 Ability: Pyroclastic Flow
