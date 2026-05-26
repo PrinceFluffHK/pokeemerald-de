@@ -288,7 +288,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Copies special ability."),
         .aiRating = 6,
         .cantBeCopied = TRUE,
-        .cantBeTraced = TRUE,
+        .cantBeTraced = TRUE, //B_UPDATED_ABILITY_DATA >= GEN_4
     },
 
     [ABILITY_HUGE_POWER] =
@@ -1222,10 +1222,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = B_UPDATED_ABILITY_DATA >= GEN_7,
         .aiRating = -1,
         .cantBeCopied = TRUE,
-        .cantBeOverwritten = B_UPDATED_ABILITY_DATA >= GEN_7,
-        .failsOnImposter = TRUE,
+        .cantBeSwapped = B_UPDATED_ABILITY_DATA >= GEN_7,
         .cantBeTraced = TRUE,
         .cantBeSuppressed = B_UPDATED_ABILITY_DATA >= GEN_7,
+        .cantBeOverwritten = B_UPDATED_ABILITY_DATA >= GEN_7,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_VICTORY_STAR] =
