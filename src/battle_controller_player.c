@@ -49,6 +49,8 @@
 #include "test/battle.h"
 #include "test/test_runner_battle.h"
 
+extern void SpriteCB_BlinkVisible(struct Sprite *sprite);
+
 static void PlayerHandleLoadMonSprite(enum BattlerId battler);
 static void PlayerHandleDrawTrainerPic(enum BattlerId battler);
 static void PlayerHandleTrainerSlide(enum BattlerId battler);
@@ -732,7 +734,14 @@ static void HideAllTargets(void)
     {
         if (IsBattlerAlive(i) && gBattleSpritesDataPtr->healthBoxesData[i].healthboxIsBouncing)
         {
-            gSprites[gBattlerSpriteIds[i]].callback = SpriteCB_HideAsMoveTarget;
+            // Restore the sprite's invisible state and callback directly instead
+            // of delegating to SpriteCB_HideAsMoveTarget. This ensures the
+            // battler's sprite callback is reset to the normal dummy callback
+            // and prevents it from remaining invisible or in an incorrect
+            // callback state after cancel/confirm.
+            gSprites[gBattlerSpriteIds[i]].invisible = gSprites[gBattlerSpriteIds[i]].data[4];
+            gSprites[gBattlerSpriteIds[i]].data[4] = FALSE;
+            gSprites[gBattlerSpriteIds[i]].callback = SpriteCallbackDummy;
             EndBounceEffect(i, BOUNCE_HEALTHBOX);
         }
     }
@@ -743,9 +752,14 @@ static void HideShownTargets(enum BattlerId battler)
     s32 i;
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)
     {
-        if (IsBattlerAlive(i) && gBattleSpritesDataPtr->healthBoxesData[i].healthboxIsBouncing && i != battler)
+        if (!IsBattlerAlive(i))
+            continue;
+
+        u8 spriteId = gBattlerSpriteIds[i];
+        if (gSprites[spriteId].callback == SpriteCB_ShowAsMoveTarget
+         || gSprites[spriteId].callback == SpriteCB_BlinkVisible)
         {
-            gSprites[gBattlerSpriteIds[i]].callback = SpriteCB_HideAsMoveTarget;
+            gSprites[spriteId].callback = SpriteCB_HideAsMoveTarget;
             EndBounceEffect(i, BOUNCE_HEALTHBOX);
         }
     }
@@ -796,7 +810,6 @@ void HandleInputShowTargets(enum BattlerId battler)
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_EXEC_SCRIPT, gMoveSelectionCursor[battler] | (gMultiUsePlayerCursor << 8));
         HideGimmickTriggerSprite();
         TryHideLastUsedBall();
-        // TryToHideMovePreviewWindow();
         BtlController_Complete(battler);
     }
     else if (JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59)
@@ -1253,7 +1266,7 @@ void HandleMoveSwitching(enum BattlerId battler)
             }
         }
 
-        if (IS_FRLG && gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
+        if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
             gBattlerControllerFuncs[battler] = OakOldManHandleInputChooseMove;
         else
             gBattlerControllerFuncs[battler] = HandleInputChooseMove;

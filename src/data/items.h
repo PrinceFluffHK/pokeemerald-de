@@ -13403,7 +13403,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_KNOCK_OFF] =
     {
         .name = ITEM_NAME("TM88"),
-        .price = 5000,
+        .price = 7500,
         .description = COMPOUND_STRING(
             "Knocks down the\n"
             "foe's held item to\n"
@@ -15682,7 +15682,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Fresh-Start Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Fresh-Start Mochi"),
-        .price = 300,
+        .price = 1000,
         .description = COMPOUND_STRING(
             "An item that resets\n"
             "all base points of\n"

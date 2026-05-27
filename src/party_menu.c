@@ -4932,7 +4932,7 @@ void Task_AbilityCapsule(u8 taskId)
         // Can't use.
         if (GetSpeciesAbility(tSpecies, 0) == GetSpeciesAbility(tSpecies, 1)
             || GetSpeciesAbility(tSpecies, 1) == 0
-            || tAbilityNum > 1
+            // || tAbilityNum > 1
             || !tSpecies)
         {
             gPartyMenuUseExitCallback = FALSE;
@@ -5004,6 +5004,8 @@ void ItemUseCB_AbilityCapsule(u8 taskId, TaskFunc task)
     tMonId = gPartyMenu.slotId;
     tSpecies = GetMonData(&gPlayerParty[tMonId], MON_DATA_SPECIES);
     tAbilityNum = GetMonData(&gPlayerParty[tMonId], MON_DATA_ABILITY_NUM) ^ 1;
+    if (tAbilityNum > 1)
+        tAbilityNum = 0;
     SetWordTaskArg(taskId, tOldFunc, (uintptr_t)(gTasks[taskId].func));
     gTasks[taskId].func = Task_AbilityCapsule;
 }

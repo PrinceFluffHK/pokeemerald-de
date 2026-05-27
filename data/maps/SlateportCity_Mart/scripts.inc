@@ -17,6 +17,7 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_POTION
 	.2byte ITEM_REPEL
+	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_FRESH_START_MOCHI
 	.2byte ITEM_ANTIDOTE
@@ -42,7 +43,6 @@ SlateportCity_Mart_Pokemart_Secondary:
 	.2byte ITEM_TM_SAFEGUARD
 	.2byte ITEM_TM_THUNDER_WAVE
 	.2byte ITEM_TM_HELPING_HAND
-	.2byte ITEM_TM_KNOCK_OFF
 	pokemartlistend
 
 SlateportCity_Mart_EventScript_BlackBelt::

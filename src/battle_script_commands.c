@@ -6200,6 +6200,7 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
     u32 lastMonLevel = 0;
     u32 moneyReward;
     u8 trainerMoney = 0;
+    u8 customMoneyMultiplier = 1;
 
     if (trainerId == TRAINER_SECRET_BASE)
     {
@@ -6214,11 +6215,12 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
         trainerMoney = gTrainerClasses[GetTrainerClassFromId(trainerId)].money ?: 5;
 
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
-            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * trainerMoney;
+            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * trainerMoney * customMoneyMultiplier;
         else if (IsDoubleBattle())
-            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * 2 * trainerMoney;
+            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * trainerMoney * customMoneyMultiplier;
+            // moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * 2 * trainerMoney * customMoneyMultiplier;
         else
-            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * trainerMoney;
+            moneyReward = 4 * lastMonLevel * gBattleStruct->moneyMultiplier * trainerMoney * customMoneyMultiplier;
     }
 
     return moneyReward;
@@ -13300,6 +13302,42 @@ void BS_JumpIfIntimidateAbilityPrevented(void)
         }
         break;
     }
+    default:
+        gBattlescriptCurrInstr = cmd->nextInstr;
+        break;
+    }
+
+    if (hasAbility)
+    {
+        gLastUsedAbility = ability;
+        gBattlerAbility = gBattlerTarget;
+        RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
+    }
+}
+
+void BS_JumpIfPsychOutAbilityPrevented(void)
+{
+    NATIVE_ARGS();
+
+    bool32 hasAbility = FALSE;
+    enum Ability ability = GetBattlerAbility(gBattlerTarget);
+
+    switch (ability)
+    {
+    case ABILITY_INNER_FOCUS:
+    case ABILITY_SCRAPPY:
+    case ABILITY_OWN_TEMPO:
+    case ABILITY_OBLIVIOUS:
+        if (GetConfig(B_UPDATED_INTIMIDATE) >= GEN_8)
+        {
+            hasAbility = TRUE;
+            gBattlescriptCurrInstr = BattleScript_PsychOutPrevented;
+        }
+        else
+        {
+            gBattlescriptCurrInstr = cmd->nextInstr;
+        }
+        break;
     default:
         gBattlescriptCurrInstr = cmd->nextInstr;
         break;

@@ -17079,7 +17079,7 @@ Ability: Sand Rush
 Level: 18
 - Fury Swipes
 - Rollout
-- Fury Attack
+- Sand Attack
 - Defense Curl
 
 Sandshrew
@@ -17087,7 +17087,7 @@ Ability: Sand Rush
 Level: 18
 - Fury Swipes
 - Rollout
-- Fury Attack
+- Sand Attack
 - Defense Curl
 
 === TRAINER_CELINA ===
@@ -18407,12 +18407,12 @@ Manectric
 Ability: Static
 Level: 32
 - Quick Attack
-- Spark
+- Thunder Fang
 - Bite
 - Howl
 
 Loudred
-Ability: Soundproof
+Ability: Scrappy
 Level: 32
 - Stomp
 - Bite

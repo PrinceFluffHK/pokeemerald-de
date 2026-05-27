@@ -102,7 +102,7 @@ static void SpriteCB_MoveWildMonToRight(struct Sprite *sprite);
 static void SpriteCB_WildMonShowHealthbox(struct Sprite *sprite);
 static void SpriteCB_WildMonAnimate(struct Sprite *sprite);
 static void SpriteCB_AnimFaintOpponent(struct Sprite *sprite);
-static void SpriteCB_BlinkVisible(struct Sprite *sprite);
+void SpriteCB_BlinkVisible(struct Sprite *sprite);
 static void SpriteCB_Idle(struct Sprite *sprite);
 static void SpriteCB_BattleSpriteSlideLeft(struct Sprite *sprite);
 static void TurnValuesCleanUp(bool8 var0);
@@ -2794,7 +2794,7 @@ void SpriteCB_ShowAsMoveTarget(struct Sprite *sprite)
     sprite->callback = SpriteCB_BlinkVisible;
 }
 
-static void SpriteCB_BlinkVisible(struct Sprite *sprite)
+void SpriteCB_BlinkVisible(struct Sprite *sprite)
 {
     if (--sprite->data[3] == 0)
     {

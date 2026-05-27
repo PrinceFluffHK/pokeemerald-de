@@ -1219,7 +1219,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Zen Mode"),
         .description = COMPOUND_STRING("Transforms at half HP."),
-        .cantBeSwapped = B_UPDATED_ABILITY_DATA >= GEN_7,
         .aiRating = -1,
         .cantBeCopied = TRUE,
         .cantBeSwapped = B_UPDATED_ABILITY_DATA >= GEN_7,
