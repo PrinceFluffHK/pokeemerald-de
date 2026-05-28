@@ -99,6 +99,7 @@ static void HideAllTargets(void);
 static void HideShownTargets(enum BattlerId battler);
 static void ShowMovePreviewTargets(enum BattlerId battler);
 static void TryShowAsTarget(enum BattlerId battler);
+static void CreateSpeedTiersWindow(enum BattlerId battler);
 
 static void ReloadMoveNames(enum BattlerId battler);
 static u32 CheckTypeEffectiveness(enum BattlerId battlerAtk, enum BattlerId battlerDef);
@@ -429,40 +430,57 @@ static void HandleInputChooseAction(enum BattlerId battler)
         switch(gBattleStruct->movePreviewDisplayed)
         {
             case 0:
-                if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
-            {
-                CreateMovePreviewText(B_POSITION_OPPONENT_RIGHT);
+                CreateSpeedTiersWindow(battler);
                 gBattleStruct->movePreviewDisplayed=1;
-            }
-            else
-            {
-                CreateMovePreviewText(B_POSITION_OPPONENT_LEFT);
-                gBattleStruct->movePreviewDisplayed=2;
-            }
-            break;
-        case 1:
-            if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
-            {
-                CreateMovePreviewText(B_POSITION_OPPONENT_LEFT);
-                gBattleStruct->movePreviewDisplayed=2;
-            }
-            else
-            {
-                HideAllTargets();
-                CreateInfoWindow(battler);
-                gBattleStruct->movePreviewDisplayed=0;
-            }
-            break;
-        case 2:
-                HideAllTargets();
-                CreateInfoWindow(battler);
-                gBattleStruct->movePreviewDisplayed=0;
+                break;
+            case 1:
+                if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+                {
+                    CreateMovePreviewText(B_POSITION_OPPONENT_RIGHT);
+                    gBattleStruct->movePreviewDisplayed=2;
+                }
+                else
+                {
+                    CreateMovePreviewText(B_POSITION_OPPONENT_LEFT);
+                    gBattleStruct->movePreviewDisplayed=3;
+                }
+                break;
+            case 2:
+                if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
+                {
+                    CreateMovePreviewText(B_POSITION_OPPONENT_LEFT);
+                    gBattleStruct->movePreviewDisplayed=3;
+                }
+                else
+                {
+                    HideAllTargets();
+                    CreateInfoWindow(battler);
+                    gBattleStruct->movePreviewDisplayed=0;
+                }
+                break;
+            case 3:
+                    HideAllTargets();
+                    CreateInfoWindow(battler);
+                    gBattleStruct->movePreviewDisplayed=0;
             break;
         }
     }
 }
 
-//appendSpeed
+static void AppendSpeed(u32 battler)
+{
+    ConvertUIntToDecimalStringN(
+        gStringVar2,
+        GetBattlerTotalSpeedStat(
+            battler,
+            GetBattlerAbility(battler),
+            GetBattlerHoldEffect(battler)
+        ),
+        STR_CONV_MODE_LEFT_ALIGN,
+        3
+    );
+    StringAppend(gStringVar1, gStringVar2);
+}
 
 static void AppendMoveTarget(u32 battler, bool32 isRightSide)
 {
