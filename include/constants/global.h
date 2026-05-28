@@ -197,8 +197,8 @@ enum Gender
 #define OPTIONS_SOUND_MONO 0
 #define OPTIONS_SOUND_STEREO 1
 
-#define OPTIONS_BATTLE_STYLE_SHIFT 0
-#define OPTIONS_BATTLE_STYLE_SET 1
+#define OPTIONS_PREVIEW_LIMITED 0
+#define OPTIONS_PREVIEW_FULL 1
 
 enum __attribute__((packed)) Direction
 {

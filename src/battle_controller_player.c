@@ -434,7 +434,7 @@ static void HandleInputChooseAction(enum BattlerId battler)
                 gBattleStruct->movePreviewDisplayed=1;
                 break;
             case 1:
-                if (gSaveBlock2Ptr->optionsBattleStyle == OPTIONS_BATTLE_STYLE_SET)
+                if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL)
                 {
                     if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
                     {
@@ -2410,8 +2410,8 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     {
         // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
         HideAllTargets();
-        gBattleStruct->movePreviewDisplayed = 0;
-        CreateInfoWindow(battler);
+        gBattleStruct->movePreviewDisplayed = 1;
+        CreateSpeedTiersWindow(battler);
     }
 }
 
@@ -2486,8 +2486,6 @@ static void CreateInfoWindow(u32 battler)
 
     BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
 }
-
-
 
 static void PlayerHandleYesNoBox(enum BattlerId battler)
 {
