@@ -99,7 +99,7 @@ static void HideAllTargets(void);
 static void HideShownTargets(enum BattlerId battler);
 static void ShowMovePreviewTargets(enum BattlerId battler);
 static void TryShowAsTarget(enum BattlerId battler);
-static void CreateSpeedTiersWindow(enum BattlerId battler);
+static void CreateSpeedTiersWindow(u32 battler);
 
 static void ReloadMoveNames(enum BattlerId battler);
 static u32 CheckTypeEffectiveness(enum BattlerId battlerAtk, enum BattlerId battlerDef);
@@ -424,7 +424,7 @@ static void HandleInputChooseAction(enum BattlerId battler)
         BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_THROW_BALL, 0);
         BtlController_Complete(battler);
     }
-    else if (JOY_NEW(SELECT_BUTTON) && gSaveBlock2Ptr->optionsBattleStyle == OPTIONS_BATTLE_STYLE_SET)
+    else if (JOY_NEW(SELECT_BUTTON))
     {
         PlaySE(SE_SELECT);
         switch(gBattleStruct->movePreviewDisplayed)
@@ -434,15 +434,23 @@ static void HandleInputChooseAction(enum BattlerId battler)
                 gBattleStruct->movePreviewDisplayed=1;
                 break;
             case 1:
-                if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+                if (gSaveBlock2Ptr->optionsBattleStyle == OPTIONS_BATTLE_STYLE_SET)
                 {
-                    CreateMovePreviewText(B_POSITION_OPPONENT_RIGHT);
-                    gBattleStruct->movePreviewDisplayed=2;
+                    if(IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+                    {
+                        CreateMovePreviewText(B_POSITION_OPPONENT_RIGHT);
+                        gBattleStruct->movePreviewDisplayed=2;
+                    }
+                    else
+                    {
+                        CreateMovePreviewText(B_POSITION_OPPONENT_LEFT);
+                        gBattleStruct->movePreviewDisplayed=3;
+                    }
                 }
                 else
                 {
-                    CreateMovePreviewText(B_POSITION_OPPONENT_LEFT);
-                    gBattleStruct->movePreviewDisplayed=3;
+                    CreateInfoWindow(battler);
+                    gBattleStruct->movePreviewDisplayed=0;
                 }
                 break;
             case 2:
@@ -569,10 +577,7 @@ static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeed
 
 static void CreateSpeedTiersWindow(u32 battler)
 {
-    if (gSaveBlock2Ptr->optionsBattleStyle == OPTIONS_BATTLE_STYLE_SET)
-        StringCopy(gStringVar1, COMPOUND_STRING("Prss  "));
-    else
-        StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
+    StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
 
     bool32 rightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT));
     bool32 leftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
@@ -588,11 +593,7 @@ static void CreateSpeedTiersWindow(u32 battler)
         AppendBattlerInfo(B_POSITION_OPPONENT_LEFT, FALSE, TRUE);
     }
 
-
-    if (gSaveBlock2Ptr->optionsBattleStyle == OPTIONS_BATTLE_STYLE_SET)
-        StringAppend(gStringVar1, COMPOUND_STRING("\nSlct  "));
-    else
-        StringAppend(gStringVar1, COMPOUND_STRING("\nPrev  "));
+    StringAppend(gStringVar1, COMPOUND_STRING("\nPrev  "));
     
     bool32 pLeftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
     bool32 pRightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
@@ -2460,7 +2461,7 @@ static void CreateInfoWindow(u32 battler)
         ConvertUIntToDecimalStringN(gStringVar2, totalCount, STR_CONV_MODE_LEFT_ALIGN, 1);
         StringAppend(gStringVar1, gStringVar2);
         if (gBattleWeather == B_WEATHER_NONE)
-            StringAppend(gStringVar1, COMPOUND_STRING("remaining"));
+            StringAppend(gStringVar1, COMPOUND_STRING(" left!"));
         else
         {
             StringAppend(gStringVar1, COMPOUND_STRING(" ("));
