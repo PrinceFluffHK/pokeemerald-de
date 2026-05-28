@@ -602,7 +602,7 @@ static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
     //Evo Lv22
     LEVEL_UP_MOVE(24, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(27, MOVE_DIG),
-    LEVEL_UP_MOVE(30, MOVE_SLASH),
+    LEVEL_UP_MOVE(30, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE(33, MOVE_DIG),
     LEVEL_UP_MOVE(36, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(39, MOVE_SWORDS_DANCE),
@@ -612,7 +612,8 @@ static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sSandslashLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_CRUSH_CLAW),
+    LEVEL_UP_MOVE( 0, MOVE_SLASH),
+    LEVEL_UP_MOVE( 0, MOVE_SPIKY_SHIELD),
     LEVEL_UP_MOVE( 1, MOVE_SANDSTORM),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
@@ -629,7 +630,7 @@ static const struct LevelUpMove sSandslashLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_DIG),
     //Norman
     //Winona
-    LEVEL_UP_MOVE(36, MOVE_SLASH),
+    LEVEL_UP_MOVE(36, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE(41, MOVE_EARTHQUAKE),
     //T&L
     LEVEL_UP_MOVE(46, MOVE_GYRO_BALL),
@@ -9059,9 +9060,11 @@ static const struct LevelUpMove sNumelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_TAKE_DOWN),
     //Norman
     //Evo Lv33
-    LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(35, MOVE_YAWN),
+    LEVEL_UP_MOVE(39, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(43, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(47, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(47, MOVE_BURNING_BULWARK),
+    LEVEL_UP_MOVE(51, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
 
@@ -9082,8 +9085,15 @@ static const struct LevelUpMove sCameruptLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_TAKE_DOWN),
     //Evo Lv33
     //Winona
-    LEVEL_UP_MOVE(39, MOVE_YAWN),
-    LEVEL_UP_MOVE(46, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(36, MOVE_YAWN),
+    //T&L
+    LEVEL_UP_MOVE(42, MOVE_EARTHQUAKE),
+    //Juan
+    LEVEL_UP_MOVE(48, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(54, MOVE_BURNING_BULWARK),
+    //Sidney
+    LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
+    //Drake
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NUMEL
