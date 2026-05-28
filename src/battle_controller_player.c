@@ -93,6 +93,10 @@ static void Task_GiveExpWithExpBar(u8);
 static void Task_UpdateLvlInHealthbox(u8);
 static void PrintLinkStandbyMsg(void);
 static void CreateSpeedTiersWindow(u32 battler);
+static void HideAllTargets(void);
+static void HideShownTargets(enum BattlerId battler);
+static void ShowMovePreviewTargets(enum BattlerId battler);
+static void TryShowAsTarget(enum BattlerId battler);
 
 static void ReloadMoveNames(enum BattlerId battler);
 static u32 CheckTypeEffectiveness(enum BattlerId battlerAtk, enum BattlerId battlerDef);
@@ -310,6 +314,10 @@ static void HandleInputChooseAction(enum BattlerId battler)
         // TryToHideMovePreviewWindow(); // FTP
         TryHideLastUsedBall();
 
+        if (gBattleStruct->movePreviewDisplayed > 0
+         && (gActionSelectionCursor[battler] == 0 || gActionSelectionCursor[battler] == 3))
+            HideAllTargets();
+
         switch (gActionSelectionCursor[battler])
         {
         case 0: // Top left
@@ -438,11 +446,13 @@ static void HandleInputChooseAction(enum BattlerId battler)
             }
             else
             {
+                HideAllTargets();
                 CreateSpeedTiersWindow(battler);
                 gBattleStruct->movePreviewDisplayed=0;
             }
             break;
         case 2:
+                HideAllTargets();
                 CreateSpeedTiersWindow(battler);
                 gBattleStruct->movePreviewDisplayed=0;
             break;
@@ -533,9 +543,11 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
 }
 
 void CreateMovePreviewText(u32 battlerPosition)
-{       
+{
         u32 switchMon;
         u32 battler = GetBattlerAtPosition(battlerPosition);
+
+        HideAllTargets();
 
         if (gBattleStruct->monToSwitchIntoId[GetBattlerAtPosition(battlerPosition)] != PARTY_SIZE) // If the opponent is switching:
         {
@@ -558,6 +570,7 @@ void CreateMovePreviewText(u32 battlerPosition)
                 AppendMoveTarget(battler, FALSE);
         }
         BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
+        ShowMovePreviewTargets(battler);
 }
 
 void HandleInputChooseTarget(enum BattlerId battler)
@@ -762,6 +775,78 @@ static void HideShownTargets(enum BattlerId battler)
             gSprites[spriteId].callback = SpriteCB_HideAsMoveTarget;
             EndBounceEffect(i, BOUNCE_HEALTHBOX);
         }
+    }
+}
+
+static void ShowMovePreviewTargets(enum BattlerId battler)
+{
+    enum BattlerId targetBattler;
+    enum Move move = gBattleMons[battler].moves[gBattleStruct->chosenMovePositions[battler]];
+    enum MoveTarget moveTarget = GetBattlerMoveTargetType(battler, move);
+
+    HideAllTargets();
+
+    switch (moveTarget)
+    {
+    case TARGET_USER:
+    case TARGET_USER_OR_ALLY:
+        if (IsBattlerAlive(battler))
+            TryShowAsTarget(battler);
+        break;
+    case TARGET_ALLY:
+        targetBattler = BATTLE_PARTNER(battler);
+        if (IsBattlerAlive(targetBattler))
+            TryShowAsTarget(targetBattler);
+        break;
+    case TARGET_USER_AND_ALLY:
+        if (IsBattlerAlive(battler))
+            TryShowAsTarget(battler);
+        targetBattler = BATTLE_PARTNER(battler);
+        if (IsBattlerAlive(targetBattler))
+            TryShowAsTarget(targetBattler);
+        break;
+    case TARGET_SELECTED:
+    case TARGET_DEPENDS:
+    case TARGET_OPPONENT:
+    case TARGET_RANDOM:
+    case TARGET_SMART:
+        targetBattler = gAiBattleData->chosenTarget[battler];
+        if (targetBattler < MAX_BATTLERS_COUNT && IsBattlerAlive(targetBattler))
+            TryShowAsTarget(targetBattler);
+        break;
+    case TARGET_BOTH:
+        for (targetBattler = 0; targetBattler < MAX_BATTLERS_COUNT; targetBattler++)
+        {
+            if (IsBattlerAlive(targetBattler) && IsOnPlayerSide(targetBattler))
+                TryShowAsTarget(targetBattler);
+        }
+        break;
+    case TARGET_FOES_AND_ALLY:
+        targetBattler = gAiBattleData->chosenTarget[battler];
+        if (targetBattler < MAX_BATTLERS_COUNT && IsBattlerAlive(targetBattler))
+            TryShowAsTarget(targetBattler);
+        if (IsBattlerAlive(BATTLE_PARTNER(battler)))
+            TryShowAsTarget(BATTLE_PARTNER(battler));
+        break;
+    case TARGET_OPPONENTS_FIELD:
+        for (targetBattler = 0; targetBattler < MAX_BATTLERS_COUNT; targetBattler++)
+        {
+            if (IsBattlerAlive(targetBattler)
+             && (GetBattlerPosition(targetBattler) == B_POSITION_OPPONENT_LEFT
+              || GetBattlerPosition(targetBattler) == B_POSITION_OPPONENT_RIGHT))
+                TryShowAsTarget(targetBattler);
+        }
+        break;
+    case TARGET_FIELD:
+    case TARGET_ALL_BATTLERS:
+        for (targetBattler = 0; targetBattler < MAX_BATTLERS_COUNT; targetBattler++)
+        {
+            if (IsBattlerAlive(targetBattler))
+                TryShowAsTarget(targetBattler);
+        }
+        break;
+    default:
+        break;
     }
 }
 
@@ -2244,6 +2329,7 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     else
     {
         // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
+        HideAllTargets();
         gBattleStruct->movePreviewDisplayed = 0;
         CreateSpeedTiersWindow(battler);
     }
