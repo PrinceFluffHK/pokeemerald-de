@@ -72,21 +72,22 @@ static void DrawBgWindowFrames(void);
 
 EWRAM_DATA static bool8 sArrowPressed = FALSE;
 
-static const u8 gText_Option[]             = _("OPTION");
-static const u8 gText_TextSpeedSlow[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SLOW");
-static const u8 gText_TextSpeedMid[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MID");
-static const u8 gText_TextSpeedFast[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
-static const u8 gText_BattleSceneOn[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ON");
-static const u8 gText_BattleSceneOff[]     = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
-static const u8 gText_BattleStyleShift[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LTD");
-static const u8 gText_BattleStyleSet[]     = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FULL");
-static const u8 gText_SoundMono[]          = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MONO");
-static const u8 gText_SoundStereo[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}STEREO");
-static const u8 gText_FrameType[]          = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}TYPE");
-static const u8 gText_FrameTypeNumber[]    = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}");
-static const u8 gText_ButtonTypeNormal[]   = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
-static const u8 gText_ButtonTypeLR[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LR");
-static const u8 gText_ButtonTypeLEqualsA[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A");
+static const u8 gText_Option[]              = _("OPTION");
+static const u8 gText_TextSpeedSlow[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SLOW");
+static const u8 gText_TextSpeedMid[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MID");
+static const u8 gText_TextSpeedFast[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
+static const u8 gText_BattleSceneOn[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ON");
+static const u8 gText_BattleSceneOff[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
+static const u8 gText_PreviewStyleNone[]    = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NONE");
+static const u8 gText_PreviewStyleLimited[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LTD");
+static const u8 gText_PreviewStyleFull[]    = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FULL");
+static const u8 gText_SoundMono[]           = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MONO");
+static const u8 gText_SoundStereo[]         = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}STEREO");
+static const u8 gText_FrameType[]           = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}TYPE");
+static const u8 gText_FrameTypeNumber[]     = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}");
+static const u8 gText_ButtonTypeNormal[]    = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
+static const u8 gText_ButtonTypeLR[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}LR");
+static const u8 gText_ButtonTypeLEqualsA[]  = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}L=A");
 
 static const u16 sOptionMenuText_Pal[] = INCGFX_U16("graphics/interface/option_menu_text.pal", ".gbapal");
 // note: this is only used in the Japanese release
@@ -482,9 +483,26 @@ static void BattleScene_DrawChoices(u8 selection)
 
 static u8 BattleStyle_ProcessInput(u8 selection)
 {
-    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    if (JOY_NEW(DPAD_RIGHT))
     {
-        selection ^= 1;
+        if (selection == OPTIONS_PREVIEW_NONE)
+            selection = OPTIONS_PREVIEW_LIMITED;
+        else if (selection == OPTIONS_PREVIEW_LIMITED)
+            selection = OPTIONS_PREVIEW_FULL;
+        else
+            selection = OPTIONS_PREVIEW_NONE;
+
+        sArrowPressed = TRUE;
+    }
+    if (JOY_NEW(DPAD_LEFT))
+    {
+        if (selection == OPTIONS_PREVIEW_NONE)
+            selection = OPTIONS_PREVIEW_FULL;
+        else if (selection == OPTIONS_PREVIEW_LIMITED)
+            selection = OPTIONS_PREVIEW_NONE;
+        else
+            selection = OPTIONS_PREVIEW_LIMITED;
+
         sArrowPressed = TRUE;
     }
 
@@ -493,14 +511,30 @@ static u8 BattleStyle_ProcessInput(u8 selection)
 
 static void BattleStyle_DrawChoices(u8 selection)
 {
-    u8 styles[2];
+    s32 widthNone, widthLimited;
+    s32 xLimited, xFull, xNoneRight;
+    u8 styles[3];
 
     styles[0] = 0;
     styles[1] = 0;
-    styles[selection] = 1;
+    styles[2] = 0;
 
-    DrawOptionMenuChoice(gText_BattleStyleShift, 104, YPOS_BATTLESTYLE, styles[0]);
-    DrawOptionMenuChoice(gText_BattleStyleSet, GetStringRightAlignXOffset(FONT_NORMAL, gText_BattleStyleSet, 198), YPOS_BATTLESTYLE, styles[1]);
+    if (selection == OPTIONS_PREVIEW_NONE)
+        styles[0] = 1;
+    else if (selection == OPTIONS_PREVIEW_LIMITED)
+        styles[1] = 1;
+    else
+        styles[2] = 1;
+
+    widthNone = GetStringWidth(FONT_NORMAL, gText_PreviewStyleNone, 0);
+    widthLimited = GetStringWidth(FONT_NORMAL, gText_PreviewStyleLimited, 0);
+    xFull = GetStringRightAlignXOffset(FONT_NORMAL, gText_PreviewStyleFull, 198);
+    xNoneRight = 104 + widthNone;
+    xLimited = (xNoneRight + xFull - widthLimited) / 2;
+
+    DrawOptionMenuChoice(gText_PreviewStyleNone, 104, YPOS_BATTLESTYLE, styles[0]);
+    DrawOptionMenuChoice(gText_PreviewStyleLimited, xLimited, YPOS_BATTLESTYLE, styles[1]);
+    DrawOptionMenuChoice(gText_PreviewStyleFull, xFull, YPOS_BATTLESTYLE, styles[2]);
 }
 
 static u8 Sound_ProcessInput(u8 selection)

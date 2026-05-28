@@ -70,6 +70,7 @@
 #include "constants/battle_string_ids.h"
 #include "constants/battle_partner.h"
 #include "constants/battle_setup.h"
+#include "constants/flags.h"
 #include "constants/items.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
@@ -3062,6 +3063,7 @@ static void BattleStartClearSetData(void)
     memset(&gSideStatuses, 0, sizeof(gSideStatuses));
     memset(&gSideTimers, 0, sizeof(gSideTimers));
     memset(&gBattleResults, 0, sizeof(gBattleResults));
+    FlagSet(FLAG_IS_TURN_START);
     ClearSetBScriptingStruct();
 
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)

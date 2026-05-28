@@ -44,6 +44,7 @@
 #include "constants/rgb.h"
 #include "caps.h"
 #include "debug.h"
+#include "event_data.h"
 #include "menu.h"
 #include "pokemon_summary_screen.h"
 #include "type_icons.h"
@@ -430,8 +431,12 @@ static void HandleInputChooseAction(enum BattlerId battler)
         switch(gBattleStruct->movePreviewDisplayed)
         {
             case 0:
-                CreateSpeedTiersWindow(battler);
-                gBattleStruct->movePreviewDisplayed=1;
+                if(gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
+                  || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL)
+                {
+                    CreateSpeedTiersWindow(battler);
+                    gBattleStruct->movePreviewDisplayed=1;
+                }
                 break;
             case 1:
                 if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL)
@@ -2409,37 +2414,36 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
     else
     {
         // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
+
         HideAllTargets();
-        gBattleStruct->movePreviewDisplayed = 1;
-        CreateSpeedTiersWindow(battler);
+
+        if (FlagGet(FLAG_IS_TURN_START) == TRUE 
+            || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_NONE)
+        {
+            FlagClear(FLAG_IS_TURN_START);
+            gBattleStruct->movePreviewDisplayed = 0;
+            CreateInfoWindow(battler);
+        }
+        else if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED 
+            || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL)
+        {
+            gBattleStruct->movePreviewDisplayed = 1;
+            CreateSpeedTiersWindow(battler);
+        }
     }
 }
 
 static void CreateInfoWindow(u32 battler)
 {
-    (void)battler;
-
     u8 aliveCount = 0;
     u8 totalCount = 0;
     u8 i;
 
+    GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, gStringVar1);
+    StringAppend(gStringVar1, COMPOUND_STRING(" is ready!"));
+
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
-        if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
-         && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF
-         && TRAINER_BATTLE_PARAM.opponentA != TRAINER_BATTLE_PARAM.opponentB)
-        {
-            StringCopy(gStringVar1, GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA));
-            StringAppend(gStringVar1, COMPOUND_STRING(" & "));
-            StringAppend(gStringVar1, GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentB));
-        }
-        else
-        {
-            StringCopy(gStringVar1, gTrainerClasses[GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA)].name);
-            StringAppend(gStringVar1, COMPOUND_STRING(" "));
-            StringAppend(gStringVar1, GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA));
-        }
-
         totalCount = GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentA);
         if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
          && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
@@ -2461,7 +2465,7 @@ static void CreateInfoWindow(u32 battler)
         ConvertUIntToDecimalStringN(gStringVar2, totalCount, STR_CONV_MODE_LEFT_ALIGN, 1);
         StringAppend(gStringVar1, gStringVar2);
         if (gBattleWeather == B_WEATHER_NONE)
-            StringAppend(gStringVar1, COMPOUND_STRING(" left!"));
+            StringAppend(gStringVar1, COMPOUND_STRING(" left"));
         else
         {
             StringAppend(gStringVar1, COMPOUND_STRING(" ("));
@@ -2471,8 +2475,6 @@ static void CreateInfoWindow(u32 battler)
     }
     else
     {
-        StringCopy(gStringVar1, COMPOUND_STRING("Wild "));
-        StringAppend(gStringVar1, GetSpeciesName(GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)));
         StringAppend(gStringVar1, COMPOUND_STRING("\nTurn "));
         ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
         StringAppend(gStringVar1, gStringVar2);

@@ -7,7 +7,9 @@
 #include "battle_ai_util.h"
 #include "battle_gimmick.h"
 #include "battle_scripts.h"
+#include "event_data.h"
 #include "constants/battle.h"
+#include "constants/flags.h"
 #include "constants/battle_string_ids.h"
 #include "constants/abilities.h"
 #include "constants/items.h"
@@ -31,6 +33,7 @@ static bool32 HandleEndTurnOrder(enum BattlerId battler)
     bool32 effect = FALSE;
 
     gBattleTurnCounter++;
+    FlagSet(FLAG_IS_TURN_START);
     gBattleStruct->eventState.endTurn++;
 
     for (enum BattlerId i = 0; i < gBattlersCount; i++)

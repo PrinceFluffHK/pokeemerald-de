@@ -199,6 +199,7 @@ enum Gender
 
 #define OPTIONS_PREVIEW_LIMITED 0
 #define OPTIONS_PREVIEW_FULL 1
+#define OPTIONS_PREVIEW_NONE 2
 
 enum __attribute__((packed)) Direction
 {
