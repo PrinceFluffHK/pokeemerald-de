@@ -31,6 +31,7 @@
 #include "text.h"
 #include "util.h"
 #include "window.h"
+#include "field_weather.h"
 #include "line_break.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -42,6 +43,7 @@
 #include "constants/trainers.h"
 #include "constants/rgb.h"
 #include "caps.h"
+#include "debug.h"
 #include "menu.h"
 #include "pokemon_summary_screen.h"
 #include "type_icons.h"
@@ -92,7 +94,7 @@ static void Task_SetControllerToWaitForString(u8);
 static void Task_GiveExpWithExpBar(u8);
 static void Task_UpdateLvlInHealthbox(u8);
 static void PrintLinkStandbyMsg(void);
-static void CreateSpeedTiersWindow(u32 battler);
+static void CreateInfoWindow(u32 battler);
 static void HideAllTargets(void);
 static void HideShownTargets(enum BattlerId battler);
 static void ShowMovePreviewTargets(enum BattlerId battler);
@@ -447,32 +449,17 @@ static void HandleInputChooseAction(enum BattlerId battler)
             else
             {
                 HideAllTargets();
-                CreateSpeedTiersWindow(battler);
+                CreateInfoWindow(battler);
                 gBattleStruct->movePreviewDisplayed=0;
             }
             break;
         case 2:
                 HideAllTargets();
-                CreateSpeedTiersWindow(battler);
+                CreateInfoWindow(battler);
                 gBattleStruct->movePreviewDisplayed=0;
             break;
         }
     }
-}
-
-static void AppendSpeed(u32 battler)
-{
-    ConvertUIntToDecimalStringN(
-        gStringVar2,
-        GetBattlerTotalSpeedStat(
-            battler,
-            GetBattlerAbility(battler),
-            GetBattlerHoldEffect(battler)
-        ),
-        STR_CONV_MODE_LEFT_ALIGN,
-        3
-    );
-    StringAppend(gStringVar1, gStringVar2);
 }
 
 static void AppendMoveTarget(u32 battler, bool32 isRightSide)
@@ -2331,81 +2318,82 @@ static void PlayerHandleChooseAction(enum BattlerId battler)
         // BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_ACTION_PROMPT);
         HideAllTargets();
         gBattleStruct->movePreviewDisplayed = 0;
-        CreateSpeedTiersWindow(battler);
+        CreateInfoWindow(battler);
     }
 }
 
-static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeedFirst)
+static void CreateInfoWindow(u32 battler)
 {
-    u32 battler = GetBattlerAtPosition(position);
-    if (!IsBattlerAlive(battler))
-        return;
+    (void)battler;
 
-    if (gBattleStruct->monToSwitchIntoId[battler] != PARTY_SIZE)
+    u8 aliveCount = 0;
+    u8 totalCount = 0;
+    u8 i;
+
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
-        StringAppend(gStringVar1, COMPOUND_STRING("Switch"));
-        return;
+        if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
+         && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF
+         && TRAINER_BATTLE_PARAM.opponentA != TRAINER_BATTLE_PARAM.opponentB)
+        {
+            StringCopy(gStringVar1, GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA));
+            StringAppend(gStringVar1, COMPOUND_STRING(" & "));
+            StringAppend(gStringVar1, GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentB));
+        }
+        else
+        {
+            StringCopy(gStringVar1, gTrainerClasses[GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA)].name);
+            StringAppend(gStringVar1, COMPOUND_STRING(" "));
+            StringAppend(gStringVar1, GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA));
+        }
+
+        totalCount = GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentA);
+        if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
+         && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
+            totalCount += GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentB);
+
+        for (i = 0; i < gEnemyPartyCount; i++)
+        {
+            if (GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
+                aliveCount++;
+        }
+
+        StringAppend(gStringVar1, COMPOUND_STRING("\nTurn "));
+        ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
+        StringAppend(gStringVar1, gStringVar2);
+        StringAppend(gStringVar1, COMPOUND_STRING(", "));
+        ConvertUIntToDecimalStringN(gStringVar2, aliveCount, STR_CONV_MODE_LEFT_ALIGN, 1);
+        StringAppend(gStringVar1, gStringVar2);
+        StringAppend(gStringVar1, COMPOUND_STRING("/"));
+        ConvertUIntToDecimalStringN(gStringVar2, totalCount, STR_CONV_MODE_LEFT_ALIGN, 1);
+        StringAppend(gStringVar1, gStringVar2);
+        if (gBattleWeather == B_WEATHER_NONE)
+            StringAppend(gStringVar1, COMPOUND_STRING("remaining"));
+        else
+        {
+            StringAppend(gStringVar1, COMPOUND_STRING(" ("));
+            StringAppend(gStringVar1, GetWeatherName(gWeatherPtr->currWeather));
+            StringAppend(gStringVar1, COMPOUND_STRING(")"));
+        }
     }
-
-    if (showSpeedFirst)
-        AppendSpeed(battler);
-
-    AppendMoveTarget(battler, isRightSide);
-}
-
-static void CreateSpeedTiersWindow(u32 battler)
-{
-    if (gSaveBlock2Ptr->optionsBattleStyle == OPTIONS_BATTLE_STYLE_SET)
-        StringCopy(gStringVar1, COMPOUND_STRING("Prss  "));
     else
-        StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
-
-    bool32 rightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT));
-    bool32 leftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
-
-    if (rightAlive)
-        AppendBattlerInfo(B_POSITION_OPPONENT_RIGHT, TRUE, TRUE);
-
-    if (leftAlive)
     {
-        if (rightAlive)
-            StringAppend(gStringVar1, COMPOUND_STRING(" / "));
-
-        AppendBattlerInfo(B_POSITION_OPPONENT_LEFT, FALSE, TRUE);
-    }
-
-
-    if (gSaveBlock2Ptr->optionsBattleStyle == OPTIONS_BATTLE_STYLE_SET)
-        StringAppend(gStringVar1, COMPOUND_STRING("\nSlct  "));
-    else
-        StringAppend(gStringVar1, COMPOUND_STRING("\nPrev  "));
-    
-    bool32 pLeftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
-    bool32 pRightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
-
-    
-    
-    if (pLeftAlive)
-    {
-        AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
-
-        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))
-            StringAppend(gStringVar1, COMPOUND_STRING("?"));
-    }
-
-    if (pRightAlive)
-    {
-        if (pLeftAlive)
-            StringAppend(gStringVar1, COMPOUND_STRING(" / "));
-
-        AppendSpeed(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
-
-        if (battler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
-            StringAppend(gStringVar1, COMPOUND_STRING("?"));
+        StringCopy(gStringVar1, COMPOUND_STRING("Wild "));
+        StringAppend(gStringVar1, GetSpeciesName(GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)));
+        StringAppend(gStringVar1, COMPOUND_STRING("\nTurn "));
+        ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
+        StringAppend(gStringVar1, gStringVar2);
+        if (gBattleWeather != B_WEATHER_NONE)
+        {
+            StringAppend(gStringVar1, COMPOUND_STRING(" ("));
+            StringAppend(gStringVar1, GetWeatherName(gWeatherPtr->currWeather));
+            StringAppend(gStringVar1, COMPOUND_STRING(")"));
+        }
     }
 
     BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);
 }
+
 
 
 static void PlayerHandleYesNoBox(enum BattlerId battler)
