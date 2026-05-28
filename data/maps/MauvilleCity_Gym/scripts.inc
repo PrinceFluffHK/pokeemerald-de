@@ -297,8 +297,9 @@ MauvilleCity_Gym_Text_ShawnPostBattle:
 	.string "daddy was born, that tough coot.$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "This GYM's got puzzles!\n"
-	.string "Isn't it fun?$"
+	.string "Turns out PARALYZED POKéMON have a\n"
+	.string "1/8 chance of losing their turn.\p"
+	.string "Isn't that fun?$"
 
 MauvilleCity_Gym_Text_BenDefeat:
 	.string "It's no fun to lose…$"
@@ -364,9 +365,10 @@ MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
 	.string "You should take this, too!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "That TM34 there contains SHOCK WAVE.\p"
-	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!\p"
+	.string "That TM there contains CHARGE BEAM.\p"
+	.string "It's a trustworthy move that always\n"
+	.string "raises the user's SP. ATK.\p"
+	.string "You can count on it!\p"
 	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
