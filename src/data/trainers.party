@@ -1124,27 +1124,41 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Medicham
-Ability: Pure Power
+Blaziken
+Ability: Speed Boost
 Level: 49
-- Fake Out
-- Zen Headbutt
-- High Jump Kick
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Fire Pledge
+- Sky Uppercut
+- Aerial Ace
+- Swords Dance
 
-Claydol
-Ability: Levitate
+Sceptile @ Sitrus Berry
+Ability: Unburden
 Level: 49
-- Earthquake
-- Skill Swap
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Grass Pledge
+- Dragon Pulse
+- X-Scissor
+- Shed Tail
 
-Seaking
-Ability: Lightning Rod
+Swampert
+Ability: Gooey
 Level: 49
-- Waterfall
-- Megahorn
-- Smart Strike
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pledge
+- Earth Power
+- Body Press
+
+Obstagoon @ Flame Orb
+Ability: Guts
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Night Slash
+- Facade
+- Obstruct
 
 === TRAINER_VIOLET ===
 Name: VIOLET
@@ -2075,7 +2089,7 @@ Level: 20
 - Bulk Up
 - Whirlwind
 
-=== TRAINER_EDGAR ===
+=== TRAINER_MITCHELL ===
 Name: ALEXANDER
 Class: Ruin Maniac
 Pic: Ruin Maniac
@@ -2660,7 +2674,7 @@ Level: 49
 - Trick Room
 
 === TRAINER_MICHELLE ===
-Name: MICHELLE
+Name: ANNA
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -2668,35 +2682,39 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Blaziken
-Ability: Speed Boost
+Lunatone @ Power Herb
+Ability: Levitate
 Level: 49
-- Fire Pledge
-- Sky Uppercut
-- Aerial Ace
-- Swords Dance
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Meteor Beam
+- Moonblast
+- Moonlight
 
-Sceptile @ Sitrus Berry
-Ability: Unburden
+Crobat
+Ability: Inner Focus
 Level: 49
-- Grass Pledge
-- Dragon Pulse
-- X-Scissor
-- Shed Tail
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Cross Poison
+- U-Turn
+- Super Fang
+- Tailwind
 
-Swampert
-Ability: Gooey
+Vileplume
+Ability: Flower Veil
 Level: 49
-- Water Pledge
-- Earth Power
-- Body Press
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Giga Drain
+- Pollen Puff
+- Sleep Powder
+- Strength Sap
 
-Obstagoon @ Flame Orb
-Ability: Guts
+Salamence
+Ability: Moxie
 Level: 49
-- Night Slash
-- Facade
-- Obstruct
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dragon Claw
+- Fire Blast
+- Hydro Pump
 
 === TRAINER_CAROLINE ===
 Name: THALIA
@@ -9986,32 +10004,43 @@ Level: 31
 - Smokescreen
 
 === TRAINER_DIANNE ===
-Name: DIANNE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Name: MARION
+Class: Battle Girl
+Pic: Battle Girl
 Gender: Female
-Music: Cool
+Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Ace Pokemon
 
-Claydol
+Walrein
+Ability: Thick Fat
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Brine
+- Ice Beam
+- Body Slam
+- Substitute
+
+Absol
+Ability: Sharpness
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Night Slash
+- Psycho Cut
+- Doom Desire
+
+Ninetales @ Choice Scarf
+Ability: Drought
+Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Flame Burst
+- Extrasensory
+
+Flygon
 Ability: Levitate
 Level: 49
-- Earthquake
-- Skill Swap
-
-Lanturn
-Ability: Volt Absorb
-Level: 49
-- Thunderbolt
-- Earthquake
-
-Golem
-Ability: Rock Head
-Level: 49
-- Rock Blast
-- Stomping Tantrum
-- Wide Guard
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Dragon Rush
 
 === TRAINER_JANI ===
 Name: JANI
@@ -12937,7 +12966,7 @@ Level: 34
 - Shock Wave
 - Tail Glow
 
-=== TRAINER_MITCHELL ===
+=== TRAINER_EDGAR ===
 Name: JAKE
 Class: Rich Boy
 Pic: Rich Boy

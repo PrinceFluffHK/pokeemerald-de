@@ -3,7 +3,6 @@
   "name": "VictoryRoad_B1F",
   "layout": "LAYOUT_VICTORY_ROAD_B1F",
   "music": "MUS_VICTORY_ROAD",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_VICTORY_ROAD",
   "requires_flash": true,
   "weather": "WEATHER_NONE",
@@ -263,7 +262,7 @@
       "flag": "FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
       "x": 14,
       "y": 16,
       "elevation": 3,
@@ -341,5 +340,6 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

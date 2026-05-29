@@ -3,7 +3,6 @@
   "name": "VictoryRoad_1F",
   "layout": "LAYOUT_VICTORY_ROAD_1F",
   "music": "MUS_VICTORY_ROAD",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_VICTORY_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -16,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
       "x": 33,
       "y": 22,
       "elevation": 3,
@@ -200,5 +199,6 @@
       "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }
