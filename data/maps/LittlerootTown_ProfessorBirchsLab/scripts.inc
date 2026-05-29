@@ -143,6 +143,7 @@ LittlerootTown_ProfessorBirchsLab_EventScript_DeclineSeeingRival::
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedexEvent::
 	lockall
+	clearflag FLAG_HIDE_BATTLE_TUTORIAL
 	applymovement LOCALID_PLAYER, LittlerootTown_ProfessorBirchsLab_Movement_PlayerEnterLabForPokedex
 	waitmovement 0
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex

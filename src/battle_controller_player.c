@@ -830,16 +830,16 @@ static void HideAllTargets(void)
 {
     for (enum BattlerId i = 0; i < MAX_BATTLERS_COUNT; i++)
     {
-        if (IsBattlerAlive(i) && gBattleSpritesDataPtr->healthBoxesData[i].healthboxIsBouncing)
+        if (!IsBattlerAlive(i))
+            continue;
+
+        struct Sprite *sprite = &gSprites[gBattlerSpriteIds[i]];
+        if (sprite->callback == SpriteCB_ShowAsMoveTarget
+         || sprite->callback == SpriteCB_BlinkVisible)
         {
-            // Restore the sprite's invisible state and callback directly instead
-            // of delegating to SpriteCB_HideAsMoveTarget. This ensures the
-            // battler's sprite callback is reset to the normal dummy callback
-            // and prevents it from remaining invisible or in an incorrect
-            // callback state after cancel/confirm.
-            gSprites[gBattlerSpriteIds[i]].invisible = gSprites[gBattlerSpriteIds[i]].data[4];
-            gSprites[gBattlerSpriteIds[i]].data[4] = FALSE;
-            gSprites[gBattlerSpriteIds[i]].callback = SpriteCallbackDummy;
+            sprite->invisible = sprite->data[4];
+            sprite->data[4] = FALSE;
+            sprite->callback = SpriteCallbackDummy_2;
             EndBounceEffect(i, BOUNCE_HEALTHBOX);
         }
     }
@@ -996,8 +996,11 @@ static void TryShowAsTarget(enum BattlerId battler)
 {
     if (IsBattlerAlive(battler))
     {
+        struct Sprite *sprite = &gSprites[gBattlerSpriteIds[battler]];
+
+        sprite->data[4] = sprite->invisible;
         DoBounceEffect(battler, BOUNCE_HEALTHBOX, 15, 1);
-        gSprites[gBattlerSpriteIds[battler]].callback = SpriteCB_ShowAsMoveTarget;
+        sprite->callback = SpriteCB_ShowAsMoveTarget;
     }
 }
 
@@ -2439,8 +2442,21 @@ static void CreateInfoWindow(u32 battler)
     u8 totalCount = 0;
     u8 i;
 
-    GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, gStringVar1);
-    StringAppend(gStringVar1, COMPOUND_STRING(" is ready!"));
+    DebugPrintf("%d", FlagGet(FLAG_SYS_POKEMON_GET));
+    DebugPrintf("%d", FlagGet(FLAG_IS_TURN_START));
+
+    if (!FlagGet(FLAG_HIDE_BATTLE_TUTORIAL)
+        && (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
+         || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL))
+    {   
+        FlagSet(FLAG_HIDE_BATTLE_TUTORIAL);
+        StringCopy(gStringVar1, COMPOUND_STRING("SELECT: Spd + Target"));
+    }
+    else
+    {
+        GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, gStringVar1);
+        StringAppend(gStringVar1, COMPOUND_STRING("'s action?"));
+    }
 
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {

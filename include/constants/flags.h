@@ -527,7 +527,7 @@
 #define FLAG_DN_SEARCHING                    0x1DE // DexNav
 #define FLAG_DN_DEXNAV_GET                   0x1DF // DexNav
 #define FLAG_DN_DETECTOR_MODE                0x1E0 // DexNav
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
+#define FLAG_HIDE_BATTLE_TUTORIAL            0x1E1
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
