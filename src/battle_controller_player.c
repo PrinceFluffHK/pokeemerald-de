@@ -899,6 +899,7 @@ static void ShowMovePreviewTargets(enum BattlerId battler)
         if (targetBattler < MAX_BATTLERS_COUNT && IsBattlerAlive(targetBattler))
             TryShowAsTarget(targetBattler);
         break;
+    case TARGET_OPPONENTS_FIELD:
     case TARGET_BOTH:
         for (targetBattler = 0; targetBattler < MAX_BATTLERS_COUNT; targetBattler++)
         {
@@ -912,15 +913,6 @@ static void ShowMovePreviewTargets(enum BattlerId battler)
             TryShowAsTarget(targetBattler);
         if (IsBattlerAlive(BATTLE_PARTNER(battler)))
             TryShowAsTarget(BATTLE_PARTNER(battler));
-        break;
-    case TARGET_OPPONENTS_FIELD:
-        for (targetBattler = 0; targetBattler < MAX_BATTLERS_COUNT; targetBattler++)
-        {
-            if (IsBattlerAlive(targetBattler)
-             && (GetBattlerPosition(targetBattler) == B_POSITION_OPPONENT_LEFT
-              || GetBattlerPosition(targetBattler) == B_POSITION_OPPONENT_RIGHT))
-                TryShowAsTarget(targetBattler);
-        }
         break;
     case TARGET_FIELD:
     case TARGET_ALL_BATTLERS:
