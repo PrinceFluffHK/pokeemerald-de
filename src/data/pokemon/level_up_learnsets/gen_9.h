@@ -970,6 +970,7 @@ static const struct LevelUpMove sIgglybuffLevelUpLearnset[] = {
 static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_COPYCAT),
+    LEVEL_UP_MOVE( 1, MOVE_MIMIC),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
@@ -984,8 +985,8 @@ static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_BODY_SLAM),
     //Catch
     //Evo MoonStone
-    LEVEL_UP_MOVE(28, MOVE_MIMIC),
-    LEVEL_UP_MOVE(32, MOVE_GYRO_BALL),
+    LEVEL_UP_MOVE(28, MOVE_GYRO_BALL),
+    LEVEL_UP_MOVE(32, MOVE_ALLURING_VOICE),
     LEVEL_UP_MOVE(36, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE(40, MOVE_PERISH_SONG),
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
@@ -997,6 +998,7 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PRESENT),
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_COPYCAT),
+    LEVEL_UP_MOVE( 1, MOVE_MIMIC),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
@@ -1011,12 +1013,15 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_BODY_SLAM),
     //Catch
     //Evo MoonStone
-    LEVEL_UP_MOVE(28, MOVE_MIMIC),
-    LEVEL_UP_MOVE(32, MOVE_GYRO_BALL),
+    LEVEL_UP_MOVE(28, MOVE_GYRO_BALL),
+    LEVEL_UP_MOVE(32, MOVE_ALLURING_VOICE),
+    //Winona
     LEVEL_UP_MOVE(36, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE(40, MOVE_PERISH_SONG),
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
+    //T&L
     LEVEL_UP_MOVE(48, MOVE_PLAY_ROUGH),
+    //Juan
     LEVEL_UP_END
 };
 #endif //P_FAMILY_JIGGLYPUFF

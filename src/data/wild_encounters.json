@@ -983,43 +983,48 @@
             "mons": [
               {
                 "min_level": 17,
+                "max_level": 17,
+                "species": "SPECIES_SPINDA"
+              },
+              {
+                "min_level": 18,
+                "max_level": 18,
+                "species": "SPECIES_SPINDA"
+              },
+              {
+                "min_level": 18,
+                "max_level": 18,
+                "species": "SPECIES_SPINDA"
+              },
+              {
+                "min_level": 19,
                 "max_level": 19,
+                "species": "SPECIES_SPINDA"
+              },
+              {
+                "min_level": 17,
+                "max_level": 17,
                 "species": "SPECIES_SANDSHREW"
               },
               {
                 "min_level": 17,
-                "max_level": 19,
+                "max_level": 18,
+                "species": "SPECIES_SANDSHREW"
+              },
+              {
+                "min_level": 17,
+                "max_level": 17,
                 "species": "SPECIES_SLUGMA"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_SLUGMA"
               },
               {
-                "min_level": 17,
-                "max_level": 17,
-                "species": "SPECIES_SPINDA"
-              },
-              {
-                "min_level": 17,
-                "max_level": 17,
-                "species": "SPECIES_SPINDA"
-              },
-              {
-                "min_level": 17,
-                "max_level": 19,
-                "species": "SPECIES_SPINDA"
-              },
-              {
-                "min_level": 17,
-                "max_level": 19,
-                "species": "SPECIES_SPINDA"
-              },
-              {
-                "min_level": 17,
-                "max_level": 19,
-                "species": "SPECIES_SPINDA"
+                "min_level": 18,
+                "max_level": 18,
+                "species": "SPECIES_SLUGMA"
               },
               {
                 "min_level": 19,
@@ -1027,14 +1032,9 @@
                 "species": "SPECIES_SKARMORY"
               },
               {
-                "min_level": 19,
-                "max_level": 19,
-                "species": "SPECIES_SKARMORY"
-              },
-              {
-                "min_level": 19,
-                "max_level": 19,
-                "species": "SPECIES_SKARMORY"
+                "min_level": 18,
+                "max_level": 18,
+                "species": "SPECIES_SLUGMA"
               },
               {
                 "min_level": 19,

@@ -276,22 +276,46 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Skitty
-Level: 26
+Ability: Normalize
+Level: 28
+- Fake Out
+- Shadow Ball
+- Charm
 
-Poochyena
-Level: 26
+Chingling
+Ability: Levitate
+Level: 28
+- Wrap
+- Growl
+- Heal Bell
+- Trick Room
 
-Zigzagoon
-Level: 26
+Bagon
+Ability: Rock Head
+Level: 28
+- Dragon Claw
+- Crunch
+- Zen Headbutt
 
-Lotad
-Level: 26
+Snorunt
+Ability: Inner Focus
+Level: 28
+- Ice Fang
+- Bite
+- Protect
 
-Seedot
-Level: 26
+Wynaut
+Ability: Telepathy
+Level: 28
+- Counter
+- Mirror Coat
+- Charm
+- Safeguard
 
-Taillow
-Level: 26
+Beldum @ Choice Band
+Ability: Full-Metal Body
+Level: 28
+- Take Down
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: GRUNT
@@ -578,14 +602,14 @@ AI: Smart Trainer
 
 Corphish
 Ability: Adaptability
-Level: 14
+Level: 15
 - Bubble Beam
 - Vice Grip
 - Swords Dance
 
 Carvanha
 Ability: Rough Skin
-Level: 14
+Level: 15
 - Aqua Jet
 - Bite
 - Leer
@@ -898,8 +922,6 @@ Ability: Weak Armor
 Level: 31
 - Steel Wing
 - Slash
-- Payback
-- Spikes
 
 Anorith
 Ability: Swift Swim
@@ -910,9 +932,9 @@ Level: 31
 
 Seaking
 Ability: Swift Swim
-Level: 32
+Level: 33
 - Waterfall
-- Flip Turn
+- Aqua Tail
 - Smart Strike
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
@@ -2638,7 +2660,7 @@ Level: 49
 - Trick Room
 
 === TRAINER_MICHELLE ===
-Name: ANNA
+Name: MICHELLE
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -2669,12 +2691,12 @@ Level: 49
 - Earth Power
 - Body Press
 
-Mawile @ Mawilite
-Ability: Huge Power
+Obstagoon @ Flame Orb
+Ability: Guts
 Level: 49
-- Iron Head
-- Play Rough
-- Poison Fang
+- Night Slash
+- Facade
+- Obstruct
 
 === TRAINER_CAROLINE ===
 Name: THALIA
@@ -3030,11 +3052,6 @@ Level: 5
 - Thunder Shock
 - Play Nice
 - Tail Whip
-
-Slakoth @ Nugget
-Ability: Truant
-Level: 5
-- Scratch
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -3517,12 +3534,11 @@ Level: 6
 - Mud-Slap
 - Tail Whip
 
-Zigzagoon @ Nugget
-Ability: Pickup
-Level: 6
-- Tackle
-- Mud-Slap
-- Growl
+Slakoth @ Nugget
+Ability: Truant
+Level: 7
+- Scratch
+- Yawn
 
 === TRAINER_MOLLIE ===
 Name: MOLLIE
@@ -3823,7 +3839,7 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
 
-Tentacruel
+Tentacool
 Ability: Clear Body
 Level: 30
 - Water Pulse
@@ -3847,10 +3863,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 24
+Ability: Liquid Ooze
+Level: 30
+- Water Pulse
+- Acid
+- Wrap
 
 Tentacool
-Level: 24
+Ability: Liquid Ooze
+Level: 30
+- Water Pulse
+- Wrap
+- Screech
 
 === TRAINER_DARRIN ===
 Name: DARRIN
@@ -5582,7 +5606,6 @@ Level: 16
 Abra
 Ability: Magic Guard
 Level: 16
-IVs: 15 HP / 14 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Hidden Power
 
 === TRAINER_PRESTON ===
@@ -6542,7 +6565,7 @@ Koffing
 Ability: Levitate
 Level: 26
 - Clear Smog
-- Assurance
+- Flamethrower
 - Will-O-Wisp
 - Self-Destruct
 
@@ -6693,7 +6716,7 @@ Level: 43
 Absol (M) @ Wise Glasses
 Ability: Sharpness
 Level: 43
-- Feint
+- Psycho Cut
 - Night Slash
 - Future Sight
 - Doom Desire
@@ -10610,10 +10633,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Wailmer
-Level: 26
+Ability: Water Veil
+Level: 30  
+- Whirlpool
+- Heavy Slam
+- Astonish
 
-Wailmer
-Level: 26
+Corsola
+Ability: Regenerator
+Level: 30  
+- Power Gem
+- Bubble Beam
+- Life Dew
 
 === TRAINER_DENISE ===
 Name: DENISE
@@ -11507,7 +11538,7 @@ Level: 7
 - Harden
 
 Lotad
-Ability: Swift Swim
+Ability: Rain Dish
 Level: 7
 - Water Gun
 - Absorb
@@ -12345,7 +12376,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 - Fire Spin
-- Rock Throw
+- Ancient Power
 - Clear Smog
 
 Wailmer
@@ -12378,15 +12409,15 @@ Ability: Magic Bounce
 Level: 32
 - Heart Stamp
 - Psybeam
-- Power Gem
+- Shadow Ball
 - Bounce
 
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Wailmer @ Chesto Berry
 Ability: Water Veil
@@ -12464,7 +12495,7 @@ Ability: Magic Bounce
 Level: 32
 - Heart Stamp
 - Psybeam
-- Power Gem
+- Shadow Ball
 - Bounce
 
 Wailmer @ Chesto Berry
@@ -12516,7 +12547,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 - Fire Spin
-- Rock Throw
+- Ancient Power
 - Clear Smog
 
 Shroomish
@@ -12549,7 +12580,7 @@ Ability: Magic Bounce
 Level: 32
 - Heart Stamp
 - Psybeam
-- Power Gem
+- Shadow Ball
 - Bounce
 
 Breloom @ Toxic Orb
@@ -12563,8 +12594,8 @@ Magcargo
 Ability: Pyroclastic Flow
 Level: 31
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Marshtomp @ Sitrus Berry
 Ability: Torrent
@@ -12600,7 +12631,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 - Fire Spin
-- Rock Throw
+- Ancient Power
 - Clear Smog
 
 Wailmer
@@ -12633,15 +12664,15 @@ Ability: Magic Bounce
 Level: 32
 - Heart Stamp
 - Psybeam
-- Power Gem
+- Shadow Ball
 - Bounce
 
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Wailmer @ Chesto Berry
 Ability: Water Veil
@@ -12719,7 +12750,7 @@ Ability: Magic Bounce
 Level: 32
 - Heart Stamp
 - Psybeam
-- Power Gem
+- Shadow Ball
 - Bounce
 
 Wailmer @ Chesto Berry
@@ -12771,7 +12802,7 @@ Slugma
 Ability: Flame Body
 Level: 18
 - Fire Spin
-- Rock Throw
+- Ancient Power
 - Clear Smog
 
 Shroomish
@@ -12804,7 +12835,7 @@ Ability: Magic Bounce
 Level: 32
 - Heart Stamp
 - Psybeam
-- Power Gem
+- Shadow Ball
 - Bounce
 
 Breloom @ Toxic Orb
@@ -12818,8 +12849,8 @@ Magcargo
 Ability: Pyroclastic Flow
 Level: 31
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Marshtomp @ Sitrus Berry
 Ability: Torrent
@@ -15921,11 +15952,11 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
 Grumpig
-Ability: Thick Fat
+Ability: Magic Bounce
 Level: 36
 - Heart Stamp
-- Psybeam
-- Power Gem
+- Extrasensory
+- Shadow Ball
 - Bounce
 
 Raichu
@@ -15940,8 +15971,8 @@ Magcargo
 Ability: Pyroclastic Flow
 Level: 35
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Wailord @ Chesto Berry
 Ability: Water Veil
@@ -15968,11 +15999,11 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
 Grumpig
-Ability: Thick Fat
+Ability: Magic Bounce
 Level: 36
 - Heart Stamp
-- Psybeam
-- Power Gem
+- Extrasensory
+- Shadow Ball
 - Bounce
 
 Raichu
@@ -15994,7 +16025,7 @@ Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
 - Force Palm
-- Mega Drain
+- Giga Drain
 - Headbutt
 - Spore
 
@@ -16016,11 +16047,11 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
 Grumpig
-Ability: Thick Fat
+Ability: Magic Bounce
 Level: 36
 - Heart Stamp
-- Psybeam
-- Power Gem
+- Extrasensory
+- Shadow Ball
 - Bounce
 
 Raichu
@@ -16035,7 +16066,7 @@ Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
 - Force Palm
-- Mega Drain
+- Giga Drain
 - Headbutt
 - Spore
 
@@ -16043,8 +16074,8 @@ Magcargo
 Ability: Pyroclastic Flow
 Level: 35
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Swampert @ Sitrus Berry
 Ability: Torrent
@@ -16064,11 +16095,11 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
 Grumpig
-Ability: Thick Fat
+Ability: Magic Bounce
 Level: 36
 - Heart Stamp
-- Psybeam
-- Power Gem
+- Extrasensory
+- Shadow Ball
 - Bounce
 
 Raichu
@@ -16083,8 +16114,8 @@ Magcargo
 Ability: Pyroclastic Flow
 Level: 35
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Wailord @ Chesto Berry
 Ability: Water Veil
@@ -16111,11 +16142,11 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
 Grumpig
-Ability: Thick Fat
+Ability: Magic Bounce
 Level: 36
 - Heart Stamp
-- Psybeam
-- Power Gem
+- Extrasensory
+- Shadow Ball
 - Bounce
 
 Raichu
@@ -16137,7 +16168,7 @@ Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
 - Force Palm
-- Mega Drain
+- Giga Drain
 - Headbutt
 - Spore
 
@@ -16159,11 +16190,11 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
 Grumpig
-Ability: Thick Fat
+Ability: Magic Bounce
 Level: 36
 - Heart Stamp
-- Psybeam
-- Power Gem
+- Extrasensory
+- Shadow Ball
 - Bounce
 
 Raichu
@@ -16178,7 +16209,7 @@ Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
 - Force Palm
-- Mega Drain
+- Giga Drain
 - Headbutt
 - Spore
 
@@ -16186,8 +16217,8 @@ Magcargo
 Ability: Pyroclastic Flow
 Level: 35
 - Fire Spin
-- Rock Slide
-- Clear Smog
+- Power Gem
+- Scorching Sands
 
 Swampert @ Sitrus Berry
 Ability: Torrent
@@ -16865,14 +16896,14 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Lotad @ Nugget
-Ability: Swift Swim
+Ability: Rain Dish
 Level: 10
 - Water Gun
 - Absorb
 - Astonish
 
 Skitty @ Nugget
-Ability: Wonder Skin
+Ability: Normalize
 Level: 10
 - Fake Out
 - Tackle
@@ -17864,10 +17895,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 15
+Ability: Liquid Ooze
+Level: 30  
+- Water Pulse
+- Acid
+- Wrap
+- Screech
 
-Tentacool
-Level: 15
+Wailmer
+Ability: Water Veil
+Level: 30  
+- Whirlpool
+- Heavy Slam
+- Astonish
 
 === TRAINER_ISABELLE ===
 Name: ISABELLE
@@ -17878,11 +17918,19 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
 
-Marill
-Level: 15
+Azumarill
+Ability: Huge Power
+Level: 30  
+- Bubble Beam
+- Bounce
+- Tail Whip
 
-Marill
-Level: 15
+Goldeen
+Ability: Swift Swim
+Level: 30  
+- Water Pulse
+- Smart Strike
+- Supersonic
 
 === TRAINER_ANDRES_1 ===
 Name: ANDRES
@@ -17921,7 +17969,6 @@ Ability: Rain Dish
 Level: 30
 - Wing Attack
 - Water Pulse
-- Tailwind
 
 Swellow
 Ability: Guts
