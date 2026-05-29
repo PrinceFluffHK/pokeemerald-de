@@ -8159,7 +8159,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Needle Arm"),
         .description = COMPOUND_STRING(
             "May cause flinching. Sets\n"
-            "Spikes that hurt switches."),
+            "spikes that hurt switches."),
         .effect = EFFECT_CEASELESS_EDGE, 
         .power = 60,
         .type = TYPE_GRASS,

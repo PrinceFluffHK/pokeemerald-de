@@ -499,13 +499,14 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
 {
     u32 move = gBattleMons[battler].moves[gBattleStruct->chosenMovePositions[battler]];
     u32 moveTarget = GetBattlerMoveTargetType(battler, move);
+    bool32 needsExtraSpace = !isRightSide && IsBattlerAlive(BATTLE_PARTNER(battler));
 
     switch (moveTarget)
     {
     case TARGET_USER:
         StringAppend(gStringVar1,
-            isRightSide ? COMPOUND_STRING(" {UP_ARROW}-")
-                        : COMPOUND_STRING(" -{UP_ARROW}"));
+            isRightSide ? (needsExtraSpace ? COMPOUND_STRING("  {UP_ARROW}-") : COMPOUND_STRING(" {UP_ARROW}-"))
+                        : (needsExtraSpace ? COMPOUND_STRING("  -{UP_ARROW}") : COMPOUND_STRING(" -{UP_ARROW}")));
         break;
 
     case TARGET_SELECTED:
@@ -514,50 +515,50 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
         u32 target = gAiBattleData->chosenTarget[battler];
 
         if (target == B_POSITION_OPPONENT_LEFT)
-            StringAppend(gStringVar1, COMPOUND_STRING(" -{UP_ARROW}"));
+            StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" -{UP_ARROW}") : COMPOUND_STRING("-{UP_ARROW}"));
         else if (target == B_POSITION_OPPONENT_RIGHT)
-            StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}-"));
+            StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" {UP_ARROW}-") : COMPOUND_STRING("{UP_ARROW}-"));
         else if (target == B_POSITION_PLAYER_LEFT)
-            StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}-"));
+            StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" {DOWN_ARROW}-") : COMPOUND_STRING("{DOWN_ARROW}-"));
         else if (target == B_POSITION_PLAYER_RIGHT)
-            StringAppend(gStringVar1, COMPOUND_STRING(" -{DOWN_ARROW}"));
+            StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" -{DOWN_ARROW}") : COMPOUND_STRING("-{DOWN_ARROW}"));
         break;
     }
 
     case TARGET_ALLY:
         StringAppend(gStringVar1,
-            isRightSide ? COMPOUND_STRING(" -{UP_ARROW}")
-                        : COMPOUND_STRING(" {UP_ARROW}-"));
+            isRightSide ? (needsExtraSpace ? COMPOUND_STRING(" -{UP_ARROW}") : COMPOUND_STRING("-{UP_ARROW}"))
+                        : (needsExtraSpace ? COMPOUND_STRING(" {UP_ARROW}-") : COMPOUND_STRING("{UP_ARROW}-")));
         break;
 
     case TARGET_DEPENDS:
     case TARGET_OPPONENT:
     case TARGET_RANDOM:
-        StringAppend(gStringVar1, COMPOUND_STRING(" ??"));
+        StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" ??") : COMPOUND_STRING("??"));
         break;
 
     case TARGET_USER_AND_ALLY:
-        StringAppend(gStringVar1, COMPOUND_STRING(" {UP_ARROW}{UP_ARROW}"));
+        StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" {UP_ARROW}{UP_ARROW}") : COMPOUND_STRING("{UP_ARROW}{UP_ARROW}"));
         break;
 
     case TARGET_BOTH:
     case TARGET_SMART:
-        StringAppend(gStringVar1, COMPOUND_STRING(" {DOWN_ARROW}{DOWN_ARROW}"));
+        StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" {DOWN_ARROW}{DOWN_ARROW}") : COMPOUND_STRING("{DOWN_ARROW}{DOWN_ARROW}"));
         break;
 
     case TARGET_OPPONENTS_FIELD:
-        StringAppend(gStringVar1, COMPOUND_STRING(" xx"));
+        StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" xx") : COMPOUND_STRING("xx"));
         break;
 
     case TARGET_FOES_AND_ALLY:
         StringAppend(gStringVar1,
-            isRightSide ? COMPOUND_STRING(" {DOWN_ARROW}{V_D_ARROW}")
-            : COMPOUND_STRING(" {V_D_ARROW}{DOWN_ARROW}"));
+            isRightSide ? (needsExtraSpace ? COMPOUND_STRING(" {DOWN_ARROW}{V_D_ARROW}") : COMPOUND_STRING("{DOWN_ARROW}{V_D_ARROW}"))
+                        : (needsExtraSpace ? COMPOUND_STRING(" {V_D_ARROW}{DOWN_ARROW}") : COMPOUND_STRING("{V_D_ARROW}{DOWN_ARROW}")));
         break;
-        
+
     case TARGET_FIELD:
     case TARGET_ALL_BATTLERS:
-        StringAppend(gStringVar1, COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}"));
+        StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" {V_D_ARROW}{V_D_ARROW}") : COMPOUND_STRING("{V_D_ARROW}{V_D_ARROW}"));
         break;
     }
 }
@@ -575,9 +576,16 @@ static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeed
     }
 
     if (showSpeedFirst)
+    {
         AppendSpeed(battler);
-
-    AppendMoveTarget(battler, isRightSide);
+        AppendMoveTarget(battler, isRightSide);
+    }
+    else
+    {
+        AppendMoveTarget(battler, isRightSide);
+        StringAppend(gStringVar1, COMPOUND_STRING(" "));
+        AppendSpeed(battler);
+    }
 }
 
 static void CreateSpeedTiersWindow(u32 battler)
@@ -588,7 +596,7 @@ static void CreateSpeedTiersWindow(u32 battler)
     bool32 leftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
 
     if (rightAlive)
-        AppendBattlerInfo(B_POSITION_OPPONENT_RIGHT, TRUE, TRUE);
+        AppendBattlerInfo(B_POSITION_OPPONENT_RIGHT, TRUE, FALSE);
 
     if (leftAlive)
     {
@@ -598,12 +606,10 @@ static void CreateSpeedTiersWindow(u32 battler)
         AppendBattlerInfo(B_POSITION_OPPONENT_LEFT, FALSE, TRUE);
     }
 
-    StringAppend(gStringVar1, COMPOUND_STRING("\nPrev  "));
+    StringAppend(gStringVar1, COMPOUND_STRING("\nPrvw  "));
     
     bool32 pLeftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
     bool32 pRightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
-
-    
     
     if (pLeftAlive)
     {
@@ -2434,27 +2440,11 @@ static void CreateInfoWindow(u32 battler)
     u8 totalCount = 0;
     u8 i;
 
-    DebugPrintf("%d", FlagGet(FLAG_SYS_POKEMON_GET));
-    DebugPrintf("%d", FlagGet(FLAG_IS_TURN_START));
-
-    if (!FlagGet(FLAG_HIDE_BATTLE_TUTORIAL)
-        && (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
-         || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL))
-    {   
-        FlagSet(FLAG_HIDE_BATTLE_TUTORIAL);
-        StringCopy(gStringVar1, COMPOUND_STRING("SELECT: Spd + Target"));
-    }
-    else
-    {
-        GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, gStringVar1);
-        StringAppend(gStringVar1, COMPOUND_STRING("'s action?"));
-    }
-
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         totalCount = GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentA);
         if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
-         && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
+            && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
             totalCount += GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentB);
 
         for (i = 0; i < gEnemyPartyCount; i++)
@@ -2463,10 +2453,10 @@ static void CreateInfoWindow(u32 battler)
                 aliveCount++;
         }
 
-        StringAppend(gStringVar1, COMPOUND_STRING("\nTurn "));
+        StringCopy(gStringVar1, COMPOUND_STRING("Turn "));
         ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
         StringAppend(gStringVar1, gStringVar2);
-        StringAppend(gStringVar1, COMPOUND_STRING(", "));
+        StringAppend(gStringVar1, COMPOUND_STRING(" - "));
         ConvertUIntToDecimalStringN(gStringVar2, aliveCount, STR_CONV_MODE_LEFT_ALIGN, 1);
         StringAppend(gStringVar1, gStringVar2);
         StringAppend(gStringVar1, COMPOUND_STRING("/"));
@@ -2476,22 +2466,36 @@ static void CreateInfoWindow(u32 battler)
             StringAppend(gStringVar1, COMPOUND_STRING(" left"));
         else
         {
-            StringAppend(gStringVar1, COMPOUND_STRING(" ("));
-            StringAppend(gStringVar1, GetWeatherName(gWeatherPtr->currWeather));
-            StringAppend(gStringVar1, COMPOUND_STRING(")"));
+            StringAppend(gStringVar1, COMPOUND_STRING(" - "));
+            StringAppend(gStringVar1, GetBattleWeatherName());
+            // StringAppend(gStringVar1, COMPOUND_STRING(")"));
         }
     }
     else
     {
-        StringAppend(gStringVar1, COMPOUND_STRING("\nTurn "));
+        StringCopy(gStringVar1, COMPOUND_STRING("Turn "));
         ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
         StringAppend(gStringVar1, gStringVar2);
         if (gBattleWeather != B_WEATHER_NONE)
         {
-            StringAppend(gStringVar1, COMPOUND_STRING(" ("));
-            StringAppend(gStringVar1, GetWeatherName(gWeatherPtr->currWeather));
-            StringAppend(gStringVar1, COMPOUND_STRING(")"));
+            StringAppend(gStringVar1, COMPOUND_STRING(" - "));
+            StringAppend(gStringVar1, GetBattleWeatherName());
+            // StringAppend(gStringVar1, COMPOUND_STRING(")"));
         }
+    }
+
+    if (!FlagGet(FLAG_HIDE_BATTLE_TUTORIAL)
+        && (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
+        || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL))
+    {
+        FlagSet(FLAG_HIDE_BATTLE_TUTORIAL);
+        StringAppend(gStringVar1, COMPOUND_STRING("\nSELECT: Spd + Target"));
+    }
+    else {
+        StringAppend(gStringVar1, COMPOUND_STRING("\nGo, "));
+        GetMonData(GetBattlerMon(battler), MON_DATA_NICKNAME, gStringVar2);
+        StringAppend(gStringVar1, gStringVar2);
+        StringAppend(gStringVar1, COMPOUND_STRING("!"));
     }
 
     BattlePutTextOnWindow(gStringVar1, B_WIN_ACTION_PROMPT);

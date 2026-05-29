@@ -8,6 +8,8 @@
 #include "field_weather.h"
 #include "fieldmap.h"
 #include "main.h"
+#include "battle_util.h"
+#include "constants/battle.h"
 #include "menu.h"
 #include "palette.h"
 #include "random.h"
@@ -1195,13 +1197,13 @@ bool32 IsWeatherAlphaBlend(void)
 static const u8 sWeatherNames[WEATHER_COUNT][24] = {
     [WEATHER_NONE]               = _("NONE"),
     [WEATHER_SUNNY_CLOUDS]       = _("SUNNY CLOUDS"),
-    [WEATHER_SUNNY]              = _("SUNNY"),
+    [WEATHER_SUNNY]              = _("SUN"),
     [WEATHER_RAIN]               = _("RAIN"),
     [WEATHER_SNOW]               = _("SNOW"),
     [WEATHER_RAIN_THUNDERSTORM]  = _("RAIN THUNDERSTORM"),
     [WEATHER_FOG_HORIZONTAL]     = _("FOG HORIZONTAL"),
     [WEATHER_VOLCANIC_ASH]       = _("VOLCANIC ASH"),
-    [WEATHER_SANDSTORM]          = _("SANDSTORM"),
+    [WEATHER_SANDSTORM]          = _("SAND"),
     [WEATHER_FOG_DIAGONAL]       = _("FOG DIAGONAL"),
     [WEATHER_UNDERWATER]         = _("UNDERWATER"),
     [WEATHER_SHADE]              = _("SHADE"),
@@ -1220,4 +1222,28 @@ const u8 *GetWeatherName(u32 weatherId)
     if (sWeatherNames[weatherId][0] != 0)
         return sWeatherNames[weatherId];
     return sDebugText_WeatherNotDefined;
+}
+
+const u8 *GetBattleWeatherName(void)
+{
+    switch (GetCurrentBattleWeather())
+    {
+    case BATTLE_WEATHER_RAIN:
+    case BATTLE_WEATHER_RAIN_PRIMAL:
+        return GetWeatherName(WEATHER_RAIN);
+    case BATTLE_WEATHER_RAIN_DOWNPOUR:
+        return GetWeatherName(WEATHER_DOWNPOUR);
+    case BATTLE_WEATHER_SUN:
+    case BATTLE_WEATHER_SUN_PRIMAL:
+        return GetWeatherName(WEATHER_SUNNY);
+    case BATTLE_WEATHER_SANDSTORM:
+        return GetWeatherName(WEATHER_SANDSTORM);
+    case BATTLE_WEATHER_HAIL:
+    case BATTLE_WEATHER_SNOW:
+        return GetWeatherName(WEATHER_SNOW);
+    case BATTLE_WEATHER_FOG:
+        return GetWeatherName(WEATHER_FOG);
+    default:
+        return GetWeatherName(WEATHER_NONE);
+    }
 }
