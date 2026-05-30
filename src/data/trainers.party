@@ -1129,7 +1129,6 @@ AI: Smart Trainer / Ace Pokemon
 Blaziken
 Ability: Speed Boost
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fire Pledge
 - Sky Uppercut
 - Aerial Ace
@@ -1138,7 +1137,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Sceptile @ Sitrus Berry
 Ability: Unburden
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Grass Pledge
 - Dragon Pulse
 - X-Scissor
@@ -1147,7 +1145,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Swampert
 Ability: Gooey
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Pledge
 - Earth Power
 - Body Press
@@ -1155,7 +1152,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Obstagoon @ Flame Orb
 Ability: Guts
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Night Slash
 - Facade
 - Obstruct
@@ -2685,7 +2681,6 @@ AI: Smart Trainer / Ace Pokemon
 Lunatone @ Power Herb
 Ability: Levitate
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Meteor Beam
 - Moonblast
 - Moonlight
@@ -2693,7 +2688,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Crobat
 Ability: Inner Focus
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Cross Poison
 - U-Turn
 - Super Fang
@@ -2702,7 +2696,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Vileplume
 Ability: Flower Veil
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Giga Drain
 - Pollen Puff
 - Sleep Powder
@@ -2711,7 +2704,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Salamence
 Ability: Moxie
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Dragon Claw
 - Fire Blast
 - Hydro Pump
@@ -10015,7 +10007,6 @@ AI: Smart Trainer / Ace Pokemon
 Walrein
 Ability: Thick Fat
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Brine
 - Ice Beam
 - Body Slam
@@ -10024,7 +10015,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Absol
 Ability: Sharpness
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Night Slash
 - Psycho Cut
 - Doom Desire
@@ -10032,14 +10022,12 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Ninetales @ Choice Scarf
 Ability: Drought
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Flame Burst
 - Extrasensory
 
 Flygon
 Ability: Levitate
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Dragon Rush
 
 === TRAINER_JANI ===
@@ -12333,9 +12321,10 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Gardevoir (F)
+Gardevoir
 Ability: Telepathy
 Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Moonblast
 - Psychic
 - Calm Mind
@@ -12343,6 +12332,7 @@ Level: 49
 Roselia @ Eviolite
 Ability: Poison Point
 Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Giga Drain
 - Venoshock
 - Toxic Spikes
@@ -12351,6 +12341,7 @@ Level: 49
 Delcatty @ Silk Scarf
 Ability: Normalize
 Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fake Out
 - Iron Tail
 - Charm
@@ -12359,21 +12350,25 @@ Level: 49
 Altaria
 Ability: Cloud Nine
 Level: 49
-- Aerial Ace
-- Dragon Pulse
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Acrobatics
+- Dragon Rush
 - Dazzling Gleam
 - Dragon Dance
 
-Magneton @ Eviolite
-Ability: Magnet Pull
+Magneton
+Ability: Sturdy
 Level: 49
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunderbolt
 - Flash Cannon
+- Tri Attack
 - Metal Sound
 
-Gallade (M) @ Galladite
+Gallade @ Galladite
 Ability: Telepathy
 Level: 50
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sacred Sword
 - Psycho Cut
 - Swords Dance
