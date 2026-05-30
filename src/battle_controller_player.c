@@ -499,14 +499,34 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
 {
     u32 move = gBattleMons[battler].moves[gBattleStruct->chosenMovePositions[battler]];
     u32 moveTarget = GetBattlerMoveTargetType(battler, move);
-    bool32 needsExtraSpace = !isRightSide && IsBattlerAlive(BATTLE_PARTNER(battler));
+    bool32 needsExtraSpace = !isRightSide;
+    
+    if (move == MOVE_REFLECT 
+        || move == MOVE_LIGHT_SCREEN
+        || move == MOVE_AURORA_VEIL
+        || move == MOVE_TAILWIND
+        || move == MOVE_SAFEGUARD
+        || move == MOVE_LUCKY_CHANT
+        || move == MOVE_MIST
+        || move == MOVE_HEAL_BELL
+        || move == MOVE_AROMATHERAPY
+        || move == MOVE_WIDE_GUARD
+        || move == MOVE_QUICK_GUARD
+        || move == MOVE_CRAFTY_SHIELD
+        || move == MOVE_MAGNETIC_FLUX
+        || move == MOVE_MAT_BLOCK
+        || move == MOVE_GEAR_UP
+        || move == MOVE_LIFE_DEW
+    ) {
+        moveTarget = TARGET_USER_AND_ALLY;
+    }
 
     switch (moveTarget)
     {
     case TARGET_USER:
         StringAppend(gStringVar1,
-            isRightSide ? (needsExtraSpace ? COMPOUND_STRING("  {UP_ARROW}-") : COMPOUND_STRING(" {UP_ARROW}-"))
-                        : (needsExtraSpace ? COMPOUND_STRING("  -{UP_ARROW}") : COMPOUND_STRING(" -{UP_ARROW}")));
+            isRightSide ? (needsExtraSpace ? COMPOUND_STRING(" {UP_ARROW}-") : COMPOUND_STRING("{UP_ARROW}-"))
+                        : (needsExtraSpace ? COMPOUND_STRING(" -{UP_ARROW}") : COMPOUND_STRING("-{UP_ARROW}")));
         break;
 
     case TARGET_SELECTED:
@@ -654,6 +674,9 @@ void CreateMovePreviewText(u32 battlerPosition)
             StringAppend(gStringVar1, COMPOUND_STRING(" will use:\n"));
             u32 move = gBattleMons[battlerPosition].moves[gBattleStruct->chosenMovePositions[battlerPosition]];
             StringAppend(gStringVar1, GetMoveName(move));
+
+            if (battlerPosition == B_POSITION_OPPONENT_RIGHT)
+                StringAppend(gStringVar1, COMPOUND_STRING(" "));
 
             if (battlerPosition == B_POSITION_OPPONENT_RIGHT)
                 AppendMoveTarget(battler, TRUE);
@@ -875,6 +898,26 @@ static void ShowMovePreviewTargets(enum BattlerId battler)
     enum Move move = gBattleMons[battler].moves[gBattleStruct->chosenMovePositions[battler]];
     enum MoveTarget moveTarget = GetBattlerMoveTargetType(battler, move);
 
+    if (move == MOVE_REFLECT 
+        || move == MOVE_LIGHT_SCREEN
+        || move == MOVE_AURORA_VEIL
+        || move == MOVE_TAILWIND
+        || move == MOVE_SAFEGUARD
+        || move == MOVE_LUCKY_CHANT
+        || move == MOVE_MIST
+        || move == MOVE_HEAL_BELL
+        || move == MOVE_AROMATHERAPY
+        || move == MOVE_WIDE_GUARD
+        || move == MOVE_QUICK_GUARD
+        || move == MOVE_CRAFTY_SHIELD
+        || move == MOVE_MAGNETIC_FLUX
+        || move == MOVE_MAT_BLOCK
+        || move == MOVE_GEAR_UP
+        || move == MOVE_LIFE_DEW
+    ) {
+        moveTarget = TARGET_USER_AND_ALLY;
+    }
+
     HideAllTargets();
 
     switch (moveTarget)
@@ -914,9 +957,14 @@ static void ShowMovePreviewTargets(enum BattlerId battler)
         }
         break;
     case TARGET_FOES_AND_ALLY:
-        targetBattler = gAiBattleData->chosenTarget[battler];
-        if (targetBattler < MAX_BATTLERS_COUNT && IsBattlerAlive(targetBattler))
-            TryShowAsTarget(targetBattler);
+        // Show both battlers on the opposing (player) side
+        for (targetBattler = 0; targetBattler < MAX_BATTLERS_COUNT; targetBattler++)
+        {
+            if (IsBattlerAlive(targetBattler) && IsOnPlayerSide(targetBattler))
+                TryShowAsTarget(targetBattler);
+        }
+
+        // Also show the attacker's partner (ally) if alive
         if (IsBattlerAlive(BATTLE_PARTNER(battler)))
             TryShowAsTarget(BATTLE_PARTNER(battler));
         break;
@@ -2447,10 +2495,20 @@ static void CreateInfoWindow(u32 battler)
             && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
             totalCount += GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentB);
 
-        for (i = 0; i < gEnemyPartyCount; i++)
+        for (i = 0; i < GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentA); i++)
         {
             if (GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
                 aliveCount++;
+        }
+
+        if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
+            && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
+        {
+            for (i = PARTY_SIZE / 2; i < PARTY_SIZE / 2 + GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentB); i++)
+            {
+                if (GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
+                    aliveCount++;
+            }
         }
 
         StringCopy(gStringVar1, COMPOUND_STRING("Turn "));
