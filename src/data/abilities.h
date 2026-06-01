@@ -1039,7 +1039,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_TOXIC_BOOST] =
     {
         .name = _("Toxic Boost"),
-        .description = COMPOUND_STRING("Ups Attack if poisoned."),
+        .description = COMPOUND_STRING("+Atk & heal if poisoned."),
         .aiRating = 6,
     },
 

@@ -858,7 +858,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Sand Attack"),
         .description = COMPOUND_STRING(
-            "Attacks the foe's eyes\n"
+            "Directly damages the foe\n"
             "by hurling sand in its face."),
         .effect = EFFECT_HIT, //EFFECT_ACCURACY_DOWN,
         .power = 30, //0,
@@ -1466,7 +1466,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Sprays a hide-melting acid.\n"
         #if B_UPDATED_MOVE_DATA >= GEN_4
-            "Lowers foes' Sp. Def."),
+            "Lowers both foes' Sp. Def."),
         #else
             "May lower Defense."),
         #endif
@@ -1758,7 +1758,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Aurora Beam"),
         .description = COMPOUND_STRING(
             "Fires a rainbow-colored\n"
-            "beam that may lower Attack."),
+            "beam that lowers Attack."),
         .effect = EFFECT_HIT,
         .power = 65,
         .type = TYPE_ICE,
@@ -1769,7 +1769,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
-            .chance = 30,
+            .chance = 100,
             // .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
         }),
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
@@ -2643,8 +2643,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Meditate"),
         .description = COMPOUND_STRING(
-            "Meditates in a peaceful\n"
-            "fashion to raise Attack."),
+            "Meditates peacefully to\n"
+            "raise Attack and Sp. Atk."),
         .effect = EFFECT_ATTACK_SPATK_UP,
         .power = 0,
         .type = TYPE_PSYCHIC,
@@ -3294,8 +3294,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Self-Destruct"),
         .description = COMPOUND_STRING(
-            "Inflicts severe damage but\n"
-            "makes the user faint."),
+            "Explodes the user.\n"
+            "Always critical-hits."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_2 ? 200 : 130,
         .type = TYPE_NORMAL,
@@ -3305,6 +3305,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .explosion = TRUE,
+        .alwaysCriticalHit = TRUE,
         .parentalBondBanned = TRUE,
         .dampBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES,
@@ -4170,8 +4171,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Explosion"),
         .description = COMPOUND_STRING(
-            "Inflicts severe damage but\n"
-            "makes the user faint."),
+            "Violently explodes the user.\n"
+            "Always critical-hits."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_2 ? 250 : 170,
         .type = TYPE_NORMAL,
@@ -4181,6 +4182,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .explosion = TRUE,
+        .alwaysCriticalHit = TRUE,
         .parentalBondBanned = TRUE,
         .dampBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES,
@@ -4450,12 +4452,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Slash"),
         .description = COMPOUND_STRING(
             "Slashes with claws, etc. Has\n"
-            "a nuts critical-hit ratio."),
+            "a high critical-hit ratio."),
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_NORMAL,
         .accuracy = 100,
-        .criticalHitStage = 2, //B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
+        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
         .pp = 20,
         .target = TARGET_SELECTED,
         .priority = 0,
@@ -5153,7 +5155,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Mud-Slap"),
         .description = COMPOUND_STRING(
             "Hurls mud in the foe's face\n"
-            "to reduce its speed."),
+            "possibly reducing its speed."),
         .effect = EFFECT_HIT,
         .power = 40, //20,
         .type = TYPE_GROUND,
@@ -6262,7 +6264,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Iron Tail"),
         .description = COMPOUND_STRING(
-            "Attacks with a rock-hard\n"
+            "Attacks both foes with solid\n"
             "tail. May lower Defense."),
         .effect = EFFECT_HIT,
         .power = 100,
@@ -10652,7 +10654,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Aqua Tail"),
         .description = COMPOUND_STRING(
             "The user swings its tail\n"
-            "like a wave to attack."),
+            "in a wave to hit both foes."),
         .effect = EFFECT_HIT,
         .power = 65, //90,
         .type = TYPE_WATER,
@@ -10722,7 +10724,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("X-Scissor"),
         .description = COMPOUND_STRING(
             "Slashes the foe with crossed\n"
-            "scythes, claws, etc."),
+            "blades. High critical ratio."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_BUG,
@@ -10792,7 +10794,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_DRAGON_RUSH] =
     {
-        .name = COMPOUND_STRING("Dragon Rush"),
+        .name = COMPOUND_STRING("Dragon Edge"),
         .description = COMPOUND_STRING(
             "Tackles the foe with menace.\n"
             "Also hurts the user."),
@@ -14118,9 +14120,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Throws two steel gears\n"
             "that strike twice."),
         .effect = EFFECT_HIT,
-        .power = 50,
+        .power = 60, //50,
         .type = TYPE_STEEL,
-        .accuracy = 100, //85,
+        .accuracy = 85,
         .pp = 16,
         .target = TARGET_SELECTED,
         .priority = 0,
@@ -16406,7 +16408,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Toxic Thread"),
         .description = COMPOUND_STRING(
-            "Attacks with a thread that\n"
+            "Attacks both foes with webs,\n"
             "poisons and drops Speed."),
         .effect = EFFECT_TOXIC_THREAD,
         .power = 0,

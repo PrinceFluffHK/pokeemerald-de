@@ -1542,7 +1542,7 @@ static u32 GetSwitchinHazardsDamage(enum BattlerId battler)
         }
 
         if (IsHazardOnSide(side, HAZARDS_TOXIC_SPIKES) && (!IS_BATTLER_ANY_TYPE(battler, TYPE_POISON, TYPE_STEEL)
-            && ability != ABILITY_IMMUNITY && ability != ABILITY_POISON_HEAL && ability != ABILITY_COMATOSE
+            && ability != ABILITY_IMMUNITY && ability != ABILITY_POISON_HEAL && ability != ABILITY_COMATOSE && ability != ABILITY_TOXIC_BOOST
             && status == 0
             && !(gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_SAFEGUARD)
             && !IsAbilityOnSide(battler, ABILITY_PASTEL_VEIL)
@@ -1658,7 +1658,8 @@ static u32 GetSwitchinRecurringHealing(enum BattlerId battler)
     } // Intentionally omitting Shell Bell for its inconsistency
 
     // Abilities
-    if (ability == ABILITY_POISON_HEAL && (gBattleMons[battler].status1 & STATUS1_POISON))
+    if ((ability == ABILITY_POISON_HEAL || ability == ABILITY_TOXIC_BOOST) 
+        && (gBattleMons[battler].status1 & STATUS1_POISON))
     {
         u32 healing = maxHP / 8;
         if (healing == 0)
@@ -1739,7 +1740,7 @@ static u32 GetSwitchinStatusDamage(enum BattlerId battler)
             if (statusDamage == 0)
                 statusDamage = 1;
         }
-        else if ((status & STATUS1_TOXIC_POISON) && ability != ABILITY_POISON_HEAL)
+        else if ((status & STATUS1_TOXIC_POISON) && ability != ABILITY_POISON_HEAL && ability != ABILITY_TOXIC_BOOST)
         {
             if ((status & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
                 gBattleMons[battler].status1 += STATUS1_TOXIC_TURN(1);
@@ -1753,7 +1754,7 @@ static u32 GetSwitchinStatusDamage(enum BattlerId battler)
     // Apply hypothetical poisoning from Toxic Spikes, which means the first turn of damage already added in GetSwitchinHazardsDamage
     // Do this last to skip one iteration of Poison / Toxic damage, and start counting Toxic damage one turn later.
     if (tSpikesLayers != 0 && (!IS_BATTLER_ANY_TYPE(battler, TYPE_POISON, TYPE_STEEL)
-        && ability != ABILITY_IMMUNITY && ability != ABILITY_POISON_HEAL && ability != ABILITY_PASTEL_VEIL
+        && ability != ABILITY_IMMUNITY && ability != ABILITY_POISON_HEAL && ability != ABILITY_PASTEL_VEIL && ability != ABILITY_TOXIC_BOOST
         && status == 0
         && !(heldItemEffect == HOLD_EFFECT_HEAVY_DUTY_BOOTS
             && (((gFieldStatuses & STATUS_FIELD_MAGIC_ROOM) || ability == ABILITY_KLUTZ)))

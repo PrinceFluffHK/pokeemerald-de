@@ -486,7 +486,8 @@ static bool32 HandleEndTurnPoison(enum BattlerId battler)
      && IsBattlerAlive(battler)
      && !IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD))
     {
-        if (ability == ABILITY_POISON_HEAL)
+        if (ability == ABILITY_POISON_HEAL 
+            || ability == ABILITY_TOXIC_BOOST)
         {
             if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlock)
             {

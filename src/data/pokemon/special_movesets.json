@@ -2,6 +2,7 @@
   "universalMoves":
     [
       "MOVE_BIDE",
+      "MOVE_HELPING_HAND",
       "MOVE_FRUSTRATION",
       "MOVE_HIDDEN_POWER",
       "MOVE_MIMIC",

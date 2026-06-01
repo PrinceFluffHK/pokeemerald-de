@@ -3335,7 +3335,8 @@ static u32 GetPoisonDamage(enum BattlerId battlerId)
 {
     u32 damage = 0;
 
-    if (gAiLogicData->abilities[battlerId] == ABILITY_POISON_HEAL)
+    if (gAiLogicData->abilities[battlerId] == ABILITY_POISON_HEAL 
+        || gAiLogicData->abilities[battlerId] == ABILITY_TOXIC_BOOST)
         return damage;
 
     if (gBattleMons[battlerId].status1 & STATUS1_POISON)
@@ -3596,7 +3597,8 @@ bool32 ShouldPoison(enum BattlerId battlerAtk, enum BattlerId battlerDef)
     if (CanBePoisoned(battlerAtk, battlerDef, gAiLogicData->abilities[battlerAtk], abilityDef) && (
         DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef)
         || abilityDef == ABILITY_POISON_HEAL
-        || (abilityDef == ABILITY_TOXIC_BOOST && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))))
+        || abilityDef == ABILITY_TOXIC_BOOST))
+        // || (abilityDef == ABILITY_TOXIC_BOOST && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))))
     {
         if (battlerAtk == battlerDef) // Targeting self
             return TRUE;
@@ -4090,16 +4092,17 @@ static bool32 ShouldCureStatusInternal(enum BattlerId battlerAtk, enum BattlerId
         if (aiData->holdEffects[battlerDef] == HOLD_EFFECT_TOXIC_ORB)
             return FALSE;
 
-        if (aiData->abilities[battlerDef] == ABILITY_POISON_HEAL)
+        if (aiData->abilities[battlerDef] == ABILITY_POISON_HEAL 
+            || aiData->abilities[battlerDef] == ABILITY_TOXIC_BOOST)
             isHarmless = TRUE;
 
-        if (aiData->abilities[battlerDef] == ABILITY_TOXIC_BOOST && !isHarmless)
-        {
-            if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
-                isHarmless = TRUE;
-            else if (!(targetingSelf || targetingAlly) && !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
-                isHarmless = TRUE;
-        }
+        // if (aiData->abilities[battlerDef] == ABILITY_TOXIC_BOOST && !isHarmless)
+        // {
+        //     if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
+        //         isHarmless = TRUE;
+        //     else if (!(targetingSelf || targetingAlly) && !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
+        //         isHarmless = TRUE;
+        // }
     }
 
     if (status & STATUS1_BURN)
@@ -6224,6 +6227,7 @@ enum AIScore BattlerBenefitsFromAbilityScore(enum BattlerId battler, enum Abilit
         break;
     // Toxic counter ticks upward while Poison Healed; losing Poison Heal while Toxiced can KO.
     case ABILITY_POISON_HEAL:
+    case ABILITY_TOXIC_BOOST:
         if (gBattleMons[battler].status1 & (STATUS1_POISON))
             return WEAK_EFFECT;
         if (gBattleMons[battler].status1 & (STATUS1_TOXIC_POISON))
