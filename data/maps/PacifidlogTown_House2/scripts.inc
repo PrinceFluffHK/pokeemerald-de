@@ -4,9 +4,9 @@ PacifidlogTown_House2_MapScripts::
 PacifidlogTown_House2_EventScript_FanClubYoungerBrother::
 	lock
 	faceplayer
-	dotimebasedevents
-	call PacifidlogTown_House2_EventScript_UpdateFanClubTMFlag
-	goto_if_set FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK, PacifidlogTown_House2_EventScript_ComeBackInXDays
+@	dotimebasedevents
+@	call PacifidlogTown_House2_EventScript_UpdateFanClubTMFlag
+@	goto_if_set FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK, PacifidlogTown_House2_EventScript_ComeBackInXDays
 	call_if_set FLAG_MET_FANCLUB_YOUNGER_BROTHER, PacifidlogTown_House2_EventScript_MonAssessment
 	call_if_unset FLAG_MET_FANCLUB_YOUNGER_BROTHER, PacifidlogTown_House2_EventScript_FirstMonAssessment
 	setflag FLAG_MET_FANCLUB_YOUNGER_BROTHER
@@ -119,10 +119,12 @@ PacifidlogTown_House2_Text_ViciousPokemonTakeThis:
 	.string "deserves a TM like this.$"
 
 PacifidlogTown_House2_Text_ExplainReturnFrustration:
-	.string "If a POKéMON likes you a lot, RETURN's\n"
-	.string "power is enhanced.\p"
-	.string "If it doesn't like you, FRUSTRATION's\n"
-	.string "power goes up.$"
+	.string "If a POKéMON likes you a lot,\n"
+	.string "cherish that bond.\p"
+	.string "It doesn't affect BATTLES, though.$"
+	// .string "power is enhanced.\p"
+	// .string "If it doesn't like you, FRUSTRATION's\n"
+	// .string "power goes up.$"
 
 PacifidlogTown_House2_Text_GetGoodTMInXDays:
 	.string "Oh, yes. In about {STR_VAR_1} or so days,\n"

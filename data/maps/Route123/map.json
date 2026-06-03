@@ -3,7 +3,6 @@
   "name": "Route123",
   "layout": "LAYOUT_ROUTE123",
   "music": "MUS_ROUTE122",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_123",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -735,7 +734,7 @@
       "x": 139,
       "y": 15,
       "elevation": 3,
-      "item": "ITEM_ABILITY_PATCH",
+      "item": "ITEM_TM_BUG_BUZZ",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_PP_UP"
     },
     {
@@ -746,5 +745,6 @@
       "item": "ITEM_CARBOS",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

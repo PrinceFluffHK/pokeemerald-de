@@ -10629,11 +10629,11 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
     {
         if (ballId == BALL_BEAST)
             ball->multiplier = 500;
-        else
-        {
-            ball->multiplier = 410;
-            ball->divider = 4096;
-        }
+        // else
+        // {
+        //     ball->multiplier = 410;
+        //     ball->divider = 4096;
+        // }
         return;
     }
     switch (ballId)
@@ -10797,10 +10797,9 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         if (B_SPORT_BALL_MODIFIER <= GEN_7)
             ball->multiplier = 150;
         break;
-    case BALL_BEAST:
-        ball->multiplier = 410;
-        ball->divider = 4096;
-        break;
+    // case BALL_BEAST:
+    //     ball->multiplier = 100;
+    //     break;
     }
 
 }

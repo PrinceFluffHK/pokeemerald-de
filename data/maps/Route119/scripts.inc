@@ -153,9 +153,9 @@ Route119_EventScript_RivalExitScottArrive::
 	waitmovement 0
 	addvar VAR_SCOTT_STATE, 1
 	msgbox Route119_Text_ScottWayToGoBeSeeingYou, MSGBOX_DEFAULT
-	closemessage
+@	closemessage
 	giveitem ITEM_ABILITY_PATCH
-	closemessage
+@	closemessage
 	call_if_eq VAR_TEMP_1, 1, Route119_EventScript_ScottExit1
 	call_if_eq VAR_TEMP_1, 2, Route119_EventScript_ScottExit2
 	removeobject LOCALID_ROUTE119_SCOTT
@@ -546,8 +546,8 @@ Route119_Text_ScottWayToGoBeSeeingYou:
 	.string "a face all red from anger.\p"
 	.string "I sure seem to run into you often.\n"
 	.string "Are you off to FORTREE GYM next?\p"
-	.string "WINONA is no joke… Here, take my\n"
-	.string "last ABILITY PATCH, it might help.$"
+	.string "WINONA is no joke… Take another\n"
+	.string "ABILITY PATCH, it might help.$"
 
 
 Route119_Text_ScottYouWonAtFortreeGym:

@@ -541,19 +541,15 @@ PetalburgCity_EventScript_Scott::
 	waitmovement 0
 	setvar VAR_SCOTT_STATE, 1
 	msgbox PetalburgCity_Text_AreYouATrainer, MSGBOX_DEFAULT
-	closemessage
 	applymovement LOCALID_PETALBURG_SCOTT, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 30
 	msgbox PetalburgCity_Text_WellMaybeNot, MSGBOX_DEFAULT
-	closemessage
 	applymovement LOCALID_PETALBURG_SCOTT, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 30
 	msgbox PetalburgCity_Text_ImLookingForTalentedTrainers, MSGBOX_DEFAULT
-	closemessage
-@	giveitem ITEM_ABILITY_PATCH
-@	closemessage
+	giveitem ITEM_ABILITY_CAPSULE
 	call_if_eq VAR_0x8008, 0, PetalburgCity_EventScript_ScottExit0
 	call_if_eq VAR_0x8008, 1, PetalburgCity_EventScript_ScottExit1
 	call_if_eq VAR_0x8008, 2, PetalburgCity_EventScript_ScottExit2

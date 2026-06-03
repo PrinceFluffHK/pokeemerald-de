@@ -8940,7 +8940,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An unavoidable attack.\n"
             "High critical-hit ratio."),
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = 70, //60,
         .type = TYPE_FLYING,
         .accuracy = 0,
         .pp = 20,

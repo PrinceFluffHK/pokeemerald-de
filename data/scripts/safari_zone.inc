@@ -113,10 +113,11 @@ SafariZone_Text_PokeblockWasPlaced:
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
 	.string "Welcome to the SAFARI ZONE!\p"
-	.string "Here, you may witness many kinds of\n"
-	.string "POKéMON rarely seen in HOENN.\p"
+	.string "Here, you may find REGIONAL FORMES,\n"
+	.string "COVERGENT SPECIES, and PARADOXES\l"
+	.string "of POKéMON naturally seen in HOENN.\p"
 	.string "And, you'll see them in their wild,\n"
-	.string "untamed state in natural habitats.\p"
+	.string "untamed state in modified habitats.\p"
 	.string "What's more, we've thrown open the\n"
 	.string "gates to POKéMON TRAINERS.\p"
 	.string "You're encouraged to catch POKéMON\n"
@@ -132,15 +133,16 @@ Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
 	.string "When you enter the SAFARI ZONE, you\n"
-	.string "start with 30 SAFARI BALLS for\l"
-	.string "catching POKéMON.\p"
+	.string "start with 30 SAFARI BALLS that have\l"
+	.string "a catch rate of 3, like DUSK BALLS.\p"
 	.string "The SAFARI Game is over when you run\n"
 	.string "out of SAFARI BALLS, or when you've\l"
 	.string "walked 500 steps.\p"
 	.string "Come in and enjoy the SAFARI ZONE!$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
-	.string "Welcome to the SAFARI ZONE!\p"
+	.string "Welcome to the SAFARI ZONE,\n"
+	.string "your home for ALTERNATE FORMS!\p"
 	.string "All you can catch for just ¥500!\n"
 	.string "Would you like to play a SAFARI Game?$"
 

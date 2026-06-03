@@ -3,7 +3,6 @@
   "name": "LilycoveCity",
   "layout": "LAYOUT_LILYCOVE_CITY",
   "music": "MUS_LILYCOVE",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_LILYCOVE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -510,7 +509,7 @@
       "x": 61,
       "y": 7,
       "elevation": 0,
-      "item": "ITEM_ABILITY_PATCH",
+      "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP"
     },
     {
@@ -518,8 +517,9 @@
       "x": 64,
       "y": 31,
       "elevation": 0,
-      "item": "ITEM_IRON_BALL",
+      "item": "ITEM_CALCIUM",
       "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }
