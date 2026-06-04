@@ -504,13 +504,6 @@ Level: 30
 - Heavy Slam
 - Astonish
 
-Mightyena
-Ability: Intimidate
-Level: 30
-- Crunch
-- Poison Fang
-- Howl
-
 === TRAINER_GRUNT_WEATHER_INST_2 ===
 Name: GRUNT
 Class: Team Aqua
@@ -1588,11 +1581,19 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Marill
-Level: 26
+Psyduck
+Ability: Cloud Nine
+Level: 30  
+- Zen Headbutt
+- Aqua Tail
+- Disable
 
-Marill
-Level: 26
+Azumarill
+Ability: Huge Power
+Level: 30  
+- Bubble Beam
+- Bounce
+- Tail Whip
 
 === TRAINER_GWEN ===
 Name: GWEN
@@ -1603,11 +1604,19 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Marill
-Level: 26
+Azumarill
+Ability: Huge Power
+Level: 30  
+- Bubble Beam
+- Bounce
+- Tail Whip
 
-Marill
-Level: 26
+Luvdisc
+Ability: Swift Swim
+Level: 30  
+- Draining Kiss
+- Charm
+- Life Dew
 
 === TRAINER_LOLA_2 ===
 Name: LOLA
@@ -1725,11 +1734,22 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Marill
-Level: 26
+Azumarill
+Ability: Huge Power
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Bubble Beam
+- Bounce
+- Tail Whip
 
-Marill
-Level: 26
+Whiscash
+Ability: Oblivious
+Level: 32
+IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
+- Water Pulse
+- Stomping Tantrum
+- Spark
+- Rest
 
 === TRAINER_RICKY_2 ===
 Name: RICKY
@@ -2370,11 +2390,10 @@ Level: 40
 - Body Press
 
 Roserade
-Ability: Technician
+Ability: Grassy Surge
 Level: 40
 - Magical Leaf
-- Venoshock
-- Toxic Spikes
+- Sludge Bomb
 
 Magnezone
 Ability: Magnet Pull
@@ -3146,7 +3165,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seaking
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 47
 - Waterfall
 - Megahorn
@@ -3348,7 +3367,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seaking
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 45
 - Waterfall
 - Megahorn
@@ -3938,7 +3957,6 @@ Tentacruel
 Ability: Clear Body
 Level: 30
 - Water Pulse
-- Acid
 - Wrap
 - Screech
 
@@ -3999,11 +4017,20 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
 
-Tentacool
-Level: 25
+Whiscash
+Ability: Oblivious
+Level: 30  
+- Water Pulse
+- Stomping Tantrum
+- Spark
+- Rest
 
-Carvanha
-Level: 25
+Staryu
+Ability: Natural Cure
+Level: 30  
+- Brine
+- Psybeam
+- Swift
 
 === TRAINER_SPENCER ===
 Name: SPENCER
@@ -7223,7 +7250,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Skitty
-Ability: Wonder Skin
+Ability: Normalize
 Level: 15
 - Fake Out
 - Tackle
@@ -8199,14 +8226,14 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 14
 - Water Pulse
 - Peck
 - Supersonic
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 14
 - Water Pulse
 - Peck
@@ -8269,7 +8296,7 @@ Level: 20
 - Splash
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 21
 - Water Pulse
 - Peck
@@ -8460,10 +8487,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Wailmer
-Level: 25
+Ability: Water Veil
+Level: 30  
+- Whirlpool
+- Heavy Slam
+- Body Slam
 
 Tentacruel
-Level: 25
+Ability: Clear Body
+Level: 30  
+- Water Pulse
+- Wrap
+- Screech
 
 === TRAINER_ELLIOT_2 ===
 Name: ELLIOT
@@ -10680,7 +10715,7 @@ Level: 29
 - Tailwind
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 29
 - Flip Turn
 - Smart Strike
@@ -10703,14 +10738,14 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 30
 - Flip Turn
 - Smart Strike
 - Tail Whip
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 30
 - Flip Turn
 - Smart Strike
@@ -10755,7 +10790,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 31
 - Flip Turn
 - Smart Strike
@@ -10779,13 +10814,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 24
+Ability: Lightning Rod
+Level: 29  
+- Flip Turn
+- Smart Strike
+- Tail Whip
 
-Wingull
-Level: 24
+Pelipper
+Ability: Rain Dish
+Level: 29  
+- Wing Attack
+- Water Pulse
+- Tailwind
+- Protect
 
-Goldeen
-Level: 24
+Seaking
+Ability: Lightning Rod
+Level: 30  
+- Waterfall
+- Smart Strike
+- Tail Whip
 
 === TRAINER_JENNY_1 ===
 Name: JENNY
@@ -13145,7 +13193,7 @@ Level: 13
 - Growth
 
 Skitty
-Ability: Wonder Skin
+Ability: Normalize
 Level: 13
 - Fake Out
 - Tackle
@@ -13153,7 +13201,7 @@ Level: 13
 - Tail Whip
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 13
 - Water Pulse
 - Peck
@@ -14314,7 +14362,7 @@ AI: Smart Trainer
 
 Starmie
 Ability: Natural Cure
-Level: 39
+Level: 38
 - Scald
 - Psybeam
 - Power Gem
@@ -14330,7 +14378,7 @@ Level: 39
 
 Starmie
 Ability: Huge Power
-Level: 39
+Level: 40
 - Aqua Jet
 - Liquidation
 - Ice Spinner
@@ -15550,7 +15598,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 13
 - Water Pulse
 - Peck
@@ -16595,18 +16643,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Dustox
-Level: 27
-- Gust
-- Psybeam
-- Toxic
-- Protect
+Ability: Shield Dust
+Level: 31  
+- Bug Buzz
+- Venoshock
+- Moonlight
 
 Beautifly
-Level: 27
-- Gust
-- Mega Drain
-- Attract
-- Stun Spore
+Ability: Swarm
+Level: 31  
+- Leech Life
+- Air Cutter
+- Giga Drain
 
 === TRAINER_JOHN_AND_JAY_1 ===
 Name: JOHN & JAY
@@ -16840,7 +16888,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 31
 - Flip Turn
 - Smart Strike
@@ -17380,7 +17428,7 @@ Level: 22
 - Harden
 
 Skitty
-Ability: Wonder Skin
+Ability: Normalize
 Level: 22
 - Fake Out
 - Covet
@@ -17950,7 +17998,7 @@ Level: 30
 - Tail Whip
 
 Goldeen
-Ability: Swift Swim
+Ability: Lightning Rod
 Level: 30  
 - Water Pulse
 - Smart Strike
@@ -18034,13 +18082,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Wingull
-Level: 24
+Ability: Keen Eye
+Level: 30  
+- Wing Attack
+- Water Pulse
+- Tailwind
 
-Machop
-Level: 24
+Machoke
+Ability: Steadfast
+Level: 29  
+- Karate Chop
+- Counter
+- Focus Energy
 
 Tentacool
-Level: 24
+Ability: Clear Body
+Level: 30  
+- Water Pulse
+- Acid
+- Wrap
 
 === TRAINER_CAROLINA ===
 Name: CAROLINA
@@ -18084,10 +18144,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Skarmory
-Level: 25
+Ability: Sturdy
+Level: 30  
+- Steel Wing
+- Slash
+- Leer
 
 Skarmory
-Level: 25
+Ability: Sturdy
+Level: 30  
+- Steel Wing
+- Slash
+- Leer
 
 === TRAINER_CELIA ===
 Name: CELIA
