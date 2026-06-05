@@ -923,6 +923,8 @@ static void ShowMovePreviewTargets(enum BattlerId battler)
     switch (moveTarget)
     {
     case TARGET_USER:
+    case TARGET_DEPENDS:
+    case TARGET_RANDOM:
     case TARGET_USER_OR_ALLY:
         if (IsBattlerAlive(battler))
             TryShowAsTarget(battler);
@@ -940,9 +942,7 @@ static void ShowMovePreviewTargets(enum BattlerId battler)
             TryShowAsTarget(targetBattler);
         break;
     case TARGET_SELECTED:
-    case TARGET_DEPENDS:
     case TARGET_OPPONENT:
-    case TARGET_RANDOM:
     case TARGET_SMART:
         targetBattler = gAiBattleData->chosenTarget[battler];
         if (targetBattler < MAX_BATTLERS_COUNT && IsBattlerAlive(targetBattler))
@@ -2486,25 +2486,34 @@ static void CreateInfoWindow(u32 battler)
 {
     u8 aliveCount = 0;
     u8 totalCount = 0;
+    u8 trainerAPartySize = GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentA);
+    u8 trainerBPartySize = 0;
     u8 i;
+
+    if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS && trainerAPartySize > PARTY_SIZE / 2)
+        trainerAPartySize = PARTY_SIZE / 2;
+
+    if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
+        && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
+    {
+        trainerBPartySize = GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentB);
+        if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS && trainerBPartySize > PARTY_SIZE / 2)
+            trainerBPartySize = PARTY_SIZE / 2;
+    }
 
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
-        totalCount = GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentA);
-        if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
-            && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
-            totalCount += GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentB);
+        totalCount = trainerAPartySize + trainerBPartySize;
 
-        for (i = 0; i < GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentA); i++)
+        for (i = 0; i < trainerAPartySize; i++)
         {
             if (GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
                 aliveCount++;
         }
 
-        if (TRAINER_BATTLE_PARAM.opponentB != TRAINER_NONE
-            && TRAINER_BATTLE_PARAM.opponentB != 0xFFFF)
+        if (trainerBPartySize != 0)
         {
-            for (i = PARTY_SIZE / 2; i < PARTY_SIZE / 2 + GetTrainerPartySizeFromId(TRAINER_BATTLE_PARAM.opponentB); i++)
+            for (i = PARTY_SIZE / 2; i < PARTY_SIZE / 2 + trainerBPartySize; i++)
             {
                 if (GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
                     aliveCount++;
@@ -2512,13 +2521,13 @@ static void CreateInfoWindow(u32 battler)
         }
 
         StringCopy(gStringVar1, COMPOUND_STRING("Turn "));
-        ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
+        ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 2);
         StringAppend(gStringVar1, gStringVar2);
         StringAppend(gStringVar1, COMPOUND_STRING(" - "));
-        ConvertUIntToDecimalStringN(gStringVar2, aliveCount, STR_CONV_MODE_LEFT_ALIGN, 1);
+        ConvertUIntToDecimalStringN(gStringVar2, aliveCount, STR_CONV_MODE_LEFT_ALIGN, 2);
         StringAppend(gStringVar1, gStringVar2);
         StringAppend(gStringVar1, COMPOUND_STRING("/"));
-        ConvertUIntToDecimalStringN(gStringVar2, totalCount, STR_CONV_MODE_LEFT_ALIGN, 1);
+        ConvertUIntToDecimalStringN(gStringVar2, totalCount, STR_CONV_MODE_LEFT_ALIGN, 2);
         StringAppend(gStringVar1, gStringVar2);
         if (gBattleWeather == B_WEATHER_NONE)
             StringAppend(gStringVar1, COMPOUND_STRING(" left"));
@@ -2532,7 +2541,7 @@ static void CreateInfoWindow(u32 battler)
     else
     {
         StringCopy(gStringVar1, COMPOUND_STRING("Turn "));
-        ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 1);
+        ConvertUIntToDecimalStringN(gStringVar2, gBattleResults.battleTurnCounter + 1, STR_CONV_MODE_LEFT_ALIGN, 2);
         StringAppend(gStringVar1, gStringVar2);
         if (gBattleWeather != B_WEATHER_NONE)
         {

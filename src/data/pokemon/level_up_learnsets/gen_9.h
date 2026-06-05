@@ -29,6 +29,7 @@ static const struct LevelUpMove sBulbasaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(15, MOVE_SLEEP_POWDER),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_SEED_BOMB),
     LEVEL_UP_MOVE(21, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(24, MOVE_SWEET_SCENT),
@@ -59,12 +60,14 @@ static const struct LevelUpMove sIvysaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(15, MOVE_SLEEP_POWDER),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_SEED_BOMB),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_TAKE_DOWN),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SWEET_SCENT),
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_SYNTHESIS),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_WORRY_SEED),
@@ -98,6 +101,7 @@ static const struct LevelUpMove sVenusaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_SWEET_SCENT),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(37, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(44, MOVE_WORRY_SEED),
     //Tate&Liza Lv45
@@ -120,6 +124,7 @@ static const struct LevelUpMove sCharmanderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(20, MOVE_SLASH),
     LEVEL_UP_MOVE(24, MOVE_FLAMETHROWER),
@@ -147,6 +152,7 @@ static const struct LevelUpMove sCharmeleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(24, MOVE_SLASH),
     //Wattson Lv24
@@ -154,6 +160,7 @@ static const struct LevelUpMove sCharmeleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_FLAMETHROWER),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(37, MOVE_SCARY_FACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_INFERNO),
@@ -183,6 +190,7 @@ static const struct LevelUpMove sCharizardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_FLAMETHROWER),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(39, MOVE_SCARY_FACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FIRE_SPIN),
@@ -207,6 +215,7 @@ static const struct LevelUpMove sSquirtleLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_WATER_PULSE),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_PROTECT),
     LEVEL_UP_MOVE(21, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(24, MOVE_AQUA_TAIL),
@@ -236,6 +245,7 @@ static const struct LevelUpMove sWartortleLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_WATER_PULSE),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_PROTECT),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_RAIN_DANCE),
@@ -244,6 +254,7 @@ static const struct LevelUpMove sWartortleLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SHELL_SMASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(40, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
@@ -274,6 +285,7 @@ static const struct LevelUpMove sBlastoiseLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SHELL_SMASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(42, MOVE_IRON_DEFENSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),
@@ -290,6 +302,7 @@ static const struct LevelUpMove sBlastoiseLevelUpLearnset[] = {
 static const struct LevelUpMove sCaterpieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
+    // >>> Evo Lv 7
     LEVEL_UP_MOVE( 9, MOVE_BUG_BITE),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -320,6 +333,8 @@ static const struct LevelUpMove sMetapodLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 7
+    // >>> Evo Lv 10
 };
 
 static const struct LevelUpMove sButterfreeLevelUpLearnset[] = {
@@ -331,6 +346,7 @@ static const struct LevelUpMove sButterfreeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BUG_BITE),
     LEVEL_UP_MOVE( 4, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 8, MOVE_CONFUSION),
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(12, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(12, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE(12, MOVE_SLEEP_POWDER),
@@ -361,6 +377,7 @@ static const struct LevelUpMove sButterfreeLevelUpLearnset[] = {
 static const struct LevelUpMove sWeedleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
+    // >>> Evo Lv 7
     LEVEL_UP_MOVE( 9, MOVE_BUG_BITE),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -391,6 +408,8 @@ static const struct LevelUpMove sKakunaLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 7
+    // >>> Evo Lv 10
 };
 
 static const struct LevelUpMove sBeedrillLevelUpLearnset[] = {
@@ -400,6 +419,7 @@ static const struct LevelUpMove sBeedrillLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(11, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(14, MOVE_LASER_FOCUS),
     //Roxanne
@@ -436,6 +456,7 @@ static const struct LevelUpMove sPidgeyLevelUpLearnset[] = {
     //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_WHIRLWIND),
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(21, MOVE_TWISTER),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_FEATHER_DANCE),
@@ -467,6 +488,7 @@ static const struct LevelUpMove sPidgeottoLevelUpLearnset[] = {
     //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_WHIRLWIND),
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(22, MOVE_TWISTER),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_FEATHER_DANCE),
@@ -474,6 +496,7 @@ static const struct LevelUpMove sPidgeottoLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_AGILITY),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(37, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(42, MOVE_ROOST),
     //Tate&Liza Lv45
@@ -507,6 +530,7 @@ static const struct LevelUpMove sPidgeotLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_AGILITY),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE(44, MOVE_ROOST),
     //Tate&Liza Lv45
@@ -534,6 +558,7 @@ static const struct LevelUpMove sRattataLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_TAKE_DOWN),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_ASSURANCE),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(22, MOVE_CRUNCH),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_SUCKER_PUNCH),
@@ -567,6 +592,7 @@ static const struct LevelUpMove sRaticateLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_TAKE_DOWN),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_ASSURANCE),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(24, MOVE_CRUNCH),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_SUCKER_PUNCH),
@@ -596,6 +622,7 @@ static const struct LevelUpMove sRattataAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_HYPER_FANG),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_ASSURANCE),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(22, MOVE_CRUNCH),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_SUCKER_PUNCH),
@@ -629,6 +656,7 @@ static const struct LevelUpMove sRaticateAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_HYPER_FANG),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_ASSURANCE),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(24, MOVE_CRUNCH),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_SUCKER_PUNCH),
@@ -659,6 +687,7 @@ static const struct LevelUpMove sSpearowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_AERIAL_ACE),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_WING_ATTACK),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(22, MOVE_TAKE_DOWN),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_AGILITY),
@@ -689,6 +718,7 @@ static const struct LevelUpMove sFearowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_AERIAL_ACE),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_WING_ATTACK),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_TAKE_DOWN),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_AGILITY),
@@ -720,6 +750,7 @@ static const struct LevelUpMove sEkansLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_SCREECH),
     LEVEL_UP_MOVE(20, MOVE_ACID),
     //Wattson Lv24
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(25, MOVE_SWALLOW),
     LEVEL_UP_MOVE(25, MOVE_STOCKPILE),
     LEVEL_UP_MOVE(25, MOVE_SPIT_UP),
@@ -756,6 +787,7 @@ static const struct LevelUpMove sArbokLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_SCREECH),
     LEVEL_UP_MOVE(20, MOVE_ACID),
     //Wattson Lv24
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(27, MOVE_SWALLOW),
     LEVEL_UP_MOVE(27, MOVE_STOCKPILE),
     LEVEL_UP_MOVE(27, MOVE_SPIT_UP),
@@ -1073,6 +1105,7 @@ static const struct LevelUpMove sNidoranFLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FURY_SWIPES),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_TOXIC_SPIKES),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_DOUBLE_KICK),
@@ -1101,6 +1134,7 @@ static const struct LevelUpMove sNidorinaLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FURY_SWIPES),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(22, MOVE_TOXIC_SPIKES),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_DOUBLE_KICK),
@@ -1160,6 +1194,7 @@ static const struct LevelUpMove sNidoranMLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FURY_ATTACK),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_TOXIC_SPIKES),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_DOUBLE_KICK),
@@ -1188,6 +1223,7 @@ static const struct LevelUpMove sNidorinoLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FURY_ATTACK),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(22, MOVE_TOXIC_SPIKES),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_DOUBLE_KICK),
@@ -1687,6 +1723,7 @@ static const struct LevelUpMove sOddishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE(20, MOVE_RAZOR_LEAF),
     //Evo
+    // >>> Evo Lv 21
     LEVEL_UP_MOVE(24, MOVE_TOXIC),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_MOONBLAST),
@@ -1719,6 +1756,7 @@ static const struct LevelUpMove sGloomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_RAZOR_LEAF),
     //Evo
     //Wattson Lv24
+    // >>> Evo Lv 21
     LEVEL_UP_MOVE(26, MOVE_TOXIC),
     //Flannery Lv29
     LEVEL_UP_MOVE(32, MOVE_MOONBLAST),
@@ -1815,6 +1853,7 @@ static const struct LevelUpMove sParasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(22, MOVE_SPORE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(27, MOVE_SLASH),
     //Flannery Lv29
     //Norman Lv31
@@ -1846,6 +1885,7 @@ static const struct LevelUpMove sParasectLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(22, MOVE_SPORE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(29, MOVE_SLASH),
     //Flannery Lv29
     //Norman Lv31
@@ -1880,6 +1920,7 @@ static const struct LevelUpMove sVenonatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_SLEEP_POWDER),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(35, MOVE_LEECH_LIFE),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_ZEN_HEADBUTT),
@@ -1911,6 +1952,7 @@ static const struct LevelUpMove sVenomothLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(37, MOVE_LEECH_LIFE),
     LEVEL_UP_MOVE(41, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
@@ -1937,6 +1979,7 @@ static const struct LevelUpMove sDiglettLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(24, MOVE_SLASH),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(28, MOVE_SANDSTORM),
     //Flannery Lv29
     //Norman Lv31
@@ -1969,6 +2012,7 @@ static const struct LevelUpMove sDugtrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_SLASH),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(30, MOVE_SANDSTORM),
     //Norman Lv31
     //Winona Lv35
@@ -1997,6 +2041,7 @@ static const struct LevelUpMove sDiglettAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(24, MOVE_IRON_HEAD),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(28, MOVE_SANDSTORM),
     //Flannery Lv29
     //Norman Lv31
@@ -2029,6 +2074,7 @@ static const struct LevelUpMove sDugtrioAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_IRON_HEAD),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(30, MOVE_SANDSTORM),
     //Norman Lv31
     //Winona Lv35
@@ -2059,6 +2105,7 @@ static const struct LevelUpMove sMeowthLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_TAUNT),
     LEVEL_UP_MOVE(24, MOVE_ASSURANCE),
     //Wattson Lv24
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_FURY_SWIPES),
     //Flannery Lv29
     //Norman Lv31
@@ -2091,6 +2138,7 @@ static const struct LevelUpMove sPersianLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(31, MOVE_FURY_SWIPES),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SCREECH),
@@ -2179,6 +2227,7 @@ static const struct LevelUpMove sMeowthGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_TAUNT),
     LEVEL_UP_MOVE(24, MOVE_SWAGGER),
     //Wattson Lv24
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_FURY_SWIPES),
     //Flannery Lv29
     //Norman Lv31
@@ -2212,6 +2261,7 @@ static const struct LevelUpMove sPerrserkerLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(31, MOVE_FURY_SWIPES),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SCREECH),
@@ -2310,6 +2360,7 @@ static const struct LevelUpMove sMankeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(22, MOVE_CROSS_CHOP),
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_ASSURANCE),
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_THRASH),
     //Flannery Lv29
     //Norman Lv31
@@ -2342,6 +2393,7 @@ static const struct LevelUpMove sPrimeapeLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_ASSURANCE),
     //Flannery Lv29
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(30, MOVE_THRASH),
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_RAGE_FIST),
@@ -2539,6 +2591,7 @@ static const struct LevelUpMove sPoliwagLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_RAIN_DANCE),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_BODY_SLAM),
     //Norman Lv31
     //Winona Lv35
@@ -2566,6 +2619,7 @@ static const struct LevelUpMove sPoliwhirlLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(32, MOVE_BODY_SLAM),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_EARTH_POWER),
@@ -2657,6 +2711,7 @@ static const struct LevelUpMove sAbraLevelUpLearnset[] = {
     //Wattson Lv24
     //Brawly Lv16
     LEVEL_UP_END
+    // >>> Evo Lv 16
 };
 
 static const struct LevelUpMove sKadabraLevelUpLearnset[] = {
@@ -2672,6 +2727,7 @@ static const struct LevelUpMove sKadabraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_ALLY_SWITCH),
     //Evo
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_PSYBEAM),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_RECOVER),
@@ -2832,6 +2888,7 @@ static const struct LevelUpMove sBellsproutLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
+    // >>> Evo Lv 21
     LEVEL_UP_MOVE(23, MOVE_ACID),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_KNOCK_OFF),
@@ -2862,6 +2919,7 @@ static const struct LevelUpMove sWeepinbellLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_STUN_SPORE),
+    // >>> Evo Lv 21
     LEVEL_UP_MOVE(24, MOVE_ACID),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_KNOCK_OFF),
@@ -3091,6 +3149,7 @@ static const struct LevelUpMove sGeodudeAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(22, MOVE_THUNDER_PUNCH),
     LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_STEALTH_ROCK),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_ROCK_BLAST),
@@ -3124,6 +3183,7 @@ static const struct LevelUpMove sGravelerAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_STEALTH_ROCK),
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ROCK_BLAST),
@@ -3191,6 +3251,7 @@ static const struct LevelUpMove sPonytaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_FIRE_SPIN),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(45, MOVE_INFERNO),
     //Tate&Liza Lv45
@@ -3224,6 +3285,7 @@ static const struct LevelUpMove sRapidashLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_FIRE_SPIN),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_INFERNO),
@@ -3253,6 +3315,7 @@ static const struct LevelUpMove sPonytaGalarLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_HEAL_PULSE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(45, MOVE_DAZZLING_GLEAM),
     //Tate&Liza Lv45
@@ -3285,6 +3348,7 @@ static const struct LevelUpMove sRapidashGalarLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_HEAL_PULSE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_DAZZLING_GLEAM),
@@ -3321,6 +3385,7 @@ static const struct LevelUpMove sSlowpokeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_SLACK_OFF),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PSYCHIC),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(39, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(42, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(45, MOVE_HEAL_PULSE),
@@ -3355,6 +3420,7 @@ static const struct LevelUpMove sSlowbroLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_SLACK_OFF),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PSYCHIC),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(41, MOVE_PSYCH_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_RAIN_DANCE),
@@ -3799,6 +3865,7 @@ static const struct LevelUpMove sSeelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_AQUA_JET),
     LEVEL_UP_MOVE(33, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(37, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(41, MOVE_DIVE),
     LEVEL_UP_MOVE(43, MOVE_AQUA_TAIL),
@@ -3831,6 +3898,7 @@ static const struct LevelUpMove sDewgongLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_AQUA_JET),
     LEVEL_UP_MOVE(33, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(39, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(45, MOVE_DIVE),
     //Tate&Liza Lv45
@@ -3933,6 +4001,7 @@ static const struct LevelUpMove sGrimerAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SCREECH),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
     LEVEL_UP_MOVE(43, MOVE_ACID_ARMOR),
     //Tate&Liza Lv45
@@ -3964,6 +4033,7 @@ static const struct LevelUpMove sMukAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SCREECH),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_ACID_ARMOR),
@@ -4055,6 +4125,7 @@ static const struct LevelUpMove sGastlyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_CURSE),
     LEVEL_UP_MOVE(24, MOVE_HEX),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_NIGHT_SHADE),
     //Flannery Lv29
     //Norman Lv31
@@ -4086,6 +4157,7 @@ static const struct LevelUpMove sHaunterLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_HEX),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_NIGHT_SHADE),
     //Norman Lv31
     //Winona Lv35
@@ -4224,6 +4296,7 @@ static const struct LevelUpMove sDrowzeeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_PSYCH_UP),
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(29, MOVE_ZEN_HEADBUTT),
     //Flannery Lv29
     //Norman Lv31
@@ -4256,6 +4329,7 @@ static const struct LevelUpMove sHypnoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_PSYCH_UP),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(32, MOVE_ZEN_HEADBUTT),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SWAGGER),
@@ -4285,6 +4359,7 @@ static const struct LevelUpMove sKrabbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(24, MOVE_STOMP),
     //Wattson Lv24
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_FLAIL),
     //Flannery Lv29
     //Norman Lv31
@@ -4318,6 +4393,7 @@ static const struct LevelUpMove sKinglerLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(31, MOVE_FLAIL),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_RAZOR_SHELL),
@@ -4584,6 +4660,7 @@ static const struct LevelUpMove sCuboneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_FLING),
     LEVEL_UP_MOVE(24, MOVE_STOMPING_TANTRUM),
     //Wattson Lv24
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_BONE_RUSH),
     //Flannery Lv29
     //Norman Lv31
@@ -4615,6 +4692,7 @@ static const struct LevelUpMove sMarowakLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(31, MOVE_BONE_RUSH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_FOCUS_ENERGY),
@@ -4687,6 +4765,7 @@ static const struct LevelUpMove sTyrogueLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 20
 };
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -4736,6 +4815,7 @@ static const struct LevelUpMove sHitmonchanLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_BULLET_PUNCH),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_QUICK_GUARD),
     LEVEL_UP_MOVE(24, MOVE_THUNDER_PUNCH),
     //Wattson Lv24
@@ -5578,6 +5658,7 @@ static const struct LevelUpMove sMrMimeGalarLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE(40, MOVE_SUCKER_PUNCH),
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(44, MOVE_FREEZE_DRY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
@@ -5623,6 +5704,7 @@ static const struct LevelUpMove sMrRimeLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE(40, MOVE_SUCKER_PUNCH),
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(44, MOVE_FREEZE_DRY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
@@ -5746,9 +5828,9 @@ static const struct LevelUpMove sSmoochumLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_FAKE_TEARS),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_AURORA_BEAM),
-    //Evo
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_PSYCHIC),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SWEET_KISS),
@@ -5782,6 +5864,7 @@ static const struct LevelUpMove sJynxLevelUpLearnset[] = {
     //Evo
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_PSYCHIC),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_LOVELY_KISS),
@@ -5814,6 +5897,7 @@ static const struct LevelUpMove sElekidLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_THUNDER_PUNCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_DISCHARGE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_LOW_KICK),
@@ -5844,6 +5928,7 @@ static const struct LevelUpMove sElectabuzzLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_THUNDER_PUNCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_DISCHARGE),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
@@ -5909,6 +5994,7 @@ static const struct LevelUpMove sMagbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_FIRE_PUNCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_LAVA_PLUME),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_LOW_KICK),
@@ -5939,6 +6025,7 @@ static const struct LevelUpMove sMagmarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_FIRE_PUNCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_LAVA_PLUME),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
@@ -6716,6 +6803,7 @@ static const struct LevelUpMove sOmanyteLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_PROTECT),
     LEVEL_UP_MOVE(45, MOVE_ROCK_BLAST),
     //Tate&Liza Lv45
@@ -6747,6 +6835,7 @@ static const struct LevelUpMove sOmastarLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_PROTECT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ROCK_BLAST),
@@ -6778,6 +6867,7 @@ static const struct LevelUpMove sKabutoLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_PROTECT),
     LEVEL_UP_MOVE(45, MOVE_LEECH_LIFE),
     //Tate&Liza Lv45
@@ -6811,6 +6901,7 @@ static const struct LevelUpMove sKabutopsLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_PROTECT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_LEECH_LIFE),
@@ -7145,6 +7236,7 @@ static const struct LevelUpMove sDratiniLevelUpLearnset[] = {
     //Evo
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(31, MOVE_DRAGON_TAIL),
     LEVEL_UP_MOVE(35, MOVE_DRAGON_RUSH),
     //Winona Lv35
@@ -7175,6 +7267,7 @@ static const struct LevelUpMove sDragonairLevelUpLearnset[] = {
     //Evo
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(33, MOVE_DRAGON_TAIL),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_DRAGON_RUSH),
@@ -7185,6 +7278,7 @@ static const struct LevelUpMove sDragonairLevelUpLearnset[] = {
     //Evo
     //Sidney Lv54
     //Drake Lv60
+    // >>> Evo Lv 55
     LEVEL_UP_MOVE(60, MOVE_DRAGON_DANCE),
     //Steven Lv63
     LEVEL_UP_MOVE(67, MOVE_OUTRAGE),
@@ -7222,6 +7316,7 @@ static const struct LevelUpMove sDragoniteLevelUpLearnset[] = {
     //Evo
     //Sidney Lv54
     //Drake Lv60
+    // >>> Evo Lv 55
     LEVEL_UP_MOVE(62, MOVE_DRAGON_DANCE),
     //Steven Lv63
     LEVEL_UP_MOVE(80, MOVE_HYPER_BEAM),
@@ -7300,6 +7395,7 @@ static const struct LevelUpMove sChikoritaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_SYNTHESIS),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_REFLECT),
     LEVEL_UP_MOVE(20, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE(23, MOVE_LEECH_SEED),
@@ -7329,12 +7425,14 @@ static const struct LevelUpMove sBayleefLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_SYNTHESIS),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_REFLECT),
     LEVEL_UP_MOVE(22, MOVE_MAGICAL_LEAF),
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_LEECH_SEED),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(32, MOVE_SWEET_SCENT),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_LIGHT_SCREEN),
@@ -7366,6 +7464,7 @@ static const struct LevelUpMove sMeganiumLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_LEECH_SEED),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(34, MOVE_SWEET_SCENT),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_LIGHT_SCREEN),
@@ -7391,6 +7490,7 @@ static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_QUICK_ATTACK),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(19, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(22, MOVE_DEFENSE_CURL),
     //Wattson Lv24
@@ -7422,6 +7522,7 @@ static const struct LevelUpMove sQuilavaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_QUICK_ATTACK),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(20, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(24, MOVE_DEFENSE_CURL),
     //Wattson Lv24
@@ -7430,6 +7531,7 @@ static const struct LevelUpMove sQuilavaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_SWIFT),
     LEVEL_UP_MOVE(35, MOVE_FLAME_CHARGE),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(42, MOVE_LAVA_PLUME),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FLAMETHROWER),
@@ -7464,6 +7566,7 @@ static const struct LevelUpMove sTyphlosionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_SWIFT),
     LEVEL_UP_MOVE(35, MOVE_FLAME_CHARGE),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(43, MOVE_LAVA_PLUME),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FLAMETHROWER),
@@ -7522,6 +7625,7 @@ static const struct LevelUpMove sTotodileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_SCARY_FACE),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(19, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(22, MOVE_FLAIL),
     //Wattson Lv24
@@ -7551,10 +7655,12 @@ static const struct LevelUpMove sCroconawLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_SCARY_FACE),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(21, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(24, MOVE_FLAIL),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(30, MOVE_CRUNCH),
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_SLASH),
@@ -7586,6 +7692,7 @@ static const struct LevelUpMove sFeraligatrLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SLASH),
@@ -7610,6 +7717,7 @@ static const struct LevelUpMove sSentretLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_FURY_SWIPES),
     //Roxanne Lv14
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(16, MOVE_HELPING_HAND),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_FOLLOW_ME),
@@ -7641,6 +7749,7 @@ static const struct LevelUpMove sFurretLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_FURY_SWIPES),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(17, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(21, MOVE_FOLLOW_ME),
     //Wattson Lv24
@@ -7675,6 +7784,7 @@ static const struct LevelUpMove sHoothootLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_DEFOG),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_AIR_SLASH),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_EXTRASENSORY),
     LEVEL_UP_MOVE(24, MOVE_TAKE_DOWN),
     //Wattson Lv24
@@ -7706,6 +7816,7 @@ static const struct LevelUpMove sNoctowlLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_DEFOG),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_AIR_SLASH),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_EXTRASENSORY),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
@@ -7737,6 +7848,7 @@ static const struct LevelUpMove sLedybaLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_MACH_PUNCH),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(19, MOVE_ROOST),
     LEVEL_UP_MOVE(22, MOVE_STRUGGLE_BUG),
     //Wattson Lv24
@@ -7768,6 +7880,7 @@ static const struct LevelUpMove sLedianLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_MACH_PUNCH),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(20, MOVE_ROOST),
     LEVEL_UP_MOVE(24, MOVE_STRUGGLE_BUG),
     //Wattson Lv24
@@ -7799,6 +7912,7 @@ static const struct LevelUpMove sSpinarakLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_NIGHT_SHADE),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_SHADOW_SNEAK),
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(22, MOVE_FURY_SWIPES),
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_SUCKER_PUNCH),
@@ -7834,6 +7948,7 @@ static const struct LevelUpMove sAriadosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_NIGHT_SHADE),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_SHADOW_SNEAK),
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(23, MOVE_FURY_SWIPES),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SUCKER_PUNCH),
@@ -8041,6 +8156,7 @@ static const struct LevelUpMove sNatuLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_TELEPORT),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(26, MOVE_CALM_MIND),
     //Evo Lv27
     //Flannery Lv29
@@ -8075,6 +8191,7 @@ static const struct LevelUpMove sXatuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_NIGHT_SHADE),
     //Evo Lv27
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_CALM_MIND),
     //Flannery Lv29
     //Norman Lv31
@@ -8102,6 +8219,7 @@ static const struct LevelUpMove sMareepLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE(11, MOVE_COTTON_SPORE),
     //Roxanne Lv14
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(15, MOVE_CHARGE),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_TAKE_DOWN),
@@ -8131,6 +8249,7 @@ static const struct LevelUpMove sFlaaffyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(11, MOVE_COTTON_SPORE),
     //Roxanne Lv14
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(16, MOVE_CHARGE),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_TAKE_DOWN),
@@ -8139,6 +8258,7 @@ static const struct LevelUpMove sFlaaffyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_CONFUSE_RAY),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_POWER_GEM),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_DISCHARGE),
@@ -8173,6 +8293,7 @@ static const struct LevelUpMove sAmpharosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_CONFUSE_RAY),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(35, MOVE_POWER_GEM),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_DISCHARGE),
@@ -8367,6 +8488,7 @@ static const struct LevelUpMove sHoppipLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_SYNTHESIS),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(19, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(22, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(24, MOVE_ACROBATICS),
@@ -8400,9 +8522,11 @@ static const struct LevelUpMove sSkiploomLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BULLET_SEED),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(20, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(24, MOVE_MEGA_DRAIN),
     //Wattson Lv24
+    // >>> Evo Lv 27
     LEVEL_UP_MOVE(28, MOVE_ACROBATICS),
     //Flannery Lv29
     //Norman Lv31
@@ -8437,6 +8561,7 @@ static const struct LevelUpMove sJumpluffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_MEGA_DRAIN),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 27
     LEVEL_UP_MOVE(30, MOVE_ACROBATICS),
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_COTTON_SPORE),
@@ -8654,6 +8779,7 @@ static const struct LevelUpMove sWooperLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_SLAM),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_YAWN),
     LEVEL_UP_MOVE(24, MOVE_AQUA_TAIL),
     //Wattson Lv24
@@ -8682,6 +8808,7 @@ static const struct LevelUpMove sQuagsireLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_SLAM),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_YAWN),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_AQUA_TAIL),
@@ -8710,6 +8837,7 @@ static const struct LevelUpMove sWooperPaldeaLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_SLAM),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_YAWN),
     LEVEL_UP_MOVE(24, MOVE_POISON_JAB),
     //Wattson Lv24
@@ -8738,6 +8866,7 @@ static const struct LevelUpMove sClodsireLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_SLAM),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_YAWN),
     LEVEL_UP_MOVE(24, MOVE_POISON_JAB),
     //Wattson Lv24
@@ -8910,6 +9039,7 @@ static const struct LevelUpMove sWynautLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 15
 };
 #endif //P_GEN_3_CROSS_EVOS
 
@@ -8938,6 +9068,7 @@ static const struct LevelUpMove sWobbuffetLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 15
 };
 #endif //P_FAMILY_WOBBUFFET
 
@@ -9025,6 +9156,7 @@ static const struct LevelUpMove sPinecoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_SPIKES),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(31, MOVE_PAYBACK),
     LEVEL_UP_MOVE(34, MOVE_EXPLOSION),
     //Winona Lv35
@@ -9058,6 +9190,7 @@ static const struct LevelUpMove sForretressLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_SPIKES),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(32, MOVE_PAYBACK),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_EXPLOSION),
@@ -9219,6 +9352,7 @@ static const struct LevelUpMove sSnubbullLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 23
     LEVEL_UP_MOVE(25, MOVE_ROAR),
     //Flannery Lv29
     //Norman Lv31
@@ -9251,6 +9385,7 @@ static const struct LevelUpMove sGranbullLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 23
     LEVEL_UP_MOVE(27, MOVE_ROAR),
     //Flannery Lv29
     //Norman Lv31
@@ -9575,6 +9710,7 @@ static const struct LevelUpMove sTeddiursaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_PLAY_ROUGH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(33, MOVE_CHARM),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_REST),
@@ -9605,6 +9741,7 @@ static const struct LevelUpMove sUrsaringLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_PLAY_ROUGH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(35, MOVE_SCARY_FACE),
     //Winona Lv35
     LEVEL_UP_MOVE(41, MOVE_REST),
@@ -9772,6 +9909,7 @@ static const struct LevelUpMove sSwinubLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_ICY_WIND),
     //Norman Lv31
+    // >>> Evo Lv 33
     LEVEL_UP_MOVE(35, MOVE_AMNESIA),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
@@ -9802,6 +9940,7 @@ static const struct LevelUpMove sPiloswineLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_ICY_WIND),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 33
     LEVEL_UP_MOVE(37, MOVE_AMNESIA),
     LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
@@ -9866,6 +10005,7 @@ static const struct LevelUpMove sCorsolaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_LIFE_DEW),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(45, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
@@ -9895,6 +10035,7 @@ static const struct LevelUpMove sCorsolaGalarLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_STRENGTH_SAP),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(45, MOVE_NIGHT_SHADE),
     //Tate&Liza Lv45
@@ -9924,6 +10065,7 @@ static const struct LevelUpMove sCursolaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_STRENGTH_SAP),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(45, MOVE_NIGHT_SHADE),
     //Tate&Liza Lv45
@@ -9951,6 +10093,7 @@ static const struct LevelUpMove sRemoraidLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(24, MOVE_LOCK_ON),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_BULLET_SEED),
     //Flannery Lv29
     //Norman Lv31
@@ -9985,6 +10128,7 @@ static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_LOCK_ON),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_BULLET_SEED),
     //Norman Lv31
     //Winona Lv35
@@ -10130,6 +10274,7 @@ static const struct LevelUpMove sHoundourLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_INCINERATE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(25, MOVE_BEAT_UP),
     LEVEL_UP_MOVE(28, MOVE_FIRE_FANG),
     //Flannery Lv29
@@ -10163,6 +10308,7 @@ static const struct LevelUpMove sHoundoomLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_INCINERATE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(26, MOVE_BEAT_UP),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_FIRE_FANG),
@@ -10495,6 +10641,7 @@ static const struct LevelUpMove sLarvitarLevelUpLearnset[] = {
     //Evo
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(31, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(33, MOVE_ROCK_SLIDE),
     //Winona Lv35
@@ -10528,6 +10675,7 @@ static const struct LevelUpMove sPupitarLevelUpLearnset[] = {
     //Evo
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(33, MOVE_EARTHQUAKE),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_ROCK_SLIDE),
@@ -10541,6 +10689,7 @@ static const struct LevelUpMove sPupitarLevelUpLearnset[] = {
     //Drake Lv60
     //Steven Lv63
     LEVEL_UP_END
+    // >>> Evo Lv 55
 };
 
 static const struct LevelUpMove sTyranitarLevelUpLearnset[] = {
@@ -10575,6 +10724,7 @@ static const struct LevelUpMove sTyranitarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_HYPER_BEAM),
     //Evo
     //Sidney Lv54
+    // >>> Evo Lv 55
     LEVEL_UP_MOVE(59, MOVE_GIGA_IMPACT),
     //Drake Lv60
     //Steven Lv63
@@ -10687,6 +10837,7 @@ static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
     //Roxanne
     LEVEL_UP_MOVE(15, MOVE_QUICK_GUARD),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(21, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(24, MOVE_SCREECH),
@@ -10720,6 +10871,7 @@ static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_QUICK_GUARD),
     //Evo
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_ASSURANCE),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_GIGA_DRAIN),
@@ -10896,6 +11048,7 @@ static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_YAWN),
     //Evo
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE(21, MOVE_WIDE_GUARD),
     LEVEL_UP_MOVE(24, MOVE_BODY_PRESS),
@@ -10929,6 +11082,7 @@ static const struct LevelUpMove sMarshtompLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_YAWN),
     //Evo
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_WIDE_GUARD),
@@ -11001,6 +11155,7 @@ static const struct LevelUpMove sPoochyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_ROAR),
     //Brawly Lv16
     //Evo
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(19, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(22, MOVE_POISON_FANG),
     //Wattson Lv24
@@ -11142,6 +11297,7 @@ static const struct LevelUpMove sZigzagoonGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_BABY_DOLL_EYES),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_PIN_MISSILE),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_REST),
     LEVEL_UP_MOVE(24, MOVE_TAKE_DOWN),
     //Wattson Lv24
@@ -11176,6 +11332,7 @@ static const struct LevelUpMove sLinooneGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_HONE_CLAWS),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_FURY_SWIPES),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_REST),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
@@ -11238,6 +11395,7 @@ static const struct LevelUpMove sWurmpleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 5, MOVE_POISON_STING),
+    // >>> Evo Lv 7
     LEVEL_UP_MOVE(10, MOVE_BUG_BITE),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -11256,8 +11414,10 @@ static const struct LevelUpMove sWurmpleLevelUpLearnset[] = {
 static const struct LevelUpMove sSilcoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+    // >>> Evo Lv 7
     LEVEL_UP_MOVE( 9, MOVE_PROTECT),
     //Evo
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(12, MOVE_IRON_DEFENSE),
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_STICKY_WEB),
@@ -11283,6 +11443,7 @@ static const struct LevelUpMove sBeautiflyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     //Evo
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
     //Roxanne
     LEVEL_UP_MOVE(15, MOVE_STUN_SPORE),
@@ -11316,6 +11477,7 @@ static const struct LevelUpMove sCascoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 9, MOVE_PROTECT),
     //Evo
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(12, MOVE_IRON_DEFENSE),
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_SILK_TRAP),
@@ -11340,6 +11502,7 @@ static const struct LevelUpMove sDustoxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     //Evo
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(12, MOVE_CONFUSION),
     //Roxanne
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
@@ -11621,6 +11784,7 @@ static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_U_TURN),
     //Evo
     //Wattson Lv24
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(27, MOVE_AIR_SLASH),
     //Flannery Lv29
     //Norman Lv31
@@ -11721,6 +11885,7 @@ static const struct LevelUpMove sRaltsLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_PSYBEAM),
     //Evo at Lv20
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_LIFE_DEW),
     LEVEL_UP_MOVE(24, MOVE_CHARM),
     //Wattson Lv24
@@ -11752,6 +11917,7 @@ static const struct LevelUpMove sKirliaLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_PSYBEAM),
     //Evo at Lv20
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_LIFE_DEW),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_CHARM),
@@ -12008,6 +12174,7 @@ static const struct LevelUpMove sSlakothLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_AMNESIA),
     //Evo
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(22, MOVE_COVET),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_THROAT_CHOP),
@@ -12035,6 +12202,7 @@ static const struct LevelUpMove sVigorothLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_ENDURE),
     //Evo
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(23, MOVE_SLASH),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_THROAT_CHOP),
@@ -12098,6 +12266,7 @@ static const struct LevelUpMove sNincadaLevelUpLearnset[] = {
     //Roxanne
     LEVEL_UP_MOVE(15, MOVE_FURY_CUTTER),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_DIG),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_METAL_CLAW),
@@ -12129,6 +12298,7 @@ static const struct LevelUpMove sNinjaskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_FURY_CUTTER),
     //Evo
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_AERIAL_ACE),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_BUG_BITE),
@@ -12266,6 +12436,7 @@ static const struct LevelUpMove sExploudLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PERISH_SONG),
     //Evo
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(45, MOVE_UPROAR),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -12619,6 +12790,7 @@ static const struct LevelUpMove sLaironLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
     //T&L
     //Tate&Liza Lv45
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(46, MOVE_AUTOTOMIZE),
     //Juan
     LEVEL_UP_MOVE(52, MOVE_BODY_PRESS),
@@ -12726,6 +12898,7 @@ static const struct LevelUpMove sMedichamLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_POWER_TRICK),
     //Evo
     //Tate&Liza Lv45
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(47, MOVE_RECOVER),
     //Juan Lv50
     LEVEL_UP_MOVE(53, MOVE_COUNTER),
@@ -12752,6 +12925,7 @@ static const struct LevelUpMove sElectrikeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_BITE),
     LEVEL_UP_MOVE(24, MOVE_THUNDER_FANG),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(28, MOVE_ROAR),
     //Flannery Lv29
     //Norman Lv31
@@ -13369,6 +13543,7 @@ static const struct LevelUpMove sSpoinkLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Evo lv32
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(33, MOVE_TRICK_ROOM),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_PSYSHOCK),
@@ -13403,6 +13578,7 @@ static const struct LevelUpMove sGrumpigLevelUpLearnset[] = {
     //Evo lv32
     //Winona
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_TRICK_ROOM),
     LEVEL_UP_MOVE(42, MOVE_PSYSHOCK),
     //Tate&Liza Lv45
@@ -14388,6 +14564,7 @@ static const struct LevelUpMove sDuskullLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_HEX),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_CURSE),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45
@@ -14422,6 +14599,7 @@ static const struct LevelUpMove sDusclopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_HEX),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_CURSE),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(42, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
@@ -15074,6 +15252,7 @@ static const struct LevelUpMove sBeldumLevelUpLearnset[] = {
     //Flannery Lv29
     //Wattson Lv24
     LEVEL_UP_END
+    // >>> Evo Lv 20
 };
 
 static const struct LevelUpMove sMetangLevelUpLearnset[] = {
@@ -15086,6 +15265,7 @@ static const struct LevelUpMove sMetangLevelUpLearnset[] = {
     //Wattson
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(26, MOVE_HONE_CLAWS),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_FLASH_CANNON),
@@ -15096,6 +15276,7 @@ static const struct LevelUpMove sMetangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_IRON_DEFENSE),
     //Evolution at Lv45
     //Tate&Liza Lv45
+    // >>> Evo Lv 45
     LEVEL_UP_MOVE(50, MOVE_METEOR_MASH),
     //Juan Lv50
     //Sidney Lv54
@@ -15130,6 +15311,7 @@ static const struct LevelUpMove sMetagrossLevelUpLearnset[] = {
     //Evolution at Lv45
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 45
     LEVEL_UP_MOVE(52, MOVE_METEOR_MASH),
     //Sidney Lv54
     //Drake Lv60
@@ -15560,6 +15742,7 @@ static const struct LevelUpMove sTurtwigLevelUpLearnset[] = {
     //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_CURSE),
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(21, MOVE_BITE),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_MEGA_DRAIN),
@@ -15587,11 +15770,13 @@ static const struct LevelUpMove sGrotleLevelUpLearnset[] = {
     //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_CURSE),
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(22, MOVE_BITE),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_MEGA_DRAIN),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(32, MOVE_LEECH_SEED),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SYNTHESIS),
@@ -15621,6 +15806,7 @@ static const struct LevelUpMove sTorterraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(27, MOVE_MEGA_DRAIN),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(33, MOVE_LEECH_SEED),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_SYNTHESIS),
@@ -15644,6 +15830,7 @@ static const struct LevelUpMove sChimcharLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
     LEVEL_UP_MOVE( 9, MOVE_TAUNT),
     //Roxanne Lv14
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(15, MOVE_FURY_SWIPES),
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_FLAME_WHEEL),
@@ -15673,6 +15860,7 @@ static const struct LevelUpMove sMonfernoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 9, MOVE_TAUNT),
     //Roxanne Lv14
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(16, MOVE_FURY_SWIPES),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_FLAME_WHEEL),
@@ -15682,6 +15870,7 @@ static const struct LevelUpMove sMonfernoLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(36, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE(39, MOVE_FIRE_SPIN),
     //Tate&Liza Lv45
@@ -15713,6 +15902,7 @@ static const struct LevelUpMove sInfernapeLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(42, MOVE_FIRE_SPIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_FLARE_BLITZ),
@@ -15736,6 +15926,7 @@ static const struct LevelUpMove sPiplupLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_PECK),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(22, MOVE_SWAGGER),
     //Wattson Lv24
@@ -15764,6 +15955,7 @@ static const struct LevelUpMove sPrinplupLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_PECK),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(24, MOVE_SWAGGER),
     //Wattson Lv24
@@ -15772,6 +15964,7 @@ static const struct LevelUpMove sPrinplupLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(37, MOVE_WHIRLPOOL),
     LEVEL_UP_MOVE(42, MOVE_MIST),
     //Tate&Liza Lv45
@@ -15802,6 +15995,7 @@ static const struct LevelUpMove sEmpoleonLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_BRINE),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(39, MOVE_WHIRLPOOL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_MIST),
@@ -15825,6 +16019,7 @@ static const struct LevelUpMove sStarlyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_DOUBLE_TEAM),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(17, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(21, MOVE_WHIRLWIND),
     //Wattson Lv24
@@ -15852,6 +16047,7 @@ static const struct LevelUpMove sStaraviaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_DOUBLE_TEAM),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(18, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(23, MOVE_WHIRLWIND),
     //Wattson Lv24
@@ -15860,6 +16056,7 @@ static const struct LevelUpMove sStaraviaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_TAKE_DOWN),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(38, MOVE_AGILITY),
     LEVEL_UP_MOVE(43, MOVE_BRAVE_BIRD),
     //Tate&Liza Lv45
@@ -15888,6 +16085,7 @@ static const struct LevelUpMove sStaraptorLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_TAKE_DOWN),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(41, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BRAVE_BIRD),
@@ -15909,6 +16107,7 @@ static const struct LevelUpMove sBidoofLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_HEADBUTT),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(17, MOVE_TAUNT),
     LEVEL_UP_MOVE(21, MOVE_YAWN),
     //Wattson Lv24
@@ -15941,6 +16140,7 @@ static const struct LevelUpMove sBibarelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_HEADBUTT),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(18, MOVE_TAUNT),
     LEVEL_UP_MOVE(23, MOVE_YAWN),
     //Wattson Lv24
@@ -15969,6 +16169,7 @@ static const struct LevelUpMove sKricketotLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_STRUGGLE_BUG),
     //Roxanne Lv14
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(16, MOVE_BUG_BITE),
     //Brawly Lv16
     //Tate&Liza Lv45
@@ -15987,6 +16188,7 @@ static const struct LevelUpMove sKricketuneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    // >>> Evo Lv 10
     LEVEL_UP_MOVE(14, MOVE_ABSORB),
     //Roxanne
     //Brawly Lv16
@@ -16022,6 +16224,7 @@ static const struct LevelUpMove sShinxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_CHARGE),
     LEVEL_UP_MOVE(12, MOVE_BITE),
     //Roxanne Lv14
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(16, MOVE_SPARK),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_ROAR),
@@ -16052,11 +16255,13 @@ static const struct LevelUpMove sLuxioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_BITE),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(18, MOVE_SPARK),
     LEVEL_UP_MOVE(24, MOVE_ROAR),
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(31, MOVE_VOLT_SWITCH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SCARY_FACE),
@@ -16087,6 +16292,7 @@ static const struct LevelUpMove sLuxrayLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(33, MOVE_VOLT_SWITCH),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SCARY_FACE),
@@ -16119,6 +16325,7 @@ static const struct LevelUpMove sCranidosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_SLAM),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(33, MOVE_ANCIENT_POWER),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_ZEN_HEADBUTT),
@@ -16148,6 +16355,7 @@ static const struct LevelUpMove sRampardosLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(36, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE(43, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
@@ -16176,6 +16384,7 @@ static const struct LevelUpMove sShieldonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_ANCIENT_POWER),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(33, MOVE_ENDURE),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_METAL_BURST),
@@ -16206,6 +16415,7 @@ static const struct LevelUpMove sBastiodonLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(36, MOVE_ENDURE),
     LEVEL_UP_MOVE(43, MOVE_METAL_BURST),
     //Tate&Liza Lv45
@@ -16250,6 +16460,7 @@ static const struct LevelUpMove sWormadamPlantLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BUG_BITE),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(20, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE(23, MOVE_CONFUSION),
     //Wattson Lv24
@@ -16284,6 +16495,7 @@ static const struct LevelUpMove sWormadamSandyLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BUG_BITE),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(20, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE(23, MOVE_CONFUSION),
     //Wattson Lv24
@@ -16319,6 +16531,7 @@ static const struct LevelUpMove sWormadamTrashLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BUG_BITE),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(20, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE(23, MOVE_CONFUSION),
     //Wattson Lv24
@@ -16394,6 +16607,7 @@ static const struct LevelUpMove sCombeeLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 21
 };
 
 static const struct LevelUpMove sVespiquenLevelUpLearnset[] = {
@@ -16411,6 +16625,7 @@ static const struct LevelUpMove sVespiquenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_FURY_SWIPES),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SWAGGER),
+    // >>> Evo Lv 21
     LEVEL_UP_MOVE(24, MOVE_ROOST),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_AIR_SLASH),
@@ -16476,6 +16691,7 @@ static const struct LevelUpMove sBuizelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_SWIFT),
     LEVEL_UP_MOVE(24, MOVE_AQUA_JET),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(27, MOVE_DOUBLE_HIT),
     //Flannery Lv29
     //Norman Lv31
@@ -16507,6 +16723,7 @@ static const struct LevelUpMove sFloatzelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_SWIFT),
     LEVEL_UP_MOVE(24, MOVE_AQUA_JET),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(29, MOVE_DOUBLE_HIT),
     //Flannery Lv29
     //Norman Lv31
@@ -16537,6 +16754,7 @@ static const struct LevelUpMove sCherubiLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_MAGICAL_LEAF),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(26, MOVE_LEECH_SEED),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_TAKE_DOWN),
@@ -16653,6 +16871,7 @@ static const struct LevelUpMove sDrifloonLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(24, MOVE_SPIT_UP),
     LEVEL_UP_MOVE(24, MOVE_SWALLOW),
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_SELF_DESTRUCT),
     //Flannery Lv29
     //Norman Lv31
@@ -16687,6 +16906,7 @@ static const struct LevelUpMove sDrifblimLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_STOCKPILE),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(31, MOVE_SELF_DESTRUCT),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DESTINY_BOND),
@@ -16785,6 +17005,7 @@ static const struct LevelUpMove sGlameowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_RETALIATE),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SLASH),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(41, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(44, MOVE_ATTRACT),
     //Tate&Liza Lv45
@@ -16820,6 +17041,7 @@ static const struct LevelUpMove sPuruglyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_RETALIATE),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SLASH),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -16853,6 +17075,7 @@ static const struct LevelUpMove sStunkyLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_MEMENTO),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(36, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(39, MOVE_BELCH),
     LEVEL_UP_MOVE(42, MOVE_EXPLOSION),
@@ -16884,6 +17107,7 @@ static const struct LevelUpMove sSkuntankLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_MEMENTO),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(38, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(43, MOVE_BELCH),
     //Tate&Liza Lv45
@@ -16914,6 +17138,7 @@ static const struct LevelUpMove sBronzorLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_HEAVY_SLAM),
     //Winona Lv35
+    // >>> Evo Lv 33
     LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(40, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
@@ -16945,6 +17170,7 @@ static const struct LevelUpMove sBronzongLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_HEAVY_SLAM),
     //Winona Lv35
+    // >>> Evo Lv 33
     LEVEL_UP_MOVE(38, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(44, MOVE_METAL_SOUND),
     //Tate&Liza Lv45
@@ -17034,6 +17260,7 @@ static const struct LevelUpMove sGibleLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_BULLDOZE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(25, MOVE_BITE),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SLASH),
@@ -17061,6 +17288,7 @@ static const struct LevelUpMove sGabiteLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_BULLDOZE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(27, MOVE_BITE),
     //Flannery Lv29
     //Norman Lv31
@@ -17068,6 +17296,7 @@ static const struct LevelUpMove sGabiteLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_DRAGON_CLAW),
     //Tate&Liza Lv45
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(50, MOVE_DIG),
     //Juan Lv50
     //Sidney Lv54
@@ -17097,6 +17326,7 @@ static const struct LevelUpMove sGarchompLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DRAGON_CLAW),
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(52, MOVE_DIG),
     //Sidney Lv54
     //Drake Lv60
@@ -17200,6 +17430,7 @@ static const struct LevelUpMove sHippopotasLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_ROAR),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(36, MOVE_REST),
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
@@ -17233,6 +17464,7 @@ static const struct LevelUpMove sHippowdonLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_ROAR),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(38, MOVE_REST),
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
@@ -17270,6 +17502,7 @@ static const struct LevelUpMove sSkorupiLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(39, MOVE_CROSS_POISON),
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(42, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(45, MOVE_ACUPRESSURE),
     //Tate&Liza Lv45
@@ -17306,6 +17539,7 @@ static const struct LevelUpMove sDrapionLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(39, MOVE_CROSS_POISON),
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(44, MOVE_X_SCISSOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ACUPRESSURE),
@@ -17337,6 +17571,7 @@ static const struct LevelUpMove sCroagunkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_POISON_JAB),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TOXIC),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(40, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(44, MOVE_SLUDGE_BOMB),
     //Tate&Liza Lv45
@@ -17366,6 +17601,7 @@ static const struct LevelUpMove sToxicroakLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_POISON_JAB),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TOXIC),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SLUDGE_BOMB),
@@ -17423,6 +17659,7 @@ static const struct LevelUpMove sFinneonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_SAFEGUARD),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(33, MOVE_AQUA_RING),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_WHIRLPOOL),
@@ -17452,6 +17689,7 @@ static const struct LevelUpMove sLumineonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_SAFEGUARD),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(35, MOVE_AQUA_RING),
     //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_WHIRLPOOL),
@@ -17484,6 +17722,7 @@ static const struct LevelUpMove sSnoverLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_INGRAIN),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_WOOD_HAMMER),
     LEVEL_UP_MOVE(45, MOVE_BLIZZARD),
     //Tate&Liza Lv45
@@ -17513,6 +17752,7 @@ static const struct LevelUpMove sAbomasnowLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_INGRAIN),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_WOOD_HAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BLIZZARD),
@@ -18080,6 +18320,7 @@ static const struct LevelUpMove sSnivyLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_MAGICAL_LEAF),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(19, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(22, MOVE_MEGA_DRAIN),
     //Wattson Lv24
@@ -18109,6 +18350,7 @@ static const struct LevelUpMove sServineLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_MAGICAL_LEAF),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(20, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(24, MOVE_MEGA_DRAIN),
     //Wattson Lv24
@@ -18117,6 +18359,7 @@ static const struct LevelUpMove sServineLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_LEAF_BLADE),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(36, MOVE_COIL),
     LEVEL_UP_MOVE(40, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(44, MOVE_GASTRO_ACID),
@@ -18146,6 +18389,7 @@ static const struct LevelUpMove sSerperiorLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_LEAF_BLADE),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_COIL),
     LEVEL_UP_MOVE(44, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
@@ -18169,6 +18413,7 @@ static const struct LevelUpMove sTepigLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FLAME_CHARGE),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(19, MOVE_SMOG),
     LEVEL_UP_MOVE(21, MOVE_ROLLOUT),
     //Wattson Lv24
@@ -18200,6 +18445,7 @@ static const struct LevelUpMove sPigniteLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FLAME_CHARGE),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(20, MOVE_SMOG),
     LEVEL_UP_MOVE(23, MOVE_ROLLOUT),
     //Wattson Lv24
@@ -18208,6 +18454,7 @@ static const struct LevelUpMove sPigniteLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_HEAT_CRASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(36, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(39, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(44, MOVE_HEAD_SMASH),
@@ -18240,6 +18487,7 @@ static const struct LevelUpMove sEmboarLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_HEAT_CRASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(43, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
@@ -18263,6 +18511,7 @@ static const struct LevelUpMove sOshawottLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_FOCUS_ENERGY),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(17, MOVE_RAZOR_SHELL),
     LEVEL_UP_MOVE(19, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(23, MOVE_WATER_PULSE),
@@ -18293,6 +18542,7 @@ static const struct LevelUpMove sDewottLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_FOCUS_ENERGY),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(18, MOVE_RAZOR_SHELL),
     LEVEL_UP_MOVE(21, MOVE_FURY_CUTTER),
     //Wattson Lv24
@@ -18302,6 +18552,7 @@ static const struct LevelUpMove sDewottLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_AQUA_JET),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(37, MOVE_ENCORE),
     LEVEL_UP_MOVE(42, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(45, MOVE_RETALIATE),
@@ -18334,6 +18585,7 @@ static const struct LevelUpMove sSamurottLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_AQUA_JET),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(39, MOVE_ENCORE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_AQUA_TAIL),
@@ -18395,6 +18647,7 @@ static const struct LevelUpMove sPatratLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_CRUNCH),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_HYPNOSIS),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_SUPER_FANG),
     LEVEL_UP_MOVE(23, MOVE_AFTER_YOU),
     //Wattson Lv24
@@ -18433,6 +18686,7 @@ static const struct LevelUpMove sWatchogLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_CRUNCH),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_HYPNOSIS),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(22, MOVE_SUPER_FANG),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_AFTER_YOU),
@@ -18464,6 +18718,7 @@ static const struct LevelUpMove sLillipupLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_RETALIATE),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_BABY_DOLL_EYES),
     LEVEL_UP_MOVE(20, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(24, MOVE_CRUNCH),
@@ -18493,6 +18748,7 @@ static const struct LevelUpMove sHerdierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_RETALIATE),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_BABY_DOLL_EYES),
     LEVEL_UP_MOVE(24, MOVE_PLAY_ROUGH),
     //Wattson Lv24
@@ -18500,6 +18756,7 @@ static const struct LevelUpMove sHerdierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_CRUNCH),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(42, MOVE_HELPING_HAND),
     //Tate&Liza Lv45
@@ -18532,6 +18789,7 @@ static const struct LevelUpMove sStoutlandLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_CRUNCH),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(38, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HELPING_HAND),
@@ -18557,6 +18815,7 @@ static const struct LevelUpMove sPurrloinLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_TORMENT),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(24, MOVE_HONE_CLAWS),
     //Wattson Lv24
@@ -18584,6 +18843,7 @@ static const struct LevelUpMove sLiepardLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_TORMENT),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_ASSURANCE),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_HONE_CLAWS),
@@ -18833,6 +19093,7 @@ static const struct LevelUpMove sPidoveLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_AIR_CUTTER),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SWAGGER),
+    // >>> Evo Lv 21
     LEVEL_UP_MOVE(24, MOVE_FEATHER_DANCE),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_DETECT),
@@ -18862,9 +19123,11 @@ static const struct LevelUpMove sTranquillLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SWAGGER),
     //Wattson Lv24
+    // >>> Evo Lv 21
     LEVEL_UP_MOVE(26, MOVE_FEATHER_DANCE),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(34, MOVE_DETECT),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_AIR_SLASH),
@@ -18894,6 +19157,7 @@ static const struct LevelUpMove sUnfezantLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(36, MOVE_DETECT),
     LEVEL_UP_MOVE(42, MOVE_AIR_SLASH),
     //Tate&Liza Lv45
@@ -18921,6 +19185,7 @@ static const struct LevelUpMove sBlitzleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(22, MOVE_SPARK),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_STOMP),
+    // >>> Evo Lv 27
     LEVEL_UP_MOVE(29, MOVE_DISCHARGE),
     //Flannery Lv29
     //Norman Lv31
@@ -18949,6 +19214,7 @@ static const struct LevelUpMove sZebstrikaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_SPARK),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 27
     LEVEL_UP_MOVE(31, MOVE_STOMP),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DISCHARGE),
@@ -18977,6 +19243,7 @@ static const struct LevelUpMove sRoggenrolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(24, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_ROCK_SLIDE),
     //Flannery Lv29
     //Norman Lv31
@@ -19008,6 +19275,7 @@ static const struct LevelUpMove sBoldoreLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_HEADBUTT),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_ROCK_SLIDE),
     //Norman Lv31
     //Winona Lv35
@@ -19127,6 +19395,7 @@ static const struct LevelUpMove sDrilburLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_ROCK_SLIDE),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(32, MOVE_DIG),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SWORDS_DANCE),
@@ -19157,6 +19426,7 @@ static const struct LevelUpMove sExcadrillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_ROCK_SLIDE),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 31
     LEVEL_UP_MOVE(34, MOVE_DIG),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SWORDS_DANCE),
@@ -19219,6 +19489,7 @@ static const struct LevelUpMove sTimburrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_ROCK_SLIDE),
     LEVEL_UP_MOVE(24, MOVE_SLAM),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_SCARY_FACE),
     //Flannery Lv29
     //Norman Lv31
@@ -19249,6 +19520,7 @@ static const struct LevelUpMove sGurdurrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_SLAM),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_SCARY_FACE),
     //Norman Lv31
     //Winona Lv35
@@ -19308,6 +19580,7 @@ static const struct LevelUpMove sTympoleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(24, MOVE_FLAIL),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_UPROAR),
     //Flannery Lv29
     //Norman Lv31
@@ -19338,9 +19611,11 @@ static const struct LevelUpMove sPalpitoadLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_FLAIL),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_UPROAR),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(37, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(42, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
@@ -19373,6 +19648,7 @@ static const struct LevelUpMove sSeismitoadLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_UPROAR),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(39, MOVE_AQUA_RING),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HYPER_VOICE),
@@ -19455,6 +19731,7 @@ static const struct LevelUpMove sSewaddleLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_RAZOR_LEAF),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(22, MOVE_STRUGGLE_BUG),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_ENDURE),
@@ -19480,6 +19757,7 @@ static const struct LevelUpMove sSwadloonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BUG_BITE),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(22, MOVE_STRUGGLE_BUG),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_ENDURE),
@@ -19538,6 +19816,7 @@ static const struct LevelUpMove sVenipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_SCREECH),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_BUG_BITE),
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(24, MOVE_VENOSHOCK),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
@@ -19569,9 +19848,11 @@ static const struct LevelUpMove sWhirlipedeLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_BUG_BITE),
     //Wattson Lv24
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(26, MOVE_VENOSHOCK),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_TAKE_DOWN),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_AGILITY),
@@ -19602,6 +19883,7 @@ static const struct LevelUpMove sScolipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_VENOSHOCK),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_TAKE_DOWN),
     //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_AGILITY),
@@ -19913,6 +20195,7 @@ static const struct LevelUpMove sSandileLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_CRUNCH),
     //Flannery Lv29
+    // >>> Evo Lv 29
     LEVEL_UP_MOVE(30, MOVE_SANDSTORM),
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_FOUL_PLAY),
@@ -19944,9 +20227,11 @@ static const struct LevelUpMove sKrokorokLevelUpLearnset[] = {
     LEVEL_UP_MOVE(27, MOVE_CRUNCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 29
     LEVEL_UP_MOVE(32, MOVE_SANDSTORM),
     LEVEL_UP_MOVE(35, MOVE_FOUL_PLAY),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(42, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_THRASH),
@@ -19977,6 +20262,7 @@ static const struct LevelUpMove sKrookodileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_SANDSTORM),
     LEVEL_UP_MOVE(35, MOVE_FOUL_PLAY),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -20007,6 +20293,7 @@ static const struct LevelUpMove sDarumakaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_UPROAR),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_BELLY_DRUM),
     LEVEL_UP_MOVE(40, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE(44, MOVE_THRASH),
@@ -20168,6 +20455,7 @@ static const struct LevelUpMove sDwebbleLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_ROCK_BLAST),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(36, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(40, MOVE_ROCK_POLISH),
     LEVEL_UP_MOVE(44, MOVE_SHELL_SMASH),
@@ -20197,6 +20485,7 @@ static const struct LevelUpMove sCrustleLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_ROCK_BLAST),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(38, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(44, MOVE_ROCK_POLISH),
     //Tate&Liza Lv45
@@ -20229,6 +20518,7 @@ static const struct LevelUpMove sScraggyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_BRICK_BREAK),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SWAGGER),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(40, MOVE_CRUNCH),
     LEVEL_UP_MOVE(44, MOVE_HIGH_JUMP_KICK),
     //Tate&Liza Lv45
@@ -20259,6 +20549,7 @@ static const struct LevelUpMove sScraftyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_BRICK_BREAK),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SWAGGER),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HIGH_JUMP_KICK),
@@ -20322,6 +20613,7 @@ static const struct LevelUpMove sYamaskLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_GRUDGE),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(36, MOVE_CURSE),
     LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(44, MOVE_DARK_PULSE),
@@ -20356,6 +20648,7 @@ static const struct LevelUpMove sCofagrigusLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_GRUDGE),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(38, MOVE_CURSE),
     LEVEL_UP_MOVE(44, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
@@ -20460,6 +20753,7 @@ static const struct LevelUpMove sTirtougaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_IRON_DEFENSE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_AQUA_TAIL),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(39, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(42, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(45, MOVE_SHELL_SMASH),
@@ -20492,6 +20786,7 @@ static const struct LevelUpMove sCarracostaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_IRON_DEFENSE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_AQUA_TAIL),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(41, MOVE_RAIN_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HYDRO_PUMP),
@@ -20526,6 +20821,7 @@ static const struct LevelUpMove sArchenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_AGILITY),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TAILWIND),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(39, MOVE_DRAGON_CLAW),
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     LEVEL_UP_MOVE(45, MOVE_ENDEAVOR),
@@ -20558,6 +20854,7 @@ static const struct LevelUpMove sArcheopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_AGILITY),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TAILWIND),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(41, MOVE_DRAGON_CLAW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_THRASH),
@@ -20592,6 +20889,7 @@ static const struct LevelUpMove sTrubbishLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_BELCH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(37, MOVE_PAIN_SPLIT),
     LEVEL_UP_MOVE(39, MOVE_GUNK_SHOT),
     LEVEL_UP_MOVE(42, MOVE_EXPLOSION),
@@ -20626,6 +20924,7 @@ static const struct LevelUpMove sGarbodorLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_BELCH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(39, MOVE_PAIN_SPLIT),
     LEVEL_UP_MOVE(43, MOVE_GUNK_SHOT),
     //Tate&Liza Lv45
@@ -20654,6 +20953,7 @@ static const struct LevelUpMove sZoruaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_FAKE_TEARS),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_AGILITY),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_IMPRISON),
@@ -20684,6 +20984,7 @@ static const struct LevelUpMove sZoroarkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_FAKE_TEARS),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_AGILITY),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_IMPRISON),
@@ -20713,6 +21014,7 @@ static const struct LevelUpMove sZoruaHisuiLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_AGILITY),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SHADOW_BALL),
@@ -20744,6 +21046,7 @@ static const struct LevelUpMove sZoroarkHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_SPITE),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_AGILITY),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
@@ -20838,6 +21141,7 @@ static const struct LevelUpMove sGothitaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_FAKE_TEARS),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(33, MOVE_PSYCH_UP),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PSYCHIC),
@@ -20867,9 +21171,11 @@ static const struct LevelUpMove sGothoritaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_FAKE_TEARS),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_PSYCH_UP),
     //Winona Lv35
     //Tate&Liza Lv45
+    // >>> Evo Lv 41
     LEVEL_UP_MOVE(46, MOVE_FLATTER),
     //Juan Lv50
     LEVEL_UP_MOVE(52, MOVE_FUTURE_SIGHT),
@@ -20899,6 +21205,7 @@ static const struct LevelUpMove sGothitelleLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC),
     //Tate&Liza Lv45
+    // >>> Evo Lv 41
     LEVEL_UP_MOVE(48, MOVE_FLATTER),
     //Juan Lv50
     //Sidney Lv54
@@ -20927,6 +21234,7 @@ static const struct LevelUpMove sSolosisLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_ALLY_SWITCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(33, MOVE_PAIN_SPLIT),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PSYCHIC),
@@ -20957,10 +21265,12 @@ static const struct LevelUpMove sDuosionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_ALLY_SWITCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_PAIN_SPLIT),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC),
     //Tate&Liza Lv45
+    // >>> Evo Lv 41
     LEVEL_UP_MOVE(46, MOVE_SKILL_SWAP),
     //Juan Lv50
     LEVEL_UP_MOVE(52, MOVE_FUTURE_SIGHT),
@@ -20992,6 +21302,7 @@ static const struct LevelUpMove sReuniclusLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC),
     //Tate&Liza Lv45
+    // >>> Evo Lv 41
     LEVEL_UP_MOVE(48, MOVE_SKILL_SWAP),
     //Juan Lv50
     //Sidney Lv54
@@ -21022,6 +21333,7 @@ static const struct LevelUpMove sDucklettLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_RAIN_DANCE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(37, MOVE_TAILWIND),
     LEVEL_UP_MOVE(41, MOVE_BRAVE_BIRD),
     //Tate&Liza Lv45
@@ -21051,6 +21363,7 @@ static const struct LevelUpMove sSwannaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_RAIN_DANCE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(40, MOVE_TAILWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_BRAVE_BIRD),
@@ -21081,6 +21394,7 @@ static const struct LevelUpMove sVanilliteLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_ACID_ARMOR),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE(40, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(44, MOVE_BLIZZARD),
@@ -21110,9 +21424,11 @@ static const struct LevelUpMove sVanillishLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_ACID_ARMOR),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE(44, MOVE_ICE_BEAM),
     //Tate&Liza Lv45
+    // >>> Evo Lv 47
     LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
     //Juan Lv50
     //Sidney Lv54
@@ -21146,6 +21462,7 @@ static const struct LevelUpMove sVanilluxeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ICE_BEAM),
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 47
     LEVEL_UP_MOVE(52, MOVE_BLIZZARD),
     //Sidney Lv54
     //Drake Lv60
@@ -21329,6 +21646,7 @@ static const struct LevelUpMove sFoongusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_INGRAIN),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TOXIC),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(40, MOVE_RAGE_POWDER),
     LEVEL_UP_MOVE(44, MOVE_SOLAR_BEAM),
     //Tate&Liza Lv45
@@ -21358,6 +21676,7 @@ static const struct LevelUpMove sAmoongussLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_INGRAIN),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TOXIC),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(42, MOVE_RAGE_POWDER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOLAR_BEAM),
@@ -21389,6 +21708,7 @@ static const struct LevelUpMove sFrillishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_SHADOW_BALL),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_WHIRLPOOL),
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(44, MOVE_DESTINY_BOND),
     //Tate&Liza Lv45
@@ -21419,6 +21739,7 @@ static const struct LevelUpMove sJellicentLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_SHADOW_BALL),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_WHIRLPOOL),
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DESTINY_BOND),
@@ -21481,6 +21802,7 @@ static const struct LevelUpMove sJoltikLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_SLASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(37, MOVE_DISCHARGE),
     LEVEL_UP_MOVE(40, MOVE_SCREECH),
     LEVEL_UP_MOVE(44, MOVE_GASTRO_ACID),
@@ -21511,6 +21833,7 @@ static const struct LevelUpMove sGalvantulaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_SLASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(39, MOVE_DISCHARGE),
     LEVEL_UP_MOVE(44, MOVE_SCREECH),
     //Tate&Liza Lv45
@@ -21541,6 +21864,7 @@ static const struct LevelUpMove sFerroseedLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_IRON_DEFENSE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_CURSE),
     LEVEL_UP_MOVE(45, MOVE_GYRO_BALL),
     //Tate&Liza Lv45
@@ -21570,6 +21894,7 @@ static const struct LevelUpMove sFerrothornLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_IRON_DEFENSE),
     //Winona Lv35
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_CURSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_GYRO_BALL),
@@ -21601,6 +21926,7 @@ static const struct LevelUpMove sKlinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_GEAR_GRIND),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_LOCK_ON),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_SHIFT_GEAR),
     LEVEL_UP_MOVE(44, MOVE_ZAP_CANNON),
     //Tate&Liza Lv45
@@ -21630,11 +21956,13 @@ static const struct LevelUpMove sKlangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_GEAR_GRIND),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_LOCK_ON),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(42, MOVE_SHIFT_GEAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ZAP_CANNON),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 49
     LEVEL_UP_MOVE(54, MOVE_HYPER_BEAM),
     //Drake Lv60
     //Steven Lv63
@@ -21666,6 +21994,7 @@ static const struct LevelUpMove sKlinklangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_ZAP_CANNON),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 49
     LEVEL_UP_MOVE(56, MOVE_HYPER_BEAM),
     //Drake Lv60
     //Steven Lv63
@@ -21692,6 +22021,7 @@ static const struct LevelUpMove sTynamoLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 39
 };
 
 static const struct LevelUpMove sEelektrikLevelUpLearnset[] = {
@@ -21709,6 +22039,7 @@ static const struct LevelUpMove sEelektrikLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(44, MOVE_THUNDERBOLT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ACID_SPRAY),
@@ -21767,6 +22098,7 @@ static const struct LevelUpMove sElgyemLevelUpLearnset[] = {
     //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ZEN_HEADBUTT),
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(43, MOVE_RECOVER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CALM_MIND),
@@ -21796,6 +22128,7 @@ static const struct LevelUpMove sBeheeyemLevelUpLearnset[] = {
     //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ZEN_HEADBUTT),
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(45, MOVE_RECOVER),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -21829,6 +22162,7 @@ static const struct LevelUpMove sLitwickLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(40, MOVE_INFERNO),
+    // >>> Evo Lv 41
     LEVEL_UP_MOVE(44, MOVE_IMPRISON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PAIN_SPLIT),
@@ -21861,6 +22195,7 @@ static const struct LevelUpMove sLampentLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(40, MOVE_INFERNO),
     //Tate&Liza Lv45
+    // >>> Evo Lv 41
     LEVEL_UP_MOVE(46, MOVE_IMPRISON),
     //Juan Lv50
     LEVEL_UP_MOVE(52, MOVE_PAIN_SPLIT),
@@ -21926,6 +22261,7 @@ static const struct LevelUpMove sAxewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_FOCUS_ENERGY),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DRAGON_PULSE),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(39, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(42, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(45, MOVE_GUILLOTINE),
@@ -21959,10 +22295,12 @@ static const struct LevelUpMove sFraxureLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_FOCUS_ENERGY),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DRAGON_PULSE),
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(41, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_OUTRAGE),
     //Juan Lv50
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(51, MOVE_GUILLOTINE),
     //Sidney Lv54
     LEVEL_UP_MOVE(56, MOVE_GIGA_IMPACT),
@@ -21996,6 +22334,7 @@ static const struct LevelUpMove sHaxorusLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_OUTRAGE),
     //Juan Lv50
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(53, MOVE_GUILLOTINE),
     //Sidney Lv54
     //Drake Lv60
@@ -22027,6 +22366,7 @@ static const struct LevelUpMove sCubchooLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_THRASH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_REST),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(39, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(42, MOVE_SHEER_COLD),
     //Tate&Liza Lv45
@@ -22061,6 +22401,7 @@ static const struct LevelUpMove sBearticLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_THRASH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_REST),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(41, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SHEER_COLD),
@@ -22262,6 +22603,7 @@ static const struct LevelUpMove sMienfooLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AURA_SPHERE),
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(51, MOVE_BOUNCE),
     //Sidney Lv54
     LEVEL_UP_MOVE(55, MOVE_CALM_MIND),
@@ -22292,6 +22634,7 @@ static const struct LevelUpMove sMienshaoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AURA_SPHERE),
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(53, MOVE_BOUNCE),
     //Sidney Lv54
     LEVEL_UP_MOVE(59, MOVE_CALM_MIND),
@@ -22352,6 +22695,7 @@ static const struct LevelUpMove sGolettLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(40, MOVE_HEAVY_SLAM),
+    // >>> Evo Lv 43
     LEVEL_UP_MOVE(44, MOVE_PHANTOM_FORCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HAMMER_ARM),
@@ -22386,6 +22730,7 @@ static const struct LevelUpMove sGolurkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(40, MOVE_HEAVY_SLAM),
     //Tate&Liza Lv45
+    // >>> Evo Lv 43
     LEVEL_UP_MOVE(46, MOVE_PHANTOM_FORCE),
     //Juan Lv50
     LEVEL_UP_MOVE(52, MOVE_HAMMER_ARM),
@@ -22421,6 +22766,7 @@ static const struct LevelUpMove sPawniardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_RETALIATE),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 52
     LEVEL_UP_MOVE(55, MOVE_IRON_HEAD),
     //Drake Lv60
     LEVEL_UP_MOVE(60, MOVE_SWORDS_DANCE),
@@ -22452,6 +22798,7 @@ static const struct LevelUpMove sBisharpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_RETALIATE),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 52
     LEVEL_UP_MOVE(57, MOVE_IRON_HEAD),
     //Drake Lv60
     //Steven Lv63
@@ -22546,6 +22893,7 @@ static const struct LevelUpMove sRuffletLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_CRUSH_CLAW),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 54
     LEVEL_UP_MOVE(55, MOVE_AIR_SLASH),
     //Drake Lv60
     LEVEL_UP_MOVE(60, MOVE_DEFOG),
@@ -22577,6 +22925,7 @@ static const struct LevelUpMove sBraviaryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_CRUSH_CLAW),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 54
     LEVEL_UP_MOVE(57, MOVE_AIR_SLASH),
     //Drake Lv60
     //Steven Lv63
@@ -22641,6 +22990,7 @@ static const struct LevelUpMove sVullabyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_DARK_PULSE),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 54
     LEVEL_UP_MOVE(54, MOVE_NASTY_PLOT),
     //Drake Lv60
     LEVEL_UP_MOVE(60, MOVE_DEFOG),
@@ -22673,6 +23023,7 @@ static const struct LevelUpMove sMandibuzzLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_DARK_PULSE),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 54
     LEVEL_UP_MOVE(57, MOVE_NASTY_PLOT),
     //Drake Lv60
     //Steven Lv63
@@ -22775,6 +23126,7 @@ static const struct LevelUpMove sDeinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_HYPER_VOICE),
     //Evolution at 50
     //Juan Lv50
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(52, MOVE_DRAGON_RUSH),
     //Sidney Lv54
     LEVEL_UP_MOVE(56, MOVE_NASTY_PLOT),
@@ -22810,11 +23162,13 @@ static const struct LevelUpMove sZweilousLevelUpLearnset[] = {
     //Evolution at 50
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(54, MOVE_DRAGON_RUSH),
     //Drake Lv60
     LEVEL_UP_MOVE(60, MOVE_NASTY_PLOT),
     //Evolution at 64
     //Steven Lv63
+    // >>> Evo Lv 64
     LEVEL_UP_MOVE(66, MOVE_OUTRAGE),
     LEVEL_UP_END
 };
@@ -22849,6 +23203,7 @@ static const struct LevelUpMove sHydreigonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_NASTY_PLOT),
     //Evolution at 64
     //Steven Lv63
+    // >>> Evo Lv 64
     LEVEL_UP_MOVE(68, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(76, MOVE_DRACO_METEOR),
     LEVEL_UP_END
@@ -22879,6 +23234,7 @@ static const struct LevelUpMove sLarvestaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_AMNESIA),
     //Evolution at 59
     //Drake Lv60
+    // >>> Evo Lv 59
     LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
     //Steven Lv63
     LEVEL_UP_MOVE(66, MOVE_FLARE_BLITZ),
@@ -22916,6 +23272,7 @@ static const struct LevelUpMove sVolcaronaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_AMNESIA),
     //Evolution at 59
     //Drake Lv60
+    // >>> Evo Lv 59
     LEVEL_UP_MOVE(62, MOVE_HURRICANE),
     //Steven Lv63
     LEVEL_UP_MOVE(70, MOVE_FIRE_BLAST),
@@ -23385,6 +23742,7 @@ static const struct LevelUpMove sChespinLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_LEECH_SEED),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_PIN_MISSILE),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_TAKE_DOWN),
@@ -23412,6 +23770,7 @@ static const struct LevelUpMove sQuilladinLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_LEECH_SEED),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_SEED_BOMB),
     LEVEL_UP_MOVE(24, MOVE_PIN_MISSILE),
     //Wattson Lv24
@@ -23420,6 +23779,7 @@ static const struct LevelUpMove sQuilladinLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_MUD_SHOT),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_BULK_UP),
     LEVEL_UP_MOVE(43, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
@@ -23451,6 +23811,7 @@ static const struct LevelUpMove sChesnaughtLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SEED_BOMB),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(41, MOVE_MUD_SHOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BULK_UP),
@@ -23475,6 +23836,7 @@ static const struct LevelUpMove sFennekinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_FLAME_CHARGE),
     //Roxanne
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(20, MOVE_FIRE_SPIN),
     //Wattson Lv24
@@ -23504,6 +23866,7 @@ static const struct LevelUpMove sBraixenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_FLAME_CHARGE),
     //Roxanne
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(22, MOVE_FIRE_SPIN),
     //Wattson Lv24
@@ -23511,6 +23874,7 @@ static const struct LevelUpMove sBraixenLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(36, MOVE_PSYSHOCK),
     LEVEL_UP_MOVE(41, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(45, MOVE_WILL_O_WISP),
@@ -23546,6 +23910,7 @@ static const struct LevelUpMove sDelphoxLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_PSYSHOCK),
     LEVEL_UP_MOVE(45, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
@@ -23572,6 +23937,7 @@ static const struct LevelUpMove sFroakieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
     //Roxanne
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE(21, MOVE_ROUND),
     //Wattson Lv24
@@ -23601,6 +23967,7 @@ static const struct LevelUpMove sFrogadierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
     //Roxanne
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE(23, MOVE_ROUND),
     //Wattson Lv24
@@ -23609,6 +23976,7 @@ static const struct LevelUpMove sFrogadierLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_SMACK_DOWN),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(40, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE(45, MOVE_BOUNCE),
     //Tate&Liza Lv45
@@ -23642,6 +24010,7 @@ static const struct LevelUpMove sGreninjaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_AERIAL_ACE),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(42, MOVE_SUBSTITUTE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_EXTRASENSORY),
@@ -23667,6 +24036,7 @@ static const struct LevelUpMove sBunnelbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_FLAIL),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_DOUBLE_KICK),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_BULLDOZE),
     LEVEL_UP_MOVE(24, MOVE_DIG),
     //Wattson Lv24
@@ -23697,6 +24067,7 @@ static const struct LevelUpMove sDiggersbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_FLAIL),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_DOUBLE_KICK),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_BULLDOZE),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_DIG),
@@ -23727,6 +24098,7 @@ static const struct LevelUpMove sFletchlingLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FLAIL),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(20, MOVE_ACROBATICS),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_AGILITY),
@@ -23756,12 +24128,14 @@ static const struct LevelUpMove sFletchinderLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FLAIL),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(22, MOVE_ACROBATICS),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_AGILITY),
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(43, MOVE_TAILWIND),
     //Tate&Liza Lv45
@@ -23784,6 +24158,7 @@ static const struct LevelUpMove sTalonflameLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE( 1, MOVE_FLAME_CHARGE),
     //Roxanne Lv14
+    // >>> Evo Lv 9
     LEVEL_UP_MOVE(15, MOVE_FLAIL),
     //Brawly Lv16
     LEVEL_UP_MOVE(22, MOVE_ACROBATICS),
@@ -23792,6 +24167,7 @@ static const struct LevelUpMove sTalonflameLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_AERIAL_ACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_TAILWIND),
@@ -23842,6 +24218,7 @@ static const struct LevelUpMove sSpewpaLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 9
 };
 
 static const struct LevelUpMove sVivillonLevelUpLearnset[] = {
@@ -23850,6 +24227,7 @@ static const struct LevelUpMove sVivillonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE( 1, MOVE_SLEEP_POWDER),
     LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
+    // >>> Evo Lv 12
     LEVEL_UP_MOVE(12, MOVE_LIGHT_SCREEN),
     //Roxanne Lv14
     //Brawly Lv16
@@ -23891,6 +24269,7 @@ static const struct LevelUpMove sLitleoLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_ECHOED_VOICE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(39, MOVE_CRUNCH),
     LEVEL_UP_MOVE(43, MOVE_HYPER_VOICE),
@@ -23922,6 +24301,7 @@ static const struct LevelUpMove sPyroarLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_ECHOED_VOICE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
@@ -23974,6 +24354,7 @@ static const struct LevelUpMove sFloetteLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_RAZOR_LEAF),
     //Brawly Lv16
+    // >>> Evo Lv 19
     LEVEL_UP_MOVE(20, MOVE_WISH),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_MAGICAL_LEAF),
@@ -24071,6 +24452,7 @@ static const struct LevelUpMove sSkiddoLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SEED_BOMB),
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(34, MOVE_BULK_UP),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_DOUBLE_EDGE),
@@ -24103,6 +24485,7 @@ static const struct LevelUpMove sGogoatLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SEED_BOMB),
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(34, MOVE_BULK_UP),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
@@ -24134,6 +24517,7 @@ static const struct LevelUpMove sPanchamLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_VITAL_THROW),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(33, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
@@ -24165,6 +24549,7 @@ static const struct LevelUpMove sPangoroLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_VITAL_THROW),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
@@ -24223,6 +24608,7 @@ static const struct LevelUpMove sEspurrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_LIGHT_SCREEN),
     LEVEL_UP_MOVE(30, MOVE_REFLECT),
     //Norman Lv31
@@ -24251,6 +24637,7 @@ static const struct LevelUpMove sMeowsticMLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(24, MOVE_SUCKER_PUNCH),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(29, MOVE_ROLE_PLAY),
     //Flannery Lv29
     //Norman Lv31
@@ -24323,6 +24710,7 @@ static const struct LevelUpMove sHonedgeLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_IRON_DEFENSE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(40, MOVE_POWER_TRICK),
     LEVEL_UP_MOVE(44, MOVE_SWORDS_DANCE),
@@ -24352,6 +24740,7 @@ static const struct LevelUpMove sDoubladeLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_IRON_DEFENSE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(44, MOVE_POWER_TRICK),
     //Tate&Liza Lv45
@@ -24542,6 +24931,7 @@ static const struct LevelUpMove sInkayLevelUpLearnset[] = {
     LEVEL_UP_MOVE(27, MOVE_PSYCHO_CUT),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(31, MOVE_SWITCHEROO),
     LEVEL_UP_MOVE(33, MOVE_FOUL_PLAY),
     //Winona Lv35
@@ -24573,6 +24963,7 @@ static const struct LevelUpMove sMalamarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(27, MOVE_PSYCHO_CUT),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(33, MOVE_SWITCHEROO),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_FOUL_PLAY),
@@ -24606,6 +24997,7 @@ static const struct LevelUpMove sBinacleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_HONE_CLAWS),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_RAZOR_SHELL),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(40, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE(44, MOVE_CROSS_CHOP),
     //Tate&Liza Lv45
@@ -24635,6 +25027,7 @@ static const struct LevelUpMove sBarbaracleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_HONE_CLAWS),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_RAZOR_SHELL),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(42, MOVE_SHELL_SMASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CROSS_CHOP),
@@ -24667,6 +25060,7 @@ static const struct LevelUpMove sSkrelpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(45, MOVE_AQUA_TAIL),
     //Tate&Liza Lv45
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(50, MOVE_SLUDGE_BOMB),
     //Juan Lv50
     //Sidney Lv54
@@ -24696,6 +25090,7 @@ static const struct LevelUpMove sDragalgeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AQUA_TAIL),
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(52, MOVE_SLUDGE_BOMB),
     //Sidney Lv54
     LEVEL_UP_MOVE(59, MOVE_HYDRO_PUMP),
@@ -24723,6 +25118,7 @@ static const struct LevelUpMove sClauncherLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SWORDS_DANCE),
     //Winona Lv35
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(40, MOVE_AURA_SPHERE),
     LEVEL_UP_MOVE(45, MOVE_BOUNCE),
     //Tate&Liza Lv45
@@ -24754,6 +25150,7 @@ static const struct LevelUpMove sClawitzerLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SWORDS_DANCE),
     //Winona Lv35
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(42, MOVE_AURA_SPHERE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BOUNCE),
@@ -24846,6 +25243,7 @@ static const struct LevelUpMove sTyruntLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DRAGON_CLAW),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(40, MOVE_THRASH),
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
@@ -24875,6 +25273,7 @@ static const struct LevelUpMove sTyrantrumLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DRAGON_CLAW),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
@@ -24908,6 +25307,7 @@ static const struct LevelUpMove sAmauraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_NATURE_POWER),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_FREEZE_DRY),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(40, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(44, MOVE_LIGHT_SCREEN),
     //Tate&Liza Lv45
@@ -24939,6 +25339,7 @@ static const struct LevelUpMove sAurorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_NATURE_POWER),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_FREEZE_DRY),
+    // >>> Evo Lv 39
     LEVEL_UP_MOVE(42, MOVE_ICE_BEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LIGHT_SCREEN),
@@ -25067,6 +25468,7 @@ static const struct LevelUpMove sGoomyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_DRAGON_PULSE),
     //Winona Lv35
     //Evolves at 40
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_CURSE),
     LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
@@ -25097,12 +25499,14 @@ static const struct LevelUpMove sSliggooLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_DRAGON_PULSE),
     //Winona Lv35
     //Evolves at 40
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(43, MOVE_CURSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BODY_SLAM),
     //Evolves at 50 in Rain
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(56, MOVE_MUDDY_WATER),
     //Drake Lv60
     //Steven Lv63
@@ -25137,6 +25541,7 @@ static const struct LevelUpMove sGoodraLevelUpLearnset[] = {
     //Evolves at 50 in Rain
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(58, MOVE_MUDDY_WATER),
     //Drake Lv60
     //Steven Lv63
@@ -25169,6 +25574,7 @@ static const struct LevelUpMove sSliggooHisuiLevelUpLearnset[] = {
     //Evolves at 50 in Rain
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(56, MOVE_MUDDY_WATER),
     //Drake Lv60
     //Steven Lv63
@@ -25203,6 +25609,7 @@ static const struct LevelUpMove sGoodraHisuiLevelUpLearnset[] = {
     //Evolves at 50 in Rain
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(58, MOVE_MUDDY_WATER),
     //Drake Lv60
     //Steven Lv63
@@ -25391,6 +25798,7 @@ static const struct LevelUpMove sBergmiteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(39, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
@@ -25424,6 +25832,7 @@ static const struct LevelUpMove sAvaluggLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
+    // >>> Evo Lv 37
     LEVEL_UP_MOVE(41, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_DOUBLE_EDGE),
@@ -25495,6 +25904,7 @@ static const struct LevelUpMove sNoibatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SCREECH),
     LEVEL_UP_MOVE(44, MOVE_ROOST),
     //Tate&Liza Lv45
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(49, MOVE_TAILWIND),
     //Juan Lv50
     LEVEL_UP_MOVE(52, MOVE_HURRICANE),
@@ -25528,6 +25938,7 @@ static const struct LevelUpMove sNoivernLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ROOST),
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 48
     LEVEL_UP_MOVE(51, MOVE_TAILWIND),
     //Sidney Lv54
     LEVEL_UP_MOVE(56, MOVE_HURRICANE),
@@ -25789,6 +26200,7 @@ static const struct LevelUpMove sRowletLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_RAZOR_LEAF),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(18, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(21, MOVE_PLUCK),
     LEVEL_UP_MOVE(24, MOVE_NASTY_PLOT),
@@ -25818,12 +26230,14 @@ static const struct LevelUpMove sDartrixLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_RAZOR_LEAF),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(20, MOVE_SYNTHESIS),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_PLUCK),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_NASTY_PLOT),
     //Norman Lv31
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(35, MOVE_SUCKER_PUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_LEAF_BLADE),
@@ -25859,6 +26273,7 @@ static const struct LevelUpMove sDecidueyeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_NASTY_PLOT),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(37, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
     //Tate&Liza Lv45
@@ -25916,6 +26331,7 @@ static const struct LevelUpMove sLittenLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BITE),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(18, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE(21, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(24, MOVE_SCARY_FACE),
@@ -25945,12 +26361,14 @@ static const struct LevelUpMove sTorracatLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BITE),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(20, MOVE_DOUBLE_KICK),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_FIRE_FANG),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SCARY_FACE),
     //Norman Lv31
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(35, MOVE_SWAGGER),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
@@ -25986,6 +26404,7 @@ static const struct LevelUpMove sIncineroarLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_SWAGGER),
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(44, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -26009,6 +26428,7 @@ static const struct LevelUpMove sPopplioLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_ICY_WIND),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(18, MOVE_SING),
     LEVEL_UP_MOVE(21, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(24, MOVE_ENCORE),
@@ -26038,12 +26458,14 @@ static const struct LevelUpMove sBrionneLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_ICY_WIND),
     //Brawly Lv16
+    // >>> Evo Lv 17
     LEVEL_UP_MOVE(20, MOVE_SING),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_BUBBLE_BEAM),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_ENCORE),
     //Norman Lv31
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(35, MOVE_MISTY_TERRAIN),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_HYPER_VOICE),
@@ -26075,6 +26497,7 @@ static const struct LevelUpMove sPrimarinaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_ENCORE),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(37, MOVE_MISTY_TERRAIN),
     LEVEL_UP_MOVE(44, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
@@ -26096,6 +26519,7 @@ static const struct LevelUpMove sPikipekLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE(13, MOVE_SUPERSONIC),
     //Roxanne Lv14
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(15, MOVE_PLUCK),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_ROOST),
@@ -26125,11 +26549,13 @@ static const struct LevelUpMove sTrumbeakLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ROCK_BLAST),
     LEVEL_UP_MOVE(13, MOVE_SUPERSONIC),
     //Roxanne Lv14
+    // >>> Evo Lv 14
     LEVEL_UP_MOVE(16, MOVE_PLUCK),
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_ROOST),
     LEVEL_UP_MOVE(24, MOVE_FURY_ATTACK),
     //Wattson Lv24
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_SCREECH),
     //Flannery Lv29
     //Norman Lv31
@@ -26161,6 +26587,7 @@ static const struct LevelUpMove sToucannonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_FURY_ATTACK),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(30, MOVE_SCREECH),
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_DRILL_PECK),
@@ -26187,6 +26614,7 @@ static const struct LevelUpMove sYungoosLevelUpLearnset[] = {
     //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_BITE),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(22, MOVE_MUD_SLAP),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_SUPER_FANG),
@@ -26216,6 +26644,7 @@ static const struct LevelUpMove sGumshoosLevelUpLearnset[] = {
     //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_BITE),
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_MUD_SLAP),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_SUPER_FANG),
@@ -26246,6 +26675,7 @@ static const struct LevelUpMove sGrubbinLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BITE),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_SPARK),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_STICKY_WEB),
@@ -26272,6 +26702,7 @@ static const struct LevelUpMove sCharjabugLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BITE),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_SPARK),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_STICKY_WEB),
@@ -26428,6 +26859,7 @@ static const struct LevelUpMove sCutieflyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_STRUGGLE_BUG),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_COVET),
     //Norman Lv31
     //Winona Lv35
@@ -26456,6 +26888,7 @@ static const struct LevelUpMove sRibombeeLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(32, MOVE_COVET),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SWITCHEROO),
@@ -26484,6 +26917,7 @@ static const struct LevelUpMove sRockruffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_BITE),
     LEVEL_UP_MOVE(24, MOVE_ROCK_TOMB),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_ROAR),
     //Flannery Lv29
     //Norman Lv31
@@ -26518,6 +26952,7 @@ static const struct LevelUpMove sLycanrocMiddayLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_ROCK_TOMB),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_ROAR),
     //Norman Lv31
     //Winona Lv35
@@ -26589,6 +27024,7 @@ static const struct LevelUpMove sLycanrocDuskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_ROCK_TOMB),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_ROAR),
     //Norman Lv31
     //Winona Lv35
@@ -26654,6 +27090,7 @@ static const struct LevelUpMove sMareanieLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_LIQUIDATION),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_ACID_SPRAY),
     LEVEL_UP_MOVE(45, MOVE_POISON_JAB),
     //Tate&Liza Lv45
@@ -26682,6 +27119,7 @@ static const struct LevelUpMove sToxapexLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_LIQUIDATION),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(42, MOVE_ACID_SPRAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_POISON_JAB),
@@ -26710,6 +27148,7 @@ static const struct LevelUpMove sMudbrayLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_HIGH_HORSEPOWER),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_HEAVY_SLAM),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_EARTHQUAKE),
@@ -26738,6 +27177,7 @@ static const struct LevelUpMove sMudsdaleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_HIGH_HORSEPOWER),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_HEAVY_SLAM),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
@@ -26763,6 +27203,7 @@ static const struct LevelUpMove sDewpiderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_AQUA_RING),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_HEADBUTT),
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(24, MOVE_CRUNCH),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SOAK),
@@ -26794,6 +27235,7 @@ static const struct LevelUpMove sAraquanidLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(26, MOVE_CRUNCH),
     //Flannery Lv29
     //Norman Lv31
@@ -26828,6 +27270,7 @@ static const struct LevelUpMove sFomantisLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_X_SCISSOR),
     //Norman Lv31
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(35, MOVE_SYNTHESIS),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_LEAF_BLADE),
@@ -26859,6 +27302,7 @@ static const struct LevelUpMove sLurantisLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_X_SCISSOR),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(37, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
     //Tate&Liza Lv45
@@ -26884,6 +27328,7 @@ static const struct LevelUpMove sMorelullLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_MOONLIGHT),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(25, MOVE_STRENGTH_SAP),
     LEVEL_UP_MOVE(28, MOVE_GIGA_DRAIN),
     //Flannery Lv29
@@ -26912,6 +27357,7 @@ static const struct LevelUpMove sShiinoticLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_MOONLIGHT),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(27, MOVE_STRENGTH_SAP),
     //Flannery Lv29
     //Norman Lv31
@@ -26945,6 +27391,7 @@ static const struct LevelUpMove sSalanditLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_INCINERATE),
     //Norman Lv31
+    // >>> Evo Lv 33
     LEVEL_UP_MOVE(35, MOVE_VENOSHOCK),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_DRAGON_PULSE),
@@ -26982,6 +27429,7 @@ static const struct LevelUpMove sSalazzleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_INCINERATE),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 33
     LEVEL_UP_MOVE(37, MOVE_VENOSHOCK),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
@@ -27008,6 +27456,7 @@ static const struct LevelUpMove sStuffulLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_STRENGTH),
     LEVEL_UP_MOVE(24, MOVE_TAKE_DOWN),
     //Wattson Lv24
+    // >>> Evo Lv 27
     LEVEL_UP_MOVE(28, MOVE_FLAIL),
     //Flannery Lv29
     //Norman Lv31
@@ -27040,6 +27489,7 @@ static const struct LevelUpMove sBewearLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_TAKE_DOWN),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 27
     LEVEL_UP_MOVE(30, MOVE_FLAIL),
     //Norman Lv31
     //Winona Lv35
@@ -27066,6 +27516,7 @@ static const struct LevelUpMove sBounsweetLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_SWEET_SCENT),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(20, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE(24, MOVE_FLAIL),
     //Wattson Lv24
@@ -27091,6 +27542,7 @@ static const struct LevelUpMove sSteeneeLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_SWEET_SCENT),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(22, MOVE_MAGICAL_LEAF),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_STOMP),
@@ -27253,6 +27705,7 @@ static const struct LevelUpMove sWimpodLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 30
 };
 
 static const struct LevelUpMove sGolisopodLevelUpLearnset[] = {
@@ -27274,6 +27727,7 @@ static const struct LevelUpMove sGolisopodLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_SLASH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_RAZOR_SHELL),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PIN_MISSILE),
@@ -27306,6 +27760,7 @@ static const struct LevelUpMove sSandygastLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_GIGA_DRAIN),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_IRON_DEFENSE),
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(45, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
@@ -27336,6 +27791,7 @@ static const struct LevelUpMove sPalossandLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_IRON_DEFENSE),
     //Tate&Liza Lv45
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(47, MOVE_SHADOW_BALL),
     //Juan Lv50
     //Sidney Lv54
@@ -27717,6 +28173,7 @@ static const struct LevelUpMove sJangmoOLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_DRAGON_CLAW),
     //Evo
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_ROAR),
     LEVEL_UP_MOVE(40, MOVE_DRAGON_DANCE),
     LEVEL_UP_MOVE(44, MOVE_OUTRAGE),
@@ -27747,10 +28204,12 @@ static const struct LevelUpMove sHakamoOLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_DRAGON_CLAW),
     //Evo
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_ROAR),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_DANCE),
     //Evo
     //Tate&Liza Lv45
+    // >>> Evo Lv 45
     LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
     //Juan Lv50
     //Sidney Lv54
@@ -27785,6 +28244,7 @@ static const struct LevelUpMove sKommoOLevelUpLearnset[] = {
     //Evo
     //Tate&Liza Lv45
     //Juan Lv50
+    // >>> Evo Lv 45
     LEVEL_UP_MOVE(52, MOVE_OUTRAGE),
     //Sidney Lv54
     //Drake Lv60
@@ -27949,6 +28409,7 @@ static const struct LevelUpMove sCosmogLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 43
 };
 
 static const struct LevelUpMove sCosmoemLevelUpLearnset[] = {
@@ -27966,6 +28427,8 @@ static const struct LevelUpMove sCosmoemLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 43
+    // >>> Evo Lv 53
 };
 
 static const struct LevelUpMove sSolgaleoLevelUpLearnset[] = {
@@ -27990,6 +28453,7 @@ static const struct LevelUpMove sSolgaleoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(49, MOVE_METAL_BURST),
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 53
     LEVEL_UP_MOVE(56, MOVE_WILD_CHARGE),
     //Drake Lv60
     //Steven Lv63
@@ -28599,6 +29063,7 @@ static const struct LevelUpMove sGrookeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_RAZOR_LEAF),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_SCREECH),
     LEVEL_UP_MOVE(20, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(24, MOVE_SLAM),
@@ -28626,6 +29091,7 @@ static const struct LevelUpMove sThwackeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_RAZOR_LEAF),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_SCREECH),
     LEVEL_UP_MOVE(24, MOVE_KNOCK_OFF),
     //Wattson Lv24
@@ -28633,6 +29099,7 @@ static const struct LevelUpMove sThwackeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_SLAM),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_UPROAR),
     LEVEL_UP_MOVE(42, MOVE_WOOD_HAMMER),
     //Tate&Liza Lv45
@@ -28663,6 +29130,7 @@ static const struct LevelUpMove sRillaboomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_SLAM),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_UPROAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_WOOD_HAMMER),
@@ -28685,6 +29153,7 @@ static const struct LevelUpMove sScorbunnyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_DOUBLE_KICK),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_FLAME_CHARGE),
     LEVEL_UP_MOVE(20, MOVE_AGILITY),
     LEVEL_UP_MOVE(24, MOVE_HEADBUTT),
@@ -28711,6 +29180,7 @@ static const struct LevelUpMove sRabootLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_DOUBLE_KICK),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_FLAME_CHARGE),
     LEVEL_UP_MOVE(24, MOVE_AGILITY),
     //Wattson Lv24
@@ -28718,6 +29188,7 @@ static const struct LevelUpMove sRabootLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_HEADBUTT),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_COUNTER),
     LEVEL_UP_MOVE(42, MOVE_BOUNCE),
     //Tate&Liza Lv45
@@ -28746,6 +29217,7 @@ static const struct LevelUpMove sCinderaceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_HEADBUTT),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_COUNTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BOUNCE),
@@ -28768,6 +29240,7 @@ static const struct LevelUpMove sSobbleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_WATER_PULSE),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_TEARFUL_LOOK),
     LEVEL_UP_MOVE(20, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(24, MOVE_U_TURN),
@@ -28794,6 +29267,7 @@ static const struct LevelUpMove sDrizzileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_WATER_PULSE),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_TEARFUL_LOOK),
     LEVEL_UP_MOVE(24, MOVE_SUCKER_PUNCH),
     //Wattson Lv24
@@ -28801,6 +29275,7 @@ static const struct LevelUpMove sDrizzileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_U_TURN),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(36, MOVE_LIQUIDATION),
     LEVEL_UP_MOVE(42, MOVE_SOAK),
     //Tate&Liza Lv45
@@ -28829,6 +29304,7 @@ static const struct LevelUpMove sInteleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_U_TURN),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(38, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SOAK),
@@ -28855,6 +29331,7 @@ static const struct LevelUpMove sSkwovetLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_BODY_SLAM),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(25, MOVE_REST),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_COUNTER),
@@ -28884,6 +29361,7 @@ static const struct LevelUpMove sGreedentLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_BODY_SLAM),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(27, MOVE_REST),
     //Flannery Lv29
     //Norman Lv31
@@ -28911,6 +29389,7 @@ static const struct LevelUpMove sRookideeLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_PLUCK),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(20, MOVE_TAUNT),
     LEVEL_UP_MOVE(24, MOVE_SCARY_FACE),
     //Wattson Lv24
@@ -28937,6 +29416,7 @@ static const struct LevelUpMove sCorvisquireLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_PLUCK),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(22, MOVE_TAUNT),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SCARY_FACE),
@@ -28944,6 +29424,7 @@ static const struct LevelUpMove sCorvisquireLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_DRILL_PECK),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BRAVE_BIRD),
@@ -28974,6 +29455,7 @@ static const struct LevelUpMove sCorviknightLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_DRILL_PECK),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(42, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
@@ -29000,6 +29482,7 @@ static const struct LevelUpMove sBlipbugLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 10
 };
 
 static const struct LevelUpMove sDottlerLevelUpLearnset[] = {
@@ -29022,6 +29505,8 @@ static const struct LevelUpMove sDottlerLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 10
+    // >>> Evo Lv 30
 };
 
 static const struct LevelUpMove sOrbeetleLevelUpLearnset[] = {
@@ -29041,6 +29526,7 @@ static const struct LevelUpMove sOrbeetleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_BUG_BUZZ),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_MIRROR_COAT),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PSYCHIC),
@@ -29066,6 +29552,7 @@ static const struct LevelUpMove sNickitLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ASSURANCE),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(20, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(24, MOVE_SUCKER_PUNCH),
     //Wattson Lv24
@@ -29094,6 +29581,7 @@ static const struct LevelUpMove sThievulLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ASSURANCE),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(22, MOVE_NASTY_PLOT),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SUCKER_PUNCH),
@@ -29123,6 +29611,7 @@ static const struct LevelUpMove sGossifleurLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ROUND),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_LEAF_TORNADO),
     LEVEL_UP_MOVE(24, MOVE_SYNTHESIS),
     //Wattson Lv24
@@ -29151,6 +29640,7 @@ static const struct LevelUpMove sEldegossLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ROUND),
     //Brawly Lv16
+    // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_LEAF_TORNADO),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SYNTHESIS),
@@ -29182,6 +29672,7 @@ static const struct LevelUpMove sWoolooLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(25, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(28, MOVE_GUARD_SWAP),
     //Flannery Lv29
@@ -29209,6 +29700,7 @@ static const struct LevelUpMove sDubwoolLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(27, MOVE_TAKE_DOWN),
     //Flannery Lv29
     //Norman Lv31
@@ -29237,6 +29729,7 @@ static const struct LevelUpMove sChewtleLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(28, MOVE_COUNTER),
     //Flannery Lv29
     //Norman Lv31
@@ -29266,6 +29759,7 @@ static const struct LevelUpMove sDrednawLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_HEADBUTT),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 22
     LEVEL_UP_MOVE(30, MOVE_COUNTER),
     //Norman Lv31
     //Winona Lv35
@@ -29293,6 +29787,7 @@ static const struct LevelUpMove sYamperLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SPARK),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(26, MOVE_CHARM),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_CRUNCH),
@@ -29320,6 +29815,7 @@ static const struct LevelUpMove sBoltundLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SPARK),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(28, MOVE_CHARM),
     //Flannery Lv29
     //Norman Lv31
@@ -29347,6 +29843,7 @@ static const struct LevelUpMove sRolycolyLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_ROCK_POLISH),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(20, MOVE_ANCIENT_POWER),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_INCINERATE),
@@ -29373,11 +29870,13 @@ static const struct LevelUpMove sCarkolLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_ROCK_POLISH),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(20, MOVE_ANCIENT_POWER),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_INCINERATE),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(35, MOVE_STEALTH_ROCK),
     //Winona Lv35
     LEVEL_UP_MOVE(41, MOVE_HEAT_CRASH),
@@ -29407,6 +29906,7 @@ static const struct LevelUpMove sCoalossalLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(37, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(45, MOVE_HEAT_CRASH),
     //Tate&Liza Lv45
@@ -29587,6 +30087,7 @@ static const struct LevelUpMove sSilicobraLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SANDSTORM),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(40, MOVE_SLAM),
     LEVEL_UP_MOVE(45, MOVE_COIL),
     //Tate&Liza Lv45
@@ -29614,6 +30115,7 @@ static const struct LevelUpMove sSandacondaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SANDSTORM),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(42, MOVE_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_COIL),
@@ -29668,6 +30170,7 @@ static const struct LevelUpMove sArrokudaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_DIVE),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(30, MOVE_FOCUS_ENERGY),
     //Norman Lv31
     //Winona Lv35
@@ -29695,6 +30198,7 @@ static const struct LevelUpMove sBarraskewdaLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(32, MOVE_FOCUS_ENERGY),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_CRUNCH),
@@ -29729,6 +30233,7 @@ static const struct LevelUpMove sToxelLevelUpLearnset[] = {
     //Brawly Lv16
     //Roxanne Lv14
     LEVEL_UP_END
+    // >>> Evo Lv 30
 };
 
 static const struct LevelUpMove sToxtricityAmpedLevelUpLearnset[] = {
@@ -29754,6 +30259,7 @@ static const struct LevelUpMove sToxtricityAmpedLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_SWAGGER),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_TOXIC),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DISCHARGE),
@@ -29821,6 +30327,7 @@ static const struct LevelUpMove sSizzlipedeLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_COIL),
     //Flannery Lv29
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(30, MOVE_SLAM),
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_FIRE_SPIN),
@@ -29851,6 +30358,7 @@ static const struct LevelUpMove sCentiskorchLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_COIL),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(32, MOVE_SLAM),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_FIRE_SPIN),
@@ -29998,6 +30506,7 @@ static const struct LevelUpMove sHatennaLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_DAZZLING_GLEAM),
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_CALM_MIND),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC),
@@ -30026,7 +30535,9 @@ static const struct LevelUpMove sHattremLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_DAZZLING_GLEAM),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(37, MOVE_CALM_MIND),
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(44, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     //Juan Lv50
@@ -30056,6 +30567,7 @@ static const struct LevelUpMove sHattereneLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_CALM_MIND),
     //Tate&Liza Lv45
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(46, MOVE_PSYCHIC),
     //Juan Lv50
     //Sidney Lv54
@@ -30083,6 +30595,7 @@ static const struct LevelUpMove sImpidimpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_TORMENT),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(33, MOVE_DARK_PULSE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_NASTY_PLOT),
@@ -30112,10 +30625,12 @@ static const struct LevelUpMove sMorgremLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_TORMENT),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_DARK_PULSE),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(46, MOVE_PLAY_ROUGH),
     //Juan Lv50
     LEVEL_UP_MOVE(52, MOVE_FOUL_PLAY),
@@ -30147,6 +30662,7 @@ static const struct LevelUpMove sGrimmsnarlLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
+    // >>> Evo Lv 42
     LEVEL_UP_MOVE(48, MOVE_PLAY_ROUGH),
     //Juan Lv50
     //Sidney Lv54
@@ -30491,6 +31007,7 @@ static const struct LevelUpMove sCufantLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_DIG),
     //Norman Lv31
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(35, MOVE_STRENGTH),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_IRON_HEAD),
@@ -30521,6 +31038,7 @@ static const struct LevelUpMove sCopperajahLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_DIG),
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 34
     LEVEL_UP_MOVE(37, MOVE_STRENGTH),
     LEVEL_UP_MOVE(44, MOVE_IRON_HEAD),
     //Tate&Liza Lv45
@@ -30762,9 +31280,11 @@ static const struct LevelUpMove sDrakloakLevelUpLearnset[] = {
     //Evo
     //Juan Lv50
     //Sidney Lv54
+    // >>> Evo Lv 50
     LEVEL_UP_MOVE(54, MOVE_TAKE_DOWN),
     //Dragapult
     //Drake Lv60
+    // >>> Evo Lv 60
     LEVEL_UP_MOVE(61, MOVE_DRAGON_RUSH),
     //Steven Lv63
     LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
@@ -30799,6 +31319,7 @@ static const struct LevelUpMove sDragapultLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_TAKE_DOWN),
     //Drake Lv60
     //Steven Lv63
+    // >>> Evo Lv 60
     LEVEL_UP_MOVE(63, MOVE_DRAGON_RUSH),
     LEVEL_UP_MOVE(70, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(78, MOVE_LAST_RESORT),
@@ -31328,6 +31849,7 @@ static const struct LevelUpMove sSprigatitoLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_QUICK_ATTACK),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_SEED_BOMB),
     LEVEL_UP_MOVE(21, MOVE_U_TURN),
     //Wattson Lv24
@@ -31356,6 +31878,7 @@ static const struct LevelUpMove sFloragatoLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_QUICK_ATTACK),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_SEED_BOMB),
     LEVEL_UP_MOVE(24, MOVE_U_TURN),
     //Wattson Lv24
@@ -31364,6 +31887,7 @@ static const struct LevelUpMove sFloragatoLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_SLASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(42, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
@@ -31396,6 +31920,7 @@ static const struct LevelUpMove sMeowscaradaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_SLASH),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(42, MOVE_ENERGY_BALL),
     //Tate&Liza Lv45
@@ -31421,6 +31946,7 @@ static const struct LevelUpMove sFuecocoLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_INCINERATE),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_YAWN),
     LEVEL_UP_MOVE(21, MOVE_SNARL),
     //Wattson Lv24
@@ -31449,6 +31975,7 @@ static const struct LevelUpMove sCrocalorLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_YAWN),
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_INCINERATE),
     LEVEL_UP_MOVE(24, MOVE_SNARL),
     //Wattson Lv24
@@ -31457,6 +31984,7 @@ static const struct LevelUpMove sCrocalorLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_FLAMETHROWER),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE(42, MOVE_WILL_O_WISP),
     //Tate&Liza Lv45
@@ -31489,6 +32017,7 @@ static const struct LevelUpMove sSkeledirgeLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_FLAMETHROWER),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(42, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
@@ -31514,6 +32043,7 @@ static const struct LevelUpMove sQuaxlyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_AQUA_JET),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_DOUBLE_HIT),
     LEVEL_UP_MOVE(21, MOVE_AQUA_CUTTER),
     LEVEL_UP_MOVE(24, MOVE_AIR_SLASH),
@@ -31542,6 +32072,7 @@ static const struct LevelUpMove sQuaxwellLevelUpLearnset[] = {
     LEVEL_UP_MOVE(13, MOVE_AQUA_JET),
     //Roxanne Lv14
     //Brawly Lv16
+    // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE(19, MOVE_LOW_SWEEP),
     LEVEL_UP_MOVE(23, MOVE_AQUA_CUTTER),
@@ -31551,6 +32082,7 @@ static const struct LevelUpMove sQuaxwellLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_FOCUS_ENERGY),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_ACROBATICS),
     LEVEL_UP_MOVE(43, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
@@ -31583,6 +32115,7 @@ static const struct LevelUpMove sQuaquavalLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_FOCUS_ENERGY),
     //Winona Lv35
+    // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_MEGA_KICK),
     LEVEL_UP_MOVE(43, MOVE_ACROBATICS),
     //Tate&Liza Lv45
@@ -31609,6 +32142,7 @@ static const struct LevelUpMove sLechonkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_COVET),
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DIG),
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(21, MOVE_HEADBUTT),
     LEVEL_UP_MOVE(24, MOVE_YAWN),
     //Wattson Lv24
@@ -31637,6 +32171,7 @@ static const struct LevelUpMove sOinkologneMLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_COVET),
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DIG),
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(23, MOVE_HEADBUTT),
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_TAKE_DOWN),
@@ -31698,6 +32233,7 @@ static const struct LevelUpMove sTarountulaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_BUG_BITE),
     //Roxanne
     //Brawly Lv16
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(18, MOVE_BLOCK),
     LEVEL_UP_MOVE(22, MOVE_COUNTER),
     //Wattson Lv24
@@ -31728,6 +32264,7 @@ static const struct LevelUpMove sSpidopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(14, MOVE_BUG_BITE),
     //Roxanne
     //Brawly Lv16
+    // >>> Evo Lv 15
     LEVEL_UP_MOVE(19, MOVE_BLOCK),
     LEVEL_UP_MOVE(24, MOVE_COUNTER),
     //Wattson Lv24
@@ -31763,6 +32300,7 @@ static const struct LevelUpMove sNymbleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_ENDURE),
     LEVEL_UP_MOVE(22, MOVE_BUG_BITE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(26, MOVE_FEINT),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_AGILITY),
@@ -31794,6 +32332,7 @@ static const struct LevelUpMove sLokixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_ENDURE),
     LEVEL_UP_MOVE(22, MOVE_BUG_BITE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(28, MOVE_FEINT),
     //Flannery Lv29
     //Norman Lv31
@@ -31824,6 +32363,7 @@ static const struct LevelUpMove sPawmiLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_DIG),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(19, MOVE_BITE),
     LEVEL_UP_MOVE(23, MOVE_SPARK),
     //Wattson Lv24
@@ -31855,6 +32395,7 @@ static const struct LevelUpMove sPawmoLevelUpLearnset[] = {
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_DIG),
     //Brawly Lv16
+    // >>> Evo Lv 18
     LEVEL_UP_MOVE(19, MOVE_BITE),
     LEVEL_UP_MOVE(23, MOVE_SPARK),
     //Wattson Lv24
@@ -31923,6 +32464,7 @@ static const struct LevelUpMove sTandemausLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE(22, MOVE_ENCORE),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(26, MOVE_PLAY_ROUGH),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_HYPER_VOICE),
@@ -31986,6 +32528,7 @@ static const struct LevelUpMove sFidoughLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(22, MOVE_WORK_UP),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(26, MOVE_BATON_PASS),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_ROAR),
@@ -32016,6 +32559,7 @@ static const struct LevelUpMove sDachsbunLevelUpLearnset[] = {
     LEVEL_UP_MOVE(18, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(22, MOVE_WORK_UP),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(29, MOVE_BATON_PASS),
     //Flannery Lv29
     //Norman Lv31
@@ -32048,6 +32592,7 @@ static const struct LevelUpMove sSmolivLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(23, MOVE_GRASSY_TERRAIN),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(27, MOVE_SEED_BOMB),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_ENERGY_BALL),
@@ -32076,11 +32621,13 @@ static const struct LevelUpMove sDollivLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(23, MOVE_GRASSY_TERRAIN),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(29, MOVE_SEED_BOMB),
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ENERGY_BALL),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(37, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(42, MOVE_TERRAIN_PULSE),
     //Tate&Liza Lv45
@@ -32111,6 +32658,7 @@ static const struct LevelUpMove sArbolivaLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ENERGY_BALL),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(39, MOVE_LEECH_SEED),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_TERRAIN_PULSE),
@@ -32170,6 +32718,7 @@ static const struct LevelUpMove sNacliLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_IRON_DEFENSE),
     //Wattson Lv24
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(25, MOVE_RECOVER),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_ROCK_SLIDE),
@@ -32201,10 +32750,12 @@ static const struct LevelUpMove sNaclstackLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_IRON_DEFENSE),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(30, MOVE_RECOVER),
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ROCK_SLIDE),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(38, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(41, MOVE_HEAVY_SLAM),
     LEVEL_UP_MOVE(45, MOVE_EARTHQUAKE),
@@ -32238,6 +32789,7 @@ static const struct LevelUpMove sGarganaclLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ROCK_SLIDE),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(40, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(44, MOVE_HEAVY_SLAM),
     //Tate&Liza Lv45
@@ -32419,6 +32971,7 @@ static const struct LevelUpMove sWattrelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(19, MOVE_UPROAR),
     LEVEL_UP_MOVE(23, MOVE_ROOST),
     //Wattson Lv24
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(27, MOVE_DUAL_WINGBEAT),
     //Flannery Lv29
     //Norman Lv31
@@ -32448,6 +33001,7 @@ static const struct LevelUpMove sKilowattrelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_ROOST),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 25
     LEVEL_UP_MOVE(30, MOVE_DUAL_WINGBEAT),
     //Norman Lv31
     //Winona Lv35
@@ -32481,6 +33035,7 @@ static const struct LevelUpMove sMaschiffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(31, MOVE_CRUNCH),
     LEVEL_UP_MOVE(35, MOVE_SWAGGER),
     //Winona Lv35
@@ -32512,6 +33067,7 @@ static const struct LevelUpMove sMabosstiffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_SWAGGER),
@@ -32543,6 +33099,7 @@ static const struct LevelUpMove sShroodleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_SLASH),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_U_TURN),
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(29, MOVE_POISON_JAB),
     //Flannery Lv29
     //Norman Lv31
@@ -32575,6 +33132,7 @@ static const struct LevelUpMove sGrafaiaiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_U_TURN),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 28
     LEVEL_UP_MOVE(33, MOVE_POISON_JAB),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_TAUNT),
@@ -32670,6 +33228,7 @@ static const struct LevelUpMove sToedscoolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_HEX),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_SEED_BOMB),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SPORE),
@@ -32703,6 +33262,7 @@ static const struct LevelUpMove sToedscruelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_HEX),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(34, MOVE_SEED_BOMB),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SPORE),
@@ -32897,6 +33457,7 @@ static const struct LevelUpMove sFlittleLevelUpLearnset[] = {
     //Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
+    // >>> Evo Lv 35
 };
 
 static const struct LevelUpMove sEspathraLevelUpLearnset[] = {
@@ -32919,6 +33480,7 @@ static const struct LevelUpMove sEspathraLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_UPROAR),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(43, MOVE_DAZZLING_GLEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PSYCHIC),
@@ -32943,6 +33505,7 @@ static const struct LevelUpMove sTinkatinkLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(21, MOVE_SWEET_KISS),
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(24, MOVE_BRUTAL_SWING),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_SLAM),
@@ -32974,6 +33537,7 @@ static const struct LevelUpMove sTinkatuffLevelUpLearnset[] = {
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(21, MOVE_SWEET_KISS),
+    // >>> Evo Lv 24
     LEVEL_UP_MOVE(24, MOVE_BRUTAL_SWING),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_SLAM),
@@ -32982,6 +33546,7 @@ static const struct LevelUpMove sTinkatuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_FLASH_CANNON),
     LEVEL_UP_MOVE(35, MOVE_PLAY_ROUGH),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(39, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE(43, MOVE_FLATTER),
     //Tate&Liza Lv45
@@ -33014,6 +33579,7 @@ static const struct LevelUpMove sTinkatonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(31, MOVE_FLASH_CANNON),
     LEVEL_UP_MOVE(35, MOVE_PLAY_ROUGH),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(39, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE(43, MOVE_FLATTER),
     //Tate&Liza Lv45
@@ -33040,6 +33606,7 @@ static const struct LevelUpMove sWiglettLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE(24, MOVE_HEADBUTT),
     //Wattson Lv24
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(28, MOVE_DIG),
     //Flannery Lv29
     //Norman Lv31
@@ -33068,6 +33635,7 @@ static const struct LevelUpMove sWugtrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_HEADBUTT),
     //Wattson Lv24
     //Flannery Lv29
+    // >>> Evo Lv 26
     LEVEL_UP_MOVE(30, MOVE_TRIPLE_DIVE),
     //Norman Lv31
     //Winona Lv35
@@ -33135,6 +33703,7 @@ static const struct LevelUpMove sFinizenLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ENCORE),
     //Winona Lv35
+    // >>> Evo Lv 38
     LEVEL_UP_MOVE(39, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(44, MOVE_MIST),
     //Tate&Liza Lv45
@@ -33199,6 +33768,7 @@ static const struct LevelUpMove sVaroomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_SWAGGER),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_POISON_JAB),
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(41, MOVE_UPROAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SPIN_OUT),
@@ -33232,6 +33802,7 @@ static const struct LevelUpMove sRevavroomLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_POISON_JAB),
     //Tate&Liza Lv45
+    // >>> Evo Lv 40
     LEVEL_UP_MOVE(46, MOVE_UPROAR),
     //Juan Lv50
     LEVEL_UP_MOVE(52, MOVE_SPIN_OUT),
@@ -33324,6 +33895,7 @@ static const struct LevelUpMove sGlimmetLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_ROCK_SLIDE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(37, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(41, MOVE_ACID_ARMOR),
     //Tate&Liza Lv45
@@ -33356,6 +33928,7 @@ static const struct LevelUpMove sGlimmoraLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_ROCK_SLIDE),
     //Winona Lv35
+    // >>> Evo Lv 35
     LEVEL_UP_MOVE(39, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(44, MOVE_ACID_ARMOR),
     //Tate&Liza Lv45
@@ -33385,6 +33958,7 @@ static const struct LevelUpMove sGreavardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(28, MOVE_CRUNCH),
     //Flannery Lv29
     //Norman Lv31
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(32, MOVE_PLAY_ROUGH),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_HELPING_HAND),
@@ -33417,6 +33991,7 @@ static const struct LevelUpMove sHoundstoneLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     //Winona Lv35
+    // >>> Evo Lv 30
     LEVEL_UP_MOVE(36, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(41, MOVE_HELPING_HAND),
     //Tate&Liza Lv45
