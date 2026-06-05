@@ -40,9 +40,9 @@ MauvilleCity_Mart_EventScript_Clerk_2::
 
 	.align 2
 MauvilleCity_Mart_Pokemart_Secondary:
+	.2byte ITEM_ZOOM_LENS
 	.2byte ITEM_SCOPE_LENS
 	.2byte ITEM_WIDE_LENS
-	.2byte ITEM_ZOOM_LENS
 	pokemartlistend
 
 MauvilleCity_Mart_EventScript_ExpertM::
