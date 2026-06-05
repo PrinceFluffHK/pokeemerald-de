@@ -20785,6 +20785,7 @@ static const u16 sDusknoirTeachableLearnset[] = {
 static const u16 sTropiusTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BODY_PRESS,
+    MOVE_BREAKING_SWIPE,
     MOVE_BULLET_SEED,
     MOVE_CALM_MIND,
     MOVE_CUT,

@@ -3,7 +3,6 @@
   "name": "Route108",
   "layout": "LAYOUT_ROUTE108",
   "music": "MUS_ROUTE104",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_108",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -113,7 +112,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_TM_THUNDER_PUNCH",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_SUPERCELL_SLAM",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_108_STAR_PIECE"
     }
@@ -137,5 +136,6 @@
       "item": "ITEM_IRON",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_108_RARE_CANDY"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

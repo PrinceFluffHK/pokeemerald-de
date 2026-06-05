@@ -524,6 +524,8 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
     switch (moveTarget)
     {
     case TARGET_USER:
+    case TARGET_DEPENDS:
+    case TARGET_OPPONENT:
         StringAppend(gStringVar1,
             isRightSide ? (needsExtraSpace ? COMPOUND_STRING(" {UP_ARROW}-") : COMPOUND_STRING("{UP_ARROW}-"))
                         : (needsExtraSpace ? COMPOUND_STRING(" -{UP_ARROW}") : COMPOUND_STRING("-{UP_ARROW}")));
@@ -551,8 +553,6 @@ static void AppendMoveTarget(u32 battler, bool32 isRightSide)
                         : (needsExtraSpace ? COMPOUND_STRING(" {UP_ARROW}-") : COMPOUND_STRING("{UP_ARROW}-")));
         break;
 
-    case TARGET_DEPENDS:
-    case TARGET_OPPONENT:
     case TARGET_RANDOM:
         StringAppend(gStringVar1, needsExtraSpace ? COMPOUND_STRING(" ??") : COMPOUND_STRING("??"));
         break;

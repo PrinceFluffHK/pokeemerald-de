@@ -3711,15 +3711,16 @@ AI: Smart Trainer
 Chinchou
 Ability: Volt Absorb
 Level: 31
-- Bubble Beam
+- Water Pulse
 - Spark
 - Confuse Ray
 
-Horsea
-Ability: Damp
+Seadra
+Ability: Swift Swim
 Level: 31
 - Bubble Beam
 - Dragon Breath
+- Rain Dance
 
 Wailmer
 Ability: Water Veil
@@ -8450,7 +8451,7 @@ Level: 29
 Chinchou
 Ability: Volt Absorb
 Level: 29
-- Bubble Beam
+- Water Pulse
 - Spark
 - Confuse Ray
 
@@ -8473,7 +8474,7 @@ Level: 18
 Chinchou
 Ability: Volt Absorb
 Level: 18
-- Bubble Beam
+- Water Pulse
 - Spark
 - Confuse Ray
 

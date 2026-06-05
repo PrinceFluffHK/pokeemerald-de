@@ -12734,9 +12734,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM40"),
         .price = 5000,
         .description = COMPOUND_STRING(
-            "Whips up a breeze,\n"
-            "doubling ally Speed\n"
-            "for 4 turns."),
+            "Unavoidable attack.\n"
+            "High critical-hit\n"
+            "ratio."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
