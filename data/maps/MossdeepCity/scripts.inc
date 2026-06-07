@@ -252,8 +252,9 @@ MossdeepCity_EventScript_Scott::
 	lock
 	faceplayer
 	msgbox MossdeepCity_Text_ScottSomethingWrongWithTown, MSGBOX_DEFAULT
-@	closemessage
-	giveitem ITEM_ABILITY_CAPSULE
+	giveitem ITEM_ABILITY_PATCH
+	waitbuttonpress
+	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, MossdeepCity_EventScript_ScottExitNorth
 	call_if_eq VAR_FACING, DIR_EAST, MossdeepCity_EventScript_ScottExitEast
 	addvar VAR_SCOTT_STATE, 1

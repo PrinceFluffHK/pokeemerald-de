@@ -545,9 +545,11 @@ SlateportCity_Pokemart_PowerTMs:
 @	.2byte ITEM_TM_HIDDEN_POWER
 @	.2byte ITEM_TM_SECRET_POWER
 	.2byte ITEM_ALAKAZITE
+	.2byte ITEM_STARMINITE
 	.2byte ITEM_PINSIRITE
 	.2byte ITEM_GYARADOSITE
 	.2byte ITEM_HERACRONITE
+	.2byte ITEM_SKARMORITE
 	.2byte ITEM_SCEPTILITE
 	.2byte ITEM_BLAZIKENITE
 	.2byte ITEM_SWAMPERTITE
@@ -562,14 +564,13 @@ SlateportCity_Pokemart_PowerTMs:
 	.2byte ITEM_ALTARIANITE
 	.2byte ITEM_BANETTITE
 	.2byte ITEM_ABSOLITE
+	.2byte ITEM_ABSOLITE_Z
 	.2byte ITEM_GLALITITE
 	.2byte ITEM_SALAMENCITE
 	.2byte ITEM_METAGROSSITE
 	.2byte ITEM_LATIASITE
 	.2byte ITEM_LATIOSITE
-@	.2byte ITEM_STARMINITE
-@	.2byte ITEM_SKARMORITE
-@	.2byte ITEM_FROSLASSITE
+	.2byte ITEM_FROSLASSITE
 	pokemartlistend
 
 @ Scene with Capt Sterns interview and Team Aqua announcing plans to steal Submarine
