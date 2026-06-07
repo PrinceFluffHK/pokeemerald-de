@@ -61,6 +61,7 @@ LavaridgeTown_EventScript_MayGiveGoGoggles::
 	msgbox LavaridgeTown_Text_MayNiceBadgesTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
+	giveitem ITEM_SAFETY_GOGGLES
 	msgbox LavaridgeTown_Text_MayExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
@@ -69,6 +70,7 @@ LavaridgeTown_EventScript_BrendanGiveGoGoggles::
 	msgbox LavaridgeTown_Text_BrendanNiceBadgesTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_GO_GOGGLES
 	setflag FLAG_RECEIVED_GO_GOGGLES
+	giveitem ITEM_SAFETY_GOGGLES
 	msgbox LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad, MSGBOX_DEFAULT
 	goto LavaridgeTown_EventScript_RivalExit
 	end
@@ -281,7 +283,7 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "good POKéMON…\l"
 	.string "No, I believe you raised some.\p"
 	.string "I guess it would be okay for you to\n"
-	.string "have this.$"
+	.string "have these.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "MAY: With those GO-GOGGLES, you'll\n"
@@ -301,7 +303,7 @@ LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
 	.string "Hmm…\n"
 	.string "That's a decent collection of BADGES.\p"
 	.string "All right, then.\n"
-	.string "You may as well have this.$"
+	.string "You may as well have these.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "BRENDAN: Keep those with you if you're\n"

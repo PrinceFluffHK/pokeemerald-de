@@ -413,6 +413,8 @@
 #define OBJ_EVENT_GFX_CUTTABLE_TREE_FRLG         386
 #define OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG        387
 #define OBJ_EVENT_GFX_ITEM_BALL_TM               388
+#define OBJ_EVENT_GFX_AQUA_ADMIN_M               389
+#define OBJ_EVENT_GFX_AQUA_ADMIN_F               390
 
 // FRLG equivalents
 
@@ -424,7 +426,7 @@
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        389
+#define NUM_OBJ_EVENT_GFX                        391
 
 
 // These are dynamic object gfx ids.

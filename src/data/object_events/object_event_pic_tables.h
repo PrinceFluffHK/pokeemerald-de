@@ -924,6 +924,14 @@ static const struct SpriteFrameImage sPicTable_Archie[] = {
     overworld_ascending_frames(gObjectEventPic_Archie, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_AquaAdminM[] = {
+    overworld_ascending_frames(gObjectEventPic_AquaAdminM, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AquaAdminF[] = {
+    overworld_ascending_frames(gObjectEventPic_AquaAdminF, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_Maxie[] = {
     overworld_ascending_frames(gObjectEventPic_Maxie, 2, 4),
 };
