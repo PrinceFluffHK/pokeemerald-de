@@ -79,6 +79,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 === TRAINER_SAWYER_1 ===
 Name: SAWYER
@@ -88,6 +89,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Ability: Rock Head
@@ -111,6 +113,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -134,6 +137,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -158,6 +162,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Ability: Rain Dish
@@ -182,6 +187,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -206,6 +212,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -228,6 +235,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -251,6 +259,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seviper
 Ability: Shed Skin
@@ -274,6 +283,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skitty
 Ability: Normalize
@@ -325,6 +335,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poochyena
 Ability: Run Away
@@ -347,6 +358,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Snorunt
 Ability: Inner Focus
@@ -369,6 +381,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Xatu
 Ability: Psych Out
@@ -394,6 +407,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zangoose
 Ability: Immunity
@@ -418,6 +432,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -441,6 +456,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -464,6 +480,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poochyena
 Ability: Run Away
@@ -489,6 +506,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -512,6 +530,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -536,6 +555,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -568,6 +588,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Carvanha
 Ability: Rough Skin
@@ -592,6 +613,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Corphish
 Ability: Adaptability
@@ -616,6 +638,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Camerupt
 Ability: Solid Rock
@@ -639,6 +662,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -671,6 +695,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Carvanha
 Ability: Rough Skin
@@ -695,6 +720,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -727,6 +753,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Carvanha
 Ability: Rough Skin
@@ -751,6 +778,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -774,6 +802,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -798,6 +827,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Ability: Thick Fat
@@ -822,6 +852,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -871,6 +902,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machoke
 Ability: Guts
@@ -896,6 +928,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Clamperl @ Deep-Sea Scale
 Ability: Dazzling
@@ -938,6 +971,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Skarmory @ Muscle Band
 Ability: Weak Armor
@@ -986,6 +1020,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Crobat
 Ability: Inner Focus
@@ -1041,6 +1076,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -1065,6 +1101,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Poison Heal
@@ -1088,6 +1125,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Oddish
 Ability: Chlorophyll
@@ -1119,6 +1157,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Blaziken
 Ability: Speed Boost
@@ -1158,6 +1197,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia
 Ability: Natural Cure
@@ -1189,6 +1229,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Level: 26
@@ -1204,6 +1245,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Level: 28
@@ -1222,6 +1264,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Level: 31
@@ -1240,6 +1283,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 34
@@ -1258,6 +1302,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Ability: Sand Rush
@@ -1280,6 +1325,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -1310,6 +1356,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Cacnea
 Ability: Sand Stream
@@ -1340,6 +1387,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandslash
 Level: 27
@@ -1363,6 +1411,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandslash
 Level: 30
@@ -1386,6 +1435,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandslash
 Level: 33
@@ -1409,6 +1459,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandslash
 Level: 36
@@ -1432,6 +1483,7 @@ Gender: Male
 Music: Interviewer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Ability: Magnet Pull
@@ -1454,6 +1506,7 @@ Gender: Male
 Music: Interviewer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Ability: Magnet Pull
@@ -1476,6 +1529,7 @@ Gender: Male
 Music: Interviewer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Ability: Magnet Pull
@@ -1505,6 +1559,7 @@ Gender: Male
 Music: Interviewer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 33
@@ -1520,6 +1575,7 @@ Gender: Male
 Music: Interviewer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 36
@@ -1535,6 +1591,7 @@ Gender: Male
 Music: Interviewer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 39
@@ -1558,6 +1615,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Ability: Thick Fat
@@ -1581,6 +1639,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Psyduck
 Ability: Cloud Nine
@@ -1604,6 +1663,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -1627,6 +1687,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Level: 26
@@ -1642,6 +1703,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Level: 29
@@ -1657,6 +1719,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Level: 32
@@ -1672,6 +1735,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Level: 35
@@ -1687,6 +1751,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Ability: Pickup
@@ -1711,6 +1776,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Ability: Pickup
@@ -1734,6 +1800,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -1760,6 +1827,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 27
@@ -1783,6 +1851,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 30
@@ -1806,6 +1875,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 33
@@ -1829,6 +1899,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 36
@@ -1852,6 +1923,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Voltorb
 Ability: Soundproof
@@ -1880,6 +1952,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Girafarig
 Ability: Inner Focus
@@ -1910,6 +1983,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Vigoroth @ Figy Berry
 Ability: Vital Spirit
@@ -1940,6 +2014,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Castform
 Ability: Forecast
@@ -1970,6 +2045,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Ability: Guts
@@ -2014,6 +2090,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dondozo
 Ability: Unaware
@@ -2052,6 +2129,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Palafin
 Ability: Zero to Hero
@@ -2083,6 +2161,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Electrike
 Ability: Static
@@ -2114,6 +2193,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Farigiraf @ Sitrus Berry
 Ability: Armor Tail
@@ -2153,6 +2233,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Donphan @ Rocky Helmet
 Ability: Protosynthesis
@@ -2193,6 +2274,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Natu
 Ability: Synchronize
@@ -2224,6 +2306,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Dodrio
 Ability: Early Bird
@@ -2269,6 +2352,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Torkoal
 Ability: Drought
@@ -2310,6 +2394,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Electrike
 Level: 26
@@ -2328,6 +2413,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Level: 29
@@ -2346,6 +2432,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Level: 32
@@ -2364,6 +2451,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Level: 35
@@ -2382,6 +2470,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Probopass
 Ability: Levitate
@@ -2410,6 +2499,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Delcatty
 Ability: Normalize
@@ -2441,6 +2531,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Donphan
 Ability: Sturdy
@@ -2472,6 +2563,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zangoose @ Toxic Orb
 Ability: Toxic Boost
@@ -2502,6 +2594,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mawile
 Ability: Intimidate
@@ -2531,6 +2624,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Toedscruel
 Ability: Mycelium Might
@@ -2562,6 +2656,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Keen Eye
@@ -2593,6 +2688,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sableye
 Ability: Prankster
@@ -2616,6 +2712,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Altaria @ Sitrus Berry
 Ability: Pixilate
@@ -2656,6 +2753,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Shedinja @ Focus Sash
 Ability: Wonder Guard
@@ -2697,6 +2795,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Lunatone @ Power Herb
 Ability: Levitate
@@ -2736,6 +2835,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Wigglytuff
 Ability: Friend Guard
@@ -2774,6 +2874,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Swalot @ Black Sludge
 Ability: Earth Eater
@@ -2810,6 +2911,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Level: 26
@@ -2828,6 +2930,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 29
@@ -2846,6 +2949,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 32
@@ -2864,6 +2968,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 34
@@ -2882,6 +2987,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grimmsnarl
 Ability: Prankster
@@ -2905,6 +3011,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Duskull
 Ability: Levitate
@@ -2928,6 +3035,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Duskull
 Ability: Levitate
@@ -2951,6 +3059,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sableye
 Ability: Keen Eye
@@ -2974,6 +3083,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shuppet
 Ability: Insomnia
@@ -3005,6 +3115,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sableye
 Level: 31
@@ -3020,6 +3131,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spoink
 Level: 35
@@ -3035,6 +3147,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spoink
 Level: 40
@@ -3050,6 +3163,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Duskull
 Level: 42
@@ -3068,6 +3182,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Igglybuff @ Nugget
 Ability: Friend Guard
@@ -3091,6 +3206,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Whiscash
 Ability: Oblivious
@@ -3115,6 +3231,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -3145,6 +3262,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon @ Nugget
 Level: 11
@@ -3164,6 +3282,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -3187,6 +3306,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia @ Nugget
 Level: 45
@@ -3202,6 +3322,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 27
@@ -3217,6 +3338,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 30
@@ -3232,6 +3354,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 33
@@ -3247,6 +3370,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 36
@@ -3270,6 +3394,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Ability: Huge Power
@@ -3294,6 +3419,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spoink
 Ability: Magic Bounce
@@ -3317,6 +3443,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -3342,6 +3469,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Ability: Color Change
@@ -3366,6 +3494,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -3389,6 +3518,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Walrein
 Ability: Thick Fat
@@ -3412,6 +3542,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Ability: Natural Cure
@@ -3441,6 +3572,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Ability: Rain Dish
@@ -3464,6 +3596,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Level: 35
@@ -3487,6 +3620,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Level: 38
@@ -3510,6 +3644,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Level: 41
@@ -3533,6 +3668,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Level: 44
@@ -3556,6 +3692,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon @ Nugget
 Ability: Pickup
@@ -3578,6 +3715,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mawile
 Ability: Intimidate
@@ -3602,6 +3740,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill @ Nugget
 Level: 45
@@ -3617,6 +3756,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 27
@@ -3632,6 +3772,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 30
@@ -3647,6 +3788,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 33
@@ -3662,6 +3804,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone @ Nugget
 Level: 36
@@ -3685,6 +3828,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Anorith
 Ability: Battle Armor
@@ -3708,6 +3852,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Chinchou
 Ability: Volt Absorb
@@ -3738,6 +3883,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Rhyhorn
 Ability: Lightning Rod
@@ -3761,6 +3907,7 @@ Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -3785,6 +3932,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lairon
 Level: 27
@@ -3800,6 +3948,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lairon
 Level: 29
@@ -3815,6 +3964,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lairon
 Level: 32
@@ -3830,6 +3980,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Aggron
 Level: 35
@@ -3845,6 +3996,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Carvanha
 Ability: Rough Skin
@@ -3869,6 +4021,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Clear Body
@@ -3892,6 +4045,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Liquid Ooze
@@ -3915,6 +4069,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Clear Body
@@ -3946,6 +4101,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Carvanha
 Ability: Rough Skin
@@ -3970,6 +4126,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Clear Body
@@ -3993,6 +4150,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Carvanha
 Ability: Rough Skin
@@ -4018,6 +4176,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Whiscash
 Ability: Oblivious
@@ -4042,6 +4201,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacruel
 Ability: Clear Body
@@ -4066,6 +4226,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -4089,6 +4250,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacruel
 Ability: Clear Body
@@ -4112,6 +4274,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seadra
 Ability: Swift Swim
@@ -4135,6 +4298,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Ability: Intimidate
@@ -4158,6 +4322,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gorebyss
 Ability: Competitive
@@ -4182,6 +4347,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Ability: Intimidate
@@ -4206,6 +4372,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Ability: Rain Dish
@@ -4230,6 +4397,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Ability: Rain Dish
@@ -4254,6 +4422,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machoke
 Ability: Guts
@@ -4277,6 +4446,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -4300,6 +4470,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sealeo
 Ability: Thick Fat
@@ -4323,6 +4494,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sealeo
 Ability: Thick Fat
@@ -4346,6 +4518,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Ability: Intimidate
@@ -4370,6 +4543,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Level: 33
@@ -4388,6 +4562,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacruel
 Ability: Clear Body
@@ -4411,6 +4586,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Level: 30
@@ -4426,6 +4602,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Level: 33
@@ -4441,6 +4618,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Level: 34
@@ -4456,6 +4634,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Level: 37
@@ -4471,6 +4650,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Makuhita
 Ability: Thick Fat
@@ -4495,6 +4675,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Heracross
 Ability: Guts
@@ -4517,6 +4698,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Ability: Thick Fat
@@ -4541,6 +4723,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -4565,6 +4748,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -4590,6 +4774,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machoke
 Level: 27
@@ -4605,6 +4790,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Level: 29
@@ -4620,6 +4806,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Level: 31
@@ -4638,6 +4825,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Level: 33
@@ -4659,6 +4847,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Joltik
 Ability: Compound Eyes
@@ -4692,6 +4881,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -4717,6 +4907,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Ability: Thick Fat
@@ -4741,6 +4932,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Electrike
 Ability: Static
@@ -4766,6 +4958,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -4790,6 +4983,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -4813,6 +5007,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Voltorb
 Ability: Aftermath
@@ -4837,6 +5032,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -4860,6 +5056,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Ability: Magnet Pull
@@ -4884,6 +5081,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Level: 25
@@ -4902,6 +5100,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Level: 28
@@ -4920,6 +5119,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 31
@@ -4938,6 +5138,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 34
@@ -4956,6 +5157,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -4980,6 +5182,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -5003,6 +5206,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Vulpix
 Ability: Flash Fire
@@ -5027,6 +5231,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -5051,6 +5256,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -5082,6 +5288,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -5113,6 +5320,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Level: 26
@@ -5128,6 +5336,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Level: 29
@@ -5143,6 +5352,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Level: 32
@@ -5158,6 +5368,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magcargo
 Level: 35
@@ -5173,6 +5384,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandslash
 Ability: Sand Rush
@@ -5189,6 +5401,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -5218,6 +5431,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nuzleaf
 Ability: Pickpocket
@@ -5241,6 +5455,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Ability: Sand Rush
@@ -5266,6 +5481,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luxio
 Ability: Intimidate
@@ -5289,6 +5505,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Ability: Quick Feet
@@ -5311,6 +5528,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Ability: Own Tempo
@@ -5336,6 +5554,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Ability: Sand Rush
@@ -5360,6 +5579,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Level: 26
@@ -5375,6 +5595,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 29
@@ -5390,6 +5611,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Level: 31
@@ -5408,6 +5630,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Level: 34
@@ -5426,6 +5649,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Surskit
 Ability: Swift Swim
@@ -5447,6 +5671,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wurmple
 Ability: Shield Dust
@@ -5477,6 +5702,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wurmple
 Ability: Shield Dust
@@ -5507,6 +5733,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pinsir
 Ability: Hyper Cutter
@@ -5530,6 +5757,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dustox
 Ability: Shield Dust
@@ -5555,6 +5783,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Surskit
 Level: 31
@@ -5573,6 +5802,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Surskit
 Level: 34
@@ -5591,6 +5821,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Surskit
 Level: 36
@@ -5612,6 +5843,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Surskit
 Level: 38
@@ -5636,6 +5868,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Abra
 Ability: Magic Guard
@@ -5655,6 +5888,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kirlia
 Ability: Synchronize
@@ -5678,6 +5912,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Absol
 Ability: Justified
@@ -5701,6 +5936,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Girafarig
 Ability: Inner Focus
@@ -5724,6 +5960,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kirlia
 Ability: Synchronize
@@ -5753,6 +5990,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Vikavolt
 Ability: Levitate
@@ -5775,6 +6013,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Solrock
 Ability: Levitate
@@ -5798,6 +6037,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Level: 33
@@ -5813,6 +6053,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Level: 38
@@ -5828,6 +6069,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Level: 41
@@ -5843,6 +6085,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Solrock
 Level: 45
@@ -5858,6 +6101,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Ability: Magic Guard
@@ -5881,6 +6125,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Ability: Pure Power
@@ -5905,6 +6150,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Xatu
 Ability: Psych Out
@@ -5929,6 +6175,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Ability: Magic Guard
@@ -5952,6 +6199,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golduck
 Ability: Cloud Nine
@@ -5983,6 +6231,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Crabominable
 Ability: Hyper Cutter
@@ -6011,6 +6260,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Ability: Magic Guard
@@ -6035,6 +6285,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Level: 34
@@ -6050,6 +6301,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Level: 37
@@ -6065,6 +6317,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Level: 40
@@ -6080,6 +6333,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lunatone
 Level: 43
@@ -6095,6 +6349,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -6119,6 +6374,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Level: 44
@@ -6134,6 +6390,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zangoose
 Level: 45
@@ -6149,6 +6406,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Level: 34
@@ -6164,6 +6422,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 36
@@ -6187,6 +6446,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 39
@@ -6209,6 +6469,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 41
@@ -6239,6 +6500,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 Mugshot: Purple
 
 Mightyena
@@ -6295,6 +6557,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 Mugshot: Green
 
 Dusclops @ Eviolite
@@ -6352,6 +6615,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 Mugshot: Pink
 
 Glalie
@@ -6408,6 +6672,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 Mugshot: Blue
 
 Flygon @ Choice Scarf
@@ -6464,6 +6729,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Geodude
 Ability: Rock Head
@@ -6496,6 +6762,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -6536,6 +6803,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Minun
 Ability: Minus
@@ -6583,6 +6851,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Ninetales
 Ability: Flash Fire
@@ -6631,6 +6900,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Loudred
 Ability: Soundproof
@@ -6675,6 +6945,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Swellow
 Ability: Guts
@@ -6729,6 +7000,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Solrock @ Life Orb
 Ability: Levitate
@@ -6784,6 +7056,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Crawdaunt
 Ability: Adaptability
@@ -6840,6 +7113,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ralts (M)
 Ability: Telepathy
@@ -6856,6 +7130,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Qwilfish
 Ability: Intimidate
@@ -6878,6 +7153,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Houndour
 Ability: Unnerve
@@ -6914,6 +7190,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ralts
 Level: 26
@@ -6929,6 +7206,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kirlia
 Level: 29
@@ -6944,6 +7222,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kirlia
 Level: 32
@@ -6959,6 +7238,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kirlia
 Level: 34
@@ -6977,6 +7257,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Quick Feet
@@ -7000,6 +7281,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Snubbull
 Ability: Intimidate
@@ -7030,6 +7312,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Level: 26
@@ -7045,6 +7328,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Level: 29
@@ -7060,6 +7344,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 32
@@ -7075,6 +7360,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 35
@@ -7090,6 +7376,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spinda @ Choice Scarf
 Ability: Contrary
@@ -7113,6 +7400,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Ability: Pickup
@@ -7138,6 +7426,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Level: 28
@@ -7160,6 +7449,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Level: 31
@@ -7182,6 +7472,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 34
@@ -7204,6 +7495,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Level: 36
@@ -7226,6 +7518,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Taillow @ Oran Berry
 Ability: Guts
@@ -7250,6 +7543,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skitty
 Ability: Normalize
@@ -7274,6 +7568,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skitty @ Oran Berry
 Level: 22
@@ -7325,6 +7620,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skitty @ Oran Berry
 Level: 29
@@ -7340,6 +7636,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skitty @ Oran Berry
 Level: 32
@@ -7355,6 +7652,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Delcatty @ Oran Berry
 Level: 35
@@ -7370,6 +7668,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Delcatty @ Sitrus Berry
 Level: 38
@@ -7385,6 +7684,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia
 Ability: Poison Point
@@ -7409,6 +7709,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle @ Sitrus Berry
 Ability: Plus
@@ -7440,6 +7741,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Thick Fat
@@ -7463,6 +7765,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle
 Ability: Plus
@@ -7488,6 +7791,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle @ Oran Berry
 Level: 26
@@ -7503,6 +7807,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle @ Oran Berry
 Level: 29
@@ -7518,6 +7823,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle @ Oran Berry
 Level: 32
@@ -7533,6 +7839,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle @ Sitrus Berry
 Level: 35
@@ -7548,6 +7855,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shelgon
 Ability: Rock Head
@@ -7571,6 +7879,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Level: 33
@@ -7594,6 +7903,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Level: 36
@@ -7617,6 +7927,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Level: 39
@@ -7640,6 +7951,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Level: 42
@@ -7663,6 +7975,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -7687,6 +8000,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -7719,6 +8033,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Level: 30
@@ -7734,6 +8049,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 33
@@ -7749,6 +8065,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 36
@@ -7764,6 +8081,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 39
@@ -7779,6 +8097,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poochyena
 Ability: Run Away
@@ -7798,6 +8117,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Ability: Pickup
@@ -7822,6 +8142,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude (M)
 Ability: Rock Head
@@ -7845,6 +8166,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude (M)
 Ability: Rock Head
@@ -7868,6 +8190,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -7891,6 +8214,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Ability: Sand Rush
@@ -7921,6 +8245,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Slaking
 Ability: Truant
@@ -7951,6 +8276,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Weezing
 Ability: Neutralizing Gas
@@ -7983,6 +8309,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Trapinch
 Ability: Hyper Cutter
@@ -8007,6 +8334,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Aron
 Ability: Sturdy
@@ -8031,6 +8359,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Level: 27
@@ -8046,6 +8375,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Level: 28
@@ -8061,6 +8391,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Level: 31
@@ -8079,6 +8410,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Level: 34
@@ -8097,6 +8429,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gastly
 Ability: Levitate
@@ -8125,6 +8458,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poochyena
 Ability: Run Away
@@ -8146,6 +8480,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Aron
 Ability: Sturdy
@@ -8170,6 +8505,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 Mugshot: Yellow
 
 Skarmory @ Metal Coat
@@ -8226,6 +8562,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Goldeen
 Ability: Lightning Rod
@@ -8257,6 +8594,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magikarp
 Ability: Swift Swim
@@ -8290,6 +8628,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magikarp
 Ability: Swift Swim
@@ -8321,6 +8660,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magikarp
 Ability: Swift Swim
@@ -8350,6 +8690,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Liquid Ooze
@@ -8371,6 +8712,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Liquid Ooze
@@ -8408,6 +8750,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Barboach
 Ability: Oblivious
@@ -8433,6 +8776,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Clear Body
@@ -8464,6 +8808,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Liquid Ooze
@@ -8487,6 +8832,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -8510,6 +8856,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Level: 24
@@ -8528,6 +8875,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Level: 29
@@ -8549,6 +8897,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Level: 31
@@ -8570,6 +8919,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Level: 33
@@ -8591,6 +8941,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Ability: Intimidate
@@ -8642,6 +8993,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Voltorb
 Ability: Aftermath
@@ -8671,6 +9023,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Phanpy
 Ability: Pickup
@@ -8694,6 +9047,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Ability: Magnet Pull
@@ -8717,6 +9071,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Level: 30
@@ -8732,6 +9087,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Level: 33
@@ -8747,6 +9103,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 36
@@ -8762,6 +9119,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 39
@@ -8777,6 +9135,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Voltorb
 Ability: Aftermath
@@ -8801,6 +9160,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Phanpy
 Ability: Pickup
@@ -8833,6 +9193,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Level: 28
@@ -8848,6 +9209,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Level: 31
@@ -8863,6 +9225,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 34
@@ -8878,6 +9241,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Level: 37
@@ -8893,6 +9257,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Ability: Run Away
@@ -8916,6 +9281,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Level: 28
@@ -8931,6 +9297,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Level: 31
@@ -8946,6 +9313,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dodrio
 Level: 34
@@ -8961,6 +9329,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dodrio
 Level: 37
@@ -8976,6 +9345,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Ability: Run Away
@@ -8999,6 +9369,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Level: 28
@@ -9014,6 +9385,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Level: 31
@@ -9029,6 +9401,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dodrio
 Level: 34
@@ -9044,6 +9417,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dodrio
 Level: 37
@@ -9059,6 +9433,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Ability: Natural Cure
@@ -9090,6 +9465,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Linoone
 Ability: Pickup
@@ -9114,6 +9490,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Ability: Natural Cure
@@ -9145,6 +9522,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Ability: Natural Cure
@@ -9177,6 +9555,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Ability: Natural Cure
@@ -9209,6 +9588,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Level: 39
@@ -9224,6 +9604,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Level: 42
@@ -9239,6 +9620,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Level: 45
@@ -9254,6 +9636,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Level: 48
@@ -9269,6 +9652,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dodrio
 Ability: Early Bird
@@ -9301,6 +9685,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magneton
 Ability: Magnet Pull
@@ -9332,6 +9717,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Donphan
 Ability: Sturdy
@@ -9363,6 +9749,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Ability: Natural Cure
@@ -9394,6 +9781,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Claydol
 Ability: Levitate
@@ -9425,6 +9813,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Level: 39
@@ -9440,6 +9829,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Level: 42
@@ -9455,6 +9845,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Level: 45
@@ -9470,6 +9861,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Level: 48
@@ -9485,6 +9877,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 37
@@ -9500,6 +9893,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 41
@@ -9515,6 +9909,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 44
@@ -9530,6 +9925,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Bagon
 Level: 46
@@ -9548,6 +9944,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 49
@@ -9566,6 +9963,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shelgon
 Ability: Rock Head
@@ -9591,6 +9989,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Rain Dish
@@ -9614,6 +10013,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -9651,6 +10051,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Ability: Guts
@@ -9674,6 +10075,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Ability: Run Away
@@ -9704,6 +10106,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skarmory
 Ability: Sturdy
@@ -9727,6 +10130,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tropius
 Ability: Protosynthesis
@@ -9751,6 +10155,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Ability: Run Away
@@ -9775,6 +10180,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Ability: Rain Dish
@@ -9800,6 +10206,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swablu
 Ability: Natural Cure
@@ -9824,6 +10231,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Carbink
 Ability: Clear Body
@@ -9862,6 +10270,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Ability: Guts
@@ -9886,6 +10295,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Natu
 Level: 32
@@ -9901,6 +10311,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Natu
 Level: 35
@@ -9916,6 +10327,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Natu
 Level: 38
@@ -9931,6 +10343,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 41
@@ -9946,6 +10359,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Xatu
 Ability: Psych Out
@@ -9970,6 +10384,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tropius
 Ability: Protosynthesis
@@ -9993,6 +10408,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ninjask
 Ability: Speed Boost
@@ -10017,6 +10433,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ninjask
 Ability: Speed Boost
@@ -10040,6 +10457,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Walrein
 Ability: Thick Fat
@@ -10075,6 +10493,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Ability: Swift Swim
@@ -10100,6 +10519,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Ability: Levitate
@@ -10128,6 +10548,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Ability: Levitate
@@ -10151,6 +10572,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Level: 24
@@ -10185,6 +10607,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Level: 27
@@ -10219,6 +10642,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Level: 30
@@ -10251,6 +10675,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Level: 33
@@ -10285,6 +10710,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Heracross
 Ability: Guts
@@ -10308,6 +10734,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -10331,6 +10758,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -10363,6 +10791,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tranquill
 Ability: Big Pecks
@@ -10393,6 +10822,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Whimsicott
 Ability: Prankster
@@ -10416,6 +10846,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Level: 26
@@ -10431,6 +10862,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Level: 29
@@ -10446,6 +10878,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 32
@@ -10461,6 +10894,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 35
@@ -10476,6 +10910,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -10501,6 +10936,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia
 Level: 28
@@ -10516,6 +10952,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Castform
 Ability: Forecast
@@ -10540,6 +10977,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Level: 29
@@ -10563,6 +11001,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Level: 32
@@ -10586,6 +11025,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia
 Level: 34
@@ -10609,6 +11049,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia
 Level: 37
@@ -10632,6 +11073,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Rain Dish
@@ -10663,6 +11105,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -10685,6 +11128,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -10708,6 +11152,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Rain Dish
@@ -10738,6 +11183,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Goldeen
 Ability: Lightning Rod
@@ -10761,6 +11207,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Horsea
 Ability: Damp
@@ -10790,6 +11237,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Goldeen
 Ability: Lightning Rod
@@ -10814,6 +11262,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Goldeen
 Ability: Lightning Rod
@@ -10845,6 +11294,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailord
 Ability: Pressure
@@ -10868,6 +11318,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Ability: Swift Swim
@@ -10892,6 +11343,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Ability: Swift Swim
@@ -10916,6 +11368,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -10938,6 +11391,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -10961,6 +11415,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -10985,6 +11440,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -11008,6 +11464,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Ability: Swift Swim
@@ -11032,6 +11489,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -11055,6 +11513,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -11078,6 +11537,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Ability: Swift Swim
@@ -11103,6 +11563,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Swift Swim
@@ -11126,6 +11587,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seadra
 Ability: Damp
@@ -11148,6 +11610,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lanturn
 Level: 34
@@ -11163,6 +11626,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gorebyss
 Ability: Competitive
@@ -11188,6 +11652,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seaking
 Ability: Lightning Rod
@@ -11211,6 +11676,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Level: 38
@@ -11226,6 +11692,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Level: 41
@@ -11241,6 +11708,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Level: 43
@@ -11256,6 +11724,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Level: 45
@@ -11274,6 +11743,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Cacnea
 Ability: Hardy Thorns
@@ -11303,6 +11773,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Trapinch
 Ability: Hyper Cutter
@@ -11326,6 +11797,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Taillow
 Ability: Guts
@@ -11351,6 +11823,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Ability: Huge Power
@@ -11376,6 +11849,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pachirisu
 Ability: Run Away
@@ -11406,6 +11880,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Poison Heal
@@ -11436,6 +11911,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wynaut
 Ability: Shadow Tag
@@ -11461,6 +11937,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Poison Heal
@@ -11484,6 +11961,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Level: 25
@@ -11502,6 +11980,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 28
@@ -11520,6 +11999,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 31
@@ -11538,6 +12018,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 40
@@ -11556,6 +12037,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pikachu
 Ability: Static
@@ -11580,6 +12062,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle
 Level: 27
@@ -11595,6 +12078,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Seedot
 Ability: Early Bird
@@ -11619,6 +12103,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beautifly
 Ability: Swarm
@@ -11643,6 +12128,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle
 Level: 9
@@ -11658,6 +12144,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Duskull
 Level: 10
@@ -11677,6 +12164,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle
 Level: 30
@@ -11692,6 +12180,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle
 Level: 33
@@ -11715,6 +12204,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Plusle
 Level: 36
@@ -11738,6 +12228,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -11761,6 +12252,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Keen Eye
@@ -11784,6 +12276,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Ability: Rain Dish
@@ -11808,6 +12301,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Keen Eye
@@ -11838,6 +12332,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacruel
 Level: 44
@@ -11853,6 +12348,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Level: 43
@@ -11871,6 +12367,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spheal
 Ability: Ice Body
@@ -11899,6 +12396,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Level: 36
@@ -11917,6 +12415,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 39
@@ -11935,6 +12434,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 42
@@ -11953,6 +12453,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 45
@@ -11971,6 +12472,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -11995,6 +12497,7 @@ Gender: Female
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -12018,6 +12521,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Absol
 Ability: Justified
@@ -12042,6 +12546,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Ability: Levitate
@@ -12066,6 +12571,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golduck
 Ability: Cloud Nine
@@ -12089,6 +12595,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -12112,6 +12619,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machamp
 Ability: Guts
@@ -12135,6 +12643,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Glalie
 Ability: Inner Focus
@@ -12158,6 +12667,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Ability: Pure Power
@@ -12183,6 +12693,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Crawdaunt
 Ability: Adaptability
@@ -12205,6 +12716,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Absol
 Ability: Justified
@@ -12229,6 +12741,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Ability: Swift Swim
@@ -12253,6 +12766,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zangoose
 Ability: Toxic Boost
@@ -12277,6 +12791,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Torkoal @ Eject Pack
 Ability: Drought
@@ -12310,6 +12825,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Level: 26
@@ -12325,6 +12841,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Level: 29
@@ -12340,6 +12857,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Level: 32
@@ -12355,6 +12873,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ludicolo
 Level: 35
@@ -12370,6 +12889,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Gardevoir
 Ability: Telepathy
@@ -12431,6 +12951,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer 
+Difficulty: Normal
 
 Treecko
 Level: 5
@@ -12445,6 +12966,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -12477,6 +12999,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -12516,6 +13039,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Torchic
 Level: 5
@@ -12530,6 +13054,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -12563,6 +13088,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -12602,6 +13128,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Difficulty: Normal
 
 Mudkip
 Level: 5
@@ -12616,6 +13143,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -12648,6 +13176,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -12686,6 +13215,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Smart Trainer
+Difficulty: Normal
 
 Treecko
 Level: 5
@@ -12700,6 +13230,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -12732,6 +13263,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -12771,6 +13303,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Smart Trainer
+Difficulty: Normal
 
 Torchic
 Level: 5
@@ -12785,6 +13318,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -12818,6 +13352,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -12857,6 +13392,7 @@ Gender: Female
 Music: Female
 Double Battle: No
 AI: Smart Trainer
+Difficulty: Normal
 
 Mudkip
 Level: 5
@@ -12871,6 +13407,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -12903,6 +13440,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -12941,6 +13479,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Makuhita
 Ability: Thick Fat
@@ -12996,6 +13535,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pinsir
 Ability: Hyper Cutter
@@ -13019,6 +13559,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Seviper @ Choice Scarf
 Ability: Merciless
@@ -13056,6 +13597,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Loudred
 Level: 22
@@ -13083,6 +13625,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Loudred
 Level: 25
@@ -13110,6 +13653,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Loudred
 Level: 28
@@ -13137,6 +13681,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Loudred
 Level: 31
@@ -13164,6 +13709,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Keen Eye
@@ -13217,6 +13763,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Absol
 Ability: Prankster
@@ -13257,6 +13804,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandslash
 Ability: Sand Rush
@@ -13281,6 +13829,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Level: 22
@@ -13308,6 +13857,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 25
@@ -13335,6 +13885,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 28
@@ -13362,6 +13913,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 31
@@ -13389,6 +13941,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Ability: Technician
@@ -13412,6 +13965,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nuzleaf
 Ability: Chlorophyll
@@ -13443,6 +13997,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Florges
 Ability: Flower Veil
@@ -13466,6 +14021,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 31
@@ -13481,6 +14037,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 34
@@ -13496,6 +14053,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Breloom
 Level: 37
@@ -13511,6 +14069,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Level: 39
@@ -13526,6 +14085,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gloom
 Ability: Chlorophyll
@@ -13556,6 +14116,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Ability: Swift Swim
@@ -13588,6 +14149,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Vivillon
 Ability: Friend Guard
@@ -13618,6 +14180,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gloom
 Level: 30
@@ -13633,6 +14196,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gloom
 Level: 33
@@ -13648,6 +14212,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gloom
 Level: 36
@@ -13663,6 +14228,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Bellossom
 Level: 39
@@ -13678,6 +14244,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Ability: Magnet Pull
@@ -13701,6 +14268,7 @@ Gender: Male
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gyarados
 Ability: Intimidate
@@ -13731,6 +14299,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Level: 31
@@ -13746,6 +14315,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -13769,6 +14339,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -13792,6 +14363,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude (M)
 Ability: Rock Head
@@ -13815,6 +14387,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -13839,6 +14412,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -13863,6 +14437,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Makuhita
 Ability: Thick Fat
@@ -13888,6 +14463,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Chimecho
 Ability: Levitate
@@ -13912,6 +14488,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -13935,6 +14512,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -13965,6 +14543,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacruel
 Ability: Clear Body
@@ -13989,6 +14568,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -14012,6 +14592,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sharpedo
 Ability: Rough Skin
@@ -14035,6 +14616,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Girafarig
 Level: 37
@@ -14050,6 +14632,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -14074,6 +14657,7 @@ Gender: Female
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Banette
 Ability: Insomnia
@@ -14097,6 +14681,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Metang @ Choice Scarf
 Ability: Full-Metal Body
@@ -14118,6 +14703,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Chimecho
 Ability: Levitate
@@ -14142,6 +14728,7 @@ Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Crobat
 Ability: Inner Focus
@@ -14166,6 +14753,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Claydol
 Ability: Levitate
@@ -14190,6 +14778,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Weezing
 Ability: Levitate
@@ -14212,6 +14801,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Rhydon
 Ability: Lightning Rod
@@ -14235,6 +14825,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magcargo
 Ability: Pyroclastic Flow
@@ -14264,6 +14855,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Xatu
 Ability: Psych Out
@@ -14288,6 +14880,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -14313,6 +14906,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -14337,6 +14931,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pinsir
 Ability: Hyper Cutter
@@ -14361,6 +14956,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Starmie
 Ability: Natural Cure
@@ -14393,6 +14989,7 @@ Gender: Female
 Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -14416,6 +15013,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Torkoal @ Eject Pack
 Ability: Drought
@@ -14455,6 +15053,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Ability: Color Change
@@ -14478,6 +15077,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Poison Heal
@@ -14502,6 +15102,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -14526,6 +15127,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Claydol @ Room Service
 Ability: Levitate
@@ -14581,6 +15183,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -14625,6 +15228,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Ability: Pickup
@@ -14647,6 +15251,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swablu
 Ability: Natural Cure
@@ -14670,6 +15275,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Ability: Thick Fat
@@ -14686,6 +15292,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Ability: Huge Power
@@ -14717,6 +15324,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Level: 26
@@ -14732,6 +15340,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Level: 29
@@ -14747,6 +15356,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Level: 32
@@ -14762,6 +15372,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Level: 34
@@ -14780,6 +15391,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beedrill
 Ability: Swarm
@@ -14804,6 +15416,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Bulbasaur
 Ability: Overgrow
@@ -14840,6 +15453,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Ability: Swift Swim
@@ -14864,6 +15478,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lanturn
 Ability: Volt Absorb
@@ -14887,6 +15502,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wurmple
 Ability: Run Away
@@ -14908,6 +15524,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wurmple
 Ability: Run Away
@@ -14943,6 +15560,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Cascoon
 Ability: Shed Skin
@@ -14971,6 +15589,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nincada
 Ability: Compound Eyes
@@ -15001,6 +15620,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Volbeat
 Ability: Prankster
@@ -15024,6 +15644,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ninjask
 Ability: Speed Boost
@@ -15046,6 +15667,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nincada
 Ability: Compound Eyes
@@ -15069,6 +15691,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ninjask
 Level: 27
@@ -15084,6 +15707,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dustox
 Level: 29
@@ -15099,6 +15723,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Surskit
 Level: 31
@@ -15117,6 +15742,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Surskit
 Level: 33
@@ -15138,6 +15764,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -15162,6 +15789,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Ability: Rock Head
@@ -15192,6 +15820,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Ability: Rock Head
@@ -15216,6 +15845,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Ability: Rock Head
@@ -15239,6 +15869,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hippopotas
 Ability: Sand Stream
@@ -15277,6 +15908,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -15299,6 +15931,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Ability: Rock Head
@@ -15322,6 +15955,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Level: 9
@@ -15341,6 +15975,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 10
@@ -15360,6 +15995,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Ability: Rock Head
@@ -15391,6 +16027,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Level: 24
@@ -15412,6 +16049,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Level: 27
@@ -15433,6 +16071,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Level: 30
@@ -15454,6 +16093,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Graveler
 Level: 33
@@ -15475,6 +16115,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -15500,6 +16141,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Level: 45
@@ -15515,6 +16157,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Volbeat
 Ability: Prankster
@@ -15538,6 +16181,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Volbeat
 Level: 30
@@ -15553,6 +16197,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Volbeat
 Level: 33
@@ -15568,6 +16213,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Volbeat
 Level: 36
@@ -15583,6 +16229,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Volbeat
 Level: 39
@@ -15598,6 +16245,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Goldeen
 Ability: Lightning Rod
@@ -15621,6 +16269,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kecleon
 Ability: Color Change
@@ -15646,6 +16295,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -15671,6 +16321,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -15695,6 +16346,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Ability: Levitate
@@ -15726,6 +16378,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ninjask
 Ability: Speed Boost
@@ -15749,6 +16402,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Koffing
 Ability: Levitate
@@ -15772,6 +16426,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Ability: Guts
@@ -15796,6 +16451,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swablu
 Ability: Natural Cure
@@ -15826,6 +16482,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ralts (F)
 Ability: Telepathy
@@ -15848,6 +16505,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 47
@@ -15892,6 +16550,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 50
@@ -15936,6 +16595,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 53
@@ -15980,6 +16640,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Altaria
 Level: 56
@@ -16024,6 +16685,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -16071,6 +16733,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -16119,6 +16782,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -16167,6 +16831,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -16214,6 +16879,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -16262,6 +16928,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Grumpig
 Ability: Magic Bounce
@@ -16310,6 +16977,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailord
 Ability: Pressure
@@ -16340,6 +17008,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Cradily
 Ability: Suction Cups
@@ -16364,6 +17033,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magikarp @ Choice Band
 Ability: Swift Swim
@@ -16390,6 +17060,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Vileplume
 Ability: Chlorophyll
@@ -16420,6 +17091,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shiftry
 Ability: Wind Rider
@@ -16451,6 +17123,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machoke
 Ability: Guts
@@ -16474,6 +17147,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacruel
 Ability: Clear Body
@@ -16504,6 +17178,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Swellow
 Ability: Guts
@@ -16528,6 +17203,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sealeo
 Ability: Thick Fat
@@ -16551,6 +17227,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lanturn
 Ability: Dazzling
@@ -16573,6 +17250,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spinda
 Ability: Own Tempo
@@ -16596,6 +17274,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Camerupt
 Ability: Solid Rock
@@ -16620,6 +17299,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia
 Ability: Poison Point
@@ -16643,6 +17323,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dustox
 Ability: Shield Dust
@@ -16666,6 +17347,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 39
@@ -16689,6 +17371,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 43
@@ -16712,6 +17395,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 46
@@ -16735,6 +17419,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 49
@@ -16758,6 +17443,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Medicham
 Level: 52
@@ -16781,6 +17467,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Ability: Drizzle
@@ -16805,6 +17492,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lanturn
 Ability: Dazzling
@@ -16828,6 +17516,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Chinchou
 Level: 42
@@ -16843,6 +17532,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lanturn
 Level: 45
@@ -16858,6 +17548,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lanturn
 Level: 48
@@ -16873,6 +17564,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lanturn
 Level: 51
@@ -16888,6 +17580,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Goldeen
 Ability: Lightning Rod
@@ -16911,6 +17604,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magikarp
 Ability: Swift Swim
@@ -16945,6 +17639,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poochyena @ Nugget
 Ability: Run Away
@@ -16968,6 +17663,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lotad @ Nugget
 Ability: Rain Dish
@@ -16992,6 +17688,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Feebas
 Ability: Swift Swim
@@ -17013,6 +17710,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Ability: Thick Fat
@@ -17036,6 +17734,7 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Ability: Sand Rush
@@ -17059,6 +17758,7 @@ Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Minun 
 Ability: Minus
@@ -17084,6 +17784,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Electrike
 Ability: Static
@@ -17107,6 +17808,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Magnemite
 Ability: Magnet Pull
@@ -17130,6 +17832,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Voltorb
 Ability: Aftermath
@@ -17153,6 +17856,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Makuhita
 Ability: Thick Fat
@@ -17178,6 +17882,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Ability: Sand Rush
@@ -17203,6 +17908,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Oddish
 Ability: Chlorophyll
@@ -17226,6 +17932,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Poison Heal
@@ -17249,6 +17956,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -17274,6 +17982,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Marill
 Ability: Huge Power
@@ -17298,6 +18007,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skarmory
 Ability: Sturdy
@@ -17321,6 +18031,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -17345,6 +18056,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Aron
 Ability: Sturdy
@@ -17370,6 +18082,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lombre
 Ability: Swift Swim
@@ -17395,6 +18108,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Barboach
 Ability: Oblivious
@@ -17420,6 +18134,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nuzleaf
 Ability: Pickpocket
@@ -17445,6 +18160,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Zigzagoon
 Ability: Pickup
@@ -17477,6 +18193,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -17509,6 +18226,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -17533,6 +18251,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Own Tempo
@@ -17557,6 +18276,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -17582,6 +18302,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -17606,6 +18327,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Vileplume
 Ability: Chlorophyll
@@ -17629,6 +18351,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -17653,6 +18376,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Rhyhorn
 Ability: Lightning Rod
@@ -17676,6 +18400,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -17700,6 +18425,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nosepass
 Ability: Electric Surge
@@ -17723,6 +18449,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -17746,6 +18473,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Own Tempo
@@ -17770,6 +18498,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golbat
 Ability: Inner Focus
@@ -17795,6 +18524,7 @@ Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
@@ -17820,6 +18550,7 @@ Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Vulpix
 Ability: Drought
@@ -17842,6 +18573,7 @@ Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Levitate
@@ -17864,6 +18596,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Torkoal @ Eject Pack
 Ability: Drought
@@ -17913,6 +18646,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dusclops
 Ability: Pressure
@@ -17935,6 +18669,7 @@ Gender: Male
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Weezing
 Ability: Levitate
@@ -17967,6 +18702,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tentacool
 Ability: Liquid Ooze
@@ -17991,6 +18727,7 @@ Gender: Female
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Azumarill
 Ability: Huge Power
@@ -18014,6 +18751,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Baltoy
 Ability: Sand Rush
@@ -18037,6 +18775,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Rain Dish
@@ -18059,6 +18798,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Ability: Natural Cure
@@ -18082,6 +18822,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Keen Eye
@@ -18112,6 +18853,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -18144,6 +18886,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skarmory
 Ability: Sturdy
@@ -18167,6 +18910,7 @@ Gender: Female
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Trapinch
 Ability: Hyper Cutter
@@ -18191,6 +18935,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Ability: Sand Rush
@@ -18214,6 +18959,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Cacnea
 Ability: Hardy Thorns
@@ -18236,6 +18982,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Numel
 Ability: Oblivious
@@ -18259,6 +19006,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Oddish
 Ability: Chlorophyll
@@ -18282,6 +19030,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -18306,6 +19055,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Gulpin
 Ability: Earth Eater
@@ -18329,6 +19079,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kadabra
 Ability: Magic Guard
@@ -18352,6 +19103,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -18377,6 +19129,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -18401,6 +19154,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Ability: Guts
@@ -18423,6 +19177,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Quick Feet
@@ -18446,6 +19201,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Doduo
 Ability: Run Away
@@ -18470,6 +19226,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Ralts
 Ability: Telepathy
@@ -18494,6 +19251,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -18519,6 +19277,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Roselia @ Eviolite
 Ability: Natural Cure
@@ -18543,6 +19302,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -18567,6 +19327,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slugma
 Ability: Flame Body
@@ -18590,6 +19351,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Psyduck
 Ability: Cloud Nine
@@ -18614,6 +19376,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Ability: Static
@@ -18639,6 +19402,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Meditite
 Ability: Pure Power
@@ -18664,6 +19428,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dustox
 Ability: Shield Dust
@@ -18688,6 +19453,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Makuhita
 Ability: Thick Fat
@@ -18739,6 +19505,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poochyena
 Ability: Run Away
@@ -18790,6 +19557,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Loudred
 Ability: Soundproof
@@ -18813,6 +19581,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Ability: Water Veil
@@ -18838,6 +19607,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Shroomish
 Ability: Poison Heal
@@ -18862,6 +19632,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Golem
 Level: 32
@@ -18899,6 +19670,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Omanyte
 Level: 37
@@ -18943,6 +19715,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Omastar
 Level: 42
@@ -18987,6 +19760,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Aerodactyl
 Level: 47
@@ -19038,6 +19812,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machamp @ Sitrus Berry
 Level: 33
@@ -19075,6 +19850,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machamp @ Sitrus Berry
 Level: 38
@@ -19112,6 +19888,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hitmonchan
 Level: 40
@@ -19156,6 +19933,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hitmonlee
 Level: 46
@@ -19207,6 +19985,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Normal
 
 Mareep
 Level: 36
@@ -19244,6 +20023,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pikachu
 Level: 39
@@ -19288,6 +20068,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Raichu
 Level: 44
@@ -19332,6 +20113,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Electabuzz
 Level: 50
@@ -19383,6 +20165,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer 
+Difficulty: Normal
 
 Magcargo @ White Herb
 Level: 38
@@ -19420,6 +20203,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Growlithe
 Level: 41
@@ -19464,6 +20248,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Houndour
 Level: 46
@@ -19515,6 +20300,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Arcanine
 Level: 51
@@ -19566,6 +20352,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Chansey
 Level: 42
@@ -19603,6 +20390,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slaking @ Sitrus Berry
 Level: 47
@@ -19647,6 +20435,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slaking @ Sitrus Berry
 Level: 52
@@ -19691,6 +20480,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slaking @ Sitrus Berry
 Level: 57
@@ -19742,6 +20532,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Dratini @ Sitrus Berry
 Level: 40
@@ -19786,6 +20577,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hoothoot
 Level: 43
@@ -19837,6 +20629,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Noctowl
 Level: 48
@@ -19888,6 +20681,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Noctowl
 Level: 53
@@ -19939,6 +20733,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Slowpoke
 Level: 48
@@ -19983,6 +20778,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Drowzee
 Level: 53
@@ -20034,6 +20830,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hypno
 Level: 58
@@ -20085,6 +20882,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hypno
 Level: 63
@@ -20136,6 +20934,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poliwag
 Level: 46
@@ -20180,6 +20979,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Poliwhirl
 Level: 50
@@ -20224,6 +21024,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lapras
 Level: 56
@@ -20275,6 +21076,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Lapras
 Level: 61
@@ -20326,6 +21128,7 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Illumise
 Ability: Prankster
@@ -20349,6 +21152,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Tropius
 Ability: Protosynthesis
@@ -20379,6 +21183,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skarmory
 Level: 77
@@ -20430,6 +21235,7 @@ Gender: Female
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beldum
 Level: 5
@@ -20442,6 +21248,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beldum
 Level: 5
@@ -20454,6 +21261,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beldum
 Level: 5
@@ -20466,6 +21274,7 @@ Gender: Female
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beldum
 Level: 5
@@ -20478,6 +21287,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beldum
 Level: 5
@@ -20490,6 +21300,7 @@ Gender: Female
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beldum
 Level: 5
@@ -20502,6 +21313,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Beldum
 Level: 5
@@ -20514,6 +21326,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Sandshrew
 Level: 31
@@ -20529,6 +21342,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nosepass
 Level: 33
@@ -20547,6 +21361,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nosepass
 Level: 35
@@ -20565,6 +21380,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Nosepass
 Level: 37
@@ -20583,6 +21399,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Ability: Rain Dish
@@ -20613,6 +21430,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 32
@@ -20631,6 +21449,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 34
@@ -20649,6 +21468,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 36
@@ -20667,6 +21487,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Staryu
 Level: 37
@@ -20682,6 +21503,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wingull
 Level: 39
@@ -20700,6 +21522,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 41
@@ -20718,6 +21541,7 @@ Gender: Male
 Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Pelipper
 Level: 43
@@ -20736,6 +21560,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machoke
 Level: 37
@@ -20751,6 +21576,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Makuhita
 Level: 39
@@ -20769,6 +21595,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Level: 41
@@ -20787,6 +21614,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Hariyama
 Level: 43
@@ -20805,6 +21633,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Loudred
 Level: 35
@@ -20820,6 +21649,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spinda
 Level: 37
@@ -20838,6 +21668,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spinda
 Level: 39
@@ -20856,6 +21687,7 @@ Gender: Female
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Spinda
 Level: 41
@@ -20874,6 +21706,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Electrike
 Level: 35
@@ -20892,6 +21725,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Electrike
 Level: 37
@@ -20910,6 +21744,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Level: 39
@@ -20928,6 +21763,7 @@ Gender: Male
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Manectric
 Level: 41
@@ -20946,6 +21782,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Geodude
 Level: 26
@@ -20961,6 +21798,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Level: 28
@@ -20979,6 +21817,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machop
 Level: 30
@@ -20997,6 +21836,7 @@ Gender: Male
 Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Machoke
 Level: 33
@@ -21015,6 +21855,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skitty
 Ability: Normalize
@@ -21066,6 +21907,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Skitty
 Level: 33
@@ -21093,6 +21935,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Delcatty
 Level: 35
@@ -21120,6 +21963,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Delcatty
 Level: 37
@@ -21147,6 +21991,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Wailmer
 Level: 34
@@ -21162,6 +22007,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Level: 36
@@ -21180,6 +22026,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Level: 38
@@ -21198,6 +22045,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Luvdisc
 Level: 40
@@ -21216,6 +22064,7 @@ Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Oranguru
 Ability: Inner Focus
@@ -21239,6 +22088,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Frosmoth
 Ability: Ice Scales
@@ -21268,6 +22118,7 @@ Gender: Male
 Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Copperajah
 Ability: Sheer Force
@@ -21291,6 +22142,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Charmander
 Level: 5
@@ -21303,6 +22155,7 @@ Gender: Female
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Bulbasaur
 Level: 5
@@ -21315,6 +22168,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Groudon
 Level: 5
@@ -21327,6 +22181,106 @@ Gender: Female
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Normal
 
 Kyogre
 Level: 5
+
+/* START CHALLENGE MODE TRAINERS */
+
+=== TRAINER_ROXANNE_1 ===
+Name: ROXANNE
+Class: Leader
+Pic: Leader Roxanne
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Lileep
+Ability: Storm Drain
+Level: 12
+EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+- Rock Throw
+- Absorb
+- Leech Seed
+- Ingrain
+
+Anorith
+Ability: Battle Armor
+Level: 12
+EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+- Fury Cutter
+- Rock Throw
+- Hone Claws
+
+Aron
+Ability: Sturdy
+Level: 13
+EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+- Metal Claw
+- Smack Down
+- Stealth Rock
+- Roar
+
+Nosepass
+Ability: Sturdy
+Level: 14
+EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+- Rock Tomb
+- Spark
+
+=== TRAINER_BRAWLY_1 ===
+Name: BRAWLY
+Class: Leader
+Pic: Leader Brawly
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Meditite
+Ability: Pure Power
+Level: 14
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Confusion
+- Confusion
+- Rock Smash
+- Meditate
+
+Machop
+Ability: Steadfast
+Level: 14
+EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Karate Chop
+- Payback
+- Counter
+- Focus Energy
+
+Heracross
+Ability: Moxie
+Level: 15
+EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+- Arm Thrust
+- Pin Missile
+- Horn Attack
+- Leer
+
+Doduo
+Ability: Run Away
+Level: 15
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Quick Attack
+- Double Kick
+- Peck
+
+Makuhita @ Oran Berry
+Ability: Thick Fat
+Level: 16
+EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Fake Out
+- Force Palm
+- Smack Down
+- Bulk Up
