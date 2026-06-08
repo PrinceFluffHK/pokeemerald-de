@@ -275,6 +275,7 @@ EventScript_ResetAllMapFlags::
 	setflag B_SMART_WILD_AI_FLAG
 	setflag FLAG_DOWSING_MCHN
 	setflag FLAG_SYS_B_DASH
+	setflag FLAG_HIDE_LITTLEROOT_SHROOMISH
 	call EventScript_ResetAllBerries
 	end
 

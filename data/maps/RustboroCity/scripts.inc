@@ -310,6 +310,42 @@ RustboroCity_EventScript_StolenGoodsScene::
 	releaseall
 	end
 
+RustboroCity_EventScript_Shroomish::
+	lock
+	faceplayer
+	msgbox RustboroCity_Text_WantToEnableChallengeMode, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_ShroomishEnableChallengeMode
+	goto_if_eq VAR_RESULT, NO, RustboroCity_EventScript_ShroomishKeepStandardMode
+	end	
+
+RustboroCity_EventScript_ShroomishEnableChallengeMode::
+	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox RustboroCity_Text_EnabledChallengeMode, MSGBOX_DEFAULT
+	waitfanfare
+	closemessage
+	increasedifficulty
+	setflag FLAG_HIDE_RUSTBORO_CITY_SHROOMISH
+	clearflag FLAG_HIDE_LITTLEROOT_SHROOMISH
+	goto RustboroCity_EventScript_ShroomishBye
+	end
+
+RustboroCity_EventScript_ShroomishKeepStandardMode::
+	msgbox RustboroCity_Text_ChallengeModeIsntForEveryone, MSGBOX_DEFAULT
+RustboroCity_EventScript_ShroomishBye::
+	msgbox RustboroCity_Text_KnowWhereToFindMe, MSGBOX_DEFAULT
+	delay 5
+	applymovement LOCALID_RUSTBORO_SHROOMISH, RustboroCity_Movement_ShroomishSpin
+	waitmovement 0
+	playse SE_M_EXPLOSION
+	applymovement LOCALID_RUSTBORO_SHROOMISH, RustboroCity_Movement_ShroomishJumpAway
+	waitmovement 0
+	removeobject LOCALID_RUSTBORO_SHROOMISH
+	setflag FLAG_HIDE_RUSTBORO_CITY_SHROOMISH
+	clearflag FLAG_HIDE_LITTLEROOT_SHROOMISH
+	release
+	end
+
 @ Unused
 RustboroCity_EventScript_ShadyCharacterTookOff::
 	msgbox RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel, MSGBOX_DEFAULT
@@ -1012,6 +1048,28 @@ RustboroCity_EventScript_Boy1::
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
 	end
 
+RustboroCity_Movement_ShroomishSpin:
+	face_up
+	delay_4
+	face_left
+	delay_4
+	face_down
+	delay_4
+	face_right
+	delay_4
+	step_end
+
+RustboroCity_Movement_ShroomishJumpAway:
+	face_up
+	disable_anim
+	slide_up
+	slide_up
+	slide_up
+	slide_up
+	slide_up
+	slide_up
+	step_end
+
 RustboroCity_Text_WeShortenItToDevon:
 	.string "The DEVON CORPORATION…\n"
 	.string "We all just shorten it to DEVON.\p"
@@ -1288,3 +1346,36 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_Text_WantToEnableChallengeMode:
+	.string "Oh hey there {PLAYER}!\p"
+	.string "Oh, you don't know me?\n"
+	.string "I'm the SHROOMISH OF CHALLENGE!\p"
+	.string "Now that you've had some time with\n"
+	.string "Pokémon Emerald: Doubles Edition,\l"
+	.string "want to turn on CHALLENGE MODE?\p"
+	.string "CHALLENGE MODE is only really meant\n"
+	.string "for expert double-battlers.\p"
+	.string "A couple pivotal doubles moves like\n"
+	.string "like PROTECT and FOLLOW ME\l"
+	.string "have their PP reduced to 1.\p"
+	.string "In addition, BOSS TRAINERS like this\n"
+	.string "GYM LEADER will bring brutal teams\l"
+	.string "that anticipate a full player party.\p"
+	.string "So what do you think?\p"
+	.string "Does CHALLENGE MODE\n"
+	.string "sound right for you?$"
+
+RustboroCity_Text_EnabledChallengeMode:
+	.string "CHALLENGE MODE was enabled.\n"
+	.string "Best of luck!$"
+
+RustboroCity_Text_ChallengeModeIsntForEveryone:
+	.string "Got it!$"
+
+RustboroCity_Text_KnowWhereToFindMe:
+	.string "If you change your mind and\n"
+	.string "want to swap MODE in the future,\p"
+	.string "I'll be hanging out back in\n"
+	.string "LITTLEROOT TOWN.\p"
+	.string "So long, {PLAYER}!$"

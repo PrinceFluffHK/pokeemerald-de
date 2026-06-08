@@ -528,8 +528,8 @@
 #define FLAG_DN_DEXNAV_GET                   0x1DF // DexNav
 #define FLAG_DN_DETECTOR_MODE                0x1E0 // DexNav
 #define FLAG_HIDE_BATTLE_TUTORIAL            0x1E1
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_HIDE_RUSTBORO_CITY_SHROOMISH    0x1E2 // EMDE
+#define FLAG_HIDE_LITTLEROOT_SHROOMISH   0x1E3 // EMDE
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
