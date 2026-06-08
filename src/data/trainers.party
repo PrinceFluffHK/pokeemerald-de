@@ -939,31 +939,32 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Skarmory
+Skarmory @ Muscle Band
 Ability: Weak Armor
-Level: 43
+Level: 43  
 - Steel Wing
 - Slash
-- Payback
+- Rain Dance
 - Spikes
+
+Seaking
+Ability: Swift Swim
+Level: 43  
+- Wave Crash
+- Flip Turn
+- Smart Strike
 
 Armaldo
 Ability: Swift Swim
-Level: 43
+Level: 43  
 - Rock Slide
 - X-Scissor
 - Liquidation
 - Knock Off
 
-Lanturn @ Choice Scarf
-Ability: Dazzling
-Level: 43
-- Hydro Pump
-- Volt Switch
-
 Pelipper
 Ability: Drizzle
-Level: 43
+Level: 43  
 - Hurricane
 - Water Pulse
 - U-Turn
@@ -971,7 +972,7 @@ Level: 43
 
 Gorebyss @ White Herb
 Ability: Swift Swim
-Level: 45
+Level: 45  
 - Scald
 - Moonblast
 - Ice Beam
@@ -6731,45 +6732,45 @@ AI: Smart Trainer / Ace Pokemon
 
 Solrock @ Life Orb
 Ability: Levitate
-Level: 45
+Level: 45  
 - Rock Slide
 - Zen Headbutt
 - Flare Blitz
+- Rock Polish
 
-Xatu (F)
-Ability: Magic Bounce
-Level: 43
+Xatu
+Ability: Psych Out
+Level: 43  
 - Future Sight
-- Shadow Ball
-- Light Screen
+- Air Slash
+- Reflect
 
 Claydol
 Ability: Levitate
-Level: 43
+Level: 43  
 - Extrasensory
 - Earthquake
 - Shadow Ball
 - Rapid Spin
 
-Absol (M) @ Wise Glasses
+Absol @ Iron Plate
 Ability: Sharpness
-Level: 43
-- Psycho Cut
+Level: 43  
 - Night Slash
-- Future Sight
+- Psycho Cut
 - Doom Desire
 
-Medicham (F)
+Medicham
 Ability: Pure Power
-Level: 43
+Level: 43  
 - Fake Out
 - Zen Headbutt
-- High Jump Kick
+- Aura Sphere
 - Meditate
 
 Lunatone @ Sitrus Berry
 Ability: Levitate
-Level: 45
+Level: 45  
 - Psychic
 - Moonblast
 - Light Screen
@@ -10396,8 +10397,8 @@ AI: Smart Trainer
 Whimsicott
 Ability: Prankster
 Level: 29
-- Mega Drain
-- Play Rough
+- Giga Drain
+- Moonblast
 - Helping Hand
 
 Swanna
