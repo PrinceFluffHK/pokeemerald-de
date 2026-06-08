@@ -4977,7 +4977,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 0,
-        .pp = 5,
+        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
+            .pp = 8,
+        #else
+            .pp = 1,
+        #endif
         .target = TARGET_USER,
         #if B_UPDATED_MOVE_DATA >= GEN_5
             .priority = 4,
