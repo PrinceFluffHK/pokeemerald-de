@@ -712,7 +712,7 @@ Level: 35
 - Counter
 - Focus Energy
 
-=== TRAINER_GRUNT_MT_PYRE_3 ===
+=== TRAINER_MATT_MT_PYRE ===
 Name: MATT
 Class: Aqua Admin
 Pic: Aqua Admin M
@@ -13766,16 +13766,18 @@ AI: Smart Trainer / Ace Pokemon
 Difficulty: Normal
 
 Absol
-Ability: Prankster
+Ability: Sharpness
 Level: 49
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sucker Punch
 - Extreme Speed
 - Night Slash
 - Psycho Cut
 
 Sableye
-Ability: Sharpness
+Ability: Prankster
 Level: 49
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Feint
 - Night Slash
 - Swords Dance
@@ -13783,6 +13785,7 @@ Level: 49
 Azumarill @ Sitrus Berry
 Ability: Huge Power
 Level: 49
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 - Play Rough
 - Belly Drum
@@ -13791,6 +13794,7 @@ Level: 49
 Froslass
 Ability: Snow Cloak
 Level: 49
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Blizzard
 - Snowscape
 - Destiny Bond
@@ -22244,8 +22248,8 @@ Difficulty: Hard
 Meditite
 Ability: Pure Power
 Level: 14
-EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
-- Confusion
+EVs: 0 HP / 64 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Feint
 - Confusion
 - Rock Smash
 - Meditate
@@ -22253,7 +22257,7 @@ EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe
 Machop
 Ability: Steadfast
 Level: 14
-EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Karate Chop
 - Payback
 - Counter
@@ -22262,7 +22266,7 @@ EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Heracross
 Ability: Moxie
 Level: 15
-EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Arm Thrust
 - Pin Missile
 - Horn Attack
@@ -22284,3 +22288,1341 @@ EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Force Palm
 - Smack Down
 - Bulk Up
+
+=== TRAINER_WATTSON_1 ===
+Name: WATTSON
+Class: Leader
+Pic: Leader Wattson
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Minun @ Oran Berry
+Ability: Minus
+Level: 21
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
+- Nuzzle
+- Encore
+- Growl
+- Electric Terrain
+
+Plusle @ Oran Berry
+Ability: Plus
+Level: 21
+EVs: 0 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 0 Spe  
+- Shock Wave
+- Grass Knot
+- Swift
+
+Volbeat
+Ability: Prankster
+Level: 22
+EVs: 128 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Struggle Bug
+- Charge Beam
+- Thunder Wave
+- Encore
+
+Voltorb - Hisui @ Normal Gem
+Ability: Aftermath
+Level: 23
+EVs: 0 HP / 0 Atk / 192 Def / 0 SpA / 0 SpD / 0 Spe  
+- Electro Ball
+- Energy Ball
+- Explosion
+- Light Screen
+
+Magneton @ Air Balloon
+Ability: Magnet Pull
+Level: 24
+EVs: 64 HP / 0 Atk / 64 Def / 64 SpA / 0 SpD / 0 Spe  
+- Charge Beam
+- Mirror Shot
+- Tri Attack
+- Magnet Rise
+
+Manectric @ Sitrus Berry
+Ability: Intimidate
+Level: 24
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Thunder Fang
+- Ice Fang
+- Overheat
+
+=== TRAINER_TABITHA_MT_CHIMNEY ===
+Name: TABITHA
+Class: Magma Admin
+Pic: Magma Admin
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Torkoal @ Eject Pack
+Ability: Drought
+Level: 22
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Flame Wheel
+- Smog
+- Sunny Day
+
+Nuzleaf
+Ability: Chlorophyll
+Level: 22
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Fake Out
+- Knock Off
+- Razor Leaf
+
+Slugma
+Ability: Pyroclastic Flow
+Level: 22
+EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Fire Spin
+- Ancient Power
+- Sunny Day
+
+Solrock
+Ability: Levitate
+Level: 22
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 64 SpD / 0 Spe  
+- Psybeam
+- Ancient Power
+- Fire Spin
+- Rock Polish
+
+Tropius @ Occa Berry
+Ability: Protosynthesis
+Level: 22
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Solar Beam
+- Gust
+- Magical Leaf
+- Stomp
+
+=== TRAINER_MAXIE_MT_CHIMNEY ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Magma Leader Maxie
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Slugma
+Ability: Pyroclastic Flow
+Level: 24
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Inferno
+- Ancient Power
+- Sunny Day
+
+Baltoy
+Ability: Levitate
+Level: 24
+EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 128 SpD / 0 Spe  
+- Psybeam
+- Ancient Power
+- Trick Room
+- Stealth Rock
+
+Magneton
+Ability: Sturdy
+Level: 24
+EVs: 128 HP / 0 Atk / 64 Def / 64 SpA / 0 SpD / 0 Spe  
+- Volt Switch
+- Mirror Shot
+- Metal Sound
+
+Nosepass @ Magnet
+Ability: Magnet Pull
+Level: 24
+EVs: 0 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 0 Spe  
+- Rock Slide
+- Zap Cannon
+- Flash Cannon
+- Thunder Wave
+
+Koffing @ Sitrus Berry
+Ability: Levitate
+Level: 24
+EVs: 128 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 0 Spe  
+- Sludge Bomb
+- Flamethrower
+- Will-O-Wisp
+- Substitute
+
+Camerupt (M) @ Passho Berry
+Ability: Sheer Force
+Level: 26
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 128 SpD / 0 Spe  
+- Heat Wave
+- Scorching Sands
+
+=== TRAINER_FLANNERY_1 ===
+Name: FLANNERY
+Class: Leader
+Pic: Leader Flannery
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Ninetales (F)
+Ability: Drought
+Level: 27
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 128 SpD / 128 Spe  
+- Flame Burst
+- Extrasensory
+- Disable
+- Sunny Day
+
+Slugma (F) @ Focus Sash
+Ability: Pyroclastic Flow
+Level: 27
+EVs: 64 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
+- Fire Spin
+- Ancient Power
+- Light Screen
+- Yawn
+
+Combusken (F)
+Ability: Speed Boost
+Level: 26
+EVs: 64 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Flare Blitz
+- Brick Break
+- Thunder Punch
+
+Koffing (F)
+Ability: Levitate
+Level: 26
+EVs: 64 HP / 0 Atk / 128 Def / 64 SpA / 64 SpD / 0 Spe  
+- Clear Smog
+- Flamethrower
+- Will-O-Wisp
+- Self-Destruct
+
+Camerupt (F) @ Sitrus Berry
+Ability: Solid Rock
+Level: 28
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
+- Eruption
+- Scorching Sands
+- Body Slam
+
+Torkoal (F) @ White Herb
+Ability: Drought
+Level: 29
+EVs: 128 HP / 0 Atk / 128 Def / 64 SpA / 0 SpD / 0 Spe  
+- Overheat
+- Body Press
+- Solar Beam
+
+=== TRAINER_NORMAN_1 ===
+Name: Norman
+Class: Leader
+Pic: Leader Norman
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Loudred
+Ability: Soundproof
+Level: 29
+EVs: 192 HP / 0 Atk / 64 Def / 64 SpA / 0 SpD / 64 Spe  
+- Hyper Voice
+- Bite
+- Psychic Noise
+- Howl
+
+Vigoroth
+Ability: Vital Spirit
+Level: 29
+EVs: 0 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
+- Slash
+- Encore
+- Focus Energy
+
+Kecleon @ Life Orb
+Ability: Protean
+Level: 30
+EVs: 128 HP / 0 Atk / 64 Def / 128 SpA / 64 SpD / 0 Spe  
+- Flamethrower
+- Thunderbolt
+- Ice Beam
+
+Spinda @ Choice Scarf
+Ability: Contrary
+Level: 30
+EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 128 Spe  
+- Body Slam
+- Psychic
+- Trick
+
+Linoone
+Ability: Pickup
+Level: 30
+EVs: 0 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
+- Extreme Speed
+- Shadow Claw
+- Pin Missile
+- Belly Drum
+
+Slaking @ Sitrus Berry
+Ability: Truant
+Level: 31
+EVs: 0 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
+- Facade
+- Knock Off
+- Brick Break
+- Play Rough
+
+=== TRAINER_SHELLY_WEATHER_INSTITUTE ===
+Name: SHELLY
+Class: Aqua Admin
+Pic: Aqua Admin F
+Gender: Female
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+
+Clamperl @ Deep-Sea Scale
+Ability: Dazzling
+Level: 33
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 128 SpD / 0 Spe  
+- Clamp
+- Iron Defense
+
+Pelipper
+Ability: Drizzle
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Air Slash
+- Water Pulse
+- U-Turn
+
+Skarmory @ Focus Sash
+Ability: Weak Armor
+Level: 31
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Steel Wing
+- Aerial Ace
+
+Armaldo
+Ability: Swift Swim
+Level: 31
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- X-Scissor
+- Rock Slide
+- Liquidation
+
+Seaking
+Ability: Swift Swim
+Level: 33
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Waterfall
+- Aqua Tail
+- Smart Strike
+
+=== TRAINER_WINONA_1 ===
+Name: WINONA
+Class: Leader
+Pic: Leader Winona
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Swellow (F) @ Flame Orb
+Ability: Guts
+Level: 32
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
+- Facade
+- Aerial Ace
+- U-Turn
+
+Pelipper (F)
+Ability: Rain Dish
+Level: 32
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe  
+- Air Slash
+- Hydro Pump
+- Tailwind
+
+Vibrava (F) @ Sharp Beak
+Ability: Levitate
+Level: 33
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Earthquake
+- Dragon Pulse
+- Aerial Ace
+- Struggle Bug
+
+Skarmory (F) @ Salac Berry
+Ability: Sturdy
+Level: 33
+EVs: 192 HP / 192 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
+- Steel Wing
+- Dual Wingbeat
+- Roost
+- Tailwind
+
+Tropius (F)
+Ability: Protosynthesis
+Level: 33
+EVs: 0 HP / 64 Atk / 192 Def / 128 SpA / 0 SpD / 64 Spe  
+- Leaf Storm
+- Fly
+- U-Turn
+- Dragon Tail
+
+Altaria (F) @ Altarianite
+Ability: Cloud Nine
+Level: 34
+EVs: 0 HP / 192 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
+- Body Slam
+- Dragon Pulse
+- Earthquake
+- Dragon Dance
+
+=== TRAINER_MATT_MT_PYRE ===
+Name: MATT
+Class: Aqua Admin
+Pic: Aqua Admin M
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+
+Mightyena @ Magnet
+Ability: Intimidate
+Level: 35
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Snarl
+- Crunch
+- Play Rough
+- Thunder Fang
+
+Machoke @ Toxic Orb
+Ability: Guts
+Level: 35
+EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
+- Brick Break
+- Dual Chop
+- Knock Off
+- Bulk Up
+
+Huntail
+Ability: Defiant
+Level: 37
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Aqua Tail
+- Reversal
+- Ice Fang
+- Shell Smash
+
+=== TRAINER_TABITHA_MAGMA_HIDEOUT ===
+Name: TABITHA
+Class: Magma Admin
+Pic: Magma Admin
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+
+Torkoal @ Eject Pack
+Ability: Drought
+Level: 38
+EVs: 128 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Overheat
+- Body Press
+- Scorching Sands
+- Sunny Day
+
+Shiftry
+Ability: Chlorophyll
+Level: 38
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Fake Out
+- Leaf Blade
+- Knock Off
+- Air Slash
+
+Ninetales
+Ability: Drought
+Level: 38
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
+- Flame Burst
+- Extrasensory
+- Disable
+- Sunny Day
+
+Magcargo @ Air Balloon
+Ability: Pyroclastic Flow
+Level: 38
+EVs: 128 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Heat Wave
+- Power Gem
+- Earth Power
+- Sunny Day
+
+Solrock
+Ability: Levitate
+Level: 38
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
+- Zen Headbutt
+- Rock Slide
+- Flare Blitz
+- Rock Polish
+
+Tropius @ Occa Berry
+Ability: Protosynthesis
+Level: 38
+EVs: 64 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Solar Blade
+- Dual Wingbeat
+- Razor Leaf
+- Double-Edge
+
+=== TRAINER_MAXIE_MAGMA_HIDEOUT ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Magma Leader Maxie
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Magcargo
+Ability: Pyroclastic Flow
+Level: 38
+EVs: 252 HP / 0 Atk / 64 Def / 64 SpA / 0 SpD / 0 Spe  
+- Flamethrower
+- Power Gem
+- Recover
+- Recover
+
+Claydol @ Room Service
+Ability: Levitate
+Level: 38
+EVs: 0 HP / 0 Atk / 0 Def / 192 SpA / 192 SpD / 0 Spe  
+- Extrasensory
+- Earth Power
+- Stealth Rock
+- Trick Room
+
+Weezing @ Sitrus Berry
+Ability: Levitate
+Level: 38
+EVs: 192 HP / 0 Atk / 64 Def / 64 SpA / 64 SpD / 0 Spe  
+- Sludge Bomb
+- Heat Wave
+- Will-O-Wisp
+- Substitute
+
+Nosepass @ Eviolite
+Ability: Magnet Pull
+Level: 38
+EVs: 64 HP / 64 Atk / 128 Def / 64 SpA / 64 SpD / 0 Spe  
+- Power Gem
+- Zap Cannon
+- Body Press
+- Flash Cannon
+
+Magneton
+Ability: Sturdy
+Level: 38
+EVs: 128 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 128 Spe  
+- Volt Switch
+- Flash Cannon
+- Tri-Attack
+- Metal Sound
+
+Camerupt @ Cameruptite
+Ability: Sheer Force
+Level: 40
+EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 128 SpD / 0 Spe  
+- Earth Power
+- Heat Wave
+- Rock Slide
+
+=== TRAINER_MATT ===
+Name: MATT
+Class: Aqua Admin
+Pic: Aqua Admin M
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Swampert @ Swampertite
+Ability: Torrent
+Level: 41
+EVs: 128 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Waterfall
+- Stomping Tantrum
+- Hammer Arm
+- Rain Dance
+
+Mightyena @ Magnet
+Ability: Intimidate
+Level: 37
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Snarl
+- Crunch
+- Play Rough
+- Thunder Fang
+
+Crobat
+Ability: Inner Focus
+Level: 37
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
+- Poison Fang
+- Dual Wingbeat
+- Crunch
+- Leech Life
+
+Crawdaunt @ Choice Band
+Ability: Adaptability
+Level: 39
+EVs: 0 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Aqua Jet
+
+Machamp @ Toxic Orb
+Ability: Guts
+Level: 39
+EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
+- Cross Chop
+- Dual Chop
+- Knock Off
+- Bulk Up
+
+Huntail @ White Herb
+Ability: Defiant
+Level: 41
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Aqua Tail
+- Close Combat
+- Ice Fang
+- Shell Smash
+
+=== TRAINER_TATE_AND_LIZA_1 ===
+Name: TATE&LIZA
+Class: Leader
+Pic: Leader Tate And Liza
+Gender: Male
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Solrock @ Life Orb
+Ability: Levitate
+Level: 45
+EVs: 128 HP / 128 Atk / 128 Def / 0 SpA / 0 SpD / 64 Spe  
+- Rock Slide
+- Zen Headbutt
+- Flare Blitz
+- Hypnosis
+
+Xatu
+Ability: Psych Out
+Level: 43
+EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 252 SpD / 64 Spe  
+- Future Sight
+- Air Slash
+- Reflect
+- Light Screen
+
+Claydol
+Ability: Levitate
+Level: 43
+EVs: 128 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe  
+- Extrasensory
+- Earthquake
+- Shadow Ball
+- Rapid Spin
+
+Absol @ Iron Plate
+Ability: Sharpness
+Level: 43
+EVs: 0 HP / 192 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
+- Extreme Speed
+- Night Slash
+- Psycho Cut
+- Doom Desire
+
+Medicham @ Medichamite
+Ability: Telepathy
+Level: 43
+EVs: 0 HP / 64 Atk / 0 Def / 252 SpA / 0 SpD / 128 Spe  
+- Fake Out
+- Zen Headbutt
+- Aura Sphere
+- Meditate
+
+Lunatone @ Power Herb
+Ability: Levitate
+Level: 45
+EVs: 128 HP / 0 Atk / 128 Def / 128 SpA / 0 SpD / 64 Spe  
+- Psychic
+- Meteor Beam
+- Moonblast
+- Moonlight
+
+=== TRAINER_TABITHA_MOSSDEEP ===
+Name: TABITHA
+Class: Magma Admin
+Pic: Magma Admin
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Torkoal @ Eject Pack
+Ability: Drought
+Level: 44
+EVs: 128 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Overheat
+- Body Press
+- Iron Defense
+- Sunny Day
+
+Magcargo @ Air Balloon
+Ability: Pyroclastic Flow
+Level: 44
+EVs: 128 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Heat Wave
+- Power Gem
+- Earth Power
+
+Tropius
+Ability: Protosynthesis
+Level: 44
+EVs: 64 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Leaf Blade
+- Dual Wingbeat
+- Solar Blade
+- Sunny Day
+
+=== TRAINER_MAXIE_MOSSDEEP ===
+Name: MAXIE
+Class: Magma Leader
+Pic: Magma Leader Maxie
+Gender: Male
+Music: Magma
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Weezing @ Sitrus Berry
+Ability: Levitate
+Level: 44
+EVs: 192 HP / 0 Atk / 64 Def / 128 SpA / 64 SpD / 0 Spe  
+- Sludge Bomb
+- Heat Wave
+- Will-O-Wisp
+- Substitute
+
+Magneton
+Ability: Sturdy
+Level: 44
+EVs: 128 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 192 Spe  
+- Volt Switch
+- Flash Cannon
+- Tri-Attack
+- Metal Sound
+
+Camerupt @ Cameruptite
+Ability: Sheer Force
+Level: 46
+EVs: 128 HP / 64 Atk / 0 Def / 128 SpA / 128 SpD / 0 Spe  
+- Earth Power
+- Heat Wave
+- Rock Slide
+
+=== TRAINER_SHELLY_SEAFLOOR_CAVERN ===
+Name: SHELLY
+Class: Aqua Admin
+Pic: Aqua Admin F
+Gender: Female
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Lanturn
+Ability: Dazzling
+Level: 43
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Scald
+- Volt Switch
+
+Skarmory @ Focus Sash
+Ability: Weak Armor
+Level: 43
+EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Iron Head
+- Aerial Ace
+- Rain Dance
+- Spikes
+
+Seaking
+Ability: Swift Swim
+Level: 43
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Wave Crash
+- Flip Turn
+- Smart Strike
+- Megahorn
+
+Armaldo
+Ability: Swift Swim
+Level: 43
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Rock Slide
+- U-Turn
+- Liquidation
+- Knock Off
+
+Pelipper
+Ability: Drizzle
+Level: 43
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Hurricane
+- Brine
+- U-Turn
+- Rain Dance
+
+Gorebyss @ White Herb
+Ability: Competitive
+Level: 45
+EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 128 Spe  
+- Scald
+- Moonblast
+- Ice Beam
+- Shell Smash
+
+=== TRAINER_ARCHIE ===
+Name: ARCHIE
+Class: Aqua Leader
+Pic: Aqua Leader Archie
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Crobat @ Scope Lens
+Ability: Inner Focus
+Level: 45
+EVs: 128 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Aerial Ace
+- Cross Poison
+- U-Turn
+
+Sharpedo
+Ability: Speed Boost
+Level: 47
+EVs: 0 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Fishious Rend
+- Crunch
+- Ice Fang
+- Psychic Fangs
+
+Machamp @ Flame Orb
+Ability: Guts
+Level: 45
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Cross Chop
+- Payback
+- Thunder Punch
+- Protect
+
+Muk - Alola @ Black Sludge
+Ability: Poison Touch
+Level: 45
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Gunk Shot
+- Knock Off
+- Substitute
+- Haze
+
+Tentacruel
+Ability: Clear Body
+Level: 45
+EVs: 128 HP / 0 Atk / 0 Def / 192 SpA / 64 SpD / 64 Spe  
+- Scald
+- Sludge Bomb
+- Wrap
+- Rapid Spin
+
+Gyarados @ Gyaradosite
+Ability: Intimidate
+Level: 47
+EVs: 0 HP / 128 Atk / 192 Def / 0 SpA / 64 SpD / 64 Spe  
+- Waterfall
+- Lash Out
+- Ice Fang
+- Temper Flare
+
+=== TRAINER_JUAN_1 ===
+Name: JUAN
+Class: Leader
+Pic: Leader Juan
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Crawdaunt
+Ability: Adaptability
+Level: 49
+EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Aqua Jet
+- Crabhammer
+- Knock Off
+
+Whiscash @ Rindo Berry
+Ability: Oblivious
+Level: 48
+EVs: 128 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 128 Spe  
+- Muddy Water
+- Earth Power
+- Zen Headbutt
+- Dragon Dance
+
+Walrein
+Ability: Thick Fat
+Level: 48
+EVs: 0 HP / 0 Atk / 252 Def / 252 SpA / 0 SpD / 0 Spe  
+- Brine
+- Glaciate
+- Body Slam
+- Substitute
+
+Ludicolo
+Ability: Rain Dish
+Level: 48
+EVs: 192 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 192 Spe  
+- Fake Out
+- Energy Ball
+- Hydro Pump
+- Rain Dance
+
+Milotic @ Leftovers
+Ability: Competitive
+Level: 50
+EVs: 252 HP / 0 Atk / 0 Def / 128 SpA / 128 SpD / 0 Spe  
+- Scald
+- Alluring Voice
+- Rain Dance
+- Recover
+
+Kingdra @ Chesto Berry
+Ability: Swift Swim
+Level: 50
+EVs: 0 HP / 0 Atk / 128 Def / 252 SpA / 0 SpD / 128 Spe  
+- Snipe Shot
+- Dragon Pulse
+- Ice Beam
+- Rest
+
+=== TRAINER_WALLY_VR_1 ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Gardevoir
+Ability: Telepathy
+Level: 49
+EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
+- Moonblast
+- Psychic
+- Shadow Ball
+- Calm Mind
+
+Roselia @ Eviolite
+Ability: Poison Point
+Level: 49
+EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe  
+- Giga Drain
+- Venoshock
+- Toxic Spikes
+- Spikes
+
+Delcatty @ Silk Scarf
+Ability: Normalize
+Level: 49
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Fake Out
+- Iron Tail
+- Charm
+- Sing
+
+Altaria
+Ability: Cloud Nine
+Level: 49
+EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Acrobatics
+- Dragon Rush
+- Dazzling Gleam
+- Dragon Dance
+
+Magneton @ Leppa Berry
+Ability: Sturdy
+Level: 49
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
+- Thunderbolt
+- Flash Cannon
+- Zap Cannon
+- Tri Attack
+
+Gallade - Mega @ Galladite
+Ability: Inner Focus
+Level: 50
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Shadow Sneak
+- Sacred Sword
+- Psycho Cut
+- Swords Dance
+
+=== TRAINER_SIDNEY ===
+Name: SIDNEY
+Class: Elite Four
+Pic: Elite Four Sidney
+Gender: Male
+Music: Elite Four
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+Mugshot: Purple
+
+Mightyena
+Ability: Intimidate
+Level: 55
+EVs: 252 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Snarl
+- Crunch
+- Psychic Fangs
+- Howl
+
+Absol @ Absolite
+Ability: Justified
+Level: 57
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Extreme Speed
+- Ceaseless Edge
+- Play Rough
+
+Cacturne @ Focus Sash
+Ability: Hardy Thorns
+Level: 55
+EVs: 252 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
+- Needle Arm
+- Sucker Punch
+- Leech Seed
+- Spiky Shield
+
+Crobat @ Life Orb
+Ability: Inner Focus
+Level: 55
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 128 SpD / 128 Spe  
+- Cross Poison
+- Dual Wingbeat
+- Heat Wave
+- U-Turn
+
+Shiftry
+Ability: Pickpocket
+Level: 55
+EVs: 0 HP / 252 Atk / 0 Def / 128 SpA / 0 SpD / 128 Spe  
+- Fake Out
+- Leaf Blade
+- Throat Chop
+- Extrasensory
+
+Crawdaunt @ Assault Vest
+Ability: Adaptability
+Level: 56
+EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Aqua Jet
+- Knock Off
+
+=== TRAINER_PHOEBE ===
+Name: PHOEBE
+Class: Elite Four
+Pic: Elite Four Phoebe
+Gender: Female
+Music: Elite Four
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+Mugshot: Green
+
+Dusclops @ Eviolite
+Ability: Pressure
+Level: 56
+EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe  
+- Night Shade
+- Ally Switch
+- Trick Room
+- Protect
+
+Sableye
+Ability: Prankster
+Level: 56
+EVs: 252 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Fake Out
+- Poltergeist
+- Foul Play
+- Will-O-Wisp
+
+Cursola @ Power Herb
+Ability: Cursed Body
+Level: 56
+EVs: 128 HP / 0 Atk / 128 Def / 252 SpA / 0 SpD / 0 Spe  
+- Shadow Ball
+- Meteor Beam
+- Scald
+- Strength Sap
+
+Bellossom @ Pixie Plate
+Ability: Dancer
+Level: 57
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
+- Energy Ball
+- Moonblast
+- Pollen Puff
+
+Banette @ Banettite
+Ability: Cursed Body
+Level: 57
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Shadow Claw
+- Crush Claw
+- Knock Off
+- Disable
+
+Dusknoir @ Life Orb
+Ability: Levitate
+Level: 58
+EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Shadow Punch
+- Ice Punch
+- Fire Punch
+- Thunder Punch
+
+=== TRAINER_GLACIA ===
+Name: GLACIA
+Class: Elite Four
+Pic: Elite Four Glacia
+Gender: Female
+Music: Elite Four
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+Mugshot: Pink
+
+Glalie
+Ability: Inner Focus
+Level: 57
+EVs: 128 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 128 Spe  
+- Crunch
+- Blizzard
+- Ice Beam
+- Double-Edge
+
+Sealeo @ Eviolite
+Ability: Thick Fat
+Level: 57
+EVs: 252 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
+- Brine
+- Super Fang
+- Yawn
+- Snowscape
+
+Ninetales - Alola
+Ability: Snow Warning
+Level: 58
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
+- Icy Wind
+- Moonblast
+- Chilling Water
+- Aurora Veil
+
+Donphan @ Never-Melt Ice
+Ability: Sturdy
+Level: 58
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe  
+- Ice Shard
+- Headlong Rush
+- Close Combat
+- Body Press
+
+Walrein @ Leftovers
+Ability: Thick Fat
+Level: 59
+EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe  
+- Glaciate
+- Dive
+- Body Slam
+- Snowscape
+
+Froslass @ Froslassite
+Ability: Snow Cloak
+Level: 59
+EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 128 SpD / 128 Spe  
+- Shadow Ball
+- Blizzard
+- Draining Kiss
+- Disable
+
+=== TRAINER_DRAKE ===
+Name: DRAKE
+Class: Elite Four
+Pic: Elite Four Drake
+Gender: Male
+Music: Elite Four
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+Mugshot: Blue
+
+Flygon @ Choice Scarf
+Ability: Levitate
+Level: 59
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Earthquake
+- Dragon Rush
+- U-Turn
+
+Gyarados
+Ability: Moxie
+Level: 59
+EVs: 128 HP / 128 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
+- Waterfall
+- Temper Flare
+- Crunch
+- Dragon Dance
+
+Altaria @ Yache Berry
+Ability: Cloud Nine
+Level: 59
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe  
+- Dragon Pulse
+- Moonblast
+- Feather Dance
+- Heal Bell
+
+Kingdra @ Scope Lens
+Ability: Sniper
+Level: 59
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
+- Draco Meteor
+- Snipe Shot
+- Ice Beam
+- Focus Energy
+
+Tropius @ Power Herb
+Ability: Protosynthesis
+Level: 59
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Outrage
+- Fly
+- Solar Blade
+- Sunny Day
+
+Salamence @ Salamencite
+Ability: Intimidate
+Level: 60
+EVs: 0 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
+- Dragon Claw
+- Hyper Voice
+- Flamethrower
+- Dragon Dance
+
+=== TRAINER_WALLACE ===
+Name: STEVEN
+Class: Champion
+Pic: Steven
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+Mugshot: Yellow
+
+Skarmory @ Skarmorite
+Ability: Sturdy
+Level: 60
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe  
+- Steel Wing
+- Drill Peck
+- Spikes
+- Roost
+
+Cradily @ Leftovers
+Ability: Storm Drain
+Level: 60
+EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe  
+- Giga Drain
+- Sandstorm
+- Leech Seed
+- Protect
+
+Claydol
+Ability: Levitate
+Level: 60
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
+- Earth Power
+- Extrasensory
+- Meteor Beam
+- Light Screen
+
+Armaldo @ Hard Stone
+Ability: Tough Claws
+Level: 60
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- X-Scissor
+- Rock Slide
+- Crush Claw
+- Swords Dance
+
+Aggron
+Ability: Sturdy
+Level: 61
+EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Iron Tail
+- Head Smash
+- Body Press
+- Outrage
+
+Metagross @ Sitrus Berry
+Ability: Full-Metal Body
+Level: 63
+EVs: 128 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
+- Meteor Mash
+- Psychic Fangs
+- Hammer Arm
