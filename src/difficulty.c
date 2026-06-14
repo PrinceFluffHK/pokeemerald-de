@@ -7,7 +7,7 @@
 enum DifficultyLevel GetCurrentDifficultyLevel(void)
 {
     if (!B_VAR_DIFFICULTY)
-        return DIFFICULTY_NORMAL;
+        return DIFFICULTY_EASY;
 
     return VarGet(B_VAR_DIFFICULTY);
 }

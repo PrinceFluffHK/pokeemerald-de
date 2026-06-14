@@ -1351,17 +1351,17 @@ RustboroCity_Text_WantToEnableChallengeMode:
 	.string "Oh hey there {PLAYER}!\p"
 	.string "Oh, you don't know me?\n"
 	.string "I'm the SHROOMISH OF CHALLENGE!\p"
-	.string "Now that you've had some time with\n"
-	.string "Pokémon Emerald: Doubles Edition,\l"
+	.string "SHROOMISH: Now that you have some\n"
+	.string "experience with Emerald: DE,\l"
 	.string "want to turn on CHALLENGE MODE?\p"
 	.string "CHALLENGE MODE is only really meant\n"
 	.string "for expert double-battlers.\p"
-	.string "A couple pivotal doubles moves like\n"
+	.string "To start, some strong moves\n"
 	.string "like PROTECT and FOLLOW ME\l"
 	.string "have their PP reduced to 1.\p"
-	.string "In addition, BOSS TRAINERS like this\n"
-	.string "GYM LEADER will bring brutal teams\l"
-	.string "that anticipate a full player party.\p"
+	.string "But also, BOSS TRAINERS like\n"
+	.string "Roxanne will bring brutal teams\l"
+	.string "from the very beginning.\p"
 	.string "So what do you think?\p"
 	.string "Does CHALLENGE MODE\n"
 	.string "sound right for you?$"
@@ -1371,7 +1371,8 @@ RustboroCity_Text_EnabledChallengeMode:
 	.string "Best of luck!$"
 
 RustboroCity_Text_ChallengeModeIsntForEveryone:
-	.string "Got it!$"
+	.string "Got it.\n"
+	.string "Enjoy your Gym Challenge then!$"
 
 RustboroCity_Text_KnowWhereToFindMe:
 	.string "If you change your mind and\n"

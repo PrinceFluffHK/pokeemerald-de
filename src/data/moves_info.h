@@ -4977,11 +4977,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 0,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         #if B_UPDATED_MOVE_DATA >= GEN_5
             .priority = 4,
@@ -5378,11 +5374,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_FIGHTING,
         .accuracy = 0,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         #if B_UPDATED_MOVE_DATA >= GEN_5
             .priority = 4,
@@ -12345,11 +12337,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_ROCK,
         .accuracy = 0,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         .priority = 3,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -15454,11 +15442,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_GRASS,
         .accuracy = 0,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -16153,11 +16137,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_POISON,
         .accuracy = 0,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -18535,11 +18515,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_DARK,
         .accuracy = 100,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -19962,11 +19938,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_BUG,
         .accuracy = 0,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -21220,11 +21192,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_FIRE,
         .accuracy = 0,
-        #if VAR_DIFFICULTY == DIFFICULTY_NORMAL
-            .pp = 3,
-        #else
-            .pp = 1,
-        #endif
+        .pp = 3,
         .target = TARGET_USER,
         .priority = 4,
         .category = DAMAGE_CATEGORY_STATUS,

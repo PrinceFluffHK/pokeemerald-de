@@ -905,6 +905,42 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	delay 30
 	return
 
+LittlerootTown_EventScript_Shroomish::
+	lock
+	faceplayer
+	msgbox LittlerootTown_Text_ChangeDifficulty, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, YES, LittlerootTown_EventScript_ShroomishSwitchMode
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_ShroomishKeepMode
+	end
+
+LittlerootTown_EventScript_ShroomishSwitchMode::
+	playfanfare MUS_REGISTER_MATCH_CALL
+	goto_if_eq B_VAR_DIFFICULTY, DIFFICULTY_EASY, LittlerootTown_EventScript_ShroomishSetChallengeMode
+	goto_if_eq B_VAR_DIFFICULTY, DIFFICULTY_NORMAL, LittlerootTown_EventScript_ShroomishSetStandardMode
+	end
+
+LittlerootTown_EventScript_ShroomishSetStandardMode::
+	msgbox LittlerootTown_Text_EnabledStandardMode, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox LittlerootTown_Text_SwitchedToStandard, MSGBOX_DEFAULT
+	setvar B_VAR_DIFFICULTY, DIFFICULTY_EASY
+	release
+	end
+
+LittlerootTown_EventScript_ShroomishSetChallengeMode::
+	msgbox LittlerootTown_Text_EnabledChallengeMode, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox LittlerootTown_Text_SwitchedToChallenge, MSGBOX_DEFAULT
+	setvar B_VAR_DIFFICULTY, DIFFICULTY_NORMAL
+	release
+	end
+
+LittlerootTown_EventScript_ShroomishKeepMode::
+	msgbox LittlerootTown_Text_KeptCurrentMode, MSGBOX_DEFAULT
+	release
+	end
+
 LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "MOM: {PLAYER}, we're here, honey!\p"
 	.string "It must be tiring riding with our things\n"
@@ -1016,3 +1052,27 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+LittlerootTown_Text_ChangeDifficulty:
+	.string "SHROOMISH: Hey, {PLAYER}! It's me,\n"
+	.string "the SHROOMISH of CHALLENGE!\p"
+	.string "You looking to switch up your\n"
+	.string "CHALLENGE setting?$"
+
+LittlerootTown_Text_EnabledChallengeMode:
+	.string "CHALLENGE MODE was enabled.$"
+
+LittlerootTown_Text_EnabledStandardMode:
+	.string "STANDARD MODE was enabled.$"
+
+LittlerootTown_Text_SwitchedToStandard:
+	.string "SHROOMISH: I hope you find the\n"
+	.string "CHALLENGE that you seek.$"
+
+LittlerootTown_Text_SwitchedToChallenge:
+	.string "SHROOMISH: I hope you find the\n"
+	.string "CHALLENGE that you seek.$"
+
+LittlerootTown_Text_KeptCurrentMode:
+	.string "SHROOMISH: Understood.\p"
+	.string "I hope you've found the\n"
+	.string "CHALLENGE that you seek.$"
