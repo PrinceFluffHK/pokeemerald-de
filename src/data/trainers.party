@@ -1921,10 +1921,10 @@ Level: 49
 
 === TRAINER_ALBERT ===
 Name: SCRAGGUS
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Expert
+Pic: Expert M
 Gender: Male
-Music: Cool
+Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
@@ -23682,7 +23682,7 @@ AI: Smart Trainer / Ace Pokemon
 Difficulty: Normal
 
 Gardevoir
-Ability: Telepathy
+Ability: Sharpness
 Level: 49/*EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  */
 - Moonblast
 - Psychic
