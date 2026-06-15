@@ -1071,6 +1071,85 @@ static bool32 CanSelectBattler(enum MoveTarget target)
     return FALSE;
 }
 
+static void LoadMovesIntoBuffer(struct ChooseMoveStruct *dst, enum BattlerId src)
+{
+    for (int i = 0; i < MAX_MON_MOVES; i++)
+    {
+        dst->moves[i]     = gBattleMons[src].moves[i];
+        dst->currentPp[i] = gBattleMons[src].pp[i];
+        dst->maxPp[i]     = gBattleMons[src].pp[i];
+    }
+}
+
+void SwapMoveView(enum BattlerId currentBattler, enum BattlerId targetBattler, enum BattlerId playerBattler)
+{
+    MoveSelectionDisplayMoveNames(targetBattler);
+    MoveSelectionDisplayPpNumber(targetBattler);
+    MoveSelectionDisplayMoveType(targetBattler);
+    MoveSelectionCreateCursorAt(gMoveSelectionCursor[playerBattler], 0);
+    EndBounceEffect(currentBattler, BOUNCE_HEALTHBOX);
+    EndBounceEffect(currentBattler, BOUNCE_MON);
+    DoBounceEffect(targetBattler, BOUNCE_HEALTHBOX, 7, 1);
+    DoBounceEffect(targetBattler, BOUNCE_MON, 7, 1);
+}
+
+void HandleViewOpposingMoves(enum BattlerId playerBattler, bool32 pressedRButton, struct ChooseMoveStruct *moveInfo)
+{
+    enum BattlerId oppLeft  = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+    enum BattlerId oppRight = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+
+    enum BattlerId target = pressedRButton ? oppRight : oppLeft;
+    bool32 viewing = gBattleStruct->viewingOpponentMoves;
+    bool32 viewingRight = gBattleStruct->viewingRightOpponent;
+
+    PlaySE(SE_SELECT);
+
+    // --- ENTER VIEW ---
+    if (!viewing)
+    {
+        gBattleStruct->viewingOpponentMoves = TRUE;
+        gBattleStruct->viewingRightOpponent = pressedRButton;
+
+        // Save player data (non-destructive preview)
+        for (int i = 0; i < MAX_MON_MOVES; i++)
+        {
+            gBattleStruct->savedPlayerMoves[i] = moveInfo->moves[i];
+            gBattleStruct->savedPlayerPP[i]    = moveInfo->currentPp[i];
+            gBattleStruct->savedPlayerMaxPP[i] = moveInfo->maxPp[i];
+        }
+
+        LoadMovesIntoBuffer(moveInfo, target);
+        SwapMoveView(playerBattler, target, playerBattler);
+        return;
+    }
+
+    // --- EXIT VIEW (pressed same side again) ---
+    if ((viewingRight && pressedRButton) || (!viewingRight && !pressedRButton))
+    {
+        gBattleStruct->viewingOpponentMoves = FALSE;
+
+        // Restore player data
+        for (int i = 0; i < MAX_MON_MOVES; i++)
+        {
+            moveInfo->moves[i]     = gBattleStruct->savedPlayerMoves[i];
+            moveInfo->currentPp[i] = gBattleStruct->savedPlayerPP[i];
+            moveInfo->maxPp[i]     = gBattleStruct->savedPlayerMaxPP[i];
+        }
+
+        SwapMoveView(target, playerBattler, playerBattler);
+        return;
+    }
+
+    // --- SWITCH OPPONENT ---
+    gBattleStruct->viewingRightOpponent = pressedRButton;
+
+    LoadMovesIntoBuffer(moveInfo, target);
+
+    // Determine previous opponent for clean bounce removal
+    enum BattlerId prev = viewingRight ? oppRight : oppLeft;
+    SwapMoveView(prev, target, playerBattler);
+}
+
 void HandleInputChooseMove(enum BattlerId battler)
 {
     u32 canSelectTarget = 0;
@@ -1081,7 +1160,24 @@ void HandleInputChooseMove(enum BattlerId battler)
     else
         gPlayerDpadHoldFrames = 0;
 
-    if (JOY_NEW(A_BUTTON) && !gBattleStruct->descriptionSubmenu)
+    if (JOY_NEW(L_BUTTON) 
+        && IsDoubleBattle() 
+        && !(gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))) 
+    {
+        HandleViewOpposingMoves(battler, FALSE, moveInfo);
+    }
+
+    if (JOY_NEW(R_BUTTON) 
+        && IsDoubleBattle() 
+        && !(gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))) 
+    {
+        HandleViewOpposingMoves(battler, TRUE, moveInfo);
+    }
+
+    if (JOY_NEW(A_BUTTON) 
+        && !gBattleStruct->descriptionSubmenu 
+        && !gBattleStruct->viewingOpponentMoves)
+    // if (JOY_NEW(A_BUTTON) && !gBattleStruct->descriptionSubmenu)
     {
         TryToHideMoveInfoWindow();
         PlaySE(SE_SELECT);
@@ -1196,8 +1292,30 @@ void HandleInputChooseMove(enum BattlerId battler)
             BtlController_Complete(battler);
             TryToHideMoveInfoWindow();
         }
+
+        // Always exit opponent view cleanly
+        if (gBattleStruct->viewingOpponentMoves)
+        {
+            enum BattlerId opponentLeft = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+            enum BattlerId opponentRight = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+            EndBounceEffect(opponentLeft, BOUNCE_HEALTHBOX);
+            EndBounceEffect(opponentLeft, BOUNCE_MON);
+            EndBounceEffect(opponentRight, BOUNCE_HEALTHBOX);
+            EndBounceEffect(opponentRight, BOUNCE_MON);
+            DoBounceEffect(battler, BOUNCE_HEALTHBOX, battler, 1);
+            DoBounceEffect(battler, BOUNCE_MON, battler, 1);
+
+            gBattleStruct->viewingOpponentMoves = FALSE;
+            ReloadMoveNames(battler);
+            // gSprites[gBattlerSpriteIds[opponentLeft]].callback = SpriteCallbackDummy;
+        }
+
+        CreateInfoWindow(battler);  // ← your requirement
+        return;
     }
-    else if (JOY_NEW(DPAD_LEFT) && !gBattleStruct->zmove.viewing)
+    else if (JOY_NEW(DPAD_LEFT) 
+        && !gBattleStruct->zmove.viewing)
+        // && !gBattleStruct->viewingOpponentMoves)
     {
         if (gMoveSelectionCursor[battler] & 1)
         {
@@ -1213,7 +1331,9 @@ void HandleInputChooseMove(enum BattlerId battler)
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
-    else if (JOY_NEW(DPAD_RIGHT) && !gBattleStruct->zmove.viewing)
+    else if (JOY_NEW(DPAD_RIGHT) 
+        && !gBattleStruct->zmove.viewing)
+        // && !gBattleStruct->viewingOpponentMoves)
     {
         if (!(gMoveSelectionCursor[battler] & 1)
          && (gMoveSelectionCursor[battler] ^ 1) < gNumberOfMovesToChoose)
@@ -1230,7 +1350,9 @@ void HandleInputChooseMove(enum BattlerId battler)
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
-    else if (JOY_NEW(DPAD_UP) && !gBattleStruct->zmove.viewing)
+    else if (JOY_NEW(DPAD_UP) 
+        && !gBattleStruct->zmove.viewing)
+        // && !gBattleStruct->viewingOpponentMoves)
     {
         if (gMoveSelectionCursor[battler] & 2)
         {
@@ -1246,7 +1368,9 @@ void HandleInputChooseMove(enum BattlerId battler)
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
-    else if (JOY_NEW(DPAD_DOWN) && !gBattleStruct->zmove.viewing)
+    else if (JOY_NEW(DPAD_DOWN) 
+        && !gBattleStruct->zmove.viewing)
+        // && !gBattleStruct->viewingOpponentMoves)
     {
         if (!(gMoveSelectionCursor[battler] & 2)
          && (gMoveSelectionCursor[battler] ^ 2) < gNumberOfMovesToChoose)
@@ -1263,7 +1387,11 @@ void HandleInputChooseMove(enum BattlerId battler)
             TryChangeZTrigger(battler, gMoveSelectionCursor[battler]);
         }
     }
-    else if (B_MOVE_REARRANGEMENT_IN_BATTLE < GEN_4 && JOY_NEW(SELECT_BUTTON) && !gBattleStruct->zmove.viewing && !gBattleStruct->descriptionSubmenu)
+    else if (B_MOVE_REARRANGEMENT_IN_BATTLE < GEN_4 
+            && JOY_NEW(SELECT_BUTTON) 
+            && !gBattleStruct->zmove.viewing 
+            && !gBattleStruct->descriptionSubmenu
+            && !gBattleStruct->viewingOpponentMoves)
     {
         if (gNumberOfMovesToChoose > 1 && !(gBattleTypeFlags & BATTLE_TYPE_LINK))
         {
@@ -2608,6 +2736,7 @@ static void PlayerChooseMoveInBattlePalace(enum BattlerId battler)
 
 void PlayerHandleChooseMove(enum BattlerId battler)
 {
+    gBattleStruct->viewingOpponentMoves = FALSE;
     if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
     {
         gBattleStruct->arenaMindPoints[battler] = 8;

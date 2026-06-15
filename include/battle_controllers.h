@@ -407,6 +407,7 @@ void InitMoveSelectionsVarsAndStrings(enum BattlerId battler);
 void MoveSelectionCreateCursorAt(u8 cursorPos, u8 arg1);
 void MoveSelectionDestroyCursorAt(u8 cursorPosition);
 void PlayerHandleChooseMove(enum BattlerId battler);
+void SwapBouncing(enum BattlerId battlerToBounce, enum BattlerId battlerToStopBounce); //for custom move view
 void HandleInputChooseMove(enum BattlerId battler);
 void HandleInputChooseTarget(enum BattlerId battler);
 void HandleInputShowEntireFieldTargets(enum BattlerId battler);

@@ -714,6 +714,13 @@ struct BattleStruct
     u8 dancerSavedAttacker:3;
     u8 dancerSavedTarget:3;
     u8 padding:2;
+    //Move view
+    bool8 viewingOpponentMoves;
+    bool8 viewingRightOpponent;
+    #define MAX_MON_MOVES 4
+    u16 savedPlayerMoves[MAX_MON_MOVES];
+    u8  savedPlayerPP[MAX_MON_MOVES];
+    u8  savedPlayerMaxPP[MAX_MON_MOVES];
 };
 
 struct AiBattleData
