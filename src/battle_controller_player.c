@@ -411,13 +411,16 @@ static void HandleInputChooseAction(enum BattlerId battler)
         PlaySE(SE_SELECT);
         SwapHpBarsWithHpText();
     }
-    else if (DEBUG_BATTLE_MENU == TRUE && JOY_NEW(SELECT_BUTTON))
+    else if (DEBUG_BATTLE_MENU == TRUE 
+        && JOY_NEW(SELECT_BUTTON))
     {
         BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_DEBUG, 0);
         BtlController_Complete(battler);
     }
-    else if (B_LAST_USED_BALL == TRUE && B_LAST_USED_BALL_CYCLE == FALSE
-             && JOY_NEW(B_LAST_USED_BALL_BUTTON) && CanThrowLastUsedBall())
+    else if (B_LAST_USED_BALL == TRUE 
+        && B_LAST_USED_BALL_CYCLE == FALSE
+        && JOY_NEW(B_LAST_USED_BALL_BUTTON) 
+        && CanThrowLastUsedBall())
     {
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
@@ -431,12 +434,12 @@ static void HandleInputChooseAction(enum BattlerId battler)
         switch(gBattleStruct->movePreviewDisplayed)
         {
             case 0:
-                if(gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
-                  || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL)
-                {
+                // if(gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
+                //   || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL)
+                // {
                     CreateSpeedTiersWindow(battler);
                     gBattleStruct->movePreviewDisplayed=1;
-                }
+                // }
                 break;
             case 1:
                 if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL)
@@ -598,19 +601,27 @@ static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeed
     if (showSpeedFirst)
     {
         AppendSpeed(battler);
-        AppendMoveTarget(battler, isRightSide);
+        if (gSaveBlock2Ptr->optionsPreviewStyle != OPTIONS_PREVIEW_NONE){
+            AppendMoveTarget(battler, isRightSide);
+        }
     }
     else
     {
-        AppendMoveTarget(battler, isRightSide);
-        StringAppend(gStringVar1, COMPOUND_STRING(" "));
+        if (gSaveBlock2Ptr->optionsPreviewStyle != OPTIONS_PREVIEW_NONE){
+            AppendMoveTarget(battler, isRightSide);
+            StringAppend(gStringVar1, COMPOUND_STRING(" "));
+        }
         AppendSpeed(battler);
     }
 }
 
 static void CreateSpeedTiersWindow(u32 battler)
 {
-    StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
+    if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_NONE) {
+        StringCopy(gStringVar1, COMPOUND_STRING("Speed   "));
+    }
+    else 
+        StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
 
     bool32 rightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT));
     bool32 leftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
@@ -626,7 +637,11 @@ static void CreateSpeedTiersWindow(u32 battler)
         AppendBattlerInfo(B_POSITION_OPPONENT_LEFT, FALSE, TRUE);
     }
 
-    StringAppend(gStringVar1, COMPOUND_STRING("\nPrvw  "));
+    if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_NONE) {
+        StringAppend(gStringVar1, COMPOUND_STRING("\nTiers  "));
+    } 
+    else 
+        StringAppend(gStringVar1, COMPOUND_STRING("\nPrvw  "));
     
     bool32 pLeftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
     bool32 pRightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
