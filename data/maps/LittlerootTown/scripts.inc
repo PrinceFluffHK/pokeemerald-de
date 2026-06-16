@@ -908,31 +908,50 @@ LittlerootTown_EventScript_GiveRunningShoes::
 LittlerootTown_EventScript_Shroomish::
 	lock
 	faceplayer
-	msgbox LittlerootTown_Text_ChangeDifficulty, MSGBOX_DEFAULT
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
+	goto_if_ne B_VAR_DIFFICULTY, DIFFICULTY_NORMAL, LittlerootTown_EventScript_ShroomishSetChallengeMode
+	msgbox LittlerootTown_Text_WantToSetStandardMode, MSGBOX_DEFAULT
 	yesnobox 20, 8
-	goto_if_eq VAR_RESULT, YES, LittlerootTown_EventScript_ShroomishSwitchMode
+	goto_if_eq VAR_RESULT, YES, LittlerootTown_EventScript_ShroomishSetStandardMode
+	msgbox LittlerootTown_Text_WantToSetChampionMode, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, YES, LittlerootTown_EventScript_ShroomishSetChampionMode
 	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_ShroomishKeepMode
 	end
 
-LittlerootTown_EventScript_ShroomishSwitchMode::
-	playfanfare MUS_REGISTER_MATCH_CALL
-	goto_if_eq B_VAR_DIFFICULTY, DIFFICULTY_EASY, LittlerootTown_EventScript_ShroomishSetChallengeMode
-	goto_if_eq B_VAR_DIFFICULTY, DIFFICULTY_NORMAL, LittlerootTown_EventScript_ShroomishSetStandardMode
-	end
-
 LittlerootTown_EventScript_ShroomishSetStandardMode::
+	msgbox LittlerootTown_Text_WantToSetStandardMode, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_ShroomishKeepMode
+	playfanfare MUS_REGISTER_MATCH_CALL
 	msgbox LittlerootTown_Text_EnabledStandardMode, MSGBOX_DEFAULT
 	waitfanfare
-	msgbox LittlerootTown_Text_SwitchedToStandard, MSGBOX_DEFAULT
-	setvar B_VAR_DIFFICULTY, DIFFICULTY_EASY
+	msgbox LittlerootTown_Text_SwitchedDifficulty, MSGBOX_DEFAULT
+	setdifficulty DIFFICULTY_EASY
 	release
 	end
 
 LittlerootTown_EventScript_ShroomishSetChallengeMode::
+	msgbox LittlerootTown_Text_WantToSetChallengeMode, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_ShroomishKeepMode
+	playfanfare MUS_REGISTER_MATCH_CALL
 	msgbox LittlerootTown_Text_EnabledChallengeMode, MSGBOX_DEFAULT
 	waitfanfare
-	msgbox LittlerootTown_Text_SwitchedToChallenge, MSGBOX_DEFAULT
-	setvar B_VAR_DIFFICULTY, DIFFICULTY_NORMAL
+	msgbox LittlerootTown_Text_SwitchedDifficulty, MSGBOX_DEFAULT
+	setdifficulty DIFFICULTY_NORMAL
+	release
+	end
+
+LittlerootTown_EventScript_ShroomishSetChampionMode::
+	msgbox LittlerootTown_Text_WantToSetChampionMode, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_ShroomishKeepMode
+	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox LittlerootTown_Text_EnabledChampionMode, MSGBOX_DEFAULT
+	waitfanfare
+	msgbox LittlerootTown_Text_SwitchedDifficulty, MSGBOX_DEFAULT
+	setdifficulty DIFFICULTY_HARD
 	release
 	end
 
@@ -1052,27 +1071,46 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
-LittlerootTown_Text_ChangeDifficulty:
+LittlerootTown_Text_WantToSetStandardMode:
 	.string "NAPPY: Hey, {PLAYER}! It's me,\n"
 	.string "the SHROOMISH of CHALLENGE!\p"
-	.string "You looking to switch up your\n"
-	.string "CHALLENGE setting?$"
+	.string "NAPPY: You looking to switch\n"
+	.string "to STANDARD MODE?$"
 
-LittlerootTown_Text_EnabledChallengeMode:
-	.string "CHALLENGE MODE was enabled.$"
+LittlerootTown_Text_WantToSetChallengeMode:
+	.string "NAPPY: Hey, {PLAYER}! It's me,\n"
+	.string "the SHROOMISH of CHALLENGE!\p"
+	.string "NAPPY: You looking to switch\n"
+	.string "to CHALLENGE MODE?$"
+
+LittlerootTown_Text_WantToSetChampionMode:
+	.string "NAPPY: I see…\p"
+	.string "NAPPY: Could that mean that you\n"
+	.string "want to try CHAMPION MODE?\p"
+	.string "NAPPY: In CHAMPION MODE, Bosses\n"
+	.string "will also feed each POKéMON roughly\l"
+	.string "one Vitamin per gym badge you earn.\p"
+	.string "NAPPY: How about it, {PLAYER}?\p"
+	.string "NAPPY: Want to take on\n"
+	.string "CHAMPION MODE?$"
 
 LittlerootTown_Text_EnabledStandardMode:
 	.string "STANDARD MODE was enabled.$"
 
-LittlerootTown_Text_SwitchedToStandard:
-	.string "NAPPY: I hope you find the\n"
-	.string "CHALLENGE that you seek…$"
+LittlerootTown_Text_EnabledChallengeMode:
+	.string "CHALLENGE MODE was enabled.$"
 
-LittlerootTown_Text_SwitchedToChallenge:
+LittlerootTown_Text_EnabledChampionMode:
+	.string "CHAMPION MODE was enabled.\n"
+	.string "Good luck!$"
+
+LittlerootTown_Text_SwitchedDifficulty:
 	.string "NAPPY: I hope you find the\n"
-	.string "CHALLENGE that you seek…$"
+	.string "CHALLENGE that you seek.\p"
+	.string "NAPPY: I'll be here if you ever\n"
+	.string "want to change it up!$"
 
 LittlerootTown_Text_KeptCurrentMode:
 	.string "NAPPY: Got it!\p"
-	.string "I hope that you've found the\n"
-	.string "CHALLENGE that you seek…$"
+	.string "NAPPY: In that case, I hope you've\n"
+	.string "found the CHALLENGE that you seek.$"

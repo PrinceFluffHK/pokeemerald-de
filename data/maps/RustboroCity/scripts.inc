@@ -313,6 +313,7 @@ RustboroCity_EventScript_StolenGoodsScene::
 RustboroCity_EventScript_Shroomish::
 	lock
 	faceplayer
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
 	msgbox RustboroCity_Text_WantToEnableChallengeMode, MSGBOX_DEFAULT
 	yesnobox 20, 8
 	goto_if_eq VAR_RESULT, YES, RustboroCity_EventScript_ShroomishEnableChallengeMode
@@ -340,6 +341,7 @@ RustboroCity_EventScript_ShroomishBye::
 	msgbox RustboroCity_Text_KnowWhereToFindMe, MSGBOX_DEFAULT
 	delay 5
 	applymovement LOCALID_RUSTBORO_SHROOMISH, RustboroCity_Movement_ShroomishSpin
+	playmoncry SPECIES_ZIGZAGOON, CRY_MODE_NORMAL
 	waitmovement 0
 	playse SE_M_EXPLOSION
 	applymovement LOCALID_RUSTBORO_SHROOMISH, RustboroCity_Movement_ShroomishJumpAway
