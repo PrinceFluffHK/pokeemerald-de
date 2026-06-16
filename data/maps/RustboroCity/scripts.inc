@@ -326,12 +326,16 @@ RustboroCity_EventScript_ShroomishEnableChallengeMode::
 	closemessage
 	increasedifficulty
 	setflag FLAG_HIDE_RUSTBORO_CITY_SHROOMISH
+	setflag FLAG_HIDE_BUTTON_PROMPT
 	clearflag FLAG_HIDE_LITTLEROOT_SHROOMISH
 	goto RustboroCity_EventScript_ShroomishBye
 	end
 
 RustboroCity_EventScript_ShroomishKeepStandardMode::
 	msgbox RustboroCity_Text_ChallengeModeIsntForEveryone, MSGBOX_DEFAULT
+	goto RustboroCity_EventScript_ShroomishBye
+	end
+
 RustboroCity_EventScript_ShroomishBye::
 	msgbox RustboroCity_Text_KnowWhereToFindMe, MSGBOX_DEFAULT
 	delay 5
@@ -1350,20 +1354,21 @@ RustboroCity_Text_YouCanHave2On2Battle:
 RustboroCity_Text_WantToEnableChallengeMode:
 	.string "Oh hey there {PLAYER}!\p"
 	.string "Oh, you don't know me?\n"
-	.string "I'm the SHROOMISH OF CHALLENGE!\p"
-	.string "SHROOMISH: Now that you have some\n"
-	.string "experience with Emerald: DE,\l"
+	.string "I'm NAPPY, the SHROOM OF CHALLENGE!\p"
+	.string "NAPPY: I see you have some\n"
+	.string "experience now with Emerald: DE.\p"
+	.string "NAPPY: I'm here to ask if you\n"
 	.string "want to turn on CHALLENGE MODE?\p"
-	.string "CHALLENGE MODE is only really meant\n"
-	.string "for expert double-battlers.\p"
-	.string "To start, some strong moves\n"
-	.string "like PROTECT and FOLLOW ME\l"
-	.string "have their PP reduced to 1.\p"
-	.string "But also, BOSS TRAINERS like\n"
-	.string "Roxanne will bring brutal teams\l"
-	.string "from the very beginning.\p"
-	.string "So what do you think?\p"
-	.string "Does CHALLENGE MODE\n"
+	.string "NAPPY: STANDARD MODE gets pretty\n"
+	.string "tough, to be sure…\p"
+	.string "NAPPY: But CHALLENGE MODE is meant\n"
+	.string "for those ready to find opportunities\l"
+	.string "in every system and mechanic.\p"
+	.string "NAPPY: Starting with Roxanne here,\n"
+	.string "all Boss trainers will bring extra\l"
+	.string "team members and better movesets.\p"
+	.string "NAPPY: So what do you think?\p"
+	.string "NAPPY: Does CHALLENGE MODE\n"
 	.string "sound right for you?$"
 
 RustboroCity_Text_EnabledChallengeMode:
@@ -1371,12 +1376,13 @@ RustboroCity_Text_EnabledChallengeMode:
 	.string "Best of luck!$"
 
 RustboroCity_Text_ChallengeModeIsntForEveryone:
-	.string "Got it.\n"
-	.string "Enjoy your Gym Challenge then!$"
+	.string "NAPPY: Got it.\n"
+	.string "We'll stick with STANDARD MODE.$"
 
 RustboroCity_Text_KnowWhereToFindMe:
-	.string "If you change your mind and\n"
-	.string "want to swap MODE in the future,\p"
+	.string "NAPPY: If you change your mind\n"
+	.string "and want to swap MODE in the future,\p"
 	.string "I'll be hanging out back in\n"
 	.string "LITTLEROOT TOWN.\p"
-	.string "So long, {PLAYER}!$"
+	.string "NAPPY: So long, {PLAYER}!\p"
+	.string "SHROOOOOOOOOOOOOOOOOOOOOOM!!!$"

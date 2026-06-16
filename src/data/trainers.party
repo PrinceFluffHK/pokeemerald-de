@@ -1512,7 +1512,6 @@ AI: Smart Trainer
 Azumarill
 Ability: Huge Power
 Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Bubble Beam
 - Bounce
 - Tail Whip
@@ -1520,7 +1519,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Whiscash
 Ability: Oblivious
 Level: 32
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Pulse
 - Stomping Tantrum
 - Spark
@@ -21056,7 +21054,6 @@ Difficulty: Easy
 Gardevoir
 Ability: Telepathy
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Moonblast
 - Psychic
 - Calm Mind
@@ -21064,7 +21061,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Roselia @ Eviolite
 Ability: Poison Point
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Giga Drain
 - Venoshock
 - Toxic Spikes
@@ -21073,7 +21069,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Delcatty @ Silk Scarf
 Ability: Normalize
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Fake Out
 - Iron Tail
 - Charm
@@ -21082,7 +21077,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Altaria
 Ability: Cloud Nine
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Acrobatics
 - Dragon Rush
 - Dazzling Gleam
@@ -21091,16 +21085,14 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Magneton
 Ability: Sturdy
 Level: 49
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Thunderbolt
 - Flash Cannon
 - Tri Attack
 - Metal Sound
 
 Gallade @ Galladite
-Ability: Telepathy
+Ability: Inner Focus
 Level: 50
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Sacred Sword
 - Psycho Cut
 - Swords Dance

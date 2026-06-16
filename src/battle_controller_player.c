@@ -618,7 +618,7 @@ static void AppendBattlerInfo(u32 position, bool32 isRightSide, bool32 showSpeed
 static void CreateSpeedTiersWindow(u32 battler)
 {
     if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_NONE) {
-        StringCopy(gStringVar1, COMPOUND_STRING("Speed   "));
+        StringCopy(gStringVar1, COMPOUND_STRING("Speed    "));
     }
     else 
         StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
@@ -638,7 +638,7 @@ static void CreateSpeedTiersWindow(u32 battler)
     }
 
     if (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_NONE) {
-        StringAppend(gStringVar1, COMPOUND_STRING("\nTiers  "));
+        StringAppend(gStringVar1, COMPOUND_STRING("\nTiers   "));
     } 
     else 
         StringAppend(gStringVar1, COMPOUND_STRING("\nPrvw  "));
@@ -2673,7 +2673,7 @@ static void CreateInfoWindow(u32 battler)
         ConvertUIntToDecimalStringN(gStringVar2, totalCount, STR_CONV_MODE_LEFT_ALIGN, 2);
         StringAppend(gStringVar1, gStringVar2);
         if (gBattleWeather == B_WEATHER_NONE)
-            StringAppend(gStringVar1, COMPOUND_STRING(" left"));
+            StringAppend(gStringVar1, COMPOUND_STRING(" {PKMN}"));
         else
         {
             StringAppend(gStringVar1, COMPOUND_STRING(" - "));

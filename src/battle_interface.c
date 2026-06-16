@@ -34,6 +34,7 @@
 #include "constants/songs.h"
 #include "constants/items.h"
 #include "caps.h"
+#include "event_data.h" // For FlagGet/Set
 
 #define HEALTHBOX_BG_INDEX 2
 
@@ -2902,6 +2903,12 @@ static void DestroyLastUsedBallGfx(struct Sprite *sprite)
 void TryToAddMoveInfoWindow(void)
 {
     if (!B_SHOW_MOVE_DESCRIPTION)
+        return;
+
+    if (!IsDoubleBattle())
+        return;
+
+    if (FlagGet(FLAG_HIDE_BUTTON_PROMPT))
         return;
 
     if (B_MOVE_DESCRIPTION_BUTTON == L_BUTTON && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)

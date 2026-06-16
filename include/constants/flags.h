@@ -529,7 +529,7 @@
 #define FLAG_DN_DETECTOR_MODE                0x1E0 // DexNav
 #define FLAG_HIDE_BATTLE_TUTORIAL            0x1E1
 #define FLAG_HIDE_RUSTBORO_CITY_SHROOMISH    0x1E2 // EMDE
-#define FLAG_HIDE_LITTLEROOT_SHROOMISH   0x1E3 // EMDE
+#define FLAG_HIDE_LITTLEROOT_SHROOMISH       0x1E3 // EMDE
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
@@ -664,7 +664,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
+#define FLAG_HIDE_BUTTON_PROMPT  0x264 // EMDE
 #define FLAG_UNUSED_0x265  0x265 // Unused Flag
 #define FLAG_UNUSED_0x266  0x266 // Unused Flag
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag

@@ -1053,7 +1053,7 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Let's go to my LAB.$"
 
 LittlerootTown_Text_ChangeDifficulty:
-	.string "SHROOMISH: Hey, {PLAYER}! It's me,\n"
+	.string "NAPPY: Hey, {PLAYER}! It's me,\n"
 	.string "the SHROOMISH of CHALLENGE!\p"
 	.string "You looking to switch up your\n"
 	.string "CHALLENGE setting?$"
@@ -1065,14 +1065,14 @@ LittlerootTown_Text_EnabledStandardMode:
 	.string "STANDARD MODE was enabled.$"
 
 LittlerootTown_Text_SwitchedToStandard:
-	.string "SHROOMISH: I hope you find the\n"
-	.string "CHALLENGE that you seek.$"
+	.string "NAPPY: I hope you find the\n"
+	.string "CHALLENGE that you seek…$"
 
 LittlerootTown_Text_SwitchedToChallenge:
-	.string "SHROOMISH: I hope you find the\n"
-	.string "CHALLENGE that you seek.$"
+	.string "NAPPY: I hope you find the\n"
+	.string "CHALLENGE that you seek…$"
 
 LittlerootTown_Text_KeptCurrentMode:
-	.string "SHROOMISH: Understood.\p"
-	.string "I hope you've found the\n"
-	.string "CHALLENGE that you seek.$"
+	.string "NAPPY: Got it!\p"
+	.string "I hope that you've found the\n"
+	.string "CHALLENGE that you seek…$"
