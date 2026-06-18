@@ -14185,20 +14185,22 @@ Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: Yes
+Difficulty: Easy
 AI: Smart Trainer
 
 Ralts (F)
-Ability: Telepathy
-Level: 14
+Ability: Synchronize
+Level: 14  
 - Disarming Voice
 - Confusion
 - Growl
 
 Ralts (M)
-Ability: Telepathy
-Level: 15
-- Confusion
-- Growl
+Ability: Synchronize
+Level: 16  
+- Fire Punch
+- Thunder Punch
+- Ice Punch
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
@@ -21123,14 +21125,6 @@ Level: 53
 - Sucker Punch
 - Spiky Shield
 
-Crobat
-Ability: Inner Focus
-Level: 52
-- Cross Poison
-- Dual Wingbeat
-- Heat Wave
-- U-Turn
-
 Shiftry
 Ability: Pickpocket
 Level: 53
@@ -21150,8 +21144,8 @@ Absol
 Ability: Sharpness
 Level: 54
 - Extreme Speed
-- Night Slash
-- Doom Desire
+- Ceaseless Edge
+- Play Rough
 - Agility
 
 === TRAINER_PHOEBE ===
@@ -21188,13 +21182,6 @@ Level: 54
 - Meteor Beam
 - Scald
 - Strength Sap
-
-Bellossom @ Pixie Plate
-Ability: Dancer
-Level: 54
-- Energy Ball
-- Moonblast
-- Pollen Puff
 
 Banette
 Ability: Cursed Body
@@ -21238,14 +21225,6 @@ Level: 56
 - Super Fang
 - Yawn
 - Snowscape
-
-Ninetales - Alola
-Ability: Snow Warning
-Level: 56
-- Icy Wind
-- Moonblast
-- Chilling Water
-- Aurora Veil
 
 Donphan @ Never-Melt Ice
 Ability: Sturdy
@@ -21310,13 +21289,6 @@ Level: 59
 - Snipe Shot
 - Ice Beam
 - Focus Energy
-
-Tropius
-Ability: Protosynthesis
-Level: 59
-- Leaf Blade
-- Fly
-- Dragon Rush
 
 Salamence
 Ability: Intimidate
@@ -22045,6 +22017,57 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Tomb
 - Protect
 
+=== TRAINER_WALLY_MAUVILLE ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: Male
+Music: Male
+Double Battle: Yes
+Difficulty: Normal
+AI: Smart Trainer
+
+Ralts @ Wise Glasses
+Ability: Synchronize
+Level: 15
+- Draining Kiss
+- Confusion
+- Growl
+
+Budew
+Ability: Poison Point
+Level: 14
+- Mega Drain
+- Poison Powder
+- Spikes
+
+Skitty
+Ability: Normalize
+Level: 14
+- Fake Out
+- Facade
+- Charm
+- Sing
+
+Swablu
+Ability: Cloud Nine
+Level: 14
+- Peck
+- Dragon Dance
+
+Magnemite
+Ability: Sturdy
+Level: 14
+- Shock Wave
+- Magnet Bomb
+
+Ralts @ Muscle Band
+Ability: Synchronize
+Level: 16
+- Fire Punch
+- Thunder Punch
+- Ice Punch
+
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
 Class: Leader
@@ -22343,6 +22366,7 @@ Ability: Weak Armor
 Level: 31
 - Steel Wing
 - Aerial Ace
+- Swords Dance
 
 Armaldo
 Ability: Swift Swim
@@ -23734,7 +23758,7 @@ Difficulty: Normal
 
 Mightyena
 Ability: Intimidate
-Level: 55
+Level: 55  
 - Snarl
 - Crunch
 - Psychic Fangs
@@ -23742,14 +23766,14 @@ Level: 55
 
 Absol @ Absolite
 Ability: Justified
-Level: 57
+Level: 57  
 - Extreme Speed
 - Ceaseless Edge
 - Play Rough
 
 Cacturne @ Focus Sash
 Ability: Hardy Thorns
-Level: 55
+Level: 55  
 - Needle Arm
 - Sucker Punch
 - Leech Seed
@@ -23757,7 +23781,7 @@ Level: 55
 
 Crobat @ Life Orb
 Ability: Inner Focus
-Level: 55
+Level: 55  
 - Cross Poison
 - Dual Wingbeat
 - Heat Wave
@@ -23765,7 +23789,7 @@ Level: 55
 
 Shiftry
 Ability: Pickpocket
-Level: 55
+Level: 55  
 - Fake Out
 - Leaf Blade
 - Throat Chop
@@ -23773,7 +23797,7 @@ Level: 55
 
 Crawdaunt @ Assault Vest
 Ability: Adaptability
-Level: 56
+Level: 56  
 - Aqua Jet
 - Knock Off
 
@@ -24382,7 +24406,7 @@ Difficulty: Hard
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 64 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -24390,7 +24414,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Magic Bounce
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -24398,24 +24422,23 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Growl
 
-Shroomish
+Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
-- Poison Powder
 
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
 - Quick Attack
 - Double Kick
 - Flame Charge
@@ -24434,7 +24457,7 @@ Difficulty: Hard
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 64 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -24442,7 +24465,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Magic Bounce
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -24450,7 +24473,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -24458,18 +24481,17 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Water Gun
-- Astonish
-- Mist
+EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+- Brine
+- Heavy Slam
 - Growl
 
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
 - Mega Drain
-- Fury Cutter
+- X-Scissor
 - Leer
 - Detect
 
@@ -24486,7 +24508,7 @@ Difficulty: Hard
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 64 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -24494,7 +24516,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Magic Bounce
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -24502,24 +24524,23 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
 
-Shroomish
+Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
-- Poison Powder
 
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Rock Tomb
@@ -24538,7 +24559,7 @@ Difficulty: Hard
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 64 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -24546,7 +24567,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Magic Bounce
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -24554,24 +24575,23 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Growl
 
-Shroomish
+Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
-- Poison Powder
 
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
 - Quick Attack
 - Double Kick
 - Flame Charge
@@ -24590,7 +24610,7 @@ Difficulty: Hard
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 64 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -24598,7 +24618,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Magic Bounce
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -24606,7 +24626,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -24614,18 +24634,17 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Water Gun
-- Astonish
-- Mist
+EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
+- Brine
+- Heavy Slam
 - Growl
 
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
 - Mega Drain
-- Fury Cutter
+- X-Scissor
 - Leer
 - Detect
 
@@ -24642,7 +24661,7 @@ Difficulty: Hard
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 64 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -24650,7 +24669,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Magic Bounce
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -24658,28 +24677,84 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
 
-Shroomish
+Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
-- Poison Powder
 
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Rock Tomb
 - Protect
+
+=== TRAINER_WALLY_MAUVILLE ===
+Name: WALLY
+Class: Rival
+Pic: Wally
+Gender: Male
+Music: Male
+Double Battle: Yes
+Difficulty: Hard
+AI: Smart Trainer / Ace Pokemon
+
+Ralts @ Wise Glasses
+Ability: Synchronize
+Level: 15
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Draining Kiss
+- Confusion
+- Growl
+
+Budew
+Ability: Poison Point
+Level: 14
+EVs: 64 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Mega Drain
+- Poison Powder
+- Spikes
+
+Skitty
+Ability: Normalize
+Level: 14
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Fake Out
+- Facade
+- Charm
+- Sing
+
+Swablu
+Ability: Cloud Nine
+Level: 14
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Peck
+- Dragon Dance
+
+Magnemite
+Ability: Sturdy
+Level: 14
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
+- Shock Wave
+- Magnet Bomb
+
+Ralts @ Muscle Band
+Ability: Synchronize
+Level: 16
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Fire Punch
+- Thunder Punch
+- Ice Punch
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -25038,57 +25113,48 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 64 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
-Sceptile @ Sitrus Berry
-Ability: Unburden
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Leaf Blade
+Grovyle @ Sitrus Berry
+Ability: Overgrow
+Level: 33
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Giga Drain
 - X-Scissor
-- Acrobatics
-- Scale Shot
+- Aerial Ace
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -25100,58 +25166,48 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 64 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
-- Spore
 
-Blaziken @ Sitrus Berry
-Ability: Speed Boost
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Combusken @ Sitrus Berry
+Ability: Blaze
+Level: 33
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
-- Focus Energy
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
 Name: BRENDAN
@@ -25163,57 +25219,47 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
-- Spore
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Swampert @ Sitrus Berry
-Ability: Gooey
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Marshtomp @ Sitrus Berry
+Ability: Torrent
+Level: 33
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
-- Wide Guard
 
 === TRAINER_MAY_ROUTE_119_MUDKIP ===
 Name: MAY
@@ -25225,57 +25271,48 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 64 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
-Sceptile @ Sitrus Berry
-Ability: Unburden
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Leaf Blade
+Grovyle @ Sitrus Berry
+Ability: Overgrow
+Level: 33
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Giga Drain
 - X-Scissor
-- Acrobatics
-- Scale Shot
+- Aerial Ace
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: MAY
@@ -25287,58 +25324,48 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 64 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
-- Spore
 
-Blaziken @ Sitrus Berry
-Ability: Speed Boost
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Combusken @ Sitrus Berry
+Ability: Blaze
+Level: 33
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
-- Focus Energy
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
@@ -25350,57 +25377,47 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
-- Spore
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Swampert @ Sitrus Berry
-Ability: Gooey
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Marshtomp @ Sitrus Berry
+Ability: Torrent
+Level: 33
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
-- Wide Guard
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
@@ -26453,6 +26470,54 @@ EVs: 128 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe
 - Sacred Sword
 - Psycho Cut
 - Swords Dance
+
+=== TRAINER_ALBERT ===
+Name: SCRAGGUS
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Intense
+Double Battle: Yes
+Difficulty: Hard
+AI: Smart Trainer / Ace Pokemon
+
+Donphan @ Rocky Helmet
+Ability: Protosynthesis
+Level: 49  
+- Earthquake
+- Rock Slide
+- Ice Spinner
+- Body Press
+
+Weezing
+Ability: Levitate
+Level: 49  
+- Sludge Bomb
+- Heat Wave
+- Sunny Day
+- Protect
+
+Zangoose @ Toxic Orb
+Ability: Toxic Boost
+Level: 49  
+- Facade
+- Dire Claw
+- Fire Punch
+- Fling
+
+Masquerain
+Ability: Intimidate
+Level: 49  
+- Struggle Bug
+- Air Slash
+- Quiver Dance
+
+Bronzong @ Leftovers
+Ability: Levitate
+Level: 50  
+- Extrasensory
+- Gyro Ball
+- Block
 
 === TRAINER_SIDNEY ===
 Name: SIDNEY

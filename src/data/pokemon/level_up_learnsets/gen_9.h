@@ -10842,11 +10842,11 @@ static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(24, MOVE_SCREECH),
     //Wattson Lv24
-    LEVEL_UP_MOVE(27, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(27, MOVE_DUAL_CHOP),
     //Flannery Lv29
-    LEVEL_UP_MOVE(30, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(30, MOVE_ENERGY_BALL),
     //Norman Lv31
-    LEVEL_UP_MOVE(33, MOVE_DUAL_CHOP),
+    LEVEL_UP_MOVE(33, MOVE_DRAGON_PULSE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(39, MOVE_LEAF_STORM),
@@ -10859,6 +10859,8 @@ static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE( 1, MOVE_BREAKING_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
@@ -10878,16 +10880,16 @@ static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SCREECH),
     //Norman Lv31
-    LEVEL_UP_MOVE(35, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(35, MOVE_DUAL_CHOP),
     //Winona Lv35
     //Evo Lv36
-    LEVEL_UP_MOVE(40, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE(45, MOVE_DUAL_CHOP),
+    LEVEL_UP_MOVE(39, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(42, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
-    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(46, MOVE_ENDEAVOR),
     //Juan Lv50
     //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
     //Drake Lv60
     //Steven Lv63
     LEVEL_UP_END
@@ -10895,6 +10897,8 @@ static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
 
 static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE( 1, MOVE_BREAKING_SWIPE),
+    LEVEL_UP_MOVE( 1, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE( 1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_ENERGY_BALL),
@@ -10914,15 +10918,17 @@ static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SCREECH),
     //Norman Lv31
-    LEVEL_UP_MOVE(35, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(35, MOVE_DUAL_CHOP),
     //Winona Lv35
     //Evo Lv36
-    LEVEL_UP_MOVE(42, MOVE_DUAL_CHOP),
+    LEVEL_UP_MOVE(40, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(45, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
-    LEVEL_UP_MOVE(49, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
     //Juan Lv50
     //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(55, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(60, MOVE_DRAGON_CHEER),
     //Drake Lv60
     //Steven Lv63
     LEVEL_UP_END
@@ -11060,7 +11066,7 @@ static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_FLIP_TURN),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(39, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(39, MOVE_WAVE_CRASH),
     //Tate&Liza Lv45
     //Juan Lv50
     //Sidney Lv54
@@ -11091,16 +11097,14 @@ static const struct LevelUpMove sMarshtompLevelUpLearnset[] = {
     //Norman Lv31
     //Winona
     LEVEL_UP_MOVE(35, MOVE_ROCK_SLIDE),
-    //Evo Lv36
+    // >>> Evo Lv36
     LEVEL_UP_MOVE(40, MOVE_MUDDY_WATER),
     LEVEL_UP_MOVE(45, MOVE_FLIP_TURN),
-    //Tate&Liza Lv45
-    LEVEL_UP_MOVE(43, MOVE_STEALTH_ROCK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
     //Juan Lv50
     //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(55, MOVE_WAVE_CRASH),
     //Drake Lv60
     //Steven Lv63
     LEVEL_UP_END
@@ -11133,12 +11137,11 @@ static const struct LevelUpMove sSwampertLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_FLIP_TURN),
     //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_STEALTH_ROCK),
     //Sidney Lv54
     LEVEL_UP_MOVE(56, MOVE_ENDEAVOR),
     //Drake Lv60
     //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(63, MOVE_WAVE_CRASH),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MUDKIP
