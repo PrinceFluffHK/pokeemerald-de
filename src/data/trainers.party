@@ -1996,6 +1996,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Easy
 
 Dodrio
 Ability: Early Bird
@@ -2381,11 +2382,11 @@ Level: 32
 - Agility
 
 === TRAINER_HOPE ===
-Name: KAT
-Class: Beauty
-Pic: Beauty
+Name: HOPE
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Female
-Music: Female
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
@@ -9148,11 +9149,11 @@ Level: 31
 - Smokescreen
 
 === TRAINER_DIANNE ===
-Name: MARION
-Class: Battle Girl
-Pic: Battle Girl
+Name: DIANNE
+Class: Cooltrainer
+Pic: Cooltrainer F
 Gender: Female
-Music: Intense
+Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
@@ -11641,6 +11642,51 @@ Level: 49
 - Rock Slide
 - Body Press
 - Thunderbolt
+
+=== TRAINER_JULIE ===
+Name: CALE
+Class: Cooltrainer
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Swalot @ Black Sludge
+Ability: Earth Eater
+Level: 49  
+- Gunk Shot
+- Knock Off
+- Body Press
+- Curse
+
+Flygon
+Ability: Levitate
+Level: 49  
+- Earthquake
+
+Gardevoir @ Life Orb
+Ability: Telepathy
+Level: 49  
+- Moonblast
+- Psychic
+- Icy Wind
+
+Roserade @ Choice Scarf
+Ability: Poison Point
+Level: 49  
+- Energy Ball
+- Sludge Bomb
+- Extrasensory
+
+Kommo-o @ Roseli Berry
+Ability: Overcoat
+Level: 50  
+- Close Combat
+- Dragon Claw
+- Clangorous Soul
+- Protect
 
 === TRAINER_ISAAC_2 ===
 Name: ISAAC
@@ -20813,39 +20859,37 @@ Level: 45
 - Light Screen
 - Moonlight
 
-=== TRAINER_TABITHA_MOSSDEEP ===
-Name: TABITHA
-Class: Magma Admin
-Pic: Magma Admin
-Gender: Male
+=== TRAINER_COURTNEY_MOSSDEEP ===
+Name: COURTNEY
+Class: Magma Admin F
+Pic: Magma Admin F
+Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Easy
 
-Torkoal @ Eject Pack
-Ability: Drought
-Level: 42
-- Overheat
-- Body Press
-- Body Slam
-- Iron Defense
+Cacturne
+Ability: Sand Stream
+Level: 42  
+- Needle Arm
+- Knock Off
+- Sandstorm
 
-Tropius
-Ability: Protosynthesis
-Level: 42
-- Leaf Blade
-- Fly
-- Stomp
-- Sunny Day
+Sandslash
+Ability: Sand Rush
+Level: 42  
+- Earthquake
+- Rock Slide
+- Crush Claw
 
-Magcargo @ Air Balloon
-Ability: Pyroclastic Flow
-Level: 44
-- Heat Wave
-- Power Gem
-- Earth Power
-- Gyro Ball
+Cradily
+Ability: Storm Drain
+Level: 44  
+- Ancient Power
+- Acid
+- Recover
+- Leech Seed
 
 === TRAINER_MAXIE_MOSSDEEP ===
 Name: MAXIE
@@ -20859,25 +20903,24 @@ Difficulty: Easy
 
 Weezing
 Ability: Levitate
-Level: 44
+Level: 44  
 - Sludge Bomb
-- Heat Wave
 - Assurance
 - Will-O-Wisp
 
 Magneton
 Ability: Sturdy
-Level: 44
+Level: 44  
 - Thunderbolt
 - Flash Cannon
 - Metal Sound
 - Magnet Rise
 
-Camerupt 
+Camerupt
 Ability: Sheer Force
-Level: 46
+Level: 46  
 - Earth Power
-- Heat Wave
+- Flamethrower
 - Rock Slide
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
@@ -23450,38 +23493,39 @@ Level: 45
 - Moonblast
 - Moonlight
 
-=== TRAINER_TABITHA_MOSSDEEP ===
-Name: TABITHA
-Class: Magma Admin
-Pic: Magma Admin
-Gender: Male
+=== TRAINER_COURTNEY_MOSSDEEP ===
+Name: COURTNEY
+Class: Magma Admin F
+Pic: Magma Admin F
+Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Normal
 
-Torkoal @ Eject Pack
-Ability: Drought
-Level: 44
-- Overheat
-- Body Press
-- Iron Defense
-- Sunny Day
+Cacturne @ Smooth Rock
+Ability: Sand Stream
+Level: 42
+- Needle Arm
+- Knock Off
+- Sucker Punch
+- Sandstorm
 
-Magcargo @ Air Balloon
-Ability: Pyroclastic Flow
-Level: 44
-- Heat Wave
-- Power Gem
-- Earth Power
+Sandslash @ Rocky Helmet
+Ability: Sand Rush
+Level: 42
+- Earthquake
+- Stomping Tantrum
+- Rock Slide
+- Crush Claw
 
-Tropius
-Ability: Protosynthesis
+Cradily
+Ability: Storm Drain
 Level: 44
-- Leaf Blade
-- Dual Wingbeat
-- Solar Blade
-- Sunny Day
+- Ancient Power
+- Giga Drain
+- Acid
+- Leech Seed
 
 === TRAINER_MAXIE_MOSSDEEP ===
 Name: MAXIE
@@ -23493,7 +23537,7 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Normal
 
-Weezing @ Sitrus Berry
+Weezing @ Safety Goggles
 Ability: Levitate
 Level: 44
 - Sludge Bomb
@@ -23504,16 +23548,17 @@ Level: 44
 Magneton
 Ability: Sturdy
 Level: 44
-- Volt Switch
+- Thunderbolt
 - Flash Cannon
-- Tri-Attack
 - Metal Sound
+- Magnet Rise
 
 Camerupt @ Cameruptite
 Ability: Sheer Force
 Level: 46
 - Earth Power
 - Heat Wave
+- Flamethrower
 - Rock Slide
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
@@ -26146,41 +26191,42 @@ EVs: 128 HP / 0 Atk / 128 Def / 128 SpA / 0 SpD / 64 Spe
 - Moonblast
 - Moonlight
 
-=== TRAINER_TABITHA_MOSSDEEP ===
-Name: TABITHA
-Class: Magma Admin
-Pic: Magma Admin
-Gender: Male
+=== TRAINER_COURTNEY_MOSSDEEP ===
+Name: COURTNEY
+Class: Magma Admin F
+Pic: Magma Admin F
+Gender: Female
 Music: Magma
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Torkoal @ Eject Pack
-Ability: Drought
-Level: 44
-EVs: 128 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
-- Overheat
-- Body Press
-- Iron Defense
-- Sunny Day
+Cacturne @ Smooth Rock
+Ability: Sand Stream
+Level: 42
+EVs: 192 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Needle Arm
+- Knock Off
+- Sucker Punch
+- Sandstorm
 
-Magcargo @ Air Balloon
-Ability: Pyroclastic Flow
-Level: 44
-EVs: 128 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
-- Heat Wave
-- Power Gem
-- Earth Power
+Sandslash @ Rocky Helmet
+Ability: Sand Rush
+Level: 42
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Earthquake
+- Stomping Tantrum
+- Rock Slide
+- Crush Claw
 
-Tropius
-Ability: Protosynthesis
+Cradily
+Ability: Storm Drain
 Level: 44
-EVs: 64 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Leaf Blade
-- Dual Wingbeat
-- Solar Blade
-- Sunny Day
+EVs: 0 HP / 0 Atk / 192 Def / 0 SpA / 0 SpD / 0 Spe  
+- Ancient Power
+- Giga Drain
+- Acid
+- Leech Seed
 
 === TRAINER_MAXIE_MOSSDEEP ===
 Name: MAXIE
@@ -26192,7 +26238,7 @@ Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 Difficulty: Hard
 
-Weezing @ Sitrus Berry
+Weezing @ Safety Goggles
 Ability: Levitate
 Level: 44
 EVs: 192 HP / 0 Atk / 64 Def / 128 SpA / 64 SpD / 0 Spe  
@@ -26205,10 +26251,10 @@ Magneton
 Ability: Sturdy
 Level: 44
 EVs: 128 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 192 Spe  
-- Volt Switch
+- Thunderbolt
 - Flash Cannon
-- Tri-Attack
 - Metal Sound
+- Magnet Rise
 
 Camerupt @ Cameruptite
 Ability: Sheer Force
@@ -26216,6 +26262,7 @@ Level: 46
 EVs: 128 HP / 64 Atk / 0 Def / 128 SpA / 128 SpD / 0 Spe  
 - Earth Power
 - Heat Wave
+- Flamethrower
 - Rock Slide
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
@@ -26478,8 +26525,8 @@ Pic: Expert M
 Gender: Male
 Music: Intense
 Double Battle: Yes
-Difficulty: Hard
 AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
 
 Donphan @ Rocky Helmet
 Ability: Protosynthesis
@@ -26518,6 +26565,51 @@ Level: 50
 - Extrasensory
 - Gyro Ball
 - Block
+
+=== TRAINER_EDGAR ===
+Name: JAKE
+Class: Rich Boy
+Pic: Rich Boy
+Gender: Male
+Music: Rich
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+
+Seviper @ Choice Scarf
+Ability: Merciless
+Level: 49  
+- Poison Tail
+
+Gallade
+Ability: Sharpness
+Level: 49  
+- Sacred Sword
+- Psycho Cut
+- Leaf Blade
+
+Wigglytuff
+Ability: Friend Guard
+Level: 49  
+- Hyper Voice
+- Dazzling Gleam
+- Icy Wind
+- Helping Hand
+
+Probopass @ Weakness Policy
+Ability: Levitate
+Level: 49  
+- Rock Slide
+- Body Press
+- Thunderbolt
+
+Sinistcha @ Sitrus Berry
+Ability: Hospitality
+Level: 50  
+- Matcha Gotcha
+- Shadow Ball
+- Strength Sap
+- Trick Room
 
 === TRAINER_SIDNEY ===
 Name: SIDNEY
