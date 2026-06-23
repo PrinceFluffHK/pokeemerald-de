@@ -5348,7 +5348,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_HIT,
         .power = 55,
         .type = TYPE_ICE,
-        .accuracy = 100, //95,
+        .accuracy = 95,
         .pp = 16,
         .target = TARGET_BOTH,
         .priority = 0,
@@ -7219,7 +7219,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_NORMAL,
         .accuracy = 0,
-        .pp = 3,
+        .pp = 2,
         .target = TARGET_USER,
         .priority = B_UPDATED_MOVE_DATA >= GEN_6 ? 2 : 3,
         .category = DAMAGE_CATEGORY_STATUS,
@@ -10651,14 +10651,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_AQUA_TAIL] =
     {
-        .name = COMPOUND_STRING("Aqua Tail"),
+        .name = COMPOUND_STRING("Bubble Tail"),
         .description = COMPOUND_STRING(
             "The user swings its tail\n"
             "in a wave to hit both foes."),
         .effect = EFFECT_HIT,
-        .power = 65, //90,
+        .power = 70, //90,
         .type = TYPE_WATER,
-        .accuracy = 100, //90,
+        .accuracy = 90,
         .pp = 12,
         .target = TARGET_BOTH,
         .priority = 0,
@@ -13123,7 +13123,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 0,
         .type = TYPE_PSYCHIC,
         .accuracy = 0,
-        .pp = 3,
+        .pp = 2,
         .target = TARGET_USER,
         .priority = B_UPDATED_MOVE_DATA >= GEN_7 ? 2 : 1,
         .category = DAMAGE_CATEGORY_STATUS,

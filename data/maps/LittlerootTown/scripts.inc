@@ -1074,24 +1074,24 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 LittlerootTown_Text_WantToSetStandardMode:
 	.string "NAPPY: Hey, {PLAYER}! It's me,\n"
 	.string "the SHROOMISH of CHALLENGE!\p"
-	.string "NAPPY: You looking to switch\n"
+	.string "You looking to switch\n"
 	.string "to STANDARD MODE?$"
 
 LittlerootTown_Text_WantToSetChallengeMode:
 	.string "NAPPY: Hey, {PLAYER}! It's me,\n"
 	.string "the SHROOMISH of CHALLENGE!\p"
-	.string "NAPPY: You looking to switch\n"
+	.string "You looking to switch\n"
 	.string "to CHALLENGE MODE?$"
 
 LittlerootTown_Text_WantToSetChampionMode:
 	.string "NAPPY: I see…\p"
-	.string "NAPPY: Could that mean that you\n"
+	.string "Could that mean that you\n"
 	.string "want to try CHAMPION MODE?\p"
-	.string "NAPPY: In CHAMPION MODE, Bosses\n"
-	.string "will also feed each POKéMON roughly\l"
-	.string "one Vitamin per gym badge you earn.\p"
-	.string "NAPPY: How about it, {PLAYER}?\p"
-	.string "NAPPY: Want to take on\n"
+	.string "In CHAMPION MODE, some regular\n"
+	.string "trainers will have stronger teams,\l"
+	.string "and bosses feed their teams VITAMINS.\p"
+	.string "How about it, {PLAYER}?\p"
+	.string "Want to take on\n"
 	.string "CHAMPION MODE?$"
 
 LittlerootTown_Text_EnabledStandardMode:
@@ -1107,10 +1107,10 @@ LittlerootTown_Text_EnabledChampionMode:
 LittlerootTown_Text_SwitchedDifficulty:
 	.string "NAPPY: I hope you find the\n"
 	.string "CHALLENGE that you seek.\p"
-	.string "NAPPY: I'll be here if you ever\n"
+	.string "I'll be here if you ever\n"
 	.string "want to change it up!$"
 
 LittlerootTown_Text_KeptCurrentMode:
 	.string "NAPPY: Got it!\p"
-	.string "NAPPY: In that case, I hope you've\n"
+	.string "In that case, I hope you've\n"
 	.string "found the CHALLENGE that you seek.$"

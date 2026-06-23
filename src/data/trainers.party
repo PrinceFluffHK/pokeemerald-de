@@ -2382,44 +2382,42 @@ Level: 32
 - Agility
 
 === TRAINER_HOPE ===
-Name: HOPE
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
+Name: OSCAR
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: Male
+Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Altaria @ Sitrus Berry
-Ability: Pixilate
-Level: 49
-- Dragon Pulse
-- Hyper Voice
-- Cotton Guard
-- Roost
+Pelipper
+Ability: Drizzle
+Level: 49  
+- Hurricane
+- Weather Ball
+- Wide Guard
 
-Milotic
-Ability: Competitive
-Level: 49
-- Scald
+Kingdra @ White Herb
+Ability: Swift Swim
+Level: 49  
+- Draco Meteor
+- Surf
 - Ice Beam
-- Coil
-- Recover
+- Rain Dance
 
-Ninetales
-Ability: Drought
-Level: 49
-- Flame Burst
-- Extrasensory
-- Hex
-- Disable
+Cradily @ Power Herb
+Ability: Storm Drain
+Level: 49  
+- Meteor Beam
+- Giga Drain
+- Sludge Bomb
 
-Tropius
-Ability: Chlorophyll
-Level: 49
-- Leaf Blade
-- Dual Wingbeat
-- Dragon Rush
+Starmie
+Ability: Huge Power
+Level: 49  
+- Aqua Jet
+- Liquidation
+- Zen Headbutt
 
 === TRAINER_SHANNON ===
 Name: CIEL
@@ -26517,6 +26515,49 @@ EVs: 128 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe
 - Sacred Sword
 - Psycho Cut
 - Swords Dance
+
+=== TRAINER_HOPE ===
+Name: OSCAR
+Class: Triathlete
+Pic: Running Triathlete M
+Gender: Male
+Music: Male
+Double Battle: Yes
+Difficulty: Hard
+AI: Smart Trainer / Ace Pokemon
+
+Pelipper
+Ability: Drizzle
+Level: 49  
+- Hurricane
+- Weather Ball
+- Surf
+- Wide Guard
+
+Kingdra @ White Herb
+Ability: Swift Swim
+Level: 49  
+- Draco Meteor
+- Surf
+- Ice Beam
+- Rain Dance
+
+Cradily @ Power Herb
+Ability: Storm Drain
+Level: 49  
+- Meteor Beam
+- Giga Drain
+- Earth Power
+- Sludge Bomb
+
+Starmie @ Life Orb
+Ability: Huge Power
+Shiny: Yes
+Level: 49  
+- Aqua Jet
+- Liquidation
+- Zen Headbutt
+- Ice Spinner
 
 === TRAINER_ALBERT ===
 Name: SCRAGGUS
