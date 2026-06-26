@@ -14922,22 +14922,16 @@ static const struct LevelUpMove sHuntailLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(11, MOVE_LOW_SWEEP),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ICE_FANG),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_BRINE),
     LEVEL_UP_MOVE(23, MOVE_SUCKER_PUNCH),
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_DIVE),
     LEVEL_UP_MOVE(29, MOVE_BATON_PASS),
-    //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_CRUNCH),
-    //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(45, MOVE_COIL),
     //Tate&Liza Lv45
-    //T&L
+    // >>> Evo Post-T&L
     LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
     //Juan Lv50
     //Sidney Lv54
@@ -14957,18 +14951,12 @@ static const struct LevelUpMove sGorebyssLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_AGILITY),
     LEVEL_UP_MOVE(11, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_AMNESIA),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(23, MOVE_SAFEGUARD),
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_DIVE),
     LEVEL_UP_MOVE(29, MOVE_BATON_PASS),
-    //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ALLURING_VOICE),
-    //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_SCALD),
     LEVEL_UP_MOVE(45, MOVE_COIL),
     //Tate&Liza Lv45
@@ -14989,20 +14977,14 @@ static const struct LevelUpMove sRelicanthLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 5, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(10, MOVE_ANCIENT_POWER),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_YAWN),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_DIVE),
-    //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_TAKE_DOWN),
-    //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_AQUA_TAIL),
-    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_REST),
-    //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_FLAIL),
+    // >>> Catch
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
-    //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
     //Juan Lv50
     //Sidney Lv54
