@@ -15618,10 +15618,8 @@ static const u16 sSceptileTeachableLearnset[] = {
     MOVE_CUT,
     MOVE_DIG,
     MOVE_DRAGON_CLAW,
-    MOVE_DRACO_METEOR, //EmDE
     MOVE_DRAIN_PUNCH,
     MOVE_EARTHQUAKE,
-    MOVE_EARTH_POWER, //EmDE
     MOVE_FACADE,
     MOVE_FALSE_SWIPE,
     MOVE_FLASH,
@@ -15965,7 +15963,6 @@ static const u16 sSwampertTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_SUBSTITUTE,
     MOVE_SWAGGER,
-    MOVE_WAVE_CRASH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MUDKIP

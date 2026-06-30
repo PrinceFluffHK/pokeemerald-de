@@ -886,7 +886,7 @@ Level: 16
 - Growth
 
 === TRAINER_FELIX ===
-Name: FELIX
+Name: HUGH
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -894,35 +894,33 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
 
-Blaziken
-Ability: Speed Boost
-Level: 49
-- Fire Pledge
-- Sky Uppercut
-- Aerial Ace
-- Swords Dance
+Azumarill
+Ability: Huge Power
+Level: 49  
+- Waterfall
+- Play Rough
+- Belly Drum
 
-Sceptile @ Sitrus Berry
-Ability: Unburden
-Level: 49
-- Grass Pledge
-- Dragon Pulse
-- X-Scissor
-- Shed Tail
+Medicham
+Ability: Pure Power
+Level: 49  
+- Fake Out
+- Zen Headbutt
+- High Jump Kick
 
-Swampert
-Ability: Gooey
-Level: 49
-- Water Pledge
-- Earth Power
-- Body Press
+Mawile
+Ability: Huge Power
+Level: 49  
+- Iron Head
+- Play Rough
+- Sucker Punch
 
-Obstagoon @ Flame Orb
-Ability: Guts
-Level: 49
-- Night Slash
-- Facade
-- Obstruct
+Starmie
+Ability: Huge Power
+Level: 49  
+- Liquidation
+- Zen Headbutt
+- Rapid Spin
 
 === TRAINER_VIOLET ===
 Name: VIOLET
@@ -1957,37 +1955,6 @@ Level: 49
 - Air Slash
 - Quiver Dance
 
-=== TRAINER_SAMUEL ===
-Name: SAMUEL
-Class: Bird Keeper
-Pic: Bird Keeper
-Gender: Male
-Music: Cool
-Double Battle: Yes
-AI: Smart Trainer
-
-Natu
-Ability: Synchronize
-Level: 31
-- Stored Power
-- Pluck
-- Calm Mind
-
-Pelipper
-Ability: Rain Dish
-Level: 31
-- Wing Attack
-- Water Pulse
-- Tailwind
-- Protect
-
-Tropius
-Ability: Protosynthesis
-Level: 31
-- Magical Leaf
-- Gust
-- Stomp
-
 === TRAINER_VITO ===
 Name: VITO
 Class: Cooltrainer
@@ -1996,7 +1963,6 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Ace Pokemon
-Difficulty: Easy
 
 Dodrio
 Ability: Early Bird
@@ -2033,6 +1999,43 @@ Ability: Sand Stream
 Level: 55
 - Rock Slide
 - Pursuit
+
+=== TRAINER_BRESLYN ===
+Name: MATT
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+
+Wigglytuff @ Sitrus Berry
+Ability: Friend Guard
+Level: 49  
+- Dazzling Gleam
+- Stealth Rock
+- Protect
+
+Hariyama
+Ability: Thick Fat
+Level: 49  
+- Fake Out
+- Knock Off
+- Drain Punch
+
+Magnezone @ Air Balloon
+Ability: Magnet Pull
+Level: 49  
+- Thunderbolt
+- Flash Cannon
+- Light Screen
+
+Flygon
+Ability: Levitate
+Level: 49  
+- Stomping Tantrum
+- Dragon Claw
+- Dragon Dance
 
 === TRAINER_OWEN ===
 Name: ETHAN
@@ -8720,42 +8723,36 @@ Level: 30
 - Slash
 - Leer
 
-=== TRAINER_HUGH ===
-Name: HUGH
-Class: Cooltrainer
-Pic: Cooltrainer M
+=== TRAINER_SAMUEL ===
+Name: SAMUEL
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
-Azumarill
-Ability: Huge Power
-Level: 49
-- Waterfall
-- Play Rough
-- Belly Drum
+Natu
+Ability: Synchronize
+Level: 31
+- Stored Power
+- Pluck
+- Calm Mind
 
-Medicham
-Ability: Pure Power
-Level: 49
-- Fake Out
-- Zen Headbutt
-- High Jump Kick
+Pelipper
+Ability: Rain Dish
+Level: 31
+- Wing Attack
+- Water Pulse
+- Tailwind
+- Protect
 
-Mawile
-Ability: Huge Power
-Level: 49
-- Iron Head
-- Play Rough
-- Sucker Punch
-
-Starmie
-Ability: Huge Power
-Level: 49
-- Liquidation
-- Zen Headbutt
-- Rapid Spin
+Tropius
+Ability: Protosynthesis
+Level: 31
+- Magical Leaf
+- Gust
+- Stomp
 
 === TRAINER_PHIL ===
 Name: PHIL
@@ -11659,7 +11656,7 @@ Level: 49
 - Body Press
 - Curse
 
-Flygon
+Flygon @ Soft Sand
 Ability: Levitate
 Level: 49  
 - Earthquake
@@ -11685,6 +11682,113 @@ Level: 50
 - Dragon Claw
 - Clangorous Soul
 - Protect
+
+=== TRAINER_BRESLYN ===
+Name: MATT
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Wigglytuff @ Sitrus Berry
+Ability: Friend Guard
+Level: 49  
+- Dazzling Gleam
+- Stealth Rock
+- Protect
+
+Hariyama @ Assault Vest
+Ability: Thick Fat
+Level: 49  
+- Fake Out
+- Knock Off
+- Drain Punch
+- Heavy Slam
+
+Magnezone @ Air Balloon
+Ability: Magnet Pull
+Level: 49  
+- Thunderbolt
+- Flash Cannon
+- Tri Attack
+- Light Screen
+
+Flygon @ Rocky Helmet
+Ability: Levitate
+Level: 49  
+- Stomping Tantrum
+- Dragon Claw
+- Rock Slide
+- Dragon Dance
+
+Archaludon @ Power Herb
+Ability: Stamina
+Level: 50  
+- Flash Cannon
+- Dragon Pulse
+- Electro Shot
+- Breaking Swipe
+
+=== TRAINER_VITO ===
+Name: VITO
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Dodrio
+Ability: Early Bird
+Level: 49  
+- Drill Peck
+- Facade
+- Double-Edge
+- Swords Dance
+
+Alakazam
+Ability: Synchronize
+Level: 49  
+- Psychic
+- Focus Blast
+- Disable
+- Recover
+
+Electrode
+Ability: Aftermath
+Level: 49  
+- Electro Ball
+- Reflect
+- Eerie Impulse
+- Screech
+
+Shiftry
+Ability: Wind Rider
+Level: 49  
+- Fake Out
+- Leaf Blade
+- Throat Chop
+- Air Slash
+
+Kingdra @ Scope Lens
+Ability: Sniper
+Level: 49  
+- Flash Cannon
+- Snipe Shot
+- Ice Beam
+- Focus Energy
+
+Tyranitar
+Ability: Sand Stream
+Level: 55  
+- Rock Slide
+- Pursuit
+- Crunch
+- Fire Blast
 
 === TRAINER_ISAAC_2 ===
 Name: ISAAC
@@ -21396,7 +21500,7 @@ Level: 63
 - Meteor Mash
 - Zen Headbutt
 
-/* START CHALLENGE MODE BOSSES */
+/* START EXPERT MODE BOSSES */
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -26550,14 +26654,19 @@ Level: 49
 - Earth Power
 - Sludge Bomb
 
-Starmie @ Life Orb
+Starmie @ Starminite
 Ability: Huge Power
-Shiny: Yes
 Level: 49  
 - Aqua Jet
 - Liquidation
 - Zen Headbutt
 - Ice Spinner
+
+Scizor @ Life Orb
+Ability: Technician
+Level: 50  
+- Bullet Punch
+- Bug Bite
 
 === TRAINER_ALBERT ===
 Name: SCRAGGUS
@@ -26606,6 +26715,54 @@ Level: 50
 - Extrasensory
 - Gyro Ball
 - Block
+
+=== TRAINER_SHANNON ===
+Name: CIEL
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
+Double Battle: Yes
+AI: Smart Trainer / Ace Pokemon
+Difficulty: Hard
+
+Shedinja @ Focus Sash
+Ability: Wonder Guard
+Level: 49  
+- Will-O-Wisp
+- Shadow Sneak
+- Confuse Ray
+- Bug Bite
+
+Dusknoir @ Life Orb
+Ability: Levitate
+Level: 49  
+- Leech Life
+- Fire Punch
+- Ice Punch
+- Trick Room
+
+Breloom @ Toxic Orb
+Ability: Poison Heal
+Level: 49  
+- Seed Bomb
+- Drain Punch
+- Spore
+- Swords Dance
+
+Claydol
+Ability: Levitate
+Level: 49  
+- Zen Headbutt
+- Earthquake
+- Self-Destruct
+- Trick Room
+
+Chandelure @ Chandelurite
+Ability: Shadow Tag
+Level: 50  
+- Heat Wave
+- Shadow Ball
 
 === TRAINER_EDGAR ===
 Name: JAKE

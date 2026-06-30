@@ -1081,7 +1081,7 @@ LittlerootTown_Text_WantToSetChallengeMode:
 	.string "NAPPY: Hey, {PLAYER}! It's me,\n"
 	.string "the SHROOMISH of CHALLENGE!\p"
 	.string "You looking to switch\n"
-	.string "to CHALLENGE MODE?$"
+	.string "to EXPERT MODE?$"
 
 LittlerootTown_Text_WantToSetChampionMode:
 	.string "NAPPY: I see…\p"
@@ -1098,7 +1098,7 @@ LittlerootTown_Text_EnabledStandardMode:
 	.string "STANDARD MODE was enabled.$"
 
 LittlerootTown_Text_EnabledChallengeMode:
-	.string "CHALLENGE MODE was enabled.$"
+	.string "EXPERT MODE was enabled.$"
 
 LittlerootTown_Text_EnabledChampionMode:
 	.string "CHAMPION MODE was enabled.\n"
