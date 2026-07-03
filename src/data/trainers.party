@@ -892,7 +892,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Azumarill
 Ability: Huge Power
@@ -1883,7 +1883,7 @@ Pic: Ruin Maniac
 Gender: Male
 Music: Hiker
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Farigiraf @ Sitrus Berry
 Ability: Armor Tail
@@ -1922,7 +1922,7 @@ Pic: Expert M
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Donphan @ Rocky Helmet
 Ability: Protosynthesis
@@ -1962,7 +1962,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Dodrio
 Ability: Early Bird
@@ -2007,7 +2007,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Wigglytuff @ Sitrus Berry
 Ability: Friend Guard
@@ -2044,7 +2044,7 @@ Pic: Pokemaniac
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Torkoal
 Ability: Drought
@@ -2391,7 +2391,7 @@ Pic: Running Triathlete M
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Pelipper
 Ability: Drizzle
@@ -2429,7 +2429,7 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Shedinja @ Focus Sash
 Ability: Wonder Guard
@@ -2470,7 +2470,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Lunatone @ Power Herb
 Ability: Levitate
@@ -2509,7 +2509,7 @@ Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Wigglytuff
 Ability: Friend Guard
@@ -2547,7 +2547,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Swalot @ Black Sludge
 Ability: Earth Eater
@@ -7093,7 +7093,7 @@ Pic: Expert M
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Slaking
 Ability: Truant
@@ -9150,7 +9150,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Walrein
 Ability: Thick Fat
@@ -11608,7 +11608,7 @@ Pic: Rich Boy
 Gender: Male
 Music: Rich
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Seviper @ Choice Scarf
 Ability: Merciless
@@ -11645,7 +11645,7 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Swalot @ Black Sludge
@@ -11690,7 +11690,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Wigglytuff @ Sitrus Berry
@@ -11739,7 +11739,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Dodrio
@@ -11958,7 +11958,7 @@ Pic: Lass
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Absol
 Ability: Sharpness
@@ -17300,7 +17300,7 @@ Pic: Leader Wattson
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Mareep
 Level: 36
@@ -19435,7 +19435,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Geodude
@@ -19621,7 +19621,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Meditite
@@ -19864,7 +19864,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Minun
@@ -19912,7 +19912,7 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Torkoal @ Eject Pack
@@ -19952,7 +19952,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Baltoy
@@ -19998,7 +19998,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Ninetales
@@ -20048,7 +20048,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Loudred
@@ -20093,7 +20093,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Clamperl @ Deep-Sea Scale
@@ -20375,7 +20375,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Swellow
@@ -20430,7 +20430,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Grumpig
@@ -20478,7 +20478,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Grumpig
@@ -20527,7 +20527,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Grumpig
@@ -20576,7 +20576,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Grumpig
@@ -20624,7 +20624,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Grumpig
@@ -20673,7 +20673,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Grumpig
@@ -20805,7 +20805,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Claydol @ Room Service
@@ -20861,7 +20861,7 @@ Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Mightyena
@@ -20912,7 +20912,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Solrock @ Life Orb
@@ -20968,7 +20968,7 @@ Pic: Magma Admin F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Cacturne
@@ -21000,7 +21000,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Weezing
@@ -21032,7 +21032,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Skarmory @ Muscle Band
@@ -21081,7 +21081,7 @@ Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Crobat
@@ -21138,7 +21138,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Crawdaunt
@@ -21195,7 +21195,7 @@ Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Gardevoir
@@ -21252,7 +21252,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Mightyena
@@ -21301,7 +21301,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Green
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Dusclops @ Eviolite
@@ -21352,7 +21352,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Glalie
@@ -21401,7 +21401,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Flygon @ Choice Scarf
@@ -21451,7 +21451,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Easy
 
 Skarmory @ Metal Coat
@@ -21510,7 +21510,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Lileep
@@ -21549,7 +21549,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Shroomish
@@ -21592,7 +21592,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Wailmer
@@ -21635,7 +21635,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Slugma
@@ -21678,7 +21678,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Wailmer
@@ -21721,7 +21721,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Shroomish
@@ -21764,7 +21764,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Slugma
@@ -21808,7 +21808,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Meditite
@@ -21857,7 +21857,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Pikachu
@@ -21909,7 +21909,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Pikachu
@@ -21961,7 +21961,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Pikachu
@@ -22013,7 +22013,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Pikachu
@@ -22065,7 +22065,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Pikachu
@@ -22117,7 +22117,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Pikachu
@@ -22221,7 +22221,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Minun @ Oran Berry
@@ -22277,7 +22277,7 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Torkoal @ Eject Pack
@@ -22324,7 +22324,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Slugma
@@ -22379,7 +22379,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Ninetales (F)
@@ -22435,7 +22435,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Loudred
@@ -22490,7 +22490,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Clamperl @ Deep-Sea Scale
@@ -22534,7 +22534,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -22596,7 +22596,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -22659,7 +22659,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -22721,7 +22721,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -22783,7 +22783,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -22846,7 +22846,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -22909,7 +22909,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Swellow (F) @ Flame Orb
@@ -22965,7 +22965,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -23027,7 +23027,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -23090,7 +23090,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -23152,7 +23152,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -23214,7 +23214,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -23277,7 +23277,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Grumpig
@@ -23431,7 +23431,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Magcargo
@@ -23488,7 +23488,7 @@ Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Swampert @ Swampertite
@@ -23544,7 +23544,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Solrock @ Life Orb
@@ -23602,7 +23602,7 @@ Pic: Magma Admin F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Cacturne @ Smooth Rock
@@ -23636,7 +23636,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Weezing @ Safety Goggles
@@ -23670,7 +23670,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Lanturn
@@ -23726,7 +23726,7 @@ Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Crobat @ Scope Lens
@@ -23784,7 +23784,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Crawdaunt
@@ -23841,7 +23841,7 @@ Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Gardevoir
@@ -23900,7 +23900,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Mightyena
@@ -23956,7 +23956,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Green
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Dusclops @ Eviolite
@@ -24014,7 +24014,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Glalie
@@ -24073,7 +24073,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Flygon @ Choice Scarf
@@ -24131,7 +24131,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Normal
 
 Skarmory @ Skarmorite
@@ -24191,7 +24191,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Lileep
@@ -24234,7 +24234,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Shroomish
@@ -24277,7 +24277,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Wailmer
@@ -24320,7 +24320,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Slugma
@@ -24363,7 +24363,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Wailmer
@@ -24406,7 +24406,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Shroomish
@@ -24449,7 +24449,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Slugma
@@ -24493,7 +24493,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Meditite
@@ -24547,7 +24547,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Pikachu
@@ -24598,7 +24598,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Pikachu
@@ -24649,7 +24649,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Pikachu
@@ -24700,7 +24700,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Pikachu
@@ -24751,7 +24751,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Pikachu
@@ -24802,7 +24802,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Pikachu
@@ -24854,7 +24854,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Difficulty: Hard
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Ralts @ Wise Glasses
 Ability: Synchronize
@@ -24911,7 +24911,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Minun @ Oran Berry
@@ -24973,7 +24973,7 @@ Pic: Magma Admin
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Torkoal @ Eject Pack
@@ -25025,7 +25025,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Slugma
@@ -25086,7 +25086,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Ninetales (F)
@@ -25148,7 +25148,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Loudred
@@ -25209,7 +25209,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Clamperl @ Deep-Sea Scale
@@ -25257,7 +25257,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Raichu
@@ -25310,7 +25310,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Raichu
@@ -25363,7 +25363,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Raichu
@@ -25415,7 +25415,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Raichu
@@ -25468,7 +25468,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Raichu
@@ -25521,7 +25521,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Raichu
@@ -25574,7 +25574,7 @@ Gender: Female
 Music: Female
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Swellow (F) @ Flame Orb
@@ -25636,7 +25636,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Grumpig
@@ -25698,7 +25698,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Grumpig
@@ -25761,7 +25761,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Grumpig
@@ -25823,7 +25823,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Grumpig
@@ -25885,7 +25885,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Grumpig
@@ -25948,7 +25948,7 @@ Pic: May
 Gender: Female
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Grumpig
@@ -26111,7 +26111,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Magcargo
@@ -26174,7 +26174,7 @@ Pic: Aqua Admin M
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Swampert @ Swampertite
@@ -26236,7 +26236,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Solrock @ Life Orb
@@ -26300,7 +26300,7 @@ Pic: Magma Admin F
 Gender: Female
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Cacturne @ Smooth Rock
@@ -26337,7 +26337,7 @@ Pic: Magma Leader Maxie
 Gender: Male
 Music: Magma
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Weezing @ Safety Goggles
@@ -26374,7 +26374,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Lanturn
@@ -26436,7 +26436,7 @@ Pic: Aqua Leader Archie
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Crobat @ Scope Lens
@@ -26500,7 +26500,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Crawdaunt
@@ -26563,7 +26563,7 @@ Pic: Wally
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Gardevoir
@@ -26628,7 +26628,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Difficulty: Hard
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 
 Pelipper
 Ability: Drizzle
@@ -26675,7 +26675,7 @@ Pic: Expert M
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Donphan @ Rocky Helmet
@@ -26723,7 +26723,7 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Shedinja @ Focus Sash
@@ -26817,7 +26817,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Purple
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Mightyena
@@ -26879,7 +26879,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Green
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Dusclops @ Eviolite
@@ -26943,7 +26943,7 @@ Gender: Female
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Pink
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Glalie
@@ -27008,7 +27008,7 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 Mugshot: Blue
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Flygon @ Choice Scarf
@@ -27072,7 +27072,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 Mugshot: Yellow
-AI: Smart Trainer / Ace Pokemon
+AI: Smart Trainer
 Difficulty: Hard
 
 Skarmory @ Skarmorite
