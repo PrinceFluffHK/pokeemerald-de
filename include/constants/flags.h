@@ -263,7 +263,7 @@
 #define FLAG_RECEIVED_TM_ROAR                0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
 
-#define FLAG_IS_TURN_START                   0xE9 // Checks if turn is just starting
+#define FLAG_IS_TURN_START                   0xE9 // EmDE Checks if turn is just starting
 
 #define FLAG_RECEIVED_TM_REST                0xEA
 #define FLAG_RECEIVED_TM_ATTRACT             0xEB

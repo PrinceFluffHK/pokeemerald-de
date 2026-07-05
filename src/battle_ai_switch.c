@@ -1304,8 +1304,8 @@ bool32 ShouldSwitch(enum BattlerId battler)
         return FALSE;
 
     // Sequence Switching AI never switches mid-battle
-    if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SEQUENCE_SWITCHING)
-        return FALSE;
+    // if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SEQUENCE_SWITCHING)
+    //     return FALSE;
 
     availableToSwitch = 0;
 
@@ -1451,8 +1451,8 @@ void ModifySwitchAfterMoveScoring(enum BattlerId battler)
         return;
 
     // Sequence Switching AI never switches mid-battle
-    if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SEQUENCE_SWITCHING)
-        return;
+    // if (gAiThinkingStruct->aiFlags[battler] & AI_FLAG_SEQUENCE_SWITCHING)
+    //     return;
 
     availableToSwitch = 0;
 
