@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route20_EventScript_Melissa",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -53,7 +53,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Missy",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -67,7 +67,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route20_EventScript_Nora",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -81,7 +81,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Roger",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -95,7 +95,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Dean",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -109,7 +109,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route20_EventScript_Irene",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -123,7 +123,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Barry",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -137,7 +137,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Darrin",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -151,7 +151,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route20_EventScript_Shirley",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -165,7 +165,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Tiffany",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",

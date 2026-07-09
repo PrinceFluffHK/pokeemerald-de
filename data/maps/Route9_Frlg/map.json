@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route9_EventScript_Alicia",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -53,7 +53,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route9_EventScript_Jeremy",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -67,7 +67,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route9_EventScript_Alan",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -81,7 +81,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route9_EventScript_Chris",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -95,7 +95,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route9_EventScript_Brent",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -109,7 +109,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route9_EventScript_Conner",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -123,7 +123,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route9_EventScript_Brice",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -137,7 +137,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route9_EventScript_Caitlin",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -151,7 +151,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route9_EventScript_Drew",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "local_id": "LOCALID_ROUTE9_CUT_TREE",
@@ -197,12 +197,8 @@
       "flag": "FLAG_HIDE_ROUTE9_BURN_HEAL"
     }
   ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
+  "warp_events": [],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

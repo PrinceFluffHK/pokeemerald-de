@@ -28,7 +28,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "PokemonMansion_1F_EventScript_Ted",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "type": "object",
@@ -84,7 +84,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "PokemonMansion_1F_EventScript_Johnson",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     }
   ],
   "warp_events": [
@@ -159,9 +159,7 @@
       "dest_warp_id": "2"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

@@ -41,7 +41,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Route105_EventScript_Luis",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -54,7 +54,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route105_EventScript_Dominik",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -67,7 +67,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route105_EventScript_Beverly",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -80,7 +80,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route105_EventScript_Imani",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_TM",
@@ -106,7 +106,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route105_EventScript_Foster",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
@@ -119,7 +119,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route105_EventScript_Josue",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
@@ -132,7 +132,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route105_EventScript_Andres",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     }
   ],
   "warp_events": [

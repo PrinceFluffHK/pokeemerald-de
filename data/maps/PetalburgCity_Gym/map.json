@@ -40,7 +40,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Mary",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -53,7 +53,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Randall",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -66,7 +66,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Parker",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
@@ -79,7 +79,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Alexia",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -92,7 +92,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_George",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
@@ -105,7 +105,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Jody",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -118,7 +118,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PetalburgCity_Gym_EventScript_Berke",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",

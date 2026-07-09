@@ -134,7 +134,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "RusturfTunnel_EventScript_Mike",
-      "flag": "0"
+      "flag": "FLAG_BOSS_RUSH_MODE"
     },
     {
       "local_id": "LOCALID_RUSTURF_TUNNEL_WANDA",

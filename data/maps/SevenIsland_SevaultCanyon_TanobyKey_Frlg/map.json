@@ -196,7 +196,5 @@
       "script": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch2"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

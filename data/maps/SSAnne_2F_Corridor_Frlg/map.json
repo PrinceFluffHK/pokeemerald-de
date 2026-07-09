@@ -140,7 +140,5 @@
       "script": "SSAnne_2F_Corridor_EventScript_RivalTriggerRight"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }
