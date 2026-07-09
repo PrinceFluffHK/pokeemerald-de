@@ -10651,16 +10651,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_AQUA_TAIL] =
     {
-        .name = COMPOUND_STRING("Bubble Tail"),
+        .name = COMPOUND_STRING("Aqua Tail"),
         .description = COMPOUND_STRING(
             "The user swings its tail\n"
-            "in a wave to hit both foes."),
+            "in a wave to hit the foe."),
         .effect = EFFECT_HIT,
-        .power = 70, //90,
+        .power = 90,
         .type = TYPE_WATER,
         .accuracy = 90,
         .pp = 12,
-        .target = TARGET_BOTH,
+        .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
