@@ -88,6 +88,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis, MSGBOX_DEFAULT
+	call_if_set FLAG_BOSS_RUSH_MODE, MauvilleCity_Gym_EventScript_WattsonGiveMoney
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
 	setflag FLAG_DEFEATED_MAUVILLE_GYM
@@ -110,6 +111,10 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	setflag FLAG_ENABLE_WATTSON_MATCH_CALL
 	release
 	end
+
+MauvilleCity_Gym_EventScript_WattsonGiveMoney::
+	addmoney 3000
+	return
 
 MauvilleCity_Gym_EventScript_GiveShockWave2::
 	giveitem ITEM_TM_CHARGE_BEAM

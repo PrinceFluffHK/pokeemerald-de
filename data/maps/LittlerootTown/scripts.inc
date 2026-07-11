@@ -983,7 +983,7 @@ LittlerootTown_Text_WearTheseRunningShoes:
 	.string "You're your father's child, all right.\n"
 	.string "You look good together with POKéMON!\p"
 	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, use this EXP SHARE.\p"
+	.string "adventure, use this Exp. Share.\p"
 	.string "It'll help you build a strong\n"
 	.string "team of POKéMON!$"
 
@@ -994,7 +994,7 @@ LittlerootTown_Text_WearTheseRunningShoes:
 LittlerootTown_Text_ExplainRunningShoes:
 	.string "MOM: {PLAYER}, that HELD ITEM came\n"
 	.string "with instructions.\p"
-	.string "“Activate this classic EXP SHARE by\n"
+	.string "“Activate this classic Exp. Share by\n"
 	.string "giving it to one of your POKéMON!”$"
 @	.string "“Slip on these RUNNING SHOES and race\n"
 @	.string "in the great outdoors!”$"

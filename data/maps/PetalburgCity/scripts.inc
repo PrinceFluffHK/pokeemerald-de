@@ -93,6 +93,37 @@ PetalburgCity_EventScript_WallysMom::
 	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
 	end
 
+PetalburgCity_EventScript_SkipTutorialTrigget::
+	call_if_set FLAG_DISABLE_TUTORIAL_SKIP_PROMPT, PetalburgCity_EventScript_SkipTutorialYesNo
+	end
+
+
+PetalburgCity_EventScript_SkipTutorialYesNo::
+	lockall
+	msgbox PetalburgCity_Text_WantToSkipTutorial, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, YES, PetalburgCity_EventScript_SkipTutorial
+	setflag FLAG_DISABLE_TUTORIAL_SKIP_PROMPT
+	releaseall
+	return
+
+PetalburgCity_EventScript_SkipTutorial::
+	setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
+	setvar VAR_PETALBURG_GYM_STATE, 1
+	setvar VAR_PETALBURG_CITY_STATE, 2
+	clearflag FLAG_HIDE_PETALBURG_CITY_WALLY
+	clearflag FLAG_HIDE_PETALBURG_GYM_WALLY
+	clearflag FLAG_HIDE_MAP_NAME_POPUP
+	setvar VAR_PETALBURG_CITY_STATE, 3
+	fadedefaultbgm
+	clearflag FLAG_DONT_TRANSITION_MUSIC
+	special LoadPlayerParty
+	setvar VAR_PETALBURG_GYM_STATE, 1
+	warp MAP_PETALBURG_CITY_GYM, 4, 108
+	waitstate
+	releaseall
+	end
+
 PetalburgCity_Movement_WalkToWallyHousePlayer:
 	delay_8
 	walk_down

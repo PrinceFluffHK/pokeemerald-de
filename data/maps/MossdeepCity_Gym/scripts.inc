@@ -67,6 +67,7 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis, MSGBOX_DEFAULT
+	call_if_set FLAG_BOSS_RUSH_MODE, MossdeepCity_Gym_EventScript_TateAndLizaGiveMoney
 	setflag FLAG_DEFEATED_MOSSDEEP_GYM
 	setflag FLAG_BADGE07_GET
 	setflag FLAG_HIDE_AQUA_HIDEOUT_GRUNTS
@@ -93,6 +94,10 @@ MossdeepCity_Gym_EventScript_TateAndLizaDefeated::
 	setflag FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL
 	release
 	end
+
+MossdeepCity_Gym_EventScript_TateAndLizaGiveMoney::
+	addmoney 7000
+	return
 
 MossdeepCity_Gym_EventScript_GiveCalmMind2::
 	giveitem ITEM_TM_PSYCHIC_NOISE

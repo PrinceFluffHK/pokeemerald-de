@@ -666,7 +666,7 @@
 
 #define FLAG_HIDE_BUTTON_PROMPT  0x264 // EMDE
 #define FLAG_BOSS_RUSH_MODE  0x265 // EMDE
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
+#define FLAG_DISABLE_TUTORIAL_SKIP_PROMPT 0x266 // EMDE
 #define FLAG_UNUSED_0x267  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag

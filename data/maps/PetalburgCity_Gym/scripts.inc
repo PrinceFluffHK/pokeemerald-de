@@ -375,6 +375,7 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis, MSGBOX_DEFAULT
+	call_if_set FLAG_BOSS_RUSH_MODE, PetalburgCity_Gym_1F_EventScript_NormanGiveMoney
 	setflag FLAG_DEFEATED_PETALBURG_GYM
 	setvar VAR_PETALBURG_GYM_STATE, 7
 	setflag FLAG_BADGE05_GET
@@ -400,6 +401,10 @@ PetalburgCity_Gym_EventScript_NormanBattle::
 	case DIR_WEST, PetalburgCity_Gym_EventScript_WallysDadArrivesWest
 	case DIR_EAST, PetalburgCity_Gym_EventScript_WallysDadArrivesEast
 	end
+
+PetalburgCity_Gym_1F_EventScript_NormanGiveMoney::
+	addmoney 5000
+	return
 
 PetalburgCity_Gym_EventScript_GiveFacade::
 	giveitem ITEM_TM_FACADE

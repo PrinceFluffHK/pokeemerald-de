@@ -265,9 +265,27 @@ PlayersHouse_2F_EventScript_Notebook::
 	msgbox PlayersHouse_2F_Text_Notebook, MSGBOX_SIGN
 	end
 
-PlayersHouse_2F_EventScript_GameCube::
+PlayersHouse_2F_EventScript_BossRushGameCube::
+	lockall
 	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
+	goto_if_unset FLAG_BOSS_RUSH_MODE PlayersHouse_2F_EventScript_BossRushYesNo
+	releaseall
 	end
+
+PlayersHouse_2F_EventScript_BossRushYesNo::
+	msgbox PlayersHouse_2F_Text_EnableBossRush, MSGBOX_DEFAULT
+	yesnobox 20, 8
+	goto_if_eq VAR_RESULT, YES, PlayersHouse_2F_EventScript_BossRushGameCubeEnabled
+	releaseall
+	end
+
+PlayersHouse_2F_EventScript_BossRushGameCubeEnabled::
+	setflag FLAG_BOSS_RUSH_MODE
+	msgbox PlayersHouse_2F_Text_GoodLuckInBossRush, MSGBOX_DEFAULT
+	releaseall
+	end
+
+
 
 PlayersHouse_2F_Text_ClockIsStopped:
 	.string "The clock is stopped…\p"
@@ -294,8 +312,18 @@ PlayersHouse_2F_Text_Notebook:
 Common_Text_LookCloserAtMap:
 	.string "{PLAYER} took a closer look at the\n"
 	.string "{REGION} region map.$"
-
+	
 PlayersHouse_2F_Text_ItsAGameCube:
-	.string "It's a Nintendo GameCube.\p"
-	.string "A Game Boy Advance is connected to\n"
-	.string "serve as the Controller.$"
+	.string "It's a Nintendo GameCube.$"
+	
+PlayersHouse_2F_Text_EnableBossRush:
+	.string "Pressing the GameCube's POWER button\n"
+	.string "will enable Boss Rush Mode.\p"
+	.string "ALL filler trainers will disappear,\n"
+	.string "and Gym Leaders give extra prize money.\p"
+	.string "NOTE: THIS CANNOT BE UNDONE.\p"
+	.string "Press and enable Boss Rush Mode?$"
+	
+PlayersHouse_2F_Text_GoodLuckInBossRush:
+	.string "Boss Rush Mode has been enabled.\p"
+	.string "Enjoy your adventure!$"

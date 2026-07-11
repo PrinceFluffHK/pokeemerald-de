@@ -31,6 +31,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis, MSGBOX_DEFAULT
+	call_if_set FLAG_BOSS_RUSH_MODE, FortreeCity_Gym_EventScript_WinonaGiveMoney
 	setflag FLAG_DEFEATED_FORTREE_GYM
 	setflag FLAG_BADGE06_GET
 	setvar VAR_0x8008, 6
@@ -48,6 +49,10 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	setflag FLAG_SCOTT_CALL_FORTREE_GYM
 	release
 	end
+
+FortreeCity_Gym_EventScript_WinonaGiveMoney::
+	addmoney 6000
+	return
 
 FortreeCity_Gym_EventScript_GiveAerialAce2::
 	giveitem ITEM_TM_AERIAL_ACE

@@ -57,6 +57,7 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis, MSGBOX_DEFAULT
+	call_if_set FLAG_BOSS_RUSH_MODE, LavaridgeTown_Gym_1F_EventScript_FlanneryGiveMoney
 	setflag FLAG_WHITEOUT_TO_LAVARIDGE
 	setflag FLAG_DEFEATED_LAVARIDGE_GYM
 	setflag FLAG_BADGE04_GET
@@ -77,6 +78,10 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 	setflag FLAG_ENABLE_FLANNERY_MATCH_CALL
 	release
 	end
+
+LavaridgeTown_Gym_1F_EventScript_FlanneryGiveMoney::
+	addmoney 4000
+	return
 
 LavaridgeTown_Gym_1F_EventScript_GiveOverheat2::
 	giveitem ITEM_TM_OVERHEAT
