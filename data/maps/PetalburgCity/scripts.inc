@@ -93,8 +93,8 @@ PetalburgCity_EventScript_WallysMom::
 	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
 	end
 
-PetalburgCity_EventScript_SkipTutorialTrigget::
-	call_if_set FLAG_DISABLE_TUTORIAL_SKIP_PROMPT, PetalburgCity_EventScript_SkipTutorialYesNo
+PetalburgCity_EventScript_SkipTutorialTrigger::
+	call_if_unset FLAG_DISABLE_TUTORIAL_SKIP_PROMPT, PetalburgCity_EventScript_SkipTutorialYesNo
 	end
 
 
@@ -581,6 +581,8 @@ PetalburgCity_EventScript_Scott::
 	delay 30
 	msgbox PetalburgCity_Text_ImLookingForTalentedTrainers, MSGBOX_DEFAULT
 	giveitem ITEM_ABILITY_CAPSULE
+	waitfanfare
+	closemessage
 	call_if_eq VAR_0x8008, 0, PetalburgCity_EventScript_ScottExit0
 	call_if_eq VAR_0x8008, 1, PetalburgCity_EventScript_ScottExit1
 	call_if_eq VAR_0x8008, 2, PetalburgCity_EventScript_ScottExit2
@@ -780,17 +782,21 @@ PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"
 	.string "Oh yeah, now I see it in your eyes.\p"
 	.string "You've got a pretty good intuition\n"
-	.string "for POKéMON BATTLING.\p"
-	.string "Am I right?\p"
+	.string "for POKéMON battles.\p"
+	.string "Am I right?$"
 	// .string "You're still a rookie TRAINER,\n"
 	// .string "but you're just an ordinary kid.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
-	.string "Sorry to keep rambling on, kid.$"
-	.string "Here, take this ABILITY CAPSULE\n"
+	.string "Sorry to keep rambling on, kid.\p"
+	.string "Here, take this Ability Capsule\n"
 	.string "humoring me.\p"
-	.string "You can buy 'em at any POKéMART, but\n"
-	.string "you'll only find ABILITY PATCHES\l"
-	.string "for sale in EVER GRANDE CITY.$"
+	.string "You can buy these capsules at any\n"
+	.string "POKéMART, but Ability Patches are\l"
+	.string "only for sale in EVER GRANDE CITY.$"
+
+PetalburgCity_Text_WantToSkipTutorial:
+	.string "Do you want to skip the\n"
+	.string "catching tutorial?$"
