@@ -894,6 +894,7 @@ static const struct LevelUpMove sRaichuAlolaLevelUpLearnset[] = {
 
 #if P_FAMILY_SANDSHREW
 static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SWIFT),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
@@ -901,22 +902,21 @@ static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(12, MOVE_SAND_TOMB),
-    //Brock Lv14
-    LEVEL_UP_MOVE(15, MOVE_RAPID_SPIN),
-    //Misty Lv21
-    LEVEL_UP_MOVE(18, MOVE_SWIFT),
     // >>> Catch
+    LEVEL_UP_MOVE(15, MOVE_RAPID_SPIN),
+    LEVEL_UP_MOVE(18, MOVE_DIG),
+    //Misty Lv21
     LEVEL_UP_MOVE(21, MOVE_BULLDOZE),
     // >>> Evo Lv22
     LEVEL_UP_MOVE(24, MOVE_FURY_SWIPES),
     //Lt. Surge Lv24
-    LEVEL_UP_MOVE(27, MOVE_DIG),
+    LEVEL_UP_MOVE(27, MOVE_HONE_CLAWS),
     //Erika Lv29
     LEVEL_UP_MOVE(30, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE(33, MOVE_DIG),
-    //KogaSabrina Lv40
     LEVEL_UP_MOVE(36, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(39, MOVE_SWORDS_DANCE),
+    //KogaSabrina Lv40
     LEVEL_UP_MOVE(42, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(45, MOVE_DRILL_RUN),
     //SabrinaKoga Lv45
@@ -930,7 +930,7 @@ static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
 
 static const struct LevelUpMove sSandslashLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SLASH),
-    LEVEL_UP_MOVE( 0, MOVE_SPIKY_SHIELD),
+    LEVEL_UP_MOVE( 1, MOVE_SPIKY_SHIELD),
     LEVEL_UP_MOVE( 1, MOVE_SANDSTORM),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
@@ -942,13 +942,13 @@ static const struct LevelUpMove sSandslashLevelUpLearnset[] = {
     //Brock Lv14
     LEVEL_UP_MOVE(15, MOVE_RAPID_SPIN),
     //Misty Lv21
-    LEVEL_UP_MOVE(18, MOVE_SWIFT),
+    LEVEL_UP_MOVE(18, MOVE_DIG),
     LEVEL_UP_MOVE(21, MOVE_BULLDOZE),
     // >>> Evo Lv22
     //Lt. Surge Lv24
     LEVEL_UP_MOVE(26, MOVE_FURY_SWIPES),
     //Erika Lv29
-    LEVEL_UP_MOVE(31, MOVE_DIG),
+    LEVEL_UP_MOVE(31, MOVE_HONE_CLAWS),
     //KogaSabrina Lv40
     LEVEL_UP_MOVE(36, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE(41, MOVE_EARTHQUAKE),
@@ -1127,16 +1127,17 @@ static const struct LevelUpMove sNidoqueenLevelUpLearnset[] = {
 
 static const struct LevelUpMove sNidoranMLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 5, MOVE_PECK),
-    LEVEL_UP_MOVE(10, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(10, MOVE_FURY_ATTACK),
     //Brock Lv14
-    LEVEL_UP_MOVE(15, MOVE_FURY_ATTACK),
+    LEVEL_UP_MOVE(15, MOVE_DOUBLE_KICK),
     //Misty Lv21
     // >>> Evo Lv 16
     LEVEL_UP_MOVE(20, MOVE_TOXIC_SPIKES),
     //Lt. Surge Lv24
-    LEVEL_UP_MOVE(25, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE(25, MOVE_POISON_FANG),
     //Erika Lv29
     LEVEL_UP_MOVE(30, MOVE_HORN_ATTACK),
     LEVEL_UP_MOVE(35, MOVE_HELPING_HAND),
@@ -1155,62 +1156,66 @@ static const struct LevelUpMove sNidoranMLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sNidorinoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     //Brock Lv14
-    LEVEL_UP_MOVE(15, MOVE_FURY_ATTACK),
+    LEVEL_UP_MOVE(10, MOVE_FURY_ATTACK),
+    LEVEL_UP_MOVE(15, MOVE_DOUBLE_KICK),
     //Misty Lv21
     // >>> Evo Lv 16
-    LEVEL_UP_MOVE(22, MOVE_TOXIC_SPIKES),
+    LEVEL_UP_MOVE(22, MOVE_POISON_FANG),
     //Lt. Surge Lv24
-    LEVEL_UP_MOVE(29, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE(29, MOVE_HELPING_HAND),
     //Erika Lv29
+    LEVEL_UP_MOVE(36, MOVE_POISON_JAB),
     //KogaSabrina Lv40
-    LEVEL_UP_MOVE(36, MOVE_HORN_ATTACK),
-    LEVEL_UP_MOVE(43, MOVE_HELPING_HAND),
+    LEVEL_UP_MOVE(43, MOVE_THRASH),
     //SabrinaKoga Lv45
-    LEVEL_UP_MOVE(50, MOVE_TOXIC),
     //Blaine Lv47
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
     //Giovanni Lv50
     //Lorelei Lv52
     LEVEL_UP_MOVE(57, MOVE_FLATTER),
     //Lance Lv60
     //Champion Lv63
-    LEVEL_UP_MOVE(64, MOVE_POISON_JAB),
-    LEVEL_UP_MOVE(71, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(64, MOVE_COUNTER),
+    LEVEL_UP_MOVE(71, MOVE_HORN_DRILL),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sNidokingLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_MEGAHORN),
     LEVEL_UP_MOVE( 1, MOVE_SLUDGE_WAVE),
     LEVEL_UP_MOVE( 1, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE( 1, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_TOXIC_SPIKES),
-    LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
-    LEVEL_UP_MOVE( 1, MOVE_HORN_ATTACK),
-    LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE( 1, MOVE_TOXIC),
-    LEVEL_UP_MOVE( 1, MOVE_FLATTER),
-    LEVEL_UP_MOVE( 1, MOVE_POISON_JAB),
-    LEVEL_UP_MOVE( 1, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
+    //Brock Lv14
+    LEVEL_UP_MOVE(10, MOVE_FURY_ATTACK),
+    LEVEL_UP_MOVE(15, MOVE_DOUBLE_KICK),
+    //Misty Lv21
+    // >>> Evo Lv 16
+    LEVEL_UP_MOVE(22, MOVE_POISON_FANG),
+    //Lt. Surge Lv24
+    LEVEL_UP_MOVE(29, MOVE_HELPING_HAND),
+    //Erika Lv29
+    LEVEL_UP_MOVE(36, MOVE_POISON_JAB),
+    //KogaSabrina Lv40
+    LEVEL_UP_MOVE(43, MOVE_THRASH),
     //SabrinaKoga Lv45
     //Blaine Lv47
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
     //Giovanni Lv50
     //Lorelei Lv52
+    LEVEL_UP_MOVE(57, MOVE_FLATTER),
     //Lance Lv60
     //Champion Lv63
-    //KogaSabrina Lv40
-    //Erika Lv29
-    //Lt. Surge Lv24
-    //Misty Lv21
-    //Brock Lv14
+    LEVEL_UP_MOVE(64, MOVE_COUNTER),
+    LEVEL_UP_MOVE(71, MOVE_HORN_DRILL),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NIDORAN
@@ -1317,18 +1322,16 @@ static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_DISABLE),
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_SPITE),
-    //Brock Lv14
     LEVEL_UP_MOVE(16, MOVE_FIRE_SPIN),
-    //Misty Lv21
-    LEVEL_UP_MOVE(20, MOVE_CONFUSE_RAY),
     // >>> Catch
+    LEVEL_UP_MOVE(20, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(24, MOVE_WILL_O_WISP),
     //Lt. Surge Lv24
     LEVEL_UP_MOVE(28, MOVE_EXTRASENSORY),
     //Erika Lv29
-    // >>> Evo Post-Flannery
     LEVEL_UP_MOVE(32, MOVE_FLAME_BURST),
     //KogaSabrina Lv40
+    // >>> Evo Post-Surf
     LEVEL_UP_MOVE(36, MOVE_IMPRISON),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(44, MOVE_SAFEGUARD),
@@ -2979,14 +2982,13 @@ static const struct LevelUpMove sGeodudeLevelUpLearnset[] = {
     // >>> Catch
     LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(12, MOVE_BULLDOZE),
-    //Brock Lv14
-    LEVEL_UP_MOVE(16, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE(16, MOVE_STEALTH_ROCK),
     //Misty Lv21
     LEVEL_UP_MOVE(18, MOVE_ROCK_BLAST),
-    LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
+    LEVEL_UP_MOVE(24, MOVE_WIDE_GUARD),
     //Wattson
     // >>> Evo Lv25
-    LEVEL_UP_MOVE(28, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(28, MOVE_SELF_DESTRUCT),
     //Erika Lv29
     LEVEL_UP_MOVE(30, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(34, MOVE_EARTHQUAKE),
@@ -3013,14 +3015,14 @@ static const struct LevelUpMove sGravelerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(12, MOVE_BULLDOZE),
     //Brock Lv14
-    LEVEL_UP_MOVE(16, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE(16, MOVE_STEALTH_ROCK),
     //Misty Lv21
     LEVEL_UP_MOVE(18, MOVE_ROCK_BLAST),
-    LEVEL_UP_MOVE(24, MOVE_SELF_DESTRUCT),
+    LEVEL_UP_MOVE(24, MOVE_WIDE_GUARD),
     //Lt. Surge Lv24
     // >>> Evo Lv25
     //Erika Lv29
-    LEVEL_UP_MOVE(30, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(30, MOVE_SELF_DESTRUCT),
     LEVEL_UP_MOVE(34, MOVE_GYRO_BALL),
     //KogaSabrina Lv40
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
@@ -4148,25 +4150,26 @@ static const struct LevelUpMove sOnixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_DRAGON_BREATH),
     //Brock Lv14
     LEVEL_UP_MOVE(16, MOVE_CURSE),
-    //Misty Lv21
     LEVEL_UP_MOVE(20, MOVE_ROCK_SLIDE),
+    //Misty Lv21
     LEVEL_UP_MOVE(24, MOVE_SCREECH),
     //Lt. Surge Lv24
     LEVEL_UP_MOVE(28, MOVE_SAND_TOMB),
     //Erika Lv29
     LEVEL_UP_MOVE(32, MOVE_STEALTH_ROCK),
-    //KogaSabrina Lv40
     LEVEL_UP_MOVE(36, MOVE_SLAM),
     LEVEL_UP_MOVE(40, MOVE_SANDSTORM),
+    //KogaSabrina Lv40
     LEVEL_UP_MOVE(44, MOVE_DIG),
     //SabrinaKoga Lv45
-    LEVEL_UP_MOVE(48, MOVE_IRON_TAIL),
     //Blaine Lv47
+    LEVEL_UP_MOVE(48, MOVE_IRON_TAIL),
     //Giovanni Lv50
     LEVEL_UP_MOVE(52, MOVE_STONE_EDGE),
     //Lorelei Lv52
     LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
     //Lance Lv60
+    LEVEL_UP_MOVE(60, MOVE_HEAD_SMASH),
     //Champion Lv63
     LEVEL_UP_END
 };
@@ -4975,13 +4978,13 @@ static const struct LevelUpMove sRhyhornLevelUpLearnset[] = {
     LEVEL_UP_MOVE(10, MOVE_BULLDOZE),
     //Brock Lv14
     LEVEL_UP_MOVE(15, MOVE_HORN_ATTACK),
+    // >>> Catch
     //Misty Lv21
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     //Lt. Surge Lv24
     LEVEL_UP_MOVE(25, MOVE_STOMP),
     //Erika Lv29
     LEVEL_UP_MOVE(30, MOVE_ROCK_BLAST),
-    // >>> Catch
     LEVEL_UP_MOVE(35, MOVE_DRILL_RUN),
     //KogaSabrina Lv40
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
@@ -5005,9 +5008,7 @@ static const struct LevelUpMove sRhydonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_SMACK_DOWN),
     LEVEL_UP_MOVE( 1, MOVE_BULLDOZE),
-    //Brock Lv14
     LEVEL_UP_MOVE(15, MOVE_HORN_ATTACK),
-    //Misty Lv21
     LEVEL_UP_MOVE(20, MOVE_SCARY_FACE),
     //Lt. Surge Lv24
     LEVEL_UP_MOVE(25, MOVE_STOMP),
@@ -5021,6 +5022,7 @@ static const struct LevelUpMove sRhydonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_EARTHQUAKE),
     //Blaine Lv47
     //Giovanni Lv50
+    //Evo VictoryRoad
     //Lorelei Lv52
     LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
     //Lance Lv60
@@ -5052,6 +5054,7 @@ static const struct LevelUpMove sRhyperiorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_EARTHQUAKE),
     //Blaine Lv47
     //Giovanni Lv50
+    //Evo VictoryRoad
     //Lorelei Lv52
     LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
     //Lance Lv60
