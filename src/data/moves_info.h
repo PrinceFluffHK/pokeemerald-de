@@ -265,7 +265,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Throws coins at the foe.\n"
             "Money is recovered after."),
         .effect = EFFECT_HIT,
-        .power = 70, //40,
+        .power = 60, //40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 20,
@@ -275,7 +275,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PAYDAY,
         }),
-        .alwaysCriticalHit = TRUE,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST : CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -1356,7 +1355,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_NON_VOLATILE_STATUS,
         .power = 0,
         .type = TYPE_NORMAL,
-        .accuracy = 55,
+        .accuracy = 75, //55,
         .pp = 16,
         .target = TARGET_SELECTED,
         .priority = 0,
@@ -2280,7 +2279,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Spitfire"),
         .description = COMPOUND_STRING(
             "Launches shock waves that\n"
-            "might burn the target."),
+            "can burn the target."),
         .effect = EFFECT_HIT,
         .power = 40, //1,
         .type = TYPE_DRAGON,
