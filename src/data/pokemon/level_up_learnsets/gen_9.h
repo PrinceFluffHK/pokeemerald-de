@@ -3710,58 +3710,50 @@ static const struct LevelUpMove sSirfetchdLevelUpLearnset[] = {
 
 #if P_FAMILY_DODUO
 static const struct LevelUpMove sDoduoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_AGILITY),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 5, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(14, MOVE_PLUCK),
-    //Brock Lv14
-    //Misty Lv21
     LEVEL_UP_MOVE(19, MOVE_DOUBLE_HIT),
-    LEVEL_UP_MOVE(23, MOVE_AGILITY),
+    // >>> CATCH Lv22
+    LEVEL_UP_MOVE(23, MOVE_DOUBLE_KICK),
     //Lt. Surge Lv24
-    LEVEL_UP_MOVE(27, MOVE_UPROAR),
+    LEVEL_UP_MOVE(27, MOVE_ENDEAVOR),
     //Erika Lv29
     LEVEL_UP_MOVE(30, MOVE_ACUPRESSURE),
     // >>> EVO Lv31
     LEVEL_UP_MOVE(33, MOVE_SWORDS_DANCE),
-    //KogaSabrina Lv40
     LEVEL_UP_MOVE(36, MOVE_DRILL_PECK),
-    LEVEL_UP_MOVE(39, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(39, MOVE_DRILL_RUN),
     LEVEL_UP_MOVE(43, MOVE_THRASH),
-    //SabrinaKoga Lv45
-    //Blaine Lv47
-    //Giovanni Lv50
-    //Lorelei Lv52
-    //Lance Lv60
-    //Champion Lv63
+    LEVEL_UP_MOVE(48, MOVE_BRAVE_BIRD),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sDodrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_TRI_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_TRIPLE_KICK),
+    LEVEL_UP_MOVE( 1, MOVE_AGILITY),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_FURY_ATTACK),
-    //Brock Lv14
     LEVEL_UP_MOVE(15, MOVE_PLUCK),
-    //Misty Lv21
     LEVEL_UP_MOVE(19, MOVE_DOUBLE_HIT),
-    LEVEL_UP_MOVE(23, MOVE_AGILITY),
-    //Lt. Surge Lv24
-    LEVEL_UP_MOVE(26, MOVE_UPROAR),
-    //Erika Lv29
+    LEVEL_UP_MOVE(23, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE(26, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(30, MOVE_ACUPRESSURE),
     // >>> EVO Lv31
     LEVEL_UP_MOVE(34, MOVE_SWORDS_DANCE),
-    //KogaSabrina Lv40
     LEVEL_UP_MOVE(38, MOVE_DRILL_PECK),
-    //T&L
-    LEVEL_UP_MOVE(43, MOVE_ENDEAVOR),
+    //KogaSabrina Lv40
+    LEVEL_UP_MOVE(43, MOVE_DRILL_RUN),
     //SabrinaKoga Lv45
-    LEVEL_UP_MOVE(50, MOVE_THRASH),
     //Blaine Lv47
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
     //Giovanni Lv50
     //Lorelei Lv52
     //Lance Lv60
