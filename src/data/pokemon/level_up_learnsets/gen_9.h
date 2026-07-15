@@ -1087,7 +1087,7 @@ static const struct LevelUpMove sNidorinaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(29, MOVE_HELPING_HAND),
     //Erika Lv29
     //KogaSabrina Lv40
-    LEVEL_UP_MOVE(36, SLUDGE_BOMB),
+    LEVEL_UP_MOVE(36, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(43, MOVE_CRUNCH),
     //SabrinaKoga Lv45
     //Blaine Lv47
@@ -1120,7 +1120,7 @@ static const struct LevelUpMove sNidoqueenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_POISON_TAIL),
     LEVEL_UP_MOVE(50, MOVE_CRUNCH),
     LEVEL_UP_MOVE(50, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE(50, SLUDGE_BOMB),
+    LEVEL_UP_MOVE(50, MOVE_SLUDGE_BOMB),
     LEVEL_UP_MOVE(50, MOVE_SLUDGE_WAVE),
     LEVEL_UP_MOVE(50, MOVE_FLATTER),
     LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
