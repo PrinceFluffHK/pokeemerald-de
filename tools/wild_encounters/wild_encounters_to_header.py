@@ -70,6 +70,16 @@ class WildEncounterAssembler:
         self.output_file = output_file
         self.json_data = json_data
         self.config = config
+
+    def GetVersionGuard(self, label):
+        lowered_label = label.lower()
+        if "firered" in lowered_label:
+            return "#ifdef FIRERED"
+        if "leafgreen" in lowered_label:
+            return "#ifdef LEAFGREEN"
+        if "frlg" in lowered_label:
+            return "#if IS_FRLG"
+        return "#ifdef EMERALD"
     
     def WriteLine(self, line="", indents = 0):
         self.output_file.write(4 * indents * " " + line + "\n")
@@ -163,13 +173,9 @@ class WildEncounterAssembler:
             encounter_data = map_data
             map_group = map_data["mapGroup"]
             map_num = map_data["mapNum"]
-            version = "EMERALD"
-            if "FireRed" in shared_label:
-                version = "FIRERED"
-            elif "LeafGreen" in shared_label:
-                version = "LEAFGREEN"
+            version_guard = self.GetVersionGuard(shared_label)
             
-            self.WriteLine(f"#ifdef {version}")
+            self.WriteLine(version_guard)
 
             self.WriteLine("{", 1)
             self.WriteLine(f".mapGroup = {map_group},", 2)
@@ -236,12 +242,8 @@ class WildEncounterAssembler:
                 headers["data"][shared_label]["mapGroup"] = map_group
                 headers["data"][shared_label]["mapNum"] = map_num
 
-                version = "EMERALD"
-                if "FireRed" in shared_label:
-                    version = "FIRERED"
-                elif "LeafGreen" in shared_label:
-                    version = "LEAFGREEN"
-                self.WriteLine(f"#ifdef {version}")
+                version_guard = self.GetVersionGuard(shared_label)
+                self.WriteLine(version_guard)
                 for mon_type in self.config.mon_types:
                     if mon_type not in map_encounters:
                         headers["data"][shared_label][mon_type] = "NULL"
