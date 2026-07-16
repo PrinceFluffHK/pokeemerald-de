@@ -379,7 +379,7 @@
       "x": 18,
       "y": 7,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_CARBOS",
       "flag": "FLAG_HIDDEN_ITEM_CERULEAN_CITY_RARE_CANDY",
       "quantity": 1,
       "underfoot": false

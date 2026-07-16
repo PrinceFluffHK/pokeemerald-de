@@ -218,7 +218,7 @@
       "x": 39,
       "y": 11,
       "elevation": 3,
-      "item": "ITEM_ETHER",
+      "item": "ITEM_HP_UP",
       "flag": "FLAG_HIDDEN_ITEM_MT_MOON_B2F_ETHER",
       "quantity": 1,
       "underfoot": false
