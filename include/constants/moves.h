@@ -93,7 +93,7 @@ enum __attribute__((packed)) Move
     MOVE_SLEEP_POWDER = 79,
     MOVE_PETAL_DANCE = 80,
     MOVE_STRING_SHOT = 81,
-    MOVE_DRAGON_RAGE = 82,
+    MOVE_SPITFIRE = 82,
     MOVE_FIRE_SPIN = 83,
     MOVE_THUNDER_SHOCK = 84,
     MOVE_THUNDERSHOCK = MOVE_THUNDER_SHOCK, // Pre-Gen VI name

@@ -4,8 +4,8 @@
 ASSUMPTIONS
 {
     ASSUME(gItemsInfo[ITEM_PETAYA_BERRY].holdEffect == HOLD_EFFECT_SP_ATTACK_UP);
-    ASSUME(GetMoveEffect(MOVE_DRAGON_RAGE) == EFFECT_FIXED_HP_DAMAGE);
-    ASSUME(GetMoveFixedHPDamage(MOVE_DRAGON_RAGE) == 40);
+    ASSUME(GetMoveEffect(MOVE_SPITFIRE) == EFFECT_FIXED_HP_DAMAGE);
+    ASSUME(GetMoveFixedHPDamage(MOVE_SPITFIRE) == 40);
 }
 
 SINGLE_BATTLE_TEST("Petaya Berry raises the holder's Sp. Atk by one stage when HP drops to 1/4 or below")
@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Petaya Berry raises the holder's Sp. Atk by one stage when H
     enum Move move;
 
     PARAMETRIZE { move = MOVE_SCRATCH; }
-    PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
+    PARAMETRIZE { move = MOVE_SPITFIRE; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_PETAYA_BERRY); }
@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Petaya Berry raises the holder's Sp. Atk by one stage when H
             MESSAGE("Using Petaya Berry, the Sp. Atk of Wobbuffet rose!");
         }
     } THEN {
-        if (move == MOVE_DRAGON_RAGE)
+        if (move == MOVE_SPITFIRE)
             EXPECT_EQ(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE + 1);
     }
 }
@@ -43,9 +43,9 @@ SINGLE_BATTLE_TEST("Petaya Berry raises Sp. Atk by one stage when HP drops to 1/
         PLAYER(SPECIES_BELLSPROUT) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_PETAYA_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(opponent, MOVE_SPITFIRE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Using Petaya Berry, the Sp. Atk of Bellsprout rose!");
     } THEN {
@@ -59,9 +59,9 @@ SINGLE_BATTLE_TEST("Petaya Berry raises Sp. Atk by one stage when HP drops to 1/
         PLAYER(SPECIES_APPLIN) { MaxHP(160); HP(80); Ability(ABILITY_RIPEN); Item(ITEM_PETAYA_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(opponent, MOVE_SPITFIRE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Using Petaya Berry, the Sp. Atk of Applin sharply rose!");
     } THEN {

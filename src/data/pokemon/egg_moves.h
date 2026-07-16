@@ -1146,7 +1146,7 @@ static const u16 sHorseaEggMoveLearnset[] = {
     MOVE_OCTAZOOKA,
     MOVE_DISABLE,
     MOVE_SPLASH,
-    MOVE_DRAGON_RAGE,
+    MOVE_SPITFIRE,
     MOVE_DRAGON_BREATH,
     MOVE_SIGNAL_BEAM,
     MOVE_RAZOR_WIND,
@@ -3435,7 +3435,7 @@ static const u16 sLuvdiscEggMoveLearnset[] = {
 static const u16 sBagonEggMoveLearnset[] = {
     MOVE_HYDRO_PUMP,
     MOVE_THRASH,
-    MOVE_DRAGON_RAGE,
+    MOVE_SPITFIRE,
     MOVE_TWISTER,
     MOVE_DRAGON_DANCE,
     MOVE_FIRE_FANG,

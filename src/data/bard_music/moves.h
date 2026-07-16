@@ -662,7 +662,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [MOVE_DRAGON_RAGE] = {
+    [MOVE_SPITFIRE] = {
         { .songId = PHONEME_ID(PH_TRAP_BLEND) },
         { .songId = PHONEME_ID(PH_THOUGHT_BLEND) },
         { .songId = PHONEME_ID(PH_FACE_SOLO) },

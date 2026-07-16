@@ -28,16 +28,16 @@ SINGLE_BATTLE_TEST("Cud Chew will activate Oran Berry effect again on the next t
     GIVEN {
         ASSUME(gItemsInfo[ITEM_ORAN_BERRY].holdEffect == HOLD_EFFECT_RESTORE_HP);
         ASSUME(gItemsInfo[ITEM_ORAN_BERRY].holdEffectParam == 10);
-        ASSUME(GetMoveEffect(MOVE_DRAGON_RAGE) == EFFECT_FIXED_HP_DAMAGE);
-        ASSUME(GetMoveFixedHPDamage(MOVE_DRAGON_RAGE) == 40);
+        ASSUME(GetMoveEffect(MOVE_SPITFIRE) == EFFECT_FIXED_HP_DAMAGE);
+        ASSUME(GetMoveFixedHPDamage(MOVE_SPITFIRE) == 40);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_TAUROS_PALDEA_COMBAT) { MaxHP(60); HP(60); Ability(ABILITY_CUD_CHEW); Item(ITEM_ORAN_BERRY); }
     } WHEN {
-        TURN { MOVE(player, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(player, MOVE_SPITFIRE); }
         TURN { MOVE(player, MOVE_CELEBRATE); }
         TURN {}
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);

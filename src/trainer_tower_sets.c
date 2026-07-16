@@ -823,7 +823,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_5 = {
                 {
                     .species = SPECIES_CHARIZARD,
                     .heldItem = ITEM_WHITE_HERB,
-                    .moves = {MOVE_OVERHEAT, MOVE_OUTRAGE, MOVE_DRAGON_RAGE, MOVE_SMOKESCREEN},
+                    .moves = {MOVE_OVERHEAT, MOVE_OUTRAGE, MOVE_SPITFIRE, MOVE_SMOKESCREEN},
                     .hpEV = 100,
                     .attackEV = 110,
                     .defenseEV = 0,
@@ -5815,7 +5815,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_Unused1 = {
                 {
                     .species = SPECIES_HORSEA,
                     .heldItem = ITEM_SITRUS_BERRY,
-                    .moves = {MOVE_SURF, MOVE_SMOKESCREEN, MOVE_ATTRACT, MOVE_DRAGON_RAGE},
+                    .moves = {MOVE_SURF, MOVE_SMOKESCREEN, MOVE_ATTRACT, MOVE_SPITFIRE},
                     .hpEV = 110,
                     .attackEV = 0,
                     .defenseEV = 100,

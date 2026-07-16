@@ -53,10 +53,10 @@ SINGLE_BATTLE_TEST("Crit Change: Fixed damage moves don't print a crit message")
 {
     enum Move move;
     PARAMETRIZE { move = MOVE_SCRATCH; }
-    PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
+    PARAMETRIZE { move = MOVE_SPITFIRE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_LASER_FOCUS) == EFFECT_LASER_FOCUS);
-        ASSUME(GetMoveEffect(MOVE_DRAGON_RAGE) == EFFECT_FIXED_HP_DAMAGE);
+        ASSUME(GetMoveEffect(MOVE_SPITFIRE) == EFFECT_FIXED_HP_DAMAGE);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

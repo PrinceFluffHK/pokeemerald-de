@@ -306,7 +306,7 @@
       },
       {
         "Level": 43,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 49,
@@ -394,7 +394,7 @@
       },
       {
         "Level": 48,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 55,
@@ -490,7 +490,7 @@
       },
       {
         "Level": 54,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 64,
@@ -8783,7 +8783,7 @@
     "EggMoves": [
       "MOVE_AURORA_BEAM",
       "MOVE_DISABLE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_FLAIL",
       "MOVE_OCTAZOOKA",
       "MOVE_SPLASH"
@@ -8862,7 +8862,7 @@
     "EggMoves": [
       "MOVE_AURORA_BEAM",
       "MOVE_DISABLE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_FLAIL",
       "MOVE_OCTAZOOKA",
       "MOVE_SPLASH"
@@ -9750,7 +9750,7 @@
       },
       {
         "Level": 25,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 30,
@@ -10978,7 +10978,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 29,
@@ -11066,7 +11066,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 29,
@@ -11154,7 +11154,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 29,
@@ -17260,7 +17260,7 @@
     "EggMoves": [
       "MOVE_AURORA_BEAM",
       "MOVE_DISABLE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_FLAIL",
       "MOVE_OCTAZOOKA",
       "MOVE_SPLASH"

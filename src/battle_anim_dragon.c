@@ -461,7 +461,7 @@ void AnimDragonRageFirePlume(struct Sprite *sprite)
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
 
-// For Dragon Breath and Dragon Rage
+// For Dragon Breath and Spitfire
 void AnimDragonFireToTarget(struct Sprite *sprite)
 {
     if (!IsOnPlayerSide(gBattleAnimAttacker))

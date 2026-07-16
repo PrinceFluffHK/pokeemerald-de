@@ -3169,7 +3169,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         {
                                             .species = SPECIES_CHARMELEON,
                                             .heldItem = ITEM_CHARCOAL,
-                                            .moves = {MOVE_FIRE_SPIN, MOVE_DRAGON_RAGE, MOVE_FLAMETHROWER, MOVE_SLASH},
+                                            .moves = {MOVE_FIRE_SPIN, MOVE_SPITFIRE, MOVE_FLAMETHROWER, MOVE_SLASH},
                                             .hpEV = 252,
                                             .speedEV = 252,
                                             .spAttackEV = 6,

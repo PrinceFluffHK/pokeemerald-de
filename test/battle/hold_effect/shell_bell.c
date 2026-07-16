@@ -184,12 +184,12 @@ SINGLE_BATTLE_TEST("Shell Bell does not activate on Future Sight if the original
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
         TURN {}
         TURN {}
-        TURN { MOVE(player, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(player, MOVE_SPITFIRE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
         MESSAGE("The opposing Wynaut took the Future Sight attack!");
         HP_BAR(opponent);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, player);
         HP_BAR(opponent, captureDamage: &damage);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         HP_BAR(player, captureDamage: &healed);
@@ -252,14 +252,14 @@ SINGLE_BATTLE_TEST("Shell Bell restores 1/8 HP at move end, one strike")
     hpGainActual = min(maxHp - hp, hpGainFromDamage);
 
     GIVEN {
-        ASSUME(GetMoveEffect(MOVE_DRAGON_RAGE) == EFFECT_FIXED_HP_DAMAGE);
-        ASSUME(GetMoveFixedHPDamage(MOVE_DRAGON_RAGE) == 40);
+        ASSUME(GetMoveEffect(MOVE_SPITFIRE) == EFFECT_FIXED_HP_DAMAGE);
+        ASSUME(GetMoveFixedHPDamage(MOVE_SPITFIRE) == 40);
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(maxHp); HP(hp); Item(ITEM_SHELL_BELL); }
         OPPONENT(SPECIES_WOBBUFFET) { MaxHP(maxHp); HP(opponentHp); }
     } WHEN {
-        TURN { MOVE(player, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(player, MOVE_SPITFIRE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, player);
         HP_BAR(opponent);
         if (hp < maxHp) {
             HP_BAR(player, damage: -hpGainActual);
@@ -277,9 +277,9 @@ SINGLE_BATTLE_TEST("Shell Bell recovers only 1 damage if the move only did 1 dam
         PLAYER(SPECIES_WOBBUFFET) { HP(1); Item(ITEM_SHELL_BELL); }
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
     } WHEN {
-        TURN { MOVE(player, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(player, MOVE_SPITFIRE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         HP_BAR(player);

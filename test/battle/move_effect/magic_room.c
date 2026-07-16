@@ -10,8 +10,8 @@ DOUBLE_BATTLE_TEST("Magic Room prevents item hold effects")
 {
     GIVEN {
         ASSUME(gItemsInfo[ITEM_BERRY_JUICE].holdEffect == HOLD_EFFECT_RESTORE_HP);
-        ASSUME(GetMoveEffect(MOVE_DRAGON_RAGE) == EFFECT_FIXED_HP_DAMAGE);
-        ASSUME(GetMoveFixedHPDamage(MOVE_DRAGON_RAGE) == 40);
+        ASSUME(GetMoveEffect(MOVE_SPITFIRE) == EFFECT_FIXED_HP_DAMAGE);
+        ASSUME(GetMoveFixedHPDamage(MOVE_SPITFIRE) == 40);
 
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(60); Item(ITEM_BERRY_JUICE); }
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(60); Item(ITEM_BERRY_JUICE); }
@@ -20,10 +20,10 @@ DOUBLE_BATTLE_TEST("Magic Room prevents item hold effects")
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_MAGIC_ROOM); }
         TURN {
-            MOVE(playerLeft, MOVE_DRAGON_RAGE, target: opponentLeft);
-            MOVE(opponentLeft, MOVE_DRAGON_RAGE, target: playerLeft);
-            MOVE(playerRight, MOVE_DRAGON_RAGE, target: opponentRight);
-            MOVE(opponentRight, MOVE_DRAGON_RAGE, target: playerRight);
+            MOVE(playerLeft, MOVE_SPITFIRE, target: opponentLeft);
+            MOVE(opponentLeft, MOVE_SPITFIRE, target: playerLeft);
+            MOVE(playerRight, MOVE_SPITFIRE, target: opponentRight);
+            MOVE(opponentRight, MOVE_SPITFIRE, target: playerRight);
         }
         TURN { MOVE(playerLeft, MOVE_MAGIC_ROOM); }
     } SCENE {

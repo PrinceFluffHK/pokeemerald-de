@@ -248,7 +248,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 27,
@@ -324,7 +324,7 @@
       },
       {
         "Level": 26,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 33,
@@ -420,7 +420,7 @@
       },
       {
         "Level": 26,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 33,
@@ -9476,7 +9476,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 1,
@@ -9488,7 +9488,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 16,
@@ -10741,7 +10741,7 @@
       },
       {
         "Level": 14,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 21,
@@ -10808,7 +10808,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 7,
@@ -10816,7 +10816,7 @@
       },
       {
         "Level": 14,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 21,
@@ -10907,7 +10907,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 7,
@@ -10915,7 +10915,7 @@
       },
       {
         "Level": 14,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 21,

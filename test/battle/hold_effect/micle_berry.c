@@ -4,8 +4,8 @@
 ASSUMPTIONS
 {
     ASSUME(gItemsInfo[ITEM_MICLE_BERRY].holdEffect == HOLD_EFFECT_MICLE_BERRY);
-    ASSUME(GetMoveEffect(MOVE_DRAGON_RAGE) == EFFECT_FIXED_HP_DAMAGE);
-    ASSUME(GetMoveFixedHPDamage(MOVE_DRAGON_RAGE) == 40);
+    ASSUME(GetMoveEffect(MOVE_SPITFIRE) == EFFECT_FIXED_HP_DAMAGE);
+    ASSUME(GetMoveFixedHPDamage(MOVE_SPITFIRE) == 40);
 }
 
 SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2 when HP drops to 1/4 or below")
@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2 when HP drop
     enum Move move;
 
     PARAMETRIZE { move = MOVE_SCRATCH; }
-    PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
+    PARAMETRIZE { move = MOVE_SPITFIRE; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_MICLE_BERRY); }
@@ -40,9 +40,9 @@ SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2 when HP drop
         PLAYER(SPECIES_BELLSPROUT) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_MICLE_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(opponent, MOVE_SPITFIRE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Bellsprout boosted the accuracy of its next move using Micle Berry!");
     }
@@ -56,9 +56,9 @@ SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2")
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_MICLE_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_DRAGON_RAGE); MOVE(player, MOVE_SUBMISSION); }
+        TURN { MOVE(opponent, MOVE_SPITFIRE); MOVE(player, MOVE_SUBMISSION); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Wobbuffet boosted the accuracy of its next move using Micle Berry!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBMISSION, player);

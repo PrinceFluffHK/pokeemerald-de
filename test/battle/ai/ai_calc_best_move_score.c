@@ -120,13 +120,13 @@ AI_SINGLE_BATTLE_TEST("AI will incentivise multiple best damage moves in cases o
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE);
         PLAYER(SPECIES_WOBBUFFET) { Speed(15); HP(hp); }
-        OPPONENT(SPECIES_KANGASKHAN) { Speed(20); Level(40); Moves(MOVE_SONICBOOM, MOVE_DRAGON_RAGE, MOVE_NIGHT_SHADE, MOVE_SEISMIC_TOSS); }
+        OPPONENT(SPECIES_KANGASKHAN) { Speed(20); Level(40); Moves(MOVE_SONICBOOM, MOVE_SPITFIRE, MOVE_NIGHT_SHADE, MOVE_SEISMIC_TOSS); }
     } WHEN {
         if (hp == 120)
         {
             TURN { 
                 SCORE_EQ_VAL(opponent, MOVE_SONICBOOM,      AI_SCORE_DEFAULT); 
-                SCORE_EQ_VAL(opponent, MOVE_DRAGON_RAGE,    (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE));
+                SCORE_EQ_VAL(opponent, MOVE_SPITFIRE,    (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE));
                 SCORE_EQ_VAL(opponent, MOVE_NIGHT_SHADE,    (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE)); 
                 SCORE_EQ_VAL(opponent, MOVE_SEISMIC_TOSS,   (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE));
             }
@@ -135,7 +135,7 @@ AI_SINGLE_BATTLE_TEST("AI will incentivise multiple best damage moves in cases o
         {
             TURN { 
                 SCORE_EQ_VAL(opponent, MOVE_SONICBOOM,      (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE + FAST_KILL)); 
-                SCORE_EQ_VAL(opponent, MOVE_DRAGON_RAGE,    (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE + FAST_KILL)); 
+                SCORE_EQ_VAL(opponent, MOVE_SPITFIRE,    (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE + FAST_KILL)); 
                 SCORE_EQ_VAL(opponent, MOVE_NIGHT_SHADE,    (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE + FAST_KILL)); 
                 SCORE_EQ_VAL(opponent, MOVE_SEISMIC_TOSS,   (AI_SCORE_DEFAULT + BEST_DAMAGE_MOVE + FAST_KILL)); 
             }

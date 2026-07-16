@@ -175,7 +175,7 @@
 #define SE_M_MIST                   168 // SE_W054
 #define SE_M_POISON_POWDER          169 // SE_W077
 #define SE_M_BIND                   170 // SE_W020
-#define SE_M_DRAGON_RAGE            171 // SE_W082
+#define SE_M_SPITFIRE            171 // SE_W082
 #define SE_M_SING                   172 // SE_W047
 #define SE_M_PERISH_SONG            173 // SE_W195
 #define SE_M_PAY_DAY                174 // SE_W006

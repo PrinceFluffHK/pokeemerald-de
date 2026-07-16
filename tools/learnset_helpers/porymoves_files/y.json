@@ -240,7 +240,7 @@
       "MOVE_COUNTER",
       "MOVE_SEISMIC_TOSS",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_DIG",
       "MOVE_MIMIC",
       "MOVE_DOUBLE_TEAM",
@@ -309,7 +309,7 @@
       "MOVE_COUNTER",
       "MOVE_SEISMIC_TOSS",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_DIG",
       "MOVE_MIMIC",
       "MOVE_DOUBLE_TEAM",
@@ -383,7 +383,7 @@
       "MOVE_COUNTER",
       "MOVE_SEISMIC_TOSS",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_EARTHQUAKE",
       "MOVE_FISSURE",
       "MOVE_DIG",
@@ -3348,7 +3348,7 @@
       "MOVE_TAKE_DOWN",
       "MOVE_DOUBLE_EDGE",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_DIG",
       "MOVE_MIMIC",
       "MOVE_DOUBLE_TEAM",
@@ -3394,7 +3394,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_DIG",
       "MOVE_TELEPORT",
       "MOVE_MIMIC",
@@ -7598,7 +7598,7 @@
       },
       {
         "Level": 25,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 32,
@@ -7627,7 +7627,7 @@
       "MOVE_BLIZZARD",
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_MIMIC",
@@ -7693,7 +7693,7 @@
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
       "MOVE_SOLAR_BEAM",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -8330,7 +8330,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_MIMIC",
       "MOVE_DOUBLE_TEAM",
       "MOVE_REFLECT",
@@ -8586,7 +8586,7 @@
       },
       {
         "Level": 40,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 50,
@@ -8604,7 +8604,7 @@
       "MOVE_ICE_BEAM",
       "MOVE_BLIZZARD",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_MIMIC",
@@ -8650,7 +8650,7 @@
       },
       {
         "Level": 45,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 55,
@@ -8669,7 +8669,7 @@
       "MOVE_ICE_BEAM",
       "MOVE_BLIZZARD",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_MIMIC",
@@ -8719,7 +8719,7 @@
       },
       {
         "Level": 45,
-        "Move": "MOVE_DRAGON_RAGE"
+        "Move": "MOVE_SPITFIRE"
       },
       {
         "Level": 60,
@@ -8740,7 +8740,7 @@
       "MOVE_BLIZZARD",
       "MOVE_HYPER_BEAM",
       "MOVE_RAGE",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_MIMIC",
@@ -8886,7 +8886,7 @@
       "MOVE_RAGE",
       "MOVE_MEGA_DRAIN",
       "MOVE_SOLAR_BEAM",
-      "MOVE_DRAGON_RAGE",
+      "MOVE_SPITFIRE",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_EARTHQUAKE",

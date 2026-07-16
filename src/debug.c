@@ -4456,7 +4456,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(SE_M_MIST)                    \
     X(SE_M_POISON_POWDER)           \
     X(SE_M_BIND)                    \
-    X(SE_M_DRAGON_RAGE)             \
+    X(SE_M_SPITFIRE)             \
     X(SE_M_SING)                    \
     X(SE_M_PERISH_SONG)             \
     X(SE_M_PAY_DAY)                 \

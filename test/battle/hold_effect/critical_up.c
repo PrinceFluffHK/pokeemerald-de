@@ -4,8 +4,8 @@
 ASSUMPTIONS
 {
     ASSUME(gItemsInfo[ITEM_LANSAT_BERRY].holdEffect == HOLD_EFFECT_CRITICAL_UP);
-    ASSUME(GetMoveEffect(MOVE_DRAGON_RAGE) == EFFECT_FIXED_HP_DAMAGE);
-    ASSUME(GetMoveFixedHPDamage(MOVE_DRAGON_RAGE) == 40);
+    ASSUME(GetMoveEffect(MOVE_SPITFIRE) == EFFECT_FIXED_HP_DAMAGE);
+    ASSUME(GetMoveFixedHPDamage(MOVE_SPITFIRE) == 40);
 }
 
 SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two stages when HP drops to 1/4 or below")
@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
     enum Move move;
 
     PARAMETRIZE { move = MOVE_SCRATCH; }
-    PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
+    PARAMETRIZE { move = MOVE_SPITFIRE; }
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_LANSAT_BERRY); }
@@ -40,9 +40,9 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
         PLAYER(SPECIES_BELLSPROUT) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_LANSAT_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
+        TURN { MOVE(opponent, MOVE_SPITFIRE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Bellsprout used the Lansat Berry to get pumped!");
     }
@@ -62,9 +62,9 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by 2 sta
         PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_LANSAT_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_DRAGON_RAGE); MOVE(player, MOVE_SCRATCH); }
+        TURN { MOVE(opponent, MOVE_SPITFIRE); MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPITFIRE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Wobbuffet used the Lansat Berry to get pumped!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
