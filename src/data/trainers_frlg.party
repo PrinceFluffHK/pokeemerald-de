@@ -319,9 +319,8 @@ Level: 7
 
 Beedrill
 Ability: Swarm
-Level: 10  
+Level: 9  
 - Poison Sting
-- Fury Attack
 
 === TRAINER_BUG_CATCHER_COLTON ===
 Name: COLTON
@@ -8567,7 +8566,7 @@ AI: Smart Trainer
 
 Caterpie
 Ability: Shield Dust
-Level: 7  
+Level: 8  
 - Tackle
 - String Shot
 
