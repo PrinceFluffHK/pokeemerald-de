@@ -1273,6 +1273,11 @@
 	.4byte \products
 	.endm
 
+	@ Opens the Pokemart system, offering products based on the player's badge count.
+	.macro pokemartstandard
+	.byte SCR_OP_POKEMARTSTANDARD
+	.endm
+
 	@ Used as the endpoint for a Pokemart item list
 	.macro pokemartlistend
 	.2byte ITEM_NONE

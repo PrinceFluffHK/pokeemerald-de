@@ -4,6 +4,7 @@
 #include "decompress.h"
 #include "decoration.h"
 #include "decoration_inventory.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "field_player_avatar.h"
 #include "field_screen_effect.h"
@@ -200,6 +201,178 @@ static const struct WindowTemplate sShopMenuWindowTemplates[] =
     }
 };
 
+// Use a badge-count keyed mart table so every map shares the same sale routing.
+// The per-town script data is intentionally ignored and kept as a POKé BALL placeholder.
+static const u16 sBadgeCountMartItems[NUM_BADGES + 1][23] =
+{
+    //0 badges
+    { 
+        ITEM_POKE_BALL,
+        ITEM_POTION,
+        ITEM_ANTIDOTE,
+        ITEM_PARALYZE_HEAL,
+    },
+    //1 badge
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_POTION,
+	    ITEM_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+    },
+    //2 badges
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_GREAT_BALL,
+	    ITEM_POTION,
+	    ITEM_SUPER_POTION,
+	    ITEM_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+	    ITEM_ICE_HEAL,
+    },
+    //3 badges
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_GREAT_BALL,
+	    ITEM_POTION,
+	    ITEM_SUPER_POTION,
+	    ITEM_REPEL,
+	    ITEM_SUPER_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+	    ITEM_ICE_HEAL,
+        ITEM_POKE_DOLL,
+    },
+    //4 badges
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_GREAT_BALL,
+	    ITEM_POTION,
+	    ITEM_SUPER_POTION,
+        ITEM_REVIVE,
+	    ITEM_REPEL,
+	    ITEM_SUPER_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+	    ITEM_ICE_HEAL,
+        ITEM_POKE_DOLL,
+    },
+    //5 badges
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_GREAT_BALL,
+	    ITEM_POTION,
+	    ITEM_SUPER_POTION,
+	    ITEM_FULL_HEAL,
+        ITEM_REVIVE,
+	    ITEM_REPEL,
+	    ITEM_SUPER_REPEL,
+	    ITEM_MAX_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+	    ITEM_ICE_HEAL,
+        ITEM_POKE_DOLL,
+    },
+    //6 badges
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_GREAT_BALL,
+	    ITEM_ULTRA_BALL,
+	    ITEM_POTION,
+	    ITEM_SUPER_POTION,
+	    ITEM_HYPER_POTION,
+	    ITEM_FULL_HEAL,
+        ITEM_REVIVE,
+	    ITEM_REPEL,
+	    ITEM_SUPER_REPEL,
+	    ITEM_MAX_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+	    ITEM_ICE_HEAL,
+        ITEM_POKE_DOLL,
+    },
+    //7 badges
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_GREAT_BALL,
+	    ITEM_ULTRA_BALL,
+	    ITEM_POTION,
+	    ITEM_SUPER_POTION,
+	    ITEM_HYPER_POTION,
+	    ITEM_MAX_POTION,
+	    ITEM_FULL_HEAL,
+        ITEM_REVIVE,
+	    ITEM_REPEL,
+	    ITEM_SUPER_REPEL,
+	    ITEM_MAX_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+	    ITEM_ICE_HEAL,
+        ITEM_POKE_DOLL,
+    },
+    //8 badges
+    { 
+        ITEM_POKE_BALL,
+	    ITEM_GREAT_BALL,
+	    ITEM_ULTRA_BALL,
+	    ITEM_POTION,
+	    ITEM_SUPER_POTION,
+	    ITEM_HYPER_POTION,
+	    ITEM_MAX_POTION,
+	    ITEM_FULL_RESTORE,
+	    ITEM_FULL_HEAL,
+        ITEM_REVIVE,
+	    ITEM_REPEL,
+	    ITEM_SUPER_REPEL,
+	    ITEM_MAX_REPEL,
+        ITEM_SERIOUS_MINT,
+        ITEM_ABILITY_CAPSULE,
+        ITEM_FRESH_START_MOCHI,
+	    ITEM_ANTIDOTE,
+	    ITEM_PARALYZE_HEAL,
+	    ITEM_AWAKENING,
+	    ITEM_BURN_HEAL,
+	    ITEM_ICE_HEAL,
+        ITEM_POKE_DOLL,
+    },
+};
+
 static const struct ListMenuTemplate sShopBuyMenuListTemplate =
 {
     .items = NULL,
@@ -391,6 +564,20 @@ static void SetShopItemsForSale(const u16 *items)
         sMartInfo.itemCount++;
         i++;
     }
+}
+
+static const u16 *GetBadgeCountMartItems(void)
+{
+    u8 badgeCount = 0;
+    u8 i;
+
+    for (i = 0; i < ARRAY_COUNT(gBadgeFlags); i++)
+    {
+        if (FlagGet(gBadgeFlags[i]) == TRUE)
+            badgeCount++;
+    }
+
+    return sBadgeCountMartItems[badgeCount];
 }
 
 static void Task_ShopMenu(u8 taskId)
@@ -1296,6 +1483,14 @@ static void RecordItemPurchase(u8 taskId)
 #undef tListTaskId
 #undef tCallbackHi
 #undef tCallbackLo
+
+void CreateStandardPokemartMenu()
+{
+    CreateShopMenu(MART_TYPE_NORMAL);
+    SetShopItemsForSale(GetBadgeCountMartItems());
+    ClearItemPurchases();
+    SetShopMenuCallback(ScriptContext_Enable);
+}
 
 void CreatePokemartMenu(const u16 *itemsForSale)
 {

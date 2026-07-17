@@ -2616,6 +2616,15 @@ bool8 ScrCmd_pokemart(struct ScriptContext *ctx)
     return TRUE;
 }
 
+bool8 ScrCmd_pokemartstandard(void)
+{
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
+    
+    CreateStandardPokemartMenu();
+    ScriptContext_Stop();
+    return TRUE;
+}
+
 bool8 ScrCmd_pokemartdecoration(struct ScriptContext *ctx)
 {
     const void *ptr = (void *)ScriptReadWord(ctx);
