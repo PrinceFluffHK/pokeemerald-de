@@ -15,16 +15,16 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Rattata
-Ability: Run Away
-Level: 11  
-- Tackle
-
 Ekans
 Ability: Intimidate
 Level: 11  
 - Poison Sting
 - Wrap
+
+Rattata
+Ability: Run Away
+Level: 11  
+- Tackle
 
 === TRAINER_YOUNGSTER_CALVIN ===
 Name: CALVIN
@@ -563,7 +563,7 @@ Ability: Keen Eye
 Level: 9  
 - Gust
 - Tackle
-- Sand Attack
+- Mud-Slap
 
 Pidgey
 Ability: Keen Eye
@@ -675,7 +675,7 @@ Clefairy
 Ability: Magic Guard
 Level: 12  
 - Disarming Voice
-- Life Dew
+- Follow Me
 
 === TRAINER_LASS_RELI ===
 Name: RELI
@@ -714,7 +714,7 @@ Ability: Keen Eye
 Level: 12  
 - Gust
 - Tackle
-- Sand-Attack
+- Mud-Slap
 
 Oddish
 Ability: Chlorophyll
@@ -749,7 +749,7 @@ Ability: Keen Eye
 Level: 13  
 - Gust
 - Tackle
-- Sand-Attack
+- Mud-Slap
 
 Oddish
 Ability: Leaf Guard
@@ -4268,10 +4268,10 @@ Level: 8
 - Growl
 
 Pidgey
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 5  
 - Gust
-- Sand-Attack
+- Mud-Slap
 
 === TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
 Name: TERRY
@@ -4289,10 +4289,10 @@ Level: 8
 - Growl
 
 Pidgey
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 5  
 - Gust
-- Sand-Attack
+- Mud-Slap
 
 === TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
 Name: TERRY
@@ -4310,10 +4310,10 @@ Level: 8
 - Leer
 
 Pidgey
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 5
 - Gust
-- Sand-Attack
+- Mud-Slap
 
 === TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
 Name: TERRY
@@ -4325,11 +4325,47 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 17  
 - Gust
 - Tackle
-- Sand-Attack
+- Mud-Slap
+
+Abra
+Ability: Synchronize
+Level: 16  
+- Hidden Power
+- Teleport
+
+Rattata
+Ability: Run Away
+Level: 15  
+- Tackle
+- Bite
+- Tail Whip
+
+Squirtle
+Ability: Torrent
+Level: 18  
+- Water Gun
+- Bite
+- Withdraw
+
+=== TRAINER_RIVAL_CERULEAN_BULBASAUR ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+
+Pidgeotto
+Ability: Keen Eye
+Level: 17  
+- Gust
+- Tackle
+- Mud-Slap
 
 Abra
 Ability: Synchronize
@@ -4352,7 +4388,7 @@ Level: 18
 - Leech Seed
 - Growl
 
-=== TRAINER_RIVAL_CERULEAN_BULBASAUR ===
+=== TRAINER_RIVAL_CERULEAN_CHARMANDER ===
 Name: TERRY
 Class: Rival Early Frlg
 Pic: Rival Early Frlg
@@ -4362,11 +4398,11 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 17  
 - Gust
 - Tackle
-- Sand-Attack
+- Mud-Slap
 
 Abra
 Ability: Synchronize
@@ -4387,42 +4423,6 @@ Level: 18
 - Ember
 - Metal Claw
 - Spitfire
-
-=== TRAINER_RIVAL_CERULEAN_CHARMANDER ===
-Name: TERRY
-Class: Rival Early Frlg
-Pic: Rival Early Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-
-Pidgeotto
-Ability: Big Pecks
-Level: 17  
-- Gust
-- Tackle
-- Sand-Attack
-
-Abra
-Ability: Synchronize
-Level: 16  
-- Hidden Power
-- Teleport
-
-Rattata
-Ability: Run Away
-Level: 15  
-- Tackle
-- Bite
-- Tail Whip
-
-Squirtle
-Ability: Torrent
-Level: 18  
-- Water Gun
-- Bite
-- Withdraw
 
 === TRAINER_SCIENTIST_TED ===
 Name: TED
@@ -6614,7 +6614,7 @@ AI: Smart Trainer
 
 Staryu
 Ability: Natural Cure
-Level: 18
+Level: 18  
 - Bubble Beam
 - Swift
 - Rapid Spin
@@ -6622,33 +6622,23 @@ Level: 18
 
 Psyduck
 Ability: Swift Swim
-Level: 18
+Level: 18  
 - Water Pulse
 - Confusion
-- Rain Dance
+- Fury Swipes
 - Disable
-
-Wartortle
-Ability: Rain Dish
-Level: 19
-- Brine
-- Bite
-- Rapid Spin
 
 Togepi
 Ability: Serene Grace
-Level: 19
+Level: 19  
 - Metronome
-- Charm
-- Life Dew
 
 Starmie
 Ability: Natural Cure
-Level: 21
-- Brine
+Level: 21  
+- Bubble Beam
 - Swift
 - Rapid Spin
-- Recover
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: LT. SURGE
@@ -12591,11 +12581,11 @@ AI: Smart Trainer
 Difficulty: Normal
 
 Pidgeotto
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 17  
 - Gust
 - Tackle
-- Sand-Attack
+- Mud-Slap
 
 Abra
 Ability: Synchronize
@@ -12629,11 +12619,11 @@ AI: Smart Trainer
 Difficulty: Normal
 
 Pidgeotto
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 17  
 - Gust
 - Tackle
-- Sand-Attack
+- Mud-Slap
 
 Abra
 Ability: Synchronize
@@ -12666,11 +12656,11 @@ AI: Smart Trainer
 Difficulty: Normal
 
 Pidgeotto
-Ability: Big Pecks
+Ability: Keen Eye
 Level: 17  
 - Gust
 - Tackle
-- Sand-Attack
+- Mud-Slap
 
 Abra
 Ability: Synchronize
