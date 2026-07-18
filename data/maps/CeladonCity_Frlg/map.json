@@ -383,7 +383,7 @@
       "x": 55,
       "y": 20,
       "elevation": 3,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_MENTAL_HERB",
       "flag": "FLAG_HIDDEN_ITEM_CELADON_CITY_PP_UP",
       "quantity": 1,
       "underfoot": false

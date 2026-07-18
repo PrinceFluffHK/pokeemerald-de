@@ -3,7 +3,6 @@
   "name": "IndigoPlateau_PokemonCenter_1F_Frlg",
   "layout": "LAYOUT_INDIGO_PLATEAU_POKEMON_CENTER_1F",
   "music": "MUS_RG_GYM",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_INDIGO_PLATEAU",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -12,12 +11,10 @@
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": false,
-  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_GYM",
   "connections": null,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CLERK",
       "x": 0,
       "y": 7,
@@ -32,7 +29,6 @@
     },
     {
       "local_id": "LOCALID_INDIGO_LEAGUE_NURSE",
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_NURSE_FRLG",
       "x": 13,
       "y": 10,
@@ -46,7 +42,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
       "x": 7,
       "y": 14,
@@ -61,7 +56,6 @@
     },
     {
       "local_id": "LOCALID_LEAGUE_DOOR_GUARD",
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
       "x": 5,
       "y": 3,
@@ -75,7 +69,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACKBELT",
       "x": 23,
       "y": 13,
@@ -89,7 +82,6 @@
       "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
     },
     {
-      "type": "object",
       "graphics_id": "0",
       "x": 22,
       "y": 9,
@@ -103,7 +95,6 @@
       "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
       "x": 16,
       "y": 15,
@@ -117,7 +108,6 @@
       "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
     },
     {
-      "type": "object",
       "graphics_id": "0",
       "x": 23,
       "y": 9,
@@ -129,6 +119,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal",
       "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CLERK",
+      "x": 0,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IndigoPlateau_PokemonCenter_1F_EventScript_Clerk2",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -155,5 +158,7 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "floor_number": 0,
+  "region": "REGION_KANTO"
 }
