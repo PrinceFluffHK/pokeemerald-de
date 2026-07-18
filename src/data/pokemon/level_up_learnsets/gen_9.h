@@ -6154,7 +6154,7 @@ static const struct LevelUpMove sMagikarpLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sGyaradosLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_BITE),
+    LEVEL_UP_MOVE( 0, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -6166,8 +6166,8 @@ static const struct LevelUpMove sGyaradosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_ROAR),
     //Misty Lv21
     // >>> EVO Lv20
-    LEVEL_UP_MOVE(21, MOVE_BRINE),
-    LEVEL_UP_MOVE(24, MOVE_ICE_FANG),
+    LEVEL_UP_MOVE(22, MOVE_BITE),
+    LEVEL_UP_MOVE(25, MOVE_BRINE),
     //Lt. Surge Lv24
     LEVEL_UP_MOVE(28, MOVE_CRUNCH),
     //Erika Lv29
