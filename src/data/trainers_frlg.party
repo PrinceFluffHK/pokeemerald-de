@@ -391,18 +391,18 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Metapod
-Ability: Shed Skin
-Level: 11  
-- Tackle
-- Harden
-
 Butterfree
 Ability: Compound Eyes
 Level: 11  
 - Gust
 - Confusion
 - Supersonic
+
+Metapod
+Ability: Shed Skin
+Level: 11  
+- Tackle
+- Harden
 
 === TRAINER_BUG_CATCHER_KENT ===
 Name: KENT
