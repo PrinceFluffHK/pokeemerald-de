@@ -2434,7 +2434,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_X_DEFENSE] =
     {
         .name = ITEM_NAME("X Defense"),
-        .price = (I_PRICE >= GEN_7) ? 2000 : 550,
+        .price = (I_PRICE >= GEN_7) ? 1000 : 550,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
@@ -2486,7 +2486,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_X_SP_DEF] =
     {
         .name = ITEM_NAME("X Sp. Def"),
-        .price = (I_PRICE >= GEN_7) ? 2000 : 350,
+        .price = (I_PRICE >= GEN_7) ? 1000 : 350,
         .holdEffectParam = X_ITEM_STAGES,
         .description = COMPOUND_STRING(
         #if B_X_ITEMS_BUFF >= GEN_7
@@ -2585,7 +2585,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Guard Spec."),
         .pluralName = ITEM_PLURAL_NAME("Guard Specs."),
-        .price = (I_PRICE >= GEN_7) ? 1500 : 700,
+        .price = (I_PRICE >= GEN_7) ? 1000 : 700,
         .description = COMPOUND_STRING(
             "Prevents stat\n"
             "reduction when\n"
@@ -15684,7 +15684,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Fresh-Start Mochi"),
         .pluralName = ITEM_PLURAL_NAME("Fresh-Start Mochi"),
-        .price = 1000,
+        .price = 2000,
         .description = COMPOUND_STRING(
             "An item that resets\n"
             "all base points of\n"
