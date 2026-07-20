@@ -720,7 +720,6 @@ Oddish
 Ability: Leaf Guard
 Level: 12  
 - Absorb
-- Acid
 - Poison Powder
 
 Bellsprout
@@ -4944,6 +4943,7 @@ Raticate
 Ability: Guts
 Level: 16  
 - Tackle
+- Leer
 
 === TRAINER_TEAM_ROCKET_GRUNT_7 ===
 Name: GRUNT
