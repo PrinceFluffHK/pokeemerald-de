@@ -132,7 +132,7 @@ AI: Smart Trainer
 
 Slowpoke
 Ability: Own Tempo
-Level: 15  
+Level: 14  
 - Water Gun
 - Confusion
 - Disable
@@ -604,7 +604,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Jigglypuff
-Ability: Cute Charm
+Ability: Competitive
 Level: 12  
 - Pound
 - Charm
@@ -717,13 +717,13 @@ Level: 12
 - Mud-Slap
 
 Oddish
-Ability: Chlorophyll
+Ability: Leaf Guard
 Level: 12  
 - Absorb
 - Poison Powder
 
 Bellsprout
-Ability: Chlorophyll
+Ability: Gluttony
 Level: 12  
 - Vine Whip
 - Wrap
@@ -1711,7 +1711,7 @@ AI: Smart Trainer
 
 Geodude
 Ability: Sturdy
-Level: 13  
+Level: 12  
 - Rollout
 - Tackle
 - Wide Guard
@@ -1731,7 +1731,7 @@ Level: 13
 
 Geodude
 Ability: Sturdy
-Level: 13  
+Level: 14  
 - Rollout
 - Tackle
 - Wide Guard
