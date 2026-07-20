@@ -67,7 +67,7 @@ SSAnne_1F_Room2_EventScript_ItemTM31::
 	end
 
 SSAnne_2F_Room2_EventScript_ItemStardust::
-	finditem ITEM_STARDUST
+	finditem ITEM_EXPERT_BELT
 	end
 
 SSAnne_2F_Room4_EventScript_ItemXAttack::
@@ -79,7 +79,7 @@ SSAnne_B1F_Room2_EventScript_ItemTM44::
 	end
 
 SSAnne_B1F_Room3_EventScript_ItemEther::
-	finditem ITEM_EXPERT_BELT
+	finditem ITEM_ZINC
 	end
 
 SSAnne_B1F_Room5_EventScript_ItemSuperPotion::
@@ -87,7 +87,7 @@ SSAnne_B1F_Room5_EventScript_ItemSuperPotion::
 	end
 
 SSAnne_Kitchen_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+	finditem ITEM_ULTRA_BALL
 	end
 
 Route9_EventScript_ItemTM40::
