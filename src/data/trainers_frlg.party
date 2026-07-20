@@ -22,7 +22,7 @@ Level: 11
 - Wrap
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 11  
 - Tackle
 
@@ -1042,7 +1042,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 14  
 - Quick Attack
 - Tackle
@@ -4332,17 +4332,17 @@ Level: 17
 - Mud-Slap
 
 Abra
-Ability: Synchronize
+Ability: Magic Guard
 Level: 16  
 - Hidden Power
 - Teleport
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Tail Whip
+- Leer
 
 Squirtle
 Ability: Torrent
@@ -4368,17 +4368,17 @@ Level: 17
 - Mud-Slap
 
 Abra
-Ability: Synchronize
+Ability: Magic Guard
 Level: 16  
 - Hidden Power
 - Teleport
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Tail Whip
+- Leer
 
 Bulbasaur
 Ability: Overgrow
@@ -4405,17 +4405,17 @@ Level: 17
 - Mud-Slap
 
 Abra
-Ability: Synchronize
+Ability: Magic Guard
 Level: 16  
 - Hidden Power
 - Teleport
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Tail Whip
+- Leer
 
 Charmander
 Ability: Blaze
@@ -4841,7 +4841,7 @@ Level: 11
 - Rollout
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 11  
 - Tackle
 - Quick Attack
@@ -4941,7 +4941,7 @@ Level: 16
 - Screech
 
 Raticate
-Ability: Run Away
+Ability: Guts
 Level: 16  
 - Tackle
 
@@ -12588,17 +12588,17 @@ Level: 17
 - Mud-Slap
 
 Abra
-Ability: Synchronize
+Ability: Magic Guard
 Level: 16  
 - Hidden Power
 - Teleport
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Tail Whip
+- Leer
 
 Bulbasaur
 Ability: Overgrow
@@ -12626,17 +12626,17 @@ Level: 17
 - Mud-Slap
 
 Abra
-Ability: Synchronize
+Ability: Magic Guard
 Level: 16  
 - Hidden Power
 - Teleport
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Tail Whip
+- Leer
 
 Charmander
 Ability: Blaze
@@ -12663,17 +12663,17 @@ Level: 17
 - Mud-Slap
 
 Abra
-Ability: Synchronize
+Ability: Magic Guard
 Level: 16  
 - Hidden Power
 - Teleport
 
 Rattata
-Ability: Run Away
+Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Tail Whip
+- Leer
 
 Squirtle
 Ability: Torrent
