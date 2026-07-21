@@ -1577,6 +1577,7 @@ static const struct LevelUpMove sZubatLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sGolbatLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_SUPER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
@@ -1610,6 +1611,7 @@ static const struct LevelUpMove sGolbatLevelUpLearnset[] = {
 static const struct LevelUpMove sCrobatLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CROSS_POISON),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_GUARD),
+    LEVEL_UP_MOVE( 1, MOVE_SUPER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_TAILWIND),
     LEVEL_UP_MOVE( 1, MOVE_TOXIC),
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
@@ -4034,7 +4036,7 @@ static const struct LevelUpMove sGastlyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 4, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE( 8, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(12, MOVE_PAYBACK),
+    LEVEL_UP_MOVE(12, MOVE_THIEF),
     //Brock Lv14
     LEVEL_UP_MOVE(16, MOVE_SPITE),
     //Misty Lv21
@@ -5356,11 +5358,11 @@ static const struct LevelUpMove sGoldeenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_AGILITY),
     // >>> EVO Lv33
     LEVEL_UP_MOVE(35, MOVE_WATERFALL),
+    LEVEL_UP_MOVE(40, MOVE_DRILL_PECK),
     //KogaSabrina Lv40
-    LEVEL_UP_MOVE(40, MOVE_SOAK),
     LEVEL_UP_MOVE(45, MOVE_MEGAHORN),
     //SabrinaKoga Lv45
-    LEVEL_UP_MOVE(50, MOVE_DRILL_RUN),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
     //Blaine Lv47
     //Giovanni Lv50
     //Lorelei Lv52
@@ -5370,7 +5372,8 @@ static const struct LevelUpMove sGoldeenLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE( 0, MOVE_DRILL_RUN),
+    LEVEL_UP_MOVE( 1, MOVE_POISON_JAB),
     LEVEL_UP_MOVE( 1, MOVE_SOAK),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -5385,14 +5388,14 @@ static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
     //Erika Lv29
     LEVEL_UP_MOVE(30, MOVE_AGILITY),
     // >>> EVO Lv33
-    LEVEL_UP_MOVE(37, MOVE_DRILL_RUN),
+    LEVEL_UP_MOVE(37, MOVE_WATERFALL),
     //KogaSabrina Lv40
-    LEVEL_UP_MOVE(44, MOVE_WATERFALL),
-    //Blaine Lv47
-    //Giovanni Lv50
+    LEVEL_UP_MOVE(44, MOVE_DRILL_PECK),
     //SabrinaKoga Lv45
+    //Blaine Lv47
     LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(50, MOVE_POISON_JAB),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Giovanni Lv50
     //Lorelei Lv52
     //Lance Lv60
     //Champion Lv63

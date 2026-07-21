@@ -36,10 +36,11 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spearow
-Ability: Keen Eye
+Ability: Defiant
 Level: 12  
 - Peck
 - Fury Attack
+- Leer
 
 Sandshrew
 Ability: Sand Rush
@@ -116,10 +117,11 @@ Level: 15
 - Bite
 
 Spearow
-Ability: Keen Eye
+Ability: Defiant
 Level: 15  
 - Peck
 - Fury Attack
+- Leer
 
 === TRAINER_YOUNGSTER_DAN ===
 Name: DAN
@@ -1070,10 +1072,11 @@ Level: 16
 - Scratch
 
 Spearow
-Ability: Keen Eye
+Ability: Defiant
 Level: 16  
 - Peck
 - Fury Attack
+- Leer
 
 === TRAINER_CAMPER_RICKY ===
 Name: RICKY
