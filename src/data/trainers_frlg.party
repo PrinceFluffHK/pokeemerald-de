@@ -22,7 +22,7 @@ Level: 11
 - Wrap
 
 Rattata
-Ability: Guts
+Ability: Run Away
 Level: 11  
 - Tackle
 
@@ -36,11 +36,10 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spearow
-Ability: Defiant
+Ability: Keen Eye
 Level: 12  
 - Peck
 - Fury Attack
-- Leer
 
 Sandshrew
 Ability: Sand Rush
@@ -179,7 +178,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Nidoran M
-Level: 21
+Ability: Poison Point
+Level: 18  
+- Poison Fang
+- Peck
+- Leer
+
+Sandshrew
+Ability: Sand Rush
+Level: 18  
+- Dig
+- Fury Swipes
+- Rollout
+- Hone Claws
 
 === TRAINER_YOUNGSTER_EDDIE ===
 Name: EDDIE
@@ -191,7 +202,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ekans
-Level: 21
+Ability: Intimidate
+Level: 18  
+- Poison Fang
+- Wrap
+- Bite
+
+Machop
+Ability: Guts
+Level: 18  
+- Karate Chop
+- Focus Energy
 
 === TRAINER_YOUNGSTER_DILLON ===
 Name: DILLON
@@ -203,10 +224,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandshrew
-Level: 19
+Ability: Sand Rush
+Level: 19  
+- Dig
+- Fury Swipes
+- Rollout
+- Hone Claws
 
 Zubat
-Level: 19
+Ability: Inner Focus
+Level: 19  
+- Poison Fang
+- Bite
+- Astonish
+- Screech
 
 === TRAINER_YOUNGSTER_YASU ===
 Name: YASU
@@ -218,13 +249,24 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Level: 17
+Ability: Guts
+Level: 16  
+- Quick Attack
+- Take Down
+- Bite
 
 Rattata
-Level: 17
+Ability: Guts
+Level: 17  
+- Quick Attack
+- Take Down
+- Bite
 
 Raticate
-Level: 17
+Ability: Guts
+Level: 17  
+- Tackle
+- Leer
 
 === TRAINER_YOUNGSTER_DAVE ===
 Name: DAVE
@@ -236,10 +278,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Nidoran M
-Level: 18
+Ability: Poison Point
+Level: 18  
+- Poison Sting
+- Peck
+- Leer
 
 Nidorino
-Level: 18
+Ability: Poison Point
+Level: 18  
+- Poison Sting
+- Peck
+- Leer
 
 === TRAINER_YOUNGSTER_BEN_2 ===
 Name: BEN
@@ -498,13 +548,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Weedle
-Level: 16
+Ability: Shield Dust
+Level: 16  
+- Bug Bite
+- Poison Sting
+- String Shot
 
 Caterpie
-Level: 16
+Ability: Shield Dust
+Level: 16  
+- Bug Bite
+- Tackle
+- String Shot
 
-Weedle
-Level: 16
+Scyther
+Ability: Steadfast
+Level: 16  
+- Slash
+- Double-Team
+- Focus Energy
 
 === TRAINER_BUG_CATCHER_ELIJAH ===
 Name: ELIJAH
@@ -515,8 +577,20 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
+Venonat
+Ability: Compound Eyes
+Level: 17  
+- Pounce
+- Tackle
+- Confusion
+- Poison Powder
+
 Butterfree
-Level: 20
+Ability: Compound Eyes
+Level: 17  
+- Gust
+- Confusion
+- Supersonic
 
 === TRAINER_BUG_CATCHER_BRENT ===
 Name: BRENT
@@ -528,10 +602,16 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Beedrill
-Level: 19
+Ability: Swarm
+Level: 19  
+- Poison Sting
+- Fury Attack
 
 Beedrill
-Level: 19
+Ability: Swarm
+Level: 19  
+- Poison Sting
+- Fury Attack
 
 === TRAINER_BUG_CATCHER_CONNER ===
 Name: CONNER
@@ -542,14 +622,25 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Caterpie
-Level: 20
-
 Weedle
-Level: 20
+Ability: Shield Dust
+Level: 19  
+- Bug Bite
+- Poison Sting
+- String Shot
 
-Venonat
-Level: 20
+Caterpie
+Ability: Shield Dust
+Level: 19  
+- Bug Bite
+- Tackle
+- String Shot
+
+Pinsir
+Ability: Hyper Cutter
+Level: 20  
+- Vital Throw
+- Bind
 
 === TRAINER_LASS_JANICE ===
 Name: JANICE
@@ -565,7 +656,7 @@ Ability: Keen Eye
 Level: 9  
 - Gust
 - Tackle
-- Mud-Slap
+- Sand Attack
 
 Pidgey
 Ability: Keen Eye
@@ -609,8 +700,8 @@ Jigglypuff
 Ability: Competitive
 Level: 12  
 - Pound
-- Charm
 - Sing
+- Rest
 
 Meowth
 Ability: Pickup
@@ -629,13 +720,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Paras
-Level: 31
+Ability: Effect Spore
+Level: 31  
+- Leech Life
+- Giga Drain
+- Fury Swipes
+- Rage Powder
 
 Paras
-Level: 31
+Ability: Effect Spore
+Level: 31  
+- Leech Life
+- Giga Drain
+- Fury Swipes
+- Spore
 
-Parasect
-Level: 31
+Shellder
+Ability: Overcoat
+Level: 30  
+- Clamp
+- Icicle Spear
+- Protect
 
 === TRAINER_LASS_MIRIAM ===
 Name: MIRIAM
@@ -668,13 +773,13 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Clefairy
-Ability: Magic Guard
+Ability: Friend Guard
 Level: 12  
 - Disarming Voice
 - Follow Me
 
 Clefairy
-Ability: Magic Guard
+Ability: Friend Guard
 Level: 12  
 - Disarming Voice
 - Follow Me
@@ -716,7 +821,7 @@ Ability: Keen Eye
 Level: 12  
 - Gust
 - Tackle
-- Mud-Slap
+- Sand-Attack
 
 Oddish
 Ability: Leaf Guard
@@ -768,10 +873,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 18
+Ability: Keen Eye
+Level: 18  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
+- Tailwind
 
 Nidoran F
-Level: 18
+Ability: Poison Point
+Level: 18  
+- Poison Tail
+- Bite
+- Growl
 
 === TRAINER_LASS_DAWN ===
 Name: DAWN
@@ -782,11 +896,21 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Rattata
-Level: 18
+Jigglypuff
+Ability: Competitive
+Level: 18  
+- Pound
+- Silly Slap
+- Rest
+- Sing
 
 Pikachu
-Level: 18
+Ability: Static
+Level: 18  
+- Fake Out
+- Nuzzle
+- Spark
+- Tail Whip
 
 === TRAINER_LASS_PAIGE ===
 Name: PAIGE
@@ -798,10 +922,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Nidoran F
-Level: 23
+Ability: Poison Point
+Level: 23  
+- Poison Tail
+- Bite
+- Growl
 
 Nidorina
-Level: 23
+Ability: Poison Point
+Level: 23  
+- Poison Tail
+- Bite
+- Growl
 
 === TRAINER_LASS_ANDREA ===
 Name: ANDREA
@@ -813,13 +945,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meowth
-Level: 24
+Ability: Pickup
+Level: 24  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Meowth
-Level: 24
+Ability: Pickup
+Level: 24  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Meowth
-Level: 24
+Ability: Pickup
+Level: 24  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 === TRAINER_LASS_MEGAN ===
 Name: MEGAN
@@ -831,19 +978,41 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 19
+Ability: Keen Eye
+Level: 19  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
 
 Rattata
-Level: 19
+Ability: Guts
+Level: 19  
+- Quick Attack
+- Hyper Fang
+- Bite
 
 Nidoran M
-Level: 19
+Ability: Poison Point
+Level: 19  
+- Poison Fang
+- Peck
+- Leer
 
 Meowth
-Level: 19
+Ability: Pickup
+Level: 19  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Pikachu
-Level: 19
+Ability: Static
+Level: 19  
+- Fake Out
+- Nuzzle
+- Spark
+- Tail Whip
 
 === TRAINER_LASS_JULIA ===
 Name: JULIA
@@ -855,10 +1024,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Clefairy
-Level: 22
+Ability: Friend Guard
+Level: 22  
+- Draining Kiss
+- Follow Me
+- Life Dew
 
 Clefairy
-Level: 22
+Ability: Friend Guard
+Level: 22  
+- Draining Kiss
+- Follow Me
+- Life Dew
 
 === TRAINER_LASS_KAY ===
 Name: KAY
@@ -870,10 +1047,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Bellsprout
-Level: 23
+Ability: Chlorophyll
+Level: 23  
+- Razor Leaf
+- Wrap
+- Acid
 
 Weepinbell
-Level: 23
+Ability: Chlorophyll
+Level: 23  
+- Razor Leaf
+- Wrap
+- Acid
+- Strength Sap
 
 === TRAINER_LASS_LISA ===
 Name: LISA
@@ -884,11 +1070,19 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Oddish
-Level: 23
+Tangela
+Ability: Chlorophyll
+Level: 23  
+- Grass Knot
+- Tickle
+- Grassy Terrain
 
 Gloom
-Level: 23
+Ability: Leaf Guard
+Level: 23  
+- Mega Drain
+- Toxic
+- Sleep Powder
 
 === TRAINER_SAILOR_EDMOND ===
 Name: EDMOND
@@ -900,10 +1094,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 18
+Ability: Guts
+Level: 18  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
-Shellder
-Level: 18
+Horsea
+Ability: Swift Swim
+Level: 18  
+- Bubble Beam
+- Twister
+- Smokescreen
 
 === TRAINER_SAILOR_TREVOR ===
 Name: TREVOR
@@ -915,10 +1117,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 17
+Ability: Guts
+Level: 18  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
 Tentacool
-Level: 17
+Ability: Liquid Ooze
+Level: 18  
+- Water Gun
+- Poison Sting
+- Wrap
 
 === TRAINER_SAILOR_LEONARD ===
 Name: LEONARD
@@ -930,7 +1140,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shellder
-Level: 21
+Ability: Overcoat
+Level: 18  
+- Whirlpool
+- Ice Shard
+- Protect
+
+Machop
+Ability: Guts
+Level: 18  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
 === TRAINER_SAILOR_DUNCAN ===
 Name: DUNCAN
@@ -942,13 +1163,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Horsea
-Level: 17
+Ability: Swift Swim
+Level: 17  
+- Bubble Beam
+- Twister
+- Smokescreen
 
 Shellder
-Level: 17
+Ability: Overcoat
+Level: 17  
+- Whirlpool
+- Ice Shard
+- Protect
 
 Tentacool
-Level: 17
+Ability: Liquid Ooze
+Level: 17  
+- Water Gun
+- Poison Sting
+- Wrap
 
 === TRAINER_SAILOR_HUEY ===
 Name: HUEY
@@ -960,10 +1193,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 18
+Ability: Liquid Ooze
+Level: 18  
+- Water Gun
+- Poison Sting
+- Wrap
 
 Staryu
-Level: 18
+Ability: Natural Cure
+Level: 18  
+- Water Gun
+- Swift
+- Cosmic Power
 
 === TRAINER_SAILOR_DYLAN ===
 Name: DYLAN
@@ -975,13 +1216,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Horsea
-Level: 17
+Ability: Swift Swim
+Level: 17  
+- Bubble Beam
+- Twister
+- Smokescreen
+- Rain Dance
 
 Horsea
-Level: 17
+Ability: Swift Swim
+Level: 17  
+- Bubble Beam
+- Twister
+- Smokescreen
 
-Horsea
-Level: 17
+Seadra
+Ability: Swift Swim
+Level: 17  
+- Water Gun
+- Twister
+- Smokescreen
 
 === TRAINER_SAILOR_PHILLIP ===
 Name: PHILLIP
@@ -993,7 +1247,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 20
+Ability: Guts
+Level: 17  
+- Karate Chop
+- Knock Off
+- Focus Energy
+
+Machoke
+Ability: Guts
+Level: 18  
+- Karate Chop
+- Focus Energy
 
 === TRAINER_SAILOR_DWAYNE ===
 Name: DWAYNE
@@ -1005,10 +1269,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pikachu
-Level: 21
+Ability: Static
+Level: 21  
+- Fake Out
+- Shock Wave
+- Brick Break
 
-Pikachu
-Level: 21
+Elekid
+Ability: Static
+Level: 21  
+- Thunder Punch
+- Brick Break
+- Leer
 
 === TRAINER_CAMPER_LIAM ===
 Name: LIAM
@@ -1043,7 +1315,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Ability: Guts
+Ability: Run Away
 Level: 14  
 - Quick Attack
 - Tackle
@@ -1088,7 +1360,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Squirtle
-Level: 20
+Ability: Torrent
+Level: 17  
+- Water Pulse
+- Rapid Spin
+- Protect
+
+Machop
+Ability: Guts
+Level: 17  
+- Karate Chop
+- Focus Energy
 
 === TRAINER_CAMPER_JEFF ===
 Name: JEFF
@@ -1099,11 +1381,18 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Spearow
-Level: 16
+Rattata
+Ability: Guts
+Level: 16  
+- Quick Attack
+- Take Down
+- Bite
 
 Raticate
-Level: 16
+Ability: Run Away
+Level: 16  
+- Tackle
+- Leer
 
 === TRAINER_CAMPER_CHRIS ===
 Name: CHRIS
@@ -1115,10 +1404,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Growlithe
-Level: 21
+Ability: Intimidate
+Level: 21  
+- Flame Wheel
+- Bite
+- Howl
 
 Charmander
-Level: 21
+Ability: Blaze
+Level: 21  
+- Fire Fang
+- Metal Claw
+- Spitfire
+- Smokescreen
 
 === TRAINER_CAMPER_DREW ===
 Name: DREW
@@ -1129,17 +1427,34 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Rattata
-Level: 19
+Mankey
+Ability: Defiant
+Level: 18  
+- Rock Smash
+- Scratch
 
 Sandshrew
-Level: 19
+Ability: Sand Rush
+Level: 18  
+- Dig
+- Fury Swipes
+- Rollout
+- Hone Claws
 
 Ekans
-Level: 19
+Ability: Intimidate
+Level: 19  
+- Poison Fang
+- Wrap
+- Bite
 
 Sandshrew
-Level: 19
+Ability: Sand Rush
+Level: 19  
+- Dig
+- Fury Swipes
+- Rollout
+- Hone Claws
 
 === TRAINER_PICNICKER_DIANA ===
 Name: DIANA
@@ -1174,10 +1489,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Level: 16
+Ability: Guts
+Level: 16  
+- Quick Attack
+- Tackle
+- Bite
 
 Pikachu
-Level: 16
+Ability: Static
+Level: 16  
+- Fake Out
+- Thunder Shock
+- Tail Whip
 
 === TRAINER_PICNICKER_ISABELLE ===
 Name: ISABELLE
@@ -1189,13 +1512,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 16
+Ability: Keen Eye
+Level: 16  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
 
-Pidgey
-Level: 16
-
-Pidgey
-Level: 16
+Jigglypuff
+Ability: Competitive
+Level: 16  
+- Pound
+- Silly Slap
+- Rest
+- Sing
 
 === TRAINER_PICNICKER_KELSEY ===
 Name: KELSEY
@@ -1230,16 +1559,30 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Oddish
-Level: 18
+Ability: Leaf Guard
+Level: 18  
+- Mega Drain
+- Poison Powder
 
 Bellsprout
-Level: 18
+Ability: Gluttony
+Level: 18  
+- Vine Whip
+- Wrap
+- Acid
 
 Oddish
-Level: 18
+Ability: Leaf Guard
+Level: 18  
+- Mega Drain
+- Poison Powder
 
 Bellsprout
-Level: 18
+Ability: Gluttony
+Level: 18  
+- Vine Whip
+- Wrap
+- Acid
 
 === TRAINER_PICNICKER_CAITLIN ===
 Name: CAITLIN
@@ -1251,7 +1594,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meowth
-Level: 23
+Ability: Pickup
+Level: 21  
+- Fake Out
+- Pay Day
+- Taunt
+
+Vulpix
+Ability: Flash Fire
+Level: 21  
+- Fire Spin
+- Disable
+- Confuse Ray
 
 === TRAINER_PICNICKER_HEIDI ===
 Name: HEIDI
@@ -1263,10 +1617,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pikachu
-Level: 20
+Ability: Static
+Level: 20  
+- Fake Out
+- Nuzzle
+- Spark
+- Tail Whip
 
 Clefairy
-Level: 20
+Ability: Friend Guard
+Level: 20  
+- Draining Kiss
+- Follow Me
 
 === TRAINER_PICNICKER_CAROL ===
 Name: CAROL
@@ -1278,10 +1640,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 21
+Ability: Keen Eye
+Level: 21  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
 
 Pidgeotto
-Level: 21
+Ability: Keen Eye
+Level: 21  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
+- Tailwind
 
 === TRAINER_PICNICKER_SOFIA ===
 Name: SOFIA
@@ -1293,13 +1664,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Jigglypuff
-Level: 21
+Ability: Competitive
+Level: 21  
+- Headbutt
+- Silly Slap
+- Rest
+- Sing
 
 Pidgey
-Level: 21
+Ability: Keen Eye
+Level: 21  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
+- Tailwind
 
 Meowth
-Level: 21
+Ability: Pickup
+Level: 21  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 === TRAINER_PICNICKER_MARTHA ===
 Name: MARTHA
@@ -1311,10 +1697,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Oddish
-Level: 22
+Ability: Leaf Guard
+Level: 22  
+- Mega Drain
+- Poison Powder
 
 Bulbasaur
-Level: 22
+Ability: Overgrow
+Level: 22  
+- Razor Leaf
+- Poison Powder
+- Leech Seed
+- Growl
 
 === TRAINER_PICNICKER_TINA ===
 Name: TINA
@@ -1325,11 +1719,21 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Bulbasaur
-Level: 24
+Ivysaur
+Ability: Chlorophyll
+Level: 24  
+- Razor Leaf
+- Take Down
+- Sleep Powder
+- Growl
 
 Ivysaur
-Level: 24
+Ability: Chlorophyll
+Level: 24  
+- Razor Leaf
+- Take Down
+- Sleep Powder
+- Growl
 
 === TRAINER_PICNICKER_HANNAH ===
 Name: HANNAH
@@ -1365,10 +1769,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rhyhorn
-Level: 29
+Ability: Rock Head
+Level: 29  
+- Stone Edge
+- Take Down
+- Scary Face
 
 Lickitung
-Level: 29
+Ability: Oblivious
+Level: 29  
+- Body Slam
+- Knock Off
+- Lick
+- Belly Drum
 
 === TRAINER_POKEMANIAC_HERMAN ===
 Name: HERMAN
@@ -1379,11 +1792,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Cubone
-Level: 20
+Lickitung
+Ability: Oblivious
+Level: 22  
+- Slam
+- Lick
+- Defense Curl
 
-Slowpoke
-Level: 20
+Cubone
+Ability: Rock Head
+Level: 21  
+- Bone Club
+- Headbutt
+- Growl
 
 === TRAINER_POKEMANIAC_COOPER ===
 Name: COOPER
@@ -1395,13 +1816,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Slowpoke
-Level: 20
+Ability: Own Tempo
+Level: 20  
+- Water Pulse
+- Zen Headbutt
+- Slack Off
 
 Slowpoke
-Level: 20
+Ability: Own Tempo
+Level: 20  
+- Water Pulse
+- Zen Headbutt
+- Slack Off
 
 Slowpoke
-Level: 20
+Ability: Own Tempo
+Level: 20  
+- Water Pulse
+- Zen Headbutt
+- Slack Off
 
 === TRAINER_POKEMANIAC_STEVE ===
 Name: STEVE
@@ -1413,10 +1846,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Charmander
-Level: 22
+Ability: Blaze
+Level: 22  
+- Fire Fang
+- Metal Claw
+- Spitfire
+- Smokescreen
 
 Cubone
-Level: 22
+Ability: Rock Head
+Level: 22  
+- Bone Club
+- Headbutt
+- Growl
 
 === TRAINER_POKEMANIAC_WINSTON ===
 Name: WINSTON
@@ -1428,7 +1870,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Slowpoke
-Level: 25
+Ability: Own Tempo
+Level: 22  
+- Water Pulse
+- Zen Headbutt
+- Slack Off
+
+Lickitung
+Ability: Oblivious
+Level: 22  
+- Slam
+- Lick
+- Defense Curl
 
 === TRAINER_POKEMANIAC_DAWSON ===
 Name: DAWSON
@@ -1439,14 +1892,25 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Charmeleon
-Level: 40
+Omanyte
+Ability: Victory Star
+Level: 50  
+- Hydro Pump
+- Meteor Beam
+- Rain Dance
 
-Lapras
-Level: 40
+Kabutops
+Ability: Swift Swim
+Level: 50  
+- Aqua Jet
+- Liquidation
+- Stone Edge
+- Swords Dance
 
-Lickitung
-Level: 40
+Aerodactyl
+Ability: Unnerve
+Level: 50  
+- Rock Slide
 
 === TRAINER_POKEMANIAC_ASHTON ===
 Name: ASHTON
@@ -1458,10 +1922,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Cubone
-Level: 23
+Ability: Rock Head
+Level: 23  
+- Bone Club
+- Headbutt
+- Growl
 
 Slowpoke
-Level: 23
+Ability: Own Tempo
+Level: 23  
+- Water Pulse
+- Zen Headbutt
+- Slack Off
 
 === TRAINER_SUPER_NERD_JOVAN ===
 Name: JOVAN
@@ -1525,32 +1997,34 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 20
-- Sonic Boom
+Ability: Aftermath
+Level: 20  
+- Spark
+- Swift
+- Rollout
 - Screech
-- Tackle
-- Charge
-
-Koffing
-Level: 20
-- Sludge
-- Smog
-- Tackle
-- Poison Gas
 
 Voltorb
-Level: 20
-- Sonic Boom
+Ability: Aftermath
+Level: 20  
+- Spark
+- Swift
+- Rollout
 - Screech
-- Tackle
-- Charge
 
 Magnemite
-Level: 20
-- Sonic Boom
-- Supersonic
-- Thunder Shock
-- Tackle
+Ability: Sturdy
+Level: 20  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
+
+Koffing
+Ability: Levitate
+Level: 20  
+- Clear Smog
+- Poison Gas
+- Haze
 
 === TRAINER_SUPER_NERD_GLENN ===
 Name: GLENN
@@ -1562,13 +2036,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 22
+Ability: Stench
+Level: 22  
+- Sludge
+- Body Slam
+- Mud-Slap
 
 Muk
-Level: 22
+Ability: Stench
+Level: 22  
+- Sludge
+- Pound
+- Mud-Slap
+- Toxic
 
 Grimer
-Level: 22
+Ability: Stench
+Level: 22  
+- Sludge
+- Body Slam
+- Mud-Slap
 
 === TRAINER_SUPER_NERD_LESLIE ===
 Name: LESLIE
@@ -1580,11 +2067,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 26
-- Sludge
-- Smokescreen
-- Smog
-- Self Destruct
+Ability: Levitate
+Level: 23  
+- Clear Smog
+- Poison Gas
+- Haze
+
+Magnemite
+Ability: Sturdy
+Level: 23  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
 
 === TRAINER_SUPER_NERD_ERIK ===
 Name: ERIK
@@ -1595,14 +2089,26 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Vulpix
-Level: 36
+Elekid
+Ability: Static
+Level: 36  
+- Thunderbolt
+- Fire Punch
+- Charge
 
-Vulpix
-Level: 36
+Arcanine
+Ability: Flash Fire
+Level: 36  
+- Fire Spin
+- Extrasensory
+- Disable
+- Will-O-Wisp
 
-Ninetales
-Level: 36
+Porygon
+Ability: Trace
+Level: 36  
+- Tri-Attack
+- Reflect
 
 === TRAINER_SUPER_NERD_AVERY ===
 Name: AVERY
@@ -1614,16 +2120,33 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ponyta
-Level: 34
+Ability: Flame Body
+Level: 34  
+- Blazing Torque
+- Take Down
+- Agility
 
-Charmander
-Level: 34
+Charmeleon
+Ability: Blaze
+Level: 34  
+- Temper Flare
+- Metal Claw
+- Slash
 
-Vulpix
-Level: 34
+Elekid
+Ability: Static
+Level: 34  
+- Thunderbolt
+- Fire Punch
+- Charge
 
 Growlithe
-Level: 34
+Ability: Intimidate
+Level: 34  
+- Fire Fang
+- Crunch
+- Thunder Fang
+- Howl
 
 === TRAINER_SUPER_NERD_DEREK ===
 Name: DEREK
@@ -1634,8 +2157,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Rapidash
-Level: 41
+Ponyta
+Ability: Flame Body
+Level: 37  
+- Blazing Torque
+- Take Down
+- Agility
+
+Electabuzz
+Ability: Static
+Level: 37  
+- Thunder Punch
+- Fire Punch
+- Sunny Day
+- Howl
 
 === TRAINER_SUPER_NERD_ZAC ===
 Name: ZAC
@@ -1646,11 +2181,21 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Growlithe
-Level: 37
+Arcanine
+Ability: Intimidate
+Level: 37  
+- Fire Fang
+- Crunch
+- Thunder Fang
+- Howl
 
-Vulpix
-Level: 37
+Ninetales
+Ability: Drought
+Level: 37  
+- Fire Spin
+- Extrasensory
+- Disable
+- Will-O-Wisp
 
 === TRAINER_HIKER_MARCOS ===
 Name: MARCOS
@@ -1771,16 +2316,16 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 21
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Ability: Sturdy
+Level: 21  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 Onix
-Level: 21
-- Harden
-- Rock Throw
+Ability: Sturdy
+Level: 21  
+- Rock Tomb
 - Bind
 - Screech
 
@@ -1794,13 +2339,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 20
-
-Machop
-Level: 20
+Ability: Sturdy
+Level: 20  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 Geodude
-Level: 20
+Ability: Sturdy
+Level: 20  
+- Rollout
+- Mega Punch
+- Wide Guard
+
+Machop
+Ability: Guts
+Level: 20  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
 === TRAINER_HIKER_CLARK ===
 Name: CLARK
@@ -1811,17 +2368,17 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
-Level: 21
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Rhyhorn
+Ability: Rock Head
+Level: 21  
+- Rock Blast
+- Horn Attack
+- Scary Face
 
 Onix
-Level: 21
-- Harden
-- Rock Throw
+Ability: Sturdy
+Level: 21  
+- Rock Tomb
 - Bind
 - Screech
 
@@ -1835,10 +2392,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Onix
-Level: 19
+Ability: Sturdy
+Level: 19  
+- Rock Tomb
+- Bind
+- Screech
 
 Graveler
-Level: 19
+Ability: Sturdy
+Level: 19  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 === TRAINER_HIKER_DUDLEY ===
 Name: DUDLEY
@@ -1849,26 +2414,26 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Geodude
-Level: 21
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Cubone
+Ability: Rock Head
+Level: 21  
+- Bone Club
+- Headbutt
+- Growl
 
 Geodude
-Level: 21
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Ability: Sturdy
+Level: 21  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 Graveler
-Level: 21
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Ability: Sturdy
+Level: 21  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 === TRAINER_HIKER_ALLEN ===
 Name: ALLEN
@@ -1880,11 +2445,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 25
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Ability: Sturdy
+Level: 20  
+- Rollout
+- Mega Punch
+- Wide Guard
+
+Rhyhorn
+Ability: Rock Head
+Level: 20  
+- Rock Blast
+- Horn Attack
+- Scary Face
 
 === TRAINER_HIKER_ERIC ===
 Name: ERIC
@@ -1896,10 +2468,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 20
+Ability: Guts
+Level: 20  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
 Onix
-Level: 20
+Ability: Sturdy
+Level: 20  
+- Rock Tomb
+- Bind
+- Screech
 
 === TRAINER_HIKER_LENNY ===
 Name: LENNY
@@ -1911,16 +2491,32 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 19
+Ability: Sturdy
+Level: 19  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 Machop
-Level: 19
+Ability: Guts
+Level: 19  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
 Geodude
-Level: 19
+Ability: Sturdy
+Level: 19  
+- Rollout
+- Mega Punch
+- Wide Guard
 
-Geodude
-Level: 19
+Rhyhorn
+Ability: Rock Head
+Level: 19  
+- Rock Blast
+- Horn Attack
+- Scary Face
 
 === TRAINER_HIKER_OLIVER ===
 Name: OLIVER
@@ -1932,13 +2528,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Onix
-Level: 20
+Ability: Sturdy
+Level: 20  
+- Rock Tomb
+- Bind
+- Screech
 
 Onix
-Level: 20
+Ability: Sturdy
+Level: 20  
+- Rock Tomb
+- Bind
+- Screech
 
 Geodude
-Level: 20
+Ability: Sturdy
+Level: 20  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 === TRAINER_HIKER_LUCAS ===
 Name: LUCAS
@@ -1950,18 +2558,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Geodude
-Level: 21
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Ability: Sturdy
+Level: 21  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 Graveler
-Level: 21
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+Ability: Sturdy
+Level: 21  
+- Rollout
+- Mega Punch
+- Wide Guard
 
 === TRAINER_BIKER_JARED ===
 Name: JARED
@@ -1973,25 +2581,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
 - Poison Gas
+- Haze
 
 Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 === TRAINER_BIKER_MALIK ===
 Name: MALIK
@@ -2003,18 +2611,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 29
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 29  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Grimer
-Level: 29
-- Screech
-- Minimize
+Ability: Stench
+Level: 29  
 - Sludge
-- Disable
+- Body Slam
+- Mud Shot
 
 === TRAINER_BIKER_ERNEST ===
 Name: ERNEST
@@ -2026,39 +2634,39 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Weezing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Clear Smog
+- Poison Gas
+- Haze
 
 Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Grimer
-Level: 25
-- Minimize
+Ability: Stench
+Level: 25  
 - Sludge
-- Disable
-- Pound
+- Body Slam
+- Mud Shot
 
 === TRAINER_BIKER_ALEX ===
 Name: ALEX
@@ -2070,25 +2678,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Grimer
-Level: 28
-- Screech
-- Minimize
+Ability: Stench
+Level: 28  
 - Sludge
-- Disable
+- Body Slam
+- Mud Shot
 
 Weezing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Clear Smog
+- Poison Gas
+- Haze
 
 === TRAINER_BIKER_LAO ===
 Name: LAO
@@ -2100,18 +2708,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 29
-- Screech
-- Minimize
+Ability: Stench
+Level: 29  
 - Sludge
-- Disable
+- Body Slam
+- Mud Shot
 
 Koffing
-Level: 29
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 29  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 === TRAINER_BIKER_HIDEO ===
 Name: HIDEO
@@ -2123,7 +2731,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Weezing
-Level: 33
+Ability: Levitate
+Level: 29  
+- Clear Smog
+- Poison Gas
+- Haze
+
+Voltorb
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Self-Destruct
 
 === TRAINER_BIKER_RUBEN ===
 Name: RUBEN
@@ -2135,25 +2755,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Weezing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Clear Smog
+- Poison Gas
+- Haze
 
 Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Weezing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Clear Smog
+- Poison Gas
+- Haze
 
 === TRAINER_BIKER_BILLY ===
 Name: BILLY
@@ -2165,7 +2785,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Muk
-Level: 33
+Ability: Stench
+Level: 30  
+- Sludge
+- Body Slam
+- Mud Shot
+- Toxic
+
+Voltorb
+Ability: Aftermath
+Level: 30  
+- Electro Ball
+- Swift
+- Rollout
+- Explosion
 
 === TRAINER_BIKER_NIKOLAS ===
 Name: NIKOLAS
@@ -2177,18 +2810,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 29
-- Spark
-- Sonic Boom
-- Screech
-- Charge
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Explosion
 
 Voltorb
-Level: 29
-- Spark
-- Sonic Boom
-- Screech
-- Charge
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Explosion
 
 === TRAINER_BIKER_JAXON ===
 Name: JAXON
@@ -2200,18 +2835,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Weezing
-Level: 29
-- Sludge
-- Smokescreen
-- Smog
-- Tackle
+Ability: Levitate
+Level: 29  
+- Clear Smog
+- Poison Gas
+- Haze
 
 Muk
-Level: 29
-- Screech
-- Minimize
+Ability: Stench
+Level: 29  
 - Sludge
-- Disable
+- Body Slam
+- Mud Shot
+- Toxic
 
 === TRAINER_BIKER_WILLIAM ===
 Name: WILLIAM
@@ -2223,39 +2859,39 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Weezing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Clear Smog
+- Poison Gas
+- Haze
 
 Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
-
-Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Weezing
-Level: 25
-- Smokescreen
-- Sludge
-- Self Destruct
-- Tackle
+Ability: Levitate
+Level: 25  
+- Clear Smog
+- Poison Gas
+- Haze
+
+Koffing
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 === TRAINER_BIKER_LUKAS ===
 Name: LUKAS
@@ -2304,25 +2940,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 28
-- Screech
-- Minimize
+Ability: Stench
+Level: 28  
 - Sludge
-- Disable
+- Body Slam
+- Mud Shot
 
 Grimer
-Level: 28
-- Screech
-- Minimize
+Ability: Stench
+Level: 28  
 - Sludge
-- Disable
+- Body Slam
+- Mud Shot
 
 Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 === TRAINER_BIKER_GERALD ===
 Name: GERALD
@@ -2334,18 +2970,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 29
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 29  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Muk
-Level: 29
-- Screech
-- Minimize
+Ability: Stench
+Level: 29  
 - Sludge
-- Disable
+- Body Slam
+- Mud Shot
+- Toxic
 
 === TRAINER_BURGLAR_QUINN ===
 Name: QUINN
@@ -2357,13 +2994,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Growlithe
-Level: 36
+Ability: Intimidate
+Level: 36  
+- Fire Fang
+- Crunch
+- Thunder Fang
+- Howl
 
 Vulpix
-Level: 36
+Ability: Drought
+Level: 36  
+- Burning Jealousy
+- Extrasensory
+- Disable
+- Will-O-Wisp
 
 Ninetales
-Level: 36
+Ability: Drought
+Level: 36  
+- Fire Spin
+- Extrasensory
+- Disable
+- Will-O-Wisp
 
 === TRAINER_BURGLAR_RAMON ===
 Name: RAMON
@@ -2375,7 +3027,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ponyta
-Level: 41
+Ability: Flame Body
+Level: 37  
+- Blazing Torque
+- Take Down
+- Agility
+
+Magmar
+Ability: Flame Body
+Level: 37  
+- Flame Burst
+- Clear Smog
+- Sunny Day
 
 === TRAINER_BURGLAR_DUSTY ===
 Name: DUSTY
@@ -2386,11 +3049,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Vulpix
-Level: 37
+Rapidash
+Ability: Flame Body
+Level: 37  
+- Blazing Torque
+- Take Down
+- Agility
 
 Growlithe
-Level: 37
+Ability: Intimidate
+Level: 37  
+- Fire Fang
+- Crunch
+- Thunder Fang
+- Howl
 
 === TRAINER_BURGLAR_ARNIE ===
 Name: ARNIE
@@ -2401,11 +3073,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Charmander
-Level: 34
+Persian
+Ability: Technician
+Level: 34  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Charmeleon
-Level: 34
+Ability: Blaze
+Level: 34  
+- Temper Flare
+- Metal Claw
+- Slash
 
 === TRAINER_BURGLAR_SIMON ===
 Name: SIMON
@@ -2417,7 +3098,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ninetales
-Level: 38
+Ability: Flash Fire
+Level: 34  
+- Fire Spin
+- Disable
+- Confuse Ray
+
+Magmar
+Ability: Flame Body
+Level: 34  
+- Flame Burst
+- Clear Smog
+- Sunny Day
 
 === TRAINER_BURGLAR_LEWIS ===
 Name: LEWIS
@@ -2428,11 +3120,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Growlithe
-Level: 34
+Arcanine
+Ability: Intimidate
+Level: 34  
+- Fire Fang
+- Bite
+- Howl
 
 Ponyta
-Level: 34
+Ability: Flame Body
+Level: 34  
+- Blazing Torque
+- Take Down
+- Agility
 
 === TRAINER_ENGINEER_BAILY ===
 Name: BAILY
@@ -2444,10 +3144,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 21
+Ability: Aftermath
+Level: 21  
+- Shock Wave
+- Eerie Impulse
 
 Magnemite
-Level: 21
+Ability: Sturdy
+Level: 21  
+- Charge Beam
+- Mirror Shot
+- Thunder Wave
 
 === TRAINER_ENGINEER_BRAXTON ===
 Name: BRAXTON
@@ -2459,7 +3166,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 21
+Ability: Sturdy
+Level: 18  
+- Charge Beam
+- Gyro Ball
+- Metal Sound
+
+Diglett
+Ability: Arena Trap
+Level: 18  
+- Sand Attack
+- Scratch
 
 === TRAINER_ENGINEER_BERNIE ===
 Name: BERNIE
@@ -2471,13 +3188,24 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 18
+Ability: Sturdy
+Level: 17  
+- Charge Beam
+- Gyro Ball
+- Metal Sound
 
 Magnemite
-Level: 18
+Ability: Sturdy
+Level: 18  
+- Charge Beam
+- Gyro Ball
+- Metal Sound
 
 Magneton
-Level: 18
+Ability: Sturdy
+Level: 18  
+- Thunder Shock
+- Metal Sound
 
 === TRAINER_FISHERMAN_DALE ===
 Name: DALE
@@ -2489,13 +3217,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 17
-
-Tentacool
-Level: 17
+Ability: Lightning Rod
+Level: 17  
+- Water Pulse
+- Peck
+- Tail Whip
 
 Goldeen
-Level: 17
+Ability: Lightning Rod
+Level: 18  
+- Water Pulse
+- Peck
+- Tail Whip
 
 === TRAINER_FISHERMAN_BARNY ===
 Name: BARNY
@@ -2507,13 +3240,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 17
+Ability: Liquid Ooze
+Level: 17  
+- Water Gun
+- Poison Sting
+- Wrap
 
 Staryu
-Level: 17
+Ability: Natural Cure
+Level: 17  
+- Water Gun
+- Swift
+- Cosmic Power
 
 Shellder
-Level: 17
+Ability: Overcoat
+Level: 17  
+- Whirlpool
+- Ice Shard
+- Protect
 
 === TRAINER_FISHERMAN_NED ===
 Name: NED
@@ -2525,13 +3270,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 22
+Ability: Lightning Rod
+Level: 22  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
 
 Poliwag
-Level: 22
+Ability: Damp
+Level: 22  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 Goldeen
-Level: 22
+Ability: Lightning Rod
+Level: 22  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_FISHERMAN_CHIP ===
 Name: CHIP
@@ -2543,10 +3302,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 24
+Ability: Liquid Ooze
+Level: 24  
+- Water Pulse
+- Acid
+- Wrap
 
 Goldeen
-Level: 24
+Ability: Lightning Rod
+Level: 24  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_FISHERMAN_HANK ===
 Name: HANK
@@ -2558,7 +3326,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 27
+Ability: Lightning Rod
+Level: 24  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
+
+Shellder
+Ability: Overcoat
+Level: 24  
+- Whirlpool
+- Ice Shard
+- Protect
 
 === TRAINER_FISHERMAN_ELLIOT ===
 Name: ELLIOT
@@ -2570,16 +3350,33 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwag
-Level: 21
+Ability: Damp
+Level: 21  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 Shellder
-Level: 21
+Ability: Overcoat
+Level: 21  
+- Whirlpool
+- Ice Shard
+- Protect
 
 Goldeen
-Level: 21
+Ability: Lightning Rod
+Level: 21  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Horsea
-Level: 21
+Ability: Swift Swim
+Level: 21  
+- Bubble Beam
+- Dragon Breath
+- Smokescreen
 
 === TRAINER_FISHERMAN_RONALD ===
 Name: RONALD
@@ -2591,16 +3388,36 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seaking
-Level: 28
+Ability: Lightning Rod
+Level: 28  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Goldeen
-Level: 28
+Ability: Lightning Rod
+Level: 28  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Seaking
-Level: 28
+Ability: Lightning Rod
+Level: 28  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Seaking
-Level: 28
+Ability: Lightning Rod
+Level: 28  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_FISHERMAN_CLAUDE ===
 Name: CLAUDE
@@ -2612,10 +3429,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shellder
-Level: 31
+Ability: Overcoat
+Level: 31  
+- Clamp
+- Icicle Spear
+- Protect
 
 Cloyster
-Level: 31
+Ability: Overcoat
+Level: 31  
+- Clamp
+- Icicle Spear
+- Protect
 
 === TRAINER_FISHERMAN_WADE ===
 Name: WADE
@@ -2627,22 +3452,52 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magikarp
-Level: 27
+Ability: Swift Swim
+Level: 27  
+- Splash
+- Tackle
+- Flail
+- Bounce
 
 Magikarp
-Level: 27
+Ability: Swift Swim
+Level: 27  
+- Splash
+- Tackle
+- Flail
+- Bounce
 
 Magikarp
-Level: 27
+Ability: Swift Swim
+Level: 27  
+- Splash
+- Tackle
+- Flail
+- Bounce
 
 Magikarp
-Level: 27
+Ability: Swift Swim
+Level: 27  
+- Splash
+- Tackle
+- Flail
+- Bounce
 
 Magikarp
-Level: 27
+Ability: Swift Swim
+Level: 27  
+- Splash
+- Tackle
+- Flail
+- Bounce
 
-Magikarp
-Level: 27
+Gyarados
+Ability: Intimidate
+Level: 27  
+- Aqua Tail
+- Bounce
+- Crunch
+- Ice Fang
 
 === TRAINER_FISHERMAN_NOLAN ===
 Name: NOLAN
@@ -2654,10 +3509,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seaking
-Level: 33
+Ability: Lightning Rod
+Level: 33  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Goldeen
-Level: 33
+Ability: Lightning Rod
+Level: 33  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_FISHERMAN_ANDREW ===
 Name: ANDREW
@@ -2669,10 +3534,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magikarp
-Level: 24
+Ability: Swift Swim
+Level: 24  
+- Splash
+- Tackle
+- Flail
 
 Magikarp
-Level: 24
+Ability: Swift Swim
+Level: 24  
+- Splash
+- Tackle
+- Flail
 
 === TRAINER_SWIMMER_MALE_LUIS ===
 Name: LUIS
@@ -2714,10 +3587,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 30
+Ability: Liquid Ooze
+Level: 30  
+- Water Pulse
+- Acid
+- Wrap
 
 Shellder
-Level: 30
+Ability: Overcoat
+Level: 30  
+- Clamp
+- Icicle Spear
+- Protect
 
 === TRAINER_SWIMMER_MALE_REECE ===
 Name: REECE
@@ -2729,13 +3610,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 29
+Ability: Lightning Rod
+Level: 29  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Horsea
-Level: 29
+Ability: Swift Swim
+Level: 29  
+- Snipe Shot
+- Dragon Breath
+- Smokescreen
 
 Staryu
-Level: 29
+Ability: Natural Cure
+Level: 29  
+- Brine
+- Psybeam
+- Swift
+- Cosmic Power
 
 === TRAINER_SWIMMER_MALE_MATTHEW ===
 Name: MATTHEW
@@ -2747,10 +3642,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwag
-Level: 30
+Ability: Damp
+Level: 30  
+- Scald
+- Mud Shot
+- Body Slam
 
 Poliwhirl
-Level: 30
+Ability: Damp
+Level: 30  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 === TRAINER_SWIMMER_MALE_DOUGLAS ===
 Name: DOUGLAS
@@ -2762,16 +3665,33 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Horsea
-Level: 27
+Ability: Swift Swim
+Level: 27  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Tentacool
-Level: 27
+Ability: Liquid Ooze
+Level: 27  
+- Water Pulse
+- Acid
+- Wrap
 
 Tentacool
-Level: 27
+Ability: Liquid Ooze
+Level: 27  
+- Water Pulse
+- Acid
+- Wrap
 
 Goldeen
-Level: 27
+Ability: Lightning Rod
+Level: 27  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_SWIMMER_MALE_DAVID ===
 Name: DAVID
@@ -2783,13 +3703,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 29
+Ability: Lightning Rod
+Level: 29  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Shellder
-Level: 29
+Ability: Overcoat
+Level: 29  
+- Clamp
+- Icicle Spear
+- Protect
 
 Seaking
-Level: 29
+Ability: Lightning Rod
+Level: 29  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_SWIMMER_MALE_TONY ===
 Name: TONY
@@ -2801,10 +3735,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Horsea
-Level: 30
+Ability: Swift Swim
+Level: 30  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Horsea
-Level: 30
+Ability: Swift Swim
+Level: 30  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 === TRAINER_SWIMMER_MALE_AXLE ===
 Name: AXLE
@@ -2816,19 +3758,40 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 27
+Ability: Liquid Ooze
+Level: 27  
+- Water Pulse
+- Acid
+- Wrap
 
 Tentacool
-Level: 27
+Ability: Liquid Ooze
+Level: 27  
+- Water Pulse
+- Acid
+- Wrap
 
 Staryu
-Level: 27
+Ability: Natural Cure
+Level: 27  
+- Brine
+- Psybeam
+- Swift
+- Cosmic Power
 
 Horsea
-Level: 27
+Ability: Swift Swim
+Level: 27  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Tentacruel
-Level: 27
+Ability: Liquid Ooze
+Level: 27  
+- Water Pulse
+- Acid
+- Wrap
 
 === TRAINER_SWIMMER_MALE_BARRY ===
 Name: BARRY
@@ -2840,10 +3803,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shellder
-Level: 31
+Ability: Overcoat
+Level: 31  
+- Clamp
+- Icicle Spear
+- Protect
 
 Cloyster
-Level: 31
+Ability: Overcoat
+Level: 31  
+- Clamp
+- Icicle Spear
+- Protect
 
 === TRAINER_SWIMMER_MALE_DEAN ===
 Name: DEAN
@@ -2855,7 +3826,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Staryu
-Level: 35
+Ability: Natural Cure
+Level: 31  
+- Brine
+- Psychic
+- Swift
+- Cosmic Power
+
+Dewgong
+Ability: Slush Rush
+Level: 31  
+- Dive
+- Aurora Beam
+- Snowscape
 
 === TRAINER_SWIMMER_MALE_DARRIN ===
 Name: DARRIN
@@ -2867,16 +3850,32 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Horsea
-Level: 28
+Ability: Swift Swim
+Level: 28  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Horsea
-Level: 28
+Ability: Swift Swim
+Level: 28  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
+
+Horsea
+Ability: Swift Swim
+Level: 28  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Seadra
-Level: 28
-
-Horsea
-Level: 28
+Ability: Swift Swim
+Level: 28  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 === TRAINER_SWIMMER_MALE_SPENCER ===
 Name: SPENCER
@@ -2888,10 +3887,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seadra
-Level: 33
+Ability: Swift Swim
+Level: 33  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Tentacruel
-Level: 33
+Ability: Liquid Ooze
+Level: 33  
+- Brine
+- Acid
+- Wrap
 
 === TRAINER_SWIMMER_MALE_JACK ===
 Name: JACK
@@ -2902,8 +3909,20 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer
 
-Starmie
-Level: 37
+Seadra
+Ability: Swift Swim
+Level: 34  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
+- Rain Dance
+
+Seadra
+Ability: Swift Swim
+Level: 34  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 === TRAINER_SWIMMER_MALE_JEROME ===
 Name: JEROME
@@ -2915,10 +3934,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Staryu
-Level: 33
+Ability: Natural Cure
+Level: 33  
+- Brine
+- Psychic
+- Swift
+- Cosmic Power
 
 Wartortle
-Level: 33
+Ability: Torrent
+Level: 33  
+- Aqua Tail
+- Rapid Spin
+- Iron Defense
 
 === TRAINER_SWIMMER_MALE_ROLAND ===
 Name: ROLAND
@@ -2930,13 +3958,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwhirl
-Level: 32
+Ability: Damp
+Level: 32  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 Tentacool
-Level: 32
+Ability: Liquid Ooze
+Level: 32  
+- Brine
+- Acid
+- Wrap
 
 Seadra
-Level: 32
+Ability: Swift Swim
+Level: 32  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 === TRAINER_CUE_BALL_KOJI ===
 Name: KOJI
@@ -2948,13 +3988,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 28
+Ability: Guts
+Level: 28  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 Mankey
-Level: 28
+Ability: Defiant
+Level: 28  
+- Brick Break
+- Rock Smash
+- Thrash
 
 Machop
-Level: 28
+Ability: Guts
+Level: 28  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_CUE_BALL_LUKE ===
 Name: LUKE
@@ -2966,10 +4020,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Mankey
-Level: 29
+Ability: Defiant
+Level: 29  
+- Brick Break
+- Rock Smash
+- Thrash
 
 Machop
-Level: 29
+Ability: Guts
+Level: 29  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_CUE_BALL_CAMRON ===
 Name: CAMRON
@@ -2981,10 +4044,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Mankey
-Level: 29
+Ability: Defiant
+Level: 29  
+- Brick Break
+- Rock Smash
+- Thrash
 
 Machop
-Level: 29
+Ability: Guts
+Level: 29  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_CUE_BALL_RAUL ===
 Name: RAUL
@@ -2996,10 +4068,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Mankey
-Level: 29
+Ability: Defiant
+Level: 29  
+- Brick Break
+- Rock Smash
+- Thrash
 
 Primeape
-Level: 29
+Ability: Defiant
+Level: 29  
+- Rock Smash
+- Thrash
+- Shadow Punch
 
 === TRAINER_CUE_BALL_ISAIAH ===
 Name: ISAIAH
@@ -3011,10 +4091,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 29
+Ability: Guts
+Level: 29  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 Machamp
-Level: 29
+Ability: Guts
+Level: 29  
+- Karate Chop
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_CUE_BALL_ZEEK ===
 Name: ZEEK
@@ -3026,7 +4115,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machoke
-Level: 33
+Ability: Guts
+Level: 30  
+- Karate Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
+
+Chansey
+Ability: Healer
+Level: 30  
+- Take Down
+- Helping Hand
+- Tail Whip
 
 === TRAINER_CUE_BALL_JAMAL ===
 Name: JAMAL
@@ -3038,16 +4139,33 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Mankey
-Level: 26
+Ability: Defiant
+Level: 26  
+- Brick Break
+- Rock Smash
+- Thrash
 
 Mankey
-Level: 26
-
-Machamp
-Level: 26
+Ability: Defiant
+Level: 26  
+- Brick Break
+- Rock Smash
+- Thrash
 
 Machop
-Level: 26
+Ability: Guts
+Level: 26  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
+
+Machamp
+Ability: Guts
+Level: 26  
+- Karate Chop
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_CUE_BALL_COREY ===
 Name: COREY
@@ -3059,10 +4177,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Primeape
-Level: 29
+Ability: Defiant
+Level: 29  
+- Rock Smash
+- Thrash
+- Shadow Punch
 
 Machoke
-Level: 29
+Ability: Guts
+Level: 29  
+- Karate Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_CUE_BALL_CHASE ===
 Name: CHASE
@@ -3092,10 +4219,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwag
-Level: 18
+Ability: Damp
+Level: 18  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 Horsea
-Level: 18
+Ability: Swift Swim
+Level: 18  
+- Bubble Beam
+- Twister
+- Smokescreen
+- Focus Energy
 
 === TRAINER_GAMER_JASPER ===
 Name: JASPER
@@ -3107,10 +4243,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Bellsprout
-Level: 18
+Ability: Gluttony
+Level: 18  
+- Vine Whip
+- Wrap
+- Acid
 
 Oddish
-Level: 18
+Ability: Leaf Guard
+Level: 18  
+- Mega Drain
+- Poison Powder
 
 === TRAINER_GAMER_DIRK ===
 Name: DIRK
@@ -3122,10 +4265,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 18
+Ability: Aftermath
+Level: 18  
+- Thunder Shock
+- Tackle
+- Rollout
+- Screech
 
 Magnemite
-Level: 18
+Ability: Sturdy
+Level: 18  
+- Charge Beam
+- Gyro Ball
+- Metal Sound
 
 === TRAINER_GAMER_DARIAN ===
 Name: DARIAN
@@ -3137,10 +4289,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Growlithe
-Level: 18
+Ability: Intimidate
+Level: 18  
+- Ember
+- Bite
+- Roar
 
 Vulpix
-Level: 18
+Ability: Flash Fire
+Level: 18  
+- Fire Spin
+- Disable
+- Confuse Ray
 
 === TRAINER_GAMER_STAN ===
 Name: STAN
@@ -3152,13 +4312,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwag
-Level: 22
+Ability: Damp
+Level: 22  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 Poliwag
-Level: 22
+Ability: Damp
+Level: 22  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 Poliwhirl
-Level: 22
+Ability: Damp
+Level: 22  
+- Bubble Beam
+- Mud Shot
+- Body Slam
 
 === TRAINER_GAMER_RICH ===
 Name: RICH
@@ -3170,10 +4342,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Growlithe
-Level: 24
+Ability: Intimidate
+Level: 24  
+- Flame Wheel
+- Bite
+- Howl
 
 Vulpix
-Level: 24
+Ability: Flash Fire
+Level: 24  
+- Fire Spin
+- Disable
+- Confuse Ray
 
 === TRAINER_BEAUTY_BRIDGET ===
 Name: BRIDGET
@@ -3185,16 +4365,30 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Oddish
-Level: 21
-
-Bellsprout
-Level: 21
+Ability: Chlorophyll
+Level: 21  
+- Mega Drain
+- Toxic
 
 Oddish
-Level: 21
+Ability: Chlorophyll
+Level: 21  
+- Mega Drain
+- Toxic
 
 Bellsprout
-Level: 21
+Ability: Chlorophyll
+Level: 21  
+- Razor Leaf
+- Wrap
+- Acid
+
+Bellsprout
+Ability: Chlorophyll
+Level: 21  
+- Razor Leaf
+- Wrap
+- Acid
 
 === TRAINER_BEAUTY_TAMIA ===
 Name: TAMIA
@@ -3205,11 +4399,19 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Bellsprout
-Level: 24
+Weepinbel
+Ability: Chlorophyll
+Level: 24  
+- Razor Leaf
+- Wrap
+- Acid
 
-Bellsprout
-Level: 24
+Gloom
+Ability: Chlorophyll
+Level: 24  
+- Razor Leaf
+- Wrap
+- Acid
 
 === TRAINER_BEAUTY_LORI ===
 Name: LORI
@@ -3221,7 +4423,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Exeggcute
-Level: 24
+Ability: Chlorophyll
+Level: 24  
+- Seed Bomb
+- Confusion
+- Leech Seed
+
+Tangela
+Ability: Chlorophyll
+Level: 24  
+- Grass Knot
+- Tickle
+- Grassy Terrain
 
 === TRAINER_BEAUTY_LOLA ===
 Name: LOLA
@@ -3233,13 +4446,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Level: 27
+Ability: Guts
+Level: 27  
+- Quick Attack
+- Hyper Fang
+- Bite
 
 Pikachu
-Level: 27
+Ability: Static
+Level: 27  
+- Fake Out
+- Nuzzle
+- Spark
+- Tail Whip
 
 Rattata
-Level: 27
+Ability: Guts
+Level: 27  
+- Quick Attack
+- Hyper Fang
+- Bite
 
 === TRAINER_BEAUTY_SHEILA ===
 Name: SHEILA
@@ -3251,10 +4477,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Clefairy
-Level: 29
+Ability: Friend Guard
+Level: 29  
+- Moonblast
+- Meteor Mash
+- Follow Me
+- Life Dew
 
 Meowth
-Level: 29
+Ability: Technician
+Level: 29  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 === TRAINER_SWIMMER_FEMALE_TIFFANY ===
 Name: TIFFANY
@@ -3278,13 +4514,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Shellder
-Level: 30
+Ability: Overcoat
+Level: 30  
+- Clamp
+- Icicle Spear
+- Protect
 
 Shellder
-Level: 30
+Ability: Overcoat
+Level: 30  
+- Clamp
+- Icicle Spear
+- Protect
 
 Cloyster
-Level: 30
+Ability: Overcoat
+Level: 30  
+- Clamp
+- Icicle Spear
+- Protect
 
 === TRAINER_SWIMMER_FEMALE_MELISSA ===
 Name: MELISSA
@@ -3296,10 +4544,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwag
-Level: 31
+Ability: Damp
+Level: 31  
+- Scald
+- Mud Shot
+- Body Slam
 
 Seaking
-Level: 31
+Ability: Lightning Rod
+Level: 31  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_BEAUTY_GRACE ===
 Name: GRACE
@@ -3311,10 +4568,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 29
+Ability: Keen Eye
+Level: 29  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Tailwind
 
 Wigglytuff
-Level: 29
+Ability: Competitive
+Level: 29  
+- Headbutt
+- Silly Slap
+- Rest
+- Sing
 
 === TRAINER_BEAUTY_OLIVIA ===
 Name: OLIVIA
@@ -3326,10 +4593,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Bulbasaur
-Level: 29
+Ability: Overgrow
+Level: 30  
+- Seed Bomb
+- Take Down
+- Sleep Powder
+- Growl
 
-Ivysaur
-Level: 29
+Clefable
+Ability: Unaware
+Level: 30  
+- Draining Kiss
+- Meteor Mash
+- Follow Me
+- Moonlight
 
 === TRAINER_BEAUTY_LAUREN ===
 Name: LAUREN
@@ -3359,19 +4636,42 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwag
-Level: 27
+Ability: Damp
+Level: 27  
+- Scald
+- Mud Shot
+- Body Slam
 
 Goldeen
-Level: 27
+Ability: Lightning Rod
+Level: 27  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Seaking
-Level: 27
+Ability: Lightning Rod
+Level: 27  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
 
 Goldeen
-Level: 27
+Ability: Lightning Rod
+Level: 27  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Poliwag
-Level: 27
+Ability: Damp
+Level: 27  
+- Scald
+- Mud Shot
+- Body Slam
 
 === TRAINER_SWIMMER_FEMALE_ALICE ===
 Name: ALICE
@@ -3383,10 +4683,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 30
+Ability: Lightning Rod
+Level: 30  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Seaking
-Level: 30
+Ability: Lightning Rod
+Level: 30  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_SWIMMER_FEMALE_CONNIE ===
 Name: CONNIE
@@ -3398,13 +4708,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Staryu
-Level: 29
+Ability: Natural Cure
+Level: 29  
+- Brine
+- Psybeam
+- Swift
+- Cosmic Power
 
 Staryu
-Level: 29
+Ability: Natural Cure
+Level: 29  
+- Brine
+- Psybeam
+- Swift
+- Cosmic Power
 
-Staryu
-Level: 29
+Starmie
+Ability: Natural Cure
+Level: 29  
+- Brine
+- Psybeam
+- Swift
+- Cosmic Power
 
 === TRAINER_SWIMMER_FEMALE_SHIRLEY ===
 Name: SHIRLEY
@@ -3416,13 +4741,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seadra
-Level: 30
+Ability: Swift Swim
+Level: 30  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Horsea
-Level: 30
+Ability: Swift Swim
+Level: 30  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Seadra
-Level: 30
+Ability: Swift Swim
+Level: 30  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 === TRAINER_PSYCHIC_JOHAN ===
 Name: JOHAN
@@ -3434,16 +4771,34 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Kadabra
-Level: 31
+Ability: Magic Guard
+Level: 31  
+- Psychic
+- Calm Mind
+- Disable
+
+Mr. Mime
+Ability: Soundproof
+Level: 31  
+- Fake Out
+- Psybeam
+- Reflect
+- Encore
 
 Slowpoke
-Level: 31
-
-Mr Mime
-Level: 31
+Ability: Own Tempo
+Level: 31  
+- Water Pulse
+- Zen Headbutt
+- Disable
+- Amnesia
 
 Kadabra
-Level: 31
+Ability: Magic Guard
+Level: 31  
+- Psychic
+- Calm Mind
+- Disable
 
 === TRAINER_PSYCHIC_TYRON ===
 Name: TYRON
@@ -3454,11 +4809,20 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Mr Mime
-Level: 34
+Mr. Mime
+Ability: Soundproof
+Level: 34  
+- Fake Out
+- Psybeam
+- Reflect
+- Encore
 
-Kadabra
-Level: 34
+Hypno
+Ability: Inner Focus
+Level: 34  
+- Psyshock
+- Disable
+- Nasty Plot
 
 === TRAINER_PSYCHIC_CAMERON ===
 Name: CAMERON
@@ -3469,14 +4833,26 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Slowpoke
-Level: 33
+Exeggcute
+Ability: Frisk
+Level: 33  
+- Psychic
+- Giga Drain
+- Hypnosis
 
-Slowpoke
-Level: 33
+Kadabra
+Ability: Magic Guard
+Level: 33  
+- Psychic
+- Calm Mind
+- Recover
 
-Slowbro
-Level: 33
+Starmie
+Ability: Natural Cure
+Level: 33  
+- Psybeam
+- Thunderbolt
+- Ice Beam
 
 === TRAINER_PSYCHIC_PRESTON ===
 Name: PRESTON
@@ -3487,8 +4863,37 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
+Slowpoke
+Ability: Own Tempo
+Level: 33  
+- Water Pulse
+- Zen Headbutt
+- Disable
+- Amnesia
+
+Slowpoke
+Ability: Own Tempo
+Level: 33  
+- Water Pulse
+- Zen Headbutt
+- Disable
+- Amnesia
+
 Slowbro
-Level: 38
+Ability: Own Tempo
+Level: 33  
+- Water Pulse
+- Zen Headbutt
+- Disable
+- Amnesia
+
+Slowking
+Ability: Own Tempo
+Level: 33  
+- Water Pulse
+- Psychic
+- Disable
+- Amnesia
 
 === TRAINER_ROCKER_RANDALL ===
 Name: RANDALL
@@ -3518,10 +4923,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 29
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 Electrode
-Level: 29
+Ability: Aftermath
+Level: 29  
+- Spark
+- Swift
+- Rollout
+- Screech
 
 === TRAINER_JUGGLER_DALTON ===
 Name: DALTON
@@ -3533,10 +4948,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Kadabra
-Level: 29
+Ability: Magic Guard
+Level: 29  
+- Psychic
+- Calm Mind
+- Disable
 
-Mr Mime
-Level: 29
+Mr. Mime
+Ability: Soundproof
+Level: 29  
+- Fake Out
+- Psybeam
+- Reflect
+- Encore
 
 === TRAINER_JUGGLER_NELSON ===
 Name: NELSON
@@ -3547,17 +4971,30 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Drowzee
-Level: 41
+Ditto @ Choice Scarf
+Ability: Impostor
+Level: 50  
+- Transform
 
-Hypno
-Level: 41
+Ditto @ Choice Scarf
+Ability: Impostor
+Level: 50  
+- Transform
 
-Kadabra
-Level: 41
+Ditto @ Choice Scarf
+Ability: Impostor
+Level: 50  
+- Transform
 
-Kadabra
-Level: 41
+Ditto @ Choice Scarf
+Ability: Impostor
+Level: 50  
+- Transform
+
+Ditto @ Choice Scarf
+Ability: Impostor
+Level: 50  
+- Transform
 
 === TRAINER_JUGGLER_KIRK ===
 Name: KIRK
@@ -3568,17 +5005,33 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Drowzee
-Level: 31
+Koffing
+Ability: Levitate
+Level: 31  
+- Sludge Bomb
+- Substitute
+- Pain Split
 
 Drowzee
-Level: 31
+Ability: Bad Dreams
+Level: 31  
+- Zen Headbutt
+- Hypnosis
+- Disable
 
 Kadabra
-Level: 31
+Ability: Magic Guard
+Level: 31  
+- Psybeam
+- Calm Mind
+- Disable
 
 Drowzee
-Level: 31
+Ability: Bad Dreams
+Level: 31  
+- Zen Headbutt
+- Hypnosis
+- Disable
 
 === TRAINER_JUGGLER_SHAWN ===
 Name: SHAWN
@@ -3590,10 +5043,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Drowzee
-Level: 34
+Ability: Bad Dreams
+Level: 34  
+- Zen Headbutt
+- Hypnosis
+- Disable
 
 Hypno
-Level: 34
+Ability: Bad Dreams
+Level: 34  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
 
 === TRAINER_JUGGLER_GREGORY ===
 Name: GREGORY
@@ -3604,12 +5066,20 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Mr Mime
-Level: 48
-- Psychic
-- Role Play
-- Double Slap
-- Encore
+Sandy Shocks
+Ability: Protosynthesis
+Level: 50  
+- Earth Power
+- Charge Beam
+- Flash Cannon
+
+Scream Tail
+Ability: Protosynthesis
+Level: 50  
+- Psychic Fangs
+- Dazzling Gleam
+- Disable
+- Sunny Day
 
 === TRAINER_JUGGLER_EDWARD ===
 Name: EDWARD
@@ -3658,7 +5128,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Hypno
-Level: 38
+Ability: Bad Dreams
+Level: 34  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
+
+Koffing
+Ability: Levitate
+Level: 34  
+- Sludge Bomb
+- Substitute
+- Pain Split
 
 === TRAINER_JUGGLER_NATE ===
 Name: NATE
@@ -3670,10 +5152,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Drowzee
-Level: 34
+Ability: Bad Dreams
+Level: 34  
+- Zen Headbutt
+- Hypnosis
+- Disable
 
-Kadabra
-Level: 34
+Golbat
+Ability: Magic Guard
+Level: 34  
+- Psybeam
+- Calm Mind
+- Disable
 
 === TRAINER_TAMER_PHIL ===
 Name: PHIL
@@ -3685,10 +5175,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandslash
-Level: 34
+Ability: Sand Rush
+Level: 34  
+- Dig
+- Crush Claw
+- Gyro Ball
+- Hone Claws
 
 Arbok
-Level: 34
+Ability: Intimidate
+Level: 34  
+- Poison Fang
+- Wrap
+- Bite
 
 === TRAINER_TAMER_EDGAR ===
 Name: EDGAR
@@ -3700,13 +5199,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Arbok
-Level: 33
-
-Sandslash
-Level: 33
+Ability: Intimidate
+Level: 33  
+- Poison Fang
+- Wrap
+- Bite
 
 Arbok
-Level: 33
+Ability: Intimidate
+Level: 33  
+- Poison Fang
+- Wrap
+- Bite
+
+Sandslash
+Ability: Sand Rush
+Level: 33  
+- Dig
+- Crush Claw
+- Gyro Ball
+- Hone Claws
 
 === TRAINER_TAMER_JASON ===
 Name: JASON
@@ -3717,8 +5229,20 @@ Music: Hiker
 Double Battle: Yes
 AI: Smart Trainer
 
-Rhyhorn
-Level: 43
+Rhydon
+Ability: Rock Head
+Level: 40  
+- Stone Edge
+- Take Down
+- Scary Face
+
+Scyther
+Ability: Technician
+Level: 40  
+- X-Scissor
+- Wing Attack
+- Double-Team
+- Focus Energy
 
 === TRAINER_TAMER_COLE ===
 Name: COLE
@@ -3730,10 +5254,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Arbok
-Level: 39
+Ability: Intimidate
+Level: 39  
+- Poison Tail
+- Wrap
+- Crunch
 
 Tauros
-Level: 39
+Ability: Intimidate
+Level: 39  
+- Raging Bull
+- Zen Headbutt
+- Scary Face
+
+Pinsir
+Ability: Hyper Cutter
+Level: 39  
+- Bug Bite
+- Vital Throw
+- Bind
 
 === TRAINER_TAMER_VINCENT ===
 Name: VINCENT
@@ -3745,10 +5284,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Persian
-Level: 44
+Ability: Technician
+Level: 50  
+- Pay Day
+- Play Rough
+- Make It Rain
 
-Golduck
-Level: 44
+Persian - Alola
+Ability: Fur Coat
+Level: 50  
+- Fake Out
+- Snarl
+- Parting Shot
+
+Perrserker
+Ability: Steely Spirit
+Level: 50  
+- Fake Out
+- Iron Head
+- Swords Dance
 
 === TRAINER_TAMER_JOHN ===
 Name: JOHN
@@ -3781,10 +5335,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 29
+Ability: Keen Eye
+Level: 29  
+- Quick Attack
+- Wing Attack
+- Facade
+- Mud-Slap
 
 Pidgeotto
-Level: 29
+Ability: Keen Eye
+Level: 29  
+- Wing Attack
+- Facade
+- Mud-Slap
+- Tailwind
 
 === TRAINER_BIRD_KEEPER_PERRY ===
 Name: PERRY
@@ -3796,19 +5360,40 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spearow
-Level: 25
+Ability: Defiant
+Level: 25  
+- Aerial Ace
+- Facade
 
 Pidgey
-Level: 25
+Ability: Keen Eye
+Level: 25  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 Pidgey
-Level: 25
+Ability: Keen Eye
+Level: 25  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 Spearow
-Level: 25
+Ability: Defiant
+Level: 25  
+- Aerial Ace
+- Facade
+- Leer
 
 Spearow
-Level: 25
+Ability: Defiant
+Level: 25  
+- Aerial Ace
+- Facade
+- Leer
 
 === TRAINER_BIRD_KEEPER_ROBERT ===
 Name: ROBERT
@@ -3820,16 +5405,34 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 26
+Ability: Keen Eye
+Level: 26  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
 
 Pidgeotto
-Level: 26
+Ability: Keen Eye
+Level: 26  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Tailwind
 
 Spearow
-Level: 26
+Ability: Keen Eye
+Level: 26  
+- Aerial Ace
+- Facade
+- Leer
 
 Fearow
-Level: 26
+Ability: Defiant
+Level: 26  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 === TRAINER_BIRD_KEEPER_DONALD ===
 Name: DONALD
@@ -3840,8 +5443,19 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Farfetchd
-Level: 33
+Farfetch'd
+Ability: Inner Focus
+Level: 30  
+- Aerial Ace
+- Slash
+- Focus Energy
+
+Farfetch'd - Galar
+Ability: Inner Focus
+Level: 30  
+- Aerial Ace
+- Rock Smash
+- Focus Energy
 
 === TRAINER_BIRD_KEEPER_BENNY ===
 Name: BENNY
@@ -3853,10 +5467,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spearow
-Level: 29
+Ability: Defiant
+Level: 29  
+- Aerial Ace
+- Facade
+- Leer
 
 Fearow
-Level: 29
+Ability: Defiant
+Level: 29  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 === TRAINER_BIRD_KEEPER_EDWIN ===
 Name: EDWIN
@@ -3868,16 +5491,35 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 26
+Ability: Keen Eye
+Level: 26  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Tailwind
 
-Farfetchd
-Level: 26
+Farfetch'd
+Ability: Inner Focus
+Level: 26  
+- Aerial Ace
+- Slash
+- Focus Energy
 
 Doduo
-Level: 26
+Ability: Early Bird
+Level: 26  
+- Quick Attack
+- Pluck
+- Double Kick
+- Agility
 
 Pidgey
-Level: 26
+Ability: Keen Eye
+Level: 26  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 === TRAINER_BIRD_KEEPER_CHESTER ===
 Name: CHESTER
@@ -3889,13 +5531,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Dodrio
-Level: 28
+Ability: Early Bird
+Level: 28  
+- Quick Attack
+- Pluck
+- Triple Kick
+- Agility
 
 Doduo
-Level: 28
+Ability: Early Bird
+Level: 28  
+- Quick Attack
+- Pluck
+- Double Kick
+- Agility
 
 Doduo
-Level: 28
+Ability: Early Bird
+Level: 28  
+- Quick Attack
+- Pluck
+- Double Kick
+- Agility
 
 === TRAINER_BIRD_KEEPER_WILTON ===
 Name: WILTON
@@ -3907,10 +5564,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spearow
-Level: 29
+Ability: Defiant
+Level: 29  
+- Aerial Ace
+- Facade
+- Leer
 
 Fearow
-Level: 29
+Ability: Defiant
+Level: 29  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 === TRAINER_BIRD_KEEPER_RAMIRO ===
 Name: RAMIRO
@@ -3922,7 +5588,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Dodrio
-Level: 34
+Ability: Early Bird
+Level: 30  
+- Quick Attack
+- Drill Peck
+- Triple Kick
+- Agility
+
+Pidgeotto
+Ability: Keen Eye
+Level: 30  
+- Quick Attack
+- Air Slash
+- Mud-Slap
+- Tailwind
 
 === TRAINER_BIRD_KEEPER_JACOB ===
 Name: JACOB
@@ -3934,16 +5613,33 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spearow
-Level: 26
+Ability: Defiant
+Level: 26  
+- Aerial Ace
+- Facade
+- Leer
 
 Spearow
-Level: 26
+Ability: Defiant
+Level: 26  
+- Aerial Ace
+- Facade
+- Leer
 
 Fearow
-Level: 26
+Ability: Defiant
+Level: 26  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 Spearow
-Level: 26
+Ability: Defiant
+Level: 26  
+- Aerial Ace
+- Facade
+- Leer
 
 === TRAINER_BIRD_KEEPER_ROGER ===
 Name: ROGER
@@ -3955,13 +5651,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Fearow
-Level: 30
+Ability: Defiant
+Level: 30  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 Fearow
-Level: 30
+Ability: Defiant
+Level: 30  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 Pidgeotto
-Level: 30
+Ability: Keen Eye
+Level: 30  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Tailwind
 
 === TRAINER_BIRD_KEEPER_REED ===
 Name: REED
@@ -4009,13 +5720,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 28
+Ability: Keen Eye
+Level: 28  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 Doduo
-Level: 28
+Ability: Early Bird
+Level: 28  
+- Quick Attack
+- Pluck
+- Double Kick
+- Agility
 
 Pidgeotto
-Level: 28
+Ability: Keen Eye
+Level: 28  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Tailwind
 
 === TRAINER_BIRD_KEEPER_MITCH ===
 Name: MITCH
@@ -4027,16 +5753,35 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 26
+Ability: Keen Eye
+Level: 26  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 Spearow
-Level: 26
+Ability: Defiant
+Level: 26  
+- Aerial Ace
+- Facade
+- Leer
 
 Pidgey
-Level: 26
+Ability: Keen Eye
+Level: 26  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 Fearow
-Level: 26
+Ability: Defiant
+Level: 26  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 === TRAINER_BIRD_KEEPER_BECK ===
 Name: BECK
@@ -4048,10 +5793,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 29
+Ability: Keen Eye
+Level: 29  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Tailwind
 
 Fearow
-Level: 29
+Ability: Defiant
+Level: 29  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 === TRAINER_BIRD_KEEPER_MARLON ===
 Name: MARLON
@@ -4063,13 +5818,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Spearow
-Level: 28
+Ability: Defiant
+Level: 28  
+- Aerial Ace
+- Facade
+- Leer
 
 Doduo
-Level: 28
+Ability: Early Bird
+Level: 28  
+- Quick Attack
+- Pluck
+- Double Kick
+- Agility
 
 Fearow
-Level: 28
+Ability: Defiant
+Level: 28  
+- Aerial Ace
+- Facade
+- U-Turn
+- Leer
 
 === TRAINER_BLACK_BELT_KOICHI ===
 Name: KOICHI
@@ -4080,11 +5849,25 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Hitmonlee @ Black Belt
-Level: 37
+Hitmonlee
+Ability: Limber
+Level: 37  
+- High Jump Kick
+- Knock Off
 
-Hitmonchan @ Black Belt
-Level: 37
+Hitmonchan
+Ability: Iron Fist
+Level: 37  
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Hitmontop
+Ability: Intimidate
+Level: 37  
+- Fake Out
+- Triple Kick
+- Triple Axel
 
 === TRAINER_BLACK_BELT_MIKE ===
 Name: MIKE
@@ -4095,14 +5878,27 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Mankey @ Black Belt
-Level: 31
+Mankey
+Ability: Defiant
+Level: 31  
+- Brick Break
+- Rock Smash
+- Thrash
 
-Mankey @ Black Belt
-Level: 31
+Mankey
+Ability: Defiant
+Level: 31  
+- Brick Break
+- Rock Smash
+- Thrash
 
-Primeape @ Black Belt
-Level: 31
+Primeape
+Ability: Defiant
+Level: 31  
+- Brick Break
+- Rock Smash
+- Thrash
+- Shadow Punch
 
 === TRAINER_BLACK_BELT_HIDEKI ===
 Name: HIDEKI
@@ -4113,11 +5909,21 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Machop @ Black Belt
-Level: 32
+Machoke
+Ability: Guts
+Level: 32  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
-Machoke @ Black Belt
-Level: 32
+Machoke
+Ability: Guts
+Level: 32  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_BLACK_BELT_AARON ===
 Name: AARON
@@ -4128,8 +5934,20 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Primeape @ Black Belt
-Level: 36
+Primeape
+Ability: Defiant
+Level: 32  
+- Brick Break
+- Rock Smash
+- Thrash
+- Shadow Punch
+
+Pinsir
+Ability: Hyper Cutter
+Level: 32  
+- Bug Bite
+- Vital Throw
+- Bind
 
 === TRAINER_BLACK_BELT_HITOSHI ===
 Name: HITOSHI
@@ -4140,14 +5958,28 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Machop @ Black Belt
-Level: 31
+Machoke
+Ability: Guts
+Level: 31  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
-Mankey @ Black Belt
-Level: 31
+Mankey
+Ability: Defiant
+Level: 31  
+- Brick Break
+- Rock Smash
+- Thrash
 
-Primeape @ Black Belt
-Level: 31
+Primeape
+Ability: Defiant
+Level: 31  
+- Brick Break
+- Rock Smash
+- Thrash
+- Shadow Punch
 
 === TRAINER_BLACK_BELT_ATSUSHI ===
 Name: ATSUSHI
@@ -4158,11 +5990,20 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Machop @ Black Belt
-Level: 40
+Pinsir
+Ability: Hyper Cutter
+Level: 39  
+- Bug Bite
+- Vital Throw
+- Bind
+- Seismic Toss
 
-Machoke @ Black Belt
-Level: 40
+Primeape
+Ability: Defiant
+Level: 39  
+- Brick Break
+- Rock Smash
+- Thrash
 
 === TRAINER_BLACK_BELT_KIYO ===
 Name: KIYO
@@ -4173,8 +6014,20 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Machoke @ Black Belt
-Level: 43
+Machamp
+Ability: Guts
+Level: 40  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
+
+Golem
+Ability: Sturdy
+Level: 40  
+- Rock Slide
+- Mega Punch
+- Wide Guard
 
 === TRAINER_BLACK_BELT_TAKASHI ===
 Name: TAKASHI
@@ -4185,14 +6038,27 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Machoke @ Black Belt
-Level: 38
+Hitmonlee
+Ability: Unburden
+Level: 38  
+- Axe Kick
+- Knock Off
 
-Machop @ Black Belt
-Level: 38
+Hitmonchan
+Ability: Unseen Fist
+Level: 38  
+- Sky Uppercut
+- Thunder Punch
+- Fire Punch
+- Ice Punch
 
-Machoke @ Black Belt
-Level: 38
+Hitmontop
+Ability: Intimidate
+Level: 38  
+- Fake Out
+- Triple Kick
+- Triple Axel
+- Rapid Spin
 
 === TRAINER_BLACK_BELT_DAISUKE ===
 Name: DAISUKE
@@ -4203,14 +6069,27 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
 
-Machoke @ Black Belt
-Level: 43
+Crobat
+Ability: Sturdy
+Level: 50  
+- Cross Poison
+- Dual Wingbeat
+- U-Turn
+- Quick Guard
 
-Machop @ Black Belt
-Level: 43
+Scizor
+Ability: Technician
+Level: 50  
+- Bullet Punch
+- Bug Bite
+- Superpower
 
-Machoke @ Black Belt
-Level: 43
+Blissey
+Ability: Magnet Pull
+Level: 50  
+- Seismic Toss
+- Present
+- Heal Bell
 
 === TRAINER_RIVAL_OAKS_LAB_SQUIRTLE ===
 Name: TERRY
@@ -4222,9 +6101,10 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Squirtle
+Ability: Torrent
 Level: 5
-- Tackle
-- Tail Whip
+- Pound
+- Leer
 
 === TRAINER_RIVAL_OAKS_LAB_BULBASAUR ===
 Name: TERRY
@@ -4236,6 +6116,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Bulbasaur
+Ability: Overgrow
 Level: 5
 - Tackle
 - Growl
@@ -4250,6 +6131,7 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Charmander
+Ability: Blaze
 Level: 5
 - Scratch
 - Growl
@@ -4344,7 +6226,7 @@ Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Leer
+- Tail Whip
 
 Squirtle
 Ability: Torrent
@@ -4380,7 +6262,7 @@ Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Leer
+- Tail Whip
 
 Bulbasaur
 Ability: Overgrow
@@ -4417,7 +6299,7 @@ Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Leer
+- Tail Whip
 
 Charmander
 Ability: Blaze
@@ -4436,10 +6318,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Electrode
-Level: 29
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 Weezing
-Level: 29
+Ability: Levitate
+Level: 29  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 === TRAINER_SCIENTIST_CONNOR ===
 Name: CONNOR
@@ -4451,32 +6342,36 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 26
-- Screech
+Ability: Stench
+Level: 26  
+- Sludge Bomb
+- Body Slam
+- Mud Shot
 - Minimize
-- Sludge
-- Disable
 
 Weezing
-Level: 26
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 26  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
 
 Koffing
-Level: 26
-- Smokescreen
-- Sludge
-- Smog
-- Self Destruct
+Ability: Levitate
+Level: 26  
+- Sludge Bomb
+- Poison Gas
+- Haze
+- Self-Destruct
 
 Weezing
-Level: 26
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 26  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_SCIENTIST_JERRY ===
 Name: JERRY
@@ -4488,13 +6383,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 28
+Ability: Sturdy
+Level: 28  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
 
 Voltorb
-Level: 28
+Ability: Aftermath
+Level: 28  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 Magneton
-Level: 28
+Ability: Sturdy
+Level: 28  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
 
 === TRAINER_SCIENTIST_JOSE ===
 Name: JOSE
@@ -4506,18 +6414,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Electrode
-Level: 29
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 Weezing
-Level: 29
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 29  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_SCIENTIST_RODNEY ===
 Name: RODNEY
@@ -4529,7 +6439,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Electrode
-Level: 33
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
+
+Porygon
+Ability: Trace
+Level: 29  
+- Tri-Attack
+- Discharge
+- Recover
 
 === TRAINER_SCIENTIST_BEAU ===
 Name: BEAU
@@ -4541,32 +6463,34 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magneton
-Level: 26
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
-
-Koffing
-Level: 26
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
-
-Weezing
-Level: 26
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Sturdy
+Level: 26  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
 
 Magnemite
-Level: 26
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
+Ability: Sturdy
+Level: 26  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
+
+Koffing
+Ability: Levitate
+Level: 26  
+- Sludge Bomb
+- Poison Gas
+- Haze
+- Self-Destruct
+
+Weezing
+Ability: Levitate
+Level: 26  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_SCIENTIST_TAYLOR ===
 Name: TAYLOR
@@ -4578,39 +6502,42 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 25
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
+Ability: Aftermath
+Level: 25  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
+- Self-Destruct
 
 Magneton
-Level: 25
-- Thunder Wave
-- Sonic Boom
-- Supersonic
-- Thunder Shock
+Ability: Sturdy
+Level: 25  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
 
 Magnemite
-Level: 25
-- Thunder Wave
-- Sonic Boom
-- Supersonic
-- Thunder Shock
+Ability: Sturdy
+Level: 25  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
 
 Koffing
-Level: 25
-- Smokescreen
-- Sludge
-- Smog
-- Self Destruct
+Ability: Levitate
+Level: 25  
+- Sludge Bomb
+- Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_SCIENTIST_JOSHUA ===
 Name: JOSHUA
@@ -4622,10 +6549,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Electrode
-Level: 29
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 Muk
-Level: 29
+Ability: Stench
+Level: 29  
+- Sludge
+- Body Slam
+- Mud Shot
+- Minimize
 
 === TRAINER_SCIENTIST_PARKER ===
 Name: PARKER
@@ -4637,10 +6574,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 29
+Ability: Stench
+Level: 29  
+- Sludge Bomb
+- Body Slam
+- Mud Shot
+- Minimize
 
 Electrode
-Level: 29
+Ability: Aftermath
+Level: 29  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 === TRAINER_SCIENTIST_ED ===
 Name: ED
@@ -4652,25 +6599,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 28
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
-
-Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Tackle
-- Smog
+Ability: Aftermath
+Level: 28  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 Magneton
-Level: 28
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
+Ability: Sturdy
+Level: 28  
+- Charge Beam
+- Mirror Shot
+- Metal Sound
+
+Koffing
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_SCIENTIST_TRAVIS ===
 Name: TRAVIS
@@ -4681,11 +6630,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Magnemite
-Level: 29
+Electabuzz
+Ability: Static
+Level: 30  
+- Thunder Punch
+- Brick Break
+- Electric Terrain
 
-Koffing
-Level: 29
+Magmar
+Ability: Flame Body
+Level: 30  
+- Flame Burst
+- Clear Smog
+- Sunny Day
 
 === TRAINER_SCIENTIST_BRAYDON ===
 Name: BRAYDON
@@ -4697,13 +6654,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 33
-
-Magneton
-Level: 33
+Ability: Sturdy
+Level: 33  
+- Charge Beam
+- Flash Cannon
+- Metal Sound
 
 Voltorb
-Level: 33
+Ability: Aftermath
+Level: 33  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
+
+Magneton
+Ability: Sturdy
+Level: 33  
+- Charge Beam
+- Flash Cannon
+- Metal Sound
+- Tri-Attack
 
 === TRAINER_SCIENTIST_IVAN ===
 Name: IVAN
@@ -4715,10 +6686,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Magnemite
-Level: 34
+Ability: Sturdy
+Level: 34  
+- Charge Beam
+- Flash Cannon
+- Metal Sound
 
 Electrode
-Level: 34
+Ability: Aftermath
+Level: 34  
+- Electro Ball
+- Swift
+- Rollout
+- Eerie Impulse
 
 === TRAINER_BOSS_GIOVANNI ===
 Name: GIOVANNI
@@ -4730,13 +6710,38 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Onix
-Level: 25
+Ability: Sturdy
+Level: 25  
+- Rock Tomb
+- Standstorm
+- Stealth Rock
+
+Nidorina @ Black Sludge
+Ability: Poison Point
+Level: 26  
+- Sludge Bomb
+- Earth Power
+- Body Slam
 
 Rhyhorn
-Level: 24
+Ability: Rock Head
+Level: 25  
+- Stone Edge
+- Drill Run
 
-Kangaskhan
-Level: 29
+Golbat
+Ability: Inner Focus
+Level: 27  
+- Poison Fang
+- Super Fang
+- Whirlwind
+
+Persian
+Ability: Pickup
+Level: 29  
+- Fake Out
+- Pay Day
+- Thief
 
 === TRAINER_BOSS_GIOVANNI_2 ===
 Name: GIOVANNI
@@ -4747,17 +6752,40 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Nidorino
-Level: 37
+Onix
+Ability: Sturdy
+Level: 35  
+- Iron Head
+- Sand Tomb
+- Sandstorm
+- Stealth Rock
 
-Kangaskhan
-Level: 35
+Nidoqueen @ Black Sludge
+Ability: Battle Armor
+Level: 41  
+- Sludge Bomb
+- Earth Power
+- Body Slam
 
 Rhyhorn
-Level: 37
+Ability: Rock Head
+Level: 37  
+- Stone Edge
+- Drill Run
+- Body Press
 
-Nidoqueen
-Level: 41
+Nidorino @ Life Orb
+Ability: Poison Point
+Level: 37  
+- Thunderbolt
+- Ice Beam
+
+Persian
+Ability: Technician
+Level: 41  
+- Fake Out
+- Pay Day
+- Make It Rain
 
 === TRAINER_LEADER_GIOVANNI ===
 Name: GIOVANNI
@@ -4768,40 +6796,47 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Rhyhorn
-Level: 45
-- Take Down
-- Rock Blast
-- Scary Face
-- Earthquake
+Steelix
+Ability: Sturdy
+Level: 48  
+- Heavy Slam
+- Sand Tomb
+- Stealth Rock
 
 Dugtrio
-Level: 42
-- Slash
-- Sand Tomb
-- Mud Slap
-- Earthquake
+Ability: Arena Trap
+Level: 42  
+- Dig
+- Sandstorm
+- Substitute
 
-Nidoqueen
-Level: 44
-- Body Slam
-- Double Kick
-- Poison Sting
-- Earthquake
+Kangaskhan
+Ability: Parental Bond
+Level: 45  
+- Fake Out
+- Mega Punch
+- Power-Up Punch
 
 Nidoking
-Level: 45
-- Thrash
-- Double Kick
-- Poison Sting
-- Earthquake
+Ability: Sheer Force
+Level: 45  
+- Flamethrower
+- Thunderbolt
+- Ice Beam
 
-Rhyhorn
-Level: 50
-- Take Down
-- Rock Blast
-- Scary Face
-- Earthquake
+Nidoqueen @ Black Sludge
+Ability: Sheer Force
+Level: 45  
+- Sludge Bomb
+- Earth Power
+- Body Slam
+
+Rhydon
+Ability: Rock Head
+Level: 50  
+- Stone Edge
+- High Horsepower
+- Body Press
 
 === TRAINER_TEAM_ROCKET_GRUNT ===
 Name: GRUNT
@@ -4914,10 +6949,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 17
+Ability: Guts
+Level: 18  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
 Drowzee
-Level: 17
+Ability: Bad Dreams
+Level: 18  
+- Confusion
+- Hypnosis
+- Disable
 
 === TRAINER_TEAM_ROCKET_GRUNT_6 ===
 Name: GRUNT
@@ -4958,10 +7001,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Raticate
-Level: 20
+Ability: Guts
+Level: 20  
+- Tackle
+- Super Fang
+- Bite
+- Leer
 
 Zubat
-Level: 20
+Ability: Inner Focus
+Level: 20  
+- Poison Fang
+- Bite
+- Screech
+- Torment
 
 === TRAINER_TEAM_ROCKET_GRUNT_8 ===
 Name: GRUNT
@@ -4973,10 +7026,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Drowzee
-Level: 21
+Ability: Bad Dreams
+Level: 21  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
 
 Machop
-Level: 21
+Ability: Guts
+Level: 21  
+- Karate Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_TEAM_ROCKET_GRUNT_9 ===
 Name: GRUNT
@@ -4988,10 +7051,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Raticate
-Level: 21
+Ability: Guts
+Level: 21  
+- Tackle
+- Super Fang
+- Bite
+- Leer
 
 Raticate
-Level: 21
+Ability: Guts
+Level: 21  
+- Tackle
+- Super Fang
+- Bite
+- Leer
 
 === TRAINER_TEAM_ROCKET_GRUNT_10 ===
 Name: GRUNT
@@ -5003,23 +7076,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 20
-- Minimize
+Ability: Stench
+Level: 20  
 - Sludge
-- Disable
-- Harden
+- Body Slam
+- Mud-Slap
+- Minimize
 
 Koffing
-Level: 20
-- Smog
-- Tackle
+Ability: Levitate
+Level: 20  
+- Clear Smog
 - Poison Gas
+- Haze
+- Self-Destruct
 
 Koffing
-Level: 20
-- Smog
-- Tackle
+Ability: Levitate
+Level: 20  
+- Clear Smog
 - Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_TEAM_ROCKET_GRUNT_11 ===
 Name: GRUNT
@@ -5031,16 +7109,34 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Level: 19
+Ability: Guts
+Level: 19  
+- Quick Attack
+- Hyper Fang
+- Bite
 
 Raticate
-Level: 19
+Ability: Guts
+Level: 19  
+- Tackle
+- Super Fang
+- Bite
+- Leer
 
 Raticate
-Level: 19
+Ability: Guts
+Level: 19  
+- Tackle
+- Super Fang
+- Bite
+- Leer
 
 Rattata
-Level: 19
+Ability: Guts
+Level: 19  
+- Quick Attack
+- Hyper Fang
+- Bite
 
 === TRAINER_TEAM_ROCKET_GRUNT_12 ===
 Name: GRUNT
@@ -5052,18 +7148,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 22
-- Minimize
+Ability: Stench
+Level: 22  
 - Sludge
-- Disable
-- Harden
+- Body Slam
+- Mud-Slap
+- Minimize
 
 Koffing
-Level: 22
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 22  
+- Clear Smog
 - Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_TEAM_ROCKET_GRUNT_13 ===
 Name: GRUNT
@@ -5075,38 +7173,44 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Zubat
-Level: 17
+Ability: Inner Focus
+Level: 17  
+- Poison Fang
 - Bite
-- Astonish
-- Supersonic
-- Leech Life
+- Screech
+- Torment
 
 Koffing
-Level: 17
-- Smog
-- Tackle
+Ability: Levitate
+Level: 17  
+- Clear Smog
 - Poison Gas
+- Haze
+- Self-Destruct
 
 Grimer
-Level: 17
+Ability: Stench
+Level: 17  
 - Sludge
-- Disable
-- Harden
-- Pound
+- Body Slam
+- Mud-Slap
+- Minimize
 
 Zubat
-Level: 17
+Ability: Inner Focus
+Level: 17  
+- Poison Fang
 - Bite
-- Astonish
-- Supersonic
-- Leech Life
+- Screech
+- Torment
 
 Raticate
-Level: 17
-- Hyper Fang
-- Quick Attack
-- Tail Whip
+Ability: Guts
+Level: 17  
 - Tackle
+- Super Fang
+- Bite
+- Leer
 
 === TRAINER_TEAM_ROCKET_GRUNT_14 ===
 Name: GRUNT
@@ -5118,13 +7222,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Level: 20
+Ability: Guts
+Level: 20  
+- Quick Attack
+- Hyper Fang
+- Bite
 
 Raticate
-Level: 20
+Ability: Guts
+Level: 20  
+- Tackle
+- Super Fang
+- Bite
+- Leer
 
 Drowzee
-Level: 20
+Ability: Bad Dreams
+Level: 20  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
 
 === TRAINER_TEAM_ROCKET_GRUNT_15 ===
 Name: GRUNT
@@ -5136,10 +7254,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 21
+Ability: Guts
+Level: 21  
+- Karate Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 Machop
-Level: 21
+Ability: Guts
+Level: 21  
+- Karate Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_TEAM_ROCKET_GRUNT_16 ===
 Name: GRUNT
@@ -5151,13 +7279,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandshrew
-Level: 23
+Ability: Sand Rush
+Level: 23  
+- Dig
+- Fury Swipes
+- Rollout
+- Hone Claws
 
 Ekans
-Level: 23
+Ability: Intimidate
+Level: 23  
+- Poison Tail
+- Wrap
+- Crunch
+- Coil
 
 Sandslash
-Level: 23
+Ability: Sand Rush
+Level: 23  
+- Dig
+- Fury Swipes
+- Rollout
+- Hone Claws
 
 === TRAINER_TEAM_ROCKET_GRUNT_17 ===
 Name: GRUNT
@@ -5169,13 +7312,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ekans
-Level: 23
+Ability: Intimidate
+Level: 23  
+- Poison Tail
+- Wrap
+- Crunch
+- Coil
 
 Sandshrew
-Level: 23
+Ability: Sand Rush
+Level: 23  
+- Dig
+- Fury Swipes
+- Rollout
+- Hone Claws
 
 Arbok
-Level: 23
+Ability: Intimidate
+Level: 23  
+- Poison Fang
+- Wrap
+- Bite
+- Coil
 
 === TRAINER_TEAM_ROCKET_GRUNT_18 ===
 Name: GRUNT
@@ -5187,10 +7345,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 21
+Ability: Levitate
+Level: 21  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
 
 Zubat
-Level: 21
+Ability: Inner Focus
+Level: 21  
+- Poison Fang
+- Bite
+- Screech
+- Torment
 
 === TRAINER_TEAM_ROCKET_GRUNT_19 ===
 Name: GRUNT
@@ -5202,13 +7370,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Zubat
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Bite
+- Screech
+- Torment
 
 Zubat
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Bite
+- Screech
+- Torment
 
 Golbat
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Bite
+- Screech
+- Torment
 
 === TRAINER_TEAM_ROCKET_GRUNT_20 ===
 Name: GRUNT
@@ -5220,10 +7403,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 26
+Ability: Levitate
+Level: 26  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
 
 Drowzee
-Level: 26
+Ability: Bad Dreams
+Level: 26  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
 
 === TRAINER_TEAM_ROCKET_GRUNT_21 ===
 Name: GRUNT
@@ -5234,17 +7427,34 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Zubat
-Level: 23
+Golbat
+Ability: Inner Focus
+Level: 23  
+- Poison Fang
+- Bite
+- Screech
+- Torment
 
-Rattata
-Level: 23
+Grimer
+Ability: Stench
+Level: 23  
+- Sludge
+- Body Slam
+- Minimize
 
 Raticate
-Level: 23
+Ability: Guts
+Level: 23  
+- Tackle
+- Super Fang
+- Bite
+- Leer
 
-Zubat
-Level: 23
+Pinsir
+Ability: Hyper Cutter
+Level: 23  
+- Vital Throw
+- Bind
 
 === TRAINER_TEAM_ROCKET_GRUNT_22 ===
 Name: GRUNT
@@ -5255,11 +7465,21 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Drowzee
-Level: 26
-
 Koffing
-Level: 26
+Ability: Levitate
+Level: 26  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
+
+Drowzee
+Ability: Bad Dreams
+Level: 26  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
 
 === TRAINER_TEAM_ROCKET_GRUNT_23 ===
 Name: GRUNT
@@ -5271,10 +7491,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Cubone
-Level: 29
+Ability: Rock Head
+Level: 29  
+- Bone Rush
+- Headbutt
+- Growl
 
 Zubat
-Level: 29
+Ability: Inner Focus
+Level: 29  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 === TRAINER_TEAM_ROCKET_GRUNT_24 ===
 Name: GRUNT
@@ -5286,19 +7515,44 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Golbat
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Zubat
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Zubat
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Raticate
-Level: 25
+Ability: Guts
+Level: 25  
+- Hyper Fang
+- Super Fang
+- Crunch
+- Leer
 
 Zubat
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 === TRAINER_TEAM_ROCKET_GRUNT_25 ===
 Name: GRUNT
@@ -5310,13 +7564,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Raticate
-Level: 28
+Ability: Guts
+Level: 28  
+- Hyper Fang
+- Super Fang
+- Crunch
+- Leer
 
 Hypno
-Level: 28
+Ability: Bad Dreams
+Level: 28  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
 
 Raticate
-Level: 28
+Ability: Guts
+Level: 28  
+- Hyper Fang
+- Super Fang
+- Crunch
+- Leer
 
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
 Name: GRUNT
@@ -5328,10 +7597,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 29
+Ability: Guts
+Level: 29  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 Drowzee
-Level: 29
+Ability: Bad Dreams
+Level: 29  
+- Psyshock
+- Hypnosis
+- Disable
+- Nasty Plot
 
 === TRAINER_TEAM_ROCKET_GRUNT_27 ===
 Name: GRUNT
@@ -5343,13 +7622,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ekans
-Level: 28
+Ability: Intimidate
+Level: 28  
+- Poison Tail
+- Wrap
+- Crunch
+- Coil
 
 Zubat
-Level: 28
+Ability: Inner Focus
+Level: 28  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Cubone
-Level: 28
+Ability: Rock Head
+Level: 28  
+- Bone Rush
+- Headbutt
+- Growl
 
 === TRAINER_TEAM_ROCKET_GRUNT_28 ===
 Name: GRUNT
@@ -5361,7 +7654,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Arbok
-Level: 33
+Ability: Intimidate
+Level: 29  
+- Poison Fang
+- Wrap
+- Crunch
+- Coil
+
+Marowak
+Ability: Rock Head
+Level: 29  
+- Bone Club
+- Headbutt
+- Shadow Bone
+- Leer
 
 === TRAINER_TEAM_ROCKET_GRUNT_29 ===
 Name: GRUNT
@@ -5373,7 +7679,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Hypno
-Level: 33
+Ability: Bad Dreams
+Level: 29  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
+
+Porygon
+Ability: Trace
+Level: 29  
+- Tri-Attack
+- Discharge
+- Recover
 
 === TRAINER_TEAM_ROCKET_GRUNT_30 ===
 Name: GRUNT
@@ -5385,10 +7703,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 29
+Ability: Guts
+Level: 29  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 Machoke
-Level: 29
+Ability: Guts
+Level: 29  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
 Name: GRUNT
@@ -5400,13 +7728,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Zubat
-Level: 28
+Ability: Inner Focus
+Level: 28  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Zubat
-Level: 28
+Ability: Inner Focus
+Level: 28  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Golbat
-Level: 28
+Ability: Inner Focus
+Level: 28  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 === TRAINER_TEAM_ROCKET_GRUNT_32 ===
 Name: GRUNT
@@ -5418,32 +7761,36 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Raticate
-Level: 26
-- Scary Face
+Ability: Guts
+Level: 26  
 - Hyper Fang
-- Quick Attack
-- Tail Whip
-
-Arbok
-Level: 26
-- Glare
-- Bite
-- Poison Sting
+- Super Fang
+- Crunch
 - Leer
 
-Koffing
-Level: 26
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
-
 Golbat
-Level: 26
-- Wing Attack
-- Bite
-- Astonish
-- Supersonic
+Ability: Inner Focus
+Level: 26  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
+
+Arbok
+Ability: Intimidate
+Level: 26  
+- Poison Fang
+- Wrap
+- Crunch
+- Coil
+
+Koffing
+Ability: Levitate
+Level: 26  
+- Sludge Bomb
+- Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_TEAM_ROCKET_GRUNT_33 ===
 Name: GRUNT
@@ -5454,11 +7801,20 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Cubone
-Level: 29
+Pinsir
+Ability: Hyper Cutter
+Level: 29  
+- Bug Bite
+- Vital Throw
+- Bind
 
-Cubone
-Level: 29
+Marowak
+Ability: Rock Head
+Level: 29  
+- Bone Club
+- Headbutt
+- Shadow Bone
+- Leer
 
 === TRAINER_TEAM_ROCKET_GRUNT_34 ===
 Name: GRUNT
@@ -5470,10 +7826,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandshrew
-Level: 29
+Ability: Sand Rush
+Level: 29  
+- Dig
+- Crush Claw
+- Rollout
+- Hone Claws
 
 Sandslash
-Level: 29
+Ability: Sand Rush
+Level: 29  
+- Dig
+- Slash
+- Gyro Ball
+- Swords Dance
 
 === TRAINER_TEAM_ROCKET_GRUNT_35 ===
 Name: GRUNT
@@ -5485,16 +7851,35 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Raticate
-Level: 26
+Ability: Guts
+Level: 26  
+- Hyper Fang
+- Super Fang
+- Crunch
+- Leer
 
 Zubat
-Level: 26
+Ability: Inner Focus
+Level: 26  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Golbat
-Level: 26
+Ability: Inner Focus
+Level: 26  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Rattata
-Level: 26
+Ability: Guts
+Level: 26  
+- Quick Attack
+- Hyper Fang
+- Crunch
 
 === TRAINER_TEAM_ROCKET_GRUNT_36 ===
 Name: GRUNT
@@ -5506,13 +7891,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Weezing
-Level: 28
+Ability: Levitate
+Level: 28  
+- Clear Smog
+- Poison Gas
+- Haze
+- Self-Destruct
 
 Golbat
-Level: 28
+Ability: Inner Focus
+Level: 28  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Koffing
-Level: 28
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
+- Self-Destruct
 
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
 Name: GRUNT
@@ -5524,13 +7924,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Drowzee
-Level: 28
+Ability: Bad Dreams
+Level: 28  
+- Psyshock
+- Hypnosis
+- Disable
+- Nasty Plot
 
 Grimer
-Level: 28
+Ability: Stench
+Level: 28  
+- Sludge Bomb
+- Body Slam
+- Mud Shot
+- Minimize
 
 Machop
-Level: 28
+Ability: Guts
+Level: 28  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
 
 === TRAINER_TEAM_ROCKET_GRUNT_38 ===
 Name: GRUNT
@@ -5542,13 +7957,28 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Golbat
-Level: 28
+Ability: Inner Focus
+Level: 28  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Drowzee
-Level: 28
+Ability: Bad Dreams
+Level: 28  
+- Psyshock
+- Hypnosis
+- Disable
+- Nasty Plot
 
 Hypno
-Level: 28
+Ability: Bad Dreams
+Level: 28  
+- Psybeam
+- Hypnosis
+- Disable
+- Nasty Plot
 
 === TRAINER_TEAM_ROCKET_GRUNT_39 ===
 Name: GRUNT
@@ -5560,7 +7990,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machoke
-Level: 33
+Ability: Guts
+Level: 30  
+- Cross Chop
+- Knock Off
+- Focus Energy
+- Seismic Toss
+
+Golbat
+Ability: Inner Focus
+Level: 30  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 === TRAINER_TEAM_ROCKET_GRUNT_40 ===
 Name: GRUNT
@@ -5572,19 +8015,41 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Rattata
-Level: 25
-
-Rattata
-Level: 25
+Ability: Guts
+Level: 25  
+- Quick Attack
+- Hyper Fang
+- Crunch
 
 Zubat
-Level: 25
-
-Rattata
-Level: 25
+Ability: Inner Focus
+Level: 25  
+- Poison Fang
+- Crunch
+- Screech
+- Torment
 
 Ekans
-Level: 25
+Ability: Intimidate
+Level: 25  
+- Poison Tail
+- Wrap
+- Crunch
+- Coil
+
+Rattata
+Ability: Guts
+Level: 25  
+- Quick Attack
+- Hyper Fang
+- Crunch
+
+Rattata
+Ability: Guts
+Level: 25  
+- Quick Attack
+- Hyper Fang
+- Crunch
 
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
 Name: GRUNT
@@ -5595,14 +8060,29 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer
 
-Cubone
-Level: 32
+Scyther
+Ability: Steadfast
+Level: 32  
+- X-Scissor
+- Slash
+- Double-Team
+- Focus Energy
 
 Drowzee
-Level: 32
+Ability: Bad Dreams
+Level: 32  
+- Psyshock
+- Hypnosis
+- Disable
+- Nasty Plot
 
 Marowak
-Level: 32
+Ability: Rock Head
+Level: 32  
+- Bone Club
+- Headbutt
+- Shadow Bone
+- Leer
 
 === TRAINER_COOLTRAINER_SAMUEL ===
 Name: SAMUEL
@@ -5614,39 +8094,40 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandslash
-Level: 37
+Ability: Tough Claws
+Level: 37  
+- Dig
 - Slash
-- Swift
-- Sand Attack
-- Poison Sting
+- Gyro Ball
+- Swords Dance
 
 Sandslash
-Level: 37
+Ability: Tough Claws
+Level: 37  
+- Dig
 - Slash
-- Swift
-- Sand Attack
-- Poison Sting
+- Gyro Ball
+- Swords Dance
 
 Rhyhorn
-Level: 38
+Ability: Rock Head
+Level: 38  
+- Stone Edge
 - Take Down
-- Rock Blast
-- Fury Attack
 - Scary Face
 
 Nidorino
-Level: 39
-- Fury Attack
-- Horn Attack
-- Poison Sting
-- Double Kick
+Ability: Poison Point
+Level: 39  
+- Thunderbolt
+- Ice Beam
 
 Nidoking
-Level: 39
-- Thrash
-- Double Kick
-- Poison Sting
-- Focus Energy
+Ability: Poison Point
+Level: 39  
+- Flamethrower
+- Thunderbolt
+- Ice Beam
 
 === TRAINER_COOLTRAINER_GEORGE ===
 Name: GEORGE
@@ -5657,40 +8138,36 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Exeggutor
-Level: 42
-- Egg Bomb
-- Confusion
-- Stun Spore
-- Sleep Powder
+Alakazam
+Ability: Inner Focus
+Level: 50  
+- Expanding Force
+- Imprison
+- Psychic Terrain
+- Protect
 
-Sandslash
-Level: 42
-- Fury Swipes
-- Swift
-- Poison Sting
-- Sand Attack
+Golem
+Ability: Sturdy
+Level: 50  
+- Rock Slide
+- Gyro Ball
+- Stealth Rock
 
-Cloyster
-Level: 42
-- Spike Cannon
-- Spikes
-- Aurora Beam
-- Supersonic
+Machamp
+Ability: Guts
+Level: 50  
+- Bullet Punch
+- Cross Chop
+- Dual Chop
+- Wide Guard
 
-Electrode
-Level: 42
-- Spark
-- Sonic Boom
-- Screech
-- Light Screen
-
-Arcanine
-Level: 42
-- Flame Wheel
-- Roar
-- Bite
-- Take Down
+Gengar
+Ability: Levitate
+Level: 50  
+- Hex
+- Dream Eater
+- Hypnosis
+- Destiny Bond
 
 === TRAINER_COOLTRAINER_COLBY ===
 Name: COLBY
@@ -5701,40 +8178,36 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Kingler
-Level: 41
-- Guillotine
-- Stomp
-- Mud Shot
-- Bubble
+Poliwrath
+Ability: Swift Swim
+Level: 50  
+- Reversal
+- Liquidation
+- Psychic
 
-Poliwhirl
-Level: 42
-- Body Slam
-- Double Slap
-- Water Gun
-- Hypnosis
+Politoed
+Ability: Drizzle
+Level: 50  
+- Scald
+- Earth Power
+- Ice Beam
+- Rain Dance
 
 Tentacruel
-Level: 42
-- Barrier
-- Wrap
-- Bubble Beam
+Ability: Rain Dish
+Level: 50  
+- Brine
 - Acid
-
-Seadra
-Level: 42
-- Water Gun
-- Smokescreen
-- Twister
-- Leer
+- Wrap
+- Protect
 
 Blastoise
-Level: 43
-- Water Gun
-- Bite
+Ability: Rain Dish
+Level: 50  
+- Hydro Cannon
+- Flash Cannon
 - Rapid Spin
-- Rain Dance
+- Protect
 
 === TRAINER_COOLTRAINER_PAUL ===
 Name: PAUL
@@ -5789,40 +8262,32 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Raticate
-Level: 42
-- Super Fang
-- Pursuit
-- Scary Face
-- Quick Attack
+Dugtrio
+Ability: Sand Stream
+Level: 50  
+- Sand Tomb
+- Stealth Rock
 
-Ivysaur
-Level: 42
-- Razor Leaf
-- Sleep Powder
-- Sweet Scent
-- Synthesis
+Dugtrio - Alola
+Ability: Sand Force
+Level: 50  
+- Iron Head
+- Stomping Tantrum
+- Rock Slide
 
-Wartortle
-Level: 42
-- Water Gun
-- Bite
-- Rapid Spin
-- Tail Whip
+Sandslash
+Ability: Sand Rush
+Level: 50  
+- High Horsepower
+- Crush Claw
+- Swords Dance
 
-Charmeleon
-Level: 42
-- Flamethrower
-- Slash
-- Smokescreen
-- Scary Face
-
-Charizard
-Level: 42
-- Flamethrower
-- Wing Attack
-- Smokescreen
-- Scary Face
+Golem
+Ability: Sand Veil
+Level: 50  
+- Rock Slide
+- Heavy Slam
+- Substitute
 
 === TRAINER_COOLTRAINER_GILBERT ===
 Name: GILBERT
@@ -5966,39 +8431,41 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Sandslash
-Level: 38
+Ability: Tough Claws
+Level: 38  
+- Dig
 - Slash
-- Swift
-- Sand Attack
-- Poison Sting
+- Gyro Ball
+- Swords Dance
 
 Graveler
-Level: 38
-- Rock Blast
-- Magnitude
-- Mud Sport
-- Defense Curl
+Ability: Sturdy
+Level: 38  
+- Rock Slide
+- Mega Punch
+- Wide Guard
 
 Onix
-Level: 38
-- Dragon Breath
-- Sandstorm
-- Rock Throw
-- Bind
+Ability: Sturdy
+Level: 38  
+- Rock Slide
+- Sand Tomb
+- Screech
 
-Graveler
-Level: 38
-- Rock Blast
-- Magnitude
-- Rollout
-- Defense Curl
+Rhyhorn
+Ability: Rock Head
+Level: 38  
+- Stone Edge
+- Take Down
+- Scary Face
 
 Marowak
-Level: 38
+Ability: Rock Head
+Level: 38  
 - Bonemerang
-- Headbutt
+- Double-Edge
+- Shadow Bone
 - Leer
-- Growl
 
 === TRAINER_COOLTRAINER_WARREN ===
 Name: WARREN
@@ -6010,39 +8477,41 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Marowak
-Level: 37
+Ability: Rock Head
+Level: 37  
 - Bonemerang
-- Headbutt
+- Double-Edge
+- Shadow Bone
 - Leer
-- Growl
 
 Marowak
-Level: 37
+Ability: Rock Head
+Level: 37  
 - Bonemerang
-- Headbutt
+- Double-Edge
+- Shadow Bone
 - Leer
-- Growl
 
 Rhyhorn
-Level: 38
+Ability: Rock Head
+Level: 38  
+- Stone Edge
 - Take Down
-- Rock Blast
-- Fury Attack
 - Scary Face
 
 Nidorina
-Level: 39
-- Fury Swipes
-- Bite
-- Poison Sting
-- Double Kick
+Ability: Poison Point
+Level: 39  
+- Sludge Bomb
+- Earth Power
+- Body Slam
 
 Nidoqueen
-Level: 39
+Ability: Poison Point
+Level: 39  
+- Sludge Bomb
+- Earth Power
 - Body Slam
-- Bite
-- Poison Sting
-- Double Kick
 
 === TRAINER_COOLTRAINER_MARY ===
 Name: MARY
@@ -6054,39 +8523,39 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Bellsprout
-Level: 22
+Ability: Chlorophyll
+Level: 22  
+- Razor Leaf
 - Wrap
-- Stun Spore
-- Poison Powder
-- Growth
+- Acid
 
 Oddish
-Level: 22
-- Poison Powder
-- Stun Spore
-- Absorb
-- Sweet Scent
+Ability: Chlorophyll
+Level: 22  
+- Mega Drain
+- Toxic
 
 Weepinbell
-Level: 22
+Ability: Chlorophyll
+Level: 22  
 - Vine Whip
-- Stun Spore
-- Poison Powder
-- Growth
+- Wrap
+- Acid
+- Strength Sap
 
 Gloom
-Level: 22
-- Absorb
-- Stun Spore
-- Poison Powder
-- Sweet Scent
+Ability: Chlorophyll
+Level: 22  
+- Mega Drain
+- Toxic
 
 Ivysaur
-Level: 22
+Ability: Chlorophyll
+Level: 22  
 - Razor Leaf
+- Take Down
 - Sleep Powder
-- Vine Whip
-- Leech Seed
+- Growl
 
 === TRAINER_COOLTRAINER_CAROLINE ===
 Name: CAROLINE
@@ -6097,40 +8566,37 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Bellsprout
-Level: 42
-- Razor Leaf
-- Acid
-- Stun Spore
-- Poison Powder
+Ninetales
+Ability: Drought
+Level: 50  
+- Flamethrower
+- Extrasensory
+- Calm Mind
+- Sunny Day
 
-Weepinbell
-Level: 42
-- Razor Leaf
-- Acid
+Tangrowth
+Ability: Chlorophyll
+Level: 50  
+- Power Whip
+- Knock Off
+- Rock Tomb
+- Grassy Terrain
+
+Charizard
+Ability: Solar Power
+Level: 50  
+- Blast Burn
+- Air Slash
+- Solar Beam
+- Dragon Pulse
+
+Venusaur
+Ability: Chlorophyll
+Level: 50  
+- Frenzy Plant
+- Sludge Bomb
+- Weather Ball
 - Sleep Powder
-- Poison Powder
-
-Victreebel
-Level: 42
-- Razor Leaf
-- Acid
-- Stun Spore
-- Sleep Powder
-
-Paras
-Level: 42
-- Growth
-- Slash
-- Leech Life
-- Stun Spore
-
-Parasect
-Level: 42
-- Spore
-- Slash
-- Leech Life
-- Poison Powder
 
 === TRAINER_COOLTRAINER_ALEXA ===
 Name: ALEXA
@@ -6141,40 +8607,34 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Clefairy
-Level: 42
-- Light Screen
-- Cosmic Power
-- Double Slap
-- Encore
-
-Jigglypuff
-Level: 42
-- Sing
-- Body Slam
-- Rollout
-- Disable
-
-Persian
-Level: 42
-- Pay Day
-- Faint Attack
-- Bite
-- Screech
+Glaceon
+Ability: Snow Warning
+Level: 50  
+- Blizzard
+- Freeze-Dry
+- Shadow Ball
 
 Dewgong
-Level: 42
-- Sheer Cold
-- Take Down
-- Rest
-- Aurora Beam
+Ability: Slush Rush
+Level: 50  
+- Icy Wind
+- Dive
+- Gyro Ball
+- Swords Dance
 
-Chansey
-Level: 42
-- Sing
-- Egg Bomb
-- Soft Boiled
-- Minimize
+Cloyster
+Ability: Overcoat
+Level: 50  
+- Icicle Crash
+- Razor Shell
+- Protect
+
+Lapras
+Ability: Shell Armor
+Level: 50  
+- Bizzard
+- Brine
+- Life Dew
 
 === TRAINER_COOLTRAINER_SHANNON ===
 Name: SHANNON
@@ -6229,40 +8689,35 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer
 
-Persian
-Level: 42
-- Fury Swipes
-- Screech
-- Faint Attack
-- Pay Day
+Eevee
+Ability: Friend Guard
+Level: 50  
+- Body Slam
+- Charm
+- Helping Hand
+- Detect
 
-Ponyta
-Level: 42
-- Agility
-- Take Down
-- Fire Spin
-- Stomp
+Flareon
+Ability: Drought
+Level: 50  
+- Flare Blitz
+- Double-Edge
+- Weather Ball
 
-Rapidash
-Level: 42
-- Fury Attack
-- Fire Spin
-- Stomp
-- Growl
+Jolteon
+Ability: Electric Surge
+Level: 50  
+- Thunderbolt
+- Pin Missile
+- Double Kick
 
-Vulpix
-Level: 42
-- Flamethrower
-- Confuse Ray
-- Quick Attack
-- Imprison
-
-Ninetales
-Level: 42
-- Safeguard
-- Will O Wisp
-- Confuse Ray
-- Fire Spin
+Vaporeon
+Ability: Drizzle
+Level: 50  
+- Scald
+- Ice Beam
+- Weather Ball
+- Rain Dance
 
 === TRAINER_COOLTRAINER_BROOKE ===
 Name: BROOKE
@@ -6407,39 +8862,51 @@ AI: Smart Trainer
 Mugshot: Purple
 
 Dewgong
+Ability: Slush Rush
 Level: 52
+- Fake Out
+- Dive
 - Ice Beam
-- Surf
-- Hail
-- Safeguard
+- Snowscape
 
 Cloyster
+Ability: Overcoat
 Level: 51
+- Razor Shell
+- Avalanche
 - Spikes
 - Protect
-- Hail
-- Dive
 
-Slowbro
+Ninetales - Alola
+Ability: Snow Warning
 Level: 52
-- Ice Beam
-- Surf
-- Amnesia
+- Icy Wind
+- Moonblast
+- Aurora Veil
+
+Slowking
+Ability: Regenerator
+Level: 52
+- Blizzard
+- Future Sight
 - Yawn
+- Chilly Reception
 
 Jynx
+Ability: Dry Skin
 Level: 54
-- Ice Punch
-- Double Slap
-- Lovely Kiss
-- Attract
-
-Lapras @ Sitrus Berry
-Level: 54
-- Confuse Ray
+- Heart Stamp
+- Psychic
 - Ice Beam
-- Surf
-- Body Slam
+- Nasty Plot
+
+Lapras
+Ability: Water Absorb
+Level: 54
+- Blizzard
+- Freeze-Dry
+- Sparkling Aria
+- Life Dew
 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: BRUNO
@@ -6451,40 +8918,47 @@ Double Battle: Yes
 AI: Smart Trainer
 Mugshot: Green
 
-Onix
-Level: 51
-- Earthquake
-- Rock Tomb
-- Iron Tail
-- Roar
-
-Hitmonchan
-Level: 53
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
-
-Hitmonlee
-Level: 53
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
-
-Onix
+Rhyperior
+Ability: Solid Rock
 Level: 54
-- Double Edge
-- Earthquake
-- Iron Tail
-- Sand Tomb
+- Drill Run
+- Heavy Slam
+- Hammer Arm
+- Rock Wrecker
 
-Machamp @ Sitrus Berry
+Hitmonchan @ Life Orb
+Ability: Iron Fist
+Level: 53
+- Close Combat
+- Fire Punch
+- Ice Punch
+- Thunder Punch
+
+Kleavor
+Ability: Sharpness
+Level: 54
+- Stone Axe
+
+Poliwrath
+Ability: Water Absorb
+Level: 53
+- Waterfall
+- Circle Throw
+- Drain Punch
+- Belly Drum
+
+Steelix
+Ability: Sheer Force
+Level: 51
+- Iron Tail
+- Earth Power
+- Rock Slide
+- Body Press
+
+Machamp @ Choice Band
+Ability: No Guard
 Level: 56
-- Cross Chop
-- Bulk Up
-- Scary Face
-- Rock Tomb
+- Dynamic Punch
 
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: AGATHA
@@ -6497,39 +8971,50 @@ AI: Smart Trainer
 Mugshot: Pink
 
 Gengar
+Ability: Cursed Body
 Level: 54
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
+- Explosion
+- Will-O-Wisp
 
-Golbat
+Clefable @ Leftovers
+Ability: Magic Guard
 Level: 54
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
+- Moonblast
+- Calm Mind
+- Moonlight
+- Protect
 
-Haunter
+Marowak @ Thick Club
+Ability: Lightning Rod
 Level: 53
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
+- Bone Rush
+- Shadow Bone
+- Brick Break
+- Detect
 
 Arbok
+Ability: Intimidate
 Level: 56
-- Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
+- Poison Tail
+- Breaking Swipe
+- Leech Life
+- Spite
 
-Gengar @ Sitrus Berry
+Annahilape
+Ability: Defiant
+Level: 53
+- Rage Fist
+- Drain Punch
+- Knock Off
+- Bulk Up
+
+Gengar @ Focus Sash
+Ability: Levitate
 Level: 58
 - Shadow Ball
 - Sludge Bomb
-- Hypnosis
-- Nightmare
+- Dazzling Gleam
+- Nasty Plot
 
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: LANCE
@@ -6542,39 +9027,51 @@ AI: Smart Trainer
 Mugshot: Blue
 
 Gyarados
+Ability: Intimidate
 Level: 56
-- Hyper Beam
-- Spitfire
-- Twister
-- Bite
-
-Dragonair
-Level: 54
-- Hyper Beam
-- Safeguard
-- Spitfire
+- Waterfall
 - Outrage
+- Temper Flare
+- Dragon Dance
 
-Dragonair
+Dragonite
+Ability: Multiscale
 Level: 54
-- Hyper Beam
-- Safeguard
+- Dragon Tail
+- Wrap
 - Thunder Wave
-- Outrage
+- Rain Dance
 
 Aerodactyl
+Ability: Unnerve
 Level: 58
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
+- Stone Edge
+- Dual Wingbeat
+- Iron Head
 
-Dragonite @ Sitrus Berry
+Kingdra
+Ability: Swift Swim
+Level: 54
+- Dragon Pulse
+- Snipe Shot
+- Ice Beam
+- Rain Dance
+
+Exeggutor - Alola
+Ability: Chlorophyll
+Level: 54
+- Dragon Hammer
+- Wood Hammer
+- Psyshock
+- Dragon Cheer
+
+Dragonite @ Yache Berry
+Ability: Inner Focus
 Level: 60
-- Hyper Beam
-- Safeguard
+- Extreme Speed
+- Hurricane
 - Outrage
-- Wing Attack
+- Thunder
 
 === TRAINER_LEADER_BROCK ===
 Name: BROCK
@@ -6617,7 +9114,7 @@ AI: Smart Trainer
 
 Staryu
 Ability: Natural Cure
-Level: 18  
+Level: 18
 - Bubble Beam
 - Swift
 - Rapid Spin
@@ -6625,23 +9122,33 @@ Level: 18
 
 Psyduck
 Ability: Swift Swim
-Level: 18  
+Level: 18
 - Water Pulse
 - Confusion
-- Fury Swipes
+- Rain Dance
 - Disable
+
+Shellder
+Ability: Overcoat
+Level: 18
+- Clamp
+- Aurora Beam
+- Protect
 
 Togepi
 Ability: Serene Grace
-Level: 19  
+Level: 19
 - Metronome
+- Charm
+- Life Dew
 
 Starmie
 Ability: Natural Cure
-Level: 21  
-- Bubble Beam
+Level: 21
+- Brine
 - Swift
 - Rapid Spin
+- Recover
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: LT. SURGE
@@ -6653,25 +9160,31 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Voltorb
-Level: 21
-- Sonic Boom
-- Tackle
-- Screech
-- Shock Wave
+Ability: Aftermath
+Level: 21  
+- Electro Ball
+- Explosion
 
-Pikachu
-Level: 18
-- Quick Attack
-- Thunder Wave
-- Double Team
-- Shock Wave
+Elekid
+Ability: Static
+Level: 21  
+- Thunder Punch
+- Brick Break
+- Charge
 
-Raichu
-Level: 24
-- Quick Attack
-- Thunder Wave
-- Double Team
+Magnemite @ Sitrus Berry
+Ability: Sturdy
+Level: 21  
+- Charge Beam
+- Mirror Shot
+- Magnet Rise
+
+Raichu @ Focus Sash
+Ability: Static
+Level: 24  
+- Fake Out
 - Shock Wave
+- Body Slam
 
 === TRAINER_LEADER_ERIKA ===
 Name: ERIKA
@@ -6682,26 +9195,40 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Victreebel
-Level: 29
-- Stun Spore
-- Acid
-- Poison Powder
-- Giga Drain
-
-Tangela
-Level: 24
-- Poison Powder
-- Constrict
-- Ingrain
-- Giga Drain
-
-Vileplume
-Level: 29
+Vileplume @ Oran Berry
+Ability: Chlorophyll
+Level: 28  
+- Mega Drain
+- Acid Spray
 - Sleep Powder
-- Acid
-- Stun Spore
-- Giga Drain
+
+Bellossom @ Oran Berry
+Ability: Chlorophyll
+Level: 28  
+- Magical Leaf
+- Moonblast
+- Quiver Dance
+
+Tangela @ Oran Berry
+Ability: Chlorophyll
+Level: 24  
+- Grass Knot
+- Knock Off
+- Rage Powder
+
+Farfetch'd @ Oran Berry
+Ability: Defiant
+Level: 27  
+- Aerial Ace
+- Leaf Blade
+- Leer
+
+Victreebel @ Figy Berry
+Ability: Chlorophyll
+Level: 29  
+- Razor Leaf
+- Poison Jab
+- Swords Dance
 
 === TRAINER_LEADER_KOGA ===
 Name: KOGA
@@ -6712,33 +9239,41 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Koffing
-Level: 37
-- Self Destruct
-- Sludge
-- Smokescreen
+Crobat
+Ability: Inner Focus
+Level: 40  
+- Cross Poison
+- Acrobatics
+- Leech Life
+
+Muk @ Black Sludge
+Ability: Sticky Hold
+Level: 39  
+- Sludge Bomb
+- Toxic Spikes
 - Toxic
 
-Muk
-Level: 39
-- Minimize
-- Sludge
-- Acid Armor
-- Toxic
+Venomoth
+Ability: Compound Eyes
+Level: 37  
+- Venoshock
+- Bug Buzz
+- Quiver Dance
 
-Koffing
-Level: 37
-- Self Destruct
-- Sludge
-- Smokescreen
-- Toxic
+Parasect
+Ability: Dry Skin
+Level: 37  
+- X-Scissor
+- Giga Drain
+- Rage Powder
+- Spore
 
 Weezing
-Level: 43
-- Tackle
-- Sludge
-- Smokescreen
-- Toxic
+Ability: Levitate
+Level: 43  
+- Sludge Bomb
+- Substitute
+- Pain Split
 
 === TRAINER_LEADER_BLAINE ===
 Name: BLAINE
@@ -6749,33 +9284,47 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
-Growlithe
-Level: 42
-- Bite
-- Roar
-- Take Down
-- Fire Blast
+Magmar
+Ability: Flame Body
+Level: 40  
+- Flamethrower
+- Thunderbolt
+- Will-O-Wisp
 
-Ponyta
-Level: 40
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
+Electabuzz
+Ability: Iron Fist
+Level: 40  
+- Thunder Punch
+- Fire Punch
+- Light Screen
 
 Rapidash
-Level: 42
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
+Ability: Flame Body
+Level: 42  
+- Blazing Torque
+- Double-Edge
+- Agility
 
-Arcanine
-Level: 47
-- Bite
-- Roar
-- Take Down
-- Fire Blast
+Ninetales
+Ability: Drought
+Level: 41  
+- Burning Jealousy
+- Extrasensory
+- Sunny Day
+
+Porygon @ Eviolite
+Ability: Trace
+Level: 45  
+- Techno Blast
+- Solar Beam
+- Reflect
+
+Arcanine @ Sitrus Berry
+Ability: Intimidate
+Level: 47  
+- Flare Blitz
+- Thunder Fang
+- Snarl
 
 === TRAINER_LEADER_SABRINA ===
 Name: SABRINA
@@ -6786,33 +9335,40 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Kadabra
-Level: 38
+Espeon
+Ability: Magic Bounce
+Level: 40  
 - Psybeam
+- Charm
+- Wish
+
+Hypno
+Ability: Inner Focus
+Level: 38  
+- Psyshock
+- Disable
+- Nasty Plot
+
+Mr. Mime
+Ability: Soundproof
+Level: 37  
+- Dazzling Gleam
+- Encore
 - Reflect
-- Future Sight
-- Calm Mind
 
-Mr Mime
-Level: 37
-- Barrier
-- Psybeam
-- Baton Pass
-- Calm Mind
-
-Venomoth
-Level: 38
-- Psybeam
-- Gust
-- Leech Life
-- Supersonic
+Wigglytuff
+Ability: Friend Guard
+Level: 38  
+- Hyper Voice
+- Zen Headbutt
+- Helping Hand
 
 Alakazam
-Level: 43
+Ability: Magic Guard
+Level: 43  
 - Psychic
-- Recover
-- Future Sight
 - Calm Mind
+- Recover
 
 === TRAINER_GENTLEMAN_THOMAS ===
 Name: THOMAS
@@ -6824,10 +9380,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Growlithe
-Level: 18
+Ability: Intimidate
+Level: 18  
+- Ember
+- Bite
+- Howl
 
 Growlithe
-Level: 18
+Ability: Intimidate
+Level: 18  
+- Ember
+- Bite
+- Howl
 
 === TRAINER_GENTLEMAN_ARTHUR ===
 Name: ARTHUR
@@ -6839,10 +9403,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Nidoran M
-Level: 19
+Ability: Poison Point
+Level: 19  
+- Poison Fang
+- Peck
+- Leer
 
 Nidoran F
-Level: 19
+Ability: Poison Point
+Level: 19  
+- Poison Tail
+- Bite
+- Growl
 
 === TRAINER_GENTLEMAN_TUCKER ===
 Name: TUCKER
@@ -6853,8 +9425,19 @@ Music: Rich
 Double Battle: Yes
 AI: Smart Trainer
 
+Jolteon
+Ability: Volt Absorb
+Level: 21  
+- Shock Wave
+- Pin Missile
+
 Pikachu
-Level: 23
+Ability: Static
+Level: 21  
+- Fake Out
+- Nuzzle
+- Shock Wave
+- Helping Hand
 
 === TRAINER_GENTLEMAN_NORTON ===
 Name: NORTON
@@ -6893,16 +9476,34 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 19
+Ability: Keen Eye
+Level: 19  
+- Wing Attack
+- Tackle
+- Mud-Slap
+- Tailwind
 
-Raticate
-Level: 16
+Raticate @ Toxic Orb
+Ability: Guts
+Level: 16  
+- Quick Attack
+- Super Fang
+- Bite
+- Leer
 
-Kadabra
-Level: 18
+Kadabra @ Sticky Barb
+Ability: Magic Guard
+Level: 18  
+- Confusion
+- Hidden Power
+- Disable
 
-Wartortle
-Level: 20
+Wartortle @ Oran Berry
+Ability: Torrent
+Level: 20  
+- Water Gun
+- Bite
+- Withdraw
 
 === TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
 Name: TERRY
@@ -6914,16 +9515,35 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 19
+Ability: Keen Eye
+Level: 19  
+- Wing Attack
+- Tackle
+- Mud-Slap
+- Tailwind
 
-Raticate
-Level: 16
+Raticate @ Toxic Orb
+Ability: Guts
+Level: 16  
+- Quick Attack
+- Super Fang
+- Bite
+- Leer
 
-Kadabra
-Level: 18
+Kadabra @ Sticky Barb
+Ability: Magic Guard
+Level: 18  
+- Confusion
+- Hidden Power
+- Disable
 
-Ivysaur
-Level: 20
+Ivysaur @ Oran Berry
+Ability: Overgrow
+Level: 20  
+- Vine Whip
+- Poison Powder
+- Leech Seed
+- Growl
 
 === TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
 Name: TERRY
@@ -6935,16 +9555,35 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 19
+Ability: Keen Eye
+Level: 19  
+- Wing Attack
+- Tackle
+- Mud-Slap
+- Tailwind
 
-Raticate
-Level: 16
+Raticate @ Toxic Orb
+Ability: Guts
+Level: 16  
+- Quick Attack
+- Super Fang
+- Bite
+- Leer
 
-Kadabra
-Level: 18
+Kadabra @ Sticky Barb
+Ability: Magic Guard
+Level: 18  
+- Confusion
+- Hidden Power
+- Disable
 
-Charmeleon
-Level: 20
+Charmeleon @ Oran Berry
+Ability: Blaze
+Level: 20  
+- Ember
+- Metal Claw
+- Spitfire
+- Slash
 
 === TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
 Name: TERRY
@@ -6956,19 +9595,40 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 25
+Ability: Keen Eye
+Level: 25  
+- Wing Attack
+- Tackle
+- Mud-Slap
+- Tailwind
 
-Growlithe
-Level: 23
+Kadabra @ Sticky Barb
+Ability: Magic Guard
+Level: 20  
+- Psybeam
+- Hidden Power
+- Disable
 
-Exeggcute
-Level: 22
+Arcanine
+Ability: Intimidate
+Level: 23  
+- Flame Wheel
+- Bite
+- Howl
 
-Kadabra
-Level: 20
+Exeggutor
+Ability: Harvest
+Level: 22  
+- Mega Drain
+- Confusion
+- Reflect
 
-Wartortle
-Level: 25
+Wartortle @ Sitrus Berry
+Ability: Torrent
+Level: 25  
+- Water Pulse
+- Bite
+- Iron Defense
 
 === TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
 Name: TERRY
@@ -6980,19 +9640,41 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 25
+Ability: Keen Eye
+Level: 25  
+- Wing Attack
+- Tackle
+- Mud-Slap
+- Tailwind
 
-Gyarados
-Level: 23
+Kadabra @ Sticky Barb
+Ability: Magic Guard
+Level: 20  
+- Psybeam
+- Hidden Power
+- Disable
 
-Growlithe
-Level: 22
+Cloyster
+Ability: Skill Link
+Level: 22  
+- Whirlpool
+- Aurora Beam
+- Protect
 
-Kadabra
-Level: 20
+Arcanine
+Ability: Intimidate
+Level: 23  
+- Flame Wheel
+- Bite
+- Howl
 
-Ivysaur
-Level: 25
+Ivysaur @ Sitrus Berry
+Ability: Overgrow
+Level: 25  
+- Razor Leaf
+- Poison Powder
+- Leech Seed
+- Growl
 
 === TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
 Name: TERRY
@@ -7004,19 +9686,40 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeotto
-Level: 25
+Ability: Keen Eye
+Level: 25  
+- Wing Attack
+- Tackle
+- Mud-Slap
+- Tailwind
 
-Exeggcute
-Level: 23
+Kadabra @ Sticky Barb
+Ability: Magic Guard
+Level: 20  
+- Psybeam
+- Hidden Power
+- Disable
 
-Gyarados
-Level: 22
+Exeggutor
+Ability: Harvest
+Level: 23  
+- Mega Drain
+- Confusion
+- Reflect
 
-Kadabra
-Level: 20
+Cloyster
+Ability: Skill Link
+Level: 22  
+- Whirlpool
+- Protect
 
-Charmeleon
-Level: 25
+Charmeleon @ Sitrus Berry
+Ability: Blaze
+Level: 25  
+- Fire Fang
+- Metal Claw
+- Spitfire
+- Slash
 
 === TRAINER_RIVAL_SILPH_SQUIRTLE ===
 Name: TERRY
@@ -7028,19 +9731,40 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeot
-Level: 37
+Ability: No Guard
+Level: 37  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
 
-Growlithe
-Level: 38
+Arcanine
+Ability: Intimidate
+Level: 38  
+- Flame Wheel
+- Crunch
+- Howl
 
-Exeggcute
-Level: 35
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 35  
+- Psybeam
+- Hidden Power
+- Disable
 
-Alakazam
-Level: 35
+Exeggutor
+Ability: Harvest
+Level: 35  
+- Mega Drain
+- Confusion
+- Reflect
 
-Blastoise
-Level: 40
+Blastoise @ Sitrus Berry
+Ability: Torrent
+Level: 40  
+- Aqua Tail
+- Bite
+- Iron Defense
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
 Name: TERRY
@@ -7052,19 +9776,41 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeot
-Level: 37
+Ability: No Guard
+Level: 37  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
 
-Gyarados
-Level: 38
+Cloyster
+Ability: Skill Link
+Level: 38  
+- Whirlpool
+- Aurora Beam
+- Protect
 
-Growlithe
-Level: 35
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 35  
+- Psybeam
+- Hidden Power
+- Disable
 
-Alakazam
-Level: 35
+Arcanine
+Ability: Intimidate
+Level: 35  
+- Flame Wheel
+- Crunch
+- Howl
 
-Venusaur
-Level: 40
+Venusaur @ Sitrus Berry
+Ability: Overgrow
+Level: 40  
+- Razor Leaf
+- Sleep Powder
+- Leech Seed
+- Growl
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
 Name: TERRY
@@ -7076,19 +9822,41 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeot
-Level: 37
+Ability: No Guard
+Level: 37  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
 
-Exeggcute
-Level: 38
-
-Gyarados
-Level: 35
+Exeggutor
+Ability: Harvest
+Level: 38  
+- Mega Drain
+- Confusion
+- Reflect
 
 Alakazam
-Level: 35
+Ability: Magic Guard
+Level: 35  
+- Psybeam
+- Hidden Power
+- Disable
 
-Charizard
-Level: 40
+Cloyster
+Ability: Skill Link
+Level: 35  
+- Whirlpool
+- Aurora Beam
+- Protect
+
+Charizard @ Sitrus Berry
+Ability: Blaze
+Level: 40  
+- Temper Flare
+- Metal Claw
+- Dragon Breath
+- Slash
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
 Name: TERRY
@@ -7100,46 +9868,48 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeot
-Level: 47
-- Feather Dance
-- Wing Attack
-- Gust
-- Quick Attack
+Ability: No Guard
+Level: 47  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Rhyhorn
-Level: 45
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
-
-Growlithe
-Level: 45
-- Flame Wheel
-- Take Down
-- Leer
-- Agility
-
-Exeggcute
-Level: 45
-- Solar Beam
-- Sleep Powder
-- Poison Powder
-- Stun Spore
-
-Alakazam
-Level: 47
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 47  
 - Psychic
-- Calm Mind
-- Future Sight
+- Hidden Power
 - Disable
 
-Blastoise
-Level: 53
-- Water Gun
-- Rain Dance
+Tauros
+Ability: Intimidate
+Level: 45  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Arcanine
+Ability: Intimidate
+Level: 50  
+- Flare Blitz
+- Crunch
+- Howl
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 50  
+- Giga Drain
+- Extrasensory
+- Reflect
+
+Blastoise @ Sitrus Berry
+Ability: Torrent
+Level: 53  
+- Hydro Pump
+- Flash Cannon
 - Bite
-- Rapid Spin
+- Iron Defense
 
 === TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
 Name: TERRY
@@ -7151,46 +9921,48 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeot
-Level: 47
-- Feather Dance
-- Wing Attack
-- Gust
-- Quick Attack
+Ability: No Guard
+Level: 47  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Rhyhorn
-Level: 45
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
-
-Gyarados
-Level: 45
-- Hydro Pump
-- Twister
-- Leer
-- Rain Dance
-
-Growlithe
-Level: 45
-- Flame Wheel
-- Take Down
-- Leer
-- Agility
-
-Alakazam
-Level: 47
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 47  
 - Psychic
-- Calm Mind
-- Future Sight
+- Hidden Power
 - Disable
 
-Venusaur
-Level: 53
-- Razor Leaf
-- Sweet Scent
-- Growth
-- Synthesis
+Tauros
+Ability: Intimidate
+Level: 45  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Cloyster
+Ability: Skill Link
+Level: 50  
+- Clamp
+- Icicle Spear
+- Protect
+
+Arcanine
+Ability: Intimidate
+Level: 50  
+- Flare Blitz
+- Crunch
+- Howl
+
+Venusaur @ Sitrus Berry
+Ability: Overgrow
+Level: 53  
+- Giga Drain
+- Sleep Powder
+- Leech Seed
+- Growl
 
 === TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
 Name: TERRY
@@ -7202,46 +9974,48 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgeot
-Level: 47
-- Feather Dance
-- Wing Attack
-- Gust
-- Quick Attack
+Ability: No Guard
+Level: 47  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Rhyhorn
-Level: 45
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
-
-Exeggcute
-Level: 45
-- Solar Beam
-- Sleep Powder
-- Poison Powder
-- Stun Spore
-
-Gyarados
-Level: 45
-- Hydro Pump
-- Twister
-- Leer
-- Rain Dance
-
-Alakazam
-Level: 47
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 47  
 - Psychic
-- Calm Mind
-- Future Sight
+- Hidden Power
 - Disable
 
-Charizard
-Level: 53
+Tauros
+Ability: Intimidate
+Level: 45  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 50  
+- Giga Drain
+- Extrasensory
+- Reflect
+
+Cloyster
+Ability: Skill Link
+Level: 50  
+- Clamp
+- Icicle Spear
+- Protect
+
+Charizard @ Sitrus Berry
+Ability: Blaze
+Level: 53  
 - Flamethrower
-- Wing Attack
-- Slash
-- Scary Face
+- Air Slash
+- Dragon Breath
+- Metal Claw
 
 === TRAINER_CHAMPION_FIRST_SQUIRTLE ===
 Name: TERRY
@@ -7254,46 +10028,48 @@ AI: Smart Trainer
 Mugshot: Yellow
 
 Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Ability: No Guard
+Level: 59  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Alakazam
-Level: 57
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 57  
 - Psychic
-- Future Sight
-- Recover
-- Reflect
+- Hidden Power
+- Disable
 
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Tauros
+Ability: Intimidate
+Level: 59  
+- Body Slam
+- Iron Head
+- High Horsepower
 
 Arcanine
-Level: 59
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Ability: Intimidate
+Level: 61  
+- Flare Blitz
+- Crunch
+- Howl
 
-Exeggutor
-Level: 61
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 61  
 - Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+- Extrasensory
+- Reflect
 
 Blastoise @ Sitrus Berry
-Level: 63
+Ability: Torrent
+Level: 63  
 - Hydro Pump
-- Rain Dance
-- Skull Bash
+- Flash Cannon
 - Bite
+- Iron Defense
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: TERRY
@@ -7306,46 +10082,48 @@ AI: Smart Trainer
 Mugshot: Yellow
 
 Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Ability: No Guard
+Level: 59  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Alakazam
-Level: 57
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 57  
 - Psychic
-- Future Sight
-- Recover
-- Reflect
+- Hidden Power
+- Disable
 
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Tauros
+Ability: Intimidate
+Level: 59  
+- Body Slam
+- Iron Head
+- High Horsepower
 
-Gyarados
-Level: 59
-- Hydro Pump
-- Spitfire
-- Bite
-- Thrash
+Cloyster
+Ability: Skill Link
+Level: 61  
+- Clamp
+- Icicle Spear
+- Protect
 
 Arcanine
-Level: 61
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Ability: Intimidate
+Level: 61  
+- Flare Blitz
+- Crunch
+- Howl
 
 Venusaur @ Sitrus Berry
-Level: 63
-- Solar Beam
-- Synthesis
-- Sunny Day
-- Growth
+Ability: Overgrow
+Level: 63  
+- Giga Drain
+- Sleep Powder
+- Leech Seed
+- Growl
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: TERRY
@@ -7358,46 +10136,48 @@ AI: Smart Trainer
 Mugshot: Yellow
 
 Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Ability: No Guard
+Level: 59  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Alakazam
-Level: 57
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 57  
 - Psychic
-- Future Sight
-- Recover
+- Hidden Power
+- Disable
+
+Tauros
+Ability: Intimidate
+Level: 59  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 61  
+- Giga Drain
+- Extrasensory
 - Reflect
 
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
-
-Exeggutor
-Level: 59
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
-
-Gyarados
-Level: 61
-- Hydro Pump
-- Spitfire
-- Bite
-- Thrash
+Cloyster
+Ability: Skill Link
+Level: 61  
+- Clamp
+- Icicle Spear
+- Protect
 
 Charizard @ Sitrus Berry
-Level: 63
-- Fire Blast
-- Aerial Ace
-- Slash
-- Fire Spin
+Ability: Blaze
+Level: 63  
+- Flamethrower
+- Air Slash
+- Dragon Breath
+- Metal Claw
 
 === TRAINER_CHANNELER_PATRICIA ===
 Name: PATRICIA
@@ -7408,8 +10188,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
+Drowzee
+Ability: Bad Dreams
+Level: 21  
+- Psybeam
+- Hypnosis
+- Disable
+
 Gastly
-Level: 22
+Ability: Levitate
+Level: 21  
+- Lick
+- Thief
+- Mean Look
 
 === TRAINER_CHANNELER_CARLY ===
 Name: CARLY
@@ -7421,7 +10212,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Gastly
-Level: 24
+Ability: Levitate
+Level: 21  
+- Lick
+- Thief
+- Mean Look
+
+Clefairy
+Ability: Friend Guard
+Level: 21  
+- Alluring Voice
+- Follow Me
+- Life Dew
 
 === TRAINER_CHANNELER_HOPE ===
 Name: HOPE
@@ -7433,7 +10235,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Gastly
-Level: 23
+Ability: Levitate
+Level: 21  
+- Lick
+- Thief
+- Mean Look
+
+Gastly
+Ability: Levitate
+Level: 21  
+- Lick
+- Thief
+- Mean Look
 
 === TRAINER_CHANNELER_PAULA ===
 Name: PAULA
@@ -7444,8 +10257,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 24
+Haunter
+Ability: Levitate
+Level: 23  
+- Lick
+- Sucker Punch
+- Mean Look
+
+Smoochum
+Ability: Hydration
+Level: 22  
+- Heart Stamp
+- Powder Snow
+- Confusion
+- Sweet Kiss
 
 === TRAINER_CHANNELER_LAUREL ===
 Name: LAUREL
@@ -7456,11 +10281,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 23
+Cubone
+Ability: Rock Head
+Level: 22  
+- Bone Club
+- Headbutt
+- Growl
 
 Gastly
-Level: 23
+Ability: Levitate
+Level: 22  
+- Lick
+- Thief
+- Mean Look
 
 === TRAINER_CHANNELER_JODY ===
 Name: JODY
@@ -7472,7 +10305,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Gastly
-Level: 22
+Ability: Levitate
+Level: 21  
+- Lick
+- Thief
+- Mean Look
+
+Gastly
+Ability: Levitate
+Level: 21  
+- Lick
+- Thief
+- Mean Look
+
+Gastly
+Ability: Levitate
+Level: 21  
+- Lick
+- Thief
+- Mean Look
 
 === TRAINER_CHANNELER_TAMMY ===
 Name: TAMMY
@@ -7484,7 +10335,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Haunter
-Level: 23
+Ability: Levitate
+Level: 22  
+- Lick
+- Sucker Punch
+- Mean Look
+
+Drowzee
+Ability: Bad Dreams
+Level: 22  
+- Psybeam
+- Hypnosis
+- Disable
 
 === TRAINER_CHANNELER_RUTH ===
 Name: RUTH
@@ -7495,8 +10357,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 22
+Haunter
+Ability: Levitate
+Level: 22  
+- Lick
+- Thief
+- Mean Look
+
+Cubone
+Ability: Rock Head
+Level: 22  
+- Bone Club
+- Headbutt
+- Growl
 
 === TRAINER_CHANNELER_KARINA ===
 Name: KARINA
@@ -7507,8 +10380,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 24
+Clefairy
+Ability: Friend Guard
+Level: 22  
+- Alluring Voice
+- Follow Me
+- Life Dew
+
+Haunter
+Ability: Levitate
+Level: 22  
+- Lick
+- Sucker Punch
+- Mean Look
 
 === TRAINER_CHANNELER_JANAE ===
 Name: JANAE
@@ -7519,8 +10403,19 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 22
+Haunter
+Ability: Levitate
+Level: 22  
+- Lick
+- Sucker Punch
+- Mean Look
+
+Haunter
+Ability: Levitate
+Level: 22  
+- Lick
+- Sucker Punch
+- Mean Look
 
 === TRAINER_CHANNELER_ANGELICA ===
 Name: ANGELICA
@@ -7532,13 +10427,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Gastly
-Level: 22
+Ability: Levitate
+Level: 22  
+- Hex
+- Thief
+- Mean Look
 
 Gastly
-Level: 22
+Ability: Levitate
+Level: 22  
+- Hex
+- Thief
+- Mean Look
 
-Gastly
-Level: 22
+Haunter
+Ability: Levitate
+Level: 22  
+- Hex
+- Sucker Punch
+- Mean Look
 
 === TRAINER_CHANNELER_EMILIA ===
 Name: EMILIA
@@ -7550,7 +10457,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Gastly
-Level: 24
+Ability: Levitate
+Level: 21  
+- Hex
+- Thief
+- Mean Look
+
+Gastly
+Ability: Levitate
+Level: 21  
+- Hex
+- Thief
+- Mean Look
+
+Gengar
+Ability: Levitate
+Level: 23  
+- Night Shade
+- Sucker Punch
+- Mean Look
+- Curse
 
 === TRAINER_CHANNELER_JENNIFER ===
 Name: JENNIFER
@@ -7561,8 +10487,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 24
+Jynx
+Ability: Dry Skin
+Level: 22  
+- Heart Stamp
+- Powder Snow
+- Confusion
+- Lovely Kiss
+
+Haunter
+Ability: Levitate
+Level: 22  
+- Lick
+- Sucker Punch
+- Mean Look
 
 === TRAINER_CHANNELER_AMANDA ===
 Name: AMANDA
@@ -7573,11 +10511,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 34
+Jynx
+Ability: Forewarn
+Level: 34  
+- Heart Stamp
+- Psychic Noise
+- Icy Wind
+- Lovely Kiss
 
-Haunter
-Level: 34
+Gengar
+Ability: Levitate
+Level: 34  
+- Hex
+- Dream Eater
+- Mean Look
 
 === TRAINER_CHANNELER_STACY ===
 Name: STACY
@@ -7588,8 +10535,20 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Haunter
-Level: 38
+Mr. Mime - Galar
+Ability: Soundproof
+Level: 35  
+- Fake Out
+- Aurora Beam
+- Reflect
+- Encore
+
+Ponyta - Galar
+Ability: Pastel Veil
+Level: 35  
+- Psychic
+- Dazzling Gleam
+- Stomp
 
 === TRAINER_CHANNELER_TASHA ===
 Name: TASHA
@@ -7600,14 +10559,26 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer
 
-Gastly
-Level: 33
+Espeon
+Ability: Magic Bounce
+Level: 33  
+- Psychic
+- Charm
+- Morning Sun
 
-Gastly
-Level: 33
+Umbreon
+Ability: Inner Focus
+Level: 33  
+- Snarl
+- Foul Play
+- Moonlight
 
-Haunter
-Level: 33
+Sylveon
+Ability: Pixilate
+Level: 33  
+- Quick Attack
+- Moonblast
+- Wish
 
 === TRAINER_HIKER_JEREMY ===
 Name: JEREMY
@@ -7619,10 +10590,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Machop
-Level: 20
+Ability: Guts
+Level: 20  
+- Karate Chop
+- Knock Off
+- Focus Energy
 
 Onix
-Level: 20
+Ability: Sturdy
+Level: 20  
+- Rock Tomb
+- Bind
+- Screech
 
 === TRAINER_PICNICKER_ALMA ===
 Name: ALMA
@@ -7634,13 +10613,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 28
+Ability: Lightning Rod
+Level: 28  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Poliwag
-Level: 28
+Ability: Damp
+Level: 28  
+- Scald
+- Mud Shot
+- Body Slam
 
 Horsea
-Level: 28
+Ability: Swift Swim
+Level: 28  
+- Bubble Beam
+- Dragon Breath
+- Smokescreen
 
 === TRAINER_PICNICKER_SUSIE ===
 Name: SUSIE
@@ -7652,19 +10644,42 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 24
+Ability: Keen Eye
+Level: 24  
+- Quick Attack
+- Wing Attack
+- Facade
+- Mud-Slap
 
 Meowth
-Level: 24
+Ability: Technician
+Level: 24  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Rattata
-Level: 24
+Ability: Guts
+Level: 24  
+- Quick Attack
+- Hyper Fang
+- Bite
 
 Pikachu
-Level: 24
+Ability: Static
+Level: 24  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Meowth
-Level: 24
+Ability: Technician
+Level: 24  
+- Fake Out
+- Pay Day
+- Taunt
 
 === TRAINER_PICNICKER_VALERIE ===
 Name: VALERIE
@@ -7676,10 +10691,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Poliwag
-Level: 30
+Ability: Damp
+Level: 30  
+- Scald
+- Mud Shot
+- Body Slam
 
 Poliwag
-Level: 30
+Ability: Damp
+Level: 30  
+- Scald
+- Mud Shot
+- Body Slam
 
 === TRAINER_PICNICKER_GWEN ===
 Name: GWEN
@@ -7691,16 +10714,36 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 27
+Ability: Keen Eye
+Level: 27  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 Meowth
-Level: 27
+Ability: Technician
+Level: 27  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Pidgey
-Level: 27
+Ability: Keen Eye
+Level: 27  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Mud-Slap
 
 Pidgeotto
-Level: 27
+Ability: Keen Eye
+Level: 27  
+- Quick Attack
+- Wing Attack
+- Mud-Slap
+- Tailwind
 
 === TRAINER_BIKER_VIRGIL ===
 Name: VIRGIL
@@ -7712,25 +10755,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Weezing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Clear Smog
+- Poison Gas
+- Haze
 
 Koffing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Sludge Bomb
+- Poison Gas
+- Haze
 
 Weezing
-Level: 28
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 28  
+- Clear Smog
+- Poison Gas
+- Haze
 
 === TRAINER_CAMPER_FLINT ===
 Name: FLINT
@@ -7765,10 +10808,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 31
+Ability: Lightning Rod
+Level: 31  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Seaking
-Level: 31
+Ability: Lightning Rod
+Level: 31  
+- Water Pulse
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_PICNICKER_IRENE ===
 Name: IRENE
@@ -7780,13 +10833,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Tentacool
-Level: 30
+Ability: Liquid Ooze
+Level: 30  
+- Brine
+- Acid
+- Wrap
 
 Horsea
-Level: 30
+Ability: Swift Swim
+Level: 30  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Seel
-Level: 30
+Ability: Slush Rush
+Level: 30  
+- Dive
+- Aurora Beam
+- Snowscape
 
 === TRAINER_PICNICKER_DANA ===
 Name: DANA
@@ -7798,13 +10863,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Meowth
-Level: 20
+Ability: Pickup
+Level: 20  
+- Fake Out
+- Pay Day
+- Thief
+- Taunt
 
 Oddish
-Level: 20
+Ability: Leaf Guard
+Level: 20  
+- Mega Drain
+- Poison Powder
 
 Pidgey
-Level: 20
+Ability: Keen Eye
+Level: 20  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
+- Tailwind
 
 === TRAINER_PICNICKER_ARIANA ===
 Name: ARIANA
@@ -7816,16 +10894,33 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pidgey
-Level: 19
+Ability: Keen Eye
+Level: 19  
+- Wing Attack
+- Quick Attack
+- Mud-Slap
+- Tailwind
 
 Rattata
-Level: 19
+Ability: Guts
+Level: 19  
+- Quick Attack
+- Take Down
+- Bite
 
 Rattata
-Level: 19
+Ability: Guts
+Level: 19  
+- Quick Attack
+- Take Down
+- Bite
 
 Bellsprout
-Level: 19
+Ability: Gluttony
+Level: 19  
+- Vine Whip
+- Wrap
+- Acid
 
 === TRAINER_PICNICKER_LEAH ===
 Name: LEAH
@@ -7837,10 +10932,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Bellsprout
-Level: 22
+Ability: Gluttony
+Level: 22  
+- Vine Whip
+- Wrap
+- Acid
 
 Clefairy
-Level: 22
+Ability: Friend Guard
+Level: 22  
+- Draining Kiss
+- Follow Me
 
 === TRAINER_CAMPER_JUSTIN ===
 Name: JUSTIN
@@ -7852,10 +10954,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Nidoran M
-Level: 29
+Ability: Poison Point
+Level: 29  
+- Poison Jab
+- Double Kick
+- Peck
+- Leer
 
 Nidorino
-Level: 29
+Ability: Poison Point
+Level: 29  
+- Poison Jab
+- Double Kick
+- Peck
+- Leer
 
 === TRAINER_PICNICKER_YAZMIN ===
 Name: YAZMIN
@@ -7867,13 +10979,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Bellsprout
-Level: 29
+Ability: Gluttony
+Level: 29  
+- Razor Leaf
+- Wrap
+- Acid
 
 Oddish
-Level: 29
+Ability: Leaf Guard
+Level: 29  
+- Mega Drain
+- Acid Spray
+- Toxic
 
 Tangela
-Level: 29
+Ability: Chlorophyll
+Level: 29  
+- Grass Knot
+- Tickle
+- Grassy Terrain
 
 === TRAINER_PICNICKER_KINDRA ===
 Name: KINDRA
@@ -7885,13 +11009,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Gloom
-Level: 28
+Ability: Leaf Guard
+Level: 28  
+- Mega Drain
+- Acid Spray
+- Toxic
 
 Oddish
-Level: 28
+Ability: Leaf Guard
+Level: 28  
+- Mega Drain
+- Acid Spray
+- Toxic
 
 Oddish
-Level: 28
+Ability: Leaf Guard
+Level: 28  
+- Mega Drain
+- Acid Spray
+- Toxic
 
 === TRAINER_PICNICKER_BECKY ===
 Name: BECKY
@@ -7903,10 +11039,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pikachu
-Level: 29
+Ability: Static
+Level: 29  
+- Fake Out
+- Nuzzle
+- Spark
+- Tail Whip
 
 Raichu
-Level: 29
+Ability: Static
+Level: 29  
+- Fake Out
+- Nuzzle
+- Spark
+- Tail Whip
 
 === TRAINER_PICNICKER_CELIA ===
 Name: CELIA
@@ -7918,7 +11064,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Clefairy
-Level: 33
+Ability: Friend Guard
+Level: 30  
+- Moonblast
+- Meteor Mash
+- Follow Me
+- Life Dew
+
+Ivysaur
+Ability: Overgrow
+Level: 30  
+- Razor Leaf
+- Take Down
+- Sleep Powder
+- Growl
 
 === TRAINER_GENTLEMAN_BROOKS ===
 Name: BROOKS
@@ -7930,7 +11089,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Pikachu
-Level: 23
+Ability: Static
+Level: 19  
+- Fake Out
+- Nuzzle
+- Spark
+
+Eevee
+Ability: Adaptability
+Level: 19  
+- Tackle
+- Bite
+- Baby-Doll Eyes
+- Helping Hand
 
 === TRAINER_GENTLEMAN_LAMAR ===
 Name: LAMAR
@@ -7942,10 +11113,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Growlithe
-Level: 17
+Ability: Intimidate
+Level: 17  
+- Ember
+- Bite
+- Howl
 
 Ponyta
-Level: 17
+Ability: Flame Body
+Level: 17  
+- Flame Charge
+- Tackle
+- Agility
 
 === TRAINER_TWINS_ELI_ANNE ===
 Name: ELI & ANNE
@@ -7994,11 +11173,19 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Nidoran M
-Level: 24
+Nidorino
+Ability: Poison Point
+Level: 24  
+- Poison Jab
+- Peck
+- Leer
 
-Nidoran F
-Level: 24
+Nidorina
+Ability: Poison Point
+Level: 24  
+- Poison Tail
+- Crunch
+- Growl
 
 === TRAINER_TWINS_KIRI_JAN ===
 Name: KIRI & JAN
@@ -8009,11 +11196,19 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Charmander
-Level: 29
+Magby
+Ability: Flame Body
+Level: 29  
+- Fire Punch
+- Clear Smog
+- Sunny Day
 
-Squirtle
-Level: 29
+Elekid
+Ability: Static
+Level: 29  
+- Thunder Punch
+- Brick Break
+- Leer
 
 === TRAINER_CRUSH_KIN_RON_MYA ===
 Name: RON & MYA
@@ -8025,10 +11220,17 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Hitmonchan @ Black Belt
-Level: 29
+Ability: Iron Fist
+Level: 29  
+- Mach Punch
+- Ice Punch
+- Thunder Punch
 
 Hitmonlee @ Black Belt
-Level: 29
+Ability: Limber
+Level: 29  
+- Jump Kick
+- Blaze Kick
 
 === TRAINER_YOUNG_COUPLE_LEA_JED ===
 Name: LEA & JED
@@ -8039,11 +11241,19 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer
 
-Rapidash
-Level: 29
-
 Ninetales
-Level: 29
+Ability: Flash Fire
+Level: 29  
+- Fire Spin
+- Disable
+- Confuse Ray
+
+Arcanine
+Ability: Intimidate
+Level: 29  
+- Fire Fang
+- Bite
+- Howl
 
 === TRAINER_SIS_AND_BRO_LIA_LUC ===
 Name: LIA & LUC
@@ -8055,10 +11265,20 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Goldeen
-Level: 30
+Ability: Lightning Rod
+Level: 30  
+- Waterfall
+- Drill Peck
+- Smart Strike
+- Tail Whip
 
 Seaking
-Level: 30
+Ability: Lightning Rod
+Level: 30  
+- Water Pulse
+- Peck
+- Smart Strike
+- Tail Whip
 
 === TRAINER_SIS_AND_BRO_LIL_IAN ===
 Name: LIL & IAN
@@ -8070,10 +11290,19 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Seadra
-Level: 33
+Ability: Swift Swim
+Level: 33  
+- Snipe Shot
+- Dragon Pulse
+- Smokescreen
 
 Starmie
-Level: 33
+Ability: Natural Cure
+Level: 33  
+- Brine
+- Psybeam
+- Swift
+- Cosmic Power
 
 === TRAINER_YOUNGSTER_BEN_3 ===
 Name: BEN
@@ -8605,11 +11834,20 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer
 
-Clefairy
-Level: 28
+Clefairy (F)
+Ability: Friend Guard
+Level: 22  
+- Draining Kiss
+- Follow Me
+- Life Dew
 
-Jigglypuff
-Level: 28
+Jigglypuff (M)
+Ability: Competitive
+Level: 22  
+- Headbutt
+- Silly Slap
+- Rest
+- Sing
 
 === TRAINER_YOUNGSTER_JOHNSON ===
 Name: JOHNSON
@@ -8621,13 +11859,26 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ekans
-Level: 33
+Ability: Intimidate
+Level: 33  
+- Poison Tail
+- Wrap
+- Crunch
 
 Ekans
-Level: 33
+Ability: Intimidate
+Level: 33  
+- Poison Tail
+- Wrap
+- Crunch
 
 Raticate
-Level: 34
+Ability: Guts
+Level: 34  
+- Quick Attack
+- Super Fang
+- Crunch
+- Leer
 
 === TRAINER_BIKER_RICARDO ===
 Name: RICARDO
@@ -8639,25 +11890,25 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Koffing
-Level: 22
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 22  
+- Clear Smog
 - Poison Gas
+- Haze
 
 Koffing
-Level: 22
-- Sludge
-- Smog
-- Tackle
+Ability: Levitate
+Level: 22  
+- Clear Smog
 - Poison Gas
+- Haze
 
 Grimer
-Level: 23
-- Minimize
+Ability: Stench
+Level: 23  
 - Sludge
-- Disable
-- Pound
+- Body Slam
+- Mud-Slap
 
 === TRAINER_BIKER_JAREN ===
 Name: JAREN
@@ -8669,10 +11920,18 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Grimer
-Level: 24
+Ability: Stench
+Level: 24  
+- Sludge
+- Body Slam
+- Mud-Slap
 
 Grimer
-Level: 24
+Ability: Stench
+Level: 24  
+- Sludge
+- Body Slam
+- Mud-Slap
 
 === TRAINER_TEAM_ROCKET_GRUNT_43 ===
 Name: GRUNT
@@ -12601,15 +15860,14 @@ Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Leer
+- Tail Whip
 
-Bulbasaur
-Ability: Overgrow
+Squirtle
+Ability: Torrent
 Level: 18  
-- Vine Whip
-- Tackle
-- Leech Seed
-- Growl
+- Water Gun
+- Bite
+- Withdraw
 
 === TRAINER_RIVAL_CERULEAN_BULBASAUR ===
 Name: TERRY
@@ -12639,14 +15897,15 @@ Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Leer
+- Tail Whip
 
-Charmander
-Ability: Blaze
+Bulbasaur
+Ability: Overgrow
 Level: 18  
-- Ember
-- Metal Claw
-- Spitfire
+- Vine Whip
+- Tackle
+- Leech Seed
+- Growl
 
 === TRAINER_RIVAL_CERULEAN_CHARMANDER ===
 Name: TERRY
@@ -12676,14 +15935,14 @@ Ability: Guts
 Level: 15  
 - Tackle
 - Bite
-- Leer
+- Tail Whip
 
-Squirtle
-Ability: Torrent
+Charmander
+Ability: Blaze
 Level: 18  
-- Water Gun
-- Bite
-- Withdraw
+- Ember
+- Metal Claw
+- Spitfire
 
 === TRAINER_LEADER_MISTY ===
 Name: MISTY
@@ -12696,18 +15955,42 @@ AI: Smart Trainer
 Difficulty: Normal
 
 Staryu
+Ability: Natural Cure
 Level: 18
-- Tackle
-- Harden
+- Bubble Beam
+- Swift
+- Rapid Spin
 - Recover
+
+Psyduck
+Ability: Swift Swim
+Level: 18
 - Water Pulse
+- Confusion
+- Rain Dance
+- Disable
+
+Shellder
+Ability: Overcoat
+Level: 18
+- Clamp
+- Aurora Beam
+- Protect
+
+Togepi
+Ability: Serene Grace
+Level: 19
+- Metronome
+- Charm
+- Life Dew
 
 Starmie
+Ability: Natural Cure
 Level: 21
+- Brine
 - Swift
-- Recover
 - Rapid Spin
-- Water Pulse
+- Recover
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: LT. SURGE
@@ -12857,33 +16140,47 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Normal
 
-Growlithe
-Level: 42
-- Bite
-- Roar
-- Take Down
-- Fire Blast
+Magmar
+Ability: Flame Body
+Level: 40  
+- Flamethrower
+- Thunderbolt
+- Will-O-Wisp
 
-Ponyta
-Level: 40
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
+Electabuzz
+Ability: Iron Fist
+Level: 40  
+- Thunder Punch
+- Fire Punch
+- Light Screen
 
 Rapidash
-Level: 42
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
+Ability: Flame Body
+Level: 42  
+- Blazing Torque
+- Double-Edge
+- Agility
 
-Arcanine
-Level: 47
-- Bite
-- Roar
-- Take Down
-- Fire Blast
+Ninetales
+Ability: Drought
+Level: 41  
+- Burning Jealousy
+- Extrasensory
+- Sunny Day
+
+Porygon @ Eviolite
+Ability: Trace
+Level: 45  
+- Techno Blast
+- Solar Beam
+- Reflect
+
+Arcanine @ Sitrus Berry
+Ability: Intimidate
+Level: 47  
+- Flare Blitz
+- Thunder Fang
+- Snarl
 
 === TRAINER_LEADER_GIOVANNI ===
 Name: GIOVANNI
@@ -12942,39 +16239,51 @@ Difficulty: Normal
 Mugshot: Purple
 
 Dewgong
+Ability: Slush Rush
 Level: 52
+- Fake Out
+- Dive
 - Ice Beam
-- Surf
-- Hail
-- Safeguard
+- Snowscape
 
 Cloyster
+Ability: Overcoat
 Level: 51
+- Razor Shell
+- Avalanche
 - Spikes
 - Protect
-- Hail
-- Dive
 
-Slowbro
+Ninetales - Alola
+Ability: Snow Warning
 Level: 52
-- Ice Beam
-- Surf
-- Amnesia
+- Icy Wind
+- Moonblast
+- Aurora Veil
+
+Slowking
+Ability: Regenerator
+Level: 52
+- Blizzard
+- Future Sight
 - Yawn
+- Chilly Reception
 
 Jynx
+Ability: Dry Skin
 Level: 54
-- Ice Punch
-- Double Slap
-- Lovely Kiss
-- Attract
-
-Lapras @ Sitrus Berry
-Level: 54
-- Confuse Ray
+- Heart Stamp
+- Psychic
 - Ice Beam
-- Surf
-- Body Slam
+- Nasty Plot
+
+Lapras
+Ability: Water Absorb
+Level: 54
+- Blizzard
+- Freeze-Dry
+- Sparkling Aria
+- Life Dew
 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: BRUNO
@@ -12987,40 +16296,38 @@ AI: Smart Trainer
 Difficulty: Normal
 Mugshot: Green
 
-Onix
-Level: 51
-- Earthquake
-- Rock Tomb
+Rhydon
+Ability: Rock Head
+Level: 54  
+- Drill Run
+- Heavy Slam
+- Hammer Arm
+
+Hitmonchan @ Life Orb
+Ability: Iron Fist
+Level: 53  
+- Fire Punch
+- Ice Punch
+- Thunder Punch
+
+Poliwrath
+Ability: Water Absorb
+Level: 53  
+- Waterfall
+- Circle Throw
+- Belly Drum
+
+Steelix
+Ability: Sheer Force
+Level: 51  
 - Iron Tail
-- Roar
+- Drill Run
+- Rock Slide
 
-Hitmonchan
-Level: 53
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
-
-Hitmonlee
-Level: 53
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
-
-Onix
-Level: 54
-- Double Edge
-- Earthquake
-- Iron Tail
-- Sand Tomb
-
-Machamp @ Sitrus Berry
-Level: 56
-- Cross Chop
-- Bulk Up
-- Scary Face
-- Rock Tomb
+Machamp
+Ability: No Guard
+Level: 56  
+- Dynamic Punch
 
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: AGATHA
@@ -13034,650 +16341,50 @@ Difficulty: Normal
 Mugshot: Pink
 
 Gengar
+Ability: Cursed Body
 Level: 54
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
+- Explosion
+- Will-O-Wisp
 
-Golbat
+Clefable @ Leftovers
+Ability: Magic Guard
 Level: 54
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
+- Moonblast
+- Calm Mind
+- Moonlight
+- Protect
 
-Haunter
+Marowak @ Thick Club
+Ability: Lightning Rod
 Level: 53
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
+- Bone Rush
+- Shadow Bone
+- Brick Break
+- Detect
 
 Arbok
+Ability: Intimidate
 Level: 56
-- Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
-
-Gengar @ Sitrus Berry
-Level: 58
-- Shadow Ball
-- Sludge Bomb
-- Hypnosis
-- Nightmare
-
-=== TRAINER_ELITE_FOUR_LANCE ===
-Name: LANCE
-Class: Elite Four Frlg
-Pic: Elite Four Lance Frlg
-Gender: Male
-Music: Elite Four
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Normal
-Mugshot: Blue
-
-Gyarados
-Level: 56
-- Hyper Beam
-- Spitfire
-- Twister
-- Bite
-
-Dragonair
-Level: 54
-- Hyper Beam
-- Safeguard
-- Spitfire
-- Outrage
-
-Dragonair
-Level: 54
-- Hyper Beam
-- Safeguard
-- Thunder Wave
-- Outrage
-
-Aerodactyl
-Level: 58
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
-
-Dragonite @ Sitrus Berry
-Level: 60
-- Hyper Beam
-- Safeguard
-- Outrage
-- Wing Attack
-
-=== TRAINER_CHAMPION_FIRST_SQUIRTLE ===
-Name: TERRY
-Class: Champion Frlg
-Pic: Champion Rival Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Normal
-Mugshot: Yellow
-
-Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
-
-Alakazam
-Level: 57
-- Psychic
-- Future Sight
-- Recover
-- Reflect
-
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
-
-Arcanine
-Level: 59
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
-
-Exeggutor
-Level: 61
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
-
-Blastoise @ Sitrus Berry
-Level: 63
-- Hydro Pump
-- Rain Dance
-- Skull Bash
-- Bite
-
-=== TRAINER_CHAMPION_FIRST_BULBASAUR ===
-Name: TERRY
-Class: Champion Frlg
-Pic: Champion Rival Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Normal
-Mugshot: Yellow
-
-Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
-
-Alakazam
-Level: 57
-- Psychic
-- Future Sight
-- Recover
-- Reflect
-
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
-
-Gyarados
-Level: 59
-- Hydro Pump
-- Spitfire
-- Bite
-- Thrash
-
-Arcanine
-Level: 61
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
-
-Venusaur @ Sitrus Berry
-Level: 63
-- Solar Beam
-- Synthesis
-- Sunny Day
-- Growth
-
-=== TRAINER_CHAMPION_FIRST_CHARMANDER ===
-Name: TERRY
-Class: Champion Frlg
-Pic: Champion Rival Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Normal
-Mugshot: Yellow
-
-Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
-
-Alakazam
-Level: 57
-- Psychic
-- Future Sight
-- Recover
-- Reflect
-
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
-
-Exeggutor
-Level: 59
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
-
-Gyarados
-Level: 61
-- Hydro Pump
-- Spitfire
-- Bite
-- Thrash
-
-Charizard @ Sitrus Berry
-Level: 63
-- Fire Blast
-- Aerial Ace
-- Slash
-- Fire Spin
-
- START CHAMPION MODE BOSSES 
-
-=== TRAINER_LEADER_BROCK ===
-Name: BROCK
-Class: Leader Frlg
-Pic: Leader Brock Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Geodude
-Level: 12
-- Tackle
-- Defense Curl
-
-Onix
-Level: 14
-- Tackle
-- Bind
-- Rock Tomb
-
-=== TRAINER_LEADER_MISTY ===
-Name: MISTY
-Class: Leader Frlg
-Pic: Leader Misty Frlg
-Gender: Male
-Music: Female
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Staryu
-Level: 18
-- Tackle
-- Harden
-- Recover
-- Water Pulse
-
-Starmie
-Level: 21
-- Swift
-- Recover
-- Rapid Spin
-- Water Pulse
-
-=== TRAINER_LEADER_LT_SURGE ===
-Name: LT. SURGE
-Class: Leader Frlg
-Pic: Leader Lt Surge Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Voltorb
-Level: 21
-- Sonic Boom
-- Tackle
-- Screech
-- Shock Wave
-
-Pikachu
-Level: 18
-- Quick Attack
-- Thunder Wave
-- Double Team
-- Shock Wave
-
-Raichu
-Level: 24
-- Quick Attack
-- Thunder Wave
-- Double Team
-- Shock Wave
-
-=== TRAINER_LEADER_ERIKA ===
-Name: ERIKA
-Class: Leader Frlg
-Pic: Leader Erika Frlg
-Gender: Male
-Music: Female
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Victreebel
-Level: 29
-- Stun Spore
-- Acid
-- Poison Powder
-- Giga Drain
-
-Tangela
-Level: 24
-- Poison Powder
-- Constrict
-- Ingrain
-- Giga Drain
-
-Vileplume
-Level: 29
-- Sleep Powder
-- Acid
-- Stun Spore
-- Giga Drain
-
-=== TRAINER_LEADER_KOGA ===
-Name: KOGA
-Class: Leader Frlg
-Pic: Leader Koga Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Koffing
-Level: 37
-- Self Destruct
-- Sludge
-- Smokescreen
-- Toxic
-
-Muk
-Level: 39
-- Minimize
-- Sludge
-- Acid Armor
-- Toxic
-
-Koffing
-Level: 37
-- Self Destruct
-- Sludge
-- Smokescreen
-- Toxic
-
-Weezing
-Level: 43
-- Tackle
-- Sludge
-- Smokescreen
-- Toxic
-
-=== TRAINER_LEADER_SABRINA ===
-Name: SABRINA
-Class: Leader Frlg
-Pic: Leader Sabrina Frlg
-Gender: Male
-Music: Female
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Kadabra
-Level: 38
-- Psybeam
-- Reflect
-- Future Sight
-- Calm Mind
-
-Mr Mime
-Level: 37
-- Barrier
-- Psybeam
-- Baton Pass
-- Calm Mind
-
-Venomoth
-Level: 38
-- Psybeam
-- Gust
+- Poison Tail
+- Breaking Swipe
 - Leech Life
-- Supersonic
+- Spite
 
-Alakazam
-Level: 43
-- Psychic
-- Recover
-- Future Sight
-- Calm Mind
-
-=== TRAINER_LEADER_BLAINE ===
-Name: BLAINE
-Class: Leader Frlg
-Pic: Leader Blaine Frlg
-Gender: Male
-Music: Male
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Growlithe
-Level: 42
-- Bite
-- Roar
-- Take Down
-- Fire Blast
-
-Ponyta
-Level: 40
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
-
-Rapidash
-Level: 42
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
-
-Arcanine
-Level: 47
-- Bite
-- Roar
-- Take Down
-- Fire Blast
-
-=== TRAINER_LEADER_GIOVANNI ===
-Name: GIOVANNI
-Class: Leader Frlg
-Pic: Leader Giovanni Frlg
-Gender: Male
-Music: Aqua
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Rhyhorn
-Level: 45
-- Take Down
-- Rock Blast
-- Scary Face
-- Earthquake
-
-Dugtrio
-Level: 42
-- Slash
-- Sand Tomb
-- Mud Slap
-- Earthquake
-
-Nidoqueen
-Level: 44
-- Body Slam
-- Double Kick
-- Poison Sting
-- Earthquake
-
-Nidoking
-Level: 45
-- Thrash
-- Double Kick
-- Poison Sting
-- Earthquake
-
-Rhyhorn
-Level: 50
-- Take Down
-- Rock Blast
-- Scary Face
-- Earthquake
-
-=== TRAINER_ELITE_FOUR_LORELEI ===
-Name: LORELEI
-Class: Elite Four Frlg
-Pic: Elite Four Lorelei Frlg
-Gender: Male
-Music: Elite Four
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-Mugshot: Purple
-
-Dewgong
-Level: 52
-- Ice Beam
-- Surf
-- Hail
-- Safeguard
-
-Cloyster
-Level: 51
-- Spikes
-- Protect
-- Hail
-- Dive
-
-Slowbro
-Level: 52
-- Ice Beam
-- Surf
-- Amnesia
-- Yawn
-
-Jynx
-Level: 54
-- Ice Punch
-- Double Slap
-- Lovely Kiss
-- Attract
-
-Lapras @ Sitrus Berry
-Level: 54
-- Confuse Ray
-- Ice Beam
-- Surf
-- Body Slam
-
-=== TRAINER_ELITE_FOUR_BRUNO ===
-Name: BRUNO
-Class: Elite Four Frlg
-Pic: Elite Four Bruno Frlg
-Gender: Male
-Music: Elite Four
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-Mugshot: Green
-
-Onix
-Level: 51
-- Earthquake
-- Rock Tomb
-- Iron Tail
-- Roar
-
-Hitmonchan
+Annahilape
+Ability: Defiant
 Level: 53
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
-
-Hitmonlee
-Level: 53
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
-
-Onix
-Level: 54
-- Double Edge
-- Earthquake
-- Iron Tail
-- Sand Tomb
-
-Machamp @ Sitrus Berry
-Level: 56
-- Cross Chop
+- Rage Fist
+- Drain Punch
+- Knock Off
 - Bulk Up
-- Scary Face
-- Rock Tomb
 
-=== TRAINER_ELITE_FOUR_AGATHA ===
-Name: AGATHA
-Class: Elite Four Frlg
-Pic: Elite Four Agatha Frlg
-Gender: Male
-Music: Elite Four
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-Mugshot: Pink
-
-Gengar
-Level: 54
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
-
-Golbat
-Level: 54
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
-
-Haunter
-Level: 53
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
-
-Arbok
-Level: 56
-- Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
-
-Gengar @ Sitrus Berry
+Gengar @ Focus Sash
+Ability: Levitate
 Level: 58
 - Shadow Ball
 - Sludge Bomb
-- Hypnosis
-- Nightmare
+- Dazzling Gleam
+- Nasty Plot
 
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: LANCE
@@ -13687,43 +16394,55 @@ Gender: Male
 Music: Elite Four
 Double Battle: Yes
 AI: Smart Trainer
-Difficulty: Hard
+Difficulty: Normal
 Mugshot: Blue
 
 Gyarados
+Ability: Intimidate
 Level: 56
-- Hyper Beam
-- Spitfire
-- Twister
-- Bite
-
-Dragonair
-Level: 54
-- Hyper Beam
-- Safeguard
-- Spitfire
+- Waterfall
 - Outrage
+- Temper Flare
+- Dragon Dance
 
-Dragonair
+Dragonite
+Ability: Multiscale
 Level: 54
-- Hyper Beam
-- Safeguard
+- Dragon Tail
+- Wrap
 - Thunder Wave
-- Outrage
+- Rain Dance
 
 Aerodactyl
+Ability: Unnerve
 Level: 58
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
+- Stone Edge
+- Dual Wingbeat
+- Iron Head
 
-Dragonite @ Sitrus Berry
+Kingdra
+Ability: Swift Swim
+Level: 54
+- Dragon Pulse
+- Snipe Shot
+- Ice Beam
+- Rain Dance
+
+Exeggutor - Alola
+Ability: Chlorophyll
+Level: 54
+- Dragon Hammer
+- Wood Hammer
+- Psyshock
+- Dragon Cheer
+
+Dragonite @ Yache Berry
+Ability: Inner Focus
 Level: 60
-- Hyper Beam
-- Safeguard
+- Extreme Speed
+- Hurricane
 - Outrage
-- Wing Attack
+- Thunder
 
 === TRAINER_CHAMPION_FIRST_SQUIRTLE ===
 Name: TERRY
@@ -13733,50 +16452,52 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
-Difficulty: Hard
+Difficulty: Normal
 Mugshot: Yellow
 
 Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Ability: No Guard
+Level: 59  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Alakazam
-Level: 57
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 57  
 - Psychic
-- Future Sight
-- Recover
-- Reflect
+- Hidden Power
+- Disable
 
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Tauros
+Ability: Intimidate
+Level: 59  
+- Body Slam
+- Iron Head
+- High Horsepower
 
 Arcanine
-Level: 59
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Ability: Intimidate
+Level: 61  
+- Flare Blitz
+- Crunch
+- Howl
 
-Exeggutor
-Level: 61
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 61  
 - Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+- Extrasensory
+- Reflect
 
 Blastoise @ Sitrus Berry
-Level: 63
+Ability: Torrent
+Level: 63  
 - Hydro Pump
-- Rain Dance
-- Skull Bash
+- Flash Cannon
 - Bite
+- Iron Defense
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: TERRY
@@ -13786,50 +16507,52 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
-Difficulty: Hard
+Difficulty: Normal
 Mugshot: Yellow
 
 Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Ability: No Guard
+Level: 59  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Alakazam
-Level: 57
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 57  
 - Psychic
-- Future Sight
-- Recover
-- Reflect
+- Hidden Power
+- Disable
 
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Tauros
+Ability: Intimidate
+Level: 59  
+- Body Slam
+- Iron Head
+- High Horsepower
 
-Gyarados
-Level: 59
-- Hydro Pump
-- Spitfire
-- Bite
-- Thrash
+Cloyster
+Ability: Skill Link
+Level: 61  
+- Clamp
+- Icicle Spear
+- Protect
 
 Arcanine
-Level: 61
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Ability: Intimidate
+Level: 61  
+- Flare Blitz
+- Crunch
+- Howl
 
 Venusaur @ Sitrus Berry
-Level: 63
-- Solar Beam
-- Synthesis
-- Sunny Day
-- Growth
+Ability: Overgrow
+Level: 63  
+- Giga Drain
+- Sleep Powder
+- Leech Seed
+- Growl
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: TERRY
@@ -13839,48 +16562,50 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
-Difficulty: Hard
+Difficulty: Normal
 Mugshot: Yellow
 
 Pidgeot
-Level: 59
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Ability: No Guard
+Level: 59  
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
-Alakazam
-Level: 57
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 57  
 - Psychic
-- Future Sight
-- Recover
+- Hidden Power
+- Disable
+
+Tauros
+Ability: Intimidate
+Level: 59  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 61  
+- Giga Drain
+- Extrasensory
 - Reflect
 
-Rhydon
-Level: 59
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
-
-Exeggutor
-Level: 59
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
-
-Gyarados
-Level: 61
-- Hydro Pump
-- Spitfire
-- Bite
-- Thrash
+Cloyster
+Ability: Skill Link
+Level: 61  
+- Clamp
+- Icicle Spear
+- Protect
 
 Charizard @ Sitrus Berry
-Level: 63
-- Fire Blast
-- Aerial Ace
-- Slash
-- Fire Spin
+Ability: Blaze
+Level: 63  
+- Flamethrower
+- Air Slash
+- Dragon Breath
+- Metal Claw
 */
