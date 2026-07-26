@@ -900,7 +900,7 @@ Jigglypuff
 Ability: Competitive
 Level: 18  
 - Pound
-- Silly Slap
+- Double Slap
 - Rest
 - Sing
 
@@ -1522,7 +1522,7 @@ Jigglypuff
 Ability: Competitive
 Level: 16  
 - Pound
-- Silly Slap
+- Double Slap
 - Rest
 - Sing
 
@@ -1667,7 +1667,7 @@ Jigglypuff
 Ability: Competitive
 Level: 21  
 - Headbutt
-- Silly Slap
+- Double Slap
 - Rest
 - Sing
 
@@ -4399,7 +4399,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer
 
-Weepinbel
+Weepinbell
 Ability: Chlorophyll
 Level: 24  
 - Razor Leaf
@@ -4579,7 +4579,7 @@ Wigglytuff
 Ability: Competitive
 Level: 29  
 - Headbutt
-- Silly Slap
+- Double Slap
 - Rest
 - Sing
 
@@ -4972,27 +4972,27 @@ Double Battle: Yes
 AI: Smart Trainer
 
 Ditto @ Choice Scarf
-Ability: Impostor
+Ability: Imposter
 Level: 50  
 - Transform
 
 Ditto @ Choice Scarf
-Ability: Impostor
+Ability: Imposter
 Level: 50  
 - Transform
 
 Ditto @ Choice Scarf
-Ability: Impostor
+Ability: Imposter
 Level: 50  
 - Transform
 
 Ditto @ Choice Scarf
-Ability: Impostor
+Ability: Imposter
 Level: 50  
 - Transform
 
 Ditto @ Choice Scarf
-Ability: Impostor
+Ability: Imposter
 Level: 50  
 - Transform
 
@@ -6713,7 +6713,7 @@ Onix
 Ability: Sturdy
 Level: 25  
 - Rock Tomb
-- Standstorm
+- Sandstorm
 - Stealth Rock
 
 Nidorina @ Black Sludge
@@ -8632,7 +8632,7 @@ Level: 50
 Lapras
 Ability: Shell Armor
 Level: 50  
-- Bizzard
+- Blizzard
 - Brine
 - Life Dew
 
@@ -9000,7 +9000,7 @@ Level: 56
 - Leech Life
 - Spite
 
-Annahilape
+Annihilape
 Ability: Defiant
 Level: 53
 - Rage Fist
@@ -11845,7 +11845,7 @@ Jigglypuff (M)
 Ability: Competitive
 Level: 22  
 - Headbutt
-- Silly Slap
+- Double Slap
 - Rest
 - Sing
 
@@ -16370,7 +16370,7 @@ Level: 56
 - Leech Life
 - Spite
 
-Annahilape
+Annihilape
 Ability: Defiant
 Level: 53
 - Rage Fist
