@@ -9913,7 +9913,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Scope Lens"),
         .pluralName = ITEM_PLURAL_NAME("Scope Lenses"),
     #if I_PRICE >= GEN_9
-        .price = 15000,
+        .price = 4000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9989,7 +9989,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Wide Lens"),
         .pluralName = ITEM_PLURAL_NAME("Wide Lenses"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 4000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10188,7 +10188,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Zoom Lens"),
         .pluralName = ITEM_PLURAL_NAME("Zoom Lenses"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 4000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else

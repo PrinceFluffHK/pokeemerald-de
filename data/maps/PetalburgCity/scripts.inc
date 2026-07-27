@@ -97,7 +97,6 @@ PetalburgCity_EventScript_SkipTutorialTrigger::
 	call_if_unset FLAG_DISABLE_TUTORIAL_SKIP_PROMPT, PetalburgCity_EventScript_SkipTutorialYesNo
 	end
 
-
 PetalburgCity_EventScript_SkipTutorialYesNo::
 	lockall
 	msgbox PetalburgCity_Text_WantToSkipTutorial, MSGBOX_DEFAULT
@@ -117,7 +116,7 @@ PetalburgCity_EventScript_SkipTutorial::
 	setvar VAR_PETALBURG_CITY_STATE, 3
 	fadedefaultbgm
 	clearflag FLAG_DONT_TRANSITION_MUSIC
-	special LoadPlayerParty
+@	special LoadPlayerParty
 	setvar VAR_PETALBURG_GYM_STATE, 1
 	warp MAP_PETALBURG_CITY_GYM, 4, 108
 	waitstate
