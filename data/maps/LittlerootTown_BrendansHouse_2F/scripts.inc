@@ -281,11 +281,11 @@ PlayersHouse_2F_EventScript_BossRushYesNo::
 
 PlayersHouse_2F_EventScript_BossRushGameCubeEnabled::
 	setflag FLAG_BOSS_RUSH_MODE
+	call LavaridgeTown_Gym_SetGymTrainers
+	call EmeraldBossRush_SetGrunts
 	msgbox PlayersHouse_2F_Text_GoodLuckInBossRush, MSGBOX_DEFAULT
 	releaseall
 	end
-
-
 
 PlayersHouse_2F_Text_ClockIsStopped:
 	.string "The clock is stopped…\p"
