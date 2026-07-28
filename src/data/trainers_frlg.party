@@ -250,7 +250,7 @@ AI: Smart Trainer
 
 Rattata
 Ability: Guts
-Level: 16  
+Level: 17  
 - Quick Attack
 - Take Down
 - Bite
@@ -4264,6 +4264,13 @@ Music: Male
 Double Battle: Yes
 AI: Smart Trainer
 
+Magnemite
+Ability: Sturdy
+Level: 18  
+- Charge Beam
+- Gyro Ball
+- Metal Sound
+
 Voltorb
 Ability: Aftermath
 Level: 18  
@@ -4271,13 +4278,6 @@ Level: 18
 - Tackle
 - Rollout
 - Screech
-
-Magnemite
-Ability: Sturdy
-Level: 18  
-- Charge Beam
-- Gyro Ball
-- Metal Sound
 
 === TRAINER_GAMER_DARIAN ===
 Name: DARIAN
