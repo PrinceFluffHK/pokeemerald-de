@@ -22537,57 +22537,43 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Normal
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
-Sceptile @ Sitrus Berry
-Ability: Unburden
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Leaf Blade
+Grovyle @ Sitrus Berry
+Ability: Overgrow
+Level: 33
+- Giga Drain
 - X-Scissor
-- Acrobatics
-- Scale Shot
+- Aerial Ace
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -22662,57 +22648,42 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Normal
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Force Palm
 - Giga Drain
 - Headbutt
-- Spore
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Swampert @ Sitrus Berry
-Ability: Gooey
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Marshtomp @ Sitrus Berry
+Ability: Torrent
+Level: 33
 - Water Pulse
 - Mud Shot
 - Body Press
-- Wide Guard
 
 === TRAINER_MAY_ROUTE_119_MUDKIP ===
 Name: MAY
@@ -22724,57 +22695,48 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Normal
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
+EVs: 64 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
-Sceptile @ Sitrus Berry
-Ability: Unburden
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Leaf Blade
+Grovyle @ Sitrus Berry
+Ability: Overgrow
+Level: 33
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
+- Giga Drain
 - X-Scissor
-- Acrobatics
-- Scale Shot
+- Aerial Ace
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: MAY
@@ -22786,58 +22748,43 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Normal
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Force Palm
 - Giga Drain
 - Headbutt
-- Spore
 
-Blaziken @ Sitrus Berry
-Ability: Speed Boost
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Combusken @ Sitrus Berry
+Ability: Blaze
+Level: 33
 - Temper Flare
 - Double Kick
 - Aerial Ace
-- Focus Energy
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
@@ -22849,57 +22796,43 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Normal
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
-
-Breloom @ Toxic Orb
-Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Force Palm
-- Giga Drain
-- Headbutt
-- Spore
+Grumpig
+Ability: Magic Bounce
+Level: 32
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
 Magcargo
 Ability: Pyroclastic Flow
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Fire Spin
 - Power Gem
-- Scorching Sands
+- Clear Smog
 
-Swampert @ Sitrus Berry
-Ability: Gooey
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Water Pulse
-- Mud Shot
-- Body Press
-- Wide Guard
+Wailmer @ Chesto Berry
+Ability: Water Veil
+Level: 31
+- Hydro Pump
+- Heavy Slam
+- Body Slam
+- Rest
+
+Grovyle @ Sitrus Berry
+Ability: Overgrow
+Level: 33
+- Giga Drain
+- X-Scissor
+- Aerial Ace
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
