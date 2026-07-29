@@ -184,6 +184,39 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_ExitVendingMachine::
 	releaseall
 	end
 
+LilycoveCity_DepartmentStoreRooftop_EventScript_RotomBox::
+	lockall
+	goto_if_set FLAG_CAUGHT_ROTOM
+	waitse
+	playmoncry SPECIES_ROTOM, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_ROTOM, 45
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, LilycoveCity_DepartmentStoreRooftop_EventScript_RotomReturnedToBox
+	setflag FLAG_CAUGHT_ROTOM
+	releaseall
+	end
+	
+LilycoveCity_DepartmentStoreRooftop_EventScript_ItsEmpty::
+	msgbox LilycoveCity_DepartmentStoreRooftop_Text_BoxIsEmpty, MSGBOX_DEFAULT
+	releaseall
+	end
+
+LilycoveCity_DepartmentStoreRooftop_EventScript_RotomReturnedToBox::
+	msgbox LilycoveCity_DepartmentStoreRooftop_Text_RotomBackInBox, MSGBOX_DEFAULT
+	releaseall
+	end
+
+LilycoveCity_DepartmentStoreRooftop_Text_BoxIsEmpty:
+	.string "It's empty.$"
+
+LilycoveCity_DepartmentStoreRooftop_Text_RotomBackInBox:
+	.string "Rotom zipped back into the box…$"
+
 LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales:
 	.string "Don't they have set dates for their\n"
 	.string "clear-out sales?\p"
