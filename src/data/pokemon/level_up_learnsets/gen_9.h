@@ -3,17 +3,13 @@
 
 static const struct LevelUpMove sNoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -41,11 +37,7 @@ static const struct LevelUpMove sBulbasaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_POWER_WHIP),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SOLAR_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -74,10 +66,7 @@ static const struct LevelUpMove sIvysaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_POWER_WHIP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -105,12 +94,9 @@ static const struct LevelUpMove sVenusaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(44, MOVE_WORRY_SEED),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_POWER_WHIP),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BULBASAUR
@@ -136,11 +122,7 @@ static const struct LevelUpMove sCharmanderLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_INFERNO),
     LEVEL_UP_MOVE(40, MOVE_FLARE_BLITZ),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -164,11 +146,8 @@ static const struct LevelUpMove sCharmeleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SCARY_FACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_INFERNO),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -194,12 +173,9 @@ static const struct LevelUpMove sCharizardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_SCARY_FACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FIRE_SPIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_INFERNO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_FLARE_BLITZ),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHARMANDER
@@ -227,11 +203,7 @@ static const struct LevelUpMove sSquirtleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_HYDRO_PUMP),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_WAVE_CRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -259,10 +231,7 @@ static const struct LevelUpMove sWartortleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -289,11 +258,8 @@ static const struct LevelUpMove sBlastoiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_IRON_DEFENSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_WAVE_CRASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SQUIRTLE
@@ -304,34 +270,26 @@ static const struct LevelUpMove sCaterpieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     // >>> Evo Lv 7
     LEVEL_UP_MOVE( 9, MOVE_BUG_BITE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sMetapodLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 7
     // >>> Evo Lv 10
@@ -364,11 +322,7 @@ static const struct LevelUpMove sButterfreeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_TAILWIND),
     LEVEL_UP_MOVE(40, MOVE_RAGE_POWDER),
     LEVEL_UP_MOVE(44, MOVE_QUIVER_DANCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CATERPIE
@@ -379,34 +333,26 @@ static const struct LevelUpMove sWeedleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     // >>> Evo Lv 7
     LEVEL_UP_MOVE( 9, MOVE_BUG_BITE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sKakunaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 7
     // >>> Evo Lv 10
@@ -422,7 +368,7 @@ static const struct LevelUpMove sBeedrillLevelUpLearnset[] = {
     // >>> Evo Lv 10
     LEVEL_UP_MOVE(11, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(14, MOVE_LASER_FOCUS),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_POISON_STING),
     LEVEL_UP_MOVE(20, MOVE_FOCUS_ENERGY),
@@ -438,11 +384,7 @@ static const struct LevelUpMove sBeedrillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_AGILITY),
     LEVEL_UP_MOVE(41, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(44, MOVE_FELL_STINGER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WEEDLE
@@ -470,11 +412,8 @@ static const struct LevelUpMove sPidgeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AERIAL_ACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_AIR_SLASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_HURRICANE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -501,13 +440,10 @@ static const struct LevelUpMove sPidgeottoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ROOST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_TAILWIND),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_AERIAL_ACE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_AIR_SLASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_HURRICANE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -535,13 +471,10 @@ static const struct LevelUpMove sPidgeotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ROOST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TAILWIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_AERIAL_ACE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_AIR_SLASH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PIDGEY
@@ -564,14 +497,10 @@ static const struct LevelUpMove sRattataLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(28, MOVE_SUPER_FANG),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_DOUBLE_EDGE),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
 };
@@ -602,11 +531,7 @@ static const struct LevelUpMove sRaticateLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(44, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -628,14 +553,10 @@ static const struct LevelUpMove sRattataAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(28, MOVE_SUPER_FANG),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_DOUBLE_EDGE),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
 };
@@ -666,11 +587,7 @@ static const struct LevelUpMove sRaticateAlolaLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(44, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -697,11 +614,7 @@ static const struct LevelUpMove sSpearowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_ROOST),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DRILL_PECK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -729,11 +642,7 @@ static const struct LevelUpMove sFearowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ROOST),
     LEVEL_UP_MOVE(41, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE(45, MOVE_DRILL_RUN),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPEAROW
@@ -765,10 +674,7 @@ static const struct LevelUpMove sEkansLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_GUNK_SHOT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -799,13 +705,10 @@ static const struct LevelUpMove sArbokLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_GASTRO_ACID),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BELCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_HAZE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_COIL),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_GUNK_SHOT),
+    LEVEL_UP_MOVE(50, MOVE_HAZE),
+    LEVEL_UP_MOVE(50, MOVE_COIL),
+    LEVEL_UP_MOVE(50, MOVE_GUNK_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_EKANS
@@ -822,11 +725,7 @@ static const struct LevelUpMove sPichuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_NASTY_PLOT),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_CHARM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -847,7 +746,7 @@ static const struct LevelUpMove sPikachuLevelUpLearnset[] = {
     // >>> Catch
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_ELECTRO_BALL),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_FAKE_OUT),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SPARK),
@@ -864,12 +763,9 @@ static const struct LevelUpMove sPikachuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THUNDER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENDEAVOR),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PRESENT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_PRESENT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -902,12 +798,9 @@ static const struct LevelUpMove sRaichuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THUNDER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENDEAVOR),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PRESENT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_PRESENT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -941,12 +834,9 @@ static const struct LevelUpMove sRaichuAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THUNDER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENDEAVOR),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PRESENT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_PRESENT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -980,11 +870,7 @@ static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(42, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(45, MOVE_DRILL_RUN),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1015,13 +901,10 @@ static const struct LevelUpMove sSandslashLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_GYRO_BALL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_ROCK_SLIDE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DRILL_RUN),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_STEEL_ROLLER),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE(50, MOVE_DRILL_RUN),
+    LEVEL_UP_MOVE(50, MOVE_STEEL_ROLLER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1050,11 +933,7 @@ static const struct LevelUpMove sSandshrewAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(42, MOVE_SNOWSCAPE),
     LEVEL_UP_MOVE(45, MOVE_BLIZZARD),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1079,17 +958,13 @@ static const struct LevelUpMove sSandslashAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_ICICLE_CRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -1117,11 +992,8 @@ static const struct LevelUpMove sNidoranFLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FLATTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CRUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_EARTH_POWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1144,13 +1016,10 @@ static const struct LevelUpMove sNidorinaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_HELPING_HAND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TOXIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_FLATTER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(71, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_FLATTER),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1171,17 +1040,13 @@ static const struct LevelUpMove sNidoqueenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1206,11 +1071,8 @@ static const struct LevelUpMove sNidoranMLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FLATTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_POISON_JAB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_EARTH_POWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1233,13 +1095,10 @@ static const struct LevelUpMove sNidorinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_HELPING_HAND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TOXIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_FLATTER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_POISON_JAB),
-    LEVEL_UP_MOVE(71, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_FLATTER),
+    LEVEL_UP_MOVE(50, MOVE_POISON_JAB),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1260,17 +1119,13 @@ static const struct LevelUpMove sNidokingLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NIDORAN
@@ -1282,17 +1137,13 @@ static const struct LevelUpMove sCleffaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 1, MOVE_ENCORE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -1326,10 +1177,7 @@ static const struct LevelUpMove sClefairyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MOONBLAST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HEALING_WISH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1362,10 +1210,7 @@ static const struct LevelUpMove sClefableLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MOONBLAST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HEALING_WISH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CLEFAIRY
@@ -1395,12 +1240,9 @@ static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SAFEGUARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPNOSIS),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FIRE_BLAST),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_INFERNO),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1428,12 +1270,9 @@ static const struct LevelUpMove sNinetalesLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SAFEGUARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPNOSIS),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FIRE_BLAST),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_INFERNO),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1460,11 +1299,8 @@ static const struct LevelUpMove sVulpixAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_AURORA_VEIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FREEZE_DRY),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_BLIZZARD),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1486,17 +1322,13 @@ static const struct LevelUpMove sNinetalesAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BLIZZARD),
     LEVEL_UP_MOVE( 1, MOVE_ICY_WIND),
     LEVEL_UP_MOVE( 1, MOVE_IMPRISON),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -1515,11 +1347,7 @@ static const struct LevelUpMove sIgglybuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_DISABLE),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_CHARM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -1557,11 +1385,7 @@ static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE(40, MOVE_PERISH_SONG),
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1598,10 +1422,7 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_JIGGLYPUFF
@@ -1629,11 +1450,7 @@ static const struct LevelUpMove sZubatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(41, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE(45, MOVE_LEECH_LIFE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1660,11 +1477,8 @@ static const struct LevelUpMove sGolbatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_CONFUSE_RAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_AIR_SLASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_LEECH_LIFE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEECH_LIFE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1687,19 +1501,16 @@ static const struct LevelUpMove sCrobatLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_BITE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_U_TURN),
+    //Norman Lv31
     // >>> Evo Lv33
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_VENOSHOCK),
     LEVEL_UP_MOVE(41, MOVE_CONFUSE_RAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_AIR_SLASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_LEECH_LIFE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEECH_LIFE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -1730,11 +1541,7 @@ static const struct LevelUpMove sOddishLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_MOONLIGHT),
     LEVEL_UP_MOVE(40, MOVE_PETAL_DANCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1764,10 +1571,7 @@ static const struct LevelUpMove sGloomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MOONLIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1796,10 +1600,7 @@ static const struct LevelUpMove sVileplumeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MOONLIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1830,10 +1631,7 @@ static const struct LevelUpMove sBellossomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MORNING_SUN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -1860,11 +1658,8 @@ static const struct LevelUpMove sParasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_AROMATHERAPY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_RAGE_POWDER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_X_SCISSOR),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_X_SCISSOR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1890,13 +1685,10 @@ static const struct LevelUpMove sParasectLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_GROWTH),
     LEVEL_UP_MOVE(44, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_AROMATHERAPY),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(59, MOVE_RAGE_POWDER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(50, MOVE_AROMATHERAPY),
+    LEVEL_UP_MOVE(50, MOVE_RAGE_POWDER),
+    LEVEL_UP_MOVE(50, MOVE_X_SCISSOR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PARAS
@@ -1924,10 +1716,7 @@ static const struct LevelUpMove sVenonatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_POISON_FANG),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -1954,11 +1743,8 @@ static const struct LevelUpMove sVenomothLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_POISON_FANG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_PSYCHIC),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VENONAT
@@ -1985,11 +1771,7 @@ static const struct LevelUpMove sDiglettLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(44, MOVE_FISSURE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2017,11 +1799,8 @@ static const struct LevelUpMove sDugtrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_FISSURE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2047,11 +1826,7 @@ static const struct LevelUpMove sDiglettAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(44, MOVE_FISSURE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2079,11 +1854,8 @@ static const struct LevelUpMove sDugtrioAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_FISSURE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -2111,11 +1883,7 @@ static const struct LevelUpMove sMeowthLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SLASH),
     LEVEL_UP_MOVE(40, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(44, MOVE_PLAY_ROUGH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2142,11 +1910,8 @@ static const struct LevelUpMove sPersianLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_PLAY_ROUGH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PLAY_ROUGH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2171,11 +1936,7 @@ static const struct LevelUpMove sMeowthAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(40, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(44, MOVE_PLAY_ROUGH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2195,18 +1956,15 @@ static const struct LevelUpMove sPersianAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_ASSURANCE),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_FURY_SWIPES),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SCREECH),
     LEVEL_UP_MOVE(42, MOVE_NIGHT_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_PLAY_ROUGH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PLAY_ROUGH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -2233,11 +1991,7 @@ static const struct LevelUpMove sMeowthGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SLASH),
     LEVEL_UP_MOVE(40, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(44, MOVE_THRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2265,11 +2019,8 @@ static const struct LevelUpMove sPerrserkerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_METAL_SOUND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -2300,11 +2051,7 @@ static const struct LevelUpMove sPsyduckLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_WONDER_ROOM),
     LEVEL_UP_MOVE(43, MOVE_FUTURE_SIGHT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2333,11 +2080,7 @@ static const struct LevelUpMove sGolduckLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP),
     //T&L
     LEVEL_UP_MOVE(45, MOVE_WONDER_ROOM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PSYDUCK
@@ -2368,10 +2111,7 @@ static const struct LevelUpMove sMankeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_OUTRAGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FINAL_GAMBIT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2399,12 +2139,9 @@ static const struct LevelUpMove sPrimeapeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SCREECH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_STOMPING_TANTRUM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_OUTRAGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_FINAL_GAMBIT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2434,12 +2171,9 @@ static const struct LevelUpMove sAnnihilapeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SCREECH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_STOMPING_TANTRUM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_OUTRAGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_FINAL_GAMBIT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -2468,12 +2202,9 @@ static const struct LevelUpMove sGrowlitheLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ROAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_REVERSAL),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2495,17 +2226,13 @@ static const struct LevelUpMove sArcanineLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE( 1, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE( 5, MOVE_FLAMETHROWER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2531,12 +2258,9 @@ static const struct LevelUpMove sGrowlitheHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ROAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ROCK_SLIDE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_REVERSAL),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2566,11 +2290,8 @@ static const struct LevelUpMove sArcanineHisuiLevelUpLearnset[] = {
     //Norman Lv31
     //Winona Lv35
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_RAGING_FURY),
+    LEVEL_UP_MOVE(50, MOVE_RAGING_FURY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -2596,11 +2317,8 @@ static const struct LevelUpMove sPoliwagLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BELLY_DRUM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2622,12 +2340,9 @@ static const struct LevelUpMove sPoliwhirlLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BELLY_DRUM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_BELLY_DRUM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2645,17 +2360,13 @@ static const struct LevelUpMove sPoliwrathLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2676,17 +2387,13 @@ static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE( 1, MOVE_BELLY_DRUM),
     LEVEL_UP_MOVE( 1, MOVE_RAIN_DANCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -2696,12 +2403,8 @@ static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
 static const struct LevelUpMove sAbraLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TELEPORT),
     LEVEL_UP_MOVE(10, MOVE_HIDDEN_POWER),
-    //Roxanne
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Roxanne Lv14
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -2737,11 +2440,8 @@ static const struct LevelUpMove sKadabraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CALM_MIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_PSYCHIC_TERRAIN),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2767,11 +2467,8 @@ static const struct LevelUpMove sAlakazamLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CALM_MIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_PSYCHIC_TERRAIN),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ABRA
@@ -2801,11 +2498,8 @@ static const struct LevelUpMove sMachopLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DYNAMIC_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CROSS_CHOP),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DOUBLE_EDGE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2831,13 +2525,10 @@ static const struct LevelUpMove sMachokeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BULK_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SEISMIC_TOSS),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DYNAMIC_PUNCH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CROSS_CHOP),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_CROSS_CHOP),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2856,20 +2547,17 @@ static const struct LevelUpMove sMachampLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_VITAL_THROW),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_LOW_KICK),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DUAL_CHOP),
     LEVEL_UP_MOVE(42, MOVE_BULK_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SEISMIC_TOSS),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DYNAMIC_PUNCH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CROSS_CHOP),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_CROSS_CHOP),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MACHOP
@@ -2897,11 +2585,8 @@ static const struct LevelUpMove sBellsproutLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_POISON_JAB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_SLAM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_POWER_WHIP),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2927,12 +2612,9 @@ static const struct LevelUpMove sWeepinbellLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_RAZOR_LEAF),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_POISON_JAB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SLAM),
-    LEVEL_UP_MOVE(58, MOVE_POWER_WHIP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -2954,11 +2636,7 @@ static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
     //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BELLSPROUT
@@ -2989,10 +2667,7 @@ static const struct LevelUpMove sTentacoolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SLUDGE_WAVE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3020,12 +2695,9 @@ static const struct LevelUpMove sTentacruelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SLUDGE_BOMB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_KNOCK_OFF),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SLUDGE_WAVE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SLUDGE_WAVE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TENTACOOL
@@ -3055,11 +2727,7 @@ static const struct LevelUpMove sGeodudeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_EXPLOSION),
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(42, MOVE_STONE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3088,11 +2756,8 @@ static const struct LevelUpMove sGravelerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3120,11 +2785,8 @@ static const struct LevelUpMove sGolemLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3154,11 +2816,7 @@ static const struct LevelUpMove sGeodudeAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_EXPLOSION),
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(42, MOVE_STONE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3187,11 +2845,8 @@ static const struct LevelUpMove sGravelerAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3219,11 +2874,8 @@ static const struct LevelUpMove sGolemAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -3251,11 +2903,8 @@ static const struct LevelUpMove sPonytaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_INFERNO),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3284,12 +2933,9 @@ static const struct LevelUpMove sRapidashLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_INFERNO),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FIRE_BLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3315,11 +2961,8 @@ static const struct LevelUpMove sPonytaGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DAZZLING_GLEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HEALING_WISH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3347,12 +2990,9 @@ static const struct LevelUpMove sRapidashGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_DAZZLING_GLEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYCHIC),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -3384,11 +3024,7 @@ static const struct LevelUpMove sSlowpokeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(42, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(45, MOVE_HEAL_PULSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3419,11 +3055,8 @@ static const struct LevelUpMove sSlowbroLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_PSYCH_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_RAIN_DANCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_HEAL_PULSE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEAL_PULSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3456,11 +3089,7 @@ static const struct LevelUpMove sSlowkingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(42, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(45, MOVE_HEAL_PULSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -3490,11 +3119,7 @@ static const struct LevelUpMove sSlowpokeGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(42, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(45, MOVE_HEAL_PULSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3524,11 +3149,7 @@ static const struct LevelUpMove sSlowbroGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(42, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(45, MOVE_HEAL_PULSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3564,11 +3185,7 @@ static const struct LevelUpMove sSlowkingGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(42, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(45, MOVE_HEAL_PULSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -3600,11 +3217,8 @@ static const struct LevelUpMove sMagnemiteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LIGHT_SCREEN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LOCK_ON),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ZAP_CANNON),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3633,13 +3247,10 @@ static const struct LevelUpMove sMagnetonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_FLASH_CANNON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SCREECH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LIGHT_SCREEN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_LOCK_ON),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_LIGHT_SCREEN),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3669,13 +3280,10 @@ static const struct LevelUpMove sMagnezoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_FLASH_CANNON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SCREECH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LIGHT_SCREEN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_LOCK_ON),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_LIGHT_SCREEN),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -3702,13 +3310,10 @@ static const struct LevelUpMove sFarfetchdLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEAF_BLADE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_AGILITY),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3733,13 +3338,10 @@ static const struct LevelUpMove sFarfetchdGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEAF_BLADE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FINAL_GAMBIT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3766,14 +3368,11 @@ static const struct LevelUpMove sSirfetchdLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEAF_BLADE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FINAL_GAMBIT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_BRAVE_BIRD),
-    LEVEL_UP_MOVE(70, MOVE_METEOR_ASSAULT),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_METEOR_ASSAULT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -3801,11 +3400,7 @@ static const struct LevelUpMove sDoduoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE(39, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(43, MOVE_THRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3833,10 +3428,7 @@ static const struct LevelUpMove sDodrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_ENDEAVOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DODUO
@@ -3856,8 +3448,8 @@ static const struct LevelUpMove sSeelLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_AURORA_BEAM),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_AQUA_JET),
+    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_BRINE),
     //Winona Lv35
     // >>> Evo Lv 34
@@ -3866,12 +3458,9 @@ static const struct LevelUpMove sSeelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_AQUA_TAIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_ICE_BEAM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_SAFEGUARD),
-    LEVEL_UP_MOVE(53, MOVE_SNOWSCAPE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SAFEGUARD),
+    LEVEL_UP_MOVE(50, MOVE_SNOWSCAPE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3889,8 +3478,8 @@ static const struct LevelUpMove sDewgongLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_AURORA_BEAM),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_AQUA_JET),
+    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_BRINE),
     //Winona Lv35
     // >>> Evo Lv 34
@@ -3898,13 +3487,10 @@ static const struct LevelUpMove sDewgongLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DIVE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_AQUA_TAIL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_ICE_BEAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_SAFEGUARD),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SNOWSCAPE),
+    LEVEL_UP_MOVE(50, MOVE_ICE_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SAFEGUARD),
+    LEVEL_UP_MOVE(50, MOVE_SNOWSCAPE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SEEL
@@ -3936,10 +3522,7 @@ static const struct LevelUpMove sGrimerLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BELCH),
     LEVEL_UP_MOVE(48, MOVE_MEMENTO),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -3966,12 +3549,9 @@ static const struct LevelUpMove sMukLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_ACID_ARMOR),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_BELCH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_MEMENTO),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4001,10 +3581,7 @@ static const struct LevelUpMove sGrimerAlolaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BELCH),
     LEVEL_UP_MOVE(48, MOVE_MEMENTO),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4031,12 +3608,9 @@ static const struct LevelUpMove sMukAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_GUNK_SHOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_ACID_ARMOR),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_BELCH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_MEMENTO),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -4065,10 +3639,7 @@ static const struct LevelUpMove sShellderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SHELL_SMASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4091,17 +3662,13 @@ static const struct LevelUpMove sCloysterLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_RAZOR_SHELL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHELLDER
@@ -4130,10 +3697,7 @@ static const struct LevelUpMove sGastlyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DESTINY_BOND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DREAM_EATER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4159,12 +3723,9 @@ static const struct LevelUpMove sHaunterLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DARK_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DESTINY_BOND),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DREAM_EATER),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4191,12 +3752,9 @@ static const struct LevelUpMove sGengarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DARK_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DESTINY_BOND),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DREAM_EATER),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GASTLY
@@ -4226,12 +3784,9 @@ static const struct LevelUpMove sOnixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DIG),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_IRON_TAIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_STONE_EDGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4265,13 +3820,10 @@ static const struct LevelUpMove sSteelixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DIG),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_IRON_TAIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_STONE_EDGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MAGNET_RISE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MAGNET_RISE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -4301,10 +3853,7 @@ static const struct LevelUpMove sDrowzeeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PSYSHOCK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4330,12 +3879,9 @@ static const struct LevelUpMove sHypnoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_PSYSHOCK),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FUTURE_SIGHT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYSHOCK),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DROWZEE
@@ -4364,10 +3910,7 @@ static const struct LevelUpMove sKrabbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_CRABHAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_GUILLOTINE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4394,12 +3937,9 @@ static const struct LevelUpMove sKinglerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SWORDS_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_CRABHAMMER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_GUILLOTINE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CRABHAMMER),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KRABBY
@@ -4432,10 +3972,7 @@ static const struct LevelUpMove sVoltorbLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4464,12 +4001,9 @@ static const struct LevelUpMove sElectrodeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_GYRO_BALL),
-    LEVEL_UP_MOVE(58, MOVE_MIRROR_COAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_GYRO_BALL),
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4499,10 +4033,7 @@ static const struct LevelUpMove sVoltorbHisuiLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4532,10 +4063,7 @@ static const struct LevelUpMove sElectrodeHisuiLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -4562,11 +4090,8 @@ static const struct LevelUpMove sExeggcuteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_UPROAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_WORRY_SEED),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4590,17 +4115,13 @@ static const struct LevelUpMove sExeggutorLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_WOOD_HAMMER),
     LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4625,17 +4146,13 @@ static const struct LevelUpMove sExeggutorAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE( 1, MOVE_PSYSHOCK),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -4665,10 +4182,7 @@ static const struct LevelUpMove sCuboneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4693,12 +4207,9 @@ static const struct LevelUpMove sMarowakLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ENDEAVOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BONEMERANG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4722,19 +4233,16 @@ static const struct LevelUpMove sMarowakAlolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_STOMPING_TANTRUM),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_BONE_RUSH),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(42, MOVE_ENDEAVOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BONEMERANG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FLARE_BLITZ),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
@@ -4747,17 +4255,13 @@ static const struct LevelUpMove sTyrogueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 20
 };
@@ -4789,10 +4293,7 @@ static const struct LevelUpMove sHitmonleeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HIGH_JUMP_KICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_AXE_KICK),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4823,11 +4324,7 @@ static const struct LevelUpMove sHitmonchanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE(40, MOVE_COUNTER),
     LEVEL_UP_MOVE(44, MOVE_FOCUS_PUNCH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4857,11 +4354,7 @@ static const struct LevelUpMove sHitmontopLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE(40, MOVE_COUNTER),
     LEVEL_UP_MOVE(44, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -4886,12 +4379,9 @@ static const struct LevelUpMove sLickitungLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SCREECH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_POWER_WHIP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_BELLY_DRUM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_BELLY_DRUM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4914,12 +4404,9 @@ static const struct LevelUpMove sLickilickyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SCREECH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_POWER_WHIP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_BELLY_DRUM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_BELLY_DRUM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -4950,11 +4437,8 @@ static const struct LevelUpMove sKoffingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_MEMENTO),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DESTINY_BOND),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -4982,12 +4466,9 @@ static const struct LevelUpMove sWeezingLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(44, MOVE_BELCH),
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MEMENTO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_DESTINY_BOND),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5019,13 +4500,10 @@ static const struct LevelUpMove sWeezingGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BELCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MEMENTO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_DESTINY_BOND),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_MISTY_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE(50, MOVE_MISTY_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -5054,12 +4532,9 @@ static const struct LevelUpMove sRhyhornLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MEGAHORN),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HORN_DRILL),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_HORN_DRILL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5084,13 +4559,10 @@ static const struct LevelUpMove sRhydonLevelUpLearnset[] = {
     // >>> Evo Lv42
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_MEGAHORN),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_HORN_DRILL),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_HORN_DRILL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5115,14 +4587,11 @@ static const struct LevelUpMove sRhyperiorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_MEGAHORN),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_HORN_DRILL),
-    LEVEL_UP_MOVE(75, MOVE_ROCK_WRECKER),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_HORN_DRILL),
+    LEVEL_UP_MOVE(50, MOVE_ROCK_WRECKER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -5140,11 +4609,7 @@ static const struct LevelUpMove sHappinyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_COVET),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_CHARM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -5180,11 +4645,8 @@ static const struct LevelUpMove sChanseyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SOFT_BOILED),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LAST_RESORT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HEALING_WISH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5216,11 +4678,8 @@ static const struct LevelUpMove sBlisseyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SOFT_BOILED),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LAST_RESORT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HEALING_WISH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -5249,12 +4708,9 @@ static const struct LevelUpMove sTangelaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TICKLE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_POWER_WHIP),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_INGRAIN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GRASSY_TERRAIN),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_INGRAIN),
+    LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5282,12 +4738,9 @@ static const struct LevelUpMove sTangrowthLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TICKLE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_POWER_WHIP),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_INGRAIN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GRASSY_TERRAIN),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_INGRAIN),
+    LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -5316,11 +4769,8 @@ static const struct LevelUpMove sKangaskhanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_REVERSAL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_OUTRAGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LAST_RESORT),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KANGASKHAN
@@ -5347,11 +4797,8 @@ static const struct LevelUpMove sHorseaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_RAIN_DANCE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5374,13 +4821,10 @@ static const struct LevelUpMove sSeadraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SNIPE_SHOT),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_HYDRO_PUMP),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_DRAGON_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5405,14 +4849,11 @@ static const struct LevelUpMove sKingdraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SNIPE_SHOT),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_HYDRO_PUMP),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_DRAGON_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(72, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -5441,10 +4882,7 @@ static const struct LevelUpMove sGoldeenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_MEGAHORN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DRILL_RUN),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5469,13 +4907,10 @@ static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_WATERFALL),
     LEVEL_UP_MOVE(44, MOVE_SOAK),
     //T&L
-    //Juan Lv50
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Tate&Liza Lv45
-    LEVEL_UP_MOVE(51, MOVE_MEGAHORN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_DRILL_RUN),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_DRILL_RUN),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GOLDEEN
@@ -5505,12 +4940,9 @@ static const struct LevelUpMove sStaryuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SURF),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_RECOVER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_COSMIC_POWER),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_COSMIC_POWER),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5538,12 +4970,9 @@ static const struct LevelUpMove sStarmieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_RECOVER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_COSMIC_POWER),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_COSMIC_POWER),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_STARYU
@@ -5574,11 +5003,8 @@ static const struct LevelUpMove sMimeJrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DAZZLING_GLEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_TEETER_DANCE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TEETER_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -5611,11 +5037,8 @@ static const struct LevelUpMove sMrMimeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DAZZLING_GLEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_TEETER_DANCE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TEETER_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5654,11 +5077,8 @@ static const struct LevelUpMove sMrMimeGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FREEZE_DRY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_TEETER_DANCE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TEETER_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5700,11 +5120,8 @@ static const struct LevelUpMove sMrRimeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FREEZE_DRY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_TEETER_DANCE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TEETER_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -5731,11 +5148,7 @@ static const struct LevelUpMove sScytherLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE(40, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(44, MOVE_SWORDS_DANCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5764,11 +5177,7 @@ static const struct LevelUpMove sScizorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(40, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(44, MOVE_SWORDS_DANCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -5795,11 +5204,7 @@ static const struct LevelUpMove sKleavorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ROCK_SLIDE),
     LEVEL_UP_MOVE(40, MOVE_X_SCISSOR),
     LEVEL_UP_MOVE(44, MOVE_SWORDS_DANCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_8_CROSS_EVOS
@@ -5813,7 +5218,7 @@ static const struct LevelUpMove sSmoochumLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_HEART_STAMP),
     LEVEL_UP_MOVE( 8, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(12, MOVE_CONFUSION),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_COVET),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SING),
@@ -5830,10 +5235,7 @@ static const struct LevelUpMove sSmoochumLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_PERISH_SONG),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BLIZZARD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -5862,12 +5264,9 @@ static const struct LevelUpMove sJynxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LOVELY_KISS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SKILL_SWAP),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_PERISH_SONG),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_BLIZZARD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_JYNX
@@ -5897,10 +5296,7 @@ static const struct LevelUpMove sElekidLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LIGHT_SCREEN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THUNDER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -5926,13 +5322,10 @@ static const struct LevelUpMove sElectabuzzLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_THUNDERBOLT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LIGHT_SCREEN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_THUNDER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_LIGHT_SCREEN),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -5957,13 +5350,10 @@ static const struct LevelUpMove sElectivireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_THUNDERBOLT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LIGHT_SCREEN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_THUNDER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_LIGHT_SCREEN),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -5994,10 +5384,7 @@ static const struct LevelUpMove sMagbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SUNNY_DAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FIRE_BLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -6023,13 +5410,10 @@ static const struct LevelUpMove sMagmarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SUNNY_DAY),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_FIRE_BLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6054,13 +5438,10 @@ static const struct LevelUpMove sMagmortarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LOW_KICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SUNNY_DAY),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_FIRE_BLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -6089,11 +5470,8 @@ static const struct LevelUpMove sPinsirLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SUBMISSION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_GUILLOTINE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SUPERPOWER),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PINSIR
@@ -6119,12 +5497,9 @@ static const struct LevelUpMove sTaurosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6149,12 +5524,9 @@ static const struct LevelUpMove sTaurosPaldeaCombatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6178,12 +5550,9 @@ static const struct LevelUpMove sTaurosPaldeaBlazeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6207,12 +5576,9 @@ static const struct LevelUpMove sTaurosPaldeaAquaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_WAVE_CRASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_PALDEAN_FORMS
@@ -6226,11 +5592,7 @@ static const struct LevelUpMove sMagikarpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_TACKLE),
     //Brawly Lv16
     // >>> Evo Lv20
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -6264,12 +5626,9 @@ static const struct LevelUpMove sGyaradosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DRAGON_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THRASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HURRICANE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYPER_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAGIKARP
@@ -6295,13 +5654,10 @@ static const struct LevelUpMove sLaprasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ICE_BEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PERISH_SONG),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LAPRAS
@@ -6309,17 +5665,13 @@ static const struct LevelUpMove sLaprasLevelUpLearnset[] = {
 #if P_FAMILY_DITTO
 static const struct LevelUpMove sDittoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TRANSFORM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DITTO
@@ -6333,7 +5685,7 @@ static const struct LevelUpMove sEeveeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BABY_DOLL_EYES),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_SWIFT),
@@ -6354,11 +5706,8 @@ static const struct LevelUpMove sEeveeLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Espeon
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6394,11 +5743,8 @@ static const struct LevelUpMove sVaporeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ACID_ARMOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6433,11 +5779,8 @@ static const struct LevelUpMove sJolteonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THUNDER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6472,11 +5815,8 @@ static const struct LevelUpMove sFlareonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SCARY_FACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6511,11 +5851,8 @@ static const struct LevelUpMove sEspeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PSYCH_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6550,11 +5887,8 @@ static const struct LevelUpMove sUmbreonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SCREECH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_WILL_O_WISP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -6592,11 +5926,8 @@ static const struct LevelUpMove sLeafeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6630,11 +5961,8 @@ static const struct LevelUpMove sGlaceonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_MIRROR_COAT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -6670,11 +5998,8 @@ static const struct LevelUpMove sSylveonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PSYCH_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_6_CROSS_EVOS
@@ -6701,12 +6026,9 @@ static const struct LevelUpMove sPorygonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_TRI_ATTACK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LOCK_ON),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ZAP_CANNON),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6732,12 +6054,9 @@ static const struct LevelUpMove sPorygon2LevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_TRI_ATTACK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_ZAP_CANNON),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HYPER_BEAM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6765,13 +6084,10 @@ static const struct LevelUpMove sPorygonZLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_TRI_ATTACK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LOCK_ON),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ZAP_CANNON),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -6800,12 +6116,9 @@ static const struct LevelUpMove sOmanyteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ROCK_BLAST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SURF),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SHELL_SMASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HYDRO_PUMP),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6831,13 +6144,10 @@ static const struct LevelUpMove sOmastarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_PROTECT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ROCK_BLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SURF),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SHELL_SMASH),
-    LEVEL_UP_MOVE(70, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_SURF),
+    LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_OMANYTE
@@ -6864,12 +6174,9 @@ static const struct LevelUpMove sKabutoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_LEECH_LIFE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_LIQUIDATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_METAL_SOUND),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_METAL_SOUND),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -6897,13 +6204,10 @@ static const struct LevelUpMove sKabutopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_PROTECT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_LEECH_LIFE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_LIQUIDATION),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_METAL_SOUND),
-    LEVEL_UP_MOVE(70, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_LIQUIDATION),
+    LEVEL_UP_MOVE(50, MOVE_METAL_SOUND),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KABUTO
@@ -6929,12 +6233,9 @@ static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_STONE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_AGILITY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HYPER_BEAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_AERODACTYL
@@ -6964,11 +6265,8 @@ static const struct LevelUpMove sMunchlaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FLAIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BELLY_DRUM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LAST_RESORT),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -7006,12 +6304,9 @@ static const struct LevelUpMove sSnorlaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HAMMER_ARM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BELLY_DRUM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_BELCH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GIGA_IMPACT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SNORLAX
@@ -7037,14 +6332,11 @@ static const struct LevelUpMove sArticunoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ICE_BEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SNOWSCAPE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HAZE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_BLIZZARD),
-    LEVEL_UP_MOVE(70, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_HAZE),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7068,14 +6360,11 @@ static const struct LevelUpMove sArticunoGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FREEZING_GLARE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DOUBLE_TEAM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(70, MOVE_TRICK_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_TEAM),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_TRICK_ROOM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -7102,14 +6391,11 @@ static const struct LevelUpMove sZapdosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_THUNDER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DETECT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_MAGNETIC_FLUX),
-    LEVEL_UP_MOVE(70, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_DETECT),
+    LEVEL_UP_MOVE(50, MOVE_MAGNETIC_FLUX),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7134,14 +6420,11 @@ static const struct LevelUpMove sZapdosGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_THUNDEROUS_KICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_BULK_UP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_COUNTER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DETECT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(70, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(50, MOVE_COUNTER),
+    LEVEL_UP_MOVE(50, MOVE_DETECT),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -7168,14 +6451,11 @@ static const struct LevelUpMove sMoltresLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_HEAT_WAVE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ENDURE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(70, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_ENDURE),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7200,14 +6480,11 @@ static const struct LevelUpMove sMoltresGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FIERY_WRATH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ENDURE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_MEMENTO),
-    LEVEL_UP_MOVE(70, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_ENDURE),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -7219,7 +6496,7 @@ static const struct LevelUpMove sDratiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(10, MOVE_TWISTER),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_AQUA_TAIL),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_WRAP),
@@ -7236,12 +6513,9 @@ static const struct LevelUpMove sDratiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_OUTRAGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HYPER_BEAM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7265,16 +6539,13 @@ static const struct LevelUpMove sDragonairLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_DRAGON_RUSH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SAFEGUARD),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Evo
-    //Sidney Lv54
-    //Drake Lv60
     // >>> Evo Lv 55
-    LEVEL_UP_MOVE(60, MOVE_DRAGON_DANCE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(74, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
 
@@ -7303,15 +6574,12 @@ static const struct LevelUpMove sDragoniteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_OUTRAGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SAFEGUARD),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Evo
-    //Sidney Lv54
-    //Drake Lv60
     // >>> Evo Lv 55
-    LEVEL_UP_MOVE(62, MOVE_DRAGON_DANCE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(80, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRATINI
@@ -7335,16 +6603,13 @@ static const struct LevelUpMove sMewtwoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_AURA_SPHERE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_POWER_SWAP),
-    LEVEL_UP_MOVE(56, MOVE_GUARD_SWAP),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_MIST),
-    LEVEL_UP_MOVE(72, MOVE_PSYSTRIKE),
-    LEVEL_UP_MOVE(80, MOVE_RECOVER),
-    LEVEL_UP_MOVE(88, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_POWER_SWAP),
+    LEVEL_UP_MOVE(50, MOVE_GUARD_SWAP),
+    LEVEL_UP_MOVE(50, MOVE_MIST),
+    LEVEL_UP_MOVE(50, MOVE_PSYSTRIKE),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MEWTWO
@@ -7365,15 +6630,12 @@ static const struct LevelUpMove sMewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LIFE_DEW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_METRONOME),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(80, MOVE_TRANSFORM),
-    LEVEL_UP_MOVE(90, MOVE_AURA_SPHERE),
-    LEVEL_UP_MOVE(100, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_METRONOME),
+    LEVEL_UP_MOVE(50, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(50, MOVE_TRANSFORM),
+    LEVEL_UP_MOVE(50, MOVE_AURA_SPHERE),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MEW
@@ -7394,18 +6656,14 @@ static const struct LevelUpMove sChikoritaLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SWEET_SCENT),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_LIGHT_SCREEN),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_BODY_SLAM),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_SAFEGUARD),
     LEVEL_UP_MOVE(42, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(45, MOVE_SOLAR_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7432,11 +6690,8 @@ static const struct LevelUpMove sBayleefLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SAFEGUARD),
     LEVEL_UP_MOVE(50, MOVE_GIGA_DRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7462,13 +6717,10 @@ static const struct LevelUpMove sMeganiumLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LIGHT_SCREEN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BODY_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SAFEGUARD),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_GIGA_DRAIN),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SAFEGUARD),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHIKORITA
@@ -7488,21 +6740,18 @@ static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_FLAME_CHARGE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SWIFT),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_LAVA_PLUME),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_INFERNO),
     LEVEL_UP_MOVE(49, MOVE_ROLLOUT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(58, MOVE_OVERHEAT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_ERUPTION),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_ERUPTION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7519,23 +6768,20 @@ static const struct LevelUpMove sQuilavaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_DEFENSE_CURL),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SWIFT),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_FLAME_CHARGE),
     //Winona Lv35
     // >>> Evo Lv 36
     LEVEL_UP_MOVE(42, MOVE_LAVA_PLUME),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_INFERNO),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_ROLLOUT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(68, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(75, MOVE_ERUPTION),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_ROLLOUT),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_ERUPTION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7554,21 +6800,18 @@ static const struct LevelUpMove sTyphlosionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_DEFENSE_CURL),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SWIFT),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_FLAME_CHARGE),
     //Winona Lv35
     // >>> Evo Lv 36
     LEVEL_UP_MOVE(43, MOVE_LAVA_PLUME),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_INFERNO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_ROLLOUT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(74, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_ROLLOUT),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7589,20 +6832,17 @@ static const struct LevelUpMove sTyphlosionHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_DEFENSE_CURL),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SWIFT),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_FLAME_CHARGE),
     //Winona Lv35
     LEVEL_UP_MOVE(43, MOVE_LAVA_PLUME),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_INFERNO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_ROLLOUT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(74, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_ROLLOUT),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -7632,10 +6872,7 @@ static const struct LevelUpMove sTotodileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SUPERPOWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7662,11 +6899,8 @@ static const struct LevelUpMove sCroconawLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_AQUA_TAIL),
     LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7690,14 +6924,11 @@ static const struct LevelUpMove sFeraligatrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SLASH),
     LEVEL_UP_MOVE(44, MOVE_SCREECH),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_THRASH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(59, MOVE_AQUA_TAIL),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SUPERPOWER),
-    LEVEL_UP_MOVE(70, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_AQUA_TAIL),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TOTODILE
@@ -7717,18 +6948,15 @@ static const struct LevelUpMove sSentretLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_SLAM),
     LEVEL_UP_MOVE(28, MOVE_REST),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SUCKER_PUNCH),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_AMNESIA),
     LEVEL_UP_MOVE(39, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_HYPER_VOICE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7755,11 +6983,8 @@ static const struct LevelUpMove sFurretLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYPER_VOICE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SENTRET
@@ -7788,11 +7013,7 @@ static const struct LevelUpMove sHoothootLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE(39, MOVE_DREAM_EATER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7820,11 +7041,8 @@ static const struct LevelUpMove sNoctowlLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_MOONBLAST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPNOSIS),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_DREAM_EATER),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HOOTHOOT
@@ -7852,11 +7070,7 @@ static const struct LevelUpMove sLedybaLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7885,10 +7099,7 @@ static const struct LevelUpMove sLedianLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AIR_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LEDYBA
@@ -7918,11 +7129,8 @@ static const struct LevelUpMove sSpinarakLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_CROSS_POISON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_STICKY_WEB),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_TOXIC_THREAD),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TOXIC_THREAD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -7945,20 +7153,17 @@ static const struct LevelUpMove sAriadosLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SUCKER_PUNCH),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_AGILITY),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_PIN_MISSILE),
     //Winona Lv35
     LEVEL_UP_MOVE(41, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_POISON_JAB),
     LEVEL_UP_MOVE(50, MOVE_CROSS_POISON),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STICKY_WEB),
-    LEVEL_UP_MOVE(59, MOVE_TOXIC_THREAD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STICKY_WEB),
+    LEVEL_UP_MOVE(50, MOVE_TOXIC_THREAD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPINARAK
@@ -7985,11 +7190,7 @@ static const struct LevelUpMove sChinchouLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_FLAIL),
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(44, MOVE_HYDRO_PUMP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8018,11 +7219,8 @@ static const struct LevelUpMove sLanturnLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FLAIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_TAKE_DOWN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHINCHOU
@@ -8052,11 +7250,8 @@ static const struct LevelUpMove sTogepiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BATON_PASS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LAST_RESORT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_WISH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8085,12 +7280,9 @@ static const struct LevelUpMove sTogeticLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BATON_PASS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LAST_RESORT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_WISH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DAZZLING_GLEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WISH),
+    LEVEL_UP_MOVE(50, MOVE_DAZZLING_GLEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8125,12 +7317,9 @@ static const struct LevelUpMove sTogekissLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BATON_PASS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LAST_RESORT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_WISH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DAZZLING_GLEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WISH),
+    LEVEL_UP_MOVE(50, MOVE_DAZZLING_GLEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -8152,19 +7341,16 @@ static const struct LevelUpMove sNatuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_CALM_MIND),
     // >>> Evo Lv27
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_TRICK_ROOM),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_PSYCHIC),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_WISH),
     LEVEL_UP_MOVE(45, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_POWER_SWAP),
-    //Juan Lv50
     LEVEL_UP_MOVE(50, MOVE_GUARD_SWAP),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8192,13 +7378,10 @@ static const struct LevelUpMove sXatuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WISH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FUTURE_SIGHT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_POWER_SWAP),
-    LEVEL_UP_MOVE(62, MOVE_GUARD_SWAP),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_POWER_SWAP),
+    LEVEL_UP_MOVE(50, MOVE_GUARD_SWAP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NATU
@@ -8226,11 +7409,7 @@ static const struct LevelUpMove sMareepLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_COTTON_GUARD),
     LEVEL_UP_MOVE(39, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE(43, MOVE_THUNDER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8257,11 +7436,8 @@ static const struct LevelUpMove sFlaaffyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_COTTON_GUARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_DAZZLING_GLEAM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_THUNDER),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8291,13 +7467,10 @@ static const struct LevelUpMove sAmpharosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_COTTON_GUARD),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_DAZZLING_GLEAM),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_THUNDER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_DRACO_METEOR),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DAZZLING_GLEAM),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_DRACO_METEOR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAREEP
@@ -8314,11 +7487,7 @@ static const struct LevelUpMove sAzurillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_SLAM),
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BOUNCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -8338,7 +7507,7 @@ static const struct LevelUpMove sMarillLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE( 9, MOVE_CHARM),
     LEVEL_UP_MOVE(12, MOVE_LIFE_DEW),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_SLAM),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_BOUNCE),
@@ -8355,11 +7524,7 @@ static const struct LevelUpMove sMarillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SUPERPOWER),
     LEVEL_UP_MOVE(39, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(42, MOVE_BELLY_DRUM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8391,12 +7556,9 @@ static const struct LevelUpMove sAzumarillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SUPERPOWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_BELLY_DRUM),
+    LEVEL_UP_MOVE(50, MOVE_BELLY_DRUM),
     //T&L
-    //Juan Lv50
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MARILL
@@ -8423,11 +7585,7 @@ static const struct LevelUpMove sBonslyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_LOW_KICK),
     LEVEL_UP_MOVE(40, MOVE_COUNTER),
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -8458,10 +7616,7 @@ static const struct LevelUpMove sSudowoodoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HEAD_SMASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SUDOWOODO
@@ -8493,11 +7648,7 @@ static const struct LevelUpMove sHoppipLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_BOUNCE),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_MEMENTO),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8521,18 +7672,14 @@ static const struct LevelUpMove sSkiploomLevelUpLearnset[] = {
     // >>> Evo Lv 27
     LEVEL_UP_MOVE(28, MOVE_ACROBATICS),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_COTTON_SPORE),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_U_TURN),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(41, MOVE_BOUNCE),
     LEVEL_UP_MOVE(44, MOVE_MEMENTO),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8562,11 +7709,8 @@ static const struct LevelUpMove sJumpluffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BOUNCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MEMENTO),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HOPPIP
@@ -8593,11 +7737,7 @@ static const struct LevelUpMove sAipomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_FLING),
     LEVEL_UP_MOVE(39, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(43, MOVE_LAST_RESORT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8623,11 +7763,7 @@ static const struct LevelUpMove sAmbipomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_FLING),
     LEVEL_UP_MOVE(39, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(43, MOVE_LAST_RESORT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -8648,17 +7784,13 @@ static const struct LevelUpMove sSunkernLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(28, MOVE_SYNTHESIS),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SOLAR_BEAM),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_DOUBLE_EDGE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE(39, MOVE_SEED_BOMB),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8679,18 +7811,15 @@ static const struct LevelUpMove sSunfloraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE(28, MOVE_PETAL_DANCE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SOLAR_BEAM),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_DOUBLE_EDGE),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE(43, MOVE_LEAF_STORM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PETAL_BLIZZARD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SUNKERN
@@ -8701,7 +7830,7 @@ static const struct LevelUpMove sYanmaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(11, MOVE_DOUBLE_TEAM),
     LEVEL_UP_MOVE(14, MOVE_AIR_CUTTER),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DETECT),
     LEVEL_UP_MOVE(22, MOVE_SUPERSONIC),
@@ -8717,12 +7846,9 @@ static const struct LevelUpMove sYanmaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SCREECH),
     LEVEL_UP_MOVE(49, MOVE_U_TURN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE(57, MOVE_BUG_BUZZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8735,7 +7861,7 @@ static const struct LevelUpMove sYanmegaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(14, MOVE_QUICK_ATTACK),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DETECT),
     LEVEL_UP_MOVE(22, MOVE_SUPERSONIC),
@@ -8751,10 +7877,7 @@ static const struct LevelUpMove sYanmegaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SCREECH),
     LEVEL_UP_MOVE(49, MOVE_U_TURN),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -8782,11 +7905,7 @@ static const struct LevelUpMove sWooperLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TOXIC),
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8811,11 +7930,8 @@ static const struct LevelUpMove sQuagsireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_AMNESIA),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_TOXIC),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_EARTHQUAKE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8840,11 +7956,7 @@ static const struct LevelUpMove sWooperPaldeaLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TOXIC),
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8870,10 +7982,7 @@ static const struct LevelUpMove sClodsireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_TOXIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_PALDEAN_FORMS
@@ -8892,19 +8001,16 @@ static const struct LevelUpMove sMurkrowLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_ASSURANCE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_TAUNT),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_MEAN_LOOK),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_FOUL_PLAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SUCKER_PUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_TORMENT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_QUASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TORMENT),
+    LEVEL_UP_MOVE(50, MOVE_QUASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8926,12 +8032,9 @@ static const struct LevelUpMove sHonchkrowLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(45, MOVE_FOUL_PLAY),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DARK_PULSE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_COMEUPPANCE),
+    LEVEL_UP_MOVE(50, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_COMEUPPANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -8943,7 +8046,7 @@ static const struct LevelUpMove sMisdreavusLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_ASTONISH),
     LEVEL_UP_MOVE(14, MOVE_CONFUSE_RAY),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_MEAN_LOOK),
     LEVEL_UP_MOVE(23, MOVE_HEX),
@@ -8958,10 +8061,7 @@ static const struct LevelUpMove sMisdreavusLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PERISH_SONG),
     LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -8974,17 +8074,13 @@ static const struct LevelUpMove sMismagiusLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWER_GEM),
     LEVEL_UP_MOVE( 1, MOVE_PHANTOM_FORCE),
     LEVEL_UP_MOVE( 1, MOVE_MYSTICAL_FIRE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -8993,17 +8089,13 @@ static const struct LevelUpMove sMismagiusLevelUpLearnset[] = {
 #if P_FAMILY_UNOWN
 static const struct LevelUpMove sUnownLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HIDDEN_POWER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_UNOWN
@@ -9019,17 +8111,13 @@ static const struct LevelUpMove sWynautLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_ENCORE),
     LEVEL_UP_MOVE( 1, MOVE_AMNESIA),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 15
 };
@@ -9048,17 +8136,13 @@ static const struct LevelUpMove sWobbuffetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE( 1, MOVE_SAFEGUARD),
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 15
 };
@@ -9074,7 +8158,7 @@ static const struct LevelUpMove sGirafarigLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(14, MOVE_STOMP),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(23, MOVE_AGILITY),
@@ -9090,10 +8174,7 @@ static const struct LevelUpMove sGirafarigLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9107,7 +8188,7 @@ static const struct LevelUpMove sFarigirafLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(14, MOVE_STOMP),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(23, MOVE_AGILITY),
@@ -9123,10 +8204,7 @@ static const struct LevelUpMove sFarigirafLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -9155,11 +8233,7 @@ static const struct LevelUpMove sPinecoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(42, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(45, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9190,10 +8264,7 @@ static const struct LevelUpMove sForretressLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PINECO
@@ -9221,11 +8292,8 @@ static const struct LevelUpMove sDunsparceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENDEAVOR),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9252,13 +8320,10 @@ static const struct LevelUpMove sDudunsparceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENDEAVOR),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HURRICANE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_BOOMBURST),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -9287,10 +8352,7 @@ static const struct LevelUpMove sGligarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CRABHAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9319,10 +8381,7 @@ static const struct LevelUpMove sGliscorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CRABHAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -9347,17 +8406,14 @@ static const struct LevelUpMove sSnubbullLevelUpLearnset[] = {
     // >>> Evo Lv 23
     LEVEL_UP_MOVE(25, MOVE_ROAR),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_LAST_RESORT),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(43, MOVE_PAYBACK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_CRUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9385,12 +8441,9 @@ static const struct LevelUpMove sGranbullLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(43, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_PAYBACK),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(59, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PAYBACK),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SNUBBULL
@@ -9419,12 +8472,9 @@ static const struct LevelUpMove sQwilfishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TOXIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AQUA_TAIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ACUPRESSURE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DESTINY_BOND),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ACUPRESSURE),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9452,12 +8502,9 @@ static const struct LevelUpMove sQwilfishHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TOXIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CRUNCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ACUPRESSURE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DESTINY_BOND),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ACUPRESSURE),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9484,12 +8531,9 @@ static const struct LevelUpMove sOverqwilLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TOXIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CRUNCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ACUPRESSURE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DESTINY_BOND),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ACUPRESSURE),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -9511,19 +8555,16 @@ static const struct LevelUpMove sShuckleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_BUG_BITE),
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_POWER_SPLIT),
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_GUARD_SPLIT),
+    //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_ROCK_SLIDE),
     LEVEL_UP_MOVE(45, MOVE_GASTRO_ACID),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_STICKY_WEB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_POWER_TRICK),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SHELL_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_POWER_TRICK),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHUCKLE
@@ -9550,12 +8591,9 @@ static const struct LevelUpMove sHeracrossLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MEGAHORN),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HERACROSS
@@ -9579,12 +8617,9 @@ static const struct LevelUpMove sSneaselLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BEAT_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AGILITY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SCREECH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SLASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SCREECH),
+    LEVEL_UP_MOVE(50, MOVE_SLASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9612,13 +8647,10 @@ static const struct LevelUpMove sWeavileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FLING),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_NASTY_PLOT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SCREECH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_NIGHT_SLASH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_SCREECH),
+    LEVEL_UP_MOVE(50, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_DARK_PULSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -9643,12 +8675,9 @@ static const struct LevelUpMove sSneaselHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AGILITY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SCREECH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SCREECH),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9673,12 +8702,9 @@ static const struct LevelUpMove sSneaslerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AGILITY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SCREECH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SCREECH),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -9708,11 +8734,7 @@ static const struct LevelUpMove sTeddiursaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_REST),
     LEVEL_UP_MOVE(37, MOVE_SNORE),
     LEVEL_UP_MOVE(41, MOVE_THRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9740,12 +8762,9 @@ static const struct LevelUpMove sUrsaringLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_SNORE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HIGH_HORSEPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_THRASH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9774,12 +8793,9 @@ static const struct LevelUpMove sUrsalunaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_SNORE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HIGH_HORSEPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_THRASH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9805,13 +8821,10 @@ static const struct LevelUpMove sUrsalunaBloodmoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_SNORE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTH_POWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MOONBLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HAMMER_ARM),
-    LEVEL_UP_MOVE(70, MOVE_BLOOD_MOON),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_BLOOD_MOON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_8_CROSS_EVOS
@@ -9844,10 +8857,7 @@ static const struct LevelUpMove sSlugmaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ERUPTION),
     // LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9876,11 +8886,8 @@ static const struct LevelUpMove sMagcargoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_RECOVER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_ERUPTION),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ERUPTION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SLUGMA
@@ -9907,10 +8914,7 @@ static const struct LevelUpMove sSwinubLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9935,13 +8939,10 @@ static const struct LevelUpMove sPiloswineLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_AMNESIA),
     LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_EARTHQUAKE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_BLIZZARD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -9967,13 +8968,10 @@ static const struct LevelUpMove sMamoswineLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_AMNESIA),
     LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_EARTHQUAKE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_BLIZZARD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -10001,11 +8999,8 @@ static const struct LevelUpMove sCorsolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RECOVER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MIRROR_COAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10031,11 +9026,8 @@ static const struct LevelUpMove sCorsolaGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_NIGHT_SHADE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_GRUDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MIRROR_COAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10061,11 +9053,8 @@ static const struct LevelUpMove sCursolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_NIGHT_SHADE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_GRUDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MIRROR_COAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -10093,11 +9082,7 @@ static const struct LevelUpMove sRemoraidLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(40, MOVE_SOAK),
     LEVEL_UP_MOVE(44, MOVE_HYPER_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10127,11 +9112,8 @@ static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOAK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_HYPER_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REMORAID
@@ -10143,11 +9125,7 @@ static const struct LevelUpMove sDelibirdLevelUpLearnset[] = {
     //Brawly Lv16
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_DRILL_PECK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -10179,10 +9157,7 @@ static const struct LevelUpMove sMantykeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -10212,10 +9187,7 @@ static const struct LevelUpMove sMantineLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MANTINE
@@ -10244,11 +9216,8 @@ static const struct LevelUpMove sSkarmoryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SPIKES),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_IRON_DEFENSE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_BRAVE_BIRD),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SKARMORY
@@ -10277,12 +9246,9 @@ static const struct LevelUpMove sHoundourLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_CRUNCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_NASTY_PLOT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_INFERNO),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10310,12 +9276,9 @@ static const struct LevelUpMove sHoundoomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FOUL_PLAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CRUNCH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_INFERNO),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HOUNDOUR
@@ -10343,11 +9306,7 @@ static const struct LevelUpMove sPhanpyLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_LAST_RESORT),
     LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10374,12 +9333,9 @@ static const struct LevelUpMove sDonphanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_HIGH_HORSEPOWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HEADLONG_RUSH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CLOSE_COMBAT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PHANPY
@@ -10405,11 +9361,8 @@ static const struct LevelUpMove sStantlerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_IMPRISON),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10435,12 +9388,9 @@ static const struct LevelUpMove sWyrdeerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_IMPRISON),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_MEGAHORN),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_8_CROSS_EVOS
@@ -10455,20 +9405,17 @@ static const struct LevelUpMove sSmeargleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(21, MOVE_SKETCH),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SKETCH),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(41, MOVE_SKETCH),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_SKETCH),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_SKETCH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(71, MOVE_SKETCH),
-    LEVEL_UP_MOVE(81, MOVE_SKETCH),
-    LEVEL_UP_MOVE(91, MOVE_SKETCH),
+    LEVEL_UP_MOVE(50, MOVE_SKETCH),
+    LEVEL_UP_MOVE(50, MOVE_SKETCH),
+    LEVEL_UP_MOVE(50, MOVE_SKETCH),
+    LEVEL_UP_MOVE(50, MOVE_SKETCH),
+    LEVEL_UP_MOVE(50, MOVE_SKETCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SMEARGLE
@@ -10494,11 +9441,8 @@ static const struct LevelUpMove sMiltankLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CHARM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HIGH_HORSEPOWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HIGH_HORSEPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MILTANK
@@ -10525,15 +9469,12 @@ static const struct LevelUpMove sRaikouLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EXTRASENSORY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DISCHARGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_REFLECT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(72, MOVE_THUNDER),
-    LEVEL_UP_MOVE(78, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_REFLECT),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RAIKOU
@@ -10561,15 +9502,12 @@ static const struct LevelUpMove sEnteiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EXTRASENSORY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_LAVA_PLUME),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SWAGGER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE(72, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(78, MOVE_ERUPTION),
+    LEVEL_UP_MOVE(50, MOVE_LAVA_PLUME),
+    LEVEL_UP_MOVE(50, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_ERUPTION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ENTEI
@@ -10597,15 +9535,12 @@ static const struct LevelUpMove sSuicuneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EXTRASENSORY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SURF),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MIRROR_COAT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(72, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(78, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_SURF),
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SUICUNE
@@ -10617,7 +9552,7 @@ static const struct LevelUpMove sLarvitarLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE( 9, MOVE_BITE),
     LEVEL_UP_MOVE(12, MOVE_ROCK_THROW),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BULLDOZE),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_STOMP),
@@ -10635,11 +9570,7 @@ static const struct LevelUpMove sLarvitarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_THRASH),
     LEVEL_UP_MOVE(39, MOVE_STOMPING_TANTRUM),
     LEVEL_UP_MOVE(42, MOVE_HYPER_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10669,12 +9600,9 @@ static const struct LevelUpMove sPupitarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_STOMPING_TANTRUM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Evo
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 55
 };
@@ -10707,14 +9635,11 @@ static const struct LevelUpMove sTyranitarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_STOMPING_TANTRUM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Evo
-    //Sidney Lv54
     // >>> Evo Lv 55
-    LEVEL_UP_MOVE(59, MOVE_GIGA_IMPACT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LARVITAR
@@ -10738,15 +9663,12 @@ static const struct LevelUpMove sLugiaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_EXTRASENSORY),
     LEVEL_UP_MOVE(45, MOVE_RECOVER),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AEROBLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(72, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(81, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(90, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE(50, MOVE_AEROBLAST),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LUGIA
@@ -10769,16 +9691,13 @@ static const struct LevelUpMove sHoOhLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_EXTRASENSORY),
     LEVEL_UP_MOVE(45, MOVE_RECOVER),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SACRED_FIRE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SUNNY_DAY),
-    LEVEL_UP_MOVE(72, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(81, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(90, MOVE_SKY_ATTACK),
-    LEVEL_UP_MOVE(99, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_SACRED_FIRE),
+    LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HO_OH
@@ -10799,15 +9718,12 @@ static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_LIFE_DEW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_LEECH_SEED),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_RECOVER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(80, MOVE_HEALING_WISH),
-    LEVEL_UP_MOVE(90, MOVE_LEAF_STORM),
-    LEVEL_UP_MOVE(100, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CELEBI
@@ -10821,7 +9737,7 @@ static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_DETECT),
     LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_QUICK_GUARD),
     //Brawly Lv16
     // >>> Evo Lv 16
@@ -10837,11 +9753,7 @@ static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(39, MOVE_LEAF_STORM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10874,11 +9786,8 @@ static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_ENDEAVOR),
-    //Juan Lv50
-    //Sidney Lv54
     LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10912,12 +9821,9 @@ static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEAF_STORM),
-    LEVEL_UP_MOVE(60, MOVE_DRAGON_CHEER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_CHEER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TREECKO
@@ -10931,7 +9837,7 @@ static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_DETECT),
     LEVEL_UP_MOVE(12, MOVE_PECK),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FLAME_CHARGE),
     // >>> Evo Lv16
     //Brawly Lv16
@@ -10947,11 +9853,7 @@ static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE(39, MOVE_FLARE_BLITZ),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -10975,18 +9877,15 @@ static const struct LevelUpMove sCombuskenLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_TEMPER_FLARE),
     //Norman Lv31
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_FOCUS_ENERGY),
+    //Winona Lv35
     // >>> Evo Lv36
     LEVEL_UP_MOVE(40, MOVE_BULK_UP),
     LEVEL_UP_MOVE(45, MOVE_REVERSAL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_BRAVE_BIRD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11018,12 +9917,9 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BULK_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_REVERSAL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TORCHIC
@@ -11037,7 +9933,7 @@ static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 9, MOVE_PROTECT),
     LEVEL_UP_MOVE(12, MOVE_ROCK_THROW),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_YAWN),
     //Evo
     //Brawly Lv16
@@ -11054,11 +9950,7 @@ static const struct LevelUpMove sMudkipLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(39, MOVE_WAVE_CRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11082,18 +9974,15 @@ static const struct LevelUpMove sMarshtompLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_BODY_PRESS),
     //Norman Lv31
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_ROCK_SLIDE),
+    //Winona Lv35
     // >>> Evo Lv36
     LEVEL_UP_MOVE(40, MOVE_MUDDY_WATER),
     LEVEL_UP_MOVE(45, MOVE_FLIP_TURN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_WAVE_CRASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11123,12 +10012,9 @@ static const struct LevelUpMove sSwampertLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_MUDDY_WATER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_FLIP_TURN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_ENDEAVOR),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MUDKIP
@@ -11141,7 +10027,7 @@ static const struct LevelUpMove sPoochyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_BITE),
     LEVEL_UP_MOVE(13, MOVE_LEER),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ROAR),
     //Brawly Lv16
     //Evo
@@ -11158,11 +10044,7 @@ static const struct LevelUpMove sPoochyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(40, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(44, MOVE_PSYCHIC_FANGS),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11194,12 +10076,9 @@ static const struct LevelUpMove sMightyenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ASSURANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SUCKER_PUNCH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYCHIC_FANGS),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC_FANGS),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_POOCHYENA
@@ -11213,7 +10092,7 @@ static const struct LevelUpMove sZigzagoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 9, MOVE_WORK_UP),
     LEVEL_UP_MOVE(12, MOVE_COVET),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_HEADBUTT),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_PIN_MISSILE),
@@ -11228,11 +10107,7 @@ static const struct LevelUpMove sZigzagoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_BELLY_DRUM),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11265,11 +10140,8 @@ static const struct LevelUpMove sLinooneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_BELLY_DRUM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_IRON_TAIL),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_IRON_TAIL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11296,11 +10168,7 @@ static const struct LevelUpMove sZigzagoonGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_TAUNT),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11332,10 +10200,7 @@ static const struct LevelUpMove sLinooneGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_TAUNT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11368,11 +10233,8 @@ static const struct LevelUpMove sObstagoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_COUNTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_TAUNT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -11385,17 +10247,13 @@ static const struct LevelUpMove sWurmpleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_POISON_STING),
     // >>> Evo Lv 7
     LEVEL_UP_MOVE(10, MOVE_BUG_BITE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11413,11 +10271,7 @@ static const struct LevelUpMove sSilcoonLevelUpLearnset[] = {
     //Wattson Lv24
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_SILK_TRAP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     LEVEL_UP_END
@@ -11433,7 +10287,7 @@ static const struct LevelUpMove sBeautiflyLevelUpLearnset[] = {
     //Evo
     // >>> Evo Lv 10
     LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_STUN_SPORE),
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_MORNING_SUN),
@@ -11446,17 +10300,13 @@ static const struct LevelUpMove sBeautiflyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_WHIRLWIND),
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_GIGA_DRAIN),
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_BUG_BUZZ),
+    //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_STICKY_WEB),
     LEVEL_UP_MOVE(40, MOVE_QUIVER_DANCE),
-    // LEVEL_UP_MOVE(100, MOVE_BUG_BITE),
-    // LEVEL_UP_MOVE(100, MOVE_IRON_DEFENSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    // LEVEL_UP_MOVE(50, MOVE_BUG_BITE),
+    // LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11469,11 +10319,7 @@ static const struct LevelUpMove sCascoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_IRON_DEFENSE),
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_SILK_TRAP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -11492,7 +10338,7 @@ static const struct LevelUpMove sDustoxLevelUpLearnset[] = {
     //Evo
     // >>> Evo Lv 10
     LEVEL_UP_MOVE(12, MOVE_CONFUSION),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_POISON_POWDER),
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_MOONLIGHT),
@@ -11505,17 +10351,13 @@ static const struct LevelUpMove sDustoxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_WHIRLWIND),
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_TOXIC),
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_BUG_BUZZ),
+    //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SPIKY_SHIELD),
     LEVEL_UP_MOVE(40, MOVE_QUIVER_DANCE),
-    // LEVEL_UP_MOVE(100, MOVE_BUG_BITE),
-    // LEVEL_UP_MOVE(100, MOVE_IRON_DEFENSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    // LEVEL_UP_MOVE(50, MOVE_BUG_BITE),
+    // LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WURMPLE
@@ -11543,11 +10385,7 @@ static const struct LevelUpMove sLotadLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_ZEN_HEADBUTT),
     LEVEL_UP_MOVE(43, MOVE_ENERGY_BALL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11561,7 +10399,7 @@ static const struct LevelUpMove sLombreLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_MIST),
     LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
     // >>> Evo Lv14
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(24, MOVE_BUBBLE_BEAM),
@@ -11573,12 +10411,9 @@ static const struct LevelUpMove sLombreLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ZEN_HEADBUTT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_ENERGY_BALL),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11606,12 +10441,9 @@ static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ZEN_HEADBUTT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_ENERGY_BALL),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LOTAD
@@ -11638,11 +10470,7 @@ static const struct LevelUpMove sSeedotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_SUCKER_PUNCH),
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_EXPLOSION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
 };
@@ -11661,7 +10489,7 @@ static const struct LevelUpMove sNuzleafLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_GROWTH),
     LEVEL_UP_MOVE(12, MOVE_ROLLOUT),
     // >>> Evo Lv14
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(24, MOVE_SUNNY_DAY),
@@ -11675,11 +10503,8 @@ static const struct LevelUpMove sNuzleafLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_EXTRASENSORY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SUCKER_PUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_LEAF_BLADE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11712,13 +10537,10 @@ static const struct LevelUpMove sShiftryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_EXTRASENSORY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SUCKER_PUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_HURRICANE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_BEAT_UP),
-    LEVEL_UP_MOVE(71, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_BEAT_UP),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
 
     LEVEL_UP_END
 };
@@ -11732,7 +10554,7 @@ static const struct LevelUpMove sTaillowLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_WING_ATTACK),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_ROOST),
     LEVEL_UP_MOVE(21, MOVE_U_TURN),
@@ -11747,11 +10569,7 @@ static const struct LevelUpMove sTaillowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(41, MOVE_BRAVE_BIRD),
     LEVEL_UP_MOVE(45, MOVE_REVERSAL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11780,13 +10598,10 @@ static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_DUAL_WINGBEAT),
     LEVEL_UP_MOVE(45, MOVE_ENDEAVOR),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_BRAVE_BIRD),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_REVERSAL),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_BOOMBURST),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TAILLOW
@@ -11799,12 +10614,12 @@ static const struct LevelUpMove sWingullLevelUpLearnset[] = {
     // >>> Catch
     LEVEL_UP_MOVE( 5, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_AGILITY),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
-    // >>> Evo Lv25
     //Wattson Lv24
+    // >>> Evo Lv25
     LEVEL_UP_MOVE(26, MOVE_MIST),
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_ROOST),
@@ -11813,16 +10628,13 @@ static const struct LevelUpMove sWingullLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_TAILWIND),
     LEVEL_UP_MOVE(45, MOVE_HURRICANE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sPelipperLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_PROTECT),
+    LEVEL_UP_MOVE( 1, MOVE_MIST),
     LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
     LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
     LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
@@ -11837,9 +10649,9 @@ static const struct LevelUpMove sPelipperLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_WING_ATTACK),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
-    // >>> Evo Lv25
     //Wattson Lv24
-    LEVEL_UP_MOVE(28, MOVE_MIST),
+    // >>> Evo Lv25
+    LEVEL_UP_MOVE(28, MOVE_RAIN_DANCE),
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_ROOST),
@@ -11847,13 +10659,10 @@ static const struct LevelUpMove sPelipperLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_AIR_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_TAILWIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Elite4
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_HYDRO_PUMP),
-    //Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WINGULL
@@ -11867,11 +10676,10 @@ static const struct LevelUpMove sRaltsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 9, MOVE_TELEPORT),
     LEVEL_UP_MOVE(12, MOVE_DRAINING_KISS),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_HYPNOSIS),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_PSYBEAM),
-    // >>> Evo at Lv20
     // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_LIFE_DEW),
     LEVEL_UP_MOVE(24, MOVE_CHARM),
@@ -11884,11 +10692,7 @@ static const struct LevelUpMove sRaltsLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DREAM_EATER),
     LEVEL_UP_MOVE(39, MOVE_FUTURE_SIGHT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11917,11 +10721,8 @@ static const struct LevelUpMove sKirliaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_HEAL_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DREAM_EATER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_FUTURE_SIGHT),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -11946,19 +10747,17 @@ static const struct LevelUpMove sGardevoirLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_WISH),
     // >>> Evo Lv30
-    //Norman Lv31
-    //Winona Lv35
     //Flannery Lv29
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_CALM_MIND),
+    //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_MOONBLAST),
-    //Juan Lv50
-    //Sidney
-    LEVEL_UP_MOVE(56, MOVE_DREAM_EATER),
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Steven
-    //Drake Lv60
-    LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
 };
 
@@ -11995,20 +10794,17 @@ static const struct LevelUpMove sGalladeLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_PROTECT),
     // >>> Evo Post-Flannery
-    //Norman Lv31
-    //Winona Lv35
     //Flannery Lv29
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SWORDS_DANCE),
+    //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_PSYCHO_CUT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_HEAL_PULSE),
-    //Juan Lv50
-    //Sidney
-    LEVEL_UP_MOVE(56, MOVE_WIDE_GUARD),
-    LEVEL_UP_MOVE(56, MOVE_QUICK_GUARD),
-    //Drake Lv60
-    LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
-    //Steven
+    LEVEL_UP_MOVE(50, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_QUICK_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -12022,10 +10818,10 @@ static const struct LevelUpMove sSurskitLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_POUNCE),
     LEVEL_UP_MOVE(14, MOVE_SOAK),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(22, MOVE_AGILITY),
+    LEVEL_UP_MOVE(21, MOVE_AGILITY),
     // >>> Evo Lv22
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_MIST),
@@ -12035,11 +10831,7 @@ static const struct LevelUpMove sSurskitLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_BATON_PASS),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_STICKY_WEB),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12049,8 +10841,6 @@ static const struct LevelUpMove sMasquerainLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AGILITY),
     LEVEL_UP_MOVE( 1, MOVE_MIST),
     LEVEL_UP_MOVE( 1, MOVE_HAZE),
-    LEVEL_UP_MOVE( 1, MOVE_BATON_PASS),
-    LEVEL_UP_MOVE( 1, MOVE_STICKY_WEB),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
@@ -12059,23 +10849,21 @@ static const struct LevelUpMove sMasquerainLevelUpLearnset[] = {
     //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_GUST),
+    LEVEL_UP_MOVE(21, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(21, MOVE_AIR_CUTTER),
     // >>> Evo Lv22
-    LEVEL_UP_MOVE(22, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(22, MOVE_AIR_CUTTER),
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_STUN_SPORE),
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_AIR_SLASH),
     //Winona Lv35
-    LEVEL_UP_MOVE(38, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(38, MOVE_QUIVER_DANCE),
     LEVEL_UP_MOVE(44, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_QUIVER_DANCE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BATON_PASS),
+    LEVEL_UP_MOVE(50, MOVE_STICKY_WEB),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SURSKIT
@@ -12088,7 +10876,7 @@ static const struct LevelUpMove sShroomishLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE( 8, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE(12, MOVE_MEGA_DRAIN),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_HEADBUTT),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_STUN_SPORE),
@@ -12102,11 +10890,7 @@ static const struct LevelUpMove sShroomishLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_SEED_BOMB),
     LEVEL_UP_MOVE(40, MOVE_SPORE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12137,12 +10921,9 @@ static const struct LevelUpMove sBreloomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SEED_BOMB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_POISON_JAB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FOCUS_PUNCH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_DYNAMIC_PUNCH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHROOMISH
@@ -12155,10 +10936,9 @@ static const struct LevelUpMove sSlakothLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_ENCORE),
     LEVEL_UP_MOVE( 9, MOVE_SLACK_OFF),
     LEVEL_UP_MOVE(14, MOVE_HEADBUTT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_AMNESIA),
-    //Evo
     // >>> Evo Lv 18
     LEVEL_UP_MOVE(22, MOVE_COVET),
     //Wattson Lv24
@@ -12169,11 +10949,7 @@ static const struct LevelUpMove sSlakothLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_FLAIL),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_PLAY_ROUGH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12183,10 +10959,7 @@ static const struct LevelUpMove sVigorothLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ENCORE),
     LEVEL_UP_MOVE( 1, MOVE_UPROAR),
     LEVEL_UP_MOVE(14, MOVE_FURY_SWIPES),
-    //Roxanne Lv14
-    //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_ENDURE),
-    //Evo
     // >>> Evo Lv 18
     LEVEL_UP_MOVE(23, MOVE_SLASH),
     //Wattson Lv24
@@ -12198,11 +10971,7 @@ static const struct LevelUpMove sVigorothLevelUpLearnset[] = {
     // >>> Evo Lv36
     LEVEL_UP_MOVE(37, MOVE_FOCUS_PUNCH),
     LEVEL_UP_MOVE(43, MOVE_REVERSAL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12217,26 +10986,18 @@ static const struct LevelUpMove sSlakingLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_YAWN),
     LEVEL_UP_MOVE( 1, MOVE_SLACK_OFF),
     LEVEL_UP_MOVE( 1, MOVE_SUCKER_PUNCH),
-    //Roxanne Lv14
-    //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_AMNESIA),
     LEVEL_UP_MOVE(23, MOVE_COVET),
-    //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_THROAT_CHOP),
-    //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_COUNTER),
-    // >>> Evo Lv36
     //Winona Lv35
+    // >>> Evo Lv36
     LEVEL_UP_MOVE(39, MOVE_FLAIL),
     LEVEL_UP_MOVE(45, MOVE_FLING),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_MEGA_KICK),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_MEGA_KICK),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SLAKOTH
@@ -12248,24 +11009,15 @@ static const struct LevelUpMove sNincadaLevelUpLearnset[] = {
     // >>> Catch
     LEVEL_UP_MOVE( 5, MOVE_HARDEN),
     LEVEL_UP_MOVE(10, MOVE_SAND_ATTACK),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FURY_CUTTER),
     //Brawly Lv16
     // >>> Evo Lv 20
     LEVEL_UP_MOVE(21, MOVE_DIG),
-    //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_METAL_CLAW),
-    //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_FURY_SWIPES),
-    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_LEECH_LIFE),
-    //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_FINAL_GAMBIT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12279,10 +11031,7 @@ static const struct LevelUpMove sNinjaskLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FURY_CUTTER),
-    //Evo
-    //Brawly Lv16
     // >>> Evo Lv 20
     LEVEL_UP_MOVE(23, MOVE_AERIAL_ACE),
     //Wattson Lv24
@@ -12294,12 +11043,9 @@ static const struct LevelUpMove sNinjaskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_LEECH_LIFE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SLASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_X_SCISSOR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12310,10 +11056,8 @@ static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FURY_CUTTER),
-    //Evo
-    //Brawly Lv16
+    //Evo Lv20
     LEVEL_UP_MOVE(23, MOVE_SHADOW_SNEAK),
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_CONFUSE_RAY),
@@ -12324,12 +11068,9 @@ static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_LEECH_LIFE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_SPITE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE(50, MOVE_SPITE),
+    LEVEL_UP_MOVE(50, MOVE_PHANTOM_FORCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NINCADA
@@ -12341,7 +11082,7 @@ static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_ECHOED_VOICE),
     // >>> Catch
     LEVEL_UP_MOVE(10, MOVE_HOWL),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_DISARMING_VOICE),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_REST),
@@ -12357,11 +11098,7 @@ static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SCREECH),
     LEVEL_UP_MOVE(45, MOVE_HYPER_VOICE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12389,11 +11126,8 @@ static const struct LevelUpMove sLoudredLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_UPROAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SCREECH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_HYPER_VOICE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12420,18 +11154,14 @@ static const struct LevelUpMove sExploudLevelUpLearnset[] = {
     //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PERISH_SONG),
-    //Evo
     // >>> Evo Lv 40
     LEVEL_UP_MOVE(45, MOVE_UPROAR),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SCREECH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HYPER_VOICE),
-    LEVEL_UP_MOVE(72, MOVE_BOOMBURST),
-    LEVEL_UP_MOVE(81, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SCREECH),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WHISMUR
@@ -12455,8 +11185,8 @@ static const struct LevelUpMove sMakuhitaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_BELLY_DRUM),
     LEVEL_UP_MOVE(28, MOVE_WIDE_GUARD),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SEISMIC_TOSS),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_FOCUS_PUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_ENDURE),
@@ -12464,10 +11194,7 @@ static const struct LevelUpMove sMakuhitaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_REVERSAL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HEAVY_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12498,12 +11225,9 @@ static const struct LevelUpMove sHariyamaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE(50, MOVE_REVERSAL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_HEAVY_SLAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HEADLONG_RUSH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_HEADLONG_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAKUHITA
@@ -12525,20 +11249,16 @@ static const struct LevelUpMove sNosepassLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_ROCK_BLAST),
     //Flannery Lv29
-    // >>> Evo Thunder Stone
     LEVEL_UP_MOVE(31, MOVE_DISCHARGE),
     //Norman Lv31
+    // >>> Evo Thunder Stone
     LEVEL_UP_MOVE(34, MOVE_SANDSTORM),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE(40, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(43, MOVE_ZAP_CANNON),
     LEVEL_UP_MOVE(43, MOVE_LOCK_ON),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12553,29 +11273,20 @@ static const struct LevelUpMove sProbopassLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE(13, MOVE_THUNDER_WAVE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_REST),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_SPARK),
     LEVEL_UP_MOVE(22, MOVE_ROCK_SLIDE),
-    //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(28, MOVE_ROCK_BLAST),
-    //Evo
-    //Flannery Lv29
     LEVEL_UP_MOVE(31, MOVE_DISCHARGE),
-    //Norman Lv31
+    //Evo Thunder Stone
     LEVEL_UP_MOVE(34, MOVE_SANDSTORM),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE(40, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(43, MOVE_ZAP_CANNON),
     LEVEL_UP_MOVE(43, MOVE_LOCK_ON),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -12591,7 +11302,7 @@ static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(10, MOVE_CHARM),
     LEVEL_UP_MOVE(13, MOVE_DISARMING_VOICE),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_COVET),
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_COPYCAT),
@@ -12601,8 +11312,8 @@ static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     // >>> Evo Moon Stone
     LEVEL_UP_MOVE(28, MOVE_FAKE_TEARS),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_FACADE),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_SIMPLE_BEAM),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_HEAL_BELL),
@@ -12610,10 +11321,7 @@ static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_BABY_DOLL_EYES),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12625,12 +11333,9 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(10, MOVE_CHARM),
     LEVEL_UP_MOVE(13, MOVE_DISARMING_VOICE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_COVET),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_COPYCAT),
     LEVEL_UP_MOVE(22, MOVE_PAYBACK),
-    //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_SING),
     // >>> Evo MoonStone
     LEVEL_UP_MOVE(28, MOVE_FAKE_TEARS),
@@ -12644,10 +11349,7 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_BABY_DOLL_EYES),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SKITTY
@@ -12679,10 +11381,7 @@ static const struct LevelUpMove sSableyeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FOUL_PLAY),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SABLEYE
@@ -12712,10 +11411,7 @@ static const struct LevelUpMove sMawileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FAKE_TEARS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAWILE
@@ -12738,19 +11434,13 @@ static const struct LevelUpMove sAronLevelUpLearnset[] = {
     //Norman Lv31
     // >>> Evo Lv32
     LEVEL_UP_MOVE(33, MOVE_METAL_SOUND),
-    //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(40, MOVE_AUTOTOMIZE),
     LEVEL_UP_MOVE(44, MOVE_IRON_TAIL),
-    //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_IRON_DEFENSE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HEAVY_SLAM),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_METAL_BURST),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
     LEVEL_UP_END
 };
 
@@ -12760,31 +11450,21 @@ static const struct LevelUpMove sLaironLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_TOMB),
     LEVEL_UP_MOVE(12, MOVE_ROAR),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_HEADBUTT),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(24, MOVE_ROCK_SLIDE),
-    //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_IRON_HEAD),
     // >>> Evo Lv32
     //Winona Lv35
-    //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
-    //Tate&Liza Lv45
     // >>> Evo Lv 42
     LEVEL_UP_MOVE(46, MOVE_AUTOTOMIZE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_BODY_PRESS),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_IRON_DEFENSE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HEAVY_SLAM),
-    LEVEL_UP_MOVE(70, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(76, MOVE_METAL_BURST),
+    LEVEL_UP_MOVE(50, MOVE_BODY_PRESS),
+    LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
     LEVEL_UP_END
 };
 
@@ -12795,30 +11475,21 @@ static const struct LevelUpMove sAggronLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_TOMB),
     LEVEL_UP_MOVE(12, MOVE_ROAR),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_HEADBUTT),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(24, MOVE_ROCK_SLIDE),
-    //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_IRON_HEAD),
-    //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_METAL_SOUND),
-    //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_TAKE_DOWN),
     // >>> Evo Lv42
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AUTOTOMIZE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BODY_PRESS),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_IRON_DEFENSE),
-    LEVEL_UP_MOVE(72, MOVE_HEAVY_SLAM),
-    LEVEL_UP_MOVE(80, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(88, MOVE_METAL_BURST),
+    LEVEL_UP_MOVE(50, MOVE_BODY_PRESS),
+    LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ARON
@@ -12829,19 +11500,14 @@ static const struct LevelUpMove sMedititeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WORK_UP),
     LEVEL_UP_MOVE( 9, MOVE_DETECT),
     LEVEL_UP_MOVE(12, MOVE_ENDURE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_FEINT),
-    //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_FORCE_PALM),
     LEVEL_UP_MOVE(20, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(23, MOVE_CALM_MIND),
-    //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(28, MOVE_HIGH_JUMP_KICK),
-    //Flannery Lv29
-    //Norman Lv31
-    LEVEL_UP_MOVE(31, MOVE_PSYCH_UP),
     // >>> Catch
+    LEVEL_UP_MOVE(28, MOVE_HIGH_JUMP_KICK),
+    LEVEL_UP_MOVE(31, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(33, MOVE_ACUPRESSURE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_POWER_TRICK),
@@ -12849,11 +11515,7 @@ static const struct LevelUpMove sMedititeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_REVERSAL),
     LEVEL_UP_MOVE(41, MOVE_RECOVER),
     LEVEL_UP_MOVE(44, MOVE_COUNTER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12875,21 +11537,17 @@ static const struct LevelUpMove sMedichamLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_ZEN_HEADBUTT),
     LEVEL_UP_MOVE(28, MOVE_HIGH_JUMP_KICK),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_PSYCH_UP),
+    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_ACUPRESSURE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_POWER_TRICK),
-    //Evo
-    //Tate&Liza Lv45
     // >>> Evo Lv 37
+    //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_RECOVER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_COUNTER),
-    LEVEL_UP_MOVE(53, MOVE_AXE_KICK),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_COUNTER),
+    LEVEL_UP_MOVE(50, MOVE_AXE_KICK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MEDITITE
@@ -12918,11 +11576,7 @@ static const struct LevelUpMove sElectrikeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_VOLT_SWITCH),
     LEVEL_UP_MOVE(40, MOVE_WILD_CHARGE),
     LEVEL_UP_MOVE(44, MOVE_THUNDER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -12950,12 +11604,9 @@ static const struct LevelUpMove sManectricLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_VOLT_SWITCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WILD_CHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THUNDER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ELECTRIC_TERRAIN),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_ELECTRIC_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ELECTRIKE
@@ -12990,10 +11641,7 @@ static const struct LevelUpMove sPlusleLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(49, MOVE_ENTRAINMENT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PLUSLE
@@ -13028,10 +11676,7 @@ static const struct LevelUpMove sMinunLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(49, MOVE_ENTRAINMENT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MINUN
@@ -13060,10 +11705,7 @@ static const struct LevelUpMove sVolbeatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_INFESTATION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13091,10 +11733,7 @@ static const struct LevelUpMove sIllumiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_INFESTATION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VOLBEAT_ILLUMISE
@@ -13106,17 +11745,7 @@ static const struct LevelUpMove sBudewLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
     LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE( 1, MOVE_WORRY_SEED),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
-    //Roxanne Lv14
+    //Evo but who cares
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -13131,9 +11760,7 @@ static const struct LevelUpMove sRoseliaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
     // >>> Catch
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_MAGICAL_LEAF),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_TOXIC_SPIKES),
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_SYNTHESIS),
@@ -13146,12 +11773,9 @@ static const struct LevelUpMove sRoseliaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PETAL_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_AROMATHERAPY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_BARB_BARRAGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PETAL_DANCE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BARB_BARRAGE),
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13167,28 +11791,21 @@ static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WORRY_SEED),
     LEVEL_UP_MOVE( 5, MOVE_MEGA_DRAIN),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
-    // >>> Catch
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_MAGICAL_LEAF),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_TOXIC_SPIKES),
-    //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_SYNTHESIS),
-    //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_VENOSHOCK),
     //Norman Lv31
+    //Evo Shiny Stone
     LEVEL_UP_MOVE(35, MOVE_GIGA_DRAIN),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_TOXIC),
     LEVEL_UP_MOVE(45, MOVE_PETAL_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_AROMATHERAPY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_BARB_BARRAGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PETAL_DANCE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BARB_BARRAGE),
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -13222,10 +11839,7 @@ static const struct LevelUpMove sGulpinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_PAIN_SPLIT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_GUNK_SHOT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13256,12 +11870,9 @@ static const struct LevelUpMove sSwalotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_GASTRO_ACID),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BELCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_PAIN_SPLIT),
-    LEVEL_UP_MOVE(59, MOVE_GUNK_SHOT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_GUNK_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GULPIN
@@ -13274,26 +11885,17 @@ static const struct LevelUpMove sCarvanhaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_FOCUS_ENERGY),
     // >>> Catch
     LEVEL_UP_MOVE(12, MOVE_SCARY_FACE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_BITE),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(24, MOVE_SCREECH),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SWAGGER),
-    // >>> Evo Lv30
     //Flannery Lv29
-    //Norman Lv31
+    // >>> Evo Lv30
     LEVEL_UP_MOVE(32, MOVE_CRUNCH),
-    //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_AGILITY),
     LEVEL_UP_MOVE(40, MOVE_LIQUIDATION),
     LEVEL_UP_MOVE(44, MOVE_TAKE_DOWN),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13306,26 +11908,19 @@ static const struct LevelUpMove sSharpedoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_FANG),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(12, MOVE_SCARY_FACE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_BITE),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_ICE_FANG),
     LEVEL_UP_MOVE(24, MOVE_SCREECH),
-    //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SWAGGER),
     // >>> Evo Lv30
-    //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_LIQUIDATION),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_TAKE_DOWN),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CARVANHA
@@ -13337,7 +11932,6 @@ static const struct LevelUpMove sWailmerLevelUpLearnset[] = {
     // >>> Catch
     LEVEL_UP_MOVE( 6, MOVE_ASTONISH),
     LEVEL_UP_MOVE(12, MOVE_WATER_GUN),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_MIST),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_WHIRLPOOL),
@@ -13355,12 +11949,7 @@ static const struct LevelUpMove sWailmerLevelUpLearnset[] = {
     // >>> Evo Lv40
     LEVEL_UP_MOVE(42, MOVE_AMNESIA),
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
-    //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WATER_SPOUT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13391,11 +11980,8 @@ static const struct LevelUpMove sWailordLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_AMNESIA),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_WATER_SPOUT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WATER_SPOUT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WAILMER
@@ -13427,11 +12013,8 @@ static const struct LevelUpMove sNumelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_BURNING_BULWARK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_DOUBLE_EDGE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13444,30 +12027,21 @@ static const struct LevelUpMove sCameruptLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 1, MOVE_ERUPTION),
     LEVEL_UP_MOVE(12, MOVE_BULLDOZE),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_INCINERATE),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_AMNESIA),
     LEVEL_UP_MOVE(22, MOVE_LAVA_PLUME),
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE(29, MOVE_CURSE),
-    //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_TAKE_DOWN),
     // >>> Evo Lv33
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_YAWN),
-    //T&L
     LEVEL_UP_MOVE(42, MOVE_EARTHQUAKE),
-    //Juan Lv50
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(54, MOVE_BURNING_BULWARK),
-    //Sidney
-    LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
-    //Drake
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BURNING_BULWARK),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NUMEL
@@ -13479,13 +12053,10 @@ static const struct LevelUpMove sTorkoalLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 8, MOVE_RAPID_SPIN),
     LEVEL_UP_MOVE(12, MOVE_SMOKESCREEN),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_CLEAR_SMOG),
-    //Brawly Lv16
     // >>> Catch
     LEVEL_UP_MOVE(20, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(24, MOVE_PROTECT),
-    //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_LAVA_PLUME),
     //Flannery Lv29
     //Norman Lv31
@@ -13493,18 +12064,14 @@ static const struct LevelUpMove sTorkoalLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
-    //T&L
     LEVEL_UP_MOVE(44, MOVE_CURSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HEAT_WAVE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_AMNESIA),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_INFERNO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SHELL_SMASH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_ERUPTION),
+    LEVEL_UP_MOVE(50, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_ERUPTION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TORKOAL
@@ -13515,29 +12082,18 @@ static const struct LevelUpMove sSpoinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_GROWL),
     LEVEL_UP_MOVE(14, MOVE_ZEN_HEADBUTT),
-    //Roxanne Lv14
-    //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_BOUNCE),
     LEVEL_UP_MOVE(22, MOVE_CONFUSE_RAY),
-    // >>> Catch
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(29, MOVE_PSYBEAM),
     //Flannery Lv29
     //Norman Lv31
-    // >>> Evo lv32
     // >>> Evo Lv 32
     LEVEL_UP_MOVE(33, MOVE_TRICK_ROOM),
-    //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_PSYSHOCK),
     LEVEL_UP_MOVE(40, MOVE_PAYBACK),
     LEVEL_UP_MOVE(44, MOVE_PSYCHIC),
-    //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SIMPLE_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13550,28 +12106,20 @@ static const struct LevelUpMove sGrumpigLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_GROWL),
     LEVEL_UP_MOVE(14, MOVE_ZEN_HEADBUTT),
-    //Roxanne Lv14
-    //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_BOUNCE),
     LEVEL_UP_MOVE(22, MOVE_CONFUSE_RAY),
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_POWER_GEM),
     LEVEL_UP_MOVE(29, MOVE_PSYBEAM),
-    //Flannery Lv29
     // >>> Evo lv32
-    //Winona Lv35
     //Norman Lv31
-    // >>> Evo Lv 32
     LEVEL_UP_MOVE(35, MOVE_TRICK_ROOM),
+    //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_PSYSHOCK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PAYBACK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_PSYCHIC),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SIMPLE_BEAM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_SIMPLE_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPOINK
@@ -13597,11 +12145,8 @@ static const struct LevelUpMove sSpindaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(50, MOVE_FLAIL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_THRASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPINDA
@@ -13630,10 +12175,7 @@ static const struct LevelUpMove sTrapinchLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SUPERPOWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FISSURE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13665,12 +12207,9 @@ static const struct LevelUpMove sVibravaLevelUpLearnset[] = {
     // >>> Evo Lv45
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DRAGON_RUSH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_BOOMBURST),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13703,15 +12242,11 @@ static const struct LevelUpMove sFlygonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_SCORCHING_SANDS),
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     // >>> Evo Lv45
-    //T&L
-    //Juan Lv50
     //Tate&Liza Lv45
-    LEVEL_UP_MOVE(52, MOVE_SUPERPOWER),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DRAGON_RUSH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_BOOMBURST),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TRAPINCH
@@ -13725,18 +12260,14 @@ static const struct LevelUpMove sCacneaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_GROWTH),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(13, MOVE_SAND_ATTACK),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_NEEDLE_ARM),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE(22, MOVE_INGRAIN),
     // >>> Catch
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
-    //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_BULLET_SEED),
-    // >>> Evo Lv32
     //Norman Lv31
+    // >>> Evo Lv32
     LEVEL_UP_MOVE(34, MOVE_SUCKER_PUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_PIN_MISSILE),
@@ -13744,11 +12275,8 @@ static const struct LevelUpMove sCacneaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_COTTON_SPORE),
     LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DESTINY_BOND),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13762,28 +12290,20 @@ static const struct LevelUpMove sCacturneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
     LEVEL_UP_MOVE(10, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(13, MOVE_SAND_ATTACK),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_NEEDLE_ARM),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_POWER_TRIP),
     LEVEL_UP_MOVE(22, MOVE_INGRAIN),
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_PAYBACK),
-    //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_BULLET_SEED),
     // >>> Evo Lv32
-    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SUCKER_PUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_PIN_MISSILE),
     LEVEL_UP_MOVE(44, MOVE_ENERGY_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_COTTON_SPORE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SANDSTORM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CACNEA
@@ -13795,27 +12315,20 @@ static const struct LevelUpMove sSwabluLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 8, MOVE_MIST),
     LEVEL_UP_MOVE(12, MOVE_FURY_ATTACK),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ROUND),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_DRAGON_BREATH),
     // >>> Catch
     LEVEL_UP_MOVE(24, MOVE_SAFEGUARD),
-    //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SING),
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_COTTON_GUARD),
-    //Winona Lv35
     // >>> Evo Lv35
+    //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(40, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(44, MOVE_PERISH_SONG),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -13827,15 +12340,10 @@ static const struct LevelUpMove sAltariaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PLUCK),
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE(12, MOVE_FURY_ATTACK),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_ROUND),
-    //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(24, MOVE_SAFEGUARD),
-    //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_SING),
-    //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_COTTON_GUARD),
     // >>> Evo Lv35
     //Winona Lv35
@@ -13843,11 +12351,8 @@ static const struct LevelUpMove sAltariaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MOONBLAST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SKY_ATTACK),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SWABLU
@@ -13872,13 +12377,10 @@ static const struct LevelUpMove sZangooseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 8, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE(12, MOVE_METAL_CLAW),
-    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_HONE_CLAWS),
-    //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_SLASH),
     LEVEL_UP_MOVE(22, MOVE_POWER_TRIP),
     // >>> Catch
-    //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE(29, MOVE_FALSE_SWIPE),
     //Flannery Lv29
@@ -13891,10 +12393,7 @@ static const struct LevelUpMove sZangooseLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_DIRE_CLAW),
     LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZANGOOSE
@@ -13923,10 +12422,7 @@ static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SLUDGE_BOMB),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SEVIPER
@@ -13935,6 +12431,7 @@ static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
 static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
     LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
+    LEVEL_UP_MOVE( 1, MOVE_MAGIC_ROOM),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
@@ -13948,16 +12445,13 @@ static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_PSYCHIC),
     //Norman Lv31
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_STONE_EDGE),
+    //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(45, MOVE_TRICK_ROOM),
     //Tate&Liza Lv45
-    LEVEL_UP_MOVE(45, MOVE_MAGIC_ROOM),
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LUNATONE
@@ -13966,6 +12460,7 @@ static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
 static const struct LevelUpMove sSolrockLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE( 1, MOVE_MORNING_SUN),
+    LEVEL_UP_MOVE( 1, MOVE_WONDER_ROOM),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
@@ -13979,16 +12474,13 @@ static const struct LevelUpMove sSolrockLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_PSYCHIC),
     //Norman Lv31
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_STONE_EDGE),
+    //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(45, MOVE_TRICK_ROOM),
     //Tate&Liza Lv45
-    LEVEL_UP_MOVE(45, MOVE_WONDER_ROOM),
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SOLROCK
@@ -14013,7 +12505,7 @@ static const struct LevelUpMove sBarboachLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FUTURE_SIGHT),
     LEVEL_UP_MOVE(45, MOVE_DRAGON_DANCE),
     LEVEL_UP_MOVE(48, MOVE_SUPERCELL_SLAM),
-    LEVEL_UP_MOVE(51, MOVE_FISSURE),
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
     LEVEL_UP_END
 };
 
@@ -14039,13 +12531,10 @@ static const struct LevelUpMove sWhiscashLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DRAGON_DANCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SUPERCELL_SLAM),
-    LEVEL_UP_MOVE(60, MOVE_FISSURE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_SUPERCELL_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BARBOACH
@@ -14059,15 +12548,15 @@ static const struct LevelUpMove sCorphishLevelUpLearnset[] = {
     // >>> Catch
     LEVEL_UP_MOVE( 8, MOVE_VICE_GRIP),
     LEVEL_UP_MOVE(12, MOVE_BUBBLE_BEAM),
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
     LEVEL_UP_MOVE(16, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(20, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE(24, MOVE_PROTECT),
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_NIGHT_SLASH),
-    // >>> Evo Lv30
     //Flannery Lv29
+    // >>> Evo Lv30
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_RAZOR_SHELL),
     //Winona Lv35
@@ -14076,11 +12565,8 @@ static const struct LevelUpMove sCorphishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_CRABHAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ENDEAVOR),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_GUILLOTINE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14108,14 +12594,11 @@ static const struct LevelUpMove sCrawdauntLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_CRUNCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_CRABHAMMER),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_ENDEAVOR),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DRAGON_DANCE),
-    LEVEL_UP_MOVE(100, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(50, MOVE_CRABHAMMER),
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CORPHISH
@@ -14148,11 +12631,7 @@ static const struct LevelUpMove sBaltoyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_SANDSTORM),
     LEVEL_UP_MOVE(42, MOVE_FUTURE_SIGHT),
     LEVEL_UP_MOVE(45, MOVE_EXPLOSION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14185,11 +12664,8 @@ static const struct LevelUpMove sClaydolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_SANDSTORM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_EXPLOSION),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BALTOY
@@ -14218,11 +12694,7 @@ static const struct LevelUpMove sLileepLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_SPIT_UP),
     LEVEL_UP_MOVE(41, MOVE_SWALLOW),
     LEVEL_UP_MOVE(44, MOVE_ENERGY_BALL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14251,10 +12723,7 @@ static const struct LevelUpMove sCradilyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_SWALLOW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ENERGY_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LILEEP
@@ -14281,11 +12750,7 @@ static const struct LevelUpMove sAnorithLevelUpLearnset[] = {
     // >>> Evo Lv40
     LEVEL_UP_MOVE(41, MOVE_PROTECT),
     LEVEL_UP_MOVE(44, MOVE_X_SCISSOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14314,10 +12779,7 @@ static const struct LevelUpMove sArmaldoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_PROTECT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_X_SCISSOR),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ANORITH
@@ -14330,11 +12792,7 @@ static const struct LevelUpMove sFeebasLevelUpLearnset[] = {
     //Brawly Lv16
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_FLAIL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -14367,11 +12825,8 @@ static const struct LevelUpMove sMiloticLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_RAIN_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_COIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HYDRO_PUMP),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FEEBAS
@@ -14393,15 +12848,11 @@ static const struct LevelUpMove sCastformLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_HYDRO_PUMP),
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_FIRE_BLAST),
+    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(45, MOVE_HURRICANE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CASTFORM
@@ -14434,10 +12885,7 @@ static const struct LevelUpMove sKecleonLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KECLEON
@@ -14466,10 +12914,7 @@ static const struct LevelUpMove sShuppetLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_TRICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PHANTOM_FORCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14497,11 +12942,8 @@ static const struct LevelUpMove sBanetteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SUCKER_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_TRICK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_PHANTOM_FORCE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PHANTOM_FORCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHUPPET
@@ -14528,11 +12970,7 @@ static const struct LevelUpMove sDuskullLevelUpLearnset[] = {
     // >>> Evo Lv 37
     LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14558,10 +12996,7 @@ static const struct LevelUpMove sDusclopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14587,11 +13022,8 @@ static const struct LevelUpMove sDusknoirLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DESTINY_BOND),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -14619,13 +13051,10 @@ static const struct LevelUpMove sTropiusLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_OUTRAGE),
     LEVEL_UP_MOVE(50, MOVE_SYNTHESIS),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DRAGON_RUSH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_SOLAR_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BLADE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TROPIUS
@@ -14662,10 +13091,7 @@ static const struct LevelUpMove sChimechoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_HEAL_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHIMECHO
@@ -14690,12 +13116,9 @@ static const struct LevelUpMove sAbsolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CEASELESS_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_PERISH_SONG),
-    LEVEL_UP_MOVE(60, MOVE_DOOM_DESIRE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_DOOM_DESIRE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ABSOL
@@ -14723,12 +13146,9 @@ static const struct LevelUpMove sSnoruntLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_WEATHER_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SNOWSCAPE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_BLIZZARD),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SNOWSCAPE),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14755,13 +13175,10 @@ static const struct LevelUpMove sGlalieLevelUpLearnset[] = {
     // >>> Evo Lv42
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_CRUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_WEATHER_BALL),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_MOUNTAIN_GALE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_WEATHER_BALL),
+    LEVEL_UP_MOVE(50, MOVE_MOUNTAIN_GALE),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14792,13 +13209,10 @@ static const struct LevelUpMove sFroslassLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_WILL_O_WISP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AURORA_VEIL),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_MOUNTAIN_GALE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_AURORA_VEIL),
+    LEVEL_UP_MOVE(50, MOVE_MOUNTAIN_GALE),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -14823,7 +13237,7 @@ static const struct LevelUpMove sSphealLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_CHILLY_RECEPTION),
     LEVEL_UP_MOVE(44, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(48, MOVE_WAVE_CRASH),
-    LEVEL_UP_MOVE(52, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
 
@@ -14845,9 +13259,9 @@ static const struct LevelUpMove sSealeoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
     // >>> Evo Lv44
     LEVEL_UP_MOVE(46, MOVE_CHILLY_RECEPTION),
-    LEVEL_UP_MOVE(52, MOVE_BLIZZARD),
-    LEVEL_UP_MOVE(58, MOVE_WAVE_CRASH),
-    LEVEL_UP_MOVE(64, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
 
@@ -14871,13 +13285,10 @@ static const struct LevelUpMove sWalreinLevelUpLearnset[] = {
     // >>> Evo Lv44
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CHILLY_RECEPTION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BLIZZARD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_WAVE_CRASH),
-    LEVEL_UP_MOVE(72, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPHEAL
@@ -14896,10 +13307,7 @@ static const struct LevelUpMove sClamperlLevelUpLearnset[] = {
     //Winona Lv35
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14925,11 +13333,8 @@ static const struct LevelUpMove sHuntailLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Post-T&L
     LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CLOSE_COMBAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -14954,11 +13359,8 @@ static const struct LevelUpMove sGorebyssLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Post-T&L
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MOONBLAST),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CLAMPERL
@@ -14978,11 +13380,8 @@ static const struct LevelUpMove sRelicanthLevelUpLearnset[] = {
     // >>> Catch
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HEAD_SMASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RELICANTH
@@ -14995,8 +13394,8 @@ static const struct LevelUpMove sLuvdiscLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_AGILITY),
     LEVEL_UP_MOVE(13, MOVE_LIFE_DEW),
     // >>> Catch
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE(20, MOVE_AQUA_RING),
     LEVEL_UP_MOVE(22, MOVE_DRAINING_KISS),
@@ -15013,10 +13412,7 @@ static const struct LevelUpMove sLuvdiscLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(49, MOVE_SAFEGUARD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LUVDISC
@@ -15039,7 +13435,7 @@ static const struct LevelUpMove sBagonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(45, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
 
@@ -15060,9 +13456,9 @@ static const struct LevelUpMove sShelgonLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FOCUS_ENERGY),
     // >>> Evo Lv50
-    LEVEL_UP_MOVE(53, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(60, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(67, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
 
@@ -15083,13 +13479,10 @@ static const struct LevelUpMove sSalamenceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_ZEN_HEADBUTT),
     LEVEL_UP_MOVE(46, MOVE_FOCUS_ENERGY),
     // >>> Evo Lv50
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FLAMETHROWER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(73, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BAGON
@@ -15097,7 +13490,7 @@ static const struct LevelUpMove sSalamenceLevelUpLearnset[] = {
 #if P_FAMILY_BELDUM
 static const struct LevelUpMove sBeldumLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     // >>> Evo Lv 20
     LEVEL_UP_END
@@ -15121,9 +13514,9 @@ static const struct LevelUpMove sMetangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_IRON_DEFENSE),
     // >>> Evo Lv 45
     LEVEL_UP_MOVE(50, MOVE_METEOR_MASH),
-    LEVEL_UP_MOVE(58, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(66, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(74, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
 
@@ -15142,14 +13535,11 @@ static const struct LevelUpMove sMetagrossLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_ZEN_HEADBUTT),
     LEVEL_UP_MOVE(42, MOVE_IRON_DEFENSE),
     // >>> Evo Lv 45
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_METEOR_MASH),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_SCARY_FACE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(72, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(82, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_METEOR_MASH),
+    LEVEL_UP_MOVE(50, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BELDUM
@@ -15167,15 +13557,12 @@ static const struct LevelUpMove sRegirockLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HAMMER_ARM),
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
     // >>> Catch
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SUPERPOWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LOCK_ON),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(72, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(78, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REGIROCK
@@ -15193,15 +13580,12 @@ static const struct LevelUpMove sRegiceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HAMMER_ARM),
     LEVEL_UP_MOVE(48, MOVE_BLIZZARD),
     // >>> Catch
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SUPERPOWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LOCK_ON),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(72, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(78, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REGICE
@@ -15221,15 +13605,12 @@ static const struct LevelUpMove sRegisteelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HAMMER_ARM),
     LEVEL_UP_MOVE(48, MOVE_HEAVY_SLAM),
     // >>> Catch
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SUPERPOWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LOCK_ON),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(72, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(78, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REGISTEEL
@@ -15255,14 +13636,11 @@ static const struct LevelUpMove sLatiasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HEAL_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_REFLECT_TYPE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PSYCHIC),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_GUARD_SPLIT),
-    LEVEL_UP_MOVE(70, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_REFLECT_TYPE),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_GUARD_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LATIAS
@@ -15288,14 +13666,11 @@ static const struct LevelUpMove sLatiosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HEAL_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SIMPLE_BEAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PSYCHIC),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_POWER_SPLIT),
-    LEVEL_UP_MOVE(70, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_SIMPLE_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_POWER_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LATIOS
@@ -15319,14 +13694,11 @@ static const struct LevelUpMove sKyogreLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(45, MOVE_SHEER_COLD),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AQUA_RING),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(72, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(81, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(90, MOVE_WATER_SPOUT),
+    LEVEL_UP_MOVE(50, MOVE_AQUA_RING),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_WATER_SPOUT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KYOGRE
@@ -15350,14 +13722,11 @@ static const struct LevelUpMove sGroudonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_HAMMER_ARM),
     LEVEL_UP_MOVE(45, MOVE_FISSURE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_REST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(72, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(81, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(90, MOVE_ERUPTION),
+    LEVEL_UP_MOVE(50, MOVE_REST),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_ERUPTION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GROUDON
@@ -15381,15 +13750,12 @@ static const struct LevelUpMove sRayquazaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(45, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_REST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FLY),
-    LEVEL_UP_MOVE(72, MOVE_HURRICANE),
-    LEVEL_UP_MOVE(81, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(90, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_REST),
+    LEVEL_UP_MOVE(50, MOVE_FLY),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RAYQUAZA
@@ -15411,17 +13777,14 @@ static const struct LevelUpMove sJirachiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_METEOR_MASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HEALING_WISH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_REST),
-    LEVEL_UP_MOVE(70, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(77, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(84, MOVE_COSMIC_POWER),
-    LEVEL_UP_MOVE(91, MOVE_LAST_RESORT),
-    LEVEL_UP_MOVE(98, MOVE_DOOM_DESIRE),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_REST),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_COSMIC_POWER),
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(50, MOVE_DOOM_DESIRE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_JIRACHI
@@ -15438,21 +13801,18 @@ static const struct LevelUpMove sDeoxysNormalLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_PSYSHOCK),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_PSYCHIC),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_GRAVITY),
     LEVEL_UP_MOVE(43, MOVE_SKILL_SWAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ZEN_HEADBUTT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_COSMIC_POWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_RECOVER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_PSYCHO_BOOST),
-    LEVEL_UP_MOVE(73, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_COSMIC_POWER),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHO_BOOST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15467,21 +13827,18 @@ static const struct LevelUpMove sDeoxysAttackLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_PSYSHOCK),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_PSYCHIC),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SUPERPOWER),
     LEVEL_UP_MOVE(43, MOVE_SKILL_SWAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ZEN_HEADBUTT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_COSMIC_POWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_ZAP_CANNON),
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_PSYCHO_BOOST),
-    LEVEL_UP_MOVE(73, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_COSMIC_POWER),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHO_BOOST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15496,23 +13853,20 @@ static const struct LevelUpMove sDeoxysDefenseLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_SPIKES),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_PSYCHIC),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_PROTECT),
     LEVEL_UP_MOVE(43, MOVE_SKILL_SWAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ZEN_HEADBUTT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(55, MOVE_IRON_DEFENSE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_RECOVER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_PSYCHO_BOOST),
-    LEVEL_UP_MOVE(73, MOVE_COUNTER),
-    LEVEL_UP_MOVE(73, MOVE_MIRROR_COAT),
+    LEVEL_UP_MOVE(50, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHO_BOOST),
+    LEVEL_UP_MOVE(50, MOVE_COUNTER),
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15527,21 +13881,18 @@ static const struct LevelUpMove sDeoxysSpeedLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_PSYSHOCK),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_PSYCHIC),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_SWIFT),
     LEVEL_UP_MOVE(43, MOVE_SKILL_SWAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ZEN_HEADBUTT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_AGILITY),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_RECOVER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_PSYCHO_BOOST),
-    LEVEL_UP_MOVE(73, MOVE_EXTREME_SPEED),
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHO_BOOST),
+    LEVEL_UP_MOVE(50, MOVE_EXTREME_SPEED),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DEOXYS
@@ -15567,11 +13918,7 @@ static const struct LevelUpMove sTurtwigLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_CRUNCH),
     LEVEL_UP_MOVE(41, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(45, MOVE_LEAF_STORM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15596,11 +13943,8 @@ static const struct LevelUpMove sGrotleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_GIGA_DRAIN),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LEAF_STORM),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15625,13 +13969,10 @@ static const struct LevelUpMove sTorterraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(45, MOVE_CRUNCH),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_GIGA_DRAIN),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_LEAF_STORM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HEADLONG_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(50, MOVE_HEADLONG_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TURTWIG
@@ -15651,18 +13992,15 @@ static const struct LevelUpMove sChimcharLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_TORMENT),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_FACADE),
+    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_FIRE_SPIN),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_ACROBATICS),
     LEVEL_UP_MOVE(41, MOVE_SLACK_OFF),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15689,11 +14027,8 @@ static const struct LevelUpMove sMonfernoLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_ACROBATICS),
     LEVEL_UP_MOVE(49, MOVE_SLACK_OFF),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15719,13 +14054,10 @@ static const struct LevelUpMove sInfernapeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FIRE_SPIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_FLARE_BLITZ),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ACROBATICS),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_CALM_MIND),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_RAGING_FURY),
+    LEVEL_UP_MOVE(50, MOVE_ACROBATICS),
+    LEVEL_UP_MOVE(50, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(50, MOVE_RAGING_FURY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHIMCHAR
@@ -15752,11 +14084,7 @@ static const struct LevelUpMove sPiplupLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_MIST),
     LEVEL_UP_MOVE(39, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE(43, MOVE_HYDRO_PUMP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15783,10 +14111,7 @@ static const struct LevelUpMove sPrinplupLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15812,13 +14137,10 @@ static const struct LevelUpMove sEmpoleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_WHIRLPOOL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_MIST),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DRILL_PECK),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(59, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_DRILL_PECK),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PIPLUP
@@ -15844,11 +14166,7 @@ static const struct LevelUpMove sStarlyLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_BRAVE_BIRD),
     LEVEL_UP_MOVE(41, MOVE_FINAL_GAMBIT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15874,10 +14192,7 @@ static const struct LevelUpMove sStaraviaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_BRAVE_BIRD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FINAL_GAMBIT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15902,11 +14217,8 @@ static const struct LevelUpMove sStaraptorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BRAVE_BIRD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_FINAL_GAMBIT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_STARLY
@@ -15935,10 +14247,7 @@ static const struct LevelUpMove sBidoofLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SUPERPOWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_CURSE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -15966,12 +14275,9 @@ static const struct LevelUpMove sBibarelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AMNESIA),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_SUPERPOWER),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_CURSE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_CURSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BIDOOF
@@ -15985,11 +14291,7 @@ static const struct LevelUpMove sKricketotLevelUpLearnset[] = {
     // >>> Evo Lv 10
     LEVEL_UP_MOVE(16, MOVE_BUG_BITE),
     //Brawly Lv16
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -16003,7 +14305,7 @@ static const struct LevelUpMove sKricketuneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     // >>> Evo Lv 10
     LEVEL_UP_MOVE(14, MOVE_ABSORB),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_SING),
     LEVEL_UP_MOVE(22, MOVE_FOCUS_ENERGY),
@@ -16021,10 +14323,7 @@ static const struct LevelUpMove sKricketuneLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KRICKETOT
@@ -16053,10 +14352,7 @@ static const struct LevelUpMove sShinxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WILD_CHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16081,13 +14377,10 @@ static const struct LevelUpMove sLuxioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_THUNDER_WAVE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CRUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DISCHARGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SWAGGER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16111,14 +14404,11 @@ static const struct LevelUpMove sLuxrayLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SCARY_FACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THUNDER_WAVE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(72, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(80, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHINX
@@ -16145,10 +14435,7 @@ static const struct LevelUpMove sCranidosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SCREECH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HEAD_SMASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16172,12 +14459,9 @@ static const struct LevelUpMove sRampardosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE(43, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_SCREECH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HEAD_SMASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SCREECH),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CRANIDOS
@@ -16204,10 +14488,7 @@ static const struct LevelUpMove sShieldonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_IRON_HEAD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HEAVY_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16232,12 +14513,9 @@ static const struct LevelUpMove sBastiodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ENDURE),
     LEVEL_UP_MOVE(43, MOVE_METAL_BURST),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_IRON_HEAD),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HEAVY_SLAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHIELDON
@@ -16250,11 +14528,7 @@ static const struct LevelUpMove sBurmyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_BUG_BITE),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_STRING_SHOT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -16290,10 +14564,7 @@ static const struct LevelUpMove sWormadamPlantLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16325,10 +14596,7 @@ static const struct LevelUpMove sWormadamSandyLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_FISSURE),
     LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16361,10 +14629,7 @@ static const struct LevelUpMove sWormadamTrashLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16394,10 +14659,7 @@ static const struct LevelUpMove sMothimLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_LUNGE),
     LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BURMY
@@ -16408,19 +14670,15 @@ static const struct LevelUpMove sCombeeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 1, MOVE_BUG_BITE),
     LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
-    LEVEL_UP_END
+    //Brawly Lv16
     // >>> Evo Lv 21
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
+    LEVEL_UP_END
 };
 
 static const struct LevelUpMove sVespiquenLevelUpLearnset[] = {
@@ -16450,11 +14708,7 @@ static const struct LevelUpMove sVespiquenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_ATTACK_ORDER),
     LEVEL_UP_MOVE(40, MOVE_DEFEND_ORDER),
     LEVEL_UP_MOVE(44, MOVE_DESTINY_BOND),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_COMBEE
@@ -16483,10 +14737,7 @@ static const struct LevelUpMove sPachirisuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_LAST_RESORT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_THUNDER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PACHIRISU
@@ -16507,8 +14758,8 @@ static const struct LevelUpMove sBuizelLevelUpLearnset[] = {
     // >>> Evo Lv 26
     LEVEL_UP_MOVE(27, MOVE_DOUBLE_HIT),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_WHIRLPOOL),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_LIQUIDATION),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_AQUA_TAIL),
@@ -16516,10 +14767,7 @@ static const struct LevelUpMove sBuizelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_WAVE_CRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16545,13 +14793,10 @@ static const struct LevelUpMove sFloatzelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_AQUA_TAIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_AGILITY),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_WAVE_CRASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BUIZEL
@@ -16576,11 +14821,7 @@ static const struct LevelUpMove sCherubiLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_WORRY_SEED),
     LEVEL_UP_MOVE(45, MOVE_SOLAR_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16605,12 +14846,9 @@ static const struct LevelUpMove sCherrimLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_PETAL_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WORRY_SEED),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_PETAL_DANCE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHERUBI
@@ -16628,17 +14866,13 @@ static const struct LevelUpMove sShellosLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_BODY_SLAM),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_MUDDY_WATER),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_EARTH_POWER),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(45, MOVE_MEMENTO),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16660,11 +14894,8 @@ static const struct LevelUpMove sGastrodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_RAIN_DANCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_MEMENTO),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHELLOS
@@ -16693,11 +14924,7 @@ static const struct LevelUpMove sDrifloonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(40, MOVE_TAILWIND),
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16726,11 +14953,8 @@ static const struct LevelUpMove sDrifblimLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BATON_PASS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_TAILWIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_EXPLOSION),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRIFLOON
@@ -16758,11 +14982,8 @@ static const struct LevelUpMove sBunearyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FLATTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BOUNCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HEALING_WISH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16790,12 +15011,9 @@ static const struct LevelUpMove sLopunnyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FLATTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BOUNCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HEALING_WISH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HIGH_JUMP_KICK),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_HIGH_JUMP_KICK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BUNEARY
@@ -16824,10 +15042,7 @@ static const struct LevelUpMove sGlameowLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(50, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16857,12 +15072,9 @@ static const struct LevelUpMove sPuruglyLevelUpLearnset[] = {
     // >>> Evo Lv 38
     LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ATTRACT),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HONE_CLAWS),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ATTRACT),
+    LEVEL_UP_MOVE(50, MOVE_HONE_CLAWS),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GLAMEOW
@@ -16892,11 +15104,7 @@ static const struct LevelUpMove sStunkyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(39, MOVE_BELCH),
     LEVEL_UP_MOVE(42, MOVE_EXPLOSION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16925,10 +15133,7 @@ static const struct LevelUpMove sSkuntankLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_BELCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_STUNKY
@@ -16955,11 +15160,7 @@ static const struct LevelUpMove sBronzorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(40, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -16988,11 +15189,8 @@ static const struct LevelUpMove sBronzongLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_METAL_SOUND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_RAIN_DANCE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BRONZOR
@@ -17023,11 +15221,8 @@ static const struct LevelUpMove sChatotLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PARTING_SHOT),
     LEVEL_UP_MOVE(50, MOVE_FEATHER_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_HYPER_VOICE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHATOT
@@ -17053,12 +15248,9 @@ static const struct LevelUpMove sSpiritombLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DARK_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HYPNOSIS),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DREAM_EATER),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYPNOSIS),
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPIRITOMB
@@ -17083,12 +15275,9 @@ static const struct LevelUpMove sGibleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DIG),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SANDSTORM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_TAKE_DOWN),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DRAGON_RUSH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17111,13 +15300,10 @@ static const struct LevelUpMove sGabiteLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 48
     LEVEL_UP_MOVE(50, MOVE_DIG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_SANDSTORM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(74, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17137,16 +15323,12 @@ static const struct LevelUpMove sGarchompLevelUpLearnset[] = {
     LEVEL_UP_MOVE(34, MOVE_SLASH),
     //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_DRAGON_CLAW),
-    //Tate&Liza Lv45
-    //Juan Lv50
     // >>> Evo Lv 48
-    LEVEL_UP_MOVE(52, MOVE_DIG),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_SANDSTORM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(72, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(82, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_DIG),
+    LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GIBLE
@@ -17174,12 +15356,9 @@ static const struct LevelUpMove sRioluLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HELPING_HAND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_COPYCAT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FINAL_GAMBIT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_REVERSAL),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17214,13 +15393,10 @@ static const struct LevelUpMove sLucarioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HEAL_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_METEOR_MASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DRAGON_PULSE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_EXTREME_SPEED),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_EXTREME_SPEED),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RIOLU
@@ -17249,11 +15425,8 @@ static const struct LevelUpMove sHippopotasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FISSURE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SLACK_OFF),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SLACK_OFF),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17282,12 +15455,9 @@ static const struct LevelUpMove sHippowdonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FISSURE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_SLACK_OFF),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    LEVEL_UP_MOVE(50, MOVE_SLACK_OFF),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HIPPOPOTAS
@@ -17320,10 +15490,7 @@ static const struct LevelUpMove sSkorupiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ACUPRESSURE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CRUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17356,11 +15523,8 @@ static const struct LevelUpMove sDrapionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_X_SCISSOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ACUPRESSURE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SKORUPI
@@ -17389,10 +15553,7 @@ static const struct LevelUpMove sCroagunkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SLUDGE_BOMB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BELCH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17418,11 +15579,8 @@ static const struct LevelUpMove sToxicroakLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SLUDGE_BOMB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_BELCH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CROAGUNK
@@ -17440,8 +15598,8 @@ static const struct LevelUpMove sCarnivineLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_GRASS_KNOT),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_LEAF_TORNADO),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_STOCKPILE),
     LEVEL_UP_MOVE(37, MOVE_SPIT_UP),
@@ -17450,10 +15608,7 @@ static const struct LevelUpMove sCarnivineLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_SEED_BOMB),
     LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CARNIVINE
@@ -17480,11 +15635,8 @@ static const struct LevelUpMove sFinneonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BOUNCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_TAILWIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SOAK),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SOAK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17508,12 +15660,9 @@ static const struct LevelUpMove sLumineonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_WHIRLPOOL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_U_TURN),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_BOUNCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(59, MOVE_TAILWIND),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BOUNCE),
+    LEVEL_UP_MOVE(50, MOVE_TAILWIND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FINNEON
@@ -17540,10 +15689,7 @@ static const struct LevelUpMove sSnoverLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17569,11 +15715,8 @@ static const struct LevelUpMove sAbomasnowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_WOOD_HAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BLIZZARD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SHEER_COLD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SNOVER
@@ -17599,11 +15742,8 @@ static const struct LevelUpMove sRotomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_TRICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_UPROAR),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_UPROAR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ROTOM
@@ -17624,7 +15764,7 @@ static const struct LevelUpMove sUxieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_REST),
     LEVEL_UP_MOVE( 7, MOVE_SWIFT),
     LEVEL_UP_MOVE(14, MOVE_ENDURE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
     //Wattson Lv24
@@ -17636,15 +15776,12 @@ static const struct LevelUpMove sUxieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AMNESIA),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_YAWN),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(70, MOVE_FLAIL),
-    LEVEL_UP_MOVE(77, MOVE_MEMENTO),
-    LEVEL_UP_MOVE(84, MOVE_MYSTICAL_POWER),
+    LEVEL_UP_MOVE(50, MOVE_YAWN),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_FLAIL),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_MYSTICAL_POWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_UXIE
@@ -17665,7 +15802,7 @@ static const struct LevelUpMove sMespritLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_REST),
     LEVEL_UP_MOVE( 7, MOVE_SWIFT),
     LEVEL_UP_MOVE(14, MOVE_PROTECT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
     //Wattson Lv24
@@ -17677,15 +15814,12 @@ static const struct LevelUpMove sMespritLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CHARM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FLATTER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(70, MOVE_COPYCAT),
-    LEVEL_UP_MOVE(77, MOVE_HEALING_WISH),
-    LEVEL_UP_MOVE(84, MOVE_MYSTICAL_POWER),
+    LEVEL_UP_MOVE(50, MOVE_FLATTER),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_COPYCAT),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_MYSTICAL_POWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MESPRIT
@@ -17709,7 +15843,7 @@ static const struct LevelUpMove sAzelfLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_REST),
     LEVEL_UP_MOVE( 7, MOVE_SWIFT),
     LEVEL_UP_MOVE(14, MOVE_DETECT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_PSYBEAM),
     //Wattson Lv24
@@ -17721,15 +15855,12 @@ static const struct LevelUpMove sAzelfLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_UPROAR),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(70, MOVE_LAST_RESORT),
-    LEVEL_UP_MOVE(77, MOVE_EXPLOSION),
-    LEVEL_UP_MOVE(84, MOVE_MYSTICAL_POWER),
+    LEVEL_UP_MOVE(50, MOVE_UPROAR),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_MYSTICAL_POWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_AZELF
@@ -17751,15 +15882,12 @@ static const struct LevelUpMove sDialgaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_DRAGON_CLAW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AURA_SPHERE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_POWER_GEM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_METAL_BURST),
-    LEVEL_UP_MOVE(72, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE(80, MOVE_IRON_TAIL),
-    LEVEL_UP_MOVE(88, MOVE_ROAR_OF_TIME),
+    LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_IRON_TAIL),
+    LEVEL_UP_MOVE(50, MOVE_ROAR_OF_TIME),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DIALGA
@@ -17780,15 +15908,12 @@ static const struct LevelUpMove sPalkiaLevelUpLearnset[] = {
     //Winona Lv35
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AURA_SPHERE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_POWER_GEM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_AQUA_TAIL),
-    LEVEL_UP_MOVE(72, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE(80, MOVE_SPACIAL_REND),
-    LEVEL_UP_MOVE(88, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
+    LEVEL_UP_MOVE(50, MOVE_AQUA_TAIL),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_SPACIAL_REND),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PALKIA
@@ -17812,14 +15937,11 @@ static const struct LevelUpMove sHeatranLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_LAVA_PLUME),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_METAL_SOUND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_EARTH_POWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HEAT_WAVE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_STONE_EDGE),
-    LEVEL_UP_MOVE(72, MOVE_MAGMA_STORM),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_HEAT_WAVE),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MAGMA_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HEATRAN
@@ -17843,15 +15965,12 @@ static const struct LevelUpMove sRegigigasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BODY_PRESS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WIDE_GUARD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_ZEN_HEADBUTT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HEAVY_SLAM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HAMMER_ARM),
-    LEVEL_UP_MOVE(72, MOVE_GIGA_IMPACT),
-    LEVEL_UP_MOVE(78, MOVE_CRUSH_GRIP),
+    LEVEL_UP_MOVE(50, MOVE_ZEN_HEADBUTT),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_CRUSH_GRIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REGIGIGAS
@@ -17862,7 +15981,7 @@ static const struct LevelUpMove sGiratinaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFOG),
     LEVEL_UP_MOVE( 7, MOVE_DRAGON_BREATH),
     LEVEL_UP_MOVE(14, MOVE_ANCIENT_POWER),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_HEX),
     //Wattson Lv24
@@ -17874,15 +15993,12 @@ static const struct LevelUpMove sGiratinaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHADOW_CLAW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PAIN_SPLIT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_AURA_SPHERE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_DRAGON_CLAW),
-    LEVEL_UP_MOVE(70, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE(77, MOVE_SHADOW_FORCE),
-    LEVEL_UP_MOVE(84, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE(50, MOVE_AURA_SPHERE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_CLAW),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_SHADOW_FORCE),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GIRATINA
@@ -17906,15 +16022,12 @@ static const struct LevelUpMove sCresseliaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_MOONLIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SAFEGUARD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_PSYCHIC),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MOONBLAST),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(72, MOVE_LUNAR_DANCE),
-    LEVEL_UP_MOVE(72, MOVE_LUNAR_BLESSING),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_LUNAR_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_LUNAR_BLESSING),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CRESSELIA
@@ -17929,20 +16042,17 @@ static const struct LevelUpMove sPhioneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_BUBBLE_BEAM),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ACID_ARMOR),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_WHIRLPOOL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_WATER_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AQUA_RING),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_DIVE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(69, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(75, MOVE_TAKE_HEART),
+    LEVEL_UP_MOVE(50, MOVE_AQUA_RING),
+    LEVEL_UP_MOVE(50, MOVE_DIVE),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_TAKE_HEART),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -17957,20 +16067,17 @@ static const struct LevelUpMove sManaphyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(24, MOVE_BUBBLE_BEAM),
     //Wattson Lv24
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ACID_ARMOR),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_WHIRLPOOL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_WATER_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AQUA_RING),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_DIVE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(69, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(76, MOVE_TAKE_HEART),
+    LEVEL_UP_MOVE(50, MOVE_AQUA_RING),
+    LEVEL_UP_MOVE(50, MOVE_DIVE),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_TAKE_HEART),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MANAPHY
@@ -17990,15 +16097,12 @@ static const struct LevelUpMove sDarkraiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_NIGHT_SHADE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_DOUBLE_TEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_HAZE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DARK_VOID),
-    LEVEL_UP_MOVE(75, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE(84, MOVE_DREAM_EATER),
-    LEVEL_UP_MOVE(93, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_HAZE),
+    LEVEL_UP_MOVE(50, MOVE_DARK_VOID),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    LEVEL_UP_MOVE(50, MOVE_DARK_PULSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DARKRAI
@@ -18018,16 +16122,13 @@ static const struct LevelUpMove sShayminLandLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SWEET_SCENT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_WORRY_SEED),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE(73, MOVE_ENERGY_BALL),
-    LEVEL_UP_MOVE(82, MOVE_SWEET_KISS),
-    LEVEL_UP_MOVE(91, MOVE_HEALING_WISH),
-    LEVEL_UP_MOVE(100, MOVE_SEED_FLARE),
+    LEVEL_UP_MOVE(50, MOVE_WORRY_SEED),
+    LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(50, MOVE_SWEET_KISS),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_SEED_FLARE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18045,16 +16146,13 @@ static const struct LevelUpMove sShayminSkyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SWEET_SCENT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_WORRY_SEED),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_AIR_SLASH),
-    LEVEL_UP_MOVE(73, MOVE_ENERGY_BALL),
-    LEVEL_UP_MOVE(82, MOVE_SWEET_KISS),
-    LEVEL_UP_MOVE(91, MOVE_LEAF_STORM),
-    LEVEL_UP_MOVE(100, MOVE_SEED_FLARE),
+    LEVEL_UP_MOVE(50, MOVE_WORRY_SEED),
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(50, MOVE_SWEET_KISS),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(50, MOVE_SEED_FLARE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHAYMIN
@@ -18075,15 +16173,12 @@ static const struct LevelUpMove sArceusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_EXTREME_SPEED),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FUTURE_SIGHT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_RECOVER),
-    LEVEL_UP_MOVE(80, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(90, MOVE_PERISH_SONG),
-    LEVEL_UP_MOVE(100, MOVE_JUDGMENT),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_JUDGMENT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ARCEUS
@@ -18097,7 +16192,7 @@ static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 7, MOVE_WORK_UP),
     LEVEL_UP_MOVE(14, MOVE_INCINERATE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_STORED_POWER),
     //Wattson Lv24
@@ -18109,16 +16204,13 @@ static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_INFERNO),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_REVERSAL),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SEARING_SHOT),
-    LEVEL_UP_MOVE(70, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(77, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(84, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(91, MOVE_FINAL_GAMBIT),
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(50, MOVE_SEARING_SHOT),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VICTINI
@@ -18140,17 +16232,13 @@ static const struct LevelUpMove sSnivyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_SLAM),
     LEVEL_UP_MOVE(28, MOVE_LEAF_BLADE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_COIL),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_GIGA_DRAIN),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_GASTRO_ACID),
     LEVEL_UP_MOVE(40, MOVE_LEAF_STORM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18178,10 +16266,7 @@ static const struct LevelUpMove sServineLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_GASTRO_ACID),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LEAF_STORM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18207,11 +16292,8 @@ static const struct LevelUpMove sSerperiorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_GASTRO_ACID),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_LEAF_STORM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SNIVY
@@ -18233,18 +16315,14 @@ static const struct LevelUpMove sTepigLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_TAKE_DOWN),
     LEVEL_UP_MOVE(27, MOVE_HEAT_CRASH),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ASSURANCE),
+    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_FLAMETHROWER),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_HEAD_SMASH),
     LEVEL_UP_MOVE(39, MOVE_ROAR),
     LEVEL_UP_MOVE(43, MOVE_FLARE_BLITZ),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18264,8 +16342,8 @@ static const struct LevelUpMove sPigniteLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_HEAT_CRASH),
+    //Norman Lv31
     //Winona Lv35
     // >>> Evo Lv 36
     LEVEL_UP_MOVE(36, MOVE_ASSURANCE),
@@ -18273,11 +16351,8 @@ static const struct LevelUpMove sPigniteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HEAD_SMASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_ROAR),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FLARE_BLITZ),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18297,20 +16372,17 @@ static const struct LevelUpMove sEmboarLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_HEAT_CRASH),
+    //Norman Lv31
     //Winona Lv35
     // >>> Evo Lv 36
     LEVEL_UP_MOVE(38, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(43, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_ROAR),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_FLARE_BLITZ),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ROAR),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TEPIG
@@ -18332,18 +16404,14 @@ static const struct LevelUpMove sOshawottLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(29, MOVE_AQUA_JET),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ENCORE),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_AQUA_TAIL),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_RETALIATE),
     LEVEL_UP_MOVE(41, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(43, MOVE_HYDRO_PUMP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18371,11 +16439,8 @@ static const struct LevelUpMove sDewottLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_RETALIATE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_HYDRO_PUMP),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18402,13 +16467,10 @@ static const struct LevelUpMove sSamurottLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_ENCORE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_AQUA_TAIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_RETALIATE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_RETALIATE),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18436,13 +16498,10 @@ static const struct LevelUpMove sSamurottHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_ENCORE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_AQUA_TAIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_RETALIATE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_RETALIATE),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -18467,18 +16526,14 @@ static const struct LevelUpMove sPatratLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(28, MOVE_WORK_UP),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_HYPER_FANG),
+    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_NASTY_PLOT),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_MEAN_LOOK),
     LEVEL_UP_MOVE(38, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(41, MOVE_SLAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18514,10 +16569,7 @@ static const struct LevelUpMove sWatchogLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BATON_PASS),
     LEVEL_UP_MOVE(50, MOVE_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PATRAT
@@ -18546,10 +16598,7 @@ static const struct LevelUpMove sLillipupLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LAST_RESORT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_GIGA_IMPACT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18574,13 +16623,10 @@ static const struct LevelUpMove sHerdierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HELPING_HAND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_REVERSAL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_ROAR),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LAST_RESORT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_ROAR),
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18606,14 +16652,11 @@ static const struct LevelUpMove sStoutlandLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HELPING_HAND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_REVERSAL),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_ROAR),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_LAST_RESORT),
-    LEVEL_UP_MOVE(78, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(50, MOVE_ROAR),
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LILLIPUP
@@ -18639,11 +16682,7 @@ static const struct LevelUpMove sPurrloinLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE(40, MOVE_PLAY_ROUGH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18667,11 +16706,8 @@ static const struct LevelUpMove sLiepardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_NIGHT_SLASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_PLAY_ROUGH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PLAY_ROUGH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PURRLOIN
@@ -18693,18 +16729,14 @@ static const struct LevelUpMove sPansageLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_TORMENT),
     LEVEL_UP_MOVE(28, MOVE_FLING),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ACROBATICS),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_GRASS_KNOT),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_RECYCLE),
     LEVEL_UP_MOVE(40, MOVE_NATURAL_GIFT),
     LEVEL_UP_MOVE(43, MOVE_CRUNCH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18713,17 +16745,13 @@ static const struct LevelUpMove sSimisageLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE( 1, MOVE_SEED_BOMB),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PANSAGE
@@ -18745,18 +16773,14 @@ static const struct LevelUpMove sPansearLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_AMNESIA),
     LEVEL_UP_MOVE(28, MOVE_FLING),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ACROBATICS),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_FIRE_BLAST),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_RECYCLE),
     LEVEL_UP_MOVE(40, MOVE_NATURAL_GIFT),
     LEVEL_UP_MOVE(43, MOVE_CRUNCH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18765,17 +16789,13 @@ static const struct LevelUpMove sSimisearLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE( 1, MOVE_FLAME_BURST),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PANSEAR
@@ -18797,18 +16817,14 @@ static const struct LevelUpMove sPanpourLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_TAUNT),
     LEVEL_UP_MOVE(28, MOVE_FLING),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ACROBATICS),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_BRINE),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_RECYCLE),
     LEVEL_UP_MOVE(40, MOVE_NATURAL_GIFT),
     LEVEL_UP_MOVE(43, MOVE_CRUNCH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18817,17 +16833,13 @@ static const struct LevelUpMove sSimipourLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE( 1, MOVE_SCALD),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PANPOUR
@@ -18855,11 +16867,8 @@ static const struct LevelUpMove sMunnaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DREAM_EATER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_WONDER_ROOM),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18880,17 +16889,13 @@ static const struct LevelUpMove sMusharnaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE( 1, MOVE_PSYBEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MUNNA
@@ -18917,11 +16922,7 @@ static const struct LevelUpMove sPidoveLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ROOST),
     LEVEL_UP_MOVE(40, MOVE_TAILWIND),
     LEVEL_UP_MOVE(44, MOVE_SKY_ATTACK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18947,11 +16948,8 @@ static const struct LevelUpMove sTranquillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ROOST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TAILWIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SKY_ATTACK),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -18975,12 +16973,9 @@ static const struct LevelUpMove sUnfezantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AIR_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ROOST),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_TAILWIND),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE(50, MOVE_TAILWIND),
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PIDOVE
@@ -19006,11 +17001,7 @@ static const struct LevelUpMove sBlitzleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_WILD_CHARGE),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_THRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19034,11 +17025,8 @@ static const struct LevelUpMove sZebstrikaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_WILD_CHARGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_THRASH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BLITZLE
@@ -19065,11 +17053,7 @@ static const struct LevelUpMove sRoggenrolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SANDSTORM),
     LEVEL_UP_MOVE(40, MOVE_STONE_EDGE),
     LEVEL_UP_MOVE(44, MOVE_EXPLOSION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19096,11 +17080,8 @@ static const struct LevelUpMove sBoldoreLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SANDSTORM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_EXPLOSION),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19125,11 +17106,8 @@ static const struct LevelUpMove sGigalithLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SANDSTORM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_EXPLOSION),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ROGGENROLA
@@ -19155,11 +17133,8 @@ static const struct LevelUpMove sWoobatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CALM_MIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SIMPLE_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SIMPLE_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19183,11 +17158,8 @@ static const struct LevelUpMove sSwoobatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CALM_MIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SIMPLE_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SIMPLE_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WOOBAT
@@ -19216,10 +17188,7 @@ static const struct LevelUpMove sDrilburLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FISSURE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19245,12 +17214,9 @@ static const struct LevelUpMove sExcadrillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_DRILL_RUN),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_EARTHQUAKE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_FISSURE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRILBUR
@@ -19278,13 +17244,10 @@ static const struct LevelUpMove sAudinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HEAL_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENTRAINMENT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MISTY_TERRAIN),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LAST_RESORT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENTRAINMENT),
+    LEVEL_UP_MOVE(50, MOVE_MISTY_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_AUDINO
@@ -19313,10 +17276,7 @@ static const struct LevelUpMove sTimburrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SUPERPOWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FOCUS_PUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19341,12 +17301,9 @@ static const struct LevelUpMove sGurdurrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HAMMER_ARM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SUPERPOWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FOCUS_PUNCH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19370,12 +17327,9 @@ static const struct LevelUpMove sConkeldurrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HAMMER_ARM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SUPERPOWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FOCUS_PUNCH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TIMBURR
@@ -19404,10 +17358,7 @@ static const struct LevelUpMove sTympoleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_RAIN_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19433,12 +17384,9 @@ static const struct LevelUpMove sPalpitoadLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_MUDDY_WATER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_RAIN_DANCE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HYDRO_PUMP),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19465,13 +17413,10 @@ static const struct LevelUpMove sSeismitoadLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_AQUA_RING),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HYPER_VOICE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_MUDDY_WATER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_RAIN_DANCE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TYMPOLE
@@ -19497,11 +17442,8 @@ static const struct LevelUpMove sThrohLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ENDURE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_REVERSAL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SUPERPOWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_THROH
@@ -19527,11 +17469,8 @@ static const struct LevelUpMove sSawkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ENDURE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_REVERSAL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_CLOSE_COMBAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SAWK
@@ -19549,16 +17488,12 @@ static const struct LevelUpMove sSewaddleLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_ENDURE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_STICKY_WEB),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(43, MOVE_FLAIL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19575,16 +17510,12 @@ static const struct LevelUpMove sSwadloonLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_ENDURE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_STICKY_WEB),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_BUG_BUZZ),
     LEVEL_UP_MOVE(43, MOVE_FLAIL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19610,10 +17541,7 @@ static const struct LevelUpMove sLeavannyLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SEWADDLE
@@ -19640,11 +17568,7 @@ static const struct LevelUpMove sVenipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_TOXIC),
     LEVEL_UP_MOVE(40, MOVE_VENOM_DRENCH),
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19672,11 +17596,8 @@ static const struct LevelUpMove sWhirlipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TOXIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_VENOM_DRENCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19702,13 +17623,10 @@ static const struct LevelUpMove sScolipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TOXIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_VENOM_DRENCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(74, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_VENOM_DRENCH),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VENIPEDE
@@ -19739,10 +17657,7 @@ static const struct LevelUpMove sCottoneeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_COTTON_GUARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOLAR_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19769,17 +17684,13 @@ static const struct LevelUpMove sWhimsicottLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_FAIRY_WIND),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_COTTONEE
@@ -19808,11 +17719,7 @@ static const struct LevelUpMove sPetililLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE(39, MOVE_ENTRAINMENT),
     LEVEL_UP_MOVE(42, MOVE_LEAF_STORM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19837,17 +17744,13 @@ static const struct LevelUpMove sLilligantLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AFTER_YOU),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 5, MOVE_MAGICAL_LEAF),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19876,17 +17779,13 @@ static const struct LevelUpMove sLilligantHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 5, MOVE_AXE_KICK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -19915,12 +17814,9 @@ static const struct LevelUpMove sBasculinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_WAVE_CRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THRASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DOUBLE_EDGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HEAD_SMASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19947,12 +17843,9 @@ static const struct LevelUpMove sBasculinWhiteStripedLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_WAVE_CRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THRASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DOUBLE_EDGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HEAD_SMASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -19980,12 +17873,9 @@ static const struct LevelUpMove sBasculegionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_WAVE_CRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THRASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DOUBLE_EDGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HEAD_SMASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -20015,11 +17905,7 @@ static const struct LevelUpMove sSandileLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(39, MOVE_THRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20048,10 +17934,7 @@ static const struct LevelUpMove sKrokorokLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20078,12 +17961,9 @@ static const struct LevelUpMove sKrookodileLevelUpLearnset[] = {
     // >>> Evo Lv 40
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_THRASH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_OUTRAGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SANDILE
@@ -20112,10 +17992,7 @@ static const struct LevelUpMove sDarumakaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SUPERPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20142,11 +18019,8 @@ static const struct LevelUpMove sDarmanitanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FLARE_BLITZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SUPERPOWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20173,10 +18047,7 @@ static const struct LevelUpMove sDarumakaGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SUPERPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20203,11 +18074,8 @@ static const struct LevelUpMove sDarmanitanGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SUPERPOWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -20239,13 +18107,10 @@ static const struct LevelUpMove sMaractusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SUNNY_DAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOLAR_BEAM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ACUPRESSURE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PETAL_DANCE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_COTTON_GUARD),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ACUPRESSURE),
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_COTTON_GUARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MARACTUS
@@ -20274,10 +18139,7 @@ static const struct LevelUpMove sDwebbleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SHELL_SMASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ROCK_WRECKER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20303,11 +18165,8 @@ static const struct LevelUpMove sCrustleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ROCK_POLISH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_ROCK_WRECKER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ROCK_WRECKER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DWEBBLE
@@ -20336,11 +18195,8 @@ static const struct LevelUpMove sScraggyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HIGH_JUMP_KICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FOCUS_PUNCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HEAD_SMASH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20366,12 +18222,9 @@ static const struct LevelUpMove sScraftyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HIGH_JUMP_KICK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_FOCUS_PUNCH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HEAD_SMASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SCRAGGY
@@ -20397,13 +18250,10 @@ static const struct LevelUpMove sSigilyphLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_TAILWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_LIGHT_SCREEN),
-    //Juan Lv50
     LEVEL_UP_MOVE(50, MOVE_REFLECT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SKY_ATTACK),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SKILL_SWAP),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE(50, MOVE_SKILL_SWAP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SIGILYPH
@@ -20433,11 +18283,8 @@ static const struct LevelUpMove sYamaskLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_POWER_SPLIT),
     LEVEL_UP_MOVE(48, MOVE_GUARD_SPLIT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DESTINY_BOND),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20466,13 +18313,10 @@ static const struct LevelUpMove sCofagrigusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DARK_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_POWER_SPLIT),
-    LEVEL_UP_MOVE(56, MOVE_GUARD_SPLIT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_DESTINY_BOND),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_GUARD_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20500,11 +18344,8 @@ static const struct LevelUpMove sYamaskGalarLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_POWER_SPLIT),
     LEVEL_UP_MOVE(48, MOVE_GUARD_SPLIT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DESTINY_BOND),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20532,13 +18373,10 @@ static const struct LevelUpMove sRunerigusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_POWER_SPLIT),
-    LEVEL_UP_MOVE(56, MOVE_GUARD_SPLIT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_DESTINY_BOND),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_GUARD_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -20570,11 +18408,7 @@ static const struct LevelUpMove sTirtougaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(42, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(45, MOVE_SHELL_SMASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20603,11 +18437,8 @@ static const struct LevelUpMove sCarracostaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_RAIN_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_SHELL_SMASH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TIRTOUGA
@@ -20638,11 +18469,7 @@ static const struct LevelUpMove sArchenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_DRAGON_CLAW),
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     LEVEL_UP_MOVE(45, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20671,11 +18498,8 @@ static const struct LevelUpMove sArcheopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_DRAGON_CLAW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_THRASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_ENDEAVOR),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ARCHEN
@@ -20706,11 +18530,7 @@ static const struct LevelUpMove sTrubbishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_PAIN_SPLIT),
     LEVEL_UP_MOVE(39, MOVE_GUNK_SHOT),
     LEVEL_UP_MOVE(42, MOVE_EXPLOSION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20742,10 +18562,7 @@ static const struct LevelUpMove sGarbodorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_GUNK_SHOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TRUBBISH
@@ -20774,10 +18591,7 @@ static const struct LevelUpMove sZoruaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FOUL_PLAY),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20803,12 +18617,9 @@ static const struct LevelUpMove sZoroarkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_IMPRISON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_NIGHT_DAZE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_NASTY_PLOT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_FOUL_PLAY),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20835,10 +18646,7 @@ static const struct LevelUpMove sZoruaHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FOUL_PLAY),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20865,12 +18673,9 @@ static const struct LevelUpMove sZoroarkHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BITTER_MALICE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_NASTY_PLOT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_FOUL_PLAY),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -20899,10 +18704,7 @@ static const struct LevelUpMove sMinccinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LAST_RESORT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20923,17 +18725,13 @@ static const struct LevelUpMove sCinccinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_BULLET_SEED),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MINCCINO
@@ -20962,10 +18760,7 @@ static const struct LevelUpMove sGothitaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_MAGIC_ROOM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -20990,12 +18785,9 @@ static const struct LevelUpMove sGothoritaLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 41
     LEVEL_UP_MOVE(46, MOVE_FLATTER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FUTURE_SIGHT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_MAGIC_ROOM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_MAGIC_ROOM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21020,12 +18812,9 @@ static const struct LevelUpMove sGothitelleLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 41
     LEVEL_UP_MOVE(48, MOVE_FLATTER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FUTURE_SIGHT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_MAGIC_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_MAGIC_ROOM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GOTHITA
@@ -21055,10 +18844,7 @@ static const struct LevelUpMove sSolosisLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WONDER_ROOM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21085,12 +18871,9 @@ static const struct LevelUpMove sDuosionLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 41
     LEVEL_UP_MOVE(46, MOVE_SKILL_SWAP),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FUTURE_SIGHT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_WONDER_ROOM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21117,12 +18900,9 @@ static const struct LevelUpMove sReuniclusLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 41
     LEVEL_UP_MOVE(48, MOVE_SKILL_SWAP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FUTURE_SIGHT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SOLOSIS
@@ -21151,10 +18931,7 @@ static const struct LevelUpMove sDucklettLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_BRAVE_BIRD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_HURRICANE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21180,11 +18957,8 @@ static const struct LevelUpMove sSwannaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_TAILWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_BRAVE_BIRD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DUCKLETT
@@ -21213,10 +18987,7 @@ static const struct LevelUpMove sVanilliteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHEER_COLD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21243,11 +19014,8 @@ static const struct LevelUpMove sVanillishLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 47
     LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SHEER_COLD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21273,14 +19041,10 @@ static const struct LevelUpMove sVanilluxeLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE(44, MOVE_ICE_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 47
-    LEVEL_UP_MOVE(52, MOVE_BLIZZARD),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SHEER_COLD),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VANILLITE
@@ -21305,11 +19069,7 @@ static const struct LevelUpMove sDeerlingLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(42, MOVE_SOLAR_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21334,11 +19094,8 @@ static const struct LevelUpMove sSawsbuckLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_CHARM),
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SOLAR_BEAM),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DEERLING
@@ -21364,11 +19121,8 @@ static const struct LevelUpMove sEmolgaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_LIGHT_SCREEN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_AGILITY),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_EMOLGA
@@ -21396,10 +19150,7 @@ static const struct LevelUpMove sKarrablastLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21431,11 +19182,8 @@ static const struct LevelUpMove sEscavalierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_GIGA_IMPACT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_METAL_BURST),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KARRABLAST
@@ -21464,10 +19212,7 @@ static const struct LevelUpMove sFoongusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SOLAR_BEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SPORE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21493,11 +19238,8 @@ static const struct LevelUpMove sAmoongussLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_RAGE_POWDER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOLAR_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SPORE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SPORE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FOONGUS
@@ -21526,10 +19268,7 @@ static const struct LevelUpMove sFrillishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DESTINY_BOND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WATER_SPOUT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21556,11 +19295,8 @@ static const struct LevelUpMove sJellicentLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DESTINY_BOND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_WATER_SPOUT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WATER_SPOUT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FRILLISH
@@ -21588,11 +19324,8 @@ static const struct LevelUpMove sAlomomolaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SAFEGUARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_WHIRLPOOL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ALOMOMOLA
@@ -21621,10 +19354,7 @@ static const struct LevelUpMove sJoltikLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_GASTRO_ACID),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BUG_BUZZ),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21651,11 +19381,8 @@ static const struct LevelUpMove sGalvantulaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SCREECH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_GASTRO_ACID),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BUG_BUZZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_JOLTIK
@@ -21682,10 +19409,7 @@ static const struct LevelUpMove sFerroseedLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_GYRO_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21711,11 +19435,8 @@ static const struct LevelUpMove sFerrothornLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_CURSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_GYRO_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_EXPLOSION),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FERROSEED
@@ -21744,10 +19465,7 @@ static const struct LevelUpMove sKlinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ZAP_CANNON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPER_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21773,12 +19491,9 @@ static const struct LevelUpMove sKlangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHIFT_GEAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ZAP_CANNON),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 49
-    LEVEL_UP_MOVE(54, MOVE_HYPER_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
 
@@ -21805,13 +19520,10 @@ static const struct LevelUpMove sKlinklangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHIFT_GEAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ZAP_CANNON),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 49
-    LEVEL_UP_MOVE(56, MOVE_HYPER_BEAM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_ELECTRIC_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_ELECTRIC_TERRAIN),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KLINK
@@ -21822,17 +19534,13 @@ static const struct LevelUpMove sTynamoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE( 1, MOVE_SPARK),
     LEVEL_UP_MOVE( 1, MOVE_CHARGE_BEAM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 39
 };
@@ -21856,15 +19564,12 @@ static const struct LevelUpMove sEelektrikLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THUNDERBOLT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ACID_SPRAY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_COIL),
-    LEVEL_UP_MOVE(59, MOVE_WILD_CHARGE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_GASTRO_ACID),
-    LEVEL_UP_MOVE(69, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(74, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_COIL),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21879,17 +19584,13 @@ static const struct LevelUpMove sEelektrossLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DISCHARGE),
     LEVEL_UP_MOVE( 1, MOVE_COIL),
     LEVEL_UP_MOVE( 5, MOVE_WILD_CHARGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TYNAMO
@@ -21915,12 +19616,9 @@ static const struct LevelUpMove sElgyemLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_RECOVER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CALM_MIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_WONDER_ROOM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PSYCHIC),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -21944,13 +19642,10 @@ static const struct LevelUpMove sBeheeyemLevelUpLearnset[] = {
     // >>> Evo Lv 42
     LEVEL_UP_MOVE(45, MOVE_RECOVER),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_CALM_MIND),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_WONDER_ROOM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ELGYEM
@@ -21979,12 +19674,9 @@ static const struct LevelUpMove sLitwickLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_IMPRISON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PAIN_SPLIT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_OVERHEAT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MEMENTO),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -22010,13 +19702,10 @@ static const struct LevelUpMove sLampentLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 41
     LEVEL_UP_MOVE(46, MOVE_IMPRISON),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_PAIN_SPLIT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_OVERHEAT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -22037,17 +19726,13 @@ static const struct LevelUpMove sChandelureLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_OVERHEAT),
     LEVEL_UP_MOVE( 1, MOVE_HEX),
     LEVEL_UP_MOVE( 1, MOVE_INFERNO),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LITWICK
@@ -22080,10 +19765,7 @@ static const struct LevelUpMove sAxewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_GUILLOTINE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_GIGA_IMPACT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -22112,13 +19794,10 @@ static const struct LevelUpMove sFraxureLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_OUTRAGE),
-    //Juan Lv50
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 48
-    LEVEL_UP_MOVE(51, MOVE_GUILLOTINE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GIGA_IMPACT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
 };
 
@@ -22146,13 +19825,10 @@ static const struct LevelUpMove sHaxorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_OUTRAGE),
-    //Juan Lv50
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 48
-    LEVEL_UP_MOVE(53, MOVE_GUILLOTINE),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_AXEW
@@ -22182,11 +19858,7 @@ static const struct LevelUpMove sCubchooLevelUpLearnset[] = {
     // >>> Evo Lv 37
     LEVEL_UP_MOVE(39, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(42, MOVE_SHEER_COLD),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -22218,11 +19890,8 @@ static const struct LevelUpMove sBearticLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SHEER_COLD),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_SUPERPOWER),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CUBCHOO
@@ -22252,13 +19921,10 @@ static const struct LevelUpMove sCryogonalLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_RECOVER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ICE_BEAM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ACID_ARMOR),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SHEER_COLD),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ACID_ARMOR),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CRYOGONAL
@@ -22286,10 +19952,7 @@ static const struct LevelUpMove sShelmetLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FINAL_GAMBIT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -22322,11 +19985,8 @@ static const struct LevelUpMove sAccelgorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FINAL_GAMBIT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_TOXIC),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TOXIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHELMET
@@ -22354,11 +20014,8 @@ static const struct LevelUpMove sStunfiskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLAIL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FISSURE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -22385,11 +20042,8 @@ static const struct LevelUpMove sStunfiskGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SNAP_TRAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLAIL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FISSURE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
@@ -22414,15 +20068,11 @@ static const struct LevelUpMove sMienfooLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(45, MOVE_AURA_SPHERE),
-    //Tate&Liza Lv45
-    //Juan Lv50
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(51, MOVE_BOUNCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_CALM_MIND),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HIGH_JUMP_KICK),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BOUNCE),
+    LEVEL_UP_MOVE(50, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(50, MOVE_HIGH_JUMP_KICK),
     LEVEL_UP_END
 };
 
@@ -22445,15 +20095,11 @@ static const struct LevelUpMove sMienshaoLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(45, MOVE_AURA_SPHERE),
-    //Tate&Liza Lv45
-    //Juan Lv50
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(53, MOVE_BOUNCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(59, MOVE_CALM_MIND),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HIGH_JUMP_KICK),
+    LEVEL_UP_MOVE(50, MOVE_BOUNCE),
+    LEVEL_UP_MOVE(50, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE(50, MOVE_HIGH_JUMP_KICK),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MIENFOO
@@ -22479,11 +20125,8 @@ static const struct LevelUpMove sDruddigonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_IRON_HEAD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SUPERPOWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRUDDIGON
@@ -22512,12 +20155,9 @@ static const struct LevelUpMove sGolettLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_PHANTOM_FORCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HAMMER_ARM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_EARTHQUAKE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DYNAMIC_PUNCH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -22545,13 +20185,10 @@ static const struct LevelUpMove sGolurkLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 43
     LEVEL_UP_MOVE(46, MOVE_PHANTOM_FORCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HAMMER_ARM),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_EARTHQUAKE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DYNAMIC_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GOLETT
@@ -22577,14 +20214,11 @@ static const struct LevelUpMove sPawniardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_IRON_DEFENSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RETALIATE),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 52
-    LEVEL_UP_MOVE(55, MOVE_IRON_HEAD),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SWORDS_DANCE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(50, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
     LEVEL_UP_END
 };
 
@@ -22609,14 +20243,11 @@ static const struct LevelUpMove sBisharpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_IRON_DEFENSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RETALIATE),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 52
-    LEVEL_UP_MOVE(57, MOVE_IRON_HEAD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(71, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(50, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
     LEVEL_UP_END
 };
 
@@ -22643,13 +20274,10 @@ static const struct LevelUpMove sKingambitLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_IRON_DEFENSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RETALIATE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_IRON_HEAD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(71, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(50, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -22676,11 +20304,8 @@ static const struct LevelUpMove sBouffalantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_GIGA_IMPACT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BOUFFALANT
@@ -22704,15 +20329,12 @@ static const struct LevelUpMove sRuffletLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_WHIRLWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CRUSH_CLAW),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 54
-    LEVEL_UP_MOVE(55, MOVE_AIR_SLASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DEFOG),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_THRASH),
-    LEVEL_UP_MOVE(72, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_DEFOG),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
     LEVEL_UP_END
 };
 
@@ -22736,14 +20358,11 @@ static const struct LevelUpMove sBraviaryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_WHIRLWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CRUSH_CLAW),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 54
-    LEVEL_UP_MOVE(57, MOVE_AIR_SLASH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DEFOG),
-    LEVEL_UP_MOVE(72, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_DEFOG),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
     LEVEL_UP_END
 };
 
@@ -22769,14 +20388,11 @@ static const struct LevelUpMove sBraviaryHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_WHIRLWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CRUSH_CLAW),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_AIR_SLASH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DEFOG),
-    LEVEL_UP_MOVE(72, MOVE_THRASH),
-    LEVEL_UP_MOVE(80, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_DEFOG),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -22801,15 +20417,12 @@ static const struct LevelUpMove sVullabyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AIR_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DARK_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 54
-    LEVEL_UP_MOVE(54, MOVE_NASTY_PLOT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DEFOG),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_ATTRACT),
-    LEVEL_UP_MOVE(72, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_DEFOG),
+    LEVEL_UP_MOVE(50, MOVE_ATTRACT),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
     LEVEL_UP_END
 };
 
@@ -22834,15 +20447,12 @@ static const struct LevelUpMove sMandibuzzLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AIR_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DARK_PULSE),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 54
-    LEVEL_UP_MOVE(57, MOVE_NASTY_PLOT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DEFOG),
-    LEVEL_UP_MOVE(72, MOVE_ATTRACT),
-    LEVEL_UP_MOVE(80, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_DEFOG),
+    LEVEL_UP_MOVE(50, MOVE_ATTRACT),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VULLABY
@@ -22870,12 +20480,9 @@ static const struct LevelUpMove sHeatmorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AMNESIA),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FIRE_SPIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_INFERNO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FLARE_BLITZ),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HEATMOR
@@ -22903,12 +20510,9 @@ static const struct LevelUpMove sDurantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_IRON_HEAD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ENTRAINMENT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_IRON_DEFENSE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GUILLOTINE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DURANT
@@ -22921,7 +20525,7 @@ static const struct LevelUpMove sDeinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 8, MOVE_BITE),
     LEVEL_UP_MOVE(12, MOVE_WORK_UP),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_DRAGON_BREATH),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_HEADBUTT),
@@ -22938,14 +20542,11 @@ static const struct LevelUpMove sDeinoLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPER_VOICE),
     //Evolution at 50
-    //Juan Lv50
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(52, MOVE_DRAGON_RUSH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_NASTY_PLOT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_OUTRAGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
     LEVEL_UP_END
 };
 
@@ -22973,16 +20574,13 @@ static const struct LevelUpMove sZweilousLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPER_VOICE),
     //Evolution at 50
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(54, MOVE_DRAGON_RUSH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
     //Evolution at 64
-    //Steven Lv63
     // >>> Evo Lv 64
-    LEVEL_UP_MOVE(66, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
     LEVEL_UP_END
 };
 
@@ -23009,16 +20607,13 @@ static const struct LevelUpMove sHydreigonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPER_VOICE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DRAGON_RUSH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Evolution at 64
-    //Steven Lv63
     // >>> Evo Lv 64
-    LEVEL_UP_MOVE(68, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(76, MOVE_DRACO_METEOR),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_DRACO_METEOR),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DEINO
@@ -23029,7 +20624,7 @@ static const struct LevelUpMove sLarvestaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 6, MOVE_ABSORB),
     LEVEL_UP_MOVE(12, MOVE_FIRE_SPIN),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_FLAME_WHEEL),
     LEVEL_UP_MOVE(24, MOVE_STRUGGLE_BUG),
@@ -23042,15 +20637,12 @@ static const struct LevelUpMove sLarvestaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_TAKE_DOWN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(50, MOVE_AMNESIA),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Evolution at 59
-    //Drake Lv60
     // >>> Evo Lv 59
-    LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
     LEVEL_UP_END
 };
 
@@ -23080,16 +20672,13 @@ static const struct LevelUpMove sVolcaronaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HEAT_WAVE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(50, MOVE_AMNESIA),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Evolution at 59
-    //Drake Lv60
     // >>> Evo Lv 59
-    LEVEL_UP_MOVE(62, MOVE_HURRICANE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(78, MOVE_RAGE_POWDER),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_RAGE_POWDER),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LARVESTA
@@ -23102,7 +20691,7 @@ static const struct LevelUpMove sCobalionLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WORK_UP),
     LEVEL_UP_MOVE( 7, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(14, MOVE_QUICK_GUARD),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_DOUBLE_KICK),
     //Wattson Lv24
@@ -23114,13 +20703,10 @@ static const struct LevelUpMove sCobalionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SACRED_SWORD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_IRON_HEAD),
-    LEVEL_UP_MOVE(70, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_COBALION
@@ -23133,7 +20719,7 @@ static const struct LevelUpMove sTerrakionLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WORK_UP),
     LEVEL_UP_MOVE( 7, MOVE_SMACK_DOWN),
     LEVEL_UP_MOVE(14, MOVE_QUICK_GUARD),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_DOUBLE_KICK),
     //Wattson Lv24
@@ -23145,13 +20731,10 @@ static const struct LevelUpMove sTerrakionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SACRED_SWORD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_STONE_EDGE),
-    LEVEL_UP_MOVE(70, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TERRAKION
@@ -23165,7 +20748,7 @@ static const struct LevelUpMove sVirizionLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WORK_UP),
     LEVEL_UP_MOVE( 7, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE(14, MOVE_QUICK_GUARD),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_DOUBLE_KICK),
     //Wattson Lv24
@@ -23177,13 +20760,10 @@ static const struct LevelUpMove sVirizionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SYNTHESIS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SACRED_SWORD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE(70, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VIRIZION
@@ -23209,15 +20789,12 @@ static const struct LevelUpMove sTornadusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_EXTRASENSORY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_UPROAR),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HAMMER_ARM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_RAIN_DANCE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_HURRICANE),
-    LEVEL_UP_MOVE(70, MOVE_THRASH),
-    LEVEL_UP_MOVE(77, MOVE_BLEAKWIND_STORM),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_BLEAKWIND_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TORNADUS
@@ -23243,15 +20820,12 @@ static const struct LevelUpMove sThundurusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_UPROAR),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HAMMER_ARM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_RAIN_DANCE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_THUNDER),
-    LEVEL_UP_MOVE(70, MOVE_THRASH),
-    LEVEL_UP_MOVE(75, MOVE_WILDBOLT_STORM),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_WILDBOLT_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_THUNDURUS
@@ -23275,15 +20849,12 @@ static const struct LevelUpMove sReshiramLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUSION_FLARE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYPER_VOICE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(72, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(80, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(88, MOVE_BLUE_FLARE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_BLUE_FLARE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RESHIRAM
@@ -23307,15 +20878,12 @@ static const struct LevelUpMove sZekromLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_THUNDERBOLT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUSION_BOLT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYPER_VOICE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_THUNDER),
-    LEVEL_UP_MOVE(72, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(80, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(88, MOVE_BOLT_STRIKE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_BOLT_STRIKE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZEKROM
@@ -23340,16 +20908,13 @@ static const struct LevelUpMove sLandorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_EXTRASENSORY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HAMMER_ARM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SANDSTORM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE(70, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(75, MOVE_FISSURE),
-    LEVEL_UP_MOVE(80, MOVE_SANDSEAR_STORM),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    LEVEL_UP_MOVE(50, MOVE_SANDSEAR_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LANDORUS
@@ -23373,15 +20938,12 @@ static const struct LevelUpMove sKyuremLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SCARY_FACE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BLIZZARD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(72, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(80, MOVE_GLACIATE),
-    LEVEL_UP_MOVE(88, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_GLACIATE),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23404,15 +20966,12 @@ static const struct LevelUpMove sKyuremWhiteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUSION_FLARE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BLIZZARD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(72, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(80, MOVE_ICE_BURN),
-    LEVEL_UP_MOVE(88, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_ICE_BURN),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FUSION_FORMS
@@ -23436,15 +20995,12 @@ static const struct LevelUpMove sKyuremBlackLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FUSION_BOLT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BLIZZARD),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(72, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(80, MOVE_FREEZE_SHOCK),
-    LEVEL_UP_MOVE(88, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_FREEZE_SHOCK),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FUSION_FORMS
@@ -23459,7 +21015,7 @@ static const struct LevelUpMove sKeldeoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SECRET_SWORD),
     LEVEL_UP_MOVE( 7, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE(14, MOVE_QUICK_GUARD),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_DOUBLE_KICK),
     //Wattson Lv24
@@ -23471,13 +21027,10 @@ static const struct LevelUpMove sKeldeoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SACRED_SWORD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(70, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KELDEO
@@ -23494,22 +21047,19 @@ static const struct LevelUpMove sMeloettaLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_ACROBATICS),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_PSYBEAM),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ECHOED_VOICE),
     LEVEL_UP_MOVE(43, MOVE_U_TURN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RELIC_SONG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_PSYCHIC),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HYPER_VOICE),
-    LEVEL_UP_MOVE(71, MOVE_ROLE_PLAY),
-    LEVEL_UP_MOVE(78, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(85, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(50, MOVE_ROLE_PLAY),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MELOETTA
@@ -23520,7 +21070,7 @@ static const struct LevelUpMove sGenesectLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 7, MOVE_SCREECH),
     LEVEL_UP_MOVE(14, MOVE_METAL_CLAW),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_FELL_STINGER),
     //Wattson Lv24
@@ -23532,16 +21082,13 @@ static const struct LevelUpMove sGenesectLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_X_SCISSOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_MAGNET_RISE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BUG_BUZZ),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SIMPLE_BEAM),
-    LEVEL_UP_MOVE(70, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(77, MOVE_LOCK_ON),
-    LEVEL_UP_MOVE(84, MOVE_TECHNO_BLAST),
-    LEVEL_UP_MOVE(91, MOVE_SELF_DESTRUCT),
+    LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(50, MOVE_SIMPLE_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_TECHNO_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_SELF_DESTRUCT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GENESECT
@@ -23568,10 +21115,7 @@ static const struct LevelUpMove sChespinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PAIN_SPLIT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WOOD_HAMMER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23597,11 +21141,8 @@ static const struct LevelUpMove sQuilladinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_PAIN_SPLIT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_WOOD_HAMMER),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WOOD_HAMMER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23628,14 +21169,11 @@ static const struct LevelUpMove sChesnaughtLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_MUD_SHOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BULK_UP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_BODY_SLAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PAIN_SPLIT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_WOOD_HAMMER),
-    LEVEL_UP_MOVE(78, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_WOOD_HAMMER),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHESPIN
@@ -23647,7 +21185,7 @@ static const struct LevelUpMove sFennekinLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_EMBER),
     LEVEL_UP_MOVE(11, MOVE_HOWL),
     LEVEL_UP_MOVE(14, MOVE_FLAME_CHARGE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     // >>> Evo Lv 16
     LEVEL_UP_MOVE(17, MOVE_PSYBEAM),
@@ -23655,8 +21193,8 @@ static const struct LevelUpMove sFennekinLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_LIGHT_SCREEN),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_PSYSHOCK),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_FLAMETHROWER),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_WILL_O_WISP),
@@ -23664,10 +21202,7 @@ static const struct LevelUpMove sFennekinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_SUNNY_DAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FIRE_BLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23677,7 +21212,7 @@ static const struct LevelUpMove sBraixenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE(11, MOVE_HOWL),
     LEVEL_UP_MOVE(14, MOVE_FLAME_CHARGE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_PSYBEAM),
@@ -23693,13 +21228,10 @@ static const struct LevelUpMove sBraixenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_WILL_O_WISP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PSYCHIC),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SUNNY_DAY),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MAGIC_ROOM),
-    LEVEL_UP_MOVE(59, MOVE_FIRE_BLAST),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(50, MOVE_MAGIC_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23714,7 +21246,7 @@ static const struct LevelUpMove sDelphoxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE(14, MOVE_FLAME_CHARGE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(22, MOVE_FIRE_SPIN),
@@ -23727,15 +21259,12 @@ static const struct LevelUpMove sDelphoxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_PSYSHOCK),
     LEVEL_UP_MOVE(45, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_WILL_O_WISP),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_PSYCHIC),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_SUNNY_DAY),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_MAGIC_ROOM),
-    LEVEL_UP_MOVE(74, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_WILL_O_WISP),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(50, MOVE_MAGIC_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FENNEKIN
@@ -23748,7 +21277,7 @@ static const struct LevelUpMove sFroakieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_LICK),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     // >>> Evo Lv 16
     LEVEL_UP_MOVE(18, MOVE_SMOKESCREEN),
@@ -23764,10 +21293,7 @@ static const struct LevelUpMove sFroakieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_DOUBLE_TEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23778,7 +21304,7 @@ static const struct LevelUpMove sFrogadierLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_LICK),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     // >>> Evo Lv 16
     LEVEL_UP_MOVE(19, MOVE_SMOKESCREEN),
@@ -23794,11 +21320,8 @@ static const struct LevelUpMove sFrogadierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BOUNCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_TEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23813,7 +21336,7 @@ static const struct LevelUpMove sGreninjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_LICK),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(19, MOVE_SMOKESCREEN),
     LEVEL_UP_MOVE(23, MOVE_SHADOW_SNEAK),
@@ -23827,12 +21350,9 @@ static const struct LevelUpMove sGreninjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SUBSTITUTE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_EXTRASENSORY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_TEAM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_TEAM),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FROAKIE
@@ -23861,11 +21381,7 @@ static const struct LevelUpMove sBunnelbyLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(39, MOVE_SUPER_FANG),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23892,12 +21408,9 @@ static const struct LevelUpMove sDiggersbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_SUPER_FANG),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HAMMER_ARM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPER_FANG),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BUNNELBY
@@ -23924,10 +21437,7 @@ static const struct LevelUpMove sFletchlingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ROOST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLY),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23953,12 +21463,9 @@ static const struct LevelUpMove sFletchinderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_TAILWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_STEEL_WING),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_ROOST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_FLY),
+    LEVEL_UP_MOVE(50, MOVE_ROOST),
+    LEVEL_UP_MOVE(50, MOVE_FLY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -23984,14 +21491,11 @@ static const struct LevelUpMove sTalonflameLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_AERIAL_ACE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_TAILWIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_STEEL_WING),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_ROOST),
-    LEVEL_UP_MOVE(74, MOVE_FLY),
-    LEVEL_UP_MOVE(83, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_STEEL_WING),
+    LEVEL_UP_MOVE(50, MOVE_ROOST),
+    LEVEL_UP_MOVE(50, MOVE_FLY),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLETCHLING
@@ -24003,11 +21507,7 @@ static const struct LevelUpMove sScatterbugLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 6, MOVE_STUN_SPORE),
     //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_BUG_BITE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     //Norman Lv31
     //Flannery Lv29
@@ -24019,17 +21519,13 @@ static const struct LevelUpMove sScatterbugLevelUpLearnset[] = {
 static const struct LevelUpMove sSpewpaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_PROTECT),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 9
 };
@@ -24049,17 +21545,14 @@ static const struct LevelUpMove sVivillonLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(25, MOVE_DRAINING_KISS),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SAFEGUARD),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_BUG_BUZZ),
     //Winona Lv35
     LEVEL_UP_MOVE(45, MOVE_QUIVER_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HURRICANE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SCATTERBUG
@@ -24089,10 +21582,7 @@ static const struct LevelUpMove sLitleoLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_INCINERATE),
     LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24119,12 +21609,9 @@ static const struct LevelUpMove sPyroarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HYPER_VOICE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_INCINERATE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_OVERHEAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_INCINERATE),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LITLEO
@@ -24152,10 +21639,7 @@ static const struct LevelUpMove sFlabebeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PETAL_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOLAR_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24180,12 +21664,9 @@ static const struct LevelUpMove sFloetteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_MISTY_TERRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_MOONBLAST),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_PETAL_DANCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24210,12 +21691,9 @@ static const struct LevelUpMove sFloetteEternalLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(50, MOVE_LIGHT_OF_RUIN),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_PETAL_DANCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_SOLAR_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24232,17 +21710,13 @@ static const struct LevelUpMove sFlorgesLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GRASSY_TERRAIN),
     LEVEL_UP_MOVE( 1, MOVE_MISTY_TERRAIN),
     LEVEL_UP_MOVE( 5, MOVE_MOONBLAST),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLABEBE
@@ -24271,11 +21745,7 @@ static const struct LevelUpMove sSkiddoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(42, MOVE_HORN_LEECH),
     LEVEL_UP_MOVE(45, MOVE_LEAF_BLADE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24304,12 +21774,9 @@ static const struct LevelUpMove sGogoatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_HORN_LEECH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE(58, MOVE_MILK_DRINK),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_MILK_DRINK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SKIDDO
@@ -24336,11 +21803,7 @@ static const struct LevelUpMove sPanchamLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(40, MOVE_PARTING_SHOT),
     LEVEL_UP_MOVE(44, MOVE_ENTRAINMENT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24368,12 +21831,9 @@ static const struct LevelUpMove sPangoroLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PARTING_SHOT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENTRAINMENT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HAMMER_ARM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENTRAINMENT),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PANCHAM
@@ -24400,10 +21860,7 @@ static const struct LevelUpMove sFurfrouLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SUCKER_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_COTTON_GUARD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FURFROU
@@ -24426,11 +21883,7 @@ static const struct LevelUpMove sEspurrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_REFLECT),
     //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_PSYSHOCK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
 };
@@ -24461,12 +21914,9 @@ static const struct LevelUpMove sMeowsticMLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_IMPRISON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_QUICK_GUARD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(59, MOVE_MISTY_TERRAIN),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_MISTY_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24495,12 +21945,9 @@ static const struct LevelUpMove sMeowsticFLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EXTRASENSORY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(59, MOVE_FUTURE_SIGHT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ESPURR
@@ -24529,10 +21976,7 @@ static const struct LevelUpMove sHonedgeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SACRED_SWORD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24558,11 +22002,8 @@ static const struct LevelUpMove sDoubladeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_POWER_TRICK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SACRED_SWORD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SACRED_SWORD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24584,17 +22025,13 @@ static const struct LevelUpMove sAegislashLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_SHADOW_SNEAK),
     LEVEL_UP_MOVE( 1, MOVE_AUTOTOMIZE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HONEDGE
@@ -24621,11 +22058,7 @@ static const struct LevelUpMove sSpritzeeLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(39, MOVE_SKILL_SWAP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24654,11 +22087,7 @@ static const struct LevelUpMove sAromatisseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(39, MOVE_SKILL_SWAP),
     LEVEL_UP_MOVE(42, MOVE_PSYCH_UP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPRITZEE
@@ -24686,11 +22115,7 @@ static const struct LevelUpMove sSwirlixLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_COTTON_GUARD),
     LEVEL_UP_MOVE(39, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24717,11 +22142,7 @@ static const struct LevelUpMove sSlurpuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_COTTON_GUARD),
     LEVEL_UP_MOVE(39, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE(42, MOVE_STICKY_WEB),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SWIRLIX
@@ -24750,11 +22171,7 @@ static const struct LevelUpMove sInkayLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_TOPSY_TURVY),
     LEVEL_UP_MOVE(39, MOVE_SUPERPOWER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24783,10 +22200,7 @@ static const struct LevelUpMove sMalamarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_TOPSY_TURVY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_SUPERPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_INKAY
@@ -24813,11 +22227,7 @@ static const struct LevelUpMove sBinacleLevelUpLearnset[] = {
     // >>> Evo Lv 39
     LEVEL_UP_MOVE(40, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE(44, MOVE_CROSS_CHOP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24844,11 +22254,8 @@ static const struct LevelUpMove sBarbaracleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHELL_SMASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CROSS_CHOP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BINACLE
@@ -24875,11 +22282,8 @@ static const struct LevelUpMove sSkrelpLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 48
     LEVEL_UP_MOVE(50, MOVE_SLUDGE_BOMB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24901,15 +22305,11 @@ static const struct LevelUpMove sDragalgeLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(45, MOVE_AQUA_TAIL),
-    //Tate&Liza Lv45
-    //Juan Lv50
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 48
-    LEVEL_UP_MOVE(52, MOVE_SLUDGE_BOMB),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(59, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_SLUDGE_BOMB),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SKRELP
@@ -24936,11 +22336,8 @@ static const struct LevelUpMove sClauncherLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BOUNCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_CRABHAMMER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CRABHAMMER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -24967,12 +22364,9 @@ static const struct LevelUpMove sClawitzerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AURA_SPHERE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BOUNCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MUDDY_WATER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_CRABHAMMER),
+    LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(50, MOVE_CRABHAMMER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CLAUNCHER
@@ -24998,11 +22392,7 @@ static const struct LevelUpMove sHelioptileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_THUNDERBOLT),
     LEVEL_UP_MOVE(40, MOVE_ELECTRIFY),
     LEVEL_UP_MOVE(44, MOVE_THUNDER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25022,17 +22412,13 @@ static const struct LevelUpMove sHelioliskLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HELIOPTILE
@@ -25061,10 +22447,7 @@ static const struct LevelUpMove sTyruntLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HORN_DRILL),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25090,13 +22473,10 @@ static const struct LevelUpMove sTyrantrumLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_HORN_DRILL),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HEAD_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_HORN_DRILL),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TYRUNT
@@ -25125,12 +22505,9 @@ static const struct LevelUpMove sAmauraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LIGHT_SCREEN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SNOWSCAPE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_BLIZZARD),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYPER_BEAM),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25156,13 +22533,10 @@ static const struct LevelUpMove sAurorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ICE_BEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LIGHT_SCREEN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SNOWSCAPE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_BLIZZARD),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SNOWSCAPE),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_AMAURA
@@ -25190,12 +22564,9 @@ static const struct LevelUpMove sHawluchaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FLYING_PRESS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_HIGH_JUMP_KICK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ENDEAVOR),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SKY_ATTACK),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HAWLUCHA
@@ -25216,18 +22587,15 @@ static const struct LevelUpMove sDedenneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_VOLT_SWITCH),
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_REST),
-    //Winona Lv35
     LEVEL_UP_MOVE(35, MOVE_SNORE),
+    //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_DISCHARGE),
     LEVEL_UP_MOVE(45, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SUPER_FANG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_ENTRAINMENT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_THUNDER),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENTRAINMENT),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DEDENNE
@@ -25253,12 +22621,9 @@ static const struct LevelUpMove sCarbinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_POWER_GEM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MOONBLAST),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CARBINK
@@ -25269,7 +22634,7 @@ static const struct LevelUpMove sGoomyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 5, MOVE_BUBBLE),
     LEVEL_UP_MOVE(10, MOVE_ACID),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_PROTECT),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_WATER_PULSE),
@@ -25286,10 +22651,7 @@ static const struct LevelUpMove sGoomyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25317,12 +22679,9 @@ static const struct LevelUpMove sSliggooLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BODY_SLAM),
     //Evolves at 50 in Rain
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(56, MOVE_MUDDY_WATER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
     LEVEL_UP_END
 };
 
@@ -25352,13 +22711,10 @@ static const struct LevelUpMove sGoodraLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BODY_SLAM),
     //Evolves at 50 in Rain
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(58, MOVE_MUDDY_WATER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
     LEVEL_UP_END
 };
 
@@ -25385,12 +22741,9 @@ static const struct LevelUpMove sSliggooHisuiLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_IRON_HEAD),
     //Evolves at 50 in Rain
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(56, MOVE_MUDDY_WATER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
     LEVEL_UP_END
 };
 
@@ -25420,13 +22773,10 @@ static const struct LevelUpMove sGoodraHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(49, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(49, MOVE_BODY_SLAM),
     //Evolves at 50 in Rain
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(58, MOVE_MUDDY_WATER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -25454,11 +22804,8 @@ static const struct LevelUpMove sKlefkiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MAGIC_ROOM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FOUL_PLAY),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_LAST_RESORT),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KLEFKI
@@ -25486,11 +22833,8 @@ static const struct LevelUpMove sPhantumpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_WOOD_HAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DESTINY_BOND),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FORESTS_CURSE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FORESTS_CURSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25517,11 +22861,8 @@ static const struct LevelUpMove sTrevenantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_WOOD_HAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DESTINY_BOND),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FORESTS_CURSE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FORESTS_CURSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PHANTUMP
@@ -25548,11 +22889,7 @@ static const struct LevelUpMove sPumpkabooLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(40, MOVE_TRICK),
     LEVEL_UP_MOVE(44, MOVE_PAIN_SPLIT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25581,10 +22918,7 @@ static const struct LevelUpMove sGourgeistLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_PAIN_SPLIT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PHANTOM_FORCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PUMPKABOO
@@ -25614,11 +22948,7 @@ static const struct LevelUpMove sBergmiteLevelUpLearnset[] = {
     // >>> Evo Lv 37
     LEVEL_UP_MOVE(39, MOVE_BLIZZARD),
     LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25649,11 +22979,8 @@ static const struct LevelUpMove sAvaluggLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_ICICLE_CRASH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ICICLE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25684,12 +23011,9 @@ static const struct LevelUpMove sAvaluggHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_BLIZZARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_STONE_EDGE),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_MOUNTAIN_GALE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MOUNTAIN_GALE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -25719,11 +23043,8 @@ static const struct LevelUpMove sNoibatLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 48
     LEVEL_UP_MOVE(49, MOVE_TAILWIND),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_HURRICANE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25749,15 +23070,11 @@ static const struct LevelUpMove sNoivernLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE(40, MOVE_SCREECH),
     LEVEL_UP_MOVE(44, MOVE_ROOST),
-    //Tate&Liza Lv45
-    //Juan Lv50
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 48
-    LEVEL_UP_MOVE(51, MOVE_TAILWIND),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HURRICANE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_BOOMBURST),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TAILWIND),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NOIBAT
@@ -25783,17 +23100,14 @@ static const struct LevelUpMove sXerneasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_INGRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_GEOMANCY),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MOONBLAST),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_HEAL_PULSE),
-    LEVEL_UP_MOVE(70, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(75, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(80, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(85, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_GEOMANCY),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_HEAL_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_XERNEAS
@@ -25819,17 +23133,14 @@ static const struct LevelUpMove sYveltalLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_OBLIVION_WING),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_PHANTOM_FORCE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FOUL_PLAY),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_DRAGON_RUSH),
-    LEVEL_UP_MOVE(70, MOVE_HURRICANE),
-    LEVEL_UP_MOVE(75, MOVE_FOCUS_BLAST),
-    LEVEL_UP_MOVE(80, MOVE_SKY_ATTACK),
-    LEVEL_UP_MOVE(85, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_SKY_ATTACK),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_YVELTAL
@@ -25856,15 +23167,12 @@ static const struct LevelUpMove sZygardeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LANDS_WRATH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GLARE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_SANDSTORM),
-    LEVEL_UP_MOVE(72, MOVE_COIL),
-    LEVEL_UP_MOVE(80, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE(88, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_GLARE),
+    LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
+    LEVEL_UP_MOVE(50, MOVE_COIL),
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZYGARDE
@@ -25876,7 +23184,7 @@ static const struct LevelUpMove sDiancieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DIAMOND_STORM),
     LEVEL_UP_MOVE( 7, MOVE_GUARD_SPLIT),
     LEVEL_UP_MOVE(14, MOVE_SMACK_DOWN),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_FLAIL),
     //Wattson Lv24
@@ -25888,15 +23196,12 @@ static const struct LevelUpMove sDiancieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_LIGHT_SCREEN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_ROCK_SLIDE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SKILL_SWAP),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_POWER_GEM),
-    LEVEL_UP_MOVE(70, MOVE_STEALTH_ROCK),
-    LEVEL_UP_MOVE(77, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(84, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_SKILL_SWAP),
+    LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
+    LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DIANCIE
@@ -25923,15 +23228,12 @@ static const struct LevelUpMove sHoopaConfinedLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_ZEN_HEADBUTT),
     LEVEL_UP_MOVE(50, MOVE_TRICK_ROOM),
-    //Juan Lv50
     LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SHADOW_BALL),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE(75, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(85, MOVE_HYPERSPACE_HOLE),
+    LEVEL_UP_MOVE(50, MOVE_SHADOW_BALL),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_HYPERSPACE_HOLE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -25955,14 +23257,11 @@ static const struct LevelUpMove sHoopaUnboundLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(50, MOVE_TRICK_ROOM),
-    //Juan Lv50
     LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DARK_PULSE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(75, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(85, MOVE_HYPERSPACE_FURY),
+    LEVEL_UP_MOVE(50, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_HYPERSPACE_FURY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HOOPA
@@ -25987,17 +23286,14 @@ static const struct LevelUpMove sVolcanionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_STOMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SCALD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_TAKE_DOWN),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MIST),
-    LEVEL_UP_MOVE(60, MOVE_HAZE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(78, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(84, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(90, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(50, MOVE_MIST),
+    LEVEL_UP_MOVE(50, MOVE_HAZE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VOLCANION
@@ -26025,11 +23321,7 @@ static const struct LevelUpMove sRowletLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_FEATHER_DANCE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_BRAVE_BIRD),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26057,10 +23349,7 @@ static const struct LevelUpMove sDartrixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FEATHER_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26090,12 +23379,9 @@ static const struct LevelUpMove sDecidueyeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_FEATHER_DANCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_BRAVE_BIRD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FEATHER_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26122,12 +23408,9 @@ static const struct LevelUpMove sDecidueyeHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_FEATHER_DANCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_BRAVE_BIRD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FEATHER_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -26156,11 +23439,7 @@ static const struct LevelUpMove sLittenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_THRASH),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_FLARE_BLITZ),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26188,10 +23467,7 @@ static const struct LevelUpMove sTorracatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26220,12 +23496,9 @@ static const struct LevelUpMove sIncineroarLevelUpLearnset[] = {
     // >>> Evo Lv 34
     LEVEL_UP_MOVE(44, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_THRASH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_FLARE_BLITZ),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LITTEN
@@ -26253,11 +23526,7 @@ static const struct LevelUpMove sPopplioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(33, MOVE_MOONBLAST),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_HYDRO_PUMP),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26285,10 +23554,7 @@ static const struct LevelUpMove sBrionneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_MOONBLAST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26314,12 +23580,9 @@ static const struct LevelUpMove sPrimarinaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_MISTY_TERRAIN),
     LEVEL_UP_MOVE(44, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_MOONBLAST),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_POPPLIO
@@ -26341,16 +23604,12 @@ static const struct LevelUpMove sPikipekLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_SCREECH),
     LEVEL_UP_MOVE(27, MOVE_DRILL_PECK),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_BULLET_SEED),
+    //Norman Lv31
     LEVEL_UP_MOVE(33, MOVE_FEATHER_DANCE),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_HYPER_VOICE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26377,11 +23636,7 @@ static const struct LevelUpMove sTrumbeakLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE(40, MOVE_FEATHER_DANCE),
     LEVEL_UP_MOVE(45, MOVE_HYPER_VOICE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26409,10 +23664,7 @@ static const struct LevelUpMove sToucannonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FEATHER_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PIKIPEK
@@ -26433,18 +23685,14 @@ static const struct LevelUpMove sYungoosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_SUPER_FANG),
     LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SCARY_FACE),
+    //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_YAWN),
     LEVEL_UP_MOVE(40, MOVE_THRASH),
     LEVEL_UP_MOVE(43, MOVE_REST),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26462,19 +23710,16 @@ static const struct LevelUpMove sGumshoosLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_SUPER_FANG),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_TAKE_DOWN),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SCARY_FACE),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_CRUNCH),
     LEVEL_UP_MOVE(43, MOVE_YAWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_THRASH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_REST),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_REST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_YUNGOOS
@@ -26498,11 +23743,7 @@ static const struct LevelUpMove sGrubbinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_CRUNCH),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_DIG),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26526,12 +23767,9 @@ static const struct LevelUpMove sCharjabugLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DIG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_IRON_DEFENSE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26560,12 +23798,9 @@ static const struct LevelUpMove sVikavoltLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_GUILLOTINE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_FLY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_AGILITY),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GRUBBIN
@@ -26592,10 +23827,7 @@ static const struct LevelUpMove sCrabrawlerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DYNAMIC_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26620,10 +23852,7 @@ static const struct LevelUpMove sCrabominableLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DYNAMIC_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CRABRAWLER
@@ -26652,10 +23881,7 @@ static const struct LevelUpMove sOricorioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_AGILITY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_HURRICANE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ORICORIO
@@ -26680,11 +23906,8 @@ static const struct LevelUpMove sCutieflyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DAZZLING_GLEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BUG_BUZZ),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_QUIVER_DANCE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_QUIVER_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26707,12 +23930,9 @@ static const struct LevelUpMove sRibombeeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SWITCHEROO),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DAZZLING_GLEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BUG_BUZZ),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_QUIVER_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(50, MOVE_QUIVER_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CUTIEFLY
@@ -26741,10 +23961,7 @@ static const struct LevelUpMove sRockruffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_STEALTH_ROCK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_STONE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26773,12 +23990,9 @@ static const struct LevelUpMove sLycanrocMiddayLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SCARY_FACE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STEALTH_ROCK),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26806,12 +24020,9 @@ static const struct LevelUpMove sLycanrocMidnightLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SCARY_FACE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STEALTH_ROCK),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26845,12 +24056,9 @@ static const struct LevelUpMove sLycanrocDuskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SCARY_FACE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STEALTH_ROCK),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ROCKRUFF
@@ -26878,10 +24086,7 @@ static const struct LevelUpMove sWishiwashiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HYDRO_PUMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WISHIWASHI
@@ -26908,10 +24113,7 @@ static const struct LevelUpMove sMareanieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_POISON_JAB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TOXIC),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26936,11 +24138,8 @@ static const struct LevelUpMove sToxapexLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ACID_SPRAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_POISON_JAB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_TOXIC),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TOXIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAREANIE
@@ -26967,11 +24166,7 @@ static const struct LevelUpMove sMudbrayLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(40, MOVE_MEGA_KICK),
     LEVEL_UP_MOVE(44, MOVE_SUPERPOWER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -26996,11 +24191,8 @@ static const struct LevelUpMove sMudsdaleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_MEGA_KICK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SUPERPOWER),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MUDBRAY
@@ -27029,10 +24221,7 @@ static const struct LevelUpMove sDewpiderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LEECH_LIFE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_MIRROR_COAT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27058,12 +24247,9 @@ static const struct LevelUpMove sAraquanidLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LUNGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_LIQUIDATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_LEECH_LIFE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_MIRROR_COAT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LEECH_LIFE),
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DEWPIDER
@@ -27090,10 +24276,7 @@ static const struct LevelUpMove sFomantisLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SUNNY_DAY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27119,12 +24302,9 @@ static const struct LevelUpMove sLurantisLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_SYNTHESIS),
     LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_SUNNY_DAY),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SOLAR_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BLADE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FOMANTIS
@@ -27151,11 +24331,7 @@ static const struct LevelUpMove sMorelullLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SPORE),
     LEVEL_UP_MOVE(40, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(44, MOVE_DREAM_EATER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27180,11 +24356,8 @@ static const struct LevelUpMove sShiinoticLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SPORE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DREAM_EATER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MORELULL
@@ -27211,11 +24384,8 @@ static const struct LevelUpMove sSalanditLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TOXIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_ENDEAVOR),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27246,12 +24416,9 @@ static const struct LevelUpMove sSalazzleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_VENOSHOCK),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_FLAMETHROWER),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_TOXIC),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(50, MOVE_TOXIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SALANDIT
@@ -27280,10 +24447,7 @@ static const struct LevelUpMove sStuffulLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SUPERPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27310,12 +24474,9 @@ static const struct LevelUpMove sBewearLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PAIN_SPLIT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SUPERPOWER),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_STUFFUL
@@ -27337,11 +24498,7 @@ static const struct LevelUpMove sBounsweetLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_AROMATIC_MIST),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
 };
@@ -27366,10 +24523,7 @@ static const struct LevelUpMove sSteeneeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_AROMATIC_MIST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_LEAF_STORM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27395,11 +24549,8 @@ static const struct LevelUpMove sTsareenaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_AROMATIC_MIST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_LEAF_STORM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HIGH_JUMP_KICK),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HIGH_JUMP_KICK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BOUNSWEET
@@ -27431,10 +24582,7 @@ static const struct LevelUpMove sComfeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PETAL_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_GRASSY_TERRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_COMFEY
@@ -27460,12 +24608,9 @@ static const struct LevelUpMove sOranguruLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_INSTRUCT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FOUL_PLAY),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FUTURE_SIGHT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ORANGURU
@@ -27491,12 +24636,9 @@ static const struct LevelUpMove sPassimianLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_REVERSAL),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_GIGA_IMPACT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PASSIMIAN
@@ -27506,17 +24648,13 @@ static const struct LevelUpMove sWimpodLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 30
 };
@@ -27546,11 +24684,7 @@ static const struct LevelUpMove sGolisopodLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_PIN_MISSILE),
     LEVEL_UP_MOVE(40, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE(44, MOVE_LIQUIDATION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WIMPOD
@@ -27577,12 +24711,9 @@ static const struct LevelUpMove sSandygastLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SHORE_UP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SANDSTORM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SHORE_UP),
+    LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27606,13 +24737,10 @@ static const struct LevelUpMove sPalossandLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 42
     LEVEL_UP_MOVE(47, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_EARTH_POWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_SHORE_UP),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_SANDSTORM),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_SHORE_UP),
+    LEVEL_UP_MOVE(50, MOVE_SANDSTORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SANDYGAST
@@ -27638,12 +24766,9 @@ static const struct LevelUpMove sPyukumukuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_RECOVER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SOAK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_TOXIC),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MEMENTO),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TOXIC),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PYUKUMUKU
@@ -27669,11 +24794,8 @@ static const struct LevelUpMove sTypeNullLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_IRON_HEAD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -27706,12 +24828,9 @@ static const struct LevelUpMove sSilvallyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PARTING_SHOT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_PARTING_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TYPE_NULL
@@ -27731,8 +24850,8 @@ static const struct LevelUpMove sMiniorLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(29, MOVE_TAKE_DOWN),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ROCK_POLISH),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_COSMIC_POWER),
     LEVEL_UP_MOVE(38, MOVE_POWER_GEM),
@@ -27740,10 +24859,7 @@ static const struct LevelUpMove sMiniorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SHELL_SMASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MINIOR
@@ -27763,17 +24879,14 @@ static const struct LevelUpMove sKomalaLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(26, MOVE_FLAIL),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SUCKER_PUNCH),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PSYCH_UP),
     LEVEL_UP_MOVE(41, MOVE_WOOD_HAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KOMALA
@@ -27801,11 +24914,8 @@ static const struct LevelUpMove sTurtonatorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SHELL_SMASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_OVERHEAT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_EXPLOSION),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TURTONATOR
@@ -27831,12 +24941,9 @@ static const struct LevelUpMove sTogedemaruLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ELECTRIC_TERRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_WILD_CHARGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SPIKY_SHIELD),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_SPIKY_SHIELD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TOGEDEMARU
@@ -27863,12 +24970,9 @@ static const struct LevelUpMove sMimikyuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHADOW_CLAW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CHARM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_PLAY_ROUGH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PAIN_SPLIT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MIMIKYU
@@ -27893,11 +24997,7 @@ static const struct LevelUpMove sBruxishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SCREECH),
     LEVEL_UP_MOVE(41, MOVE_PSYCHIC_FANGS),
     LEVEL_UP_MOVE(44, MOVE_WAVE_CRASH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BRUXISH
@@ -27923,11 +25023,8 @@ static const struct LevelUpMove sDrampaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FLY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HYPER_VOICE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_OUTRAGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRAMPA
@@ -27955,14 +25052,11 @@ static const struct LevelUpMove sDhelmiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_METAL_SOUND),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_ANCHOR_SHOT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_ENERGY_BALL),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PHANTOM_FORCE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_ANCHOR_SHOT),
+    LEVEL_UP_MOVE(50, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(50, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DHELMISE
@@ -27974,7 +25068,7 @@ static const struct LevelUpMove sJangmoOLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 4, MOVE_PROTECT),
     LEVEL_UP_MOVE( 8, MOVE_DRAGON_RAGE),
     LEVEL_UP_MOVE(12, MOVE_NOBLE_ROAR),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_DRAGON_TAIL),
     //Brawly Lv16
     LEVEL_UP_MOVE(20, MOVE_WORK_UP),
@@ -27990,11 +25084,7 @@ static const struct LevelUpMove sJangmoOLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ROAR),
     LEVEL_UP_MOVE(40, MOVE_DRAGON_DANCE),
     LEVEL_UP_MOVE(44, MOVE_OUTRAGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -28024,11 +25114,8 @@ static const struct LevelUpMove sHakamoOLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 45
     LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CLOSE_COMBAT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -28055,16 +25142,12 @@ static const struct LevelUpMove sKommoOLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_ROAR),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_DANCE),
     //Evo
-    //Tate&Liza Lv45
-    //Juan Lv50
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 45
-    LEVEL_UP_MOVE(52, MOVE_OUTRAGE),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(68, MOVE_CLANGOROUS_SOUL),
-    LEVEL_UP_MOVE(76, MOVE_BOOMBURST),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_CLANGOROUS_SOUL),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_JANGMO_O
@@ -28090,15 +25173,12 @@ static const struct LevelUpMove sTapuKokoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MEAN_LOOK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_NATURES_MADNESS),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_WILD_CHARGE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_BRAVE_BIRD),
-    LEVEL_UP_MOVE(70, MOVE_POWER_SWAP),
-    LEVEL_UP_MOVE(75, MOVE_ELECTRIC_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_NATURES_MADNESS),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    LEVEL_UP_MOVE(50, MOVE_POWER_SWAP),
+    LEVEL_UP_MOVE(50, MOVE_ELECTRIC_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TAPU_KOKO
@@ -28124,15 +25204,12 @@ static const struct LevelUpMove sTapuLeleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PSYSHOCK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MEAN_LOOK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_NATURES_MADNESS),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MOONBLAST),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_TICKLE),
-    LEVEL_UP_MOVE(70, MOVE_SKILL_SWAP),
-    LEVEL_UP_MOVE(75, MOVE_PSYCHIC_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_NATURES_MADNESS),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_TICKLE),
+    LEVEL_UP_MOVE(50, MOVE_SKILL_SWAP),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TAPU_LELE
@@ -28158,15 +25235,12 @@ static const struct LevelUpMove sTapuBuluLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ZEN_HEADBUTT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MEAN_LOOK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_NATURES_MADNESS),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_WOOD_HAMMER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(70, MOVE_SKULL_BASH),
-    LEVEL_UP_MOVE(75, MOVE_GRASSY_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_NATURES_MADNESS),
+    LEVEL_UP_MOVE(50, MOVE_WOOD_HAMMER),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_SKULL_BASH),
+    LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TAPU_BULU
@@ -28193,15 +25267,12 @@ static const struct LevelUpMove sTapuFiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_MUDDY_WATER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MEAN_LOOK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_NATURES_MADNESS),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MOONBLAST),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(70, MOVE_SOAK),
-    LEVEL_UP_MOVE(75, MOVE_MISTY_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_NATURES_MADNESS),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_SOAK),
+    LEVEL_UP_MOVE(50, MOVE_MISTY_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TAPU_FINI
@@ -28210,17 +25281,13 @@ static const struct LevelUpMove sTapuFiniLevelUpLearnset[] = {
 static const struct LevelUpMove sCosmogLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 1, MOVE_TELEPORT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 43
 };
@@ -28228,17 +25295,13 @@ static const struct LevelUpMove sCosmogLevelUpLearnset[] = {
 static const struct LevelUpMove sCosmoemLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_COSMIC_POWER),
     LEVEL_UP_MOVE( 1, MOVE_TELEPORT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 43
     // >>> Evo Lv 53
@@ -28252,7 +25315,7 @@ static const struct LevelUpMove sSolgaleoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_NOBLE_ROAR),
     LEVEL_UP_MOVE( 7, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(14, MOVE_METAL_SOUND),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_ZEN_HEADBUTT),
     //Wattson Lv24
@@ -28264,16 +25327,13 @@ static const struct LevelUpMove sSolgaleoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_METAL_BURST),
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 53
-    LEVEL_UP_MOVE(56, MOVE_WILD_CHARGE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(70, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(77, MOVE_WIDE_GUARD),
-    LEVEL_UP_MOVE(84, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
 };
 
@@ -28285,7 +25345,7 @@ static const struct LevelUpMove sLunalaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_COSMIC_POWER),
     LEVEL_UP_MOVE( 7, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(14, MOVE_CONFUSE_RAY),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_AIR_SLASH),
     //Wattson Lv24
@@ -28297,14 +25357,11 @@ static const struct LevelUpMove sLunalaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NIGHT_DAZE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MOONBLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_PHANTOM_FORCE),
-    LEVEL_UP_MOVE(70, MOVE_DREAM_EATER),
-    LEVEL_UP_MOVE(77, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE(50, MOVE_DREAM_EATER),
+    LEVEL_UP_MOVE(50, MOVE_WIDE_GUARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_COSMOG
@@ -28331,14 +25388,11 @@ static const struct LevelUpMove sNihilegoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_VENOM_DRENCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_STEALTH_ROCK),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_MIRROR_COAT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_WONDER_ROOM),
-    LEVEL_UP_MOVE(70, MOVE_HEAD_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    LEVEL_UP_MOVE(50, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NIHILEGO
@@ -28364,14 +25418,11 @@ static const struct LevelUpMove sBuzzwoleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FOCUS_ENERGY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_COUNTER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HAMMER_ARM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SUPERPOWER),
-    LEVEL_UP_MOVE(70, MOVE_FOCUS_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_COUNTER),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BUZZWOLE
@@ -28397,14 +25448,11 @@ static const struct LevelUpMove sPheromosaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_LUNGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_BOUNCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SPEED_SWAP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_BUG_BUZZ),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_QUIVER_DANCE),
-    LEVEL_UP_MOVE(70, MOVE_HIGH_JUMP_KICK),
+    LEVEL_UP_MOVE(50, MOVE_SPEED_SWAP),
+    LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(50, MOVE_QUIVER_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HIGH_JUMP_KICK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PHEROMOSA
@@ -28430,14 +25478,11 @@ static const struct LevelUpMove sXurkitreeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_MAGNET_RISE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_THUNDERBOLT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ELECTRIC_TERRAIN),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_POWER_WHIP),
-    LEVEL_UP_MOVE(70, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_THUNDERBOLT),
+    LEVEL_UP_MOVE(50, MOVE_ELECTRIC_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_XURKITREE
@@ -28463,14 +25508,11 @@ static const struct LevelUpMove sCelesteelaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_METAL_SOUND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEECH_SEED),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HEAVY_SLAM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(70, MOVE_SKULL_BASH),
+    LEVEL_UP_MOVE(50, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_SKULL_BASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CELESTEELA
@@ -28496,14 +25538,11 @@ static const struct LevelUpMove sKartanaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_LASER_FOCUS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DEFOG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LEAF_BLADE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SACRED_SWORD),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(70, MOVE_GUILLOTINE),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_SACRED_SWORD),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KARTANA
@@ -28530,14 +25569,11 @@ static const struct LevelUpMove sGuzzlordLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_HAMMER_ARM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DRAGON_RUSH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_BELCH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_THRASH),
-    LEVEL_UP_MOVE(70, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GUZZLORD
@@ -28562,15 +25598,12 @@ static const struct LevelUpMove sNecrozmaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_STORED_POWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ROCK_BLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_IRON_DEFENSE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_POWER_GEM),
-    LEVEL_UP_MOVE(72, MOVE_PHOTON_GEYSER),
-    LEVEL_UP_MOVE(80, MOVE_GRAVITY),
-    LEVEL_UP_MOVE(88, MOVE_PRISMATIC_LASER),
+    LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
+    LEVEL_UP_MOVE(50, MOVE_PHOTON_GEYSER),
+    LEVEL_UP_MOVE(50, MOVE_GRAVITY),
+    LEVEL_UP_MOVE(50, MOVE_PRISMATIC_LASER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NECROZMA
@@ -28594,17 +25627,14 @@ static const struct LevelUpMove sMagearnaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_LOCK_ON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHIFT_GEAR),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_TRICK),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_IRON_HEAD),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_AURA_SPHERE),
-    LEVEL_UP_MOVE(72, MOVE_FLASH_CANNON),
-    LEVEL_UP_MOVE(78, MOVE_PAIN_SPLIT),
-    LEVEL_UP_MOVE(84, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(90, MOVE_FLEUR_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_TRICK),
+    LEVEL_UP_MOVE(50, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(50, MOVE_AURA_SPHERE),
+    LEVEL_UP_MOVE(50, MOVE_FLASH_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_FLEUR_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAGEARNA
@@ -28630,16 +25660,13 @@ static const struct LevelUpMove sMarshadowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(45, MOVE_SUCKER_PUNCH),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DRAIN_PUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_PSYCH_UP),
-    LEVEL_UP_MOVE(72, MOVE_SPECTRAL_THIEF),
-    LEVEL_UP_MOVE(81, MOVE_LASER_FOCUS),
-    LEVEL_UP_MOVE(90, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(99, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_DRAIN_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_PSYCH_UP),
+    LEVEL_UP_MOVE(50, MOVE_SPECTRAL_THIEF),
+    LEVEL_UP_MOVE(50, MOVE_LASER_FOCUS),
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MARSHADOW
@@ -28653,7 +25680,7 @@ static const struct LevelUpMove sPoipoleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ACID),
     LEVEL_UP_MOVE( 7, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(14, MOVE_FELL_STINGER),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_CHARM),
     //Wattson Lv24
@@ -28665,12 +25692,9 @@ static const struct LevelUpMove sPoipoleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_POISON_JAB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GASTRO_ACID),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_TOXIC),
+    LEVEL_UP_MOVE(50, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE(50, MOVE_TOXIC),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -28685,7 +25709,7 @@ static const struct LevelUpMove sNaganadelLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ACID),
     LEVEL_UP_MOVE( 7, MOVE_FURY_ATTACK),
     LEVEL_UP_MOVE(14, MOVE_FELL_STINGER),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_CHARM),
     //Wattson Lv24
@@ -28697,13 +25721,10 @@ static const struct LevelUpMove sNaganadelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_POISON_JAB),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GASTRO_ACID),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_TOXIC),
-    LEVEL_UP_MOVE(70, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_GASTRO_ACID),
+    LEVEL_UP_MOVE(50, MOVE_TOXIC),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_POIPOLE
@@ -28729,14 +25750,11 @@ static const struct LevelUpMove sStakatakaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_MAGNET_RISE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_IRON_HEAD),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_TAKE_DOWN),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_STEALTH_ROCK),
-    LEVEL_UP_MOVE(70, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_STAKATAKA
@@ -28762,14 +25780,11 @@ static const struct LevelUpMove sBlacephalonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CALM_MIND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_WILL_O_WISP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_TRICK),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(70, MOVE_MIND_BLOWN),
+    LEVEL_UP_MOVE(50, MOVE_WILL_O_WISP),
+    LEVEL_UP_MOVE(50, MOVE_TRICK),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_MIND_BLOWN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BLACEPHALON
@@ -28795,16 +25810,13 @@ static const struct LevelUpMove sZeraoraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_CHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THUNDER_PUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HONE_CLAWS),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DISCHARGE),
-    LEVEL_UP_MOVE(72, MOVE_WILD_CHARGE),
-    LEVEL_UP_MOVE(80, MOVE_AGILITY),
-    LEVEL_UP_MOVE(88, MOVE_PLASMA_FISTS),
-    LEVEL_UP_MOVE(96, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_HONE_CLAWS),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_PLASMA_FISTS),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZERAORA
@@ -28815,7 +25827,7 @@ static const struct LevelUpMove sMeltanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 8, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE(12, MOVE_HEADBUTT),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(16, MOVE_THUNDER_WAVE),
     //Brawly Lv16
     LEVEL_UP_MOVE(24, MOVE_MAGNET_BOMB),
@@ -28826,11 +25838,7 @@ static const struct LevelUpMove sMeltanLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_FLASH_CANNON),
     //Evo
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -28853,16 +25861,13 @@ static const struct LevelUpMove sMelmetalLevelUpLearnset[] = {
     //Evo
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_MEGA_PUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PROTECT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_DOUBLE_IRON_BASH),
-    LEVEL_UP_MOVE(72, MOVE_DYNAMIC_PUNCH),
-    LEVEL_UP_MOVE(80, MOVE_SUPERPOWER),
-    LEVEL_UP_MOVE(88, MOVE_DOUBLE_IRON_BASH),
-    LEVEL_UP_MOVE(96, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_PROTECT),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_IRON_BASH),
+    LEVEL_UP_MOVE(50, MOVE_DYNAMIC_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_IRON_BASH),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MELTAN
@@ -28887,11 +25892,7 @@ static const struct LevelUpMove sGrookeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_WOOD_HAMMER),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ENDEAVOR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -28917,10 +25918,7 @@ static const struct LevelUpMove sThwackeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_WOOD_HAMMER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ENDEAVOR),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -28947,12 +25945,9 @@ static const struct LevelUpMove sRillaboomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_UPROAR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_WOOD_HAMMER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_ENDEAVOR),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_BOOMBURST),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GROOKEY
@@ -28977,11 +25972,7 @@ static const struct LevelUpMove sScorbunnyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_BOUNCE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29006,10 +25997,7 @@ static const struct LevelUpMove sRabootLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BOUNCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29034,12 +26022,9 @@ static const struct LevelUpMove sCinderaceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_COUNTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BOUNCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_COURT_CHANGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_COURT_CHANGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SCORBUNNY
@@ -29064,11 +26049,7 @@ static const struct LevelUpMove sSobbleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_SOAK),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_RAIN_DANCE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29093,10 +26074,7 @@ static const struct LevelUpMove sDrizzileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SOAK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_RAIN_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29121,12 +26099,9 @@ static const struct LevelUpMove sInteleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SOAK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_RAIN_DANCE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_HYDRO_PUMP),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SOBBLE
@@ -29153,11 +26128,7 @@ static const struct LevelUpMove sSkwovetLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_SUPER_FANG),
     LEVEL_UP_MOVE(45, MOVE_BELCH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29183,11 +26154,8 @@ static const struct LevelUpMove sGreedentLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_BULLET_SEED),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SUPER_FANG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_BELCH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SKWOVET
@@ -29212,11 +26180,7 @@ static const struct LevelUpMove sRookideeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_SWAGGER),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_BRAVE_BIRD),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29241,10 +26205,7 @@ static const struct LevelUpMove sCorvisquireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_BRAVE_BIRD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29272,10 +26233,7 @@ static const struct LevelUpMove sCorviknightLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SWAGGER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ROOKIDEE
@@ -29283,17 +26241,13 @@ static const struct LevelUpMove sCorviknightLevelUpLearnset[] = {
 #if P_FAMILY_BLIPBUG
 static const struct LevelUpMove sBlipbugLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 10
 };
@@ -29306,17 +26260,13 @@ static const struct LevelUpMove sDottlerLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LIGHT_SCREEN),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 10
     // >>> Evo Lv 30
@@ -29347,10 +26297,7 @@ static const struct LevelUpMove sOrbeetleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_CALM_MIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PSYCHIC_TERRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BLIPBUG
@@ -29375,11 +26322,7 @@ static const struct LevelUpMove sNickitLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_TAIL_SLAP),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_FOUL_PLAY),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29405,11 +26348,8 @@ static const struct LevelUpMove sThievulLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_TAIL_SLAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_FOUL_PLAY),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_PARTING_SHOT),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PARTING_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NICKIT
@@ -29434,11 +26374,7 @@ static const struct LevelUpMove sGossifleurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_AROMATHERAPY),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_LEAF_STORM),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29464,11 +26400,8 @@ static const struct LevelUpMove sEldegossLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_AROMATHERAPY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_LEAF_STORM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_COTTON_GUARD),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_COTTON_GUARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GOSSIFLEUR
@@ -29494,11 +26427,7 @@ static const struct LevelUpMove sWoolooLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_COTTON_GUARD),
     LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29523,11 +26452,8 @@ static const struct LevelUpMove sDubwoolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COTTON_GUARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WOOLOO
@@ -29538,7 +26464,7 @@ static const struct LevelUpMove sChewtleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 7, MOVE_BITE),
     LEVEL_UP_MOVE(14, MOVE_PROTECT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_HEADBUTT),
     //Wattson Lv24
@@ -29551,10 +26477,7 @@ static const struct LevelUpMove sChewtleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BODY_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29579,12 +26502,9 @@ static const struct LevelUpMove sDrednawLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_JAW_LOCK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LIQUIDATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_BODY_SLAM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HEAD_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHEWTLE
@@ -29609,11 +26529,7 @@ static const struct LevelUpMove sYamperLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_WILD_CHARGE),
     LEVEL_UP_MOVE(45, MOVE_PLAY_ROUGH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29637,12 +26553,9 @@ static const struct LevelUpMove sBoltundLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_CHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WILD_CHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_PLAY_ROUGH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_ELECTRIC_TERRAIN),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE(50, MOVE_ELECTRIC_TERRAIN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_YAMPER
@@ -29666,11 +26579,7 @@ static const struct LevelUpMove sRolycolyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_HEAT_CRASH),
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_ROCK_BLAST),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29695,11 +26604,8 @@ static const struct LevelUpMove sCarkolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_HEAT_CRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ROCK_BLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_STONE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29723,12 +26629,9 @@ static const struct LevelUpMove sCoalossalLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_STEALTH_ROCK),
     LEVEL_UP_MOVE(45, MOVE_HEAT_CRASH),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_ROCK_BLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_ROCK_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ROLYCOLY
@@ -29737,17 +26640,13 @@ static const struct LevelUpMove sCoalossalLevelUpLearnset[] = {
 static const struct LevelUpMove sApplinLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29775,11 +26674,7 @@ static const struct LevelUpMove sFlappleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(40, MOVE_FLY),
     LEVEL_UP_MOVE(44, MOVE_DRAGON_RUSH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29807,11 +26702,7 @@ static const struct LevelUpMove sAppletunLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE(40, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(44, MOVE_ENERGY_BALL),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29839,11 +26730,7 @@ static const struct LevelUpMove sDipplinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_RECOVER),
     LEVEL_UP_MOVE(40, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(44, MOVE_SUBSTITUTE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29873,11 +26760,8 @@ static const struct LevelUpMove sHydrappleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(44, MOVE_SUBSTITUTE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_POWER_WHIP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -29905,10 +26789,7 @@ static const struct LevelUpMove sSilicobraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_COIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SAND_TOMB),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -29932,11 +26813,8 @@ static const struct LevelUpMove sSandacondaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_COIL),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_SAND_TOMB),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SAND_TOMB),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SILICOBRA
@@ -29950,7 +26828,7 @@ static const struct LevelUpMove sCramorantLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
     LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(14, MOVE_FURY_ATTACK),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_PLUCK),
     //Wattson Lv24
@@ -29962,11 +26840,8 @@ static const struct LevelUpMove sCramorantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_AMNESIA),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_THRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYDRO_PUMP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CRAMORANT
@@ -29991,10 +26866,7 @@ static const struct LevelUpMove sArrokudaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30017,11 +26889,8 @@ static const struct LevelUpMove sBarraskewdaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_CRUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_LIQUIDATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ARROKUDA
@@ -30034,17 +26903,13 @@ static const struct LevelUpMove sToxelLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BELCH),
     LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
     LEVEL_UP_MOVE( 1, MOVE_TEARFUL_LOOK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
     // >>> Evo Lv 30
 };
@@ -30080,11 +26945,8 @@ static const struct LevelUpMove sToxtricityAmpedLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_OVERDRIVE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BOOMBURST),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SHIFT_GEAR),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SHIFT_GEAR),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30118,11 +26980,8 @@ static const struct LevelUpMove sToxtricityLowKeyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_OVERDRIVE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BOOMBURST),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_MAGNETIC_FLUX),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MAGNETIC_FLUX),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TOXEL
@@ -30149,11 +27008,8 @@ static const struct LevelUpMove sSizzlipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_FIRE_LASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_LUNGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_BURN_UP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BURN_UP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30177,13 +27033,10 @@ static const struct LevelUpMove sCentiskorchLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_FIRE_SPIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_CRUNCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_FIRE_LASH),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LUNGE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(67, MOVE_BURN_UP),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_LASH),
+    LEVEL_UP_MOVE(50, MOVE_LUNGE),
+    LEVEL_UP_MOVE(50, MOVE_BURN_UP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SIZZLIPEDE
@@ -30207,11 +27060,7 @@ static const struct LevelUpMove sClobbopusLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_REVERSAL),
     LEVEL_UP_MOVE(45, MOVE_SUPERPOWER),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30238,10 +27087,7 @@ static const struct LevelUpMove sGrapploctLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SUPERPOWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_TOPSY_TURVY),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CLOBBOPUS
@@ -30264,12 +27110,9 @@ static const struct LevelUpMove sSinisteaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_MEMENTO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SHELL_SMASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30293,13 +27136,10 @@ static const struct LevelUpMove sPolteageistLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_MEMENTO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SHELL_SMASH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_CURSE),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_SHELL_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_CURSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SINISTEA
@@ -30324,11 +27164,7 @@ static const struct LevelUpMove sHatennaLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC),
     LEVEL_UP_MOVE(45, MOVE_HEALING_WISH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30353,11 +27189,8 @@ static const struct LevelUpMove sHattremLevelUpLearnset[] = {
     // >>> Evo Lv 42
     LEVEL_UP_MOVE(44, MOVE_PSYCHIC),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_HEALING_WISH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30382,12 +27215,9 @@ static const struct LevelUpMove sHattereneLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 42
     LEVEL_UP_MOVE(46, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HEALING_WISH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_MAGIC_POWDER),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_MAGIC_POWDER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_HATENNA
@@ -30414,11 +27244,7 @@ static const struct LevelUpMove sImpidimpLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE(40, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(44, MOVE_FOUL_PLAY),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30445,11 +27271,8 @@ static const struct LevelUpMove sMorgremLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 42
     LEVEL_UP_MOVE(46, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FOUL_PLAY),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30477,12 +27300,9 @@ static const struct LevelUpMove sGrimmsnarlLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 42
     LEVEL_UP_MOVE(48, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FOUL_PLAY),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IMPIDIMP
@@ -30508,10 +27328,7 @@ static const struct LevelUpMove sMilceryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_MISTY_TERRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ENTRAINMENT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30536,10 +27353,7 @@ static const struct LevelUpMove sAlcremieLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_MISTY_TERRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ENTRAINMENT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MILCERY
@@ -30565,12 +27379,9 @@ static const struct LevelUpMove sFalinksLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_IRON_DEFENSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_MEGAHORN),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_COUNTER),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_COUNTER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FALINKS
@@ -30596,12 +27407,9 @@ static const struct LevelUpMove sPincurchinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_POISON_JAB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ZING_ZAP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_ACUPRESSURE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DISCHARGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ACUPRESSURE),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PINCURCHIN
@@ -30610,17 +27418,13 @@ static const struct LevelUpMove sPincurchinLevelUpLearnset[] = {
 static const struct LevelUpMove sSnomLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30649,11 +27453,8 @@ static const struct LevelUpMove sFrosmothLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_TAILWIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WIDE_GUARD),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_QUIVER_DANCE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_QUIVER_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SNOM
@@ -30677,13 +27478,10 @@ static const struct LevelUpMove sStonjournerLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BODY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_WIDE_GUARD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_HEAVY_SLAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_STONE_EDGE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_MEGA_KICK),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_MEGA_KICK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_STONJOURNER
@@ -30707,12 +27505,9 @@ static const struct LevelUpMove sEiscueLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SNOWSCAPE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AURORA_VEIL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SURF),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_BLIZZARD),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SURF),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_EISCUE
@@ -30738,11 +27533,8 @@ static const struct LevelUpMove sIndeedeeMLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_POWER_SPLIT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PSYCHIC_TERRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30766,10 +27558,7 @@ static const struct LevelUpMove sIndeedeeFLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_GUARD_SPLIT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PSYCHIC_TERRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_INDEEDEE
@@ -30795,12 +27584,9 @@ static const struct LevelUpMove sMorpekoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BULLET_SEED),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CRUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_AURA_WHEEL),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_THRASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_AURA_WHEEL),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MORPEKO
@@ -30827,11 +27613,8 @@ static const struct LevelUpMove sCufantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HIGH_HORSEPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SUPERPOWER),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -30855,13 +27638,10 @@ static const struct LevelUpMove sCopperajahLevelUpLearnset[] = {
     LEVEL_UP_MOVE(37, MOVE_STRENGTH),
     LEVEL_UP_MOVE(44, MOVE_IRON_HEAD),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_PLAY_ROUGH),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_HIGH_HORSEPOWER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_PLAY_ROUGH),
+    LEVEL_UP_MOVE(50, MOVE_HIGH_HORSEPOWER),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CUFANT
@@ -30872,7 +27652,7 @@ static const struct LevelUpMove sDracozoltLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 7, MOVE_CHARGE),
     LEVEL_UP_MOVE(14, MOVE_AERIAL_ACE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_ANCIENT_POWER),
     //Wattson Lv24
@@ -30884,14 +27664,11 @@ static const struct LevelUpMove sDracozoltLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_STOMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DISCHARGE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_BOLT_BEAK),
-    LEVEL_UP_MOVE(70, MOVE_DRAGON_PULSE),
-    LEVEL_UP_MOVE(77, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_BOLT_BEAK),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRACOZOLT
@@ -30902,7 +27679,7 @@ static const struct LevelUpMove sArctozoltLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 7, MOVE_CHARGE),
     LEVEL_UP_MOVE(14, MOVE_ECHOED_VOICE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_ANCIENT_POWER),
     //Wattson Lv24
@@ -30914,14 +27691,11 @@ static const struct LevelUpMove sArctozoltLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FREEZE_DRY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DISCHARGE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_BOLT_BEAK),
-    LEVEL_UP_MOVE(70, MOVE_ICICLE_CRASH),
-    LEVEL_UP_MOVE(77, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_BOLT_BEAK),
+    LEVEL_UP_MOVE(50, MOVE_ICICLE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ARCTOZOLT
@@ -30932,7 +27706,7 @@ static const struct LevelUpMove sDracovishLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 7, MOVE_PROTECT),
     LEVEL_UP_MOVE(14, MOVE_BRUTAL_SWING),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_ANCIENT_POWER),
     //Wattson Lv24
@@ -30944,14 +27718,11 @@ static const struct LevelUpMove sDracovishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_STOMP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SUPER_FANG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FISHIOUS_REND),
-    LEVEL_UP_MOVE(70, MOVE_DRAGON_PULSE),
-    LEVEL_UP_MOVE(77, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_FISHIOUS_REND),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DRACOVISH
@@ -30962,7 +27733,7 @@ static const struct LevelUpMove sArctovishLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 7, MOVE_PROTECT),
     LEVEL_UP_MOVE(14, MOVE_ICY_WIND),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_ANCIENT_POWER),
     //Wattson Lv24
@@ -30974,14 +27745,11 @@ static const struct LevelUpMove sArctovishLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FREEZE_DRY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SUPER_FANG),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FISHIOUS_REND),
-    LEVEL_UP_MOVE(70, MOVE_ICICLE_CRASH),
-    LEVEL_UP_MOVE(77, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_FISHIOUS_REND),
+    LEVEL_UP_MOVE(50, MOVE_ICICLE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ARCTOVISH
@@ -31005,13 +27773,10 @@ static const struct LevelUpMove sDuraludonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FOCUS_ENERGY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DRAGON_CLAW),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_FLASH_CANNON),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_METAL_BURST),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_FLASH_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31035,13 +27800,10 @@ static const struct LevelUpMove sArchaludonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FOCUS_ENERGY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DRAGON_CLAW),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_FLASH_CANNON),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_METAL_BURST),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_FLASH_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
@@ -31053,7 +27815,7 @@ static const struct LevelUpMove sDreepyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_INFESTATION),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE( 12, MOVE_U_TURN),
     //Brawly Lv16
     //Wattson
@@ -31061,11 +27823,7 @@ static const struct LevelUpMove sDreepyLevelUpLearnset[] = {
     //Norman Lv31
     //Winona Lv35
     // >>> Evo Lv 50
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31091,17 +27849,14 @@ static const struct LevelUpMove sDrakloakLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PHANTOM_FORCE),
     //Evo
-    //Juan Lv50
-    //Sidney Lv54
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 50
-    LEVEL_UP_MOVE(54, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
     //Dragapult
-    //Drake Lv60
     // >>> Evo Lv 60
-    LEVEL_UP_MOVE(61, MOVE_DRAGON_RUSH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(72, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
     LEVEL_UP_END
 };
 
@@ -31127,15 +27882,12 @@ static const struct LevelUpMove sDragapultLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DRAGON_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_PHANTOM_FORCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_TAKE_DOWN),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_TAKE_DOWN),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 60
-    LEVEL_UP_MOVE(63, MOVE_DRAGON_RUSH),
-    LEVEL_UP_MOVE(70, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(78, MOVE_LAST_RESORT),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DREEPY
@@ -31159,14 +27911,11 @@ static const struct LevelUpMove sZacianLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(44, MOVE_NOBLE_ROAR),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(77, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(88, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZACIAN
@@ -31189,14 +27938,11 @@ static const struct LevelUpMove sZamazentaLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(44, MOVE_METAL_BURST),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(77, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(88, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZAMAZENTA
@@ -31220,15 +27966,12 @@ static const struct LevelUpMove sEternatusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DYNAMAX_CANNON),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_COSMIC_POWER),
-    LEVEL_UP_MOVE(72, MOVE_RECOVER),
-    LEVEL_UP_MOVE(80, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(88, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_DYNAMAX_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_COSMIC_POWER),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ETERNATUS
@@ -31256,11 +27999,8 @@ static const struct LevelUpMove sKubfuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COUNTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FOCUS_PUNCH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31288,11 +28028,8 @@ static const struct LevelUpMove sUrshifuSingleStrikeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COUNTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FOCUS_PUNCH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31320,11 +28057,8 @@ static const struct LevelUpMove sUrshifuRapidStrikeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_COUNTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_CLOSE_COMBAT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FOCUS_PUNCH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KUBFU
@@ -31348,17 +28082,14 @@ static const struct LevelUpMove sZarudeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BITE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_U_TURN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_SWAGGER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ENERGY_BALL),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_SYNTHESIS),
-    LEVEL_UP_MOVE(72, MOVE_HAMMER_ARM),
-    LEVEL_UP_MOVE(78, MOVE_THRASH),
-    LEVEL_UP_MOVE(84, MOVE_POWER_WHIP),
-    LEVEL_UP_MOVE(90, MOVE_JUNGLE_HEALING),
+    LEVEL_UP_MOVE(50, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(50, MOVE_ENERGY_BALL),
+    LEVEL_UP_MOVE(50, MOVE_SYNTHESIS),
+    LEVEL_UP_MOVE(50, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_JUNGLE_HEALING),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ZARUDE
@@ -31382,15 +28113,12 @@ static const struct LevelUpMove sRegielekiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_THUNDERBOLT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_MAGNET_RISE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LOCK_ON),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(72, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(78, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_LOCK_ON),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REGIELEKI
@@ -31413,15 +28141,12 @@ static const struct LevelUpMove sRegidragoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HAMMER_ARM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DRAGON_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_FOCUS_ENERGY),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DRAGON_ENERGY),
-    LEVEL_UP_MOVE(72, MOVE_HYPER_BEAM),
-    LEVEL_UP_MOVE(78, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_ENERGY),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REGIDRAGO
@@ -31445,14 +28170,11 @@ static const struct LevelUpMove sGlastrierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_IRON_DEFENSE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_TAUNT),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(72, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_TAUNT),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GLASTRIER
@@ -31476,14 +28198,11 @@ static const struct LevelUpMove sSpectrierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_TAKE_DOWN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_AGILITY),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_THRASH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DISABLE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(72, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_DISABLE),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPECTRIER
@@ -31508,15 +28227,12 @@ static const struct LevelUpMove sCalyrexLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC_TERRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ENERGY_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYCHIC),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(72, MOVE_HEAL_PULSE),
-    LEVEL_UP_MOVE(80, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(88, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(50, MOVE_HEAL_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31555,15 +28271,12 @@ static const struct LevelUpMove sCalyrexIceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC_TERRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ENERGY_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYCHIC),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(72, MOVE_HEAL_PULSE),
-    LEVEL_UP_MOVE(80, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(88, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(50, MOVE_HEAL_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FUSION_FORMS
@@ -31603,15 +28316,12 @@ static const struct LevelUpMove sCalyrexShadowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC_TERRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ENERGY_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYCHIC),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(72, MOVE_HEAL_PULSE),
-    LEVEL_UP_MOVE(80, MOVE_SOLAR_BEAM),
-    LEVEL_UP_MOVE(88, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE(50, MOVE_LEECH_SEED),
+    LEVEL_UP_MOVE(50, MOVE_HEAL_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FUSION_FORMS
@@ -31638,15 +28348,12 @@ static const struct LevelUpMove sEnamorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_EXTRASENSORY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_UPROAR),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SUPERPOWER),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_HEALING_WISH),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(70, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(75, MOVE_SPRINGTIDE_STORM),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_HEALING_WISH),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_SPRINGTIDE_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ENAMORUS
@@ -31673,11 +28380,7 @@ static const struct LevelUpMove sSprigatitoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_ENERGY_BALL),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_PLAY_ROUGH),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31705,10 +28408,7 @@ static const struct LevelUpMove sFloragatoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_LEAF_STORM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31738,13 +28438,10 @@ static const struct LevelUpMove sMeowscaradaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ENERGY_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_PLAY_ROUGH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_KNOCK_OFF),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_GRASSY_TERRAIN),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPRIGATITO
@@ -31770,11 +28467,7 @@ static const struct LevelUpMove sFuecocoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_HYPER_VOICE),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_FIRE_BLAST),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31802,10 +28495,7 @@ static const struct LevelUpMove sCrocalorLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_WILL_O_WISP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_FIRE_BLAST),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31836,12 +28526,9 @@ static const struct LevelUpMove sSkeledirgeLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(47, MOVE_HEX),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_FIRE_BLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FUECOCO
@@ -31863,15 +28550,11 @@ static const struct LevelUpMove sQuaxlyLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(28, MOVE_FOCUS_ENERGY),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ACROBATICS),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_LIQUIDATION),
     //Winona Lv35
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31900,10 +28583,7 @@ static const struct LevelUpMove sQuaxwellLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FEATHER_DANCE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31933,13 +28613,10 @@ static const struct LevelUpMove sQuaquavalLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_ACROBATICS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_LIQUIDATION),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_FEATHER_DANCE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_CLOSE_COMBAT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_FEATHER_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_QUAXLY
@@ -31966,11 +28643,7 @@ static const struct LevelUpMove sLechonkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_UPROAR),
     LEVEL_UP_MOVE(35, MOVE_DOUBLE_EDGE),
     //Winona Lv35
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -31997,11 +28670,8 @@ static const struct LevelUpMove sOinkologneMLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DOUBLE_EDGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTH_POWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_BELCH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32027,11 +28697,8 @@ static const struct LevelUpMove sOinkologneFLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(45, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_BELCH),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BELCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LECHONK
@@ -32044,7 +28711,7 @@ static const struct LevelUpMove sTarountulaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(11, MOVE_FEINT),
     LEVEL_UP_MOVE(14, MOVE_BUG_BITE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     // >>> Evo Lv 15
     LEVEL_UP_MOVE(18, MOVE_BLOCK),
@@ -32059,11 +28726,7 @@ static const struct LevelUpMove sTarountulaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_CIRCLE_THROW),
     LEVEL_UP_MOVE(40, MOVE_THROAT_CHOP),
     LEVEL_UP_MOVE(44, MOVE_SKITTER_SMACK),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32075,7 +28738,7 @@ static const struct LevelUpMove sSpidopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(11, MOVE_FEINT),
     LEVEL_UP_MOVE(14, MOVE_BUG_BITE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     // >>> Evo Lv 15
     LEVEL_UP_MOVE(19, MOVE_BLOCK),
@@ -32091,10 +28754,7 @@ static const struct LevelUpMove sSpidopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_THROAT_CHOP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SKITTER_SMACK),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TAROUNTULA
@@ -32108,7 +28768,7 @@ static const struct LevelUpMove sNymbleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(11, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE(14, MOVE_SCREECH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_ENDURE),
     LEVEL_UP_MOVE(22, MOVE_BUG_BITE),
@@ -32121,11 +28781,7 @@ static const struct LevelUpMove sNymbleLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE(41, MOVE_FIRST_IMPRESSION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32140,7 +28796,7 @@ static const struct LevelUpMove sLokixLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 9, MOVE_ASSURANCE),
     LEVEL_UP_MOVE(11, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE(14, MOVE_SCREECH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_ENDURE),
     LEVEL_UP_MOVE(22, MOVE_BUG_BITE),
@@ -32156,11 +28812,8 @@ static const struct LevelUpMove sLokixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FIRST_IMPRESSION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BOUNCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_AXE_KICK),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_AXE_KICK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NYMBLE
@@ -32182,18 +28835,14 @@ static const struct LevelUpMove sPawmiLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_THUNDER_WAVE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ENTRAINMENT),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_SLAM),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_DISCHARGE),
     LEVEL_UP_MOVE(40, MOVE_AGILITY),
     LEVEL_UP_MOVE(44, MOVE_WILD_CHARGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32221,11 +28870,8 @@ static const struct LevelUpMove sPawmoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_AGILITY),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_WILD_CHARGE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32254,12 +28900,9 @@ static const struct LevelUpMove sPawmotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_CLOSE_COMBAT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_DISCHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_AGILITY),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DOUBLE_SHOCK),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_SHOCK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PAWMI
@@ -32272,7 +28915,7 @@ static const struct LevelUpMove sTandemausLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(11, MOVE_SUPER_FANG),
     LEVEL_UP_MOVE(14, MOVE_DOUBLE_HIT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE(22, MOVE_ENCORE),
@@ -32288,10 +28931,7 @@ static const struct LevelUpMove sTandemausLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_COPYCAT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_POPULATION_BOMB),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32304,7 +28944,7 @@ static const struct LevelUpMove sMausholdLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(11, MOVE_SUPER_FANG),
     LEVEL_UP_MOVE(14, MOVE_DOUBLE_HIT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_BULLET_SEED),
     LEVEL_UP_MOVE(22, MOVE_ENCORE),
@@ -32318,11 +28958,8 @@ static const struct LevelUpMove sMausholdLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_BEAT_UP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_COPYCAT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_POPULATION_BOMB),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POPULATION_BOMB),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TANDEMAUS
@@ -32351,11 +28988,7 @@ static const struct LevelUpMove sFidoughLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_CHARM),
     LEVEL_UP_MOVE(40, MOVE_CRUNCH),
     LEVEL_UP_MOVE(45, MOVE_LAST_RESORT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32382,11 +29015,8 @@ static const struct LevelUpMove sDachsbunLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CHARM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_CRUNCH),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_LAST_RESORT),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FIDOUGH
@@ -32413,11 +29043,7 @@ static const struct LevelUpMove sSmolivLevelUpLearnset[] = {
     LEVEL_UP_MOVE(34, MOVE_LEECH_SEED),
     //Winona Lv35
     LEVEL_UP_MOVE(38, MOVE_TERRAIN_PULSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32443,11 +29069,7 @@ static const struct LevelUpMove sDollivLevelUpLearnset[] = {
     // >>> Evo Lv 35
     LEVEL_UP_MOVE(37, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE(42, MOVE_TERRAIN_PULSE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32475,12 +29097,9 @@ static const struct LevelUpMove sArbolivaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(39, MOVE_LEECH_SEED),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_TERRAIN_PULSE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_PETAL_BLIZZARD),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_PETAL_DANCE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PETAL_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_PETAL_DANCE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SMOLIV
@@ -32509,11 +29128,8 @@ static const struct LevelUpMove sSquawkabillyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_BRAVE_BIRD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_ROOST),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_REVERSAL),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_REVERSAL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SQUAWKABILLY
@@ -32541,11 +29157,7 @@ static const struct LevelUpMove sNacliLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(40, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(45, MOVE_STONE_EDGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32573,11 +29185,8 @@ static const struct LevelUpMove sNaclstackLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_HEAVY_SLAM),
     LEVEL_UP_MOVE(45, MOVE_EARTHQUAKE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_STONE_EDGE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32607,12 +29216,9 @@ static const struct LevelUpMove sGarganaclLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_HEAVY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_STONE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_EXPLOSION),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_NACLI
@@ -32634,11 +29240,7 @@ static const struct LevelUpMove sCharcadetLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(32, MOVE_LAVA_PLUME),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
 };
@@ -32667,12 +29269,9 @@ static const struct LevelUpMove sArmarougeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ALLY_SWITCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_EXPANDING_FORCE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_ARMOR_CANNON),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EXPANDING_FORCE),
+    LEVEL_UP_MOVE(50, MOVE_ARMOR_CANNON),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32702,12 +29301,9 @@ static const struct LevelUpMove sCeruledgeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ALLY_SWITCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BITTER_BLADE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYCHO_CUT),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_FLARE_BLITZ),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_PSYCHO_CUT),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHARCADET
@@ -32734,10 +29330,7 @@ static const struct LevelUpMove sTadbulbLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SUCKER_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32763,10 +29356,7 @@ static const struct LevelUpMove sBelliboltLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SUCKER_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TADBULB
@@ -32792,11 +29382,7 @@ static const struct LevelUpMove sWattrelLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(37, MOVE_VOLT_SWITCH),
     LEVEL_UP_MOVE(43, MOVE_DISCHARGE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32822,11 +29408,8 @@ static const struct LevelUpMove sKilowattrelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_VOLT_SWITCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_DISCHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HURRICANE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WATTREL
@@ -32840,7 +29423,7 @@ static const struct LevelUpMove sMaschiffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_SNARL),
     LEVEL_UP_MOVE(10, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(14, MOVE_BITE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_ROAR),
     LEVEL_UP_MOVE(22, MOVE_HEADBUTT),
@@ -32856,10 +29439,7 @@ static const struct LevelUpMove sMaschiffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_JAW_LOCK),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32872,7 +29452,7 @@ static const struct LevelUpMove sMabosstiffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_SNARL),
     LEVEL_UP_MOVE(10, MOVE_HONE_CLAWS),
     LEVEL_UP_MOVE(14, MOVE_BITE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_ROAR),
     LEVEL_UP_MOVE(22, MOVE_HEADBUTT),
@@ -32887,12 +29467,9 @@ static const struct LevelUpMove sMabosstiffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_REVERSAL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_JAW_LOCK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_OUTRAGE),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MASCHIFF
@@ -32906,7 +29483,7 @@ static const struct LevelUpMove sShroodleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(11, MOVE_SWITCHEROO),
     LEVEL_UP_MOVE(14, MOVE_POISON_FANG),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_FLATTER),
     LEVEL_UP_MOVE(21, MOVE_SLASH),
@@ -32921,11 +29498,7 @@ static const struct LevelUpMove sShroodleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE(40, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE(45, MOVE_GUNK_SHOT),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -32937,7 +29510,7 @@ static const struct LevelUpMove sGrafaiaiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_FURY_SWIPES),
     LEVEL_UP_MOVE(11, MOVE_SWITCHEROO),
     LEVEL_UP_MOVE(14, MOVE_POISON_FANG),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_FLATTER),
     LEVEL_UP_MOVE(21, MOVE_SLASH),
@@ -32952,11 +29525,8 @@ static const struct LevelUpMove sGrafaiaiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE(45, MOVE_KNOCK_OFF),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_GUNK_SHOT),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_GUNK_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SHROODLE
@@ -32984,11 +29554,8 @@ static const struct LevelUpMove sBramblinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CURSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_POWER_WHIP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33014,11 +29581,8 @@ static const struct LevelUpMove sBrambleghastLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_CURSE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_POWER_WHIP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BRAMBLIN
@@ -33049,11 +29613,8 @@ static const struct LevelUpMove sToedscoolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_EARTH_POWER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_POWER_WHIP),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33082,12 +29643,9 @@ static const struct LevelUpMove sToedscruelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_GROWTH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_GIGA_DRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE(58, MOVE_POWER_WHIP),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TOEDSCOOL
@@ -33114,12 +29672,9 @@ static const struct LevelUpMove sKlawfLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ROCK_SLIDE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_HIGH_HORSEPOWER),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_IRON_DEFENSE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GUILLOTINE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(50, MOVE_GUILLOTINE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KLAWF
@@ -33145,10 +29700,7 @@ static const struct LevelUpMove sCapsakidLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SEED_BOMB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOLAR_BEAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33177,10 +29729,7 @@ static const struct LevelUpMove sScovillainLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SOLAR_BEAM),
     LEVEL_UP_MOVE(48, MOVE_OVERHEAT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CAPSAKID
@@ -33203,11 +29752,7 @@ static const struct LevelUpMove sRellorLevelUpLearnset[] = {
     //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_LUNGE),
     //Winona Lv35
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33238,10 +29783,7 @@ static const struct LevelUpMove sRabscaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_BUG_BUZZ),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RELLOR
@@ -33263,11 +29805,7 @@ static const struct LevelUpMove sFlittleLevelUpLearnset[] = {
     //Flannery Lv29
     //Norman Lv31
     LEVEL_UP_MOVE(34, MOVE_UPROAR),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     //Winona Lv35
     LEVEL_UP_END
     // >>> Evo Lv 35
@@ -33297,11 +29835,8 @@ static const struct LevelUpMove sEspathraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_DAZZLING_GLEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_PSYCHIC),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_LAST_RESORT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LAST_RESORT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLITTLE
@@ -33314,7 +29849,7 @@ static const struct LevelUpMove sTinkatinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(11, MOVE_COVET),
     LEVEL_UP_MOVE(14, MOVE_ROCK_SMASH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(21, MOVE_SWEET_KISS),
@@ -33323,19 +29858,16 @@ static const struct LevelUpMove sTinkatinkLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_SLAM),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_FLASH_CANNON),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_PLAY_ROUGH),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE(43, MOVE_FLATTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_SKITTER_SMACK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_KNOCK_OFF),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33346,7 +29878,7 @@ static const struct LevelUpMove sTinkatuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(11, MOVE_COVET),
     LEVEL_UP_MOVE(14, MOVE_ROCK_SMASH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(21, MOVE_SWEET_KISS),
@@ -33355,8 +29887,8 @@ static const struct LevelUpMove sTinkatuffLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_SLAM),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_FLASH_CANNON),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_PLAY_ROUGH),
     //Winona Lv35
     // >>> Evo Lv 38
@@ -33364,11 +29896,8 @@ static const struct LevelUpMove sTinkatuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_FLATTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_SKITTER_SMACK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_KNOCK_OFF),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33380,7 +29909,7 @@ static const struct LevelUpMove sTinkatonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(11, MOVE_COVET),
     LEVEL_UP_MOVE(14, MOVE_ROCK_SMASH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(17, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE(21, MOVE_SWEET_KISS),
@@ -33388,8 +29917,8 @@ static const struct LevelUpMove sTinkatonLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_SLAM),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_FLASH_CANNON),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_PLAY_ROUGH),
     //Winona Lv35
     // >>> Evo Lv 38
@@ -33397,11 +29926,8 @@ static const struct LevelUpMove sTinkatonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_FLATTER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_SKITTER_SMACK),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_KNOCK_OFF),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TINKATINK
@@ -33427,11 +29953,7 @@ static const struct LevelUpMove sWiglettLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_THROAT_CHOP),
     LEVEL_UP_MOVE(40, MOVE_LIQUIDATION),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33456,11 +29978,8 @@ static const struct LevelUpMove sWugtrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SUCKER_PUNCH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THROAT_CHOP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_LIQUIDATION),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_LIQUIDATION),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WIGLETT
@@ -33488,12 +30007,9 @@ static const struct LevelUpMove sBombirdierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DUAL_WINGBEAT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_ROCK_SLIDE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_KNOCK_OFF),
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_PARTING_SHOT),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(50, MOVE_PARTING_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BOMBIRDIER
@@ -33521,10 +30037,7 @@ static const struct LevelUpMove sFinizenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MIST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33551,12 +30064,9 @@ static const struct LevelUpMove sPalafinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_MIST),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FOCUS_PUNCH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(61, MOVE_WAVE_CRASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FINIZEN
@@ -33586,10 +30096,7 @@ static const struct LevelUpMove sVaroomLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SPIN_OUT),
     LEVEL_UP_MOVE(50, MOVE_GUNK_SHOT),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33617,12 +30124,9 @@ static const struct LevelUpMove sRevavroomLevelUpLearnset[] = {
     //Tate&Liza Lv45
     // >>> Evo Lv 40
     LEVEL_UP_MOVE(46, MOVE_UPROAR),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SPIN_OUT),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_GUNK_SHOT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SPIN_OUT),
+    LEVEL_UP_MOVE(50, MOVE_GUNK_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VAROOM
@@ -33634,26 +30138,23 @@ static const struct LevelUpMove sCyclizarLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_RAPID_SPIN),
     LEVEL_UP_MOVE(11, MOVE_TAUNT),
     LEVEL_UP_MOVE(14, MOVE_BREAKING_SWIPE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(23, MOVE_BITE),
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_U_TURN),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_SHED_TAIL),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_DRAGON_CLAW),
     LEVEL_UP_MOVE(40, MOVE_SHIFT_GEAR),
     LEVEL_UP_MOVE(45, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_DOUBLE_EDGE),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(57, MOVE_DRAGON_RUSH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CYCLIZAR
@@ -33680,11 +30181,8 @@ static const struct LevelUpMove sOrthwormLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_IRON_TAIL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_SHED_TAIL),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SHED_TAIL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ORTHWORM
@@ -33713,10 +30211,7 @@ static const struct LevelUpMove sGlimmetLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_ACID_ARMOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_SLUDGE_WAVE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33746,10 +30241,7 @@ static const struct LevelUpMove sGlimmoraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ACID_ARMOR),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SLUDGE_WAVE),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GLIMMET
@@ -33778,11 +30270,8 @@ static const struct LevelUpMove sGreavardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_PHANTOM_FORCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_CHARM),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DOUBLE_EDGE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33809,12 +30298,9 @@ static const struct LevelUpMove sHoundstoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(41, MOVE_HELPING_HAND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(46, MOVE_PHANTOM_FORCE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(51, MOVE_CHARM),
-    //Sidney Lv54
-    LEVEL_UP_MOVE(58, MOVE_DOUBLE_EDGE),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_CHARM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GREAVARD
@@ -33834,19 +30320,16 @@ static const struct LevelUpMove sFlamigoLevelUpLearnset[] = {
     //Wattson Lv24
     LEVEL_UP_MOVE(27, MOVE_PAYBACK),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_ROOST),
+    //Norman Lv31
     LEVEL_UP_MOVE(35, MOVE_AIR_SLASH),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_MEGA_KICK),
     LEVEL_UP_MOVE(44, MOVE_WIDE_GUARD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_THROAT_CHOP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_BRAVE_BIRD),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BRAVE_BIRD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLAMIGO
@@ -33866,19 +30349,16 @@ static const struct LevelUpMove sCetoddleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_FLAIL),
     LEVEL_UP_MOVE(27, MOVE_AVALANCHE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_BOUNCE),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(40, MOVE_AMNESIA),
     LEVEL_UP_MOVE(44, MOVE_ICE_SPINNER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_BLIZZARD),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -33896,19 +30376,16 @@ static const struct LevelUpMove sCetitanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(25, MOVE_FLAIL),
     LEVEL_UP_MOVE(27, MOVE_AVALANCHE),
     //Flannery Lv29
-    //Norman Lv31
     LEVEL_UP_MOVE(31, MOVE_BOUNCE),
+    //Norman Lv31
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(40, MOVE_AMNESIA),
     LEVEL_UP_MOVE(44, MOVE_ICE_SPINNER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_DOUBLE_EDGE),
-    //Juan Lv50
-    LEVEL_UP_MOVE(53, MOVE_BLIZZARD),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CETODDLE
@@ -33934,11 +30411,8 @@ static const struct LevelUpMove sVeluzaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_LIQUIDATION),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_CRUNCH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FINAL_GAMBIT),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_FINAL_GAMBIT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_VELUZA
@@ -33966,13 +30440,10 @@ static const struct LevelUpMove sDondozoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_RAIN_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_ORDER_UP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_HEAVY_SLAM),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_DOUBLE_EDGE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_WAVE_CRASH),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_WAVE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_DONDOZO
@@ -33997,11 +30468,8 @@ static const struct LevelUpMove sTatsugiriLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_NASTY_PLOT),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_MIRROR_COAT),
-    //Juan Lv50
-    LEVEL_UP_MOVE(52, MOVE_DRAGON_PULSE),
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_PULSE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TATSUGIRI
@@ -34014,7 +30482,7 @@ static const struct LevelUpMove sGreatTuskLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE( 7, MOVE_BULLDOZE),
     LEVEL_UP_MOVE(14, MOVE_TAUNT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_RAPID_SPIN),
     //Wattson Lv24
@@ -34026,16 +30494,13 @@ static const struct LevelUpMove sGreatTuskLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_KNOCK_OFF),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_GIGA_IMPACT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(70, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(77, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(84, MOVE_HEAD_SMASH),
-    LEVEL_UP_MOVE(91, MOVE_HEADLONG_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_HEAD_SMASH),
+    LEVEL_UP_MOVE(50, MOVE_HEADLONG_RUSH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GREAT_TUSK
@@ -34048,7 +30513,7 @@ static const struct LevelUpMove sScreamTailLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 7, MOVE_HOWL),
     LEVEL_UP_MOVE(14, MOVE_NOBLE_ROAR),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_BITE),
     //Wattson Lv24
@@ -34060,16 +30525,13 @@ static const struct LevelUpMove sScreamTailLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_PLAY_ROUGH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_HYPER_VOICE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYCHIC_FANGS),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_CRUNCH),
-    LEVEL_UP_MOVE(70, MOVE_WISH),
-    LEVEL_UP_MOVE(77, MOVE_GYRO_BALL),
-    LEVEL_UP_MOVE(84, MOVE_PERISH_SONG),
-    LEVEL_UP_MOVE(91, MOVE_BOOMBURST),
+    LEVEL_UP_MOVE(50, MOVE_PSYCHIC_FANGS),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_WISH),
+    LEVEL_UP_MOVE(50, MOVE_GYRO_BALL),
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_BOOMBURST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SCREAM_TAIL
@@ -34082,7 +30544,7 @@ static const struct LevelUpMove sBruteBonnetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 7, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE(14, MOVE_MEGA_DRAIN),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_SYNTHESIS),
     //Wattson Lv24
@@ -34094,15 +30556,12 @@ static const struct LevelUpMove sBruteBonnetLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_THRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_GIGA_DRAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SUCKER_PUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SPORE),
-    LEVEL_UP_MOVE(70, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(77, MOVE_RAGE_POWDER),
-    LEVEL_UP_MOVE(91, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_SPORE),
+    LEVEL_UP_MOVE(50, MOVE_INGRAIN),
+    LEVEL_UP_MOVE(50, MOVE_RAGE_POWDER),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BRUTE_BONNET
@@ -34115,7 +30574,7 @@ static const struct LevelUpMove sFlutterManeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 7, MOVE_PSYBEAM),
     LEVEL_UP_MOVE(14, MOVE_MEAN_LOOK),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_MEMENTO),
     //Wattson Lv24
@@ -34127,16 +30586,13 @@ static const struct LevelUpMove sFlutterManeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_MYSTICAL_FIRE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_POWER_GEM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_PSYSHOCK),
-    LEVEL_UP_MOVE(70, MOVE_PHANTOM_FORCE),
-    LEVEL_UP_MOVE(77, MOVE_PAIN_SPLIT),
-    LEVEL_UP_MOVE(84, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(91, MOVE_PERISH_SONG),
+    LEVEL_UP_MOVE(50, MOVE_POWER_GEM),
+    LEVEL_UP_MOVE(50, MOVE_PSYSHOCK),
+    LEVEL_UP_MOVE(50, MOVE_PHANTOM_FORCE),
+    LEVEL_UP_MOVE(50, MOVE_PAIN_SPLIT),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLUTTER_MANE
@@ -34150,7 +30606,7 @@ static const struct LevelUpMove sSlitherWingLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 7, MOVE_POISON_POWDER),
     LEVEL_UP_MOVE( 7, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE(14, MOVE_FLAME_CHARGE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_STOMP),
     //Wattson Lv24
@@ -34162,16 +30618,13 @@ static const struct LevelUpMove sSlitherWingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_LUNGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SUPERPOWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_BULK_UP),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_DUAL_WINGBEAT),
-    LEVEL_UP_MOVE(70, MOVE_FIRST_IMPRESSION),
-    LEVEL_UP_MOVE(77, MOVE_WHIRLWIND),
-    LEVEL_UP_MOVE(84, MOVE_LEECH_LIFE),
-    LEVEL_UP_MOVE(91, MOVE_THRASH),
+    LEVEL_UP_MOVE(50, MOVE_BULK_UP),
+    LEVEL_UP_MOVE(50, MOVE_DUAL_WINGBEAT),
+    LEVEL_UP_MOVE(50, MOVE_FIRST_IMPRESSION),
+    LEVEL_UP_MOVE(50, MOVE_WHIRLWIND),
+    LEVEL_UP_MOVE(50, MOVE_LEECH_LIFE),
+    LEVEL_UP_MOVE(50, MOVE_THRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SLITHER_WING
@@ -34185,7 +30638,7 @@ static const struct LevelUpMove sSandyShocksLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 7, MOVE_SPARK),
     LEVEL_UP_MOVE(14, MOVE_BULLDOZE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_CHARGE_BEAM),
     //Wattson Lv24
@@ -34197,16 +30650,13 @@ static const struct LevelUpMove sSandyShocksLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_HEAVY_SLAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_METAL_SOUND),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DISCHARGE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_EARTH_POWER),
-    LEVEL_UP_MOVE(70, MOVE_MIRROR_COAT),
-    LEVEL_UP_MOVE(77, MOVE_GRAVITY),
-    LEVEL_UP_MOVE(84, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(91, MOVE_MAGNETIC_FLUX),
+    LEVEL_UP_MOVE(50, MOVE_DISCHARGE),
+    LEVEL_UP_MOVE(50, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    LEVEL_UP_MOVE(50, MOVE_GRAVITY),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_MAGNETIC_FLUX),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SANDY_SHOCKS
@@ -34230,16 +30680,13 @@ static const struct LevelUpMove sIronTreadsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_KNOCK_OFF),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_EARTHQUAKE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HEAVY_SLAM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_WILD_CHARGE),
-    LEVEL_UP_MOVE(70, MOVE_ENDEAVOR),
-    LEVEL_UP_MOVE(77, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(84, MOVE_GIGA_IMPACT),
-    LEVEL_UP_MOVE(91, MOVE_STEEL_ROLLER),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_STEEL_ROLLER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_TREADS
@@ -34250,7 +30697,7 @@ static const struct LevelUpMove sIronBundleLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PRESENT),
     LEVEL_UP_MOVE( 7, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(14, MOVE_WHIRLPOOL),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_TAKE_DOWN),
     //Wattson Lv24
@@ -34262,16 +30709,13 @@ static const struct LevelUpMove sIronBundleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FREEZE_DRY),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_FLIP_TURN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_ICE_BEAM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_AGILITY),
-    LEVEL_UP_MOVE(70, MOVE_SNOWSCAPE),
-    LEVEL_UP_MOVE(77, MOVE_HYDRO_PUMP),
-    LEVEL_UP_MOVE(84, MOVE_AURORA_VEIL),
-    LEVEL_UP_MOVE(91, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_ICE_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_AGILITY),
+    LEVEL_UP_MOVE(50, MOVE_SNOWSCAPE),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_AURORA_VEIL),
+    LEVEL_UP_MOVE(50, MOVE_BLIZZARD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_BUNDLE
@@ -34285,7 +30729,7 @@ static const struct LevelUpMove sIronHandsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ARM_THRUST),
     LEVEL_UP_MOVE( 7, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE(14, MOVE_WHIRLWIND),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_THUNDER_PUNCH),
     //Wattson Lv24
@@ -34297,16 +30741,13 @@ static const struct LevelUpMove sIronHandsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SEISMIC_TOSS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_CHARGE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_WILD_CHARGE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(70, MOVE_DETECT),
-    LEVEL_UP_MOVE(77, MOVE_HEAVY_SLAM),
-    LEVEL_UP_MOVE(84, MOVE_BELLY_DRUM),
-    LEVEL_UP_MOVE(91, MOVE_FOCUS_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_DETECT),
+    LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
+    LEVEL_UP_MOVE(50, MOVE_BELLY_DRUM),
+    LEVEL_UP_MOVE(50, MOVE_FOCUS_PUNCH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_HANDS
@@ -34320,7 +30761,7 @@ static const struct LevelUpMove sIronJugulisLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AIR_CUTTER),
     LEVEL_UP_MOVE( 7, MOVE_ROAR),
     LEVEL_UP_MOVE(14, MOVE_ASSURANCE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_DRAGON_BREATH),
     //Wattson Lv24
@@ -34331,16 +30772,13 @@ static const struct LevelUpMove sIronJugulisLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_HYPER_VOICE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_AIR_SLASH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(70, MOVE_DARK_PULSE),
-    LEVEL_UP_MOVE(77, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(84, MOVE_DRAGON_PULSE),
-    LEVEL_UP_MOVE(91, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_AIR_SLASH),
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(50, MOVE_DARK_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_JUGULIS
@@ -34354,7 +30792,7 @@ static const struct LevelUpMove sIronMothLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ACID_SPRAY),
     LEVEL_UP_MOVE( 7, MOVE_STRUGGLE_BUG),
     LEVEL_UP_MOVE(14, MOVE_FIRE_SPIN),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_TAKE_DOWN),
     //Wattson Lv24
@@ -34366,16 +30804,13 @@ static const struct LevelUpMove sIronMothLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DISCHARGE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SLUDGE_WAVE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_FIERY_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_METAL_SOUND),
-    LEVEL_UP_MOVE(70, MOVE_MORNING_SUN),
-    LEVEL_UP_MOVE(77, MOVE_HURRICANE),
-    LEVEL_UP_MOVE(84, MOVE_BUG_BUZZ),
-    LEVEL_UP_MOVE(91, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_FIERY_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_METAL_SOUND),
+    LEVEL_UP_MOVE(50, MOVE_MORNING_SUN),
+    LEVEL_UP_MOVE(50, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(50, MOVE_BUG_BUZZ),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_MOTH
@@ -34401,16 +30836,13 @@ static const struct LevelUpMove sIronThornsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ROCK_SLIDE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SANDSTORM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_WILD_CHARGE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_PIN_MISSILE),
-    LEVEL_UP_MOVE(70, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE(77, MOVE_STEALTH_ROCK),
-    LEVEL_UP_MOVE(84, MOVE_STONE_EDGE),
-    LEVEL_UP_MOVE(91, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_WILD_CHARGE),
+    LEVEL_UP_MOVE(50, MOVE_PIN_MISSILE),
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_STEALTH_ROCK),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_THORNS
@@ -34421,7 +30853,7 @@ static const struct LevelUpMove sFrigibaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(12, MOVE_BITE),
-    //Roxanne
+    //Roxanne Lv14
     LEVEL_UP_MOVE(15, MOVE_ICE_SHARD),
     //Brawly Lv16
     LEVEL_UP_MOVE(18, MOVE_FOCUS_ENERGY),
@@ -34438,10 +30870,7 @@ static const struct LevelUpMove sFrigibaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_SWORDS_DANCE),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ICICLE_CRASH),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -34467,12 +30896,9 @@ static const struct LevelUpMove sArctibaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ICE_BEAM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
-    //Juan Lv50
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     // >>> Evo Lv 54
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_ICICLE_CRASH),
-    //Drake Lv60
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_ICICLE_CRASH),
     LEVEL_UP_END
 };
 
@@ -34501,12 +30927,9 @@ static const struct LevelUpMove sBaxcaliburLevelUpLearnset[] = {
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ICE_BEAM),
     // >>> Evo Lv 54
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SWORDS_DANCE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(62, MOVE_ICICLE_CRASH),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_ICICLE_CRASH),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FRIGIBAX
@@ -34515,17 +30938,13 @@ static const struct LevelUpMove sBaxcaliburLevelUpLearnset[] = {
 static const struct LevelUpMove sGimmighoulLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    //Steven Lv63
-    //Winona Lv35
-    //Norman Lv31
-    //Flannery Lv29
-    //Wattson Lv24
-    //Brawly Lv16
     //Roxanne Lv14
+    //Brawly Lv16
+    //Wattson Lv24
+    //Flannery Lv29
+    //Norman Lv31
+    //Winona Lv35
+    //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -34534,7 +30953,7 @@ static const struct LevelUpMove sGholdengoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 7, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE(14, MOVE_CONFUSE_RAY),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_SUBSTITUTE),
     //Wattson Lv24
@@ -34546,13 +30965,10 @@ static const struct LevelUpMove sGholdengoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_RECOVER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_POWER_GEM),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MAKE_IT_RAIN),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE(70, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_MAKE_IT_RAIN),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GIMMIGHOUL
@@ -34580,15 +30996,12 @@ static const struct LevelUpMove sWoChienLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RUINATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_FOUL_PLAY),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_POWER_WHIP),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_GRASSY_TERRAIN),
-    LEVEL_UP_MOVE(70, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(75, MOVE_LEAF_STORM),
+    LEVEL_UP_MOVE(50, MOVE_FOUL_PLAY),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_GRASSY_TERRAIN),
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WO_CHIEN
@@ -34616,15 +31029,12 @@ static const struct LevelUpMove sChienPaoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_ICICLE_CRASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RUINATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_SUCKER_PUNCH),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SACRED_SWORD),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_RECOVER),
-    LEVEL_UP_MOVE(70, MOVE_THROAT_CHOP),
-    LEVEL_UP_MOVE(75, MOVE_SHEER_COLD),
+    LEVEL_UP_MOVE(50, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(50, MOVE_SACRED_SWORD),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_THROAT_CHOP),
+    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHIEN_PAO
@@ -34651,15 +31061,12 @@ static const struct LevelUpMove sTingLuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_STOMPING_TANTRUM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RUINATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_THROAT_CHOP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_ROCK_SLIDE),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_MEMENTO),
-    LEVEL_UP_MOVE(70, MOVE_EARTHQUAKE),
-    LEVEL_UP_MOVE(75, MOVE_FISSURE),
+    LEVEL_UP_MOVE(50, MOVE_THROAT_CHOP),
+    LEVEL_UP_MOVE(50, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(50, MOVE_FISSURE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TING_LU
@@ -34686,15 +31093,12 @@ static const struct LevelUpMove sChiYuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_LAVA_PLUME),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_RUINATION),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(55, MOVE_BOUNCE),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SWAGGER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(65, MOVE_INFERNO),
-    LEVEL_UP_MOVE(70, MOVE_MEMENTO),
-    LEVEL_UP_MOVE(75, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_BOUNCE),
+    LEVEL_UP_MOVE(50, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(50, MOVE_INFERNO),
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CHI_YU
@@ -34711,7 +31115,7 @@ static const struct LevelUpMove sRoaringMoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 7, MOVE_INCINERATE),
     LEVEL_UP_MOVE(14, MOVE_HEADBUTT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_SCARY_FACE),
     //Wattson Lv24
@@ -34723,16 +31127,13 @@ static const struct LevelUpMove sRoaringMoonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FLAMETHROWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_NIGHT_SLASH),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DRAGON_DANCE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_DRAGON_RUSH),
-    LEVEL_UP_MOVE(70, MOVE_FLY),
-    LEVEL_UP_MOVE(77, MOVE_THROAT_CHOP),
-    LEVEL_UP_MOVE(84, MOVE_ROOST),
-    LEVEL_UP_MOVE(91, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_FLY),
+    LEVEL_UP_MOVE(50, MOVE_THROAT_CHOP),
+    LEVEL_UP_MOVE(50, MOVE_ROOST),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_ROARING_MOON
@@ -34746,7 +31147,7 @@ static const struct LevelUpMove sIronValiantLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 7, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE(14, MOVE_FEINT),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_FUTURE_SIGHT),
     //Wattson Lv24
@@ -34758,17 +31159,14 @@ static const struct LevelUpMove sIronValiantLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_NIGHT_SLASH),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_LEAF_BLADE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MOONBLAST),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(70, MOVE_KNOCK_OFF),
-    LEVEL_UP_MOVE(77, MOVE_DESTINY_BOND),
-    LEVEL_UP_MOVE(84, MOVE_WIDE_GUARD),
-    LEVEL_UP_MOVE(84, MOVE_QUICK_GUARD),
-    LEVEL_UP_MOVE(91, MOVE_SPIRIT_BREAK),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_KNOCK_OFF),
+    LEVEL_UP_MOVE(50, MOVE_DESTINY_BOND),
+    LEVEL_UP_MOVE(50, MOVE_WIDE_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_QUICK_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_SPIRIT_BREAK),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_VALIANT
@@ -34779,7 +31177,7 @@ static const struct LevelUpMove sKoraidonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BREAKING_SWIPE),
     LEVEL_UP_MOVE( 7, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE(14, MOVE_ANCIENT_POWER),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_DRAIN_PUNCH),
     //Wattson Lv24
@@ -34791,17 +31189,14 @@ static const struct LevelUpMove sKoraidonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_DRAGON_CLAW),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_FLAMETHROWER),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_COLLISION_COURSE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SCREECH),
-    LEVEL_UP_MOVE(70, MOVE_COUNTER),
-    LEVEL_UP_MOVE(77, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(84, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(91, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(98, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_COLLISION_COURSE),
+    LEVEL_UP_MOVE(50, MOVE_SCREECH),
+    LEVEL_UP_MOVE(50, MOVE_COUNTER),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KORAIDON
@@ -34813,7 +31208,7 @@ static const struct LevelUpMove sMiraidonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ELECTRIC_TERRAIN),
     LEVEL_UP_MOVE( 7, MOVE_SHOCK_WAVE),
     LEVEL_UP_MOVE(14, MOVE_CHARGE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_PARABOLIC_CHARGE),
     //Wattson Lv24
@@ -34824,17 +31219,14 @@ static const struct LevelUpMove sMiraidonLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_DRAGON_PULSE),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_ELECTRO_DRIFT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_METAL_SOUND),
-    LEVEL_UP_MOVE(70, MOVE_MIRROR_COAT),
-    LEVEL_UP_MOVE(77, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(84, MOVE_THUNDER),
-    LEVEL_UP_MOVE(91, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(98, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_ELECTRO_DRIFT),
+    LEVEL_UP_MOVE(50, MOVE_METAL_SOUND),
+    LEVEL_UP_MOVE(50, MOVE_MIRROR_COAT),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_OVERHEAT),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MIRAIDON
@@ -34849,7 +31241,7 @@ static const struct LevelUpMove sWalkingWakeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AQUA_JET),
     LEVEL_UP_MOVE( 7, MOVE_BITE),
     LEVEL_UP_MOVE(14, MOVE_WATER_PULSE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_NOBLE_ROAR),
     //Wattson Lv24
@@ -34860,15 +31252,12 @@ static const struct LevelUpMove sWalkingWakeLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(42, MOVE_DRAGON_RUSH),
     //Tate&Liza Lv45
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_HYDRO_STEAM),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_DRAGON_PULSE),
-    LEVEL_UP_MOVE(70, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(77, MOVE_FLAMETHROWER),
-    LEVEL_UP_MOVE(84, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_STEAM),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WALKING_WAKE
@@ -34883,7 +31272,7 @@ static const struct LevelUpMove sIronLeavesLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WORK_UP),
     LEVEL_UP_MOVE( 7, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE(14, MOVE_RETALIATE),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_QUICK_GUARD),
     //Wattson Lv24
@@ -34895,16 +31284,13 @@ static const struct LevelUpMove sIronLeavesLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SACRED_SWORD),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_LEAF_BLADE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_PSYBLADE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_CLOSE_COMBAT),
-    LEVEL_UP_MOVE(70, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(77, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(84, MOVE_ALLY_SWITCH),
-    LEVEL_UP_MOVE(91, MOVE_SOLAR_BLADE),
+    LEVEL_UP_MOVE(50, MOVE_PSYBLADE),
+    LEVEL_UP_MOVE(50, MOVE_CLOSE_COMBAT),
+    LEVEL_UP_MOVE(50, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_ALLY_SWITCH),
+    LEVEL_UP_MOVE(50, MOVE_SOLAR_BLADE),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_LEAVES
@@ -34929,12 +31315,9 @@ static const struct LevelUpMove sPoltchageistLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_GIGA_DRAIN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_MEMENTO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LEAF_STORM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
@@ -34958,12 +31341,9 @@ static const struct LevelUpMove sSinistchaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_STRENGTH_SAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SHADOW_BALL),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_MEMENTO),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_LEAF_STORM),
-    //Steven Lv63
+    LEVEL_UP_MOVE(50, MOVE_MEMENTO),
+    LEVEL_UP_MOVE(50, MOVE_LEAF_STORM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_POLTCHAGEIST
@@ -34986,13 +31366,10 @@ static const struct LevelUpMove sOkidogiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_POISON_JAB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BRUTAL_SWING),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_CRUNCH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_SUPERPOWER),
-    LEVEL_UP_MOVE(72, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_OKIDOGI
@@ -35016,13 +31393,10 @@ static const struct LevelUpMove sMunkidoriLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_PSYCHIC),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SLUDGE_WAVE),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_NASTY_PLOT),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(72, MOVE_PARTING_SHOT),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_PARTING_SHOT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MUNKIDORI
@@ -35046,14 +31420,11 @@ static const struct LevelUpMove sFezandipitiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_TAIL_SLAP),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_BEAT_UP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(56, MOVE_FLATTER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_ROOST),
-    LEVEL_UP_MOVE(72, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(50, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(50, MOVE_FLATTER),
+    LEVEL_UP_MOVE(50, MOVE_ROOST),
+    LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FEZANDIPITI
@@ -35083,13 +31454,10 @@ static const struct LevelUpMove sOgerponLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SYNTHESIS),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_SPIKY_SHIELD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(54, MOVE_POWER_WHIP),
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_SUPERPOWER),
-    //Steven Lv63
-    LEVEL_UP_MOVE(66, MOVE_WOOD_HAMMER),
+    LEVEL_UP_MOVE(50, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(50, MOVE_SUPERPOWER),
+    LEVEL_UP_MOVE(50, MOVE_WOOD_HAMMER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif
@@ -35105,7 +31473,7 @@ static const struct LevelUpMove sGougingFireLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE( 7, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(14, MOVE_HOWL),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_BITE),
     //Wattson Lv24
@@ -35117,16 +31485,13 @@ static const struct LevelUpMove sGougingFireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_MORNING_SUN),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_BURNING_BULWARK),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DRAGON_RUSH),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(70, MOVE_LAVA_PLUME),
-    LEVEL_UP_MOVE(77, MOVE_OUTRAGE),
-    LEVEL_UP_MOVE(84, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(91, MOVE_RAGING_FURY),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_RUSH),
+    LEVEL_UP_MOVE(50, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(50, MOVE_LAVA_PLUME),
+    LEVEL_UP_MOVE(50, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(50, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(50, MOVE_RAGING_FURY),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GOUGING_FIRE
@@ -35140,7 +31505,7 @@ static const struct LevelUpMove sRagingBoltLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STOMP),
     LEVEL_UP_MOVE( 7, MOVE_CHARGE),
     LEVEL_UP_MOVE(14, MOVE_DRAGON_BREATH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_ELECTRIC_TERRAIN),
     //Wattson Lv24
@@ -35152,16 +31517,13 @@ static const struct LevelUpMove sRagingBoltLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_CALM_MIND),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_THUNDERCLAP),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_DRAGON_HAMMER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_RISING_VOLTAGE),
-    LEVEL_UP_MOVE(70, MOVE_DRAGON_PULSE),
-    LEVEL_UP_MOVE(77, MOVE_ZAP_CANNON),
-    LEVEL_UP_MOVE(84, MOVE_BODY_PRESS),
-    LEVEL_UP_MOVE(91, MOVE_THUNDER),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_HAMMER),
+    LEVEL_UP_MOVE(50, MOVE_RISING_VOLTAGE),
+    LEVEL_UP_MOVE(50, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(50, MOVE_ZAP_CANNON),
+    LEVEL_UP_MOVE(50, MOVE_BODY_PRESS),
+    LEVEL_UP_MOVE(50, MOVE_THUNDER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RAGING_BOLT
@@ -35174,7 +31536,7 @@ static const struct LevelUpMove sIronBoulderLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ELECTRIC_TERRAIN),
     LEVEL_UP_MOVE( 7, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(14, MOVE_SLASH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_AGILITY),
     //Wattson Lv24
@@ -35186,16 +31548,13 @@ static const struct LevelUpMove sIronBoulderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_ROCK_TOMB),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SACRED_SWORD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_MIGHTY_CLEAVE),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_SWORDS_DANCE),
-    LEVEL_UP_MOVE(70, MOVE_MEGAHORN),
-    LEVEL_UP_MOVE(77, MOVE_QUICK_GUARD),
-    LEVEL_UP_MOVE(84, MOVE_STONE_EDGE),
-    LEVEL_UP_MOVE(91, MOVE_GIGA_IMPACT),
+    LEVEL_UP_MOVE(50, MOVE_MIGHTY_CLEAVE),
+    LEVEL_UP_MOVE(50, MOVE_SWORDS_DANCE),
+    LEVEL_UP_MOVE(50, MOVE_MEGAHORN),
+    LEVEL_UP_MOVE(50, MOVE_QUICK_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_STONE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_GIGA_IMPACT),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_BOULDER
@@ -35208,7 +31567,7 @@ static const struct LevelUpMove sIronCrownLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE( 7, MOVE_SMART_STRIKE),
     LEVEL_UP_MOVE(14, MOVE_SLASH),
-    //Roxanne
+    //Roxanne Lv14
     //Brawly Lv16
     LEVEL_UP_MOVE(21, MOVE_IRON_DEFENSE),
     //Wattson Lv24
@@ -35220,16 +31579,13 @@ static const struct LevelUpMove sIronCrownLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_FLASH_CANNON),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(49, MOVE_SACRED_SWORD),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_TACHYON_CUTTER),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(63, MOVE_FUTURE_SIGHT),
-    LEVEL_UP_MOVE(70, MOVE_VOLT_SWITCH),
-    LEVEL_UP_MOVE(77, MOVE_QUICK_GUARD),
-    LEVEL_UP_MOVE(84, MOVE_METAL_BURST),
-    LEVEL_UP_MOVE(91, MOVE_HYPER_BEAM),
+    LEVEL_UP_MOVE(50, MOVE_TACHYON_CUTTER),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
+    LEVEL_UP_MOVE(50, MOVE_VOLT_SWITCH),
+    LEVEL_UP_MOVE(50, MOVE_QUICK_GUARD),
+    LEVEL_UP_MOVE(50, MOVE_METAL_BURST),
+    LEVEL_UP_MOVE(50, MOVE_HYPER_BEAM),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_CROWN
@@ -35251,14 +31607,11 @@ static const struct LevelUpMove sTerapagosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_EARTH_POWER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(50, MOVE_HEAVY_SLAM),
-    //Juan Lv50
-    //Sidney Lv54
-    //Drake Lv60
-    LEVEL_UP_MOVE(60, MOVE_TERA_STARSTORM),
-    //Steven Lv63
-    LEVEL_UP_MOVE(70, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(80, MOVE_ROCK_POLISH),
-    LEVEL_UP_MOVE(90, MOVE_GYRO_BALL),
+    LEVEL_UP_MOVE(50, MOVE_TERA_STARSTORM),
+    LEVEL_UP_MOVE(50, MOVE_DOUBLE_EDGE),
+    LEVEL_UP_MOVE(50, MOVE_ROCK_POLISH),
+    LEVEL_UP_MOVE(50, MOVE_GYRO_BALL),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TERAPAGOS
@@ -35285,13 +31638,10 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_MALIGNANT_CHAIN),
-    //Juan Lv50
-    //Sidney Lv54
-    LEVEL_UP_MOVE(56, MOVE_TOXIC),
-    //Drake Lv60
-    //Steven Lv63
-    LEVEL_UP_MOVE(64, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE(72, MOVE_RECOVER),
+    LEVEL_UP_MOVE(50, MOVE_TOXIC),
+    LEVEL_UP_MOVE(50, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(50, MOVE_RECOVER),
+    //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PECHARUNT
