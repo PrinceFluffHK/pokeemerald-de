@@ -715,7 +715,7 @@
 #line 252
             .ability = ABILITY_GUTS,
 #line 253
-            .lvl = 16,
+            .lvl = 17,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -11896,12 +11896,12 @@
         {
             {
 #line 4267
-            .species = SPECIES_VOLTORB,
+            .species = SPECIES_MAGNEMITE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4270
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 4268
-            .ability = ABILITY_AFTERMATH,
+            .ability = ABILITY_STURDY,
 #line 4269
             .lvl = 18,
             .ball = POKEBALL_COUNT,
@@ -11909,30 +11909,30 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4270
-                MOVE_THUNDER_SHOCK,
-                MOVE_TACKLE,
-                MOVE_ROLLOUT,
-                MOVE_SCREECH,
+                MOVE_CHARGE_BEAM,
+                MOVE_GYRO_BALL,
+                MOVE_METAL_SOUND,
             },
             },
             {
-#line 4275
-            .species = SPECIES_MAGNEMITE,
+#line 4274
+            .species = SPECIES_VOLTORB,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 4278
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 4276
-            .ability = ABILITY_STURDY,
 #line 4277
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 4275
+            .ability = ABILITY_AFTERMATH,
+#line 4276
             .lvl = 18,
             .ball = POKEBALL_COUNT,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 4278
-                MOVE_CHARGE_BEAM,
-                MOVE_GYRO_BALL,
-                MOVE_METAL_SOUND,
+#line 4277
+                MOVE_THUNDER_SHOCK,
+                MOVE_TACKLE,
+                MOVE_ROLLOUT,
+                MOVE_SCREECH,
             },
             },
         },
