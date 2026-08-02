@@ -2275,7 +2275,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 400 : 350,
         .holdEffectParam = 100,
         .description = COMPOUND_STRING(
-            "Repels weak wild\n"
+            "Repels lower-Lv\n"
             "Pokémon for 100\n"
             "steps."),
         .pocket = POCKET_ITEMS,
@@ -2285,6 +2285,8 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_Repel,
+        .notConsumed = TRUE,
+        .importance = 1,
     },
 
     [ITEM_SUPER_REPEL] =
@@ -2293,7 +2295,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 700 : 500,
         .holdEffectParam = 200,
         .description = COMPOUND_STRING(
-            "Repels weak wild\n"
+            "Repels lower-Lv\n"
             "Pokémon for 200\n"
             "steps."),
         .pocket = POCKET_ITEMS,
@@ -2303,6 +2305,8 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_SuperRepel,
+        .notConsumed = TRUE,
+        .importance = 1,
     },
 
     [ITEM_MAX_REPEL] =
@@ -2311,7 +2315,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 900 : 700,
         .holdEffectParam = 250,
         .description = COMPOUND_STRING(
-            "Repels weak wild\n"
+            "Repels lower-Lv\n"
             "Pokémon for 250\n"
             "steps."),
         .pocket = POCKET_ITEMS,
@@ -2321,6 +2325,8 @@ const struct ItemInfo gItemsInfo[] =
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_MaxRepel,
+        .notConsumed = TRUE,
+        .importance = 1,
     },
 
     [ITEM_LURE] =
