@@ -41,9 +41,9 @@ FallarborTown_Mart_EventScript_Clerk_2::
 
 	.align 2
 FallarborTown_Mart_Pokemart_Secondary:
-	.2byte ITEM_TM_SPIKES
-	.2byte ITEM_TM_TOXIC_SPIKES
-	.2byte ITEM_TM_STEALTH_ROCK
+	.2byte ITEM_TM01
+	.2byte ITEM_TM01
+	.2byte ITEM_TM01
 	pokemartlistend
 
 FallarborTown_Mart_EventScript_Woman::

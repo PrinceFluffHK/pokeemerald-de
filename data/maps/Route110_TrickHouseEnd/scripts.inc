@@ -59,7 +59,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle1::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToPlantTrees, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_IMPRISON
+	giveitem ITEM_TM01
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -71,7 +71,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle2::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToMakeMaze, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_SNARL
+	giveitem ITEM_TM01
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -83,7 +83,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle3::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToPreparePanels, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_ELECTROWEB
+	giveitem ITEM_TM01
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -95,7 +95,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle4::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToShoveBoulders, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_TRICK_ROOM
+	giveitem ITEM_TM01
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -107,7 +107,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle5::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_TAUNT
+	giveitem ITEM_TM01
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -119,7 +119,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToInstallDoors, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_BODY_PRESS
+	giveitem ITEM_TM01
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage

@@ -59,7 +59,7 @@ Route24_EventScript_ItemTM45::
 	end
 
 Route25_EventScript_ItemTM43::
-	finditem ITEM_TM_HIDDEN_POWER
+	finditem ITEM_TM_WORK_UP
 	end
 
 SSAnne_1F_Room2_EventScript_ItemTM31::
