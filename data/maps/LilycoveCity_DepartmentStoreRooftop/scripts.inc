@@ -186,7 +186,7 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_ExitVendingMachine::
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_RotomBox::
 	lockall
-	goto_if_set FLAG_CAUGHT_ROTOM
+	goto_if_set FLAG_CAUGHT_ROTOM, LilycoveCity_DepartmentStoreRooftop_EventScript_ItsEmpty
 	waitse
 	playmoncry SPECIES_ROTOM, CRY_MODE_ENCOUNTER
 	delay 40
