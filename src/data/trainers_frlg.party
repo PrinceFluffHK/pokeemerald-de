@@ -6102,6 +6102,7 @@ AI: Smart Trainer
 
 Squirtle
 Ability: Torrent
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Level: 5
 - Pound
 - Leer
@@ -6117,6 +6118,7 @@ AI: Smart Trainer
 
 Bulbasaur
 Ability: Overgrow
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Level: 5
 - Tackle
 - Growl
@@ -6132,6 +6134,7 @@ AI: Smart Trainer
 
 Charmander
 Ability: Blaze
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Level: 5
 - Scratch
 - Growl
