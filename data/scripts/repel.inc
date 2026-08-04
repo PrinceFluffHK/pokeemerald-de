@@ -130,7 +130,7 @@ EventScript_UseSpray::
 	playse SE_REPEL
 	waitse
 	callnative HandleSprayMenuChoice
-	removeitem LOCAL_VAR_SPRAY, 1
+@	removeitem LOCAL_VAR_SPRAY, 1
 	bufferitemname STR_VAR_2, LOCAL_VAR_SPRAY
 	msgbox Text_SprayWoreOffUseX, MSGBOX_SIGN
 	return
@@ -141,11 +141,11 @@ Text_SprayWoreOff::
 
 Text_SprayWoreOffAskUseAnother::
 	.string "{STR_VAR_1}'s effect wore off!\n"
-	.string "Use another?$"
+	.string "Use again?$"
 
 Text_SprayWoreOffAskUseX::
 	.string "{STR_VAR_1}'s effect wore off…\n"
-	.string "Use a {STR_VAR_2}?$"
+	.string "Use again?$"
 
 Text_SprayWoreOffUseX::
 	.string "{PLAYER} used the\n"

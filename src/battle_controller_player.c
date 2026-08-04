@@ -2701,7 +2701,7 @@ static void CreateInfoWindow(u32 battler)
         && (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
         || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL))
     {
-        FlagSet(FLAG_HIDE_BATTLE_TUTORIAL);
+        // FlagSet(FLAG_HIDE_BATTLE_TUTORIAL);
         StringAppend(gStringVar1, COMPOUND_STRING("\nSELECT: Spd + Target"));
     }
     else {

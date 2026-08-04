@@ -638,6 +638,8 @@ static u8 GetTrainerApproachDistance(struct ObjectEvent *trainerObj)
     s16 x, y;
     u8 i;
     u8 approachDistance;
+    if (FlagGet(FLAG_BOSS_RUSH_MODE))
+        return 0;
 
     PlayerGetDestCoords(&x, &y);
     if (trainerObj->trainerType == TRAINER_TYPE_NORMAL)  // can only see in one direction
@@ -664,6 +666,8 @@ static u8 GetTrainerApproachDistance(struct ObjectEvent *trainerObj)
 // Returns how far south the player is from trainer. 0 if out of trainer's sight.
 static u8 GetTrainerApproachDistanceSouth(struct ObjectEvent *trainerObj, s16 range, s16 x, s16 y)
 {
+    if (FlagGet(FLAG_BOSS_RUSH_MODE))
+        return 0;
     if (trainerObj->currentCoords.x == x
      && y > trainerObj->currentCoords.y
      && y <= trainerObj->currentCoords.y + range)
@@ -675,6 +679,8 @@ static u8 GetTrainerApproachDistanceSouth(struct ObjectEvent *trainerObj, s16 ra
 // Returns how far north the player is from trainer. 0 if out of trainer's sight.
 static u8 GetTrainerApproachDistanceNorth(struct ObjectEvent *trainerObj, s16 range, s16 x, s16 y)
 {
+    if (FlagGet(FLAG_BOSS_RUSH_MODE))
+        return 0;
     if (trainerObj->currentCoords.x == x
      && y < trainerObj->currentCoords.y
      && y >= trainerObj->currentCoords.y - range)
@@ -686,6 +692,8 @@ static u8 GetTrainerApproachDistanceNorth(struct ObjectEvent *trainerObj, s16 ra
 // Returns how far west the player is from trainer. 0 if out of trainer's sight.
 static u8 GetTrainerApproachDistanceWest(struct ObjectEvent *trainerObj, s16 range, s16 x, s16 y)
 {
+    if (FlagGet(FLAG_BOSS_RUSH_MODE))
+        return 0;
     if (trainerObj->currentCoords.y == y
      && x < trainerObj->currentCoords.x
      && x >= trainerObj->currentCoords.x - range)
@@ -697,6 +705,8 @@ static u8 GetTrainerApproachDistanceWest(struct ObjectEvent *trainerObj, s16 ran
 // Returns how far east the player is from trainer. 0 if out of trainer's sight.
 static u8 GetTrainerApproachDistanceEast(struct ObjectEvent *trainerObj, s16 range, s16 x, s16 y)
 {
+    if (FlagGet(FLAG_BOSS_RUSH_MODE))
+        return 0;
     if (trainerObj->currentCoords.y == y
      && x > trainerObj->currentCoords.x
      && x <= trainerObj->currentCoords.x + range)
