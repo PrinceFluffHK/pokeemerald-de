@@ -16975,7 +16975,7 @@
 #line 6099
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6100
-        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 6101
         .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 0
@@ -17018,7 +17018,7 @@
 #line 6114
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6115
-        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 6116
         .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 0
@@ -17061,7 +17061,7 @@
 #line 6129
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 6130
-        .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 6131
         .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 0

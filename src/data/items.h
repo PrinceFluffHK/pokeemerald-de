@@ -740,7 +740,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_REVIVE] =
     {
         .name = ITEM_NAME("Revive"),
-        .price = (I_PRICE >= GEN_7) ? 2000 : 1500,
+        .price = (I_PRICE >= GEN_7) ? 500 : 1500,
         .description = COMPOUND_STRING(
             "Revives a fainted\n"
             "Pokémon with half\n"
@@ -759,7 +759,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_MAX_REVIVE] =
     {
         .name = ITEM_NAME("Max Revive"),
-        .price = 4000,
+        .price = 1500,
         .description = sMaxReviveDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
@@ -1176,7 +1176,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Sacred Ash"),
         .pluralName = ITEM_PLURAL_NAME("Sacred Ashes"),
-        .price = (I_PRICE >= GEN_7) ? 50000 : 200,
+        .price = (I_PRICE >= GEN_7) ? 2500 : 200,
         .description = COMPOUND_STRING(
             "Fully revives and\n"
             "restores all\n"
@@ -2275,16 +2275,18 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 400 : 350,
         .holdEffectParam = 100,
         .description = COMPOUND_STRING(
-            "Repels weak wild\n"
-            "Pokémon for 100\n"
-            "steps."),
-        .pocket = POCKET_ITEMS,
+            "Repels Pokémon\n"
+            "for 100 steps.\n"
+            "Infinite uses."),
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
-        .type = ITEM_USE_BAG_MENU,
+        .type = POCKET_KEY_ITEMS,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_Repel,
+        .notConsumed = TRUE,
+        .importance = 1,
     },
 
     [ITEM_SUPER_REPEL] =
@@ -2293,16 +2295,18 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 700 : 500,
         .holdEffectParam = 200,
         .description = COMPOUND_STRING(
-            "Repels weak wild\n"
-            "Pokémon for 200\n"
-            "steps."),
-        .pocket = POCKET_ITEMS,
+            "Repels Pokémon\n"
+            "for 200 steps.\n"
+            "Infinite uses."),
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
-        .type = ITEM_USE_BAG_MENU,
+        .type = POCKET_KEY_ITEMS,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_SuperRepel,
+        .notConsumed = TRUE,
+        .importance = 1,
     },
 
     [ITEM_MAX_REPEL] =
@@ -2311,16 +2315,18 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 900 : 700,
         .holdEffectParam = 250,
         .description = COMPOUND_STRING(
-            "Repels weak wild\n"
-            "Pokémon for 250\n"
-            "steps."),
-        .pocket = POCKET_ITEMS,
+            "Repels Pokémon\n"
+            "for 250 steps.\n"
+            "Infinite uses."),
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
         .iconPalette = gItemIconPalette_MaxRepel,
+        .notConsumed = TRUE,
+        .importance = 1,
     },
 
     [ITEM_LURE] =

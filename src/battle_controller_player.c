@@ -1112,10 +1112,15 @@ void HandleViewOpposingMoves(enum BattlerId playerBattler, bool32 pressedRButton
 {
     enum BattlerId oppLeft  = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
     enum BattlerId oppRight = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-
-    enum BattlerId target = pressedRButton ? oppRight : oppLeft;
     bool32 viewing = gBattleStruct->viewingOpponentMoves;
     bool32 viewingRight = gBattleStruct->viewingRightOpponent;
+    bool32 isDouble = IsDoubleBattle();
+    enum BattlerId target;
+
+    if (!isDouble)
+        target = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+    else
+        target = pressedRButton ? oppRight : oppLeft;
 
     PlaySE(SE_SELECT);
 
@@ -1138,8 +1143,8 @@ void HandleViewOpposingMoves(enum BattlerId playerBattler, bool32 pressedRButton
         return;
     }
 
-    // --- EXIT VIEW (pressed same side again) ---
-    if ((viewingRight && pressedRButton) || (!viewingRight && !pressedRButton))
+    // --- EXIT VIEW ---
+    if (!isDouble || (viewingRight && pressedRButton) || (!viewingRight && !pressedRButton))
     {
         gBattleStruct->viewingOpponentMoves = FALSE;
 
@@ -1176,15 +1181,13 @@ void HandleInputChooseMove(enum BattlerId battler)
         gPlayerDpadHoldFrames = 0;
 
     if (JOY_NEW(L_BUTTON) 
-        && IsDoubleBattle() 
-        && !(gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))) 
+        && (!IsDoubleBattle() || !(gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))))
     {
         HandleViewOpposingMoves(battler, FALSE, moveInfo);
     }
 
     if (JOY_NEW(R_BUTTON) 
-        && IsDoubleBattle() 
-        && !(gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))) 
+        && (!IsDoubleBattle() || !(gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))))
     {
         HandleViewOpposingMoves(battler, TRUE, moveInfo);
     }
@@ -2698,7 +2701,7 @@ static void CreateInfoWindow(u32 battler)
         && (gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_LIMITED
         || gSaveBlock2Ptr->optionsPreviewStyle == OPTIONS_PREVIEW_FULL))
     {
-        FlagSet(FLAG_HIDE_BATTLE_TUTORIAL);
+        // FlagSet(FLAG_HIDE_BATTLE_TUTORIAL);
         StringAppend(gStringVar1, COMPOUND_STRING("\nSELECT: Spd + Target"));
     }
     else {

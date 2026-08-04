@@ -107,7 +107,7 @@ RocketHideout_B2F_EventScript_ItemXSpeed::
 	end
 
 RocketHideout_B2F_EventScript_ItemMoonStone::
-	finditem ITEM_FIRE_STONE
+	finditem ITEM_SUN_STONE
 	end
 
 RocketHideout_B2F_EventScript_ItemTM12::
@@ -291,7 +291,7 @@ PowerPlant_EventScript_ItemTM25::
 	end
 
 PowerPlant_EventScript_ItemThunderStone::
-	finditem ITEM_THUNDER_STONE
+	finditem ITEM_ELECTIRIZER
 	end
 
 PowerPlant_EventScript_ItemElixir::
