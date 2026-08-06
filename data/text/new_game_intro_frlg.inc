@@ -125,38 +125,38 @@ gNameChoice_Suzi::
 	.string "SUZI$"
 
 gControlsGuide_Text_Intro::
-	.string "The various buttons will be explained in\n"
-	.string "the order of their importance.$"
+	.string "Welcome to POKéMON FireRed: Doubles Edition!\n"
+	.string "Developed by Prince Fluff$"
 
 gControlsGuide_Text_DPad::
-	.string "Moves the main character.\n"
-	.string "Also used to choose various data\n"
-	.string "headings.$"
+	.string "FRDE has several unique features\n"
+	.string "beyond just being all-doubles.\n"
+	.string "Check docs for all changes.$"
 
 gControlsGuide_Text_AButton::
-	.string "Used to confirm a choice, check\n"
-	.string "things, chat, and scroll text.$"
+	.string "Route 3 (but not Mt. Moon) can be\n"
+	.string "accessed with 0 Gym Badges.$"
 
 gControlsGuide_Text_BButton::
-	.string "Used to exit, cancel a choice,\n"
-	.string "and cancel a mode.$"
+	.string "Running Shoes are enabled from the\n"
+	.string "start and can be used indoors.$"
 
 gControlsGuide_Text_StartButton::
-	.string "Press this button to open the\n"
-	.string "MENU.$"
+	.string "The TURN PREVIEW feature shows\n"
+	.string "speed and target info in battle.$"
 
 gControlsGuide_Text_SelectButton::
-	.string "Used to shift items and to use\n"
-	.string "a registered item.$"
+	.string "Press Select on the battle menu\n"
+	.string "to access TURN PREVIEW.$"
 
 gControlsGuide_Text_LRButtons::
-	.string "If you need help playing the\n"
-	.string "game, or on how to do things,\n"
-	.string "press the L or R Button.$"
+	.string "Press L or R while selecting a move\n"
+	.string "in battle to see opponent's moves.\n"
+	.string "Press again to revert.$"
 
 gOakSpeech_Text_AskPlayerGender::
-	.string "Now tell me. Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Now tell me. Will you be a boy?\n"
+	.string "Or will you be a girl?$"
 
 gPikachuIntro_Text_Page1::
 	.string "In the world which you are about to\n"
@@ -203,7 +203,7 @@ gOakSpeech_Text_IsInhabitedFarAndWide::
 
 gOakSpeech_Text_IStudyPokemon::
 	.string "For some people, POKéMON are pets.\n"
-	.string "Others use them for battling.\p"
+	.string "Others use them for competition.\p"
 	.string "As for myself…\p"
 	.string "I study POKéMON as a profession.\p$"
 

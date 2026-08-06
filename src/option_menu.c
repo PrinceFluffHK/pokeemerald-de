@@ -74,8 +74,8 @@ EWRAM_DATA static bool8 sArrowPressed = FALSE;
 
 static const u8 gText_Option[]              = _("OPTION");
 static const u8 gText_TextSpeedSlow[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}SLOW");
-static const u8 gText_TextSpeedMid[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MID");
-static const u8 gText_TextSpeedFast[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
+static const u8 gText_TextSpeedMid[]        = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}FAST");
+static const u8 gText_TextSpeedFast[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}INST");
 static const u8 gText_BattleSceneOn[]       = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}ON");
 static const u8 gText_BattleSceneOff[]      = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OFF");
 static const u8 gText_PreviewStyleNone[]    = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NONE");

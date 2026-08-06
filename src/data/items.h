@@ -2278,9 +2278,9 @@ const struct ItemInfo gItemsInfo[] =
             "Repels Pokémon\n"
             "for 100 steps.\n"
             "Infinite uses."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
-        .type = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
@@ -2298,9 +2298,9 @@ const struct ItemInfo gItemsInfo[] =
             "Repels Pokémon\n"
             "for 200 steps.\n"
             "Infinite uses."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
-        .type = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
         .iconPic = gItemIcon_Repel,
@@ -2318,7 +2318,7 @@ const struct ItemInfo gItemsInfo[] =
             "Repels Pokémon\n"
             "for 250 steps.\n"
             "Infinite uses."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
