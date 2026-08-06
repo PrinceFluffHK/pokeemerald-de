@@ -282,7 +282,7 @@
       "x": 6,
       "y": 3,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_HEAVY_BALL",
       "flag": "FLAG_HIDDEN_ITEM_PEWTER_CITY_POKE_BALL",
       "quantity": 1,
       "underfoot": false

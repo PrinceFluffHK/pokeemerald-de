@@ -7,7 +7,7 @@ Route2_EventScript_ItemParalyzeHeal::
 	end
 
 ViridianForest_EventScript_ItemPokeBall::
-	finditem ITEM_POKE_BALL
+	finditem ITEM_SERIOUS_MINT
 	end
 
 ViridianForest_EventScript_ItemAntidote::

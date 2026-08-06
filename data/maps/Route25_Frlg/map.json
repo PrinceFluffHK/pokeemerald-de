@@ -244,7 +244,7 @@
       "x": 40,
       "y": 3,
       "elevation": 3,
-      "item": "ITEM_ORAN_BERRY",
+      "item": "ITEM_LEFTOVERS",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE25_BLUK_BERRY",
       "quantity": 1,
       "underfoot": false
