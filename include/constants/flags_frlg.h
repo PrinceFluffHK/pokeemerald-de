@@ -148,7 +148,7 @@
 #define FLAG_HIDE_MISC_KANTO_ROCKETS                       0x0AD
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
 
-// Unused?
+// FRDE
 #define FLAG_HIDE_BUTTON_PROMPT             0x0AF
 #define FLAG_DN_SEARCHING                   0x0B0
 #define FLAG_DN_DEXNAV_GET                  0x0B1
@@ -159,8 +159,8 @@
 #define FLAG_DOWSING_MCHN                   0x0B6
 #define FLAG_IS_TURN_START                  0x0B7
 #define FLAG_UNLOCK_STONE_SHOP              0x0B8
-#define FLAG_0x0B9               0x0B9
-#define FLAG_0x0BA               0x0BA
+#define FLAG_HIDE_PEWTER_CITY_SHROOMISH     0x0B9
+#define FLAG_HIDE_PALLET_TOWN_SHROOMISH     0x0BA
 #define FLAG_0x0BB               0x0BB
 #define FLAG_0x0BC               0x0BC
 #define FLAG_0x0BD               0x0BD
