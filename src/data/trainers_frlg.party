@@ -5847,6 +5847,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
+Difficulty: Easy
 AI: Smart Trainer
 
 Hitmonlee
@@ -16048,7 +16049,6 @@ Mugshot: Blue
 Staryu
 Ability: Natural Cure
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Bubble Beam
 - Swift
 - Rapid Spin
@@ -16057,7 +16057,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Psyduck
 Ability: Swift Swim
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Confusion
 - Rain Dance
@@ -16066,7 +16065,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shellder
 Ability: Skill Link
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Clamp
 - Icicle Spear
 - Protect
@@ -16074,13 +16072,11 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Togepi
 Ability: Serene Grace
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Metronome
 
 Starmie
 Ability: Natural Cure
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Swift
 - Rapid Spin
@@ -16100,7 +16096,6 @@ Mugshot: Yellow
 Pidgeotto
 Ability: Keen Eye
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Wing Attack
 - Tackle
 - Mud-Slap
@@ -16109,7 +16104,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raticate @ Flame Orb
 Ability: Guts
 Level: 16
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Super Fang
 - Bite
@@ -16118,7 +16112,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kadabra @ Sticky Barb
 Ability: Magic Guard
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Hidden Power
 - Disable
@@ -16126,7 +16119,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggcute
 Ability: Harvest
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Confusion
 - Reflect
@@ -16134,7 +16126,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wartortle @ Sitrus Berry
 Ability: Torrent
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Bite
 - Iron Defense
@@ -16153,7 +16144,6 @@ Mugshot: Yellow
 Pidgeotto
 Ability: Keen Eye
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Wing Attack
 - Tackle
 - Mud-Slap
@@ -16162,7 +16152,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raticate @ Flame Orb
 Ability: Guts
 Level: 16
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Super Fang
 - Bite
@@ -16171,7 +16160,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kadabra @ Sticky Barb
 Ability: Magic Guard
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Hidden Power
 - Disable
@@ -16179,7 +16167,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Growlithe
 Ability: Intimidate
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flame Wheel
 - Bite
 - Howl
@@ -16187,7 +16174,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ivysaur @ Sitrus Berry
 Ability: Overgrow
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Poison Powder
 - Leech Seed
@@ -16207,7 +16193,6 @@ Mugshot: Yellow
 Pidgeotto
 Ability: Keen Eye
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Wing Attack
 - Tackle
 - Mud-Slap
@@ -16216,7 +16201,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raticate @ Flame Orb
 Ability: Guts
 Level: 16
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Super Fang
 - Bite
@@ -16225,7 +16209,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kadabra @ Sticky Barb
 Ability: Magic Guard
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Hidden Power
 - Disable
@@ -16233,7 +16216,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shellder
 Ability: Skill Link
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Whirlpool
 - Aurora Beam
 - Protect
@@ -16241,7 +16223,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Charmeleon @ Sitrus Berry
 Ability: Blaze
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Fang
 - Metal Claw
 - Spitfire
@@ -16261,7 +16242,6 @@ Mugshot: Yellow
 Voltorb @ Assault Vest
 Ability: Aftermath
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Electro Ball
 - Swift
 - Explosion
@@ -16270,7 +16250,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Electabuzz @ Chilan Berry
 Ability: Static
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunder Punch
 - Brick Break
 - Charge
@@ -16279,7 +16258,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machoke
 Ability: Guts
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunder Punch
 - Low Sweep
 - Ice Punch
@@ -16288,7 +16266,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magnemite @ Weakness Policy
 Ability: Sturdy
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Charge Beam
 - Flash Cannon
 - Magnet Rise
@@ -16296,7 +16273,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Voltorb - Hisui
 Ability: Aftermath
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Electro Ball
 - Seed Bomb
 - Screech
@@ -16305,7 +16281,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu @ Focus Sash
 Ability: Static
 Level: 24
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Shock Wave
 - Body Slam
@@ -16325,7 +16300,6 @@ Mugshot: Yellow
 Pidgeotto
 Ability: Keen Eye
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aerial Ace
 - Facade
 - Mud-Slap
@@ -16334,7 +16308,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kadabra @ Sticky Barb
 Ability: Magic Guard
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Psyshock
 - Hidden Power
@@ -16343,7 +16316,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arcanine
 Ability: Intimidate
 Level: 23
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flame Wheel
 - Bite
 - Howl
@@ -16351,7 +16323,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggutor
 Ability: Harvest
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Confusion
 - Reflect
@@ -16359,7 +16330,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wartortle @ Sitrus Berry
 Ability: Torrent
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Tail
 - Bite
 - Iron Defense
@@ -16378,7 +16348,6 @@ Mugshot: Yellow
 Pidgeotto
 Ability: Keen Eye
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aerial Ace
 - Facade
 - Mud-Slap
@@ -16387,7 +16356,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kadabra @ Sticky Barb
 Ability: Magic Guard
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Psyshock
 - Hidden Power
@@ -16396,7 +16364,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cloyster
 Ability: Skill Link
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Whirlpool
 - Aurora Beam
 - Protect
@@ -16404,7 +16371,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arcanine
 Ability: Intimidate
 Level: 23
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flame Wheel
 - Bite
 - Howl
@@ -16412,7 +16378,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ivysaur @ Sitrus Berry
 Ability: Overgrow
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Razor Leaf
 - Sleep Powder
 - Leech Seed
@@ -16432,7 +16397,6 @@ Mugshot: Yellow
 Pidgeotto
 Ability: Keen Eye
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aerial Ace
 - Facade
 - Mud-Slap
@@ -16441,7 +16405,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kadabra @ Sticky Barb
 Ability: Magic Guard
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Psyshock
 - Hidden Power
@@ -16450,7 +16413,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggutor
 Ability: Harvest
 Level: 23
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Confusion
 - Reflect
@@ -16458,7 +16420,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cloyster
 Ability: Skill Link
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Whirlpool
 - Aurora Beam
 - Protect
@@ -16466,7 +16427,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Charmeleon @ Sitrus Berry
 Ability: Blaze
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Metal Claw
 - Dragon Breath
@@ -16486,7 +16446,6 @@ Mugshot: Green
 Vileplume @ Oran Berry
 Ability: Chlorophyll
 Level: 28
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Acid Spray
 - Pollen Puff
@@ -16495,7 +16454,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Bellossom @ Oran Berry
 Ability: Chlorophyll
 Level: 28
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Magical Leaf
 - Moonblast
 - Quiver Dance
@@ -16504,16 +16462,14 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tangela @ Oran Berry
 Ability: Chlorophyll
 Level: 24
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Grass Knot
 - Knock Off
 - Rage Powder
 - Ancient Power
 
 Sirfetch'd @ Oran Berry
-Ability: Defiant
+Ability: Dauntless Shield
 Level: 27
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - First Impression
 - Aerial Ace
 - Leaf Blade
@@ -16522,7 +16478,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggcute @ Oran Berry
 Ability: Chlorophyll
 Level: 26
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Energy Ball
 - Psyshock
 - Leech Seed
@@ -16531,11 +16486,229 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Victreebel @ Figy Berry
 Ability: Chlorophyll
 Level: 29
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Razor Leaf
 - Poison Jab
 - Weather Ball
 - Swords Dance
+
+=== TRAINER_RIVAL_SILPH_SQUIRTLE ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Normal
+Mugshot: Yellow
+
+Pidgeot
+Ability: No Guard
+Level: 37  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
+
+Cloyster
+Ability: Skill Link
+Level: 38  
+- Whirlpool
+- Aurora Beam
+- Protect
+- Spikes
+
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 35  
+- Psybeam
+- Psyshock
+- Hidden Power
+- Disable
+
+Arcanine
+Ability: Intimidate
+Level: 35  
+- Extreme Speed
+- Fire Fang
+- Crunch
+- Howl
+
+Tauros
+Ability: Intimidate
+Level: 36  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Venusaur @ Sitrus Berry
+Ability: Overgrow
+Level: 40  
+- Razor Leaf
+- Sleep Powder
+- Leech Seed
+- Growl
+
+=== TRAINER_RIVAL_SILPH_BULBASAUR ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Normal
+Mugshot: Yellow
+
+Pidgeot
+Ability: No Guard
+Level: 37  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
+
+Arcanine
+Ability: Intimidate
+Level: 38  
+- Extreme Speed
+- Fire Fang
+- Crunch
+- Howl
+
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 35  
+- Psybeam
+- Psyshock
+- Hidden Power
+- Disable
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 35  
+- Giga Drain
+- Extrasensory
+- Reflect
+- Leech Seed
+
+Tauros
+Ability: Intimidate
+Level: 36  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Blastoise @ Sitrus Berry
+Ability: Torrent
+Level: 40  
+- Aqua Tail
+- Flash Cannon
+- Bite
+- Iron Defense
+
+=== TRAINER_RIVAL_SILPH_CHARMANDER ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Normal
+Mugshot: Yellow
+
+Pidgeot
+Ability: No Guard
+Level: 37  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 38  
+- Giga Drain
+- Extrasensory
+- Reflect
+- Leech Seed
+
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 35  
+- Psybeam
+- Psyshock
+- Hidden Power
+- Disable
+
+Cloyster
+Ability: Skill Link
+Level: 35  
+- Whirlpool
+- Aurora Beam
+- Protect
+- Spikes
+
+Tauros
+Ability: Intimidate
+Level: 36  
+- Body Slam
+- Iron Head
+- High Horsepower
+
+Charizard @ Sitrus Berry
+Ability: Blaze
+Level: 40  
+- Temper Flare
+- Air Slash
+- Metal Claw
+- Dragon Breath
+
+=== TRAINER_BLACK_BELT_KOICHI ===
+Name: KOICHI
+Class: Black Belt Frlg
+Pic: Black Belt Frlg
+Gender: Male
+Music: Intense
+Double Battle: Yes
+Difficulty: Normal
+AI: Smart Trainer
+
+Tauros - Blaze
+Ability: Intimidate
+Level: 37  
+- Raging Bull
+- Reversal
+- Lash Out
+
+Tauros - Aqua
+Ability: Intimidate
+Level: 37  
+- Raging Bull
+- Reversal
+- Lash Out
+
+Hitmonlee @ Protective Pads
+Ability: Limber
+Level: 37  
+- Close Combat
+- Knock Off
+
+Hitmonchan @ Punching Glove
+Ability: Iron Fist
+Level: 37  
+- Drain Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Hitmontop @ Protective Pads
+Ability: Technician
+Level: 37  
+- Fake Out
+- Triple Kick
+- Triple Axel
 
 === TRAINER_LEADER_KOGA ===
 Name: KOGA
@@ -16551,7 +16724,6 @@ Mugshot: Purple
 Crobat
 Ability: Inner Focus
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Poison
 - Acrobatics
 - Leech Life
@@ -16560,7 +16732,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Muk - Alola @ Black Sludge
 Ability: Sticky Hold
 Level: 39
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Knock Off
 - Toxic Spikes
@@ -16569,7 +16740,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slowbro - Galar
 Ability: Regenerator
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shell Side-Arm
 - Zen Headbutt
 - Teleport
@@ -16578,7 +16748,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Parasect
 Ability: Dry Skin
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - X-Scissor
 - Giga Drain
 - Rage Powder
@@ -16587,7 +16756,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Venomoth
 Ability: Compound Eyes
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Venoshock
 - Bug Buzz
 - Quiver Dance
@@ -16595,7 +16763,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Weezing
 Ability: Levitate
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Dark Pulse
 - Substitute
@@ -16615,7 +16782,6 @@ Mugshot: Pink
 Espeon
 Ability: Magic Bounce
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Shadow Ball
 - Charm
@@ -16624,7 +16790,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Hypno
 Ability: Inner Focus
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psyshock
 - Disable
 - Nasty Plot
@@ -16633,7 +16798,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Mr. Mime
 Ability: Soundproof
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dazzling Gleam
 - Encore
 - Reflect
@@ -16642,7 +16806,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wigglytuff
 Ability: Competitive
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hyper Voice
 - Present
 - Zen Headbutt
@@ -16651,7 +16814,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Jynx
 Ability: Forewarn
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psychic Noise
 - Icy Wind
@@ -16660,7 +16822,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Alakazam @ Life Orb
 Ability: Magic Guard
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Tri-Attack
 - Calm Mind
@@ -16680,7 +16841,6 @@ Mugshot: Yellow
 Magmortar
 Ability: Flame Body
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heat Wave
 - Thunderbolt
 - Will-O-Wisp
@@ -16688,7 +16848,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Electivire @ Air Balloon
 Ability: Iron Fist
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunder Punch
 - Close Combat
 - Fire Punch
@@ -16697,7 +16856,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Rapidash
 Ability: Flame Body
 Level: 42
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Blazing Torque
 - Double-Edge
 - High Horsepower
@@ -16706,7 +16864,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ninetales
 Ability: Drought
 Level: 41
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Burning Jealousy
 - Extrasensory
 - Solar Beam
@@ -16715,7 +16872,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Porygon2 @ Eviolite
 Ability: Trace
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Techno Blast
 - Ice Beam
 - Solar Beam
@@ -16724,7 +16880,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arcanine @ Sitrus Berry
 Ability: Intimidate
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flare Blitz
 - Wild Charge
 - Snarl
@@ -16743,7 +16898,6 @@ Difficulty: Normal
 Onix
 Ability: Sturdy
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Slide
 - Rock Tomb
 - Sandstorm
@@ -16752,7 +16906,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nidorina @ Black Sludge
 Ability: Poison Point
 Level: 26
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Earth Power
 - Body Slam
@@ -16760,7 +16913,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Golbat
 Ability: Inner Focus
 Level: 27
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Poison Fang
 - Crunch
 - Super Fang
@@ -16769,7 +16921,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nidorino @ Life Orb
 Ability: Poison Point
 Level: 26
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Poison Jab
 - Ice Beam
 - Thunderbolt
@@ -16777,7 +16928,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Rhyhorn
 Ability: Rock Head
 Level: 25
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Stone Edge
 - High Horsepower
 - Body Press
@@ -16785,7 +16935,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Persian @ Focus Sash
 Ability: Technician
 Level: 29
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Pay Day
 - Thief
@@ -16803,7 +16952,6 @@ Difficulty: Normal
 Silver (Steelix) (M)
 Ability: Sturdy
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Tail
 - Sand Tomb
 - Sandstorm
@@ -16812,7 +16960,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nidoqueen @ Black Sludge
 Ability: Sheer Force
 Level: 41
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Earth Power
 - Rock Slide
@@ -16821,7 +16968,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Rhydon
 Ability: Rock Head
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Stone Edge
 - Drill Run
 - Body Press
@@ -16829,7 +16975,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nidorino @ Life Orb
 Ability: Poison Point
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Poison Jab
 - Thunderbolt
 - Ice Beam
@@ -16837,7 +16982,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crobat
 Ability: Inner Focus
 Level: 39
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Poison
 - Crunch
 - Super Fang
@@ -16846,7 +16990,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Persian @ Focus Sash
 Ability: Technician
 Level: 41
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Sucker Punch
 - Pay Day
@@ -16866,7 +17009,6 @@ Difficulty: Normal
 Silver (Steelix) (M)
 Ability: Sturdy
 Level: 48
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heavy Slam
 - Sand Tomb
 - Thunder Fang
@@ -16875,7 +17017,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dugtrio @ Focus Sash
 Ability: Arena Trap
 Level: 42
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dig
 - Sandstorm
 - Substitute
@@ -16884,7 +17025,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kangaskhan @ Safety Goggles
 Ability: Parental Bond
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Sucker Punch
 - Mega Punch
@@ -16893,7 +17033,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nidoking @ Life Orb
 Ability: Sheer Force
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Poison Jab
 - Flamethrower
 - Thunderbolt
@@ -16902,7 +17041,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nidoqueen @ Black Sludge
 Ability: Sheer Force
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Earth Power
 - Rock Slide
@@ -16911,7 +17049,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Rhyperior
 Ability: Solid Rock
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Stone Edge
 - High Horsepower
 - Body Press
@@ -16931,7 +17068,6 @@ Mugshot: Yellow
 Pidgeot
 Ability: No Guard
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Facade
 - Steel Wing
@@ -16940,7 +17076,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Alakazam @ Sticky Barb
 Ability: Magic Guard
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Psyshock
 - Hidden Power
@@ -16949,7 +17084,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tauros
 Ability: Intimidate
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
@@ -16958,7 +17092,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arcanine
 Ability: Intimidate
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
 - Crunch
@@ -16967,7 +17100,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggutor @ Mago Berry
 Ability: Harvest
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
 - Reflect
@@ -16976,7 +17108,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Blastoise @ Sitrus Berry
 Ability: Torrent
 Level: 53
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Flash Cannon
 - Dark Pulse
@@ -16996,7 +17127,6 @@ Mugshot: Yellow
 Pidgeot
 Ability: No Guard
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Facade
 - Steel Wing
@@ -17005,7 +17135,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Alakazam @ Sticky Barb
 Ability: Magic Guard
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Psyshock
 - Hidden Power
@@ -17014,7 +17143,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tauros
 Ability: Intimidate
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
@@ -17023,7 +17151,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cloyster
 Ability: Skill Link
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Clamp
 - Icicle Spear
 - Protect
@@ -17032,7 +17159,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arcanine
 Ability: Intimidate
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
 - Crunch
@@ -17041,7 +17167,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Venusaur @ Sitrus Berry
 Ability: Overgrow
 Level: 53
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Sleep Powder
 - Leech Seed
@@ -17061,7 +17186,6 @@ Mugshot: Yellow
 Pidgeot
 Ability: No Guard
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Facade
 - Steel Wing
@@ -17070,7 +17194,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Alakazam @ Sticky Barb
 Ability: Magic Guard
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Psyshock
 - Hidden Power
@@ -17079,7 +17202,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tauros
 Ability: Intimidate
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
@@ -17088,7 +17210,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggutor @ Mago Berry
 Ability: Harvest
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
 - Reflect
@@ -17097,7 +17218,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cloyster
 Ability: Skill Link
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Clamp
 - Icicle Spear
 - Protect
@@ -17106,7 +17226,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Charizard @ Sitrus Berry
 Ability: Blaze
 Level: 53
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flamethrower
 - Air Slash
 - Dragon Claw
@@ -17126,7 +17245,6 @@ Mugshot: Purple
 Dewgong
 Ability: Slush Rush
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Dive
 - Ice Beam
@@ -17135,7 +17253,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cloyster
 Ability: Overcoat
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Razor Shell
 - Avalanche
 - Spikes
@@ -17144,7 +17261,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ninetales - Alola
 Ability: Snow Warning
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Icy Wind
 - Dazzling Gleam
 - Aurora Veil
@@ -17153,7 +17269,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slowking @ Leftovers
 Ability: Regenerator
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Blizzard
 - Future Sight
 - Yawn
@@ -17162,7 +17277,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Jynx
 Ability: Dry Skin
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psychic
 - Ice Beam
@@ -17171,7 +17285,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Lapras @ Sitrus Berry
 Ability: Water Absorb
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Blizzard
 - Freeze-Dry
 - Sparkling Aria
@@ -17191,7 +17304,6 @@ Mugshot: Green
 Rhyperior
 Ability: Solid Rock
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Drill Run
 - Heavy Slam
 - Hammer Arm
@@ -17200,7 +17312,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Hitmonchan @ Life Orb
 Ability: Iron Fist
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Close Combat
 - Fire Punch
 - Ice Punch
@@ -17209,13 +17320,11 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kleavor
 Ability: Sharpness
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Stone Axe
 
 Poliwrath
 Ability: Water Absorb
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Circle Throw
 - Drain Punch
@@ -17224,7 +17333,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Steelix
 Ability: Sheer Force
 Level: 53
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Tail
 - Earth Power
 - Rock Slide
@@ -17233,7 +17341,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machamp @ Choice Band
 Ability: No Guard
 Level: 58
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dynamic Punch
 
 === TRAINER_ELITE_FOUR_AGATHA ===
@@ -17250,14 +17357,12 @@ Mugshot: Pink
 Gengar
 Ability: Cursed Body
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Explosion
 - Will-O-Wisp
 
 Clefable @ Leftovers
 Ability: Magic Guard
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Moonblast
 - Calm Mind
 - Moonlight
@@ -17266,7 +17371,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marowak @ Thick Club
 Ability: Lightning Rod
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Bone Rush
 - Shadow Bone
 - Brick Break
@@ -17275,7 +17379,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arbok
 Ability: Intimidate
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Poison Tail
 - Breaking Swipe
 - Leech Life
@@ -17284,7 +17387,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Annihilape
 Ability: Defiant
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rage Fist
 - Drain Punch
 - Knock Off
@@ -17293,7 +17395,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Gengar @ Focus Sash
 Ability: Levitate
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Ball
 - Sludge Bomb
 - Dazzling Gleam
@@ -17313,7 +17414,6 @@ Mugshot: Blue
 Gyarados
 Ability: Intimidate
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Outrage
 - Temper Flare
@@ -17322,7 +17422,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dragonite
 Ability: Multiscale
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Tail
 - Wrap
 - Thunder Wave
@@ -17331,7 +17430,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Aerodactyl
 Ability: Unnerve
 Level: 58
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Stone Edge
 - Dual Wingbeat
 - Rock Tomb
@@ -17340,7 +17438,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kingdra @ Scope Lens
 Ability: Swift Swim
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Pulse
 - Snipe Shot
 - Ice Beam
@@ -17349,7 +17446,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggutor - Alola
 Ability: Chlorophyll
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Hammer
 - Wood Hammer
 - Psyshock
@@ -17358,7 +17454,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dragonite @ Yache Berry
 Ability: Inner Focus
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Hurricane
 - Outrage
@@ -17378,7 +17473,6 @@ Mugshot: Yellow
 Pidgeot
 Ability: No Guard
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Facade
 - Steel Wing
@@ -17387,7 +17481,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Alakazam @ Sticky Barb
 Ability: Magic Guard
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Psyshock
 - Hidden Power
@@ -17396,7 +17489,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tauros
 Ability: Intimidate
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
@@ -17405,7 +17497,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arcanine
 Ability: Intimidate
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
 - Crunch
@@ -17414,7 +17505,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggutor @ Mago Berry
 Ability: Harvest
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
 - Reflect
@@ -17423,7 +17513,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Blastoise @ Sitrus Berry
 Ability: Torrent
 Level: 63
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Flash Cannon
 - Dark Pulse
@@ -17443,7 +17532,6 @@ Mugshot: Yellow
 Pidgeot
 Ability: No Guard
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Facade
 - Steel Wing
@@ -17452,7 +17540,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Alakazam @ Sticky Barb
 Ability: Magic Guard
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Psyshock
 - Hidden Power
@@ -17461,7 +17548,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tauros
 Ability: Intimidate
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
@@ -17470,7 +17556,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cloyster
 Ability: Skill Link
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Clamp
 - Icicle Spear
 - Protect
@@ -17479,7 +17564,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Arcanine
 Ability: Intimidate
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
 - Crunch
@@ -17488,7 +17572,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Venusaur @ Sitrus Berry
 Ability: Overgrow
 Level: 63
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Sleep Powder
 - Leech Seed
@@ -17508,7 +17591,6 @@ Mugshot: Yellow
 Pidgeot
 Ability: No Guard
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Facade
 - Steel Wing
@@ -17517,7 +17599,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Alakazam @ Sticky Barb
 Ability: Magic Guard
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Psyshock
 - Hidden Power
@@ -17526,7 +17607,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tauros
 Ability: Intimidate
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
@@ -17535,7 +17615,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Exeggutor @ Mago Berry
 Ability: Harvest
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
 - Reflect
@@ -17544,7 +17623,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cloyster
 Ability: Skill Link
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Clamp
 - Icicle Spear
 - Protect
@@ -17553,7 +17631,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Charizard @ Sitrus Berry
 Ability: Blaze
 Level: 63
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flamethrower
 - Air Slash
 - Dragon Claw
@@ -17583,7 +17660,7 @@ EVs: 64 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Vulpix
 Ability: Flash Fire
-Level: 12
+Level: 13
 EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Quick Attack
@@ -17609,15 +17686,15 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe
 - Rock Polish
 
 Aerodactyl
-Ability: Rock Head
-Level: 11
+Ability: Unnerve
+Level: 12
 EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Ancient Power
 - Bite
 - Steel Wing
 - Wide Guard
 
-Onix @ Oran Berry
+Onix @ Sitrus Berry
 Ability: Sturdy
 Level: 14
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
@@ -17637,11 +17714,12 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeotto
+Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
 Level: 17
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
-- Gust
+- Wing Attack
 - Tackle
 - Mud-Slap
 - Tailwind
@@ -17654,24 +17732,25 @@ EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe
 - Hidden Power
 - Disable
 
-Rattata
+Rattata @ Toxic Orb
 Ability: Guts
-Level: 15
+Level: 16
 EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Bite
 - Super Fang
 - Tail Whip
 
-Exeggcute
+Exeggcute @ Mago Berry
 Ability: Harvest
 Level: 16
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Mega Drain
 - Confusion
+- Sleep Powder
 - Reflect
 
-Wartortle @ Oran Berry
+Wartortle @ Sitrus Berry
 Ability: Torrent
 Level: 18
 EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -17691,11 +17770,12 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeotto
+Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
 Level: 17
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
-- Gust
+- Wing Attack
 - Tackle
 - Mud-Slap
 - Tailwind
@@ -17708,24 +17788,25 @@ EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe
 - Hidden Power
 - Disable
 
-Rattata
+Rattata @ Toxic Orb
 Ability: Guts
-Level: 15
+Level: 16
 EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Bite
 - Super Fang
 - Tail Whip
 
-Growlithe
+Growlithe @ Leftovers
 Ability: Intimidate
 Level: 16
 EVs: 64 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flame Wheel
+- Snarl
 - Bite
 - Howl
 
-Ivysaur @ Oran Berry
+Ivysaur @ Sitrus Berry
 Ability: Torrent
 Level: 18
 EVs: 64 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -17745,11 +17826,12 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeotto
+Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
 Level: 17
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
-- Gust
+- Wing Attack
 - Tackle
 - Mud-Slap
 - Tailwind
@@ -17762,24 +17844,25 @@ EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe
 - Hidden Power
 - Disable
 
-Rattata
+Rattata @ Toxic Orb
 Ability: Guts
-Level: 15
+Level: 16
 EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Bite
 - Super Fang
 - Tail Whip
 
-Shellder
+Shellder @ Rocky Helmet
 Ability: Skill Link
 Level: 16
 EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Whirlpool
 - Aurora Beam
+- Shell Smash
 - Protect
 
-Charmeleon @ Oran Berry
+Charmeleon @ Sitrus Berry
 Ability: Blaze
 Level: 18
 EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -17799,25 +17882,25 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Blue
 
-Staryu
-Ability: Huge Power
-Level: 18
+Staryu @ Oran Berry
+Ability: Analytic
+Level: 19
 EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 0 Spe  
 - Bubble Beam
 - Swift
 - Rapid Spin
 - Recover
 
-Psyduck
+Psyduck @ Mental Herb
 Ability: Swift Swim
-Level: 18
+Level: 19
 EVs: 64 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Confusion
 - Rain Dance
 - Disable
 
-Togepi
+Togepi @ Leftovers
 Ability: Serene Grace
 Level: 19
 EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -17825,7 +17908,7 @@ EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Life Dew
 - Charm
 
-Goldeen
+Goldeen @ Sharp Beak
 Ability: Lightning Rod
 Level: 20
 EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -17834,21 +17917,21 @@ EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Horn Attack
 - Tail Whip
 
-Shellder
+Shellder @ Eviolite
 Ability: Skill Link
-Level: 18
+Level: 20
 EVs: 0 HP / 64 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Clamp
 - Icicle Spear
 - Protect
 
-Starmie
-Ability: Huge Power
+Starmie @ Sitrus Berry
+Ability: Analytic
 Level: 21
 EVs: 0 HP / 0 Atk / 64 Def / 0 SpA / 0 SpD / 64 Spe  
 - Brine
 - Swift
-- Rapid Spin
+- Psybeam
 - Recover
 
 === TRAINER_RIVAL_SS_ANNE_SQUIRTLE ===
@@ -17863,6 +17946,7 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
 Level: 19
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
@@ -17873,12 +17957,12 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe
 
 Raticate @ Flame Orb
 Ability: Guts
-Level: 16
+Level: 18
 EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
+- Hyper Fang
 - Super Fang
 - Bite
-- Leer
 
 Kadabra @ Sticky Barb
 Ability: Magic Guard
@@ -17889,12 +17973,13 @@ EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe
 - Shock Wave
 - Disable
 
-Exeggcute
+Exeggcute @ Eviolite
 Ability: Harvest
 Level: 19
 EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 64 SpD / 0 Spe  
 - Mega Drain
 - Confusion
+- Sleep Powder
 - Reflect
 
 Wartortle @ Sitrus Berry
@@ -17918,6 +18003,7 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
 Level: 19
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
@@ -17937,18 +18023,19 @@ EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe
 
 Raticate @ Flame Orb
 Ability: Guts
-Level: 16
+Level: 18
 EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
+- Hyper Fang
 - Super Fang
 - Bite
-- Leer
 
-Growlithe
+Growlithe @ Eviolite
 Ability: Intimidate
 Level: 19
 EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Flame Wheel
+- Fire Fang
+- Snarl
 - Bite
 - Howl
 
@@ -17956,8 +18043,8 @@ Ivysaur @ Sitrus Berry
 Ability: Overgrow
 Level: 20
 EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Mega Drain
-- Poison Powder
+- Razor Leaf
+- Venoshock
 - Leech Seed
 - Growl
 
@@ -17973,6 +18060,7 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
 Level: 19
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
@@ -17983,12 +18071,12 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe
 
 Raticate @ Flame Orb
 Ability: Guts
-Level: 16
+Level: 18
 EVs: 64 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
+- Hyper Fang
 - Super Fang
 - Bite
-- Leer
 
 Kadabra @ Sticky Barb
 Ability: Magic Guard
@@ -17999,12 +18087,13 @@ EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe
 - Shock Wave
 - Disable
 
-Shellder
+Shellder @ Eviolite
 Ability: Skill Link
 Level: 19
 EVs: 64 HP / 0 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
 - Whirlpool
 - Aurora Beam
+- Shell Smash
 - Protect
 
 Charmeleon @ Sitrus Berry
@@ -18027,44 +18116,44 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Voltorb @ Assault Vest
+Voltorb @ Eviolite
 Ability: Aftermath
-Level: 21
+Level: 22
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
 - Electro Ball
 - Swift
-- Explosion
+- Reflect
 - Thunder Wave
 
 Electabuzz @ Chilan Berry
 Ability: Static
-Level: 21
+Level: 22
 EVs: 128 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunder Punch
 - Brick Break
 - Charge
 - Follow Me
 
-Machoke @ Flame Orb
+Machoke @ Assault Vest
 Ability: Guts
-Level: 21
+Level: 23
 EVs: 0 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Thunder Punch
+- Bullet Punch
 - Low Sweep
+- Thunder Punch
 - Ice Punch
-- Bulk Up
 
-Magnemite @ Weakness Policy
+Magneton @ Weakness Policy
 Ability: Sturdy
-Level: 21
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 0 Spe  
 - Charge Beam
 - Flash Cannon
 - Magnet Rise
 
-Voltorb - Hisui
+Voltorb - Hisui @ Eviolite
 Ability: Aftermath
-Level: 21
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
 - Electro Ball
 - Seed Bomb
@@ -18092,8 +18181,9 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
-Level: 25
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
 - Aerial Ace
 - Facade
@@ -18102,34 +18192,36 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe
 
 Kadabra @ Sticky Barb
 Ability: Magic Guard
-Level: 20
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Psyshock
 - Hidden Power
 - Disable
 
-Arcanine
+Arcanine @ Leftovers
 Ability: Intimidate
-Level: 23
+Level: 24
 EVs: 128 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Flame Wheel
+- Fire Fang
+- Snarl
 - Bite
 - Howl
 
-Exeggutor
+Exeggutor @ Mago Berry
 Ability: Harvest
-Level: 22
+Level: 24
 EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 128 SpD / 0 Spe  
 - Mega Drain
 - Confusion
 - Reflect
+- Sleep Powder
 
 Haunter @ Focus Sash
 Ability: Levitate
-Level: 21
+Level: 24
 EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 0 Spe  
-- Hex
+- Shadow Ball
 - Clear Smog
 - Foul Play
 
@@ -18140,6 +18232,7 @@ EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 64 SpD / 0 Spe
 - Aqua Tail
 - Bite
 - Iron Defense
+- Protect
 
 === TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
 Name: TERRY
@@ -18153,8 +18246,9 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
-Level: 25
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
 - Aerial Ace
 - Facade
@@ -18163,32 +18257,34 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe
 
 Kadabra @ Sticky Barb
 Ability: Magic Guard
-Level: 20
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Psyshock
 - Hidden Power
 - Disable
 
-Cloyster
+Cloyster @ Rocky Helmet
 Ability: Skill Link
-Level: 22
+Level: 24
 EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
-- Whirlpool
+- Clamp
 - Aurora Beam
+- Shell Smash
 - Protect
 
-Arcanine
+Arcanine @ Leftovers
 Ability: Intimidate
-Level: 23
+Level: 24
 EVs: 128 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Flame Wheel
+- Fire Fang
+- Snarl
 - Bite
 - Howl
 
 Haunter @ Focus Sash
 Ability: Levitate
-Level: 21
+Level: 24
 EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 0 Spe  
 - Hex
 - Clear Smog
@@ -18199,9 +18295,9 @@ Ability: Overgrow
 Level: 25
 EVs: 192 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Razor Leaf
-- Sleep Powder
+- Venoshock
 - Leech Seed
-- Growl
+- Sleep Powder
 
 === TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
 Name: TERRY
@@ -18215,8 +18311,9 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeotto @ Soft Sand
+Shiny: Yes
 Ability: Keen Eye
-Level: 25
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
 - Aerial Ace
 - Facade
@@ -18225,34 +18322,36 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe
 
 Kadabra @ Sticky Barb
 Ability: Magic Guard
-Level: 20
+Level: 23
 EVs: 0 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Psyshock
 - Hidden Power
 - Disable
 
-Exeggutor
+Exeggutor @ Mago Berry
 Ability: Harvest
-Level: 23
+Level: 24
 EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 128 SpD / 0 Spe  
 - Mega Drain
 - Confusion
 - Reflect
+- Sleep Powder
 
-Cloyster
+Cloyster @ Rocky Helmet
 Ability: Skill Link
-Level: 22
+Level: 24
 EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 64 SpD / 0 Spe  
-- Whirlpool
+- Clamp
 - Aurora Beam
+- Shell Smash
 - Protect
 
 Haunter @ Focus Sash
 Ability: Levitate
-Level: 21
+Level: 24
 EVs: 64 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 0 Spe  
-- Hex
+- Shadow Ball
 - Clear Smog
 - Foul Play
 
@@ -18264,6 +18363,69 @@ EVs: 0 HP / 128 Atk / 0 Def / 64 SpA / 0 SpD / 0 Spe
 - Metal Claw
 - Dragon Breath
 - Slash
+
+=== TRAINER_BOSS_GIOVANNI ===
+Name: GIOVANNI
+Class: Boss Frlg
+Pic: Leader Giovanni Frlg
+Gender: Male
+Music: Aqua
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+
+Silver (Steelix) @ Custap Berry
+Ability: Sturdy
+Level: 27
+EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Iron Head
+- Sand Tomb
+- Sandstorm
+- Stealth Rock
+
+Nidorina @ Black Sludge
+Ability: Poison Point
+Level: 27
+EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
+- Sludge Bomb
+- Earth Power
+- Body Slam
+- Double Kick
+
+Golbat @ Scope Lens
+Ability: Inner Focus
+Level: 28
+EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
+- Poison Fang
+- Crunch
+- Super Fang
+- Whirlwind
+
+Nidorino @ Life Orb
+Ability: Poison Point
+Level: 28
+EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Poison Jab
+- Ice Beam
+- Thunderbolt
+- Double Kick
+
+Rhyhorn @ Assault Vest
+Ability: Rock Head
+Level: 28
+EVs: 64 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Stone Edge
+- High Horsepower
+- Body Press
+
+Persian @ Focus Sash
+Ability: Technician
+Level: 29
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Fake Out
+- Pay Day
+- Thief
+- Make It Rain
 
 === TRAINER_LEADER_ERIKA ===
 Name: ERIKA
@@ -18278,16 +18440,16 @@ Mugshot: Green
 
 Vileplume @ Sitrus Berry
 Ability: Chlorophyll
-Level: 28
+Level: 27
 EVs: 64 HP / 0 Atk / 0 Def / 0 SpA / 128 SpD / 64 Spe  
-- Mega Drain
+- Giga Drain
 - Acid Spray
 - Pollen Puff
 - Sleep Powder
 
 Bellossom @ Sitrus Berry
 Ability: Chlorophyll
-Level: 28
+Level: 27
 EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 64 Spe  
 - Magical Leaf
 - Moonblast
@@ -18296,25 +18458,25 @@ EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 64 Spe
 
 Tangela @ Sitrus Berry
 Ability: Chlorophyll
-Level: 24
+Level: 28
 EVs: 64 HP / 0 Atk / 192 Def / 0 SpA / 0 SpD / 0 Spe  
 - Grass Knot
 - Knock Off
-- Rage Powder
 - Ancient Power
+- Rage Powder
 
 Sirfetch'd @ Sitrus Berry
-Ability: Defiant
-Level: 27
+Ability: Intrepid Sword
+Level: 28
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - First Impression
 - Aerial Ace
+- Rock Smash
 - Leaf Blade
-- Leer
 
 Exeggutor @ Sitrus Berry
 Ability: Chlorophyll
-Level: 26
+Level: 28
 EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 64 SpD / 64 Spe  
 - Energy Ball
 - Psyshock
@@ -18330,6 +18492,263 @@ EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Weather Ball
 - Swords Dance
 
+=== TRAINER_RIVAL_SILPH_SQUIRTLE ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+Mugshot: Yellow
+
+Pidgeot @ Muscle Band
+Shiny: Yes
+Ability: No Guard
+Level: 38
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
+
+Arcanine @ Leftovers
+Ability: Intimidate
+Level: 38
+EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Extreme Speed
+- Fire Fang
+- Crunch
+- Howl
+
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 39
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
+- Psybeam
+- Psyshock
+- Hidden Power
+- Disable
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 39
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 192 SpD / 0 Spe  
+- Giga Drain
+- Extrasensory
+- Reflect
+- Leech Seed
+
+Tauros @ Adrenaline Orb
+Ability: Intimidate
+Level: 39
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Body Slam
+- Iron Head
+- High Horsepower
+- Wild Charge
+
+Blastoise @ Sitrus Berry
+Ability: Torrent
+Level: 40
+EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
+- Aqua Tail
+- Flash Cannon
+- Bite
+- Iron Defense
+
+=== TRAINER_RIVAL_SILPH_BULBASAUR ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+Mugshot: Yellow
+
+Pidgeot @ Muscle Band
+Shiny: Yes
+Ability: No Guard
+Level: 38
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
+
+Cloyster @ Rocky Helmet
+Ability: Skill Link
+Level: 38
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 64 SpD / 64 Spe  
+- Clamp
+- Ice Beam
+- Shell Smash
+- Protect
+
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 39
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
+- Psybeam
+- Psyshock
+- Hidden Power
+- Disable
+
+Arcanine @ Leftovers
+Ability: Intimidate
+Level: 39
+EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Extreme Speed
+- Fire Fang
+- Crunch
+- Howl
+
+Tauros @ Adrenaline Orb
+Ability: Intimidate
+Level: 39
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Body Slam
+- Iron Head
+- High Horsepower
+- Wild Charge
+
+Venusaur @ Sitrus Berry
+Ability: Overgrow
+Level: 40
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Razor Leaf
+- Sleep Powder
+- Leech Seed
+- Growl
+
+=== TRAINER_RIVAL_SILPH_CHARMANDER ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+Mugshot: Yellow
+
+Pidgeot @ Muscle Band
+Shiny: Yes
+Ability: No Guard
+Level: 38
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Aerial Ace
+- Facade
+- Steel Wing
+- Tailwind
+
+Exeggutor @ Mago Berry
+Ability: Harvest
+Level: 38
+EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 192 SpD / 0 Spe  
+- Giga Drain
+- Extrasensory
+- Reflect
+- Leech Seed
+
+Alakazam @ Sticky Barb
+Ability: Magic Guard
+Level: 39
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
+- Psybeam
+- Psyshock
+- Hidden Power
+- Disable
+
+Cloyster @ Rocky Helmet
+Ability: Skill Link
+Level: 39
+EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 64 SpD / 64 Spe  
+- Clamp
+- Ice Beam
+- Shell Smash
+- Protect
+
+Tauros @ Adrenaline Orb
+Ability: Intimidate
+Level: 39
+EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
+- Body Slam
+- Iron Head
+- High Horsepower
+- Wild Charge
+
+Charizard @ Sitrus Berry
+Ability: Blaze
+Level: 40
+EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
+- Temper Flare
+- Air Slash
+- Metal Claw
+- Dragon Breath
+
+=== TRAINER_BLACK_BELT_KOICHI ===
+Name: KOICHI
+Class: Black Belt Frlg
+Pic: Black Belt Frlg
+Gender: Male
+Music: Intense
+Double Battle: Yes
+Difficulty: Normal
+AI: Smart Trainer
+
+Tauros - Blaze
+Ability: Intimidate
+Level: 37
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Raging Bull
+- Reversal
+- Lash Out
+
+Tauros - Aqua
+Ability: Intimidate
+Level: 37
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Raging Bull
+- Reversal
+- Lash Out
+
+Hitmonlee @ Protective Pads
+Ability: Limber
+Level: 37
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Close Combat
+- Knock Off
+
+Hitmonchan @ Punching Glove
+Ability: Iron Fist
+Level: 37
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Drain Punch
+- Thunder Punch
+- Fire Punch
+- Ice Punch
+
+Hitmontop @ Protective Pads
+Ability: Technician
+Level: 37
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Fake Out
+- Triple Kick
+- Triple Axel
+
+Annihilape @ Protective Pads
+Ability: Defiant
+Level: 37
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Rage Fist
+- Rock Smash
+- Thrash
+- Bulk Up
+
 === TRAINER_LEADER_KOGA ===
 Name: KOGA
 Class: Leader Frlg
@@ -18343,7 +18762,7 @@ Mugshot: Purple
 
 Crobat @ Lum Berry
 Ability: Inner Focus
-Level: 40
+Level: 41
 EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Cross Poison
 - Acrobatics
@@ -18352,7 +18771,7 @@ EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 
 Muk - Alola @ Black Sludge
 Ability: Sticky Hold
-Level: 39
+Level: 41
 EVs: 64 HP / 192 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Knock Off
@@ -18361,7 +18780,7 @@ EVs: 64 HP / 192 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe
 
 Slowbro - Galar @ Quick Claw
 Ability: Regenerator
-Level: 40
+Level: 42
 EVs: 128 HP / 128 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shell Side-Arm
 - Zen Headbutt
@@ -18370,16 +18789,16 @@ EVs: 128 HP / 128 Atk / 64 Def / 0 SpA / 0 SpD / 0 Spe
 
 Parasect @ Focus Sash
 Ability: Dry Skin
-Level: 37
+Level: 42
 EVs: 252 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - X-Scissor
 - Giga Drain
 - Rage Powder
 - Spore
 
-Venomoth @ Bright Powder
+Venomoth @ Wise Glasses
 Ability: Compound Eyes
-Level: 37
+Level: 42
 EVs: 0 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 128 Spe  
 - Venoshock
 - Bug Buzz
@@ -18408,16 +18827,16 @@ Mugshot: Pink
 
 Espeon @ Colbur Berry
 Ability: Magic Bounce
-Level: 40
+Level: 41
 EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 64 SpD / 128 Spe  
 - Psychic
 - Shadow Ball
-- Charm
+- Reflect
 - Wish
 
 Hypno @ Terrain Extender
 Ability: Inner Focus
-Level: 38
+Level: 41
 EVs: 128 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 0 Spe  
 - Psyshock
 - Disable
@@ -18426,7 +18845,7 @@ EVs: 128 HP / 0 Atk / 0 Def / 192 SpA / 0 SpD / 0 Spe
 
 Mr. Mime @ Mental Herb
 Ability: Soundproof
-Level: 37
+Level: 42
 EVs: 192 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 0 Spe  
 - Dazzling Gleam
 - Encore
@@ -18435,7 +18854,7 @@ EVs: 192 HP / 0 Atk / 64 Def / 0 SpA / 64 SpD / 0 Spe
 
 Wigglytuff @ Psychic Seed
 Ability: Competitive
-Level: 38
+Level: 42
 EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 0 Spe  
 - Hyper Voice
 - Present
@@ -18444,7 +18863,7 @@ EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 0 Spe
 
 Jynx @ Focus Sash
 Ability: Forewarn
-Level: 40
+Level: 42
 EVs: 0 HP / 0 Atk / 0 Def / 128 SpA / 128 SpD / 64 Spe  
 - Heart Stamp
 - Psychic Noise
@@ -18471,9 +18890,9 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Magmortar @ Air Balloon
+Magmortar @ Wide Lens
 Ability: Mega Launcher
-Level: 40
+Level: 45
 EVs: 192 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
 - Heat Wave
 - Thunderbolt
@@ -18482,7 +18901,7 @@ EVs: 192 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
 
 Electivire @ Air Balloon
 Ability: Iron Fist
-Level: 40
+Level: 45
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
 - Thunder Punch
 - Close Combat
@@ -18491,7 +18910,7 @@ EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe
 
 Rapidash @ Passho Berry
 Ability: Flame Body
-Level: 42
+Level: 46
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Blazing Torque
 - Double-Edge
@@ -18500,7 +18919,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 
 Ninetales @ Heat Rock
 Ability: Drought
-Level: 41
+Level: 46
 EVs: 64 HP / 128 Atk / 0 Def / 0 SpA / 128 SpD / 128 Spe  
 - Burning Jealousy
 - Extrasensory
@@ -18509,7 +18928,7 @@ EVs: 64 HP / 128 Atk / 0 Def / 0 SpA / 128 SpD / 128 Spe
 
 Porygon2 @ Eviolite
 Ability: Trace
-Level: 45
+Level: 46
 EVs: 252 HP / 0 Atk / 64 Def / 64 SpA / 64 SpD / 0 Spe  
 - Techno Blast
 - Ice Beam
@@ -18525,67 +18944,6 @@ EVs: 128 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
 - Snarl
 - Psychic Fangs
 
-=== TRAINER_BOSS_GIOVANNI ===
-Name: GIOVANNI
-Class: Boss Frlg
-Pic: Leader Giovanni Frlg
-Gender: Male
-Music: Aqua
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-
-Onix (M)
-Ability: Sturdy
-Level: 25
-EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Rock Slide
-- Rock Tomb
-- Sandstorm
-- Stealth Rock
-
-Nidorina @ Black Sludge
-Ability: Poison Point
-Level: 26
-EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
-- Sludge Bomb
-- Earth Power
-- Body Slam
-
-Golbat @ Scope Lens
-Ability: Inner Focus
-Level: 27
-EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
-- Poison Fang
-- Crunch
-- Super Fang
-- Whirlwind
-
-Nidorino @ Life Orb
-Ability: Poison Point
-Level: 26
-EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
-- Poison Jab
-- Ice Beam
-- Thunderbolt
-
-Rhyhorn @ Assault Vest
-Ability: Rock Head
-Level: 25
-EVs: 64 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Stone Edge
-- High Horsepower
-- Body Press
-
-Persian @ Focus Sash
-Ability: Technician
-Level: 29
-EVs: 0 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
-- Fake Out
-- Pay Day
-- Thief
-- Make It Rain
-
 === TRAINER_BOSS_GIOVANNI_2 ===
 Name: GIOVANNI
 Class: Boss Frlg
@@ -18596,9 +18954,9 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Hard
 
-Silver (Steelix) (M)
+Silver (Steelix) @ Custap Berry
 Ability: Sturdy
-Level: 35
+Level: 39
 EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Tail
 - Sand Tomb
@@ -18607,7 +18965,7 @@ EVs: 128 HP / 128 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Nidoqueen @ Black Sludge
 Ability: Sheer Force
-Level: 41
+Level: 39
 EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
 - Sludge Bomb
 - Earth Power
@@ -18616,23 +18974,25 @@ EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe
 
 Rhydon @ Assault Vest
 Ability: Rock Head
-Level: 37
+Level: 40
 EVs: 64 HP / 192 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Stone Edge
 - Drill Run
 - Body Press
+- Heavy Slam
 
-Nidorino @ Life Orb
-Ability: Poison Point
-Level: 37
+Nidoking @ Life Orb
+Ability: Sheer Force
+Level: 40
 EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
 - Poison Jab
 - Thunderbolt
 - Ice Beam
+- Flamethrower
 
 Crobat @ Scope Lens
 Ability: Inner Focus
-Level: 39
+Level: 40
 EVs: 0 HP / 64 Atk / 0 Def / 0 SpA / 0 SpD / 192 Spe  
 - Cross Poison
 - Crunch
@@ -18663,14 +19023,14 @@ Silver (Steelix) (M) @ Steelixite
 Ability: Sturdy
 Level: 48
 EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heavy Slam
+- Iron Tail
 - Sand Tomb
 - Thunder Fang
 - Stealth Rock
 
 Dugtrio @ Focus Sash
 Ability: Arena Trap
-Level: 42
+Level: 48
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Dig
 - Sandstorm
@@ -18679,7 +19039,7 @@ EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 
 Kangaskhan @ Safety Goggles
 Ability: Parental Bond
-Level: 45
+Level: 49
 EVs: 128 HP / 124 Atk / 0 Def / 0 SpA / 128 SpD / 128 Spe  
 - Fake Out
 - Sucker Punch
@@ -18688,7 +19048,7 @@ EVs: 128 HP / 124 Atk / 0 Def / 0 SpA / 128 SpD / 128 Spe
 
 Nidoking @ Life Orb
 Ability: Sheer Force
-Level: 45
+Level: 49
 EVs: 0 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
 - Poison Jab
 - Flamethrower
@@ -18697,7 +19057,7 @@ EVs: 0 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
 
 Nidoqueen @ Black Sludge
 Ability: Sheer Force
-Level: 45
+Level: 49
 EVs: 0 HP / 0 Atk / 252 Def / 0 SpA / 252 SpD / 0 Spe  
 - Sludge Bomb
 - Earth Power
@@ -18725,8 +19085,9 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeot @ Muscle Band
+Shiny: Yes
 Ability: No Guard
-Level: 47
+Level: 51
 EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
 - Hurricane
 - Facade
@@ -18735,7 +19096,7 @@ EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe
 
 Alakazam @ Sticky Barb
 Ability: Magic Guard
-Level: 47
+Level: 51
 EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
 - Psychic
 - Psyshock
@@ -18744,16 +19105,16 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
 
 Tauros @ Adrenaline Orb
 Ability: Intimidate
-Level: 45
+Level: 52
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
 - High Horsepower
 
-Arcanine
+Arcanine @ Leftovers
 Ability: Intimidate
-Level: 50
+Level: 52
 EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
@@ -18762,7 +19123,7 @@ EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Exeggutor @ Mago Berry
 Ability: Harvest
-Level: 50
+Level: 52
 EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 252 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
@@ -18790,8 +19151,9 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeot @ Muscle Band
+Shiny: Yes
 Ability: No Guard
-Level: 47
+Level: 51
 EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
 - Hurricane
 - Facade
@@ -18800,7 +19162,7 @@ EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe
 
 Alakazam @ Sticky Barb
 Ability: Magic Guard
-Level: 47
+Level: 51
 EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
 - Psychic
 - Psyshock
@@ -18809,25 +19171,25 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
 
 Tauros @ Adrenaline Orb
 Ability: Intimidate
-Level: 45
+Level: 52
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Body Slam
 - Giga Impact
 - Iron Head
 - High Horsepower
 
-Cloyster
+Cloyster @ Rocky Helmet
 Ability: Skill Link
-Level: 50
+Level: 52
 EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 192 SpD / 64 Spe  
 - Clamp
 - Icicle Spear
-- Protect
 - Shell Smash
+- Protect
 
-Arcanine
+Arcanine @ Leftovers
 Ability: Intimidate
-Level: 50
+Level: 52
 EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
@@ -18855,8 +19217,9 @@ Difficulty: Hard
 Mugshot: Yellow
 
 Pidgeot @ Muscle Band
+Shiny: Yes
 Ability: No Guard
-Level: 47
+Level: 51
 EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
 - Hurricane
 - Facade
@@ -18865,7 +19228,7 @@ EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe
 
 Alakazam @ Sticky Barb
 Ability: Magic Guard
-Level: 47
+Level: 51
 EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
 - Psychic
 - Psyshock
@@ -18874,7 +19237,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
 
 Tauros @ Adrenaline Orb
 Ability: Intimidate
-Level: 45
+Level: 52
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Body Slam
 - Giga Impact
@@ -18883,21 +19246,21 @@ EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 
 Exeggutor @ Mago Berry
 Ability: Harvest
-Level: 50
+Level: 52
 EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 252 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
 - Reflect
 - Leech Seed
 
-Cloyster
+Cloyster @ Rocky Helmet
 Ability: Skill Link
-Level: 50
+Level: 52
 EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 192 SpD / 64 Spe  
 - Clamp
 - Icicle Spear
-- Protect
 - Shell Smash
+- Protect
 
 Charizard @ Sitrus Berry
 Ability: Blaze
@@ -18930,7 +19293,7 @@ EVs: 252 HP / 0 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe
 
 Cloyster
 Ability: Overcoat
-Level: 54
+Level: 55
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 128 SpD / 128 Spe  
 - Razor Shell
 - Avalanche
@@ -18995,7 +19358,7 @@ EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Hitmonchan @ Life Orb
 Ability: Iron Fist
-Level: 55
+Level: 56
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Close Combat
 - Fire Punch
@@ -19004,13 +19367,13 @@ EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 
 Kleavor @ Choice Scarf
 Ability: Sharpness
-Level: 56
+Level: 57
 EVs: 0 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 128 Spe  
 - Stone Axe
 
 Poliwrath
 Ability: Water Absorb
-Level: 55
+Level: 57
 EVs: 128 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
 - Waterfall
 - Circle Throw
@@ -19019,7 +19382,7 @@ EVs: 128 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe
 
 Steelix
 Ability: Sheer Force
-Level: 53
+Level: 57
 EVs: 0 HP / 252 Atk / 128 Def / 0 SpA / 128 SpD / 0 Spe  
 - Iron Tail
 - Earth Power
@@ -19032,20 +19395,9 @@ Level: 58
 EVs: 128 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dynamic Punch
 
-=== TRAINER_ELITE_FOUR_AGATHA ===
-Name: AGATHA
-Class: Elite Four Frlg
-Pic: Elite Four Agatha Frlg
-Gender: Male
-Music: Elite Four
-Double Battle: Yes
-AI: Smart Trainer
-Difficulty: Hard
-Mugshot: Pink
-
 Gengar @ Focus Sash
 Ability: Cursed Body
-Level: 55
+Level: 57
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Hex
 - Explosion
@@ -19054,7 +19406,7 @@ EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 
 Clefable @ Leftovers
 Ability: Magic Guard
-Level: 55
+Level: 57
 EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe  
 - Moonblast
 - Calm Mind
@@ -19063,7 +19415,7 @@ EVs: 252 HP / 0 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe
 
 Marowak @ Thick Club
 Ability: Lightning Rod
-Level: 54
+Level: 58
 EVs: 0 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 128 Spe  
 - Bone Rush
 - Shadow Bone
@@ -19072,7 +19424,7 @@ EVs: 0 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 128 Spe
 
 Arbok
 Ability: Intimidate
-Level: 57
+Level: 58
 EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 252 SpD / 128 Spe  
 - Poison Tail
 - Breaking Swipe
@@ -19081,14 +19433,14 @@ EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 252 SpD / 128 Spe
 
 Annihilape
 Ability: Defiant
-Level: 54
+Level: 58
 EVs: 252 HP / 128 Atk / 0 Def / 0 SpA / 128 SpD / 0 Spe  
 - Rage Fist
 - Drain Punch
 - Knock Off
 - Bulk Up
 
-Gengar @ Gengarite
+Gengar - Mega @ Gengarite
 Ability: Levitate
 Level: 59
 EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
@@ -19110,7 +19462,7 @@ Mugshot: Blue
 
 Gyarados
 Ability: Intimidate
-Level: 56
+Level: 58
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe  
 - Waterfall
 - Outrage
@@ -19119,7 +19471,7 @@ EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe
 
 Dragonite @ Yache Berry
 Ability: Multiscale
-Level: 54
+Level: 58
 EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Dragon Tail
 - Wrap
@@ -19128,7 +19480,7 @@ EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 
 Aerodactyl
 Ability: Unnerve
-Level: 58
+Level: 59
 EVs: 0 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 128 Spe  
 - Stone Edge
 - Dual Wingbeat
@@ -19137,7 +19489,7 @@ EVs: 0 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 128 Spe
 
 Kingdra @ Scope Lens
 Ability: Swift Swim
-Level: 54
+Level: 59
 EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
 - Dragon Pulse
 - Snipe Shot
@@ -19146,14 +19498,14 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
 
 Exeggutor - Alola
 Ability: Chlorophyll
-Level: 54
+Level: 59
 EVs: 252 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 128 Spe  
 - Dragon Hammer
 - Wood Hammer
 - Psyshock
 - Dragon Cheer
 
-Dragonite @ Dragoninite
+Dragonite - Mega @ Dragonitite
 Ability: Inner Focus
 Level: 60
 EVs: 128 HP / 128 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
@@ -19173,36 +19525,37 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeot @ Scope Lens
-Ability: Swift Swim
-Level: 59
+Pidgeot @ Adrenaline Orb
+Shiny: Yes
+Ability: No Guard
+Level: 61
 EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
-- Dragon Pulse
-- Snipe Shot
-- Ice Beam
-- Rain Dance
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
 Alakazam @ Sticky Barb
-Ability: Chlorophyll
-Level: 57
+Ability: Magic Guard
+Level: 61
 EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
-- Dragon Hammer
+- Psychic
 - Psyshock
-- Hidden Power
+- Focus Blast
 - Disable
 
-Tauros @ Adrenaline Orb
+Tauros @ Muscle Band
 Ability: Intimidate
-Level: 59
+Level: 62
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
-- Extreme Speed
-- Giga Impact
+- Body Slam
 - Iron Head
 - High Horsepower
+- Wild Charge
 
-Arcanine
+Arcanine @ Leftovers
 Ability: Intimidate
-Level: 61
+Level: 62
 EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
@@ -19211,14 +19564,14 @@ EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Exeggutor @ Mago Berry
 Ability: Harvest
-Level: 61
+Level: 62
 EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 252 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
 - Reflect
 - Leech Seed
 
-Blastoise @ Blastoisinite
+Blastoise - Mega @ Sitrus Berry
 Ability: Torrent
 Level: 63
 EVs: 0 HP / 0 Atk / 252 Def / 0 SpA / 252 SpD / 0 Spe  
@@ -19238,59 +19591,60 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeot @ Scope Lens
-Ability: Swift Swim
-Level: 59
+Pidgeot @ Adrenaline Orb
+Shiny: Yes
+Ability: No Guard
+Level: 61
 EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
-- Dragon Pulse
-- Snipe Shot
-- Ice Beam
-- Rain Dance
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
 Alakazam @ Sticky Barb
-Ability: Chlorophyll
-Level: 57
+Ability: Magic Guard
+Level: 61
 EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
-- Dragon Hammer
+- Psychic
 - Psyshock
-- Hidden Power
+- Focus Blast
 - Disable
 
-Tauros @ Adrenaline Orb
+Tauros @ Muscle Band
 Ability: Intimidate
-Level: 59
+Level: 62
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
-- Extreme Speed
-- Giga Impact
+- Body Slam
 - Iron Head
 - High Horsepower
+- Wild Charge
 
-Cloyster
+Cloyster @ Rocky Helmet
 Ability: Skill Link
-Level: 61
+Level: 62
 EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 192 SpD / 64 Spe  
 - Clamp
 - Icicle Spear
-- Protect
 - Shell Smash
+- Protect
 
-Arcanine
+Arcanine @ Leftovers
 Ability: Intimidate
-Level: 61
+Level: 62
 EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Flare Blitz
 - Crunch
 - Howl
 
-Venusaur @ Venusaurite
+Venusaur - Mega @ Sitrus Berry
 Ability: Overgrow
 Level: 63
 EVs: 252 HP / 0 Atk / 128 Def / 64 SpA / 64 SpD / 0 Spe  
 - Giga Drain
+- Sludge Bomb
 - Sleep Powder
 - Leech Seed
-- Growl
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: TERRY
@@ -19303,56 +19657,57 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeot @ Scope Lens
+Pidgeot @ Adrenaline Orb
+Shiny: Yes
 Ability: No Guard
-Level: 54
+Level: 61
 EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
-- Dragon Pulse
-- Snipe Shot
-- Ice Beam
-- Rain Dance
+- Hurricane
+- Facade
+- Steel Wing
+- Tailwind
 
 Alakazam @ Sticky Barb
 Ability: Magic Guard
-Level: 54
+Level: 61
 EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
-- Dragon Hammer
+- Psychic
 - Psyshock
-- Hidden Power
+- Focus Blast
 - Disable
 
-Tauros @ Adrenaline Orb
+Tauros @ Muscle Band
 Ability: Intimidate
-Level: 60
+Level: 62
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
-- Extreme Speed
-- Giga Impact
+- Body Slam
 - Iron Head
 - High Horsepower
+- Wild Charge
 
 Exeggutor @ Mago Berry
 Ability: Harvest
-Level: 61
+Level: 62
 EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 252 SpD / 0 Spe  
 - Giga Drain
 - Extrasensory
 - Reflect
 - Leech Seed
 
-Cloyster
+Cloyster @ Rocky Helmet
 Ability: Skill Link
-Level: 61
+Level: 62
 EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 192 SpD / 64 Spe  
 - Clamp
 - Icicle Spear
-- Protect
 - Shell Smash
+- Protect
 
-Charizard @ Charizardite X
+Charizard - Mega X @ Sitrus Berry
 Ability: Blaze
 Level: 63
 EVs: 0 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
 - Flamethrower
-- Aerial Ace
+- Air Slash
 - Dragon Claw
 - Iron Tail
