@@ -51,7 +51,11 @@
     F(FLASH_CANNON) \
     F(SKILL_SWAP) \
     F(TRICK_ROOM) \
-    F(OVERHEAT) 
+    F(OVERHEAT) \
+    F(GRASSY_TERRAIN) \
+    F(ELECTRIC_TERRAIN) \
+    F(MISTY_TERRAIN) \
+    F(PSYCHIC_TERRAIN) 
 
 #define FOREACH_HM(F) \
     F(CUT) \
