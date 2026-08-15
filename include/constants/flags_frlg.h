@@ -161,7 +161,7 @@
 #define FLAG_UNLOCK_STONE_SHOP              0x0B8
 #define FLAG_HIDE_PEWTER_CITY_SHROOMISH     0x0B9
 #define FLAG_HIDE_PALLET_TOWN_SHROOMISH     0x0BA
-#define FLAG_0x0BB               0x0BB
+#define FLAG_CAUGHT_LITTEN                  0x0BB
 #define FLAG_0x0BC               0x0BC
 #define FLAG_0x0BD               0x0BD
 #define FLAG_0x0BE               0x0BE
