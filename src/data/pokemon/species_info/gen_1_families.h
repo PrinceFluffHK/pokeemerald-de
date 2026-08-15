@@ -11019,7 +11019,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .expYield = 94,
     #endif
         .evYield_Attack = 1,
-        .itemRare = ITEM_LEEK,
+        .itemCommon = ITEM_LEEK,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
