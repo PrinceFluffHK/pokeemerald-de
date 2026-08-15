@@ -1,5 +1,5 @@
 Route2_EventScript_ItemEther::
-	finditem ITEM_IRON
+	finditem ITEM_IRON, 3
 	end
 
 Route2_EventScript_ItemParalyzeHeal::
@@ -71,7 +71,7 @@ SSAnne_2F_Room2_EventScript_ItemStardust::
 	end
 
 SSAnne_2F_Room4_EventScript_ItemXAttack::
-	finditem ITEM_PROTEIN
+	finditem ITEM_PROTEIN, 3
 	end
 
 SSAnne_B1F_Room2_EventScript_ItemTM44::
@@ -79,11 +79,11 @@ SSAnne_B1F_Room2_EventScript_ItemTM44::
 	end
 
 SSAnne_B1F_Room3_EventScript_ItemEther::
-	finditem ITEM_ZINC
+	finditem ITEM_ZINC, 3
 	end
 
 SSAnne_B1F_Room5_EventScript_ItemSuperPotion::
-	finditem ITEM_SUPER_POTION
+	finditem ITEM_MOOMOO_MILK
 	end
 
 SSAnne_Kitchen_EventScript_ItemGreatBall::
@@ -95,7 +95,7 @@ Route9_EventScript_ItemTM40::
 	end
 
 RocketHideout_B1F_EventScript_ItemEscapeRope::
-	finditem ITEM_HP_UP
+	finditem ITEM_HP_UP, 3
 	end
 
 RocketHideout_B1F_EventScript_ItemHyperPotion::
@@ -103,7 +103,7 @@ RocketHideout_B1F_EventScript_ItemHyperPotion::
 	end
 
 RocketHideout_B2F_EventScript_ItemXSpeed::
-	finditem ITEM_CARBOS
+	finditem ITEM_CARBOS, 3
 	end
 
 RocketHideout_B2F_EventScript_ItemMoonStone::
@@ -131,11 +131,11 @@ RocketHideout_B4F_EventScript_ItemTM49::
 	end
 
 RocketHideout_B4F_EventScript_ItemMaxEther::
-	finditem ITEM_PROTEIN
+	finditem ITEM_PROTEIN, 3
 	end
 
 RocketHideout_B4F_EventScript_ItemCalcium::
-	finditem ITEM_CALCIUM
+	finditem ITEM_CALCIUM, 3
 	end
 
 PokemonTower_3F_EventScript_ItemEscapeRope::
@@ -143,7 +143,7 @@ PokemonTower_3F_EventScript_ItemEscapeRope::
 	end
 
 PokemonTower_4F_EventScript_ItemElixir::
-	finditem ITEM_CALCIUM
+	finditem ITEM_CALCIUM, 3
 	end
 
 PokemonTower_4F_EventScript_ItemAwakening::
@@ -171,7 +171,7 @@ Route12_EventScript_ItemTM48::
 	end
 
 Route12_EventScript_ItemIron::
-	finditem ITEM_IRON
+	finditem ITEM_IRON, 3
 	end
 
 Route15_EventScript_ItemTM18::
@@ -199,7 +199,7 @@ SafariZone_East_EventScript_ItemLeafStone::
 	end
 
 SafariZone_North_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_PROTEIN, 3
 	end
 
 SafariZone_North_EventScript_ItemTM47::
@@ -231,7 +231,7 @@ SilphCo_4F_EventScript_ItemMaxRevive::
 	end
 
 SilphCo_4F_EventScript_ItemEscapeRope::
-	finditem ITEM_CALCIUM
+	finditem ITEM_CALCIUM, 3
 	end
 
 SilphCo_4F_EventScript_ItemFullHeal::
@@ -239,7 +239,7 @@ SilphCo_4F_EventScript_ItemFullHeal::
 	end
 
 SilphCo_5F_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_PROTEIN, 3
 	end
 
 SilphCo_5F_EventScript_ItemTM01::
@@ -251,7 +251,7 @@ SilphCo_5F_EventScript_ItemCardKey::
 	end
 
 SilphCo_6F_EventScript_ItemHPUp::
-	finditem ITEM_HP_UP
+	finditem ITEM_HP_UP, 3
 	end
 
 SilphCo_6F_EventScript_ItemXSpecial::
@@ -259,7 +259,7 @@ SilphCo_6F_EventScript_ItemXSpecial::
 	end
 
 SilphCo_7F_EventScript_ItemCalcium::
-	finditem ITEM_CALCIUM
+	finditem ITEM_CALCIUM, 3
 	end
 
 SilphCo_7F_EventScript_ItemTM08::
@@ -267,7 +267,7 @@ SilphCo_7F_EventScript_ItemTM08::
 	end
 
 SilphCo_10F_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+	finditem ITEM_CARBOS, 3
 	end
 
 SilphCo_10F_EventScript_ItemUltraBall::
@@ -279,7 +279,7 @@ SilphCo_10F_EventScript_ItemRareCandy::
 	end
 
 PowerPlant_EventScript_ItemMaxPotion::
-	finditem ITEM_CARBOS
+	finditem ITEM_CARBOS, 3
 	end
 
 PowerPlant_EventScript_ItemTM17::
@@ -299,7 +299,7 @@ PowerPlant_EventScript_ItemElixir::
 	end
 
 PokemonMansion_1F_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+	finditem ITEM_CARBOS, 3
 	end
 
 PokemonMansion_1F_EventScript_ItemEscapeRope::
@@ -307,7 +307,7 @@ PokemonMansion_1F_EventScript_ItemEscapeRope::
 	end
 
 PokemonMansion_2F_EventScript_ItemCalcium::
-	finditem ITEM_CALCIUM
+	finditem ITEM_CALCIUM, 3
 	end
 
 PokemonMansion_3F_EventScript_ItemMaxPotion::
@@ -315,7 +315,7 @@ PokemonMansion_3F_EventScript_ItemMaxPotion::
 	end
 
 PokemonMansion_3F_EventScript_ItemIron::
-	finditem ITEM_IRON
+	finditem ITEM_IRON, 3
 	end
 
 PokemonMansion_B1F_EventScript_ItemTM14::
@@ -407,7 +407,7 @@ TwoIsland_EventScript_ItemRevive::
 	end
 
 ThreeIsland_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_ZINC, 3
 	end
 
 ViridianForest_EventScript_ItemPotion2::
@@ -451,23 +451,23 @@ RockTunnel_B1F_EventScript_ItemMaxEther::
 	end
 
 SilphCo_8F_EventScript_ItemIron::
-	finditem ITEM_IRON
+	finditem ITEM_IRON, 3
 	end
 
 SilphCo_11F_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_ZINC, 3
 	end
 
 PokemonMansion_1F_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_PROTEIN, 3
 	end
 
 PokemonMansion_2F_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_ZINC, 3
 	end
 
 PokemonMansion_2F_EventScript_ItemHPUp::
-	finditem ITEM_HP_UP
+	finditem ITEM_HP_UP, 3
 	end
 
 ViridianCity_EventScript_ItemPotion::
@@ -475,11 +475,11 @@ ViridianCity_EventScript_ItemPotion::
 	end
 
 Route11_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+	finditem ITEM_QUICK_BALL
 	end
 
 Route11_EventScript_ItemAwakening::
-	finditem ITEM_AWAKENING
+	finditem ITEM_FULL_HEAL
 	end
 
 PokemonTower_5F_EventScript_ItemCleanseTag::
@@ -499,7 +499,7 @@ SafariZone_North_EventScript_ItemQuickClaw::
 	end
 
 SeafoamIslands_1F_EventScript_ItemIceHeal::
-	finditem ITEM_ZINC
+	finditem ITEM_ZINC, 3
 	end
 
 SeafoamIslands_B1F_EventScript_ItemWaterStone::
@@ -535,7 +535,7 @@ OneIsland_KindleRoad_EventScript_ItemMaxRepel::
 	end
 
 OneIsland_KindleRoad_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+	finditem ITEM_CARBOS, 3
 	end
 
 FiveIsland_Meadow_EventScript_ItemMaxPotion::
@@ -567,7 +567,7 @@ SixIsland_RuinValley_EventScript_ItemFullRestore::
 	end
 
 SixIsland_RuinValley_EventScript_ItemHPUp::
-	finditem ITEM_HP_UP
+	finditem ITEM_HP_UP, 3
 	end
 
 SixIsland_RuinValley_EventScript_ItemSunStone::
