@@ -233,7 +233,7 @@
       "x": 58,
       "y": 5,
       "elevation": 0,
-      "item": "ITEM_MAX_REPEL",
+      "item": "ITEM_SUPER_REPEL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE11_ESCAPE_ROPE",
       "quantity": 1,
       "underfoot": false

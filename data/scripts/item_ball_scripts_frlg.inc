@@ -223,7 +223,7 @@ SafariZone_West_EventScript_ItemMaxRevive::
 	end
 
 SilphCo_3F_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+	finditem ITEM_ITEM_MAX_REPEL
 	end
 
 SilphCo_4F_EventScript_ItemMaxRevive::
