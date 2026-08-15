@@ -177,7 +177,7 @@
       "x": 10,
       "y": 18,
       "elevation": 0,
-      "item": "ITEM_SHINY_STONE",
+      "item": "ITEM_MIRROR_HERB",
       "flag": "FLAG_HIDDEN_ITEM_SILPH_CO_11F_REVIVE",
       "quantity": 1,
       "underfoot": false

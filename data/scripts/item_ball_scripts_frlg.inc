@@ -19,7 +19,7 @@ ViridianForest_EventScript_ItemPotion::
 	end
 
 MtMoon_1F_EventScript_ItemParalyzeHeal::
-	finditem ITEM_PARALYZE_HEAL
+	finditem ITEM_ROCKY_HELMET
 	end
 
 MtMoon_1F_EventScript_ItemTM09::
@@ -223,7 +223,7 @@ SafariZone_West_EventScript_ItemMaxRevive::
 	end
 
 SilphCo_3F_EventScript_ItemHyperPotion::
-	finditem ITEM_ITEM_MAX_REPEL
+	finditem ITEM_MAX_REPEL
 	end
 
 SilphCo_4F_EventScript_ItemMaxRevive::

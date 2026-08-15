@@ -10046,7 +10046,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Wise Glasses"),
         .pluralName = ITEM_PLURAL_NAME("Wise Glasses"),
     #if I_PRICE >= GEN_9
-        .price = 8000,
+        .price = 1000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10531,7 +10531,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Rocky Helmet"),
     #if I_PRICE >= GEN_9
-        .price = 50000,
+        .price = 2000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10556,7 +10556,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Air Balloon"),
     #if I_PRICE >= GEN_9
-        .price = 15000,
+        .price = 2000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10606,7 +10606,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Ring Target"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10841,7 +10841,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Heavy-Duty Boots"),
         .pluralName = ITEM_PLURAL_NAME("Heavy-Duty Boots"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .price = (I_PRICE >= GEN_9) ? 2000 : 4000,
         .holdEffect = HOLD_EFFECT_HEAVY_DUTY_BOOTS,
         .description = COMPOUND_STRING(
             "Boots that prevent\n"
