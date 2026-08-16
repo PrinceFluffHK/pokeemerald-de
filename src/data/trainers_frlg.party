@@ -16675,14 +16675,14 @@ Double Battle: Yes
 Difficulty: Normal
 AI: Smart Trainer
 
-Tauros - Blaze
+Tauros - Paldea Blaze
 Ability: Intimidate
 Level: 37  
 - Raging Bull
 - Reversal
 - Lash Out
 
-Tauros - Aqua
+Tauros - Paldea Aqua
 Ability: Intimidate
 Level: 37  
 - Raging Bull
@@ -18483,7 +18483,7 @@ EVs: 0 HP / 0 Atk / 128 Def / 0 SpA / 64 SpD / 64 Spe
 - Leech Seed
 - Sunny Day
 
-Victreebel - Mega @ Victreebelite
+Victreebel @ Victreebelite
 Ability: Chlorophyll
 Level: 29
 EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -18697,10 +18697,10 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-Difficulty: Normal
+Difficulty: Hard
 AI: Smart Trainer
 
-Tauros - Blaze
+Tauros - Paldea Blaze
 Ability: Intimidate
 Level: 37
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -18708,7 +18708,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Reversal
 - Lash Out
 
-Tauros - Aqua
+Tauros - Paldea Aqua
 Ability: Intimidate
 Level: 37
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -19440,7 +19440,7 @@ EVs: 252 HP / 128 Atk / 0 Def / 0 SpA / 128 SpD / 0 Spe
 - Knock Off
 - Bulk Up
 
-Gengar - Mega @ Gengarite
+Gengar @ Gengarite
 Ability: Levitate
 Level: 59
 EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
@@ -19505,7 +19505,7 @@ EVs: 252 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 128 Spe
 - Psyshock
 - Dragon Cheer
 
-Dragonite - Mega @ Dragonitite
+Dragonite @ Dragoninite
 Ability: Inner Focus
 Level: 60
 EVs: 128 HP / 128 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
@@ -19525,7 +19525,7 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeot @ Adrenaline Orb
+Pidgeot @ Sitrus Berry
 Shiny: Yes
 Ability: No Guard
 Level: 61
@@ -19544,7 +19544,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
 - Focus Blast
 - Disable
 
-Tauros @ Muscle Band
+Tauros @ Adrenaline Orb
 Ability: Intimidate
 Level: 62
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
@@ -19571,7 +19571,7 @@ EVs: 128 HP / 0 Atk / 0 Def / 128 SpA / 252 SpD / 0 Spe
 - Reflect
 - Leech Seed
 
-Blastoise - Mega @ Sitrus Berry
+Blastoise @ Blastoisinite
 Ability: Torrent
 Level: 63
 EVs: 0 HP / 0 Atk / 252 Def / 0 SpA / 252 SpD / 0 Spe  
@@ -19591,7 +19591,7 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeot @ Adrenaline Orb
+Pidgeot @ Sitrus Berry
 Shiny: Yes
 Ability: No Guard
 Level: 61
@@ -19610,7 +19610,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
 - Focus Blast
 - Disable
 
-Tauros @ Muscle Band
+Tauros @ Adrenaline Orb
 Ability: Intimidate
 Level: 62
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
@@ -19637,7 +19637,7 @@ EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Crunch
 - Howl
 
-Venusaur - Mega @ Sitrus Berry
+Venusaur @ Venusaurite
 Ability: Overgrow
 Level: 63
 EVs: 252 HP / 0 Atk / 128 Def / 64 SpA / 64 SpD / 0 Spe  
@@ -19657,7 +19657,7 @@ AI: Smart Trainer
 Difficulty: Hard
 Mugshot: Yellow
 
-Pidgeot @ Adrenaline Orb
+Pidgeot @ Sitrus Berry
 Shiny: Yes
 Ability: No Guard
 Level: 61
@@ -19676,7 +19676,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
 - Focus Blast
 - Disable
 
-Tauros @ Muscle Band
+Tauros @ Adrenaline Orb
 Ability: Intimidate
 Level: 62
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
@@ -19703,7 +19703,7 @@ EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 192 SpD / 64 Spe
 - Shell Smash
 - Protect
 
-Charizard - Mega X @ Sitrus Berry
+Charizard @ Charizardite X
 Ability: Blaze
 Level: 63
 EVs: 0 HP / 252 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe  
