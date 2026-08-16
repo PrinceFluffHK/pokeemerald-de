@@ -28,7 +28,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SixIsland_PatternBush_EventScript_Bethany",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -42,7 +42,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "SixIsland_PatternBush_EventScript_Allison",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -56,7 +56,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "SixIsland_PatternBush_EventScript_Garret",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -70,7 +70,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "SixIsland_PatternBush_EventScript_Jonah",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -84,7 +84,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "SixIsland_PatternBush_EventScript_Vance",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -98,7 +98,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "SixIsland_PatternBush_EventScript_Nash",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -112,7 +112,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "SixIsland_PatternBush_EventScript_Cordell",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -126,7 +126,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "SixIsland_PatternBush_EventScript_Dalia",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -140,7 +140,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SixIsland_PatternBush_EventScript_Joana",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -154,7 +154,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SixIsland_PatternBush_EventScript_Riley",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -168,7 +168,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "SixIsland_PatternBush_EventScript_Marcy",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -182,7 +182,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SixIsland_PatternBush_EventScript_Layton",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     }
   ],
   "warp_events": [

@@ -54,7 +54,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route24_EventScript_Ethan",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -68,7 +68,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route24_EventScript_Reli",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -82,7 +82,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route24_EventScript_Timmy",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -96,7 +96,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route24_EventScript_Ali",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -110,7 +110,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route24_EventScript_Cale",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -124,7 +124,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route24_EventScript_Shane",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",

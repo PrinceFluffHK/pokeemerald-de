@@ -56,7 +56,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "ViridianForest_EventScript_Rick",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -70,7 +70,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "ViridianForest_EventScript_Doug",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -84,7 +84,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "ViridianForest_EventScript_Sammy",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -140,7 +140,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "ViridianForest_EventScript_Anthony",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -154,7 +154,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "ViridianForest_EventScript_Charlie",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",

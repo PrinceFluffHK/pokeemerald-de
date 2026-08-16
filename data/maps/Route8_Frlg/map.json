@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Route8_EventScript_Julia",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -53,7 +53,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route8_EventScript_Rich",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -67,7 +67,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route8_EventScript_Glenn",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -81,7 +81,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route8_EventScript_Paige",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -95,7 +95,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Route8_EventScript_Leslie",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -109,7 +109,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route8_EventScript_Andrea",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -123,7 +123,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Route8_EventScript_Megan",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -137,7 +137,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route8_EventScript_Stan",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -151,7 +151,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route8_EventScript_Aidan",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -193,7 +193,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route8_EventScript_Eli",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -207,7 +207,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route8_EventScript_Anne",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -221,7 +221,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route8_EventScript_Ricardo",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "type": "object",
@@ -235,7 +235,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route8_EventScript_Jaren",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     }
   ],
   "warp_events": [

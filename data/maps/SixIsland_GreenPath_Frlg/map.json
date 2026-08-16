@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "SixIsland_GreenPath_EventScript_Jaclyn",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     }
   ],
   "warp_events": [

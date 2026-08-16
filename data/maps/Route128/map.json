@@ -47,7 +47,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route128_EventScript_Isaiah",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -60,7 +60,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "7",
       "script": "Route128_EventScript_Katelyn",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "local_id": "LOCALID_ROUTE128_STEVEN",
@@ -115,7 +115,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route128_EventScript_Wayne",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -128,7 +128,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route128_EventScript_Ruben",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
@@ -141,7 +141,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route128_EventScript_Alexa",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -154,7 +154,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route128_EventScript_Carlee",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -167,7 +167,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route128_EventScript_Harrison",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     }
   ],
   "warp_events": [],

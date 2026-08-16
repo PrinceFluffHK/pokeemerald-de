@@ -42,7 +42,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route129_EventScript_Chase",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -55,7 +55,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route129_EventScript_Allison",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
@@ -68,7 +68,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route129_EventScript_Tisha",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -81,7 +81,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route129_EventScript_Reed",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
@@ -94,7 +94,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route129_EventScript_Clarence",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     }
   ],
   "warp_events": [],

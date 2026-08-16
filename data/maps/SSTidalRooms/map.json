@@ -26,7 +26,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSTidalRooms_EventScript_Colton",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SSTidalRooms_EventScript_Micah",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
@@ -52,7 +52,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSTidalRooms_EventScript_Thomas",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
@@ -65,7 +65,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "SSTidalRooms_EventScript_Jed",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_4",
@@ -78,7 +78,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "SSTidalRooms_EventScript_Lea",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
@@ -91,7 +91,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "SSTidalRooms_EventScript_Garret",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
@@ -104,7 +104,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSTidalRooms_EventScript_Naomi",
-      "flag": "FLAG_BOSS_RUSH_MODE"
+      "flag": 0
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
