@@ -21379,6 +21379,7 @@ static const u16 sRelicanthTeachableLearnset[] = {
 #if P_FAMILY_LUVDISC
 static const u16 sLuvdiscTeachableLearnset[] = {
     MOVE_BLIZZARD,
+    MOVE_CHILLING_WATER,
     MOVE_DIVE,
     MOVE_FACADE,
     MOVE_FLIP_TURN,
