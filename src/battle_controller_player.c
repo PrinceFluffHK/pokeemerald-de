@@ -621,7 +621,7 @@ static void CreateSpeedTiersWindow(u32 battler)
         StringCopy(gStringVar1, COMPOUND_STRING("Speed    "));
     }
     else 
-        StringCopy(gStringVar1, COMPOUND_STRING("Turn  "));
+        StringCopy(gStringVar1, COMPOUND_STRING("OPP   "));
 
     bool32 rightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT));
     bool32 leftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT));
@@ -641,7 +641,7 @@ static void CreateSpeedTiersWindow(u32 battler)
         StringAppend(gStringVar1, COMPOUND_STRING("\nTiers   "));
     } 
     else 
-        StringAppend(gStringVar1, COMPOUND_STRING("\nPrvw  "));
+        StringAppend(gStringVar1, COMPOUND_STRING("\nYOU   "));
     
     bool32 pLeftAlive  = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
     bool32 pRightAlive = IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT));
