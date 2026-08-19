@@ -22585,58 +22585,43 @@ Double Battle: Yes
 AI: Smart Trainer
 Difficulty: Normal
 
-Grumpig
-Ability: Magic Bounce
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Heart Stamp
-- Extrasensory
-- Shadow Ball
-- Bounce
-
 Raichu
 Ability: Static
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Volt Switch
 - Iron Tail
 - Endeavor
 - Charm
 
-Mawile @ Mawilite
-Ability: Intimidate
-Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
-- Crunch
-- Play Rough
-- Poison Fang
+Grumpig
+Ability: Magic Bounce
+Level: 32
+- Heart Stamp
+- Psyshock
+- Power Gem
+- Bounce
 
-Wailord @ Chesto Berry
+Wailmer @ Chesto Berry
 Ability: Water Veil
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Hydro Pump
-- Dive
+- Heavy Slam
 - Body Slam
 - Rest
 
 Breloom @ Toxic Orb
 Ability: Poison Heal
-Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Level: 31
 - Force Palm
 - Giga Drain
 - Headbutt
-- Spore
 
-Blaziken @ Sitrus Berry
-Ability: Speed Boost
-Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+Combusken @ Sitrus Berry
+Ability: Blaze
+Level: 33
 - Temper Flare
 - Double Kick
 - Aerial Ace
-- Focus Energy
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
 Name: BRENDAN
@@ -22698,7 +22683,6 @@ Difficulty: Normal
 Raichu
 Ability: Static
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
@@ -22707,7 +22691,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 64 SpA / 0 SpD / 128 Spe
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psyshock
 - Power Gem
@@ -22716,7 +22699,6 @@ EVs: 64 HP / 0 Atk / 0 Def / 128 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Clear Smog
@@ -22724,7 +22706,6 @@ EVs: 128 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 64 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Heavy Slam
 - Body Slam
@@ -22733,7 +22714,6 @@ EVs: 64 HP / 0 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 64 Spe  
 - Giga Drain
 - X-Scissor
 - Aerial Ace
@@ -22812,6 +22792,13 @@ Level: 32
 - Power Gem
 - Bounce
 
+Breloom @ Toxic Orb
+Ability: Poison Heal
+Level: 31
+- Force Palm
+- Giga Drain
+- Headbutt
+
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
@@ -22819,20 +22806,12 @@ Level: 31
 - Power Gem
 - Clear Smog
 
-Wailmer @ Chesto Berry
-Ability: Water Veil
-Level: 31
-- Hydro Pump
-- Heavy Slam
-- Body Slam
-- Rest
-
-Grovyle @ Sitrus Berry
-Ability: Overgrow
+Marshtomp @ Sitrus Berry
+Ability: Torrent
 Level: 33
-- Giga Drain
-- X-Scissor
-- Aerial Ace
+- Water Pulse
+- Mud Shot
+- Body Press
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
