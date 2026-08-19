@@ -2036,7 +2036,7 @@ const struct ItemInfo gItemsInfo[] =
             "Raises the level of\n"
             "a Pokémon by one.\n"
             "Never consumed."),
-        .pocket = POCKET_KEY_ITEMS,
+        .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
