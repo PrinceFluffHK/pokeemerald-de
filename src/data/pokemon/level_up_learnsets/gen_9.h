@@ -2030,6 +2030,7 @@ static const struct LevelUpMove sPerrserkerLevelUpLearnset[] = {
 static const struct LevelUpMove sPsyduckLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
+    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE( 3, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 6, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 9, MOVE_FURY_SWIPES),
@@ -2047,15 +2048,19 @@ static const struct LevelUpMove sPsyduckLevelUpLearnset[] = {
     LEVEL_UP_MOVE(30, MOVE_PSYCH_UP),
     // >>> Evo Lv33
     //Norman Lv31
-    LEVEL_UP_MOVE(34, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(34, MOVE_MUDDY_WATER),
     //Winona Lv35
-    LEVEL_UP_MOVE(39, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE(39, MOVE_AMNESIA),
     LEVEL_UP_MOVE(43, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sGolduckLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE( 1, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE( 1, MOVE_SIMPLE_BEAM),
+    LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -2074,12 +2079,13 @@ static const struct LevelUpMove sGolduckLevelUpLearnset[] = {
     //Flannery Lv29
     LEVEL_UP_MOVE(30, MOVE_PSYCH_UP),
     // >>> Evo Lv33
-    //Winona Lv35
     //Norman Lv31
-    LEVEL_UP_MOVE(36, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(40, MOVE_HYDRO_PUMP),
+    //Winona Lv35
+    LEVEL_UP_MOVE(36, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(40, MOVE_AMNESIA),
     //T&L
-    LEVEL_UP_MOVE(45, MOVE_WONDER_ROOM),
+    LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(50, MOVE_FUTURE_SIGHT),
     //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
