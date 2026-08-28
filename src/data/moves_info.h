@@ -5721,7 +5721,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #endif
         .effect = EFFECT_FURY_CUTTER,
         .type = TYPE_BUG,
-        .accuracy = 95,
+        .accuracy = 100, //95,
         .pp = 20,
         .target = TARGET_SELECTED,
         .priority = 0,

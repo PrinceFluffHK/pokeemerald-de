@@ -10642,6 +10642,7 @@ static void ComputeBallData(u32 wildMonBattler, u32 playerBattler, struct BallDa
         ball->multiplier = 150;
         break;
     case BALL_ULTRA:
+    case BALL_PREMIER:
         ball->multiplier = 200;
         break;
     case BALL_MASTER:
