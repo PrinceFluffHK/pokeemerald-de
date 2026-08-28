@@ -12644,8 +12644,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM33"),
         .price = 5000, //7500,
         .description = COMPOUND_STRING(
-            "Wall of light\n"
-            "cuts physical damage\n"
+            "Wall of light cuts\n"
+            "physical damage\n"
             "for 5 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
