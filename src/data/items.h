@@ -467,7 +467,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_FRIEND_BALL] =
     {
         .name = ITEM_NAME("Friend Ball"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 300,
+        .price = 300, //(I_PRICE >= GEN_7) ? 1000 : 300,
         .description = COMPOUND_STRING(
             "A Ball that makes\n"
             "a Pokémon friendly\n"
@@ -483,7 +483,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LOVE_BALL] =
     {
         .name = ITEM_NAME("Love Ball"),
-        .price = (I_PRICE >= GEN_7) ? 1000 : 300,
+        .price = 500, //(I_PRICE >= GEN_7) ? 1000 : 300,
         .description = COMPOUND_STRING(
             "Works well on\n"
             "Pokémon of the\n"
@@ -531,7 +531,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_DREAM_BALL] =
     {
         .name = ITEM_NAME("Dream Ball"),
-        .price = 1000,
+        .price = 500,
         .description = COMPOUND_STRING(
         #if B_DREAM_BALL_MODIFIER >= GEN_8
             "A Ball that works\n"
@@ -615,7 +615,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_CHERISH_BALL] =
     {
         .name = ITEM_NAME("Cherish Ball"),
-        .price = 3000,
+        .price = 300,
         .description = COMPOUND_STRING(
             "A rare Ball made\n"
             "in commemoration\n"
@@ -9655,7 +9655,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("White Herb"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 2000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9756,7 +9756,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Mental Herb"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 2000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9786,7 +9786,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("King's Rock"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 4000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 5000,
     #else
@@ -9809,7 +9809,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Amulet Coin"),
     #if I_PRICE >= GEN_9
-        .price = 30000,
+        .price = 3000, //30000,
     #elif I_PRICE >= GEN_7
         .price = 10000,
     #else
@@ -9829,7 +9829,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_CLEANSE_TAG] =
     {
         .name = ITEM_NAME("Cleanse Tag"),
-        .price = (I_PRICE >= GEN_7) ? 5000 : 200,
+        .price = 1000, //1(I_PRICE >= GEN_7) ? 5000 : 200,
         .holdEffect = HOLD_EFFECT_REPEL,
         .description = sPureIncenseDesc,
         .pocket = POCKET_ITEMS,
@@ -9845,7 +9845,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Smoke Ball"),
     #if I_PRICE >= GEN_9
-        .price = 15000,
+        .price = 1000, //15000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9869,7 +9869,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Focus Band"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9893,7 +9893,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_LUCKY_EGG] =
     {
         .name = ITEM_NAME("Lucky Egg"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 200,
+        .price = 5000, //(I_PRICE >= GEN_7) ? 10000 : 200,
         .holdEffect = HOLD_EFFECT_LUCKY_EGG,
         .description = COMPOUND_STRING(
             "A hold item that\n"
@@ -9913,7 +9913,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Scope Lens"),
         .pluralName = ITEM_PLURAL_NAME("Scope Lenses"),
     #if I_PRICE >= GEN_9
-        .price = 4000,
+        .price = 1000, //4000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9938,7 +9938,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Leftovers"),
         .pluralName = ITEM_PLURAL_NAME("Leftovers"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 3000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9963,7 +9963,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Shell Bell"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 1000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -9989,7 +9989,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Wide Lens"),
         .pluralName = ITEM_PLURAL_NAME("Wide Lenses"),
     #if I_PRICE >= GEN_9
-        .price = 4000,
+        .price = 1000, //4000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10014,7 +10014,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Muscle Band"),
     #if I_PRICE >= GEN_9
-        .price = 8000,
+        .price = 1000, //8000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10040,7 +10040,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Wise Glasses"),
         .pluralName = ITEM_PLURAL_NAME("Wise Glasses"),
     #if I_PRICE >= GEN_9
-        .price = 8000,
+        .price = 1000, //8000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10065,7 +10065,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Expert Belt"),
     #if I_PRICE >= GEN_9
-        .price = 30000,
+        .price = 2000, //30000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10090,7 +10090,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Light Clay"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 3000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10114,7 +10114,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Life Orb"),
     #if I_PRICE >= GEN_9
-        .price = 50000,
+        .price = 5000, //50000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10138,7 +10138,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Power Herb"),
     #if I_PRICE >= GEN_9
-        .price = 30000,
+        .price = 3000, //30000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10163,7 +10163,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Focus Sash"),
         .pluralName = ITEM_PLURAL_NAME("Focus Sashes"),
     #if I_PRICE >= GEN_9
-        .price = 50000,
+        .price = 5000, //50000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10188,7 +10188,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Zoom Lens"),
         .pluralName = ITEM_PLURAL_NAME("Zoom Lenses"),
     #if I_PRICE >= GEN_9
-        .price = 4000,
+        .price = 1000, //4000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10213,7 +10213,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Metronome"),
     #if I_PRICE >= GEN_9
-        .price = 15000,
+        .price = 1000, //15000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10238,7 +10238,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Iron Ball"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 1000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10262,7 +10262,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Lagging Tail"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 1000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10283,7 +10283,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Destiny Knot"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 2000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10307,7 +10307,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Black Sludge"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10331,7 +10331,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Grip Claw"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10355,7 +10355,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Sticky Barb"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10379,7 +10379,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Shed Shell"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 1000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10403,7 +10403,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Big Root"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10428,7 +10428,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Razor Claw"),
     #if I_PRICE >= GEN_9
-        .price = 9800,
+        .price = 2000, //9800,
     #elif I_PRICE >= GEN_7
         .price = 5000,
     #else
@@ -10453,7 +10453,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Razor Fang"),
     #if I_PRICE >= GEN_9
-        .price = 9800,
+        .price = 2000, //9800,
     #elif I_PRICE >= GEN_7
         .price = 5000,
     #else
@@ -10476,7 +10476,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Eviolite"),
     #if I_PRICE >= GEN_9
-        .price = 50000,
+        .price = 5000, //50000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10501,7 +10501,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Float Stone"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10525,7 +10525,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Rocky Helmet"),
     #if I_PRICE >= GEN_9
-        .price = 50000,
+        .price = 3000, //50000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10550,7 +10550,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Air Balloon"),
     #if I_PRICE >= GEN_9
-        .price = 15000,
+        .price = 3000, //15000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10575,7 +10575,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Red Card"),
     #if I_PRICE >= GEN_9
-        .price = 3000,
+        .price = 2000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10600,7 +10600,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Ring Target"),
     #if I_PRICE >= GEN_9
-        .price = 10000,
+        .price = 1000, //10000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10625,7 +10625,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Binding Band"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 1000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10649,7 +10649,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Eject Button"),
     #if I_PRICE >= GEN_9
-        .price = 30000,
+        .price = 3000, //30000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10674,7 +10674,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Weakness Policy"),
         .pluralName = ITEM_PLURAL_NAME("Weakness Policies"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : 1000,
+        .price = 5000, //(I_PRICE >= GEN_9) ? 50000 : 1000,
         .holdEffect = HOLD_EFFECT_WEAKNESS_POLICY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -10693,7 +10693,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ASSAULT_VEST] =
     {
         .name = ITEM_NAME("Assault Vest"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : 1000,
+        .price = 5000, //(I_PRICE >= GEN_9) ? 50000 : 1000,
         .holdEffect = HOLD_EFFECT_ASSAULT_VEST,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
@@ -10714,7 +10714,7 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Safety Goggles"),
         .pluralName = ITEM_PLURAL_NAME("Safety Goggles"),
     #if I_PRICE >= GEN_9
-        .price = 20000,
+        .price = 2000, //20000,
     #elif I_PRICE >= GEN_7
         .price = 4000,
     #else
@@ -10738,7 +10738,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Adrenaline Orb"),
     #if I_PRICE >= GEN_9
-        .price = 5000,
+        .price = 1000, //5000,
     #elif I_PRICE == GEN_8
         .price = 4000,
     #else
@@ -10761,7 +10761,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TERRAIN_EXTENDER] =
     {
         .name = ITEM_NAME("Terrain Extender"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : 4000,
+        .price = 1000, //(I_PRICE >= GEN_9) ? 15000 : 4000,
         .holdEffect = HOLD_EFFECT_TERRAIN_EXTENDER,
         .description = COMPOUND_STRING(
             "Extends the length\n"
@@ -10780,7 +10780,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Protective Pads"),
         .pluralName = ITEM_PLURAL_NAME("Protective Pads"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : 4000,
+        .price = 1000, //(I_PRICE >= GEN_9) ? 15000 : 4000,
         .holdEffect = HOLD_EFFECT_PROTECTIVE_PADS,
         .description = COMPOUND_STRING(
             "Guard the holder\n"
@@ -10798,7 +10798,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_THROAT_SPRAY] =
     {
         .name = ITEM_NAME("Throat Spray"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .price = 2000, //(I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_THROAT_SPRAY,
         .description = COMPOUND_STRING(
             "Raises Sp. Atk. if\n"
@@ -10816,7 +10816,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_EJECT_PACK] =
     {
         .name = ITEM_NAME("Eject Pack"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : 4000,
+        .price = 2000, //(I_PRICE >= GEN_9) ? 30000 : 4000,
         .holdEffect = HOLD_EFFECT_EJECT_PACK,
         .description = COMPOUND_STRING(
             "Forces the user to\n"
@@ -10835,7 +10835,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Heavy-Duty Boots"),
         .pluralName = ITEM_PLURAL_NAME("Heavy-Duty Boots"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .price = 2000, //(I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_HEAVY_DUTY_BOOTS,
         .description = COMPOUND_STRING(
             "Boots that prevent\n"
@@ -10854,7 +10854,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Blunder Policy"),
         .pluralName = ITEM_PLURAL_NAME("Blunder Policies"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : 4000,
+        .price = 2000, //(I_PRICE >= GEN_9) ? 30000 : 4000,
         .holdEffect = HOLD_EFFECT_BLUNDER_POLICY,
         .description = COMPOUND_STRING(
             "Raises Speed if\n"
@@ -10872,7 +10872,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_ROOM_SERVICE] =
     {
         .name = ITEM_NAME("Room Service"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
+        .price = 1000, //(I_PRICE >= GEN_9) ? 20000 : 4000,
         .holdEffect = HOLD_EFFECT_ROOM_SERVICE,
         .description = COMPOUND_STRING(
             "Lowers Speed if\n"
@@ -10890,7 +10890,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_UTILITY_UMBRELLA] =
     {
         .name = ITEM_NAME("Utility Umbrella"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : 4000,
+        .price = 2000, //(I_PRICE >= GEN_9) ? 15000 : 4000,
         .holdEffect = HOLD_EFFECT_UTILITY_UMBRELLA,
         .description = COMPOUND_STRING(
             "An umbrella that\n"
@@ -15007,7 +15007,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_MIRROR_HERB] =
     {
         .name = ITEM_NAME("Mirror Herb"),
-        .price = 30000,
+        .price = 2000,
         .holdEffect = HOLD_EFFECT_MIRROR_HERB,
         .description = COMPOUND_STRING(
             "Mirrors an enemy's\n"
