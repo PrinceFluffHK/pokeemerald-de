@@ -2,7 +2,7 @@
 #define GUARD_CONSTANTS_TMS_HMS_H
 
 #define FOREACH_TM(F) \
-    F(EXPLOSION) \
+    F(WORK_UP) \
     F(DRAGON_CLAW) \
     F(FIRE_PUNCH) \
     F(CALM_MIND) \
@@ -11,7 +11,7 @@
     F(SNOWSCAPE) \
     F(BULK_UP) \
     F(BULLET_SEED) \
-    F(HIDDEN_POWER) \
+    F(EXPLOSION) \
     F(SUNNY_DAY) \
     F(TAUNT) \
     F(ICE_BEAM) \
@@ -58,7 +58,7 @@
     F(BREAKING_SWIPE) \
     F(METEOR_BEAM) \
     F(SCORCHING_SANDS) \
-    F(ELECTROWEB) \
+    F(POWER_GEM) \
     F(SUPERCELL_SLAM) \
     F(BUG_BUZZ) \
     F(SCALE_SHOT) \

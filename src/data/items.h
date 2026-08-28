@@ -12168,14 +12168,14 @@ const struct ItemInfo gItemsInfo[] =
 
 // TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
-    [ITEM_TM_EXPLOSION] =
+    [ITEM_TM_WORK_UP]
     {
         .name = ITEM_NAME("TM01"),
-        .price = 10000,
+        .price = 3000,
         .description = COMPOUND_STRING(
-            "Inflicts severe\n"
-            "damage but makes\n"
-            "the user faint."),
+            "The user is roused.\n"
+            "Ups Attack and\n"
+            "Sp. Attack."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12300,14 +12300,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_HIDDEN_POWER] =
+    [ITEM_TM_EXPLOSION] =
     {
         .name = ITEM_NAME("TM10"),
-        .price = 5000,
+        .price = 10000,
         .description = COMPOUND_STRING(
-            "The attack power\n"
-            "varies among\n"
-            "different Pokémon."),
+            "Inflicts severe\n"
+            "damage but makes\n"
+            "the user faint."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -12968,14 +12968,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_ELECTROWEB] =
+    [ITEM_TM_POWER_GEM] =
     {
         .name = ITEM_NAME("TM57"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Ensnares the foes\n" 
-            "in a charged net.\n"
-            "Lowers Speed."),
+            "Attacks with rays\n" 
+            "of light that sparkle\n"
+            "like diamonds."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

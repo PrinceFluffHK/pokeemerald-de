@@ -6,7 +6,7 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	goto_if_set FLAG_RECEIVED_HM_WATERFALL, LilycoveCity_DepartmentStore
+	goto_if_set FLAG_RECEIVED_HM_WATERFALL, LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeftExpanded
 	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_EvoItemsBasic
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
