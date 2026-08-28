@@ -6,27 +6,10 @@ MauvilleCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart MauvilleCity_Mart_Pokemart
+	pokemartstandard
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
-
-	.align 2
-MauvilleCity_Mart_Pokemart:
-	.2byte ITEM_POKE_BALL
-	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_POTION
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_SERIOUS_MINT
-	.2byte ITEM_FRESH_START_MOCHI
-	.2byte ITEM_ABILITY_CAPSULE
-	.2byte ITEM_REPEL
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ICE_HEAL
-	pokemartlistend
 
 MauvilleCity_Mart_EventScript_Clerk_2::
 	lock
@@ -40,9 +23,10 @@ MauvilleCity_Mart_EventScript_Clerk_2::
 
 	.align 2
 MauvilleCity_Mart_Pokemart_Secondary:
-	.2byte ITEM_ZOOM_LENS
-	.2byte ITEM_SCOPE_LENS
-	.2byte ITEM_WIDE_LENS
+	.2byte ITEM_TM_ELECTRIC_TERRAIN
+	.2byte ITEM_TM_GRASSY_TERRAIN
+	.2byte ITEM_TM_MISTY_TERRAIN
+	.2byte ITEM_TM_PSYCHIC_TERRAIN
 	pokemartlistend
 
 MauvilleCity_Mart_EventScript_ExpertM::
