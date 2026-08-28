@@ -75,7 +75,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route123_EventScript_Wendy",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
@@ -88,7 +88,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route123_EventScript_Braxton",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -216,7 +216,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_CALCIUM",
+      "trainer_sight_or_berry_tree_id": "ITEM_LIGHT_CLAY",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_CALCIUM"
     },
@@ -270,7 +270,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route123_EventScript_Violet",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
@@ -283,7 +283,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route123_EventScript_Yuki",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TWIN",
@@ -296,7 +296,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route123_EventScript_Miu",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
@@ -309,7 +309,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "7",
       "script": "Route123_EventScript_Cameron",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
@@ -322,7 +322,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route123_EventScript_Jacki",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
@@ -335,7 +335,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route123_EventScript_Kindra",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -346,7 +346,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_ULTRA_BALL",
+      "trainer_sight_or_berry_tree_id": "ITEM_POWER_HERB",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_ULTRA_BALL"
     },
@@ -374,7 +374,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route123_EventScript_Jonas",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
@@ -387,7 +387,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route123_EventScript_Kayley",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
@@ -400,7 +400,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route123_EventScript_Ed",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
@@ -413,7 +413,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route123_EventScript_Fernando",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
@@ -426,7 +426,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route123_EventScript_Alberto",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
@@ -439,10 +439,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route123_EventScript_Frederick",
-      "flag": 0
+      "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_TM",
       "x": 43,
       "y": 15,
       "elevation": 3,
@@ -450,7 +450,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_LIGHT_CLAY",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_ICE_PUNCH",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_PP_UP"
     },
@@ -465,7 +465,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route123_EventScript_Jazmyn",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
@@ -478,7 +478,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route123_EventScript_Davis",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -489,7 +489,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_PROTEIN",
+      "trainer_sight_or_berry_tree_id": "ITEM_CALCIUM",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_REVIVAL_HERB"
     }
@@ -695,7 +695,7 @@
       "x": 75,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_MAX_REPEL",
+      "item": "ITEM_PROTEIN",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL"
     },
     {

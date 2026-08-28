@@ -3,7 +3,6 @@
   "name": "MagmaHideout_4F",
   "layout": "LAYOUT_MAGMA_HIDEOUT_4F",
   "music": "MUS_AQUA_MAGMA_HIDEOUT",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MAGMA_HIDEOUT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -122,7 +121,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MAX_REVIVE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SACRED_ASH",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_MAGMA_HIDEOUT_4F_MAX_REVIVE"
     }
@@ -144,5 +143,6 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

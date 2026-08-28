@@ -3,7 +3,6 @@
   "name": "Route117",
   "layout": "LAYOUT_ROUTE117",
   "music": "MUS_ROUTE110",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_117",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -129,7 +128,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route117_EventScript_Dylan",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
@@ -142,7 +141,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route117_EventScript_Lydia",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
@@ -155,7 +154,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route117_EventScript_Isaac",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
@@ -171,7 +170,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_TM",
       "x": 16,
       "y": 18,
       "elevation": 3,
@@ -179,7 +178,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_MIRROR_HERB",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_SAFEGUARD",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_117_GREAT_BALL"
     },
@@ -220,7 +219,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route117_EventScript_Maria",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MANIAC",
@@ -233,7 +232,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route117_EventScript_Derek",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
@@ -246,7 +245,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route117_EventScript_Meg",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
@@ -259,7 +258,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route117_EventScript_Anna",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
@@ -285,7 +284,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route117_EventScript_Brandi",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
@@ -298,7 +297,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route117_EventScript_Aisha",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F",
@@ -311,7 +310,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route117_EventScript_Melina",
-      "flag": 0
+      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
@@ -383,5 +382,6 @@
       "item": "ITEM_ZINC",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_117_REPEL"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }
