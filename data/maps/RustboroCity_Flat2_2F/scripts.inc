@@ -10,7 +10,7 @@ RustboroCity_Flat2_2F_EventScript_NinjaBoy::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_PREMIER_BALL_RUSTBORO, RustboroCity_Flat2_2F_EventScript_GavePremierBall
 	msgbox RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt, MSGBOX_DEFAULT
-	giveitem ITEM_LUXURY_BALL
+	giveitem ITEM_LUXURY_BALL, 5
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_PREMIER_BALL_RUSTBORO
 	release
@@ -27,8 +27,8 @@ RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays:
 
 RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
 	.string "My daddy's working at the CORPORATION.\p"
-	.string "My daddy made this!\n"
-	.string "But I can't use it, so you can have it.$"
+	.string "My daddy made these!\n"
+	.string "I can't use them, so you can have them.$"
 
 RustboroCity_Flat2_2F_Text_GoingToWorkAtDevonToo:
 	.string "My daddy's working at the CORPORATION.\p"

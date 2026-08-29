@@ -161,14 +161,9 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 
 RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
 	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT
-@	giveitem ITEM_LUCKY_EGG
-@	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	playfanfare MUS_OBTAIN_ITEM
-	message RustboroCity_DevonCorp_3F_Text_GotDexNav
-	waitfanfare
-	setflag FLAG_RECEIVED_EXP_SHARE
-	setflag FLAG_DN_DEXNAV_GET
-	msgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT
+	giveitem ITEM_SHINY_CHARM
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	msgbox RustboroCity_DevonCorp_3F_Text_ExplainShinyCharm, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -250,17 +245,15 @@ RustboroCity_DevonCorp_3F_Text_CountingOnYou:
 RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 	.string "MR. STONE: You delivered my LETTER?\n"
 	.string "Thank you kindly!\p"
-	.string "This is my way of thanking you.\n"
-	.string "It should help you, a TRAINER.$"
+	.string "And this is my way of thanking you\n"
+	.string "beyond just words.$"
 
-RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
-	.string "MR. STONE: The DEXNAV will let you\n"
-	.string "survey your surroundings for\l"
-	.string "rare and interesting POKéMON.\p"
-@	.string "It will get EXP Points even if it didn't\n"
-@	.string "actually battle.\p"
-	.string "I would say a DEXNAV is quite\n"
-	.string "useful for filling a POKEDEX!$"
+RustboroCity_DevonCorp_3F_Text_ExplainShinyCharm:
+	.string "MR. STONE: The SHINY CHARM will make\n"
+	.string "you roughly four-times as likely to\l"
+	.string "find a rare, off-color POKéMON.\p"
+	.string "They aren't more powerful or anything,\n"
+	.string "but finding one is good fun!$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "MR. STONE: Since my youth, I've immersed\n"

@@ -45,7 +45,6 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_HeldItems:
-	.2byte ITEM_THROAT_SPRAY		@2000
 	.2byte ITEM_RAZOR_FANG			@2000
 	.2byte ITEM_RAZOR_CLAW			@2000
 	.2byte ITEM_UTILITY_UMBRELLA	@2000
