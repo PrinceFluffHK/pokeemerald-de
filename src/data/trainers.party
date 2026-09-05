@@ -19438,9 +19438,10 @@ Mugshot: Pink
 AI: Smart Trainer
 Difficulty: Easy
 
-Geodude
+"Geodude
 Ability: Rock Head
 Level: 12
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Throw
 - Mud-Slap
 - Tackle
@@ -19449,17 +19450,19 @@ Level: 12
 Aron
 Ability: Sturdy
 Level: 12
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Metal Claw
 - Stealth Rock
 - Harden
 - Roar
 
-Nosepass
+Nosepass @ Oran Berry
 Ability: Sturdy
 Level: 14
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Tomb
 - Spark
-- Harden
+- Harden"
 
 === TRAINER_BRENDAN_RUSTBORO_TREECKO ===
 Name: BRENDAN
@@ -21500,7 +21503,7 @@ Level: 63
 - Meteor Mash
 - Zen Headbutt
 
-/* START EXPERT MODE BOSSES */
+/* START CHALLENGE MODE BOSSES */
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -24093,7 +24096,7 @@ Level: 63
 - Psychic Fangs
 - Hammer Arm
 
-/* START CHAMPION MODE BOSSES */
+/* START MASTER MODE BOSSES */
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
