@@ -27,7 +27,7 @@ LavaridgeTown_HerbShop_EventScript_OldMan::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_CHARCOAL, LavaridgeTown_HerbShop_EventScript_ExplainCharcoal
 	msgbox LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine, MSGBOX_DEFAULT
-	giveitem ITEM_CHARCOAL
+	giveitem ITEM_FLAME_ORB
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_CHARCOAL
 	release
@@ -49,12 +49,12 @@ LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine:
 	.string "I like you! Take this!$"
 
 LavaridgeTown_HerbShop_Text_ExplainCharcoal:
-	.string "That CHARCOAL I gave you, it's used\n"
-	.string "for making herbal medicine.\p"
-	.string "It also does wonders when held by\n"
-	.string "a POKéMON.\p"
-	.string "It intensifies the power of FIRE-type\n"
-	.string "moves.$"
+	.string "That FLAME ORB I gave you, it's used\n"
+	.string "in heat-based massages.\p"
+	.string "But it also does something else\n"
+	.string "when held by a POKéMON.\p"
+	.string "It actually inflicts the holder with\n"
+	.string "a BURN, so be careful with it.$"
 
 LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike:
 	.string "Herbal medicine works impressively well.\n"

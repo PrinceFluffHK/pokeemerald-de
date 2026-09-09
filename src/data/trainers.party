@@ -19438,7 +19438,7 @@ Mugshot: Pink
 AI: Smart Trainer
 Difficulty: Easy
 
-Geodude
+"Geodude
 Ability: Rock Head
 Level: 12
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
@@ -19462,7 +19462,7 @@ Level: 14
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Tomb
 - Spark
-- Harden
+- Harden"
 
 === TRAINER_BRENDAN_RUSTBORO_TREECKO ===
 Name: BRENDAN
@@ -21672,7 +21672,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Meteor Mash
 - Zen Headbutt
 
-/* START EXPERT MODE BOSSES */
+/* START CHALLENGE MODE BOSSES */
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -24380,7 +24380,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psychic Fangs
 - Hammer Arm
 
-/* START CHAMPION MODE BOSSES */
+/* START MASTER MODE BOSSES */
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE

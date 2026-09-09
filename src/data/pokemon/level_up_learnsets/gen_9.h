@@ -8858,7 +8858,7 @@ static const struct LevelUpMove sSlugmaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(34, MOVE_LAVA_PLUME),
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(41, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(41, MOVE_MAGMA_STORM),
     LEVEL_UP_MOVE(43, MOVE_RECOVER),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(48, MOVE_ERUPTION),
@@ -8874,6 +8874,7 @@ static const struct LevelUpMove sMagcargoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_YAWN),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE(13, MOVE_FIRE_SPIN),
     //Roxanne Lv14
@@ -8889,7 +8890,7 @@ static const struct LevelUpMove sMagcargoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_LAVA_PLUME),
     //Winona Lv35
     LEVEL_UP_MOVE(39, MOVE_AMNESIA),
-    LEVEL_UP_MOVE(43, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(43, MOVE_MAGMA_STORM),
     //Tate&Liza Lv45
     LEVEL_UP_MOVE(47, MOVE_RECOVER),
     LEVEL_UP_MOVE(50, MOVE_ERUPTION),
@@ -12754,8 +12755,8 @@ static const struct LevelUpMove sAnorithLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ROCK_BLAST),
     // >>> Evo Lv40
-    LEVEL_UP_MOVE(41, MOVE_PROTECT),
-    LEVEL_UP_MOVE(44, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(41, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(44, MOVE_ACCELEROCK),
     //Tate&Liza Lv45, Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
@@ -12782,9 +12783,9 @@ static const struct LevelUpMove sArmaldoLevelUpLearnset[] = {
     //Winona Lv35
     LEVEL_UP_MOVE(36, MOVE_ROCK_BLAST),
     // >>> Evo Lv40
-    LEVEL_UP_MOVE(43, MOVE_PROTECT),
+    LEVEL_UP_MOVE(43, MOVE_X_SCISSOR),
     //Tate&Liza Lv45
-    LEVEL_UP_MOVE(48, MOVE_X_SCISSOR),
+    LEVEL_UP_MOVE(48, MOVE_ACCELEROCK),
     //Juan Lv50, Sidney Lv54, Drake Lv60, Steven Lv63
     LEVEL_UP_END
 };
