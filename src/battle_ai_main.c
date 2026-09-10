@@ -4457,49 +4457,91 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         break;
     case EFFECT_ATTACK_UP:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_ATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_ATTACK_UP_2:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK_2));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_ATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_DEFENSE_UP:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_DEF));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_DEF] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_STUFF_CHEEKS:
     case EFFECT_DEFENSE_UP_2:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_DEF_2));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_DEF] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_DEFENSE_UP_3:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_DEF_3));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_DEF] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_SPEED_UP:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPEED));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPEED] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_AUTOTOMIZE:
     case EFFECT_SPEED_UP_2:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPEED_2));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPEED] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_SPECIAL_ATTACK_UP:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_SPECIAL_ATTACK_UP_2:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK_2));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_SPECIAL_ATTACK_UP_3:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK_3));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_SPECIAL_DEFENSE_UP:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPDEF));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPDEF] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_SPECIAL_DEFENSE_UP_2:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPDEF_2));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPDEF] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_ACCURACY_UP:
     case EFFECT_ACCURACY_UP_2:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ACC));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_ACC] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_EVASION_UP:
     case EFFECT_EVASION_UP_2:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_EVASION));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_EVASION] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_ATTACK_DOWN:
     case EFFECT_ATTACK_DOWN_2:
@@ -4539,51 +4581,105 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
     // treat as offense booster
     case EFFECT_ACUPRESSURE:
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK_2));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_ATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK_2));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_GEAR_UP:
         if (aiData->abilities[battlerAtk] == ABILITY_PLUS || aiData->abilities[battlerAtk] == ABILITY_MINUS)
         {
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK));
+            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[battlerAtk].statStages[STAT_ATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK));
+            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[battlerAtk].statStages[STAT_SPATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         if (hasPartner && (aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_PLUS || aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_MINUS))
         {
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_ATK));
+            if (gAiThinkingStruct->aiFlags[BATTLE_PARTNER(battlerAtk)] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[BATTLE_PARTNER(battlerAtk)].statStages[STAT_ATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_SPATK));
+            if (gAiThinkingStruct->aiFlags[BATTLE_PARTNER(battlerAtk)] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[BATTLE_PARTNER(battlerAtk)].statStages[STAT_SPATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         break;
     case EFFECT_MAGNETIC_FLUX:
         if (aiData->abilities[battlerAtk] == ABILITY_PLUS || aiData->abilities[battlerAtk] == ABILITY_MINUS)
         {
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_DEF));
+            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[battlerAtk].statStages[STAT_DEF] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPDEF));
+            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[battlerAtk].statStages[STAT_SPDEF] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         if (hasPartner && (aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_PLUS || aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_MINUS))
         {
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_DEF));
+            if (gAiThinkingStruct->aiFlags[BATTLE_PARTNER(battlerAtk)] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[BATTLE_PARTNER(battlerAtk)].statStages[STAT_DEF] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_SPDEF));
+            if (gAiThinkingStruct->aiFlags[BATTLE_PARTNER(battlerAtk)] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[BATTLE_PARTNER(battlerAtk)].statStages[STAT_SPDEF] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         break;
     case EFFECT_ATTACK_ACCURACY_UP: // hone claws
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_ATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ACC));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_ACC] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_GROWTH:
     case EFFECT_ATTACK_SPATK_UP:    // work up
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_ATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK));
+        if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+         && gBattleMons[battlerAtk].statStages[STAT_SPATK] >= 8)  // >= +2
+            ADJUST_SCORE(-10);
         break;
     case EFFECT_ROTOTILLER:
         if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GRASS) && AI_IsBattlerGrounded(battlerAtk))
         {
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_ATK));
+            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[battlerAtk].statStages[STAT_ATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_SPATK));
+            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[battlerAtk].statStages[STAT_SPATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         if (hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_GRASS) && AI_IsBattlerGrounded(BATTLE_PARTNER(battlerAtk)))
         {
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_ATK));
+            if (gAiThinkingStruct->aiFlags[BATTLE_PARTNER(battlerAtk)] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[BATTLE_PARTNER(battlerAtk)].statStages[STAT_ATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_SPATK));
+            if (gAiThinkingStruct->aiFlags[BATTLE_PARTNER(battlerAtk)] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[BATTLE_PARTNER(battlerAtk)].statStages[STAT_SPATK] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         if (IS_BATTLER_OF_TYPE(LEFT_FOE(battlerAtk), TYPE_GRASS) && AI_IsBattlerGrounded(LEFT_FOE(battlerAtk)))
         {
@@ -4604,10 +4700,16 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         if (IS_BATTLER_OF_TYPE(battlerAtk, TYPE_GRASS))
         {
             ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_DEF));
+            if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[battlerAtk].statStages[STAT_DEF] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         if (hasPartner && IS_BATTLER_OF_TYPE(BATTLE_PARTNER(battlerAtk), TYPE_GRASS))
         {
             ADJUST_SCORE(IncreaseStatUpScore(BATTLE_PARTNER(battlerAtk), battlerDef, STAT_CHANGE_DEF));
+            if (gAiThinkingStruct->aiFlags[BATTLE_PARTNER(battlerAtk)] & AI_FLAG_SMART_TRAINER
+             && gBattleMons[BATTLE_PARTNER(battlerAtk)].statStages[STAT_DEF] >= 8)  // >= +2
+                ADJUST_SCORE(-10);
         }
         if (IS_BATTLER_OF_TYPE(LEFT_FOE(battlerAtk), TYPE_GRASS))
         {
