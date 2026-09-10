@@ -1960,7 +1960,8 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         }
         break;
     case EFFECT_SPIKES:
-        if (gSideTimers[GetBattlerSide(battlerDef)].spikesAmount >= 3)
+        if (gSideTimers[GetBattlerSide(battlerDef)].spikesAmount >= 1)
+        // if (gSideTimers[GetBattlerSide(battlerDef)].spikesAmount >= 3)
             ADJUST_SCORE(-10);
         else if (PartnerMoveIsSameNoTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)
           && gSideTimers[GetBattlerSide(battlerDef)].spikesAmount == 2)
@@ -1972,7 +1973,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_TOXIC_SPIKES:
-        if (gSideTimers[GetBattlerSide(battlerDef)].toxicSpikesAmount >= 2)
+        if (gSideTimers[GetBattlerSide(battlerDef)].toxicSpikesAmount >= 1)
             ADJUST_SCORE(-10);
         else if (PartnerMoveIsSameNoTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove) && gSideTimers[GetBattlerSide(battlerDef)].toxicSpikesAmount == 1)
             ADJUST_SCORE(-10); // only one mon needs to set up the last layer of Toxic Spikes
