@@ -1916,7 +1916,7 @@ Level: 49
 - Spiky Shield
 
 === TRAINER_ALBERT ===
-Name: SCRAGGUS
+Name: SCOTT
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -19438,10 +19438,9 @@ Mugshot: Pink
 AI: Smart Trainer
 Difficulty: Easy
 
-"Geodude
+Geodude
 Ability: Rock Head
 Level: 12
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Throw
 - Mud-Slap
 - Tackle
@@ -19450,7 +19449,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Aron
 Ability: Sturdy
 Level: 12
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Metal Claw
 - Stealth Rock
 - Harden
@@ -19459,10 +19457,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nosepass @ Oran Berry
 Ability: Sturdy
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Tomb
 - Spark
-- Harden"
+- Harden
 
 === TRAINER_BRENDAN_RUSTBORO_TREECKO ===
 Name: BRENDAN
@@ -19477,7 +19474,6 @@ Difficulty: Easy
 Wailmer
 Ability: Water Veil
 Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Water Gun
 - Astonish
 - Mist
@@ -19486,7 +19482,6 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Torchic
 Ability: Blaze
 Level: 14
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe  
 - Quick Attack
 - Flame Charge
 - Sand Attack
@@ -19505,7 +19500,6 @@ Difficulty: Easy
 Slugma
 Ability: Flame Body
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Ember
 - Smog
 - Rock Throw
@@ -19513,7 +19507,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Treecko
 Ability: Overgrow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Mega Drain
 - Leer
@@ -19532,7 +19525,6 @@ Difficulty: Easy
 Shroomish
 Ability: Poison Heal
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -19540,7 +19532,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Mudkip
 Ability: Torrent
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Mud-Slap
 - Tackle
@@ -19559,7 +19550,6 @@ Difficulty: Easy
 Slugma
 Ability: Flame Body
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Ember
 - Smog
 - Rock Throw
@@ -19567,7 +19557,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Treecko
 Ability: Overgrow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Mega Drain
 - Leer
@@ -19586,7 +19575,6 @@ Difficulty: Easy
 Wailmer
 Ability: Water Veil
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Astonish
 - Mist
@@ -19595,7 +19583,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Torchic
 Ability: Blaze
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Flame Charge
 - Sand Attack
@@ -19614,7 +19601,6 @@ Difficulty: Easy
 Shroomish
 Ability: Poison Heal
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -19622,7 +19608,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Mudkip
 Ability: Torrent
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Mud-Slap
 - Tackle
@@ -19642,7 +19627,6 @@ Difficulty: Easy
 Meditite
 Ability: Pure Power
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Confusion
 - Feint
 - Meditate
@@ -19651,7 +19635,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machop
 Ability: Steadfast
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Karate Chop
 - Payback
 - Counter
@@ -19660,7 +19643,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Doduo
 Ability: Run Away
 Level: 15
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Peck
 - Double Kick
@@ -19668,7 +19650,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Makuhita @ Oran Berry
 Ability: Thick Fat
 Level: 16
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Force Palm
 - Smack Down
@@ -19687,7 +19668,6 @@ Difficulty: Easy
 Wailmer
 Ability: Water Veil
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Gun
 - Astonish
 - Mist
@@ -19696,7 +19676,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish
 Ability: Poison Heal
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -19705,7 +19684,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken
 Ability: Blaze
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Double Kick
 - Flame Charge
@@ -19724,7 +19702,6 @@ Difficulty: Easy
 Slugma
 Ability: Flame Body
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -19732,7 +19709,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Gun
 - Astonish
 - Mist
@@ -19741,7 +19717,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle
 Ability: Overgrow
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Fury Cutter
 - Leer
@@ -19760,7 +19735,6 @@ Difficulty: Easy
 Slugma
 Ability: Flame Body
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -19768,7 +19742,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish
 Ability: Poison Heal
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -19777,7 +19750,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp
 Ability: Torrent
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Rock Tomb
@@ -19796,7 +19768,6 @@ Difficulty: Easy
 Wailmer
 Ability: Water Veil
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Gun
 - Astonish
 - Mist
@@ -19805,7 +19776,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish
 Ability: Poison Heal
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -19814,7 +19784,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken
 Ability: Blaze
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Double Kick
 - Flame Charge
@@ -19833,7 +19802,6 @@ Difficulty: Easy
 Slugma
 Ability: Flame Body
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -19841,7 +19809,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Gun
 - Astonish
 - Mist
@@ -19850,7 +19817,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle
 Ability: Overgrow
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Fury Cutter
 - Leer
@@ -19869,7 +19835,6 @@ Difficulty: Easy
 Slugma
 Ability: Flame Body
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -19877,7 +19842,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish
 Ability: Poison Heal
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -19886,7 +19850,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp
 Ability: Torrent
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Rock Tomb
@@ -19906,7 +19869,6 @@ Difficulty: Easy
 Minun
 Ability: Minus
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Nuzzle
 - Helping Hand
 - Encore
@@ -19914,14 +19876,12 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Plusle
 Ability: Plus
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shock Wave
 - Swift
 
 Voltorb
 Ability: Aftermath
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Electro Ball
 - Self Destruct
 - Charge
@@ -19929,7 +19889,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magneton
 Ability: Magnet Pull
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Charge Beam
 - Magnet Bomb
 - Magnet Rise
@@ -19937,7 +19896,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Manectric @ Sitrus Berry
 Ability: Static
 Level: 24
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Shock Wave
 - Ice Fang
@@ -19956,7 +19914,6 @@ Difficulty: Easy
 Torkoal @ Eject Pack
 Ability: Drought
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flame Wheel
 - Smog
 - Sunny Day
@@ -19964,7 +19921,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nuzleaf
 Ability: Chlorophyll
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Knock Off
 - Razor Leaf
@@ -19972,7 +19928,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Solrock
 Ability: Levitate
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Confusion
 - Rock Throw
 - Fire Spin
@@ -19981,7 +19936,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tropius @ Occa Berry
 Ability: Protosynthesis
 Level: 23
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Magical Leaf
 - Gust
 - Stomp
@@ -20000,7 +19954,6 @@ Difficulty: Easy
 Baltoy
 Ability: Levitate
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Psybeam
 - Rock Tomb
 - Trick Room
@@ -20008,7 +19961,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Magneton
 Ability: Sturdy
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Shock Wave
 - Mirror Shot
 - Metal Sound
@@ -20016,7 +19968,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Nosepass @ Magnet
 Ability: Magnet Pull
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Rock Slide
 - Spark
 - Thunder Wave
@@ -20025,7 +19976,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Koffing
 Ability: Levitate
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Sludge
 - Assurance
 - Will-O-Wisp
@@ -20033,7 +19983,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Camerupt @ Passho Berry
 Ability: Solid Rock
 Level: 26
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Temper Flare
 - Scorching Sands
 
@@ -20051,7 +20000,6 @@ Difficulty: Easy
 Ninetales
 Ability: Flash Fire
 Level: 25
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Flame Burst
 - Extrasensory
 - Disable
@@ -20060,7 +20008,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Slugma @ Focus Sash
 Ability: Pyroclastic Flow
 Level: 26
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fire Spin
 - Ancient Power
 - Light Screen
@@ -20069,7 +20016,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Koffing
 Ability: Levitate
 Level: 26
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Clear Smog
 - Flamethrower
 - Will-O-Wisp
@@ -20078,7 +20024,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Camerupt @ Sitrus Berry
 Ability: Solid Rock
 Level: 27
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Eruption
 - Scorching Sands
 - Body Slam
@@ -20086,7 +20031,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Torkoal @ White Herb
 Ability: White Smoke
 Level: 29
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Overheat
 - Body Press
 - Solar Beam
@@ -20106,7 +20050,6 @@ Difficulty: Easy
 Loudred
 Ability: Soundproof
 Level: 27
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Stomp
 - Bite
 - Howl
@@ -20114,7 +20057,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Vigoroth
 Ability: Vital Spirit
 Level: 27
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Slash
 - Encore
 - Focus Energy
@@ -20122,7 +20064,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Spinda @ Choice Scarf
 Ability: Contrary
 Level: 28
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Body Slam
 - Psybeam
 - Trick
@@ -20130,7 +20071,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Linoone
 Ability: Pickup
 Level: 29
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Headbutt
 - Shadow Claw
 - Belly Drum
@@ -20138,7 +20078,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Slaking @ Sitrus Berry
 Ability: Truant
 Level: 31
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Facade
 - Faint Attack
 - Brick Break
@@ -20156,14 +20095,12 @@ Difficulty: Easy
 Clamperl @ Deep-Sea Scale
 Ability: Dazzling
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Clamp
 - Iron Defense
 
 Pelipper
 Ability: Drizzle
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Air Slash
 - Water Pulse
 - U-Turn
@@ -20171,7 +20108,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Skarmory @ Focus Sash
 Ability: Weak Armor
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Steel Wing
 - Aerial Ace
 - Slash
@@ -20180,7 +20116,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Armaldo
 Ability: Swift Swim
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - X-Scissor
 - Rock Slide
 - Liquidation
@@ -20188,7 +20123,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Seaking
 Ability: Swift Swim
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Smart Strike
 
@@ -20205,7 +20139,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Power Gem
@@ -20214,7 +20147,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Slide
 - Clear Smog
@@ -20222,7 +20154,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Body Slam
@@ -20231,7 +20162,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - X-Scissor
 - Aerial Ace
@@ -20249,7 +20179,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Power Gem
@@ -20258,7 +20187,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Body Slam
@@ -20267,7 +20195,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -20275,7 +20202,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -20293,7 +20219,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Power Gem
@@ -20302,7 +20227,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Mega Drain
 - Headbutt
@@ -20310,7 +20234,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Slide
 - Clear Smog
@@ -20318,7 +20241,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -20336,7 +20258,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Power Gem
@@ -20345,7 +20266,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Slide
 - Clear Smog
@@ -20353,7 +20273,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Body Slam
@@ -20362,7 +20281,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - X-Scissor
 - Aerial Ace
@@ -20380,7 +20298,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Power Gem
@@ -20389,7 +20306,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Body Slam
@@ -20398,7 +20314,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -20406,7 +20321,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -20424,7 +20338,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Power Gem
@@ -20433,7 +20346,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Mega Drain
 - Headbutt
@@ -20441,7 +20353,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Slide
 - Clear Smog
@@ -20449,7 +20360,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -20468,7 +20378,6 @@ Difficulty: Easy
 Swellow
 Ability: Guts
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Facade
 - Aerial Ace
 - U-Turn
@@ -20477,7 +20386,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Pelipper
 Ability: Rain Dish
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Wing Attack
 - Water Pulse
 - Tailwind
@@ -20486,7 +20394,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Vibrava
 Ability: Levitate
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Bulldoze
 - Aerial Ace
 - Bug Buzz
@@ -20494,7 +20401,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Skarmory
 Ability: Sturdy
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Steel Wing
 - Aerial Ace
 - Roost
@@ -20502,7 +20408,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tropius
 Ability: Protosynthesis
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Magical Leaf
 - Fly
 - Stomp
@@ -20510,7 +20415,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Altaria @ Sitrus Berry
 Ability: Cloud Nine
 Level: 34
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Air Slash
 - Body Slam
 - Earthquake
@@ -20529,7 +20433,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -20538,7 +20441,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
@@ -20547,7 +20449,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -20555,7 +20456,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dive
 - Body Slam
 - Rest
@@ -20563,7 +20463,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sceptile @ Sitrus Berry
 Ability: Overgrow
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Leaf Blade
 - X-Scissor
 - Aerial Ace
@@ -20582,7 +20481,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -20591,7 +20489,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -20600,7 +20497,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dive
 - Body Slam
 - Rest
@@ -20608,7 +20504,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -20617,7 +20512,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Blaziken @ Sitrus Berry
 Ability: Blaze
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -20636,7 +20530,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -20645,7 +20538,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -20654,7 +20546,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -20663,7 +20554,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Clear Smog
@@ -20671,7 +20561,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Swampert @ Sitrus Berry
 Ability: Torrent
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -20690,7 +20579,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -20699,7 +20587,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Iron Tail
 - Endeavor
@@ -20708,7 +20595,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -20716,7 +20602,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dive
 - Body Slam
 - Rest
@@ -20724,7 +20609,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sceptile @ Sitrus Berry
 Ability: Overgrow
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Leaf Blade
 - X-Scissor
 - Aerial Ace
@@ -20743,7 +20627,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -20752,7 +20635,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -20761,7 +20643,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dive
 - Body Slam
 - Rest
@@ -20769,7 +20650,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -20778,7 +20658,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Blaziken @ Sitrus Berry
 Ability: Blaze
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -20797,7 +20676,6 @@ Difficulty: Easy
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -20806,7 +20684,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -20815,7 +20692,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -20824,7 +20700,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Clear Smog
@@ -20832,7 +20707,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Swampert @ Sitrus Berry
 Ability: Torrent
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -20851,7 +20725,6 @@ Difficulty: Easy
 Mightyena
 Ability: Intimidate
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Snarl
 - Crunch
 - Poison Fang
@@ -20860,7 +20733,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machoke
 Ability: Guts
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brick Break
 - Dual Chop
 - Knock Off
@@ -20869,7 +20741,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Huntail
 Ability: Defiant
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Tail
 - Reversal
 - Crunch
@@ -20887,7 +20758,6 @@ Difficulty: Easy
 Torkoal @ Eject Pack
 Ability: Drought
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Overheat
 - Body Press
 - Body Slam
@@ -20895,7 +20765,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Solrock
 Ability: Levitate
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Zen Headbutt
 - Rock Slide
 - Flare Blitz
@@ -20903,7 +20772,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shiftry
 Ability: Chlorophyll
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Air Slash
 - Knock Off
@@ -20911,7 +20779,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tropius
 Ability: Protosynthesis
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Solar Beam
 - Fly
 - Stomp
@@ -20919,7 +20786,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo @ Air Balloon
 Ability: Pyroclastic Flow
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heat Wave
 - Power Gem
 - Recover
@@ -20937,7 +20803,6 @@ Difficulty: Easy
 Claydol
 Ability: Levitate
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extrasensory
 - Earth Power
 - Trick Room
@@ -20945,7 +20810,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Weezing
 Ability: Levitate
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Heat Wave
 - Haze
@@ -20953,7 +20817,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nosepass
 Ability: Magnet Pull
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Power Gem
 - Body Press
 - Sandstorm
@@ -20961,7 +20824,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magneton
 Ability: Sturdy
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunderbolt
 - Flash Cannon
 - Metal Sound
@@ -20970,7 +20832,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Magma Storm
 - Power Gem
 - Substitute
@@ -20978,7 +20839,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Camerupt @ Passho Berry
 Ability: Solid Rock
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earth Power
 - Heat Wave
 
@@ -20995,7 +20855,6 @@ Difficulty: Easy
 Mightyena
 Ability: Intimidate
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Crunch
 - Play Rough
 - Thunder Fang
@@ -21004,7 +20863,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crobat
 Ability: Inner Focus
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Poison
 - Aerial Ace
 - Bite
@@ -21013,13 +20871,11 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crawdaunt @ Life Orb
 Ability: Adaptability
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 
 Machamp
 Ability: Guts
 Level: 39
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Chop
 - Knock Off
 - Focus Energy
@@ -21027,7 +20883,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Huntail
 Ability: Defiant
 Level: 41
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Tail
 - Close Combat
 - Shell Smash
@@ -21046,7 +20901,6 @@ Difficulty: Easy
 Solrock @ Life Orb
 Ability: Levitate
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Slide
 - Zen Headbutt
 - Flare Blitz
@@ -21055,7 +20909,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Xatu
 Ability: Psych Out
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Future Sight
 - Air Slash
 - Reflect
@@ -21063,16 +20916,14 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Claydol
 Ability: Levitate
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extrasensory
 - Earthquake
 - Shadow Ball
 - Rapid Spin
 
-Absol @ Steel Plate
+Absol @ Iron Plate
 Ability: Justified
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Night Slash
 - Psycho Cut
 - Doom Desire
@@ -21080,7 +20931,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Medicham
 Ability: Pure Power
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Zen Headbutt
 - Aura Sphere
@@ -21089,7 +20939,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Lunatone @ Sitrus Berry
 Ability: Levitate
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Moonblast
 - Light Screen
@@ -21108,7 +20957,6 @@ Difficulty: Easy
 Cacturne
 Ability: Sand Stream
 Level: 42
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Needle Arm
 - Knock Off
 - Sandstorm
@@ -21116,7 +20964,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sandslash
 Ability: Sand Rush
 Level: 42
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earthquake
 - Rock Slide
 - Crush Claw
@@ -21124,7 +20971,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cradily
 Ability: Storm Drain
 Level: 44
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Ancient Power
 - Acid
 - Recover
@@ -21143,7 +20989,6 @@ Difficulty: Easy
 Weezing
 Ability: Levitate
 Level: 44
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Assurance
 - Will-O-Wisp
@@ -21151,7 +20996,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magneton
 Ability: Sturdy
 Level: 44
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunderbolt
 - Flash Cannon
 - Metal Sound
@@ -21160,7 +21004,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Camerupt
 Ability: Sheer Force
 Level: 46
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earth Power
 - Flamethrower
 - Rock Slide
@@ -21178,7 +21021,6 @@ Difficulty: Easy
 Skarmory
 Ability: Weak Armor
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Steel Wing
 - Slash
 - Spikes
@@ -21186,7 +21028,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Seaking
 Ability: Swift Swim
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Wave Crash
 - Flip Turn
 - Smart Strike
@@ -21194,7 +21035,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Armaldo
 Ability: Swift Swim
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Slide
 - X-Scissor
 - Liquidation
@@ -21203,7 +21043,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Pelipper
 Ability: Drizzle
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Water Pulse
 - U-Turn
@@ -21212,7 +21051,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Gorebyss @ White Herb
 Ability: Swift Swim
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Scald
 - Moonblast
 - Ice Beam
@@ -21231,7 +21069,6 @@ Difficulty: Easy
 Crobat
 Ability: Inner Focus
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dual Wingbeat
 - Cross Poison
 - U-Turn
@@ -21239,7 +21076,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Gyarados
 Ability: Intimidate
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Ice Fang
 - Crunch
@@ -21248,7 +21084,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machamp
 Ability: Guts
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Chop
 - Payback
 - Focus Energy
@@ -21256,7 +21091,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Muk @ Black Sludge
 Ability: Poison Touch
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Acid Spray
 - Knock Off
 - Substitute
@@ -21265,7 +21099,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tentacruel
 Ability: Clear Body
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Scald
 - Sludge Bomb
 - Wrap
@@ -21273,7 +21106,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sharpedo @ Focus Sash
 Ability: Strong Jaw
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 - Crunch
 - Ice Fang
@@ -21293,7 +21125,6 @@ Difficulty: Easy
 Crawdaunt
 Ability: Adaptability
 Level: 49
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 - Razor Shell
 - Swords Dance
@@ -21301,7 +21132,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Whiscash
 Ability: Oblivious
 Level: 48
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Muddy Water
 - Earth Power
 - Zen Headbutt
@@ -21310,7 +21140,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Walrein
 Ability: Thick Fat
 Level: 48
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Icy Wind
 - Body Slam
@@ -21318,7 +21147,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ludicolo
 Ability: Rain Dish
 Level: 48
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Energy Ball
 - Hydro Pump
@@ -21327,7 +21155,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Milotic
 Ability: Competitive
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Scald
 - Alluring Voice
 - Recover
@@ -21335,7 +21162,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kingdra @ Chesto Berry
 Ability: Swift Swim
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Snipe Shot
 - Dragon Pulse
 - Rest
@@ -21411,7 +21237,6 @@ Difficulty: Easy
 Mightyena
 Ability: Intimidate
 Level: 52
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Snarl
 - Crunch
 - Play Rough
@@ -21420,7 +21245,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cacturne @ Miracle Seed
 Ability: Hardy Thorns
 Level: 53
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Needle Arm
 - Sucker Punch
 - Spiky Shield
@@ -21428,7 +21252,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shiftry
 Ability: Pickpocket
 Level: 53
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Leaf Blade
 - Throat Chop
@@ -21437,7 +21260,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crawdaunt
 Ability: Adaptability
 Level: 53
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 - Razor Shell
 - Knock Off
@@ -21445,7 +21267,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Absol
 Ability: Justified
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Ceaseless Edge
 - Play Rough
@@ -21464,7 +21285,6 @@ Difficulty: Easy
 Dusclops
 Ability: Pressure
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Night Shade
 - Ally Switch
 - Trick Room
@@ -21473,7 +21293,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sableye
 Ability: Prankster
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Shadow Claw
 - Foul Play
@@ -21482,7 +21301,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cursola @ Power Herb
 Ability: Cursed Body
 Level: 54
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Ball
 - Meteor Beam
 - Strength Sap
@@ -21490,7 +21308,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Banette
 Ability: Cursed Body
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Claw
 - Crush Claw
 - Disable
@@ -21498,7 +21315,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dusknoir @ Life Orb
 Ability: Levitate
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Punch
 - Ice Punch
 - Fire Punch
@@ -21518,7 +21334,6 @@ Difficulty: Easy
 Glalie
 Ability: Inner Focus
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Crunch
 - Blizzard
 - Ice Beam
@@ -21527,7 +21342,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sealeo
 Ability: Ice Body
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Super Fang
 - Yawn
@@ -21536,7 +21350,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Donphan @ Never-Melt Ice
 Ability: Sturdy
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Ice Shard
 - Headlong Rush
 - Body Press
@@ -21544,7 +21357,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Froslass
 Ability: Snow Warning
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Ball
 - Blizzard
 - Disable
@@ -21552,7 +21364,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Walrein @ Leftovers
 Ability: Ice Body
 Level: 58
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Icy Wind
 - Dive
 - Body Slam
@@ -21571,7 +21382,6 @@ Difficulty: Easy
 Flygon @ Choice Scarf
 Ability: Levitate
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earthquake
 - Dragon Claw
 - U-Turn
@@ -21579,7 +21389,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Gyarados
 Ability: Moxie
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Crunch
 - Dragon Dance
@@ -21587,7 +21396,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Altaria
 Ability: Cloud Nine
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Pulse
 - Moonblast
 - Heal Bell
@@ -21595,7 +21403,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kingdra
 Ability: Sniper
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Pulse
 - Snipe Shot
 - Focus Energy
@@ -21603,7 +21410,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Salamence
 Ability: Intimidate
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Claw
 - Dual Wingbeat
 - Flamethrower
@@ -21623,7 +21429,6 @@ Difficulty: Easy
 Skarmory @ Rocky Helmet
 Ability: Sturdy
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Steel Wing
 - Drill Peck
 - Spikes
@@ -21632,7 +21437,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cradily
 Ability: Storm Drain
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Sandstorm
 - Leech Seed
@@ -21641,7 +21445,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Claydol
 Ability: Levitate
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earth Power
 - Extrasensory
 - Meteor Beam
@@ -21650,7 +21453,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Armaldo
 Ability: Tough Claws
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - X-Scissor
 - Rock Slide
 - Crush Claw
@@ -21659,7 +21461,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Aggron
 Ability: Sturdy
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Head Smash
 - Body Press
@@ -21668,7 +21469,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Metagross @ Sitrus Berry
 Ability: Full-Metal Body
 Level: 63
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Meteor Mash
 - Zen Headbutt
 
@@ -21688,7 +21488,6 @@ Difficulty: Normal
 Lileep
 Ability: Tangling Hair
 Level: 12
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Throw
 - Absorb
 - Leech Seed
@@ -21697,7 +21496,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Anorith
 Ability: Battle Armor
 Level: 12
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fury Cutter
 - Rock Throw
 - Hone Claws
@@ -21705,7 +21503,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Aron @ Custap Berry
 Ability: Sturdy
 Level: 13
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Metal Claw
 - Smack Down
 - Stealth Rock
@@ -21713,7 +21510,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nosepass @ Oran Berry
 Ability: Sturdy
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Tomb
 - Spark
 
@@ -21730,7 +21526,6 @@ Difficulty: Normal
 Wailmer
 Ability: Water Veil
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Astonish
 - Growl
@@ -21738,7 +21533,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 12
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Charm
@@ -21746,7 +21540,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Torchic @ Oran Berry
 Ability: Blaze
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Flame Charge
 - Sand Attack
@@ -21765,7 +21558,6 @@ Difficulty: Normal
 Slugma
 Ability: Pyroclastic Flow
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Ember
 - Smog
 - Rock Throw
@@ -21773,7 +21565,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 12
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Charm
@@ -21781,7 +21572,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Treecko @ Oran Berry
 Ability: Overgrow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Mega Drain
 - Leer
@@ -21800,7 +21590,6 @@ Difficulty: Normal
 Shroomish
 Ability: Poison Heal
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -21808,7 +21597,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 12
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Charm
@@ -21816,7 +21604,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Mudkip @ Oran Berry
 Ability: Torrent
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Mud-Slap
 - Tackle
@@ -21835,7 +21622,6 @@ Difficulty: Normal
 Slugma
 Ability: Pyroclastic Flow
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Ember
 - Smog
 - Rock Throw
@@ -21843,7 +21629,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 12
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Charm
@@ -21851,7 +21636,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Treecko @ Oran Berry
 Ability: Overgrow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Mega Drain
 - Leer
@@ -21870,7 +21654,6 @@ Difficulty: Normal
 Wailmer
 Ability: Water Veil
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Astonish
 - Growl
@@ -21878,7 +21661,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 12
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Charm
@@ -21886,7 +21668,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Torchic @ Oran Berry
 Ability: Blaze
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Flame Charge
 - Sand Attack
@@ -21905,7 +21686,6 @@ Difficulty: Normal
 Shroomish
 Ability: Poison Heal
 Level: 13
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -21913,7 +21693,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 12
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Charm
@@ -21921,7 +21700,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Mudkip @ Oran Berry
 Ability: Torrent
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Mud-Slap
 - Tackle
@@ -21941,7 +21719,6 @@ Difficulty: Normal
 Meditite
 Ability: Pure Power
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Feint
 - Confusion
 - Rock Smash
@@ -21950,7 +21727,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machop
 Ability: Steadfast
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Karate Chop
 - Payback
 - Counter
@@ -21959,7 +21735,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Heracross
 Ability: Moxie
 Level: 15
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Arm Thrust
 - Pin Missile
 - Horn Attack
@@ -21968,7 +21743,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Doduo
 Ability: Run Away
 Level: 15
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Pluck
 - Double Kick
@@ -21976,7 +21750,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Makuhita @ Sitrus Berry
 Ability: Thick Fat
 Level: 16
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Force Palm
 - Smack Down
@@ -21995,7 +21768,6 @@ Difficulty: Normal
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -22003,7 +21775,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Gluttony
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -22011,7 +21782,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Growl
@@ -22019,7 +21789,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -22027,7 +21796,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Double Kick
 - Flame Charge
@@ -22046,7 +21814,6 @@ Difficulty: Normal
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -22054,7 +21821,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Gluttony
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -22062,7 +21828,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma @ Assault Vest
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Ancient Power
 - Clear Smog
@@ -22070,7 +21835,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Growl
@@ -22078,7 +21842,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - X-Scissor
 - Leer
@@ -22097,7 +21860,6 @@ Difficulty: Normal
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -22105,7 +21867,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Gluttony
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -22113,7 +21874,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -22121,7 +21881,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -22129,7 +21888,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Rock Tomb
@@ -22148,7 +21906,6 @@ Difficulty: Normal
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -22156,7 +21913,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Gluttony
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -22164,7 +21920,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Growl
@@ -22172,7 +21927,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -22180,7 +21934,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Quick Attack
 - Double Kick
 - Flame Charge
@@ -22199,7 +21952,6 @@ Difficulty: Normal
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -22207,7 +21959,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Gluttony
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -22215,7 +21966,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma @ Assault Vest
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Ancient Power
 - Clear Smog
@@ -22223,7 +21973,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer
 Ability: Water Veil
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Heavy Slam
 - Growl
@@ -22231,7 +21980,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - X-Scissor
 - Leer
@@ -22250,7 +21998,6 @@ Difficulty: Normal
 Pikachu
 Ability: Static
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Volt Switch
 - Endeavor
 - Charm
@@ -22258,7 +22005,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spoink
 Ability: Gluttony
 Level: 18
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Bounce
@@ -22266,7 +22012,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Throw
 - Clear Smog
@@ -22274,7 +22019,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 19
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -22282,7 +22026,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 20
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Rock Tomb
@@ -22301,7 +22044,6 @@ AI: Smart Trainer
 Ralts @ Wise Glasses
 Ability: Synchronize
 Level: 15
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Draining Kiss
 - Confusion
 - Growl
@@ -22309,7 +22051,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Budew
 Ability: Poison Point
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Mega Drain
 - Poison Powder
 - Spikes
@@ -22317,7 +22058,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Skitty
 Ability: Normalize
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Facade
 - Charm
@@ -22326,7 +22066,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Swablu
 Ability: Cloud Nine
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Peck
 - Disarming Voice
 - Dragon Dance
@@ -22334,14 +22073,12 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magnemite
 Ability: Sturdy
 Level: 14
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Spark
 - Magnet Bomb
 
 Ralts @ Muscle Band
 Ability: Synchronize
 Level: 16
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Punch
 - Thunder Punch
 - Ice Punch
@@ -22360,7 +22097,6 @@ Difficulty: Normal
 Minun @ Oran Berry
 Ability: Minus
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Nuzzle
 - Helping Hand
 - Encore
@@ -22369,7 +22105,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Plusle @ Oran Berry
 Ability: Plus
 Level: 21
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shock Wave
 - Grass Knot
 - Swift
@@ -22377,7 +22112,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Volbeat @ Magnet
 Ability: Prankster
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Struggle Bug
 - Charge Beam
 - Thunder Wave
@@ -22385,7 +22119,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Voltorb
 Ability: Aftermath
 Level: 23
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Electro Ball
 - Explosion
 - Light Screen
@@ -22394,7 +22127,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magneton @ Air Balloon
 Ability: Magnet Pull
 Level: 24
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Charge Beam
 - Mirror Shot
 - Tri Attack
@@ -22403,7 +22135,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Manectric @ Sitrus Berry
 Ability: Intimidate
 Level: 24
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunder Fang
 - Ice Fang
 - Overheat
@@ -22421,7 +22152,6 @@ Difficulty: Normal
 Torkoal @ Eject Pack
 Ability: Drought
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flame Wheel
 - Smog
 - Sunny Day
@@ -22429,7 +22159,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nuzleaf
 Ability: Chlorophyll
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Knock Off
 - Razor Leaf
@@ -22437,7 +22166,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Ancient Power
 - Sunny Day
@@ -22445,7 +22173,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Solrock
 Ability: Levitate
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psybeam
 - Ancient Power
 - Fire Spin
@@ -22454,7 +22181,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tropius @ Occa Berry
 Ability: Protosynthesis
 Level: 22
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Solar Beam
 - Gust
 - Magical Leaf
@@ -22473,7 +22199,6 @@ Difficulty: Normal
 Baltoy
 Ability: Levitate
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Psybeam
 - Ancient Power
 - Trick Room
@@ -22482,7 +22207,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Koffing @ Sitrus Berry
 Ability: Levitate
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Sludge Bomb
 - Flamethrower
 - Will-O-Wisp
@@ -22491,7 +22215,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fire Spin
 - Ancient Power
 - Sunny Day
@@ -22499,7 +22222,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Nosepass @ Hard Stone
 Ability: Magnet Pull
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Rock Slide
 - Thunderbolt
 - Thunder Wave
@@ -22507,7 +22229,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Magneton
 Ability: Sturdy
 Level: 24
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Shock Wave
 - Mirror Shot
 - Metal Sound
@@ -22515,7 +22236,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Camerupt @ Passho Berry
 Ability: Solid Rock
 Level: 26
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Heat Wave
 - Scorching Sands
 - Temper Flare
@@ -22596,7 +22316,6 @@ Difficulty: Normal
 Loudred
 Ability: Soundproof
 Level: 29
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Hyper Voice
 - Bite
 - Psychic Noise
@@ -22605,7 +22324,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Vigoroth
 Ability: Vital Spirit
 Level: 29
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Slash
 - Encore
 - Focus Energy
@@ -22613,7 +22331,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Kecleon @ Life Orb
 Ability: Protean
 Level: 30
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Flamethrower
 - Thunderbolt
 - Ice Beam
@@ -22621,7 +22338,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Spinda @ Choice Scarf
 Ability: Contrary
 Level: 30
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Body Slam
 - Psychic
 - Trick
@@ -22629,7 +22345,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Linoone
 Ability: Pickup
 Level: 30
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Extreme Speed
 - Shadow Claw
 - Pin Missile
@@ -22638,7 +22353,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Slaking @ Sitrus Berry
 Ability: Truant
 Level: 31
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Facade
 - Knock Off
 - Brick Break
@@ -22715,7 +22429,6 @@ Difficulty: Normal
 Raichu
 Ability: Static
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -22724,7 +22437,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psyshock
 - Power Gem
@@ -22733,7 +22445,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -22742,7 +22453,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Heavy Slam
 - Body Slam
@@ -22751,7 +22461,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle @ Sitrus Berry
 Ability: Unburden
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - X-Scissor
 - Aerial Ace
@@ -22769,7 +22478,6 @@ Difficulty: Normal
 Raichu
 Ability: Static
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -22778,7 +22486,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Heavy Slam
 - Body Slam
@@ -22787,7 +22494,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -22796,7 +22502,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psyshock
 - Power Gem
@@ -22805,7 +22510,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken @ Sitrus Berry
 Ability: Speed Boost
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -22823,7 +22527,6 @@ Difficulty: Normal
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psybeam
 - Power Gem
@@ -22832,7 +22535,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Mega Drain
 - Headbutt
@@ -22840,7 +22542,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Rock Slide
 - Clear Smog
@@ -22848,7 +22549,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -22866,7 +22566,6 @@ Difficulty: Normal
 Raichu
 Ability: Static
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -22875,7 +22574,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psyshock
 - Power Gem
@@ -22884,7 +22582,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -22893,7 +22590,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Heavy Slam
 - Body Slam
@@ -22902,7 +22598,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grovyle @ Sitrus Berry
 Ability: Unburden
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - X-Scissor
 - Aerial Ace
@@ -22920,7 +22615,6 @@ Difficulty: Normal
 Raichu
 Ability: Static
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -22929,7 +22623,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailmer @ Chesto Berry
 Ability: Water Veil
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Heavy Slam
 - Body Slam
@@ -22938,7 +22631,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -22947,7 +22639,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psyshock
 - Power Gem
@@ -22956,7 +22647,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Combusken @ Sitrus Berry
 Ability: Speed Boost
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -22974,7 +22664,6 @@ Difficulty: Normal
 Raichu
 Ability: Static
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -22983,7 +22672,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Grumpig
 Ability: Magic Bounce
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Psyshock
 - Power Gem
@@ -22992,7 +22680,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -23001,7 +22688,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 31
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Clear Smog
@@ -23009,7 +22695,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Marshtomp @ Sitrus Berry
 Ability: Damp
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -23028,7 +22713,6 @@ Difficulty: Normal
 Swellow @ Flame Orb
 Ability: Guts
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Facade
 - Aerial Ace
 - U-Turn
@@ -23036,7 +22720,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Pelipper
 Ability: Rain Dish
 Level: 32
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Air Slash
 - Hydro Pump
 - Tailwind
@@ -23044,7 +22727,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Vibrava @ Sharp Beak
 Ability: Levitate
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earthquake
 - Dragon Pulse
 - Aerial Ace
@@ -23053,7 +22735,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Skarmory @ Salac Berry
 Ability: Sturdy
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Steel Wing
 - Dual Wingbeat
 - Roost
@@ -23062,7 +22743,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tropius
 Ability: Protosynthesis
 Level: 33
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Leaf Storm
 - Fly
 - U-Turn
@@ -23070,7 +22750,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Altaria @ Sitrus Berry
 Ability: Cloud Nine
 Level: 34
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Air Slash
 - Body Slam
 - Earthquake
@@ -23089,7 +22768,6 @@ Difficulty: Normal
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -23098,7 +22776,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Mawile @ Muscle Band
 Ability: Intimidate
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Play Rough
 - Poison Fang
@@ -23107,7 +22784,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -23116,7 +22792,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -23124,7 +22799,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Dive
 - Body Slam
@@ -23133,7 +22807,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sceptile @ Sitrus Berry
 Ability: Unburden
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Leaf Blade
 - X-Scissor
 - Aerial Ace
@@ -23152,7 +22825,6 @@ Difficulty: Normal
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -23161,7 +22833,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Mawile @ Muscle Band
 Ability: Intimidate
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Play Rough
 - Poison Fang
@@ -23170,7 +22841,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -23179,7 +22849,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Dive
 - Body Slam
@@ -23188,7 +22857,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -23197,7 +22865,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Blaziken @ Sitrus Berry
 Ability: Speed Boost
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -23216,7 +22883,6 @@ Difficulty: Normal
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -23225,7 +22891,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Mawile @ Muscle Band
 Ability: Intimidate
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Play Rough
 - Poison Fang
@@ -23234,7 +22899,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -23243,7 +22907,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -23252,7 +22915,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -23261,7 +22923,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Swampert @ Sitrus Berry
 Ability: Gooey
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -23280,7 +22941,6 @@ Difficulty: Normal
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -23289,7 +22949,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Mawile @ Muscle Band
 Ability: Intimidate
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Play Rough
 - Poison Fang
@@ -23298,7 +22957,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -23307,7 +22965,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -23315,7 +22972,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Dive
 - Body Slam
@@ -23324,7 +22980,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sceptile @ Sitrus Berry
 Ability: Unburden
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Leaf Blade
 - X-Scissor
 - Aerial Ace
@@ -23343,7 +22998,6 @@ Difficulty: Normal
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -23352,7 +23006,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Mawile @ Muscle Band
 Ability: Intimidate
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Play Rough
 - Poison Fang
@@ -23361,7 +23014,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -23370,7 +23022,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wailord @ Chesto Berry
 Ability: Water Veil
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hydro Pump
 - Dive
 - Body Slam
@@ -23379,7 +23030,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -23388,7 +23038,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Blaziken @ Sitrus Berry
 Ability: Speed Boost
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Temper Flare
 - Double Kick
 - Aerial Ace
@@ -23407,7 +23056,6 @@ Difficulty: Normal
 Grumpig
 Ability: Magic Bounce
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heart Stamp
 - Extrasensory
 - Shadow Ball
@@ -23416,7 +23064,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Mawile @ Muscle Band
 Ability: Intimidate
 Level: 36
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Play Rough
 - Poison Fang
@@ -23425,7 +23072,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Raichu
 Ability: Static
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Volt Switch
 - Iron Tail
@@ -23434,7 +23080,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Breloom @ Toxic Orb
 Ability: Poison Heal
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Force Palm
 - Giga Drain
 - Headbutt
@@ -23443,7 +23088,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fire Spin
 - Power Gem
 - Scorching Sands
@@ -23452,7 +23096,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Swampert @ Sitrus Berry
 Ability: Gooey
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Water Pulse
 - Mud Shot
 - Body Press
@@ -23471,7 +23114,6 @@ Difficulty: Normal
 Mightyena @ Magnet
 Ability: Intimidate
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Snarl
 - Crunch
 - Play Rough
@@ -23480,7 +23122,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machoke @ Toxic Orb
 Ability: Guts
 Level: 35
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brick Break
 - Dual Chop
 - Knock Off
@@ -23489,7 +23130,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Huntail
 Ability: Defiant
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Tail
 - Reversal
 - Ice Fang
@@ -23508,7 +23148,6 @@ Difficulty: Normal
 Torkoal @ Eject Pack
 Ability: Drought
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Overheat
 - Body Press
 - Scorching Sands
@@ -23517,7 +23156,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shiftry
 Ability: Chlorophyll
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Leaf Blade
 - Knock Off
@@ -23526,7 +23164,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ninetales
 Ability: Drought
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Flame Burst
 - Extrasensory
 - Disable
@@ -23534,7 +23171,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo @ Air Balloon
 Ability: Pyroclastic Flow
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heat Wave
 - Power Gem
 - Earth Power
@@ -23543,7 +23179,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Solrock
 Ability: Levitate
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Zen Headbutt
 - Rock Slide
 - Flare Blitz
@@ -23552,7 +23187,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tropius @ Occa Berry
 Ability: Protosynthesis
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Solar Blade
 - Dual Wingbeat
 - Razor Leaf
@@ -23571,7 +23205,6 @@ Difficulty: Normal
 Claydol @ Room Service
 Ability: Levitate
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extrasensory
 - Earth Power
 - Stealth Rock
@@ -23580,7 +23213,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magcargo
 Ability: Pyroclastic Flow
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Magma Storm
 - Power Gem
 - Recover
@@ -23588,7 +23220,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Weezing @ Sitrus Berry
 Ability: Levitate
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Heat Wave
 - Will-O-Wisp
@@ -23597,7 +23228,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nosepass @ Eviolite
 Ability: Magnet Pull
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Power Gem
 - Zap Cannon
 - Body Press
@@ -23606,7 +23236,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magneton
 Ability: Sturdy
 Level: 38
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunderbolt
 - Flash Cannon
 - Tri-Attack
@@ -23615,7 +23244,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Camerupt @ Passho Berry
 Ability: Solid Rock
 Level: 40
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earth Power
 - Heat Wave
 - Rock Slide
@@ -23633,7 +23261,6 @@ Difficulty: Normal
 Mightyena
 Ability: Intimidate
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Snarl
 - Crunch
 - Play Rough
@@ -23642,7 +23269,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crobat
 Ability: Inner Focus
 Level: 37
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Poison Fang
 - Dual Wingbeat
 - Crunch
@@ -23651,7 +23277,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Swampert
 Ability: Torrent
 Level: 41
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Stomping Tantrum
 - Hammer Arm
@@ -23659,13 +23284,11 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crawdaunt @ Life Orb
 Ability: Adaptability
 Level: 39
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 
 Machamp @ Toxic Orb
 Ability: Guts
 Level: 39
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Chop
 - Knock Off
 - Focus Energy
@@ -23673,7 +23296,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Huntail @ White Herb
 Ability: Defiant
 Level: 41
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Tail
 - Close Combat
 - Shell Smash
@@ -23692,7 +23314,6 @@ Difficulty: Normal
 Solrock @ Life Orb
 Ability: Levitate
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Slide
 - Zen Headbutt
 - Flare Blitz
@@ -23701,7 +23322,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Xatu
 Ability: Psych Out
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Future Sight
 - Air Slash
 - Reflect
@@ -23710,7 +23330,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Claydol
 Ability: Levitate
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extrasensory
 - Earthquake
 - Shadow Ball
@@ -23719,7 +23338,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Absol @ Iron Plate
 Ability: Sharpness
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Night Slash
 - Psycho Cut
@@ -23728,7 +23346,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Medicham
 Ability: Telepathy
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Zen Headbutt
 - Aura Sphere
@@ -23737,7 +23354,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Lunatone @ Power Herb
 Ability: Levitate
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Psychic
 - Meteor Beam
 - Moonblast
@@ -23756,7 +23372,6 @@ Difficulty: Normal
 Cacturne @ Smooth Rock
 Ability: Sand Stream
 Level: 42
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Needle Arm
 - Knock Off
 - Sucker Punch
@@ -23765,7 +23380,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sandslash @ Rocky Helmet
 Ability: Sand Rush
 Level: 42
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earthquake
 - Stomping Tantrum
 - Rock Slide
@@ -23774,7 +23388,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cradily
 Ability: Storm Drain
 Level: 44
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Ancient Power
 - Giga Drain
 - Acid
@@ -23793,7 +23406,6 @@ Difficulty: Normal
 Weezing @ Safety Goggles
 Ability: Levitate
 Level: 44
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Sludge Bomb
 - Heat Wave
 - Will-O-Wisp
@@ -23802,7 +23414,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Magneton
 Ability: Sturdy
 Level: 44
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Thunderbolt
 - Flash Cannon
 - Metal Sound
@@ -23811,7 +23422,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Camerupt @ Passho Berry
 Ability: Sheer Force
 Level: 46
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earth Power
 - Heat Wave
 - Flamethrower
@@ -23830,7 +23440,6 @@ Difficulty: Normal
 Skarmory @ Focus Sash
 Ability: Weak Armor
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Steel Wing
 - Aerial Ace
 - Rain Dance
@@ -23839,7 +23448,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Seaking
 Ability: Swift Swim
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Wave Crash
 - Flip Turn
 - Smart Strike
@@ -23847,14 +23455,12 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Lanturn @ Choice Scarf
 Ability: Dazzling
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Scald
 - Volt Switch
 
 Armaldo
 Ability: Swift Swim
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Rock Slide
 - U-Turn
 - Liquidation
@@ -23863,7 +23469,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Pelipper
 Ability: Drizzle
 Level: 43
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Hurricane
 - Brine
 - U-Turn
@@ -23872,7 +23477,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Gorebyss @ White Herb
 Ability: Competitive
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Scald
 - Moonblast
 - Ice Beam
@@ -23891,7 +23495,6 @@ Difficulty: Normal
 Crobat @ Scope Lens
 Ability: Inner Focus
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aerial Ace
 - Cross Poison
 - U-Turn
@@ -23899,7 +23502,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sharpedo
 Ability: Speed Boost
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fishious Rend
 - Crunch
 - Ice Fang
@@ -23908,7 +23510,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Machamp @ Toxic Orb
 Ability: Guts
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Chop
 - Payback
 - Thunder Punch
@@ -23917,7 +23518,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Muk - Alola @ Black Sludge
 Ability: Poison Touch
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Gunk Shot
 - Knock Off
 - Substitute
@@ -23926,7 +23526,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tentacruel
 Ability: Clear Body
 Level: 45
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Scald
 - Sludge Bomb
 - Wrap
@@ -23935,7 +23534,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Gyarados @ Gyaradosite
 Ability: Intimidate
 Level: 47
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Lash Out
 - Ice Fang
@@ -23954,7 +23552,6 @@ Difficulty: Normal
 Crawdaunt
 Ability: Adaptability
 Level: 49
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 - Crabhammer
 - Swords Dance
@@ -23962,7 +23559,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Whiscash @ Rindo Berry
 Ability: Oblivious
 Level: 48
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Muddy Water
 - Earth Power
 - Zen Headbutt
@@ -23971,7 +23567,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Walrein
 Ability: Thick Fat
 Level: 48
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Glaciate
 - Body Slam
@@ -23979,7 +23574,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ludicolo
 Ability: Rain Dish
 Level: 48
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Energy Ball
 - Hydro Pump
@@ -23988,7 +23582,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Milotic @ Leftovers
 Ability: Competitive
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Scald
 - Alluring Voice
 - Coil
@@ -23997,7 +23590,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kingdra @ Chesto Berry
 Ability: Swift Swim
 Level: 50
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Snipe Shot
 - Dragon Pulse
 - Ice Beam
@@ -24075,7 +23667,6 @@ Difficulty: Normal
 Mightyena
 Ability: Intimidate
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Snarl
 - Crunch
 - Psychic Fangs
@@ -24084,7 +23675,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Absol
 Ability: Sharpness
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Extreme Speed
 - Ceaseless Edge
 - Play Rough
@@ -24092,7 +23682,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cacturne @ Focus Sash
 Ability: Hardy Thorns
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Needle Arm
 - Sucker Punch
 - Leech Seed
@@ -24101,7 +23690,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crobat @ Life Orb
 Ability: Inner Focus
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Cross Poison
 - Dual Wingbeat
 - Heat Wave
@@ -24110,7 +23698,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Shiftry
 Ability: Pickpocket
 Level: 55
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Leaf Blade
 - Throat Chop
@@ -24119,7 +23706,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Crawdaunt @ Assault Vest
 Ability: Adaptability
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 - Crabhammer
 - Knock Off
@@ -24138,7 +23724,6 @@ Difficulty: Normal
 Dusclops @ Eviolite
 Ability: Pressure
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Night Shade
 - Ally Switch
 - Trick Room
@@ -24147,7 +23732,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sableye
 Ability: Prankster
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Poltergeist
 - Foul Play
@@ -24156,7 +23740,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cursola @ Power Herb
 Ability: Cursed Body
 Level: 56
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Ball
 - Meteor Beam
 - Scald
@@ -24165,7 +23748,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Bellossom
 Ability: Dancer
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Energy Ball
 - Moonblast
 - Pollen Puff
@@ -24173,7 +23755,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Banette
 Ability: Cursed Body
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Sneak
 - Shadow Claw
 - Crush Claw
@@ -24182,7 +23763,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dusknoir @ Life Orb
 Ability: Levitate
 Level: 58
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Punch
 - Ice Punch
 - Fire Punch
@@ -24202,7 +23782,6 @@ Difficulty: Normal
 Glalie
 Ability: Inner Focus
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Crunch
 - Blizzard
 - Ice Beam
@@ -24211,7 +23790,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Sealeo @ Eviolite
 Ability: Ice Body
 Level: 57
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Brine
 - Super Fang
 - Yawn
@@ -24220,7 +23798,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ninetales - Alola
 Ability: Snow Warning
 Level: 58
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Icy Wind
 - Moonblast
 - Chilling Water
@@ -24229,7 +23806,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Donphan @ Never-Melt Ice
 Ability: Sturdy
 Level: 58
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Ice Shard
 - Headlong Rush
 - Body Press
@@ -24237,7 +23813,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Froslass
 Ability: Snow Cloak
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Shadow Ball
 - Blizzard
 - Draining Kiss
@@ -24246,7 +23821,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Walrein @ Leftovers
 Ability: Ice Body
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Glaciate
 - Dive
 - Body Slam
@@ -24266,15 +23840,13 @@ Difficulty: Normal
 Flygon @ Choice Scarf
 Ability: Levitate
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earthquake
-- Dragon Edge
+- Dragon Rush
 - U-Turn
 
 Gyarados
 Ability: Moxie
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Waterfall
 - Temper Flare
 - Crunch
@@ -24283,7 +23855,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Altaria @ Yache Berry
 Ability: Cloud Nine
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Pulse
 - Moonblast
 - Feather Dance
@@ -24292,7 +23863,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kingdra
 Ability: Sniper
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Pulse
 - Snipe Shot
 - Ice Beam
@@ -24301,7 +23871,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Tropius
 Ability: Protosynthesis
 Level: 59
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Outrage
 - Fly
 - Solar Blade
@@ -24310,7 +23879,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Salamence
 Ability: Intimidate
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Dragon Claw
 - Hyper Voice
 - Flamethrower
@@ -24330,7 +23898,6 @@ Difficulty: Normal
 Skarmory @ Rocky Helmet
 Ability: Sturdy
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Head
 - Drill Peck
 - Spikes
@@ -24339,7 +23906,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Cradily
 Ability: Storm Drain
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Giga Drain
 - Sandstorm
 - Leech Seed
@@ -24348,7 +23914,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Claydol @ Power Herb
 Ability: Levitate
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Earth Power
 - Extrasensory
 - Meteor Beam
@@ -24357,7 +23922,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Armaldo
 Ability: Tough Claws
 Level: 60
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - X-Scissor
 - Rock Slide
 - Crush Claw
@@ -24366,7 +23930,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Aggron @ Sitrus Berry
 Ability: Sturdy
 Level: 61
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Iron Tail
 - Head Smash
 - Body Press
@@ -24375,7 +23938,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Metagross
 Ability: Full-Metal Body
 Level: 63
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Meteor Mash
 - Psychic Fangs
 - Hammer Arm
@@ -24450,7 +24012,6 @@ Difficulty: Hard
 Shroomish
 Ability: Poison Heal
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -24458,7 +24019,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Wailmer
 Ability: Water Veil
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Astonish
 - Growl
@@ -24466,7 +24026,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Endeavor
@@ -24475,7 +24034,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 16
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Flame Charge
 - Sand Attack
@@ -24494,7 +24052,6 @@ Difficulty: Hard
 Wailmer
 Ability: Water Veil
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Brine
 - Astonish
 - Growl
@@ -24502,7 +24059,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fire Spin
 - Smog
 - Rock Throw
@@ -24510,7 +24066,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Endeavor
@@ -24519,7 +24074,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 16
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Mega Drain
 - Leer
@@ -24538,7 +24092,6 @@ Difficulty: Hard
 Slugma
 Ability: Pyroclastic Flow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fire Spin
 - Smog
 - Rock Throw
@@ -24546,7 +24099,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -24554,7 +24106,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Endeavor
@@ -24563,7 +24114,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 16
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Mud-Slap
 - Tackle
@@ -24582,7 +24132,6 @@ Difficulty: Hard
 Wailmer
 Ability: Water Veil
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Brine
 - Astonish
 - Growl
@@ -24590,7 +24139,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Slugma
 Ability: Pyroclastic Flow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fire Spin
 - Smog
 - Rock Throw
@@ -24598,7 +24146,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Endeavor
@@ -24607,7 +24154,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Grovyle @ Sitrus Berry
 Ability: Overgrow
 Level: 16
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Mega Drain
 - Leer
@@ -24626,7 +24172,6 @@ Difficulty: Hard
 Shroomish
 Ability: Poison Heal
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -24634,7 +24179,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Wailmer
 Ability: Water Veil
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Astonish
 - Growl
@@ -24642,7 +24186,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Endeavor
@@ -24651,7 +24194,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Combusken @ Sitrus Berry
 Ability: Blaze
 Level: 16
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Quick Attack
 - Flame Charge
 - Sand Attack
@@ -24670,7 +24212,6 @@ Difficulty: Hard
 Slugma
 Ability: Pyroclastic Flow
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fire Spin
 - Smog
 - Rock Throw
@@ -24678,7 +24219,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Shroomish @ Toxic Orb
 Ability: Poison Heal
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Mega Drain
 - Headbutt
 - Leech Seed
@@ -24686,7 +24226,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Pikachu
 Ability: Static
 Level: 14
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Fake Out
 - Thunder Shock
 - Endeavor
@@ -24695,7 +24234,6 @@ EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe
 Marshtomp @ Sitrus Berry
 Ability: Torrent
 Level: 16
-EVs:  HP /  Atk /  Def /  SpA /  SpD /  Spe  
 - Water Gun
 - Mud-Slap
 - Tackle
@@ -25255,7 +24793,7 @@ Vulpix
 Ability: Drought
 Level: 22
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 128 Spe  
-- Flare Burst
+- Flame Burst
 - Extrasensory
 - Disable
 - Sunny Day
@@ -27008,7 +26546,7 @@ Level: 50
 - Bug Bite
 
 === TRAINER_ALBERT ===
-Name: SCRAGGUS
+Name: SCOTT
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -27356,7 +26894,7 @@ Ability: Levitate
 Level: 60
 EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
 - Earthquake
-- Dragon Edge
+- Dragon Rush
 - U-Turn
 
 Gyarados
@@ -27467,4 +27005,4 @@ EVs: 128 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe
 - Meteor Mash
 - Psychic Fangs
 - Hammer Arm
-- Ice Punch"
+- Ice Punch
