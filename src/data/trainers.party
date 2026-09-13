@@ -18473,48 +18473,52 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
+Difficulty: Easy
 
-Skarmory
-Level: 77
-- Toxic
-- Aerial Ace
-- Spikes
+Skarmory @ Rocky Helmet
+Ability: Sturdy
+Level: 77  
 - Steel Wing
+- Drill Peck
+- Spikes
+- Roost
 
-Claydol
-Level: 75
-- Reflect
+Regieleki
+Ability: Transistor
+Level: 76  
+- Thunder Cage
+- Thunderbolt
 - Light Screen
-- Ancient Power
-- Earthquake
+- Reflect
 
-Aggron
-Level: 76
-- Thunder
-- Earthquake
-- Solar Beam
-- Dragon Claw
+Jirachi
+Ability: Serene Grace
+Level: 75  
+- Iron Head
+- Future Sight
+- Life Dew
+- Substitute
 
-Cradily
-Level: 76
-- Giga Drain
-- Ancient Power
-- Ingrain
-- Confuse Ray
+Deoxys - Attack
+Ability: Pressure
+Level: 77  
+- Psycho Boost
+- Knock Off
+- Superpower
 
-Armaldo
-Level: 76
-- Water Pulse
-- Ancient Power
-- Aerial Ace
-- Slash
+Regidrago
+Ability: Dragon's Maw
+Level: 76  
+- Dragon Energy
+- Breaking Swipe
+- Earth Power
 
 Metagross @ Sitrus Berry
-Level: 78
-- Earthquake
-- Psychic
+Ability: Full-Metal Body
+Level: 78  
 - Meteor Mash
-- Shadow Ball
+- Zen Headbutt
+- Hammer Arm
 
 === TRAINER_ANABEL ===
 Name: ANABEL
@@ -23942,6 +23946,62 @@ Level: 63
 - Psychic Fangs
 - Hammer Arm
 
+=== TRAINER_STEVEN ===
+Name: STEVEN
+Class: Rival
+Pic: Steven
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Normal
+
+Skarmory @ Rocky Helmet
+Ability: Sturdy
+Level: 99  
+- Iron Head
+- Drill Peck
+- Spikes
+- Roost
+
+Regieleki @ Light Clay
+Ability: Transistor
+Level: 98  
+- Thunder Cage
+- Light Screen
+- Reflect
+
+Jirachi @ Leftovers
+Ability: Serene Grace
+Level: 97  
+- Iron Head
+- Future Sight
+- Life Dew
+- Substitute
+
+Deoxys - Attack @ White Herb
+Ability: Pressure
+Level: 99  
+- Psycho Boost
+- Knock Off
+- Superpower
+- Shadow Ball
+
+Regidrago @ Sitrus Berry
+Ability: Dragon's Maw
+Level: 98  
+- Dragon Energy
+- Breaking Swipe
+- Earth Power
+
+Metagross @ Life Orb
+Ability: Full-Metal Body
+Level: 100  
+- Meteor Mash
+- Psychic Fangs
+- Hammer Arm
+- Earthquake
+
 /* START MASTER MODE BOSSES */
 
 === TRAINER_ROXANNE_1 ===
@@ -27006,3 +27066,66 @@ EVs: 128 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe
 - Psychic Fangs
 - Hammer Arm
 - Ice Punch
+
+=== TRAINER_STEVEN ===
+Name: STEVEN
+Class: Rival
+Pic: Steven
+Gender: Male
+Music: Male
+Double Battle: Yes
+AI: Smart Trainer
+Difficulty: Hard
+
+Skarmory @ Rocky Helmet
+Ability: Sturdy
+Level: 100
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe  
+- Iron Head
+- Drill Peck
+- Spikes
+- Roost
+
+Regieleki @ Light Clay
+Ability: Transistor
+Level: 100
+EVs: 252 HP / 0 Atk / 128 Def / 128 SpA / 0 SpD / 0 Spe  
+- Thunder Cage
+- Electroweb
+- Light Screen
+- Reflect
+
+Jirachi @ Leftovers
+Ability: Serene Grace
+Level: 100
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe  
+- Iron Head
+- Future Sight
+- Life Dew
+- Substitute
+
+Deoxys - Attack @ White Herb
+Ability: Pressure
+Level: 100
+EVs: 0 HP / 128 Atk / 0 Def / 128 SpA / 0 SpD / 252 Spe  
+- Psycho Boost
+- Knock Off
+- Superpower
+- Shadow Ball
+
+Regidrago @ Sitrus Berry
+Ability: Dragon's Maw
+Level: 100
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 128 SpD / 128 Spe  
+- Dragon Energy
+- Breaking Swipe
+- Earth Power
+
+Metagross - Mega @ Metagrossite
+Ability: Full-Metal Body
+Level: 100
+EVs: 128 HP / 252 Atk / 128 Def / 0 SpA / 0 SpD / 0 Spe  
+- Meteor Mash
+- Psychic Fangs
+- Hammer Arm
+- Earthquake

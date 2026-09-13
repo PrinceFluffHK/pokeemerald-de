@@ -14,7 +14,7 @@ Gender: Male
 Music: Male
 Back Pic: Steven
 Difficulty: Easy
-AI: Basic Trainer / Ace Pokemon
+AI: Basic Trainer
 
 Skarmory @ Metal Coat
 Ability: Sturdy
@@ -46,25 +46,25 @@ Gender: Male
 Music: Male
 Back Pic: Steven
 Difficulty: Normal
-AI: Basic Trainer / Ace Pokemon
+AI: Basic Trainer
 
 Skarmory @ Metal Coat
 Ability: Sturdy
-Level: 43
+Level: 43  
 - Steel Wing
 - Drill Peck
 
 Claydol @ Light Clay
 Ability: Levitate
-Level: 44
+Level: 44  
 - Earth Power
 - Extrasensory
 - Light Screen
 - Reflect
 
-Aggron
+Aggron @ Assault Vest
 Ability: Sturdy
-Level: 45
+Level: 45  
 - Heavy Slam
 - Head Smash
 - Body Press
@@ -78,28 +78,25 @@ Gender: Male
 Music: Male
 Back Pic: Steven
 Difficulty: Hard
-AI: Basic Trainer / Ace Pokemon
+AI: Basic Trainer
 
 Skarmory @ Metal Coat
 Ability: Sturdy
 Level: 43
-EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 252 SpD / 0 Spe  
 - Steel Wing
 - Drill Peck
 
 Claydol @ Light Clay
 Ability: Levitate
 Level: 44
-EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe  
 - Earth Power
 - Extrasensory
 - Light Screen
 - Reflect
 
-Aggron
+Aggron @ Sitrus Berry
 Ability: Sturdy
 Level: 45
-EVs: 252 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Heavy Slam
 - Head Smash
 - Body Press
